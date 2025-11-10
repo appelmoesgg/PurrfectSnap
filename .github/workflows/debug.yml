@@ -1,5 +1,4 @@
 name: PurrfectSnap Debug CI
-runs-on: [self-hosted]
 on:
   workflow_dispatch:
     inputs:
@@ -9,7 +8,7 @@ on:
         type: boolean
 jobs:
   job_armv8:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted]
     outputs:
       armv8_apk: ${{ steps.upload_apk.outputs.artifact-paths }}
     steps:
@@ -61,7 +60,7 @@ jobs:
           name: purrfectsnap-armv8-debug
           path: app/build/outputs/apk/armv8/debug/*.apk
   job_armv7:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted]
     outputs:
       armv7_apk: ${{ steps.upload_apk.outputs.artifact-paths }}
     steps:
@@ -113,7 +112,7 @@ jobs:
           name: purrfectsnap-armv7-debug
           path: app/build/outputs/apk/armv7/debug/*.apk
   job_manager:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted]
     outputs:
       manager_apk: ${{ steps.upload_apk.outputs.artifact-paths }}
     steps:
@@ -138,7 +137,7 @@ jobs:
           name: manager
           path: manager/build/outputs/apk/debug/*.apk
   job_core:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted]
     outputs:
       core_apk: ${{ steps.upload_apk.outputs.artifact-paths }}
     steps:
@@ -166,7 +165,7 @@ jobs:
           path: app/build/outputs/apk/core/debug/*.apk
   make_prerelease:
     needs: [job_armv7, job_armv8, job_manager, job_core]
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted]
     steps:
       - name: Download all build artifacts
         uses: actions/download-artifact@v4
