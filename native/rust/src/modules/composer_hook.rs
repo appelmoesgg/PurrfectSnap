@@ -185,12 +185,23 @@ pub unsafe fn composer_eval(env: JNIEnv, _: *mut c_void, script: JString) -> job
     {
         let mut env = env;
 
-        let script_str = get_jni_string(&mut env, script).expect("Failed to get script");
+        let script_str = match get_jni_string(&mut env, script) {
+            Ok(s) => s,
+            Err(_) => return std::ptr::null_mut(),
+        };
+
+        if JS_EVAL_ORIGINAL2.is_none() || GLOBAL_INSTANCE.is_none() || GLOBAL_CTX.is_none() {
+            if let Ok(s) = env.new_string("Composer hook not initialized") {
+                return s.into_raw();
+            }
+            return std::ptr::null_mut();
+        }
+
         let script_length = script_str.len();
     
-        let js_value = JS_EVAL_ORIGINAL2.expect("No js eval found")(
-            GLOBAL_INSTANCE.expect("No global instance found"), 
-            GLOBAL_CTX.expect("No global context found"),
+        let js_value = JS_EVAL_ORIGINAL2.unwrap()(
+            GLOBAL_INSTANCE.unwrap(),
+            GLOBAL_CTX.unwrap(),
             std::ptr::null_mut(),
             (script_str + "\0").as_ptr() as *mut u8, 
             script_length, 
@@ -200,29 +211,34 @@ pub unsafe fn composer_eval(env: JNIEnv, _: *mut c_void, script: JString) -> job
     
         let result: String =  if js_value.tag == JS_TAG_STRING {
             let string = js_value.u.ptr as *mut JsString;
-            CStr::from_ptr((*string).str8.as_ptr() as *const u8).to_str().unwrap().into()
+            match CStr::from_ptr((*string).str8.as_ptr() as *const u8).to_str() {
+                Ok(s) => s.to_string(),
+                Err(_) => "[invalid string]".to_string(),
+            }
         } else if js_value.tag == JS_TAG_INT {
             js_value.u.int32.to_string()
         } else if js_value.tag == JS_TAG_BOOL {
-            if js_value.u.int32 == 1 { "true" } else { "false" }.into()
+            if js_value.u.int32 == 1 { "true" } else { "false" }.to_string()
         } else if js_value.tag == JS_TAG_NULL {
-            "null".into()
+            "null".to_string()
         } else if js_value.tag == JS_TAG_UNDEFINED {
-            "undefined".into()
+            "undefined".to_string()
         } else if js_value.tag == JS_TAG_OBJECT {
-            "[object]".into()
+            "[object]".to_string()
         } else if js_value.tag == JS_TAG_FLOAT64 {
             js_value.u.float64.to_string()
         } else if js_value.tag == JS_TAG_EXCEPTION {
-            "Failed to evaluate script".into()
+            "Failed to evaluate script".to_string()
         } else {
-            "[unknown tag ".to_owned() + &js_value.tag.to_string() + "]".into()
+            format!("[unknown tag {}]", js_value.tag)
         };
         
-        return env.new_string(result).unwrap().into_raw()
+        if let Ok(s) = env.new_string(result) {
+            return s.into_raw();
+        }
     }
 
-    return env.new_string("Architecture not supported").unwrap().into_raw();
+    std::ptr::null_mut()
 }
 
 pub fn init() {
@@ -237,11 +253,20 @@ pub fn init() {
     
     #[cfg(target_arch = "aarch64")]
     {
-        if let Some(signature) = sig::find_signature(
+        let signature = sig::find_signature(
             &common::CLIENT_MODULE,
             "00 E4 00 6F 29 00 80 52 76 00 04 8B", -0x28,
             "A1 B0 07 92 81 46", -0x7
-        ) {
+        ).or_else(|| {
+            warn!("primary js_eval signature failed, trying fallback");
+            sig::find_signature(
+                &common::CLIENT_MODULE,
+                "00 E4 00 6F ?? ?? ?? ?? ?? ?? ?? ??", -0x28,
+                "?? ?? ?? ?? ?? ??", -0x7
+            )
+        });
+
+        if let Some(signature) = signature {
             dobby_hook!(signature as *mut c_void, js_eval);
             
             unsafe { 

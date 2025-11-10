@@ -35,6 +35,17 @@ import me.rhunk.snapenhance.ui.manager.Routes
 import okhttp3.OkHttpClient
 
 class ManageReposSection: Routes.Route() {
+    override val title: @Composable () -> Unit = {
+        val navBackStackEntry by routes.navController.currentBackStackEntryAsState()
+        val text = remember(navBackStackEntry) {
+            navBackStackEntry?.arguments?.getString("type")?.let {
+                translation.format("title", "type" to it)
+            }
+        }
+        text?.let { Text(it, maxLines = 1, overflow = TextOverflow.Ellipsis) }
+    }
+
+    override val translation by lazy { context.translation.getCategory("manager.manage_repos") }
     private val updateDispatcher = AsyncUpdateDispatcher()
     private val okHttpClient by lazy { OkHttpClient() }
 
@@ -46,7 +57,7 @@ class ManageReposSection: Routes.Route() {
         ExtendedFloatingActionButton(onClick = {
             showAddDialog = true
         }) {
-            Text("Add Repository")
+            Text(translation["add_repo_button"])
         }
 
         if (showAddDialog) {
@@ -85,7 +96,7 @@ class ManageReposSection: Routes.Route() {
                         }
 
                         context.database.addRepo(repoType, modifiedUrl)
-                        context.shortToast("Repository added successfully! $repoIndex")
+                        context.shortToast(translation["repo_added_successfully"])
                         showAddDialog = false
                         updateDispatcher.dispatch()
                     }.onFailure {
@@ -100,7 +111,7 @@ class ManageReposSection: Routes.Route() {
             AlertDialog(onDismissRequest = {
                 showAddDialog = false
             }, title = {
-                Text("Add Repository URL")
+                Text(translation["add_repo_dialog_title"])
             }, text = {
                 val focusRequester = remember { FocusRequester() }
                 OutlinedTextField(
@@ -114,7 +125,7 @@ class ManageReposSection: Routes.Route() {
                     onValueChange = {
                         url = it
                     }, label = {
-                        Text("Repository URL")
+                        Text(translation["repo_url_label"])
                     }
                 )
                 LaunchedEffect(Unit) {
@@ -132,7 +143,7 @@ class ManageReposSection: Routes.Route() {
                                 addRepo(url)
                             }.onFailure {
                                 context.log.error("Failed to add repository", it)
-                                context.shortToast("Failed to add repository: ${it.message}")
+                                context.shortToast(translation.format("add_repo_failed", "message" to (it.message ?: "Unknown")))
                             }
                             loading = false
                         }
@@ -141,7 +152,7 @@ class ManageReposSection: Routes.Route() {
                     if (loading) {
                         CircularProgressIndicator(modifier = Modifier.size(24.dp))
                     } else {
-                        Text("Add")
+                        Text(translation["add_button"])
                     }
                 }
             })
@@ -161,7 +172,7 @@ class ManageReposSection: Routes.Route() {
         ) {
             item {
                 if (repositories.isEmpty()) {
-                    Text("No repositories added", modifier = Modifier
+                    Text(translation["no_repos_added"], modifier = Modifier
                         .padding(16.dp)
                         .fillMaxWidth(), fontSize = 15.sp, fontWeight = FontWeight.Light, textAlign = TextAlign.Center)
                 }
@@ -187,7 +198,7 @@ class ManageReposSection: Routes.Route() {
                                 }
                             }
                         ) {
-                            Text("Remove")
+                            Text(translation["remove_button"])
                         }
                     }
                 }

@@ -26,7 +26,7 @@ import me.rhunk.snapenhance.common.bridge.wrapper.LocaleWrapper
 fun EditNoteTextField(
     modifier: Modifier = Modifier,
     primaryColor: Color,
-    translation: LocaleWrapper,
+    placeholder: String,
     content: String?,
     setContent: (String) -> Unit
 ) {
@@ -49,7 +49,7 @@ fun EditNoteTextField(
         },
         shape = MaterialTheme.shapes.medium,
         textStyle = LocalTextStyle.current.copy(fontSize = 12.sp, color = primaryColor),
-        placeholder = { Text(text = translation["manager.sections.manage_scope.notes_placeholder"], fontSize = 12.sp) }
+        placeholder = { Text(text = placeholder, fontSize = 12.sp) }
     )
 }
 

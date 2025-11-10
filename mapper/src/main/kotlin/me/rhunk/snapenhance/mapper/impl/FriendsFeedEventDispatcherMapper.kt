@@ -11,19 +11,21 @@ class FriendsFeedEventDispatcherMapper : AbstractClassMapper("FriendsFeedEventDi
 
     init {
         mapper {
-            for (clazz in classes) {
-                if (clazz.methods.count { it.name == "onClickFeed" || it.name == "onItemLongPress" } != 2) continue
+            classes.asSequence().firstOrNull { clazz ->
+                if (clazz.methods.count { it.name == "onClickFeed" || it.name == "onItemLongPress" } != 2) {
+                    return@firstOrNull false
+                }
                 val onItemLongPress = clazz.methods.first { it.name == "onItemLongPress" }
-                val viewHolderContainerClass = getClass(onItemLongPress.parameterTypes[0]) ?: continue
+                val viewHolderContainerClass = getClass(onItemLongPress.parameterTypes[0]) ?: return@firstOrNull false
 
                 val viewModelDexField = viewHolderContainerClass.fields.firstOrNull { field ->
                     val typeClass = getClass(field.type) ?: return@firstOrNull false
                     typeClass.methods.firstOrNull {it.name == "toString"}?.implementation?.findConstString("FriendFeedItemViewModel", contains = true) == true
-                }?.name ?: continue
+                }?.name ?: return@firstOrNull false
 
                 classReference.set(clazz.getClassName())
                 viewModelField.set(viewModelDexField)
-                return@mapper
+                true
             }
         }
     }

@@ -27,7 +27,7 @@ import me.rhunk.snapenhance.core.util.EvictingMap
 import java.util.concurrent.Executors
 import kotlin.system.measureTimeMillis
 
-class MessageLogger : MessagingRuleFeature("MessageLogger", MessagingRuleType.EXCLUDE_MESSAGE_LOGGER) {
+class MessageLogger : MessagingRuleFeature("MessageLogger", MessagingRuleType.MESSAGE_LOGGER) {
     companion object {
         const val PREFETCH_MESSAGE_COUNT = 20
         const val PREFETCH_FEED_COUNT = 20
@@ -130,8 +130,7 @@ class MessageLogger : MessagingRuleFeature("MessageLogger", MessagingRuleType.EX
                 }
 
                 threadPool.execute {
-                    // ignore excluded conversations
-                    if (getState(conversationId)) {
+                    if (!canUseRule(conversationId)) {
                         return@execute
                     }
 
@@ -200,6 +199,4 @@ class MessageLogger : MessagingRuleFeature("MessageLogger", MessagingRuleType.EX
             }
         }
     }
-
-    override fun getRuleState() = RuleState.WHITELIST
 }

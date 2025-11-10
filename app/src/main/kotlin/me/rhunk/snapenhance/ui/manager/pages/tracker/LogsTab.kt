@@ -47,6 +47,7 @@ fun LogsTab(
     exportAction: (() -> Unit) -> Unit,
     bottomPadding: Dp,
 ) {
+    val translation = remember { context.translation.getCategory("manager.friend_tracker") }
     val coroutineScope = rememberCoroutineScope()
 
     val logs = remember { mutableStateListOf<TrackerLog>() }
@@ -123,7 +124,7 @@ fun LogsTab(
                 withContext(Dispatchers.Main) {
                     delay(500)
                     resetAndLoadLogs()
-                    context.shortToast("Deleted $deletedLogsCount logs")
+                    context.shortToast(translation.format("deleted_logs_toast", "count" to deletedLogsCount.toString()))
                     showDeleteDialog = false
                 }
             }
@@ -137,12 +138,12 @@ fun LogsTab(
 
         AlertDialog(
             onDismissRequest = { showDeleteDialog = false },
-            title = { Text("Delete logs?") },
+            title = { Text(translation["delete_logs_dialog_title"]) },
             text = {
                 if (deleteLogsTask != null) {
-                    Text("Deleting $deletedLogsCount logs...")
+                    Text(translation.format("deleting_logs_dialog_text", "count" to deletedLogsCount.toString()))
                 } else {
-                    Text("This will delete logs based on the current filter and the search query. This action cannot be undone.")
+                    Text(translation["delete_logs_dialog_confirm_text"])
                 }
             },
             confirmButton = {
@@ -158,7 +159,7 @@ fun LogsTab(
                             strokeWidth = 3.dp
                         )
                     } else {
-                        Text("Delete")
+                        Text(translation["delete_button"])
                     }
                 }
             },
@@ -219,10 +220,10 @@ fun LogsTab(
                         exportTask = null
                         showExportSelectionDialog = false
                         if (it == null) {
-                            context.shortToast("Exported logs!")
+                            context.shortToast(translation["exported_logs_toast"])
                         } else {
                             context.log.error("Failed to export logs", it)
-                            context.shortToast("Failed to export logs. Check logcat for more details.")
+                            context.shortToast(translation["export_logs_failed_toast"])
                         }
                     }
                 }
@@ -231,16 +232,16 @@ fun LogsTab(
 
         AlertDialog(
             onDismissRequest = { showExportSelectionDialog = false },
-            title = { Text("Export logs?") },
+            title = { Text(translation["export_logs_dialog_title"]) },
             text = {
                 Column(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalAlignment = Alignment.CenterHorizontally,
                 ) {
                     if (exportTask != null) {
-                        Text("Exporting logs...")
+                        Text(translation["exporting_logs_dialog_text"])
                     } else {
-                        Text("This will export logs based on the current filter and the search query.")
+                        Text(translation["export_logs_dialog_confirm_text"])
                         Spacer(modifier = Modifier.height(10.dp))
                         var expanded by remember { mutableStateOf(false) }
                         ExposedDropdownMenuBox(
@@ -252,7 +253,7 @@ fun LogsTab(
                                     .menuAnchor(MenuAnchorType.PrimaryNotEditable)
                                     .padding(2.dp)
                             ) {
-                                Text("Export as $exportType", modifier = Modifier.padding(8.dp))
+                                Text(translation.format("export_as_button", "type" to exportType), modifier = Modifier.padding(8.dp))
                             }
                             DropdownMenu(expanded = expanded, onDismissRequest = {
                                 expanded = false
@@ -283,7 +284,7 @@ fun LogsTab(
                             strokeWidth = 3.dp
                         )
                     } else {
-                        Text("Export")
+                        Text(translation["export_button"])
                     }
                 }
             },
@@ -342,12 +343,12 @@ fun LogsTab(
             ) {
                 val rowHSpacing = 10.dp
 
-                Text("Filters", fontWeight = FontWeight.Bold, fontSize = 20.sp)
+                Text(translation["filters_title"], fontWeight = FontWeight.Bold, fontSize = 20.sp)
                 Row(
                     horizontalArrangement = Arrangement.spacedBy(rowHSpacing),
                     verticalAlignment = Alignment.CenterVertically,
                 ) {
-                    Text("Search by")
+                    Text(translation["search_by_label"])
                     ExposedDropdownMenuBox(
                         expanded = dropDownExpanded,
                         onExpandedChange = { dropDownExpanded = it },
@@ -381,7 +382,7 @@ fun LogsTab(
                     horizontalArrangement = Arrangement.spacedBy(rowHSpacing),
                     verticalAlignment = Alignment.CenterVertically,
                 ) {
-                    Text("Newest first")
+                    Text(translation["newest_first_label"])
                     Switch(
                         checked = reverseSortOrder,
                         onCheckedChange = {
@@ -394,14 +395,14 @@ fun LogsTab(
                     horizontalArrangement = Arrangement.spacedBy(rowHSpacing),
                     verticalAlignment = Alignment.CenterVertically,
                 ) {
-                    Text(if (reverseSortOrder) "Since" else "Until")
+                    Text(translation[if (reverseSortOrder) "since_label" else "until_label"])
                     Button(onClick = {
                         showDatePicker = true
                     }) {
                         Text(remember(showDatePicker) {
                             sinceDatePickerState.selectedDateMillis?.let {
                                 DateFormat.getDateInstance().format(it)
-                            } ?: "Pick a date"
+                            } ?: translation["pick_a_date_button"]
                         })
                     }
                 }
@@ -440,7 +441,7 @@ fun LogsTab(
                             }
                         }
                     },
-                    placeholder = { Text("Search") },
+                    placeholder = { Text(translation["search_placeholder"]) },
                     colors = TextFieldDefaults.colors(
                         focusedContainerColor = Color.Transparent,
                         unfocusedContainerColor = Color.Transparent
@@ -454,7 +455,7 @@ fun LogsTab(
                             modifier = Modifier
                                 .padding(2.dp)
                         ) {
-                            Icon(Icons.Default.FilterList, contentDescription = "Filter")
+                            Icon(Icons.Default.FilterList, contentDescription = translation["filter_button_description"])
                         }
                         FilterSelection(showFilterSelection)
                         if (showFilterSelection.value) {
@@ -475,7 +476,7 @@ fun LogsTab(
                                     resetAndLoadLogs()
                                 }
                             }) {
-                                Icon(Icons.Default.Clear, contentDescription = "Clear")
+                                Icon(Icons.Default.Clear, contentDescription = translation["clear_button_description"])
                             }
                         }
 
@@ -528,7 +529,7 @@ fun LogsTab(
                     horizontalArrangement = Arrangement.Center
                 ) {
                     if (logs.isEmpty() && !isLoading) {
-                        Text("No logs found", modifier = Modifier.padding(16.dp), fontWeight = FontWeight.Light, textAlign = TextAlign.Center)
+                        Text(translation["no_logs_found"], modifier = Modifier.padding(16.dp), fontWeight = FontWeight.Light, textAlign = TextAlign.Center)
                     }
                 }
             }
@@ -567,7 +568,7 @@ fun LogsTab(
                             Text(databaseFriend?.displayName?.let {
                                 "$it (${log.username})"
                             } ?: log.username, lineHeight = 20.sp, fontWeight = FontWeight.Bold, maxLines = 1, overflow = TextOverflow.Ellipsis, fontSize = 14.sp)
-                            Text("${log.eventType} in ${log.conversationTitle}", fontSize = 10.sp, fontWeight = FontWeight.Light, lineHeight = 15.sp, maxLines = 1, overflow = TextOverflow.Ellipsis)
+                            Text(translation.format("log_event_format", "event" to log.eventType, "conversation" to log.conversationTitle.toString()), fontSize = 10.sp, fontWeight = FontWeight.Light, lineHeight = 15.sp, maxLines = 1, overflow = TextOverflow.Ellipsis)
                             Text(
                                 DateFormat.getDateTimeInstance().format(log.timestamp),
                                 fontSize = 10.sp,
@@ -582,7 +583,7 @@ fun LogsTab(
                                 logs.remove(log)
                             }
                         ) {
-                            Icon(Icons.Default.DeleteOutline, contentDescription = "Delete")
+                            Icon(Icons.Default.DeleteOutline, contentDescription = translation["delete_button_description"])
                         }
                     }
                 }

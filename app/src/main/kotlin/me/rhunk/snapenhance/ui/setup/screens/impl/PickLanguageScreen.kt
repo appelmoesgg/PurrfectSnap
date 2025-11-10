@@ -44,16 +44,19 @@ class PickLanguageScreen : SetupScreen() {
     }
     private lateinit var selectedLocale: ObservableMutableState<String>
     private fun getLocaleDisplayName(locale: String): String {
-        // Use Locale.forLanguageTag for all cases
-        val displayLocale = try {
-            Locale.forLanguageTag(locale.replace('_', '-'))
-        } catch (e: Exception) {
-            Locale.getDefault()
+        val displayLocale = when (locale) {
+            "zh-Hans" -> Locale.forLanguageTag("zh-Hans")
+            "zh_TW" -> Locale.TRADITIONAL_CHINESE
+            else -> try {
+                Locale.forLanguageTag(locale.replace('_', '-'))
+            } catch (e: Exception) {
+                Locale.getDefault()
+            }
         }
         return displayLocale.getDisplayName(Locale.getDefault())
     }
     private fun reloadTranslation(selectedLocale: String) {
-        context.translation.reload(selectedLocale)
+        context.translation.reload(selectedLocale, isSetup = true)
     }
     private fun setLocale(locale: String) {
         with(context) {

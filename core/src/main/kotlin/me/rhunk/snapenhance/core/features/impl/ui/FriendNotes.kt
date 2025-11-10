@@ -63,7 +63,7 @@ class FriendNotes: Feature("Friend Notes") {
                     EditNoteTextField(
                         modifier = Modifier.padding(top = 8.dp),
                         primaryColor = primaryColor,
-                        translation = context.translation,
+                        placeholder = context.translation["features.friend_notes.placeholder"],
                         content = scopeNotes,
                         setContent = { scopeNotes = it }
                     )

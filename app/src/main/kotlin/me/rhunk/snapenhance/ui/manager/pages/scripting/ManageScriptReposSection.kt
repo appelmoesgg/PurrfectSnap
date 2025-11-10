@@ -32,6 +32,7 @@ import me.rhunk.snapenhance.ui.manager.components.AestheticDialog
 import okhttp3.OkHttpClient
 
 class ManageScriptReposSection : Routes.Route() {
+    override val translation by lazy { context.translation.getCategory("manager.scripting.repos") }
     private val refreshTrigger = mutableStateOf(0)
     private val okHttpClient by lazy { OkHttpClient() }
 
@@ -53,16 +54,16 @@ class ManageScriptReposSection : Routes.Route() {
         if (showErrorDialog) {
             AestheticDialog(
                 onDismissRequest = { showErrorDialog = false },
-                title = "Invalid Repository",
+                title = translation["invalid_repo_title"],
                 text = errorDialogMessage,
                 icon = Icons.Default.Error,
-                confirmButtonText = "OK",
+                confirmButtonText = translation["button.ok"],
                 onConfirm = { showErrorDialog = false }
             )
         }
 
         ExtendedFloatingActionButton(onClick = { showAddDialog = true }) {
-            Text("Add Repository")
+            Text(translation["add_repo_button"])
         }
 
         if (showAddDialog) {
@@ -73,7 +74,7 @@ class ManageScriptReposSection : Routes.Route() {
 
             AlertDialog(
                 onDismissRequest = { showAddDialog = false },
-                title = { Text("Add Repository URL") },
+                title = { Text(translation["add_repo_dialog_title"]) },
                 text = {
                     val focusRequester = remember { FocusRequester() }
                     OutlinedTextField(
@@ -83,7 +84,7 @@ class ManageScriptReposSection : Routes.Route() {
                             .onGloballyPositioned { focusRequester.requestFocus() },
                         value = url,
                         onValueChange = { url = it },
-                        label = { Text("Repository URL") }
+                        label = { Text(translation["repo_url_label"]) }
                     )
                     LaunchedEffect(Unit) {
                         context.androidContext.getUrlFromClipboard()?.let { url = it }
@@ -123,16 +124,16 @@ class ManageScriptReposSection : Routes.Route() {
 
                                     if (isValid) {
                                         context.database.addRepo("script", modifiedUrl)
-                                        context.shortToast("Repository added successfully!")
+                                        context.shortToast(translation["repo_added_toast"])
                                         showAddDialog = false
                                         refreshTrigger.value++
                                     } else {
-                                        errorDialogMessage = "This does not appear to be a valid Script repository."
+                                        errorDialogMessage = translation["invalid_repo_error"]
                                         showErrorDialog = true
                                     }
                                 }.onFailure {
                                     context.log.error("Failed to add repository", it)
-                                    context.shortToast("Failed to add repository: ${it.message}")
+                                    context.shortToast(translation.format("add_repo_failed_toast", "message" to (it.message ?: "Unknown")))
                                 }
                                 loading = false
                             }
@@ -141,7 +142,7 @@ class ManageScriptReposSection : Routes.Route() {
                         if (loading) {
                             CircularProgressIndicator(modifier = Modifier.size(24.dp))
                         } else {
-                            Text("Add")
+                            Text(translation["add_button"])
                         }
                     }
                 }
@@ -160,7 +161,7 @@ class ManageScriptReposSection : Routes.Route() {
                 contentAlignment = Alignment.Center
             ) {
                 Text(
-                    text = "No repositories added",
+                    text = translation["no_repos_added"],
                     style = MaterialTheme.typography.headlineSmall,
                     fontWeight = FontWeight.Bold,
                     textAlign = TextAlign.Center,
@@ -211,14 +212,14 @@ class ManageScriptReposSection : Routes.Route() {
                             Button(
                                 onClick = { showRemoveDialog = true }
                             ) {
-                                Text("Remove")
+                                Text(translation["remove_button"])
                             }
 
                             AnimatedVisibility(visible = showRemoveDialog) {
                                 AlertDialog(
                                     onDismissRequest = { showRemoveDialog = false },
-                                    title = { Text("Remove Repository") },
-                                    text = { Text("Are you sure you want to remove this repository?") },
+                                    title = { Text(translation["remove_repo_dialog_title"]) },
+                                    text = { Text(translation["remove_repo_dialog_text"]) },
                                     confirmButton = {
                                         Button(
                                             onClick = {
@@ -227,12 +228,12 @@ class ManageScriptReposSection : Routes.Route() {
                                                 refreshTrigger.value++
                                             }
                                         ) {
-                                            Text("Remove")
+                                            Text(translation["remove_button"])
                                         }
                                     },
                                     dismissButton = {
                                         Button(onClick = { showRemoveDialog = false }) {
-                                            Text("Cancel")
+                                            Text(translation["button.cancel"])
                                         }
                                     }
                                 )

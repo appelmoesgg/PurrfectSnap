@@ -48,6 +48,7 @@ enum class MessagingRuleType(
     val configNotices: Array<FeatureNotice> = emptyArray()
 ) {
     STEALTH("stealth", true, Icons.Outlined.TrackChanges),
+    HIDE_TYPING_INDICATOR("hide_typing_indicator", true, Icons.Outlined.KeyboardHide, defaultValue = "whitelist"),
     AUTO_DOWNLOAD("auto_download", true, Icons.Outlined.DownloadForOffline),
     AUTO_SAVE("auto_save", true, Icons.Outlined.Save, defaultValue = "blacklist"),
     AUTO_OPEN_SNAPS("auto_open_snaps", true, Icons.Outlined.OpenInFull, configNotices = arrayOf(FeatureNotice.BAN_RISK, FeatureNotice.UNSTABLE), defaultValue = null),
@@ -55,7 +56,7 @@ enum class MessagingRuleType(
     HIDE_FRIEND_FEED("hide_friend_feed", false, Icons.Outlined.VisibilityOff, showInFriendMenu = false),
     E2E_ENCRYPTION("e2e_encryption", false, Icons.Outlined.Lock),
     PIN_CONVERSATION("pin_conversation", false, Icons.Outlined.PushPin, showInFriendMenu = false),
-    EXCLUDE_MESSAGE_LOGGER("exclude_message_logger", false, Icons.AutoMirrored.Filled.Message, showInFriendMenu = false);
+    MESSAGE_LOGGER("message_logger", true, Icons.AutoMirrored.Filled.Message, showInFriendMenu = true);
 
     fun translateOptionKey(optionKey: String): String {
         return if (listMode) "rules.properties.$key.options.$optionKey" else "rules.properties.$key.name"

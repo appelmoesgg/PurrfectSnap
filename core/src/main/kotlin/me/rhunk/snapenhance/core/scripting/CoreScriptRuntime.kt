@@ -31,30 +31,32 @@ class CoreScriptRuntime(
         }
 
         modContext.bridgeClient.addOnConnectedCallback(initNow = true) {
-            scripting = modContext.bridgeClient.getScriptingInterface()
+            modContext.bridgeClient.getScriptingInterface()?.let { scriptingInterface ->
+                scripting = scriptingInterface
 
-            if (!isBridgeReloaded) {
-                scripting.enabledScripts.forEach { path ->
-                    runCatching {
-                        load(path, scripting.getScriptContent(path))
-                    }.onFailure {
-                        logger.error("Failed to load script $path", it)
+                if (!isBridgeReloaded) {
+                    scriptingInterface.enabledScripts.forEach { path ->
+                        runCatching {
+                            load(path, scriptingInterface.getScriptContent(path))
+                        }.onFailure {
+                            logger.error("Failed to load script $path", it)
+                        }
                     }
                 }
-            }
 
-            scripting.registerAutoReloadListener(object : AutoReloadListener.Stub() {
-                override fun restartApp() {
-                    modContext.softRestartApp()
+                scriptingInterface.registerAutoReloadListener(object : AutoReloadListener.Stub() {
+                    override fun restartApp() {
+                        modContext.softRestartApp()
+                    }
+                })
+
+                eachModule {
+                    onBridgeConnected(reloaded = isBridgeReloaded)
                 }
-            })
 
-            eachModule {
-                onBridgeConnected(reloaded = isBridgeReloaded)
-            }
-
-            if (!isBridgeReloaded) {
-                isBridgeReloaded = true
+                if (!isBridgeReloaded) {
+                    isBridgeReloaded = true
+                }
             }
         }
     }

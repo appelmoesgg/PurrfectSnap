@@ -1,0 +1,2022 @@
+{
+    "setup": {
+        "dialogs": {
+            "select_language": "Vyberte jazyk",
+            "save_folder": "PurrfectSnap vyžaduje oprávnění k úložišti pro stahování a ukládání médií ze Snapchatu.\nVyberte prosím umístění, kam se mají média stahovat.",
+            "select_save_folder_button": "Vybrat složku"
+        },
+        "mappings": {
+            "dialog": "Generování mapování, může to chvíli trvat...",
+            "generate_failure_no_snapchat": "PurrfectSnap nedokázal detekovat Snapchat, zkuste prosím přeinstalovat Snapchat.",
+            "generate_failure": "Při generování mapování došlo k chybě, zkuste to prosím znovu."
+        },
+        "permissions": {
+            "dialog": "Pro pokračování musíte splnit následující požadavky:",
+            "notification_access": "Přístup k oznámením",
+            "battery_optimization": "Optimalizace baterie",
+            "display_over_other_apps": "Zobrazení přes ostatní aplikace",
+            "request_button": "Požádat"
+        }
+    },
+    "scopes": {
+        "friend": "Přítel",
+        "group": "Skupina"
+    },
+    "manager": {
+        "routes": {
+            "tasks": "Úlohy",
+            "features": "Funkce",
+            "manage_rule_feature": "Spravovat funkci pravidel",
+            "home": "Domů",
+            "home_settings": "Nastavení",
+            "home_logs": "Protokoly",
+            "logger_history": "Historie záznamů",
+            "logged_stories": "Zaznamenané příběhy",
+            "friend_tracker": "Sledování přátel",
+            "edit_rule": "Upravit pravidlo",
+            "file_imports": "Import souborů",
+            "manage_repos": "Spravovat repozitáře",
+            "social": "Sociální",
+            "manage_scope": "Spravovat rozsah",
+            "messaging_preview": "Náhled",
+            "scripts": "Skripty",
+            "better_location": "Lepší poloha"
+        },
+        "sections": {
+            "home": {
+                "version_title": "v{versionName} · forkováno Eternalem",
+                "update_title": "Aktualizace PurrfectSnap",
+                "update_content": "Verze {version} je k dispozici!",
+                "update_button": "Stáhnout",
+                "debug_build_summary_title": "Spouštíte ladicí sestavení PurrfectSnap",
+                "debug_build_summary_content": "Verze {versionName} ({versionCode})",
+                "debug_build_summary_date": "Datum sestavení: {date} (před {days} dny)",
+                "quick_actions_title": "Rychlé akce",
+                "download_icon_description": "Stáhnout",
+                "completed_icon_description": "Dokončeno",
+                "failed_icon_description": "Selhalo",
+                "manage_quick_actions_description": "Spravovat rychlé akce",
+                "quick_actions_icon_description": "Rychlé akce",
+                "add_quick_action_description": "Přidat rychlou akci"
+            },
+            "home_logs": {
+                "no_logs_hint": "Nejsou k dispozici žádné protokoly",
+                "clear_logs_button": "Vymazat protokoly",
+                "export_logs_button": "Exportovat protokoly",
+                "saving_logs_toast": "Ukládání protokolů, může to chvíli trvat...",
+                "saved_logs_success_toast": "Protokoly úspěšně uloženy",
+                "saved_logs_failure_toast": "Uložení protokolů se nezdařilo"
+            },
+            "home_settings": {
+                "actions_title": "Akce",
+                "message_logger_title": "Záznamník zpráv",
+                "debug_title": "Ladění",
+                "success_toast": "Hotovo!",
+                "message_logger_summary": "{messageCount} zpráv\n{storyCount} příběhů",
+                "export_button": "Exportovat",
+                "clear_button": "Vymazat",
+                "view_logger_history_button": "Zobrazit historii záznamů",
+                "updates_title": "Aktualizace",
+                "auto_update_check": "Automaticky kontrolovat aktualizace",
+                "update_check_frequency": "Frekvence kontroly aktualizací",
+                "update_check_frequency_daily": "Denně",
+                "update_check_frequency_weekly": "Týdně",
+                "update_check_frequency_monthly": "Měsíčně",
+                "theme_icon_description": "Motiv",
+                "app_theme_title": "Motiv aplikace",
+                "theme_mode_system": "Systém",
+                "theme_mode_light": "Světlý",
+                "theme_mode_dark": "Tmavý",
+                "ui_settings_title": "Nastavení uživatelského rozhraní",
+                "haptic_feedback_label": "Haptická odezva",
+                "test_mode_label": "Testovací režim (POUZE PRO LADĚNÍ)",
+                "disable_feature_loading_label": "Zakázat načítání funkcí",
+                "disable_auto_mapper_label": "Zakázat automatické mapování",
+                "disable_bypass_indicator_label": "Zakázat indikátor obejití stavu",
+                "update_notification_channel_name": "Aktualizace PurrfectSnap",
+                "update_notification_channel_description": "Oznámení o aktualizacích PurrfectSnap",
+                "update_notification_title": "K dispozici je aktualizace PurrfectSnap",
+                "update_notification_text": "Verze %s je nyní k dispozici.",
+                "export_database_failed_toast": "Export databáze se nezdařil! {message}",
+                "clear_messages_failed_toast": "Vymazání zpráv se nezdařilo! {message}",
+                "clear_file_failed_toast": "Vymazání souboru se nezdařilo! {message}",
+                "debug_file_config": "Konfigurace",
+                "debug_file_mappings": "Mapování",
+                "debug_file_message_logger": "Záznamník zpráv",
+                "debug_file_pinned_best_friend": "Připnutý nejlepší přítel",
+                "debug_file_native_sig_cache": "Mezipaměť nativních podpisů"
+            },
+            "tasks": {
+                "no_tasks": "Žádné úlohy",
+                "merge_button": "Sloučit",
+                "failed_to_open_file": "Otevření souboru se nezdařilo",
+                "merge_files_toast": "Slučování {count} souborů",
+                "remove_selected_tasks_title": "Opravdu chcete odstranit vybrané úkoly?",
+                "remove_all_tasks_title": "Opravdu chcete odstranit všechny úkoly?",
+                "delete_files_option": "Smazat také soubory",
+                "remove_selected_tasks_confirm": "Odstranit {count} úkolů?",
+                "remove_all_tasks_confirm": "Odstranit všechny úkoly?",
+                "clear_tasks_description": "Vymazat úkoly",
+                "file_not_found_icon_description": "Soubor nenalezen",
+                "image_icon_description": "Obrázek",
+                "video_icon_description": "Video",
+                "audio_icon_description": "Zvuk",
+                "file_icon_description": "Soubor",
+                "download_icon_description": "Stáhnout",
+                "chat_action_icon_description": "Akce chatu",
+                "cancel_icon_description": "Zrušit",
+                "success_icon_description": "Úspěch",
+                "failure_icon_description": "Selhání",
+                "cancelled_icon_description": "Zrušeno",
+                "task_status_failure": "Selhání",
+                "task_status_cancelled": "Zrušeno"
+            },
+            "features": {
+                "disabled": "Zakázáno",
+                "export_option": "Exportovat",
+                "import_option": "Importovat",
+                "reset_option": "Resetovat",
+                "config_export_success_toast": "Konfigurace úspěšně exportována",
+                "config_import_success_toast": "Konfigurace úspěšně importována",
+                "config_import_failure_toast": "Import konfigurace se nezdařil {error}",
+                "config_export_failure_toast": "Export konfigurace se nezdařil {error}",
+                "saved_config_snackbar": "Konfigurace uložena",
+                "older_required": "Tato funkce vyžaduje pro správnou funkci Snapchat v{version} nebo starší",
+                "newer_required": "Tato funkce vyžaduje pro správnou funkci Snapchat v{version} nebo novější",
+                "search_button": "Hledat"
+            },
+            "manage_rule_feature": {
+                "disable_state_option": "Zakázáno",
+                "disable_state_subtext": "Žádní přátelé/skupiny nebudou ovlivněni",
+                "whitelist_state_option": "Nikdo kromě...",
+                "whitelist_state_subtext": "Tímto pravidlem bude ovlivněno pouze {count} přátel/skupin",
+                "whitelist_state_button": "Vybrat povolené přátele/skupiny",
+                "blacklist_state_option": "Všichni kromě...",
+                "blacklist_state_subtext": "Tímto pravidlem budou ovlivněni všichni kromě {count} přátel/skupin",
+                "blacklist_state_button": "Vybrat vyloučené přátele/skupiny",
+                "clear_list_button": "Vymazat seznam přátel/skupin",
+                "dialog_clear_confirmation_text": "Opravdu chcete vymazat seznam?"
+            },
+            "social": {
+                "friends_tab": "Přátelé",
+                "groups_tab": "Skupiny",
+                "empty_hint": "(prázdný)",
+                "streaks_expiration_short": "{hours}h"
+            },
+            "manage_scope": {
+                "logged_stories_button": "Zobrazit zaznamenané příběhy",
+                "e2ee_title": "End-to-End šifrování",
+                "rules_title": "Pravidla",
+                "participants_text": "{count} účastníků",
+                "not_found": "Nenalezeno",
+                "streaks_title": "Série",
+                "streaks_length_text": "Délka: {length}",
+                "streaks_expiration_text": "Vyprší za {eta}",
+                "streaks_expiration_text_expired": "Vypršelo",
+                "reminder_button": "Nastavit připomenutí",
+                "delete_scope_confirm_dialog_title": "Opravdu chcete smazat {scope}?",
+                "notes_placeholder": "Kliknutím přidáte poznámku",
+                "invalid_key_size_32_bytes": "Neplatná velikost klíče (musí být 32 bajtů)",
+                "successfully_imported_key": "Klíč úspěšně importován",
+                "failed_to_import_key": "Import klíče se nezdařil: {message}",
+                "export_base64_button": "Exportovat Base64",
+                "import_base64_button": "Importovat Base64"
+            },
+            "logged_stories": {
+                "story_failed_to_load": "Načtení příběhu se nezdařilo",
+                "no_stories": "Nebyly nalezeny žádné příběhy",
+                "save_from_cache_button": "Uložit z mezipaměti",
+                "downloaded_to_path": "Staženo do {path}",
+                "download_failed": "Stažení se nezdařilo: {message}",
+                "posted_at": "Zveřejněno {date}",
+                "created_at": "Vytvořeno {date}",
+                "failed_to_open_file": "Otevření souboru se nezdařilo. Zkontrolujte protokoly pro více informací",
+                "failed_to_get_file": "Načtení souboru se nezdařilo"
+            },
+            "messaging_preview": {
+                "processed_messages_toast": "Zpracováno {count} zpráv",
+                "processed_messages_text": "Zpracováno {count} zpráv",
+                "close_button_description": "Zavřít",
+                "bridge_connection_failed": "Připojení k můstku se nezdařilo. Ujistěte se, že Snapchat běží na pozadí",
+                "bridge_init_failed": "Inicializace můstku pro zasílání zpráv se nezdařila. Ujistěte se, že Snapchat běží na pozadí",
+                "message_fetch_failed": "Načtení zpráv se nezdařilo",
+                "no_message_hint": "Žádná zpráva",
+                "save_selection_option": "Uložit výběr",
+                "save_all_option": "Uložit vše",
+                "unsave_selection_option": "Zrušit uložení výběru",
+                "unsave_all_option": "Zrušit uložení všeho",
+                "mark_selection_as_seen_option": "Označit vybrané jako přečtené",
+                "mark_all_as_seen_option": "Označit vše jako přečtené",
+                "delete_selection_option": "Smazat výběr",
+                "delete_all_option": "Smazat vše"
+            },
+            "logger_history": {
+                "download_started_toast": "Stahování zahájeno!",
+                "download_success_toast": "Staženo do {path}",
+                "download_failed_toast": "Stažení {message} se nezdařilo",
+                "edited_at_text": "{message} (upraveno {date})",
+                "download_button": "Stáhnout",
+                "select_conversation_placeholder": "Vybrat konverzaci",
+                "close_button_description": "Zavřít",
+                "search_button_description": "Hledat",
+                "list_friend_format": "Přítel {name}",
+                "list_group_format": "Skupina {name}",
+                "no_more_messages": "Žádné další zprávy",
+                "reverse_order_checkbox": "Obrácené pořadí",
+                "chat_attachment": "Příloha {index}",
+                "empty_message": "Prázdná zpráva chatu",
+                "message_parse_failed": "Analýza zprávy se nezdařila",
+                "unknown_sender": "Neznámý odesílatel",
+                "download_attachment_failed_toast": "Stažení přílohy se nezdařilo",
+                "log_header_format": "{username} ({type}) - {date}"
+            },
+            "file_imports": {
+                "import_file_button": "Importovat soubor",
+                "file_not_found": "Soubor nenalezen",
+                "file_import_failed": "Import souboru se nezdařil: {error}",
+                "file_imported": "Soubor úspěšně importován",
+                "file_delete_failed": "Smazání souboru se nezdařilo",
+                "no_files_hint": "Zde můžete importovat soubory pro použití ve Snapchatu. Stisknutím tlačítka níže importujete soubor."
+            },
+            "better_location": {
+                "spoofed_coordinates_title": "Zem. šířka {latitude}, Zem. délka {longitude}",
+                "save_coordinates_dialog_title": "Uložit souřadnice",
+                "saved_name_dialog_hint": "Uložený název",
+                "latitude_dialog_hint": "Zeměpisná šířka",
+                "longitude_dialog_hint": "Zeměpisná délka",
+                "save_dialog_button": "Uložit",
+                "choose_location_button": "Vybrat polohu",
+                "teleport_to_friend_button": "Teleportovat se k příteli",
+                "spoof_location_toggle": "Falšovat polohu",
+                "suspend_location_updates": "Pozastavit aktualizace polohy",
+                "saved_coordinates_title": "Uložené souřadnice",
+                "no_saved_coordinates_hint": "Žádné uložené souřadnice",
+                "delete_dialog_title": "Smazat uložené souřadnice",
+                "delete_dialog_message": "Opravdu chcete smazat tyto uložené souřadnice?",
+                "teleport_to_friend_title": "Teleportovat se k příteli",
+                "search_bar": "Hledat",
+                "no_friends_map": "Na mapě nejsou žádní přátelé",
+                "no_friends_found": "Nebyly nalezeny žádné přátele",
+                "edit_location_button_description": "Upravit polohu",
+                "add_icon_description": "Přidat",
+                "edit_icon_description": "Upravit",
+                "delete_icon_description": "Smazat"
+            }
+        },
+        "dialogs": {
+            "add_friend": {
+                "title": "Přidat přítele nebo skupinu",
+                "search_hint": "Hledat",
+                "fetch_error": "Načtení dat se nezdařilo",
+                "category_groups": "Skupiny",
+                "category_friends": "Přátelé",
+                "participants_text": "{count} účastníků",
+                "search_icon_description": "Hledat"
+            },
+            "scripting_warning": {
+                "title": "Varování",
+                "content": "PurrfectSnap obsahuje skriptovací nástroj, který umožňuje spouštění uživatelsky definovaného kódu na vašem zařízení. Buďte extrémně opatrní a instalujte moduly pouze ze známých a spolehlivých zdrojů. Neoprávněné nebo neověřené moduly mohou představovat bezpečnostní rizika pro váš systém."
+            },
+            "reset_config": {
+                "title": "Resetovat konfiguraci",
+                "content": "Opravdu chcete resetovat konfiguraci?",
+                "success_toast": "Konfigurace úspěšně resetována"
+            },
+            "export_config": {
+                "title": "Exportovat citlivá data?",
+                "content": "Chcete exportovat konfiguraci s citlivými daty? (např. souřadnice polohy atd.)"
+            },
+            "messaging_action": {
+                "title": "Vyberte typy obsahu ke zpracování",
+                "select_all_button": "Vybrat vše"
+            },
+            "file_imports": {
+                "no_files_settings_hint": "Nebyly nalezeny žádné soubory. Ujistěte se, že jste importovali požadované soubory v sekci Import souborů",
+                "settings_select_file_hint": "Vybrat importovaný soubor"
+            },
+            "quick_actions_dialog": {
+                "title": "Upravit rychlé akce",
+                "subtitle": "Vyberte a změňte velikost svých rychlých akcí."
+            }
+        },
+        "friend_tracker": {
+            "rules_tab": "Pravidla",
+            "logs_tab": "Protokoly",
+            "export_dialog_title": "Exportovat",
+            "bulk_export_button": "Hromadný export",
+            "individual_export_button": "Individuální export",
+            "invalid_import_type_dialog_title": "Neplatný typ importu",
+            "invalid_import_type_dialog_text": "Vybraný soubor není kompatibilní s tímto typem importu. Vyberte prosím správný typ importu.",
+            "import_dialog_title": "Importovat",
+            "bulk_import_button": "Hromadný import",
+            "individual_import_button": "Individuální import",
+            "import_button_description": "Importovat",
+            "export_button_description": "Exportovat",
+            "export_button": "Exportovat",
+            "delete_button_description": "Smazat",
+            "delete_button": "Smazat",
+            "catalog_button_description": "Katalog",
+            "catalog_button": "Katalog",
+            "add_rule_button_description": "Přidat pravidlo",
+            "add_rule_button": "Přidat pravidlo",
+            "no_rules_found": "Nebyly nalezeny žádné pravidla",
+            "empty_rule_name": "(prázdný)",
+            "events_suffix": "události",
+            "scopes_suffix": "rozsahy",
+            "select_rule_to_export_title": "Vybrat pravidlo k exportu",
+            "deleted_logs_toast": "Smazáno {count} protokolů",
+            "delete_logs_dialog_title": "Smazat protokoly?",
+            "deleting_logs_dialog_text": "Mazání {count} protokolů...",
+            "delete_logs_dialog_confirm_text": "Tímto se smažou protokoly na základě aktuálního filtru a vyhledávacího dotazu. Tuto akci nelze vrátit zpět.",
+            "exported_logs_toast": "Protokoly exportovány!",
+            "export_logs_failed_toast": "Export protokolů se nezdařil. Zkontrolujte logcat pro více podrobností.",
+            "export_logs_dialog_title": "Exportovat protokoly?",
+            "exporting_logs_dialog_text": "Exportování protokolů...",
+            "export_logs_dialog_confirm_text": "Tímto se exportují protokoly na základě aktuálního filtru a vyhledávacího dotazu.",
+            "export_as_button": "Exportovat jako {type}",
+            "filters_title": "Filtry",
+            "search_by_label": "Hledat podle",
+            "newest_first_label": "Nejnovější první",
+            "since_label": "Od",
+            "until_label": "Do",
+            "pick_a_date_button": "Vybrat datum",
+            "search_placeholder": "Hledat",
+            "filter_button_description": "Filtr",
+            "clear_button_description": "Vymazat",
+            "no_logs_found": "Nebyly nalezeny žádné protokoly",
+            "log_event_format": "{event} v {conversation}",
+            "condition_only_inside_conversation": "Pouze když jsem v konverzaci",
+            "condition_only_outside_conversation": "Pouze když jsem mimo konverzaci",
+            "condition_only_when_app_active": "Pouze když je Snapchat aktivní",
+            "condition_only_when_app_inactive": "Pouze když je Snapchat neaktivní",
+            "condition_no_push_notification_when_app_active": "Žádné push oznámení, když je Snapchat aktivní",
+            "add_event_dialog_title": "Přidat událost",
+            "event_type_label": "Typ události",
+            "triggers_title": "Spouštěče",
+            "conditions_title": "Podmínky",
+            "add_button": "Přidat",
+            "default_rule_name": "Vlastní pravidlo",
+            "discard_changes_dialog_title": "Zahodit změny?",
+            "discard_changes_dialog_text": "Máte neuložené změny. Opravdu je chcete zahodit?",
+            "discard_button": "Zahodit",
+            "cannot_save_rule_dialog_title": "Nelze uložit pravidlo",
+            "cannot_save_rule_dialog_text": "Pravidlo musí mít alespoň jednu událost, aby se dalo uložit.",
+            "duplicate_rule_name_dialog_title": "Duplicitní název pravidla",
+            "duplicate_rule_name_dialog_text": "Pravidlo s tímto názvem již existuje. Vyberte prosím jiný název.",
+            "delete_rule_dialog_title": "Smazat pravidlo",
+            "delete_rule_dialog_text": "Opravdu chcete smazat toto pravidlo?",
+            "new_rule_title": "Nové pravidlo",
+            "edit_rule_title": "Upravit pravidlo",
+            "back_button_description": "Zpět",
+            "save_button_description": "Uložit",
+            "general_section_title": "Obecné",
+            "rule_name_label": "Název pravidla",
+            "author_name_label": "Jméno autora",
+            "scope_section_title": "Rozsah",
+            "scope_all": "Vše",
+            "scope_whitelist": "Whitelist",
+            "scope_blacklist": "Černá listina",
+            "select_friends_groups_button": "Vybrat přátele/skupiny ({count})",
+            "events_section_title": "Události",
+            "add_event_button": "Přidat událost",
+            "no_events_text": "Žádné události"
+        },
+        "friend_tracker_catalog": {
+            "download_failed": "Stažení se nezdařilo: {code}",
+            "error": "Chyba: {message}",
+            "no_repos_added": "Nebyly přidány žádné repozitáře.",
+            "no_rules_available": "Z žádného repozitáře nejsou k dispozici žádná pravidla.",
+            "by_author": "od {author}",
+            "imported_button": "Importováno",
+            "import_button": "Importovat",
+            "title": "Katalog sledování přátel",
+            "manage_repos_description": "Spravovat repozitáře"
+        },
+        "friend_tracker_export": {
+            "title": "Exportovat pravidla",
+            "back_button_description": "Zpět",
+            "exported_toast": "Pravidla sledování přátel exportována!",
+            "export_failed_toast": "Export pravidel se nezdařil: {message}",
+            "save_button": "Uložit",
+            "expand_button_description": "Rozbalit"
+        },
+        "friend_tracker_import": {
+            "title": "Importovat pravidla",
+            "back_button_description": "Zpět",
+            "imported_toast": "Pravidla sledování přátel importována!",
+            "import_failed_toast": "Import pravidel se nezdařil: {message}",
+            "confirm_button": "Potvrdit",
+            "expand_button_description": "Rozbalit"
+        },
+        "friend_tracker_repos": {
+            "invalid_repo_title": "Neplatný repozitář",
+            "add_repo_button": "Přidat repozitář",
+            "add_repo_dialog_title": "Přidat URL repozitáře",
+            "repo_url_label": "URL repozitáře",
+            "repo_added_toast": "Repozitář úspěšně přidán!",
+            "invalid_repo_error": "Toto se nezdá být platným repozitářem skriptů.",
+            "add_repo_failed_toast": "Přidání repozitáře se nezdařilo: {message}",
+            "add_button": "Přidat",
+            "no_repos_added": "Nebyly přidány žádné repozitáře",
+            "remove_button": "Odstranit",
+            "remove_repo_dialog_title": "Odstranit repozitář",
+            "remove_repo_dialog_text": "Opravdu chcete odstranit tento repozitář?"
+        },
+        "navigation": {
+            "tracker_tab_label": "Sledovač",
+            "customize_bottom_bar_title": "Přizpůsobit spodní lištu",
+            "customize_bottom_bar_subtitle": "Změňte pořadí, přidejte nebo odeberte karty. Maximálně pět.",
+            "shown_tabs_title": "Zobrazené karty",
+            "no_tabs_selected_text": "Nebyly vybrány žádné karty",
+            "available_tabs_title": "Dostupné karty",
+            "reset_button": "Resetovat",
+            "done_button": "Hotovo"
+        },
+        "scripting": {
+            "script_already_installed": "Skript je již nainstalován!",
+            "downloading_script": "Stahování skriptu...",
+            "script_downloaded": "Skript {name} stažen!",
+            "download_script_failed": "Stažení skriptu se nezdařilo. Zkontrolujte protokoly pro více podrobností",
+            "import_script_from_url_title": "Importovat skript z URL",
+            "import_script_warning": "Varování: Importované skripty mohou být škodlivé pro vaše zařízení. Importujte skripty pouze z důvěryhodných zdrojů.",
+            "enter_url_label": "Zadejte URL zde:",
+            "script_imported": "Skript {name} importován!",
+            "import_failed": "Import skriptu se nezdařil. {message}. Zkontrolujte protokoly pro více podrobností",
+            "import_button": "Importovat",
+            "update_module_button": "Aktualizovat modul",
+            "updating_script": "Aktualizace skriptu {name}...",
+            "module_not_found": "Modul nenalezen",
+            "updated_script": "{name} aktualizován na verzi {version}",
+            "update_module_failed": "Aktualizace modulu se nezdařila. Zkontrolujte protokoly pro více podrobností",
+            "edit_module_button": "Upravit modul",
+            "open_module_failed": "Otevření souboru modulu se nezdařilo. Zkontrolujte protokoly pro více podrobností",
+            "clear_module_data_button": "Vymazat data modulu",
+            "module_data_cleared": "Data modulu vymazána!",
+            "clear_module_data_failed": "Vymazání dat modulu se nezdařilo. Zkontrolujte protokoly pro více podrobností",
+            "delete_module_button": "Smazat modul",
+            "deleted_script": "Smazán skript {name}!",
+            "delete_module_failed": "Smazání modulu se nezdařilo. Zkontrolujte protokoly pro více podrobností",
+            "actions_title": "Akce",
+            "no_description": "Žádný popis",
+            "update_available": "K dispozici je aktualizace: {version}",
+            "actions_button": "Akce",
+            "loaded_script": "Načten skript {name}",
+            "unloaded_script": "Uvolněn skript {name}",
+            "enable_script_failed": "Povolení skriptu se nezdařilo. Zkontrolujte protokoly pro více podrobností",
+            "disable_script_failed": "Zakázání skriptu se nezdařilo. Zkontrolujte protokoly pro více podrobností",
+            "select_scripts_folder_toast": "Vyberte prosím složku se skripty!",
+            "manage_repos_button": "Spravovat repozitáře",
+            "import_from_url_button": "Importovat z URL",
+            "open_scripts_folder_button": "Otevřít složku se skripty",
+            "no_settings_for_module": "Tento modul nemá žádná nastavení",
+            "installed_scripts_tab": "Nainstalované skripty",
+            "catalog_tab": "Katalog",
+            "no_scripts_folder_selected_title": "Není vybrána žádná složka se skripty",
+            "select_folder_button": "Vybrat složku",
+            "no_scripts_found_title": "Nebyly nalezeny žádné skripty.",
+            "use_catalog_to_add_scripts": "Použijte kartu katalogu k přidání skriptů!",
+            "ok_button_timeout": "Dobře ({timeout})",
+            "documentation_button": "Dokumentace",
+            "catalog": {
+                "script_already_installed": "Skript je již nainstalován!",
+                "download_failed": "Stažení se nezdařilo: {code}",
+                "script_downloaded": "Skript stažen!",
+                "could_not_create_file": "Nelze vytvořit soubor.",
+                "no_scripts_folder_selected": "Není vybrána žádná složka se skripty.",
+                "error": "Chyba: {message}",
+                "no_repos_added": "Nebyly přidány žádné repozitáře.",
+                "repo_list_info": "Zde naleznete seznam repozitářů: ",
+                "link_text": "Odkaz",
+                "no_scripts_available": "Z žádného repozitáře nejsou k dispozici žádné skripty.",
+                "by_author": "od {author}",
+                "version": "Verze: {version}",
+                "installed_button": "Nainstalováno",
+                "download_button": "Stáhnout"
+            },
+            "repos": {
+                "invalid_repo_title": "Neplatný repozitář",
+                "add_repo_button": "Přidat repozitář",
+                "add_repo_dialog_title": "Přidat URL repozitáře",
+                "repo_url_label": "URL repozitáře",
+                "repo_added_toast": "Repozitář úspěšně přidán!",
+                "invalid_repo_error": "Toto se nezdá být platným repozitářem skriptů.",
+                "add_repo_failed_toast": "Přidání repozitáře se nezdařilo: {message}",
+                "add_button": "Přidat",
+                "no_repos_added": "Nebyly přidány žádné repozitáře",
+                "remove_button": "Odstranit",
+                "remove_repo_dialog_title": "Odstranit repozitář",
+                "remove_repo_dialog_text": "Opravdu chcete odstranit tento repozitář?"
+            }
+        },
+        "features": {
+            "config_import": {
+                "title": "Potvrdit import",
+                "back_button_description": "Zpět",
+                "config_imported_toast": "Konfigurace importována!",
+                "confirm_button": "Potvrdit",
+                "expand_button_description": "Rozbalit",
+                "enable_feature": "Povolit funkci",
+                "enabled": "Povoleno",
+                "disabled": "Zakázáno"
+            },
+            "config_export": {
+                "title": "Souhrn exportu",
+                "back_button_description": "Zpět",
+                "save_button": "Uložit",
+                "expand_button_description": "Rozbalit",
+                "enable_feature": "Povolit funkci",
+                "enabled": "Povoleno",
+                "disabled": "Zakázáno"
+            }
+        },
+        "manage_repos": {
+            "title": "Spravovat repozitáře {type}",
+            "add_repo_button": "Přidat repozitář",
+            "add_repo_dialog_title": "Přidat URL repozitáře",
+            "repo_url_label": "URL repozitáře",
+            "repo_added_successfully": "Repozitář úspěšně přidán!",
+            "add_repo_failed": "Přidání repozitáře se nezdařilo: {message}",
+            "add_button": "Přidat",
+            "no_repos_added": "Nebyly přidány žádné repozitáře",
+            "remove_button": "Odstranit"
+        }
+    },
+    "rules": {
+        "toasts": {
+            "enabled": "{ruleName} povoleno",
+            "disabled": "{ruleName} zakázáno"
+        },
+        "modes": {
+            "blacklist": "Režim blacklistu",
+            "whitelist": "Režim whitelistu"
+        },
+        "properties": {
+            "auto_download": {
+                "name": "Automatické stahování",
+                "description": "Automaticky stahovat snapy při jejich prohlížení",
+                "options": {
+                    "blacklist": "Vyloučit z automatického stahování",
+                    "whitelist": "Automatické stahování"
+                }
+            },
+            "stealth": {
+                "name": "Stealth režim",
+                "description": "Zabraňuje komukoli vědět, že jste otevřeli jejich snapy/chaty a konverzace",
+                "options": {
+                    "blacklist": "Vyloučit ze Stealth režimu",
+                    "whitelist": "Stealth režim"
+                }
+            },
+            "auto_save": {
+                "name": "Automatické ukládání",
+                "description": "Ukládá zprávy chatu při jejich prohlížení",
+                "options": {
+                    "blacklist": "Vyloučit z automatického ukládání",
+                    "whitelist": "Automatické ukládání"
+                }
+            },
+            "unsaveable_messages": {
+                "name": "Neuložitelné zprávy",
+                "description": "Zabraňuje ukládání zpráv v chatu jinými lidmi",
+                "options": {
+                    "blacklist": "Vyloučit z neuložitelných zpráv",
+                    "whitelist": "Neuložitelné zprávy"
+                }
+            },
+            "auto_open_snaps": {
+                "name": "Automaticky otevírat snapy",
+                "description": "Automaticky otevírá snapy při jejich přijetí",
+                "options": {
+                    "blacklist": "Vyloučit z automatického otevírání snapů",
+                    "whitelist": "Automaticky otevírat snapy"
+                }
+            },
+            "hide_friend_feed": {
+                "name": "Skrýt z kanálu přátel"
+            },
+            "e2e_encryption": {
+                "name": "Použít E2E šifrování"
+            },
+            "pin_conversation": {
+                "name": "Připnout konverzaci"
+            },
+            "exclude_message_logger": {
+                "name": "Vyloučit ze záznamníku zpráv"
+            }
+        }
+    },
+    "actions": {
+        "clean_snapchat_cache": {
+            "name": "Vyčistit mezipaměť Snapchatu",
+            "description": "Vyčistí mezipaměť Snapchatu"
+        },
+        "manage_friend_list": {
+            "name": "Spravovat seznam přátel",
+            "description": "Import/export seznamu přátel při zálohování"
+        },
+        "export_chat_messages": {
+            "name": "Exportovat zprávy chatu",
+            "description": "Exportuje zprávy konverzace do souboru JSON/HTML/TXT"
+        },
+        "export_memories": {
+            "name": "Exportovat vzpomínky",
+            "description": "Exportuje vzpomínky do souboru ZIP"
+        },
+        "bulk_messaging_action": {
+            "name": "Hromadná akce zasílání zpráv",
+            "description": "Provádí operace jako mazání přátel nebo hromadné mazání konverzací"
+        },
+        "regen_mappings": {
+            "name": "Znovu vygenerovat mapování",
+            "description": "Ručně znovu vygenerovat mapování"
+        },
+        "change_language": {
+            "name": "Změnit jazyk",
+            "description": "Změnit jazyk PurrfectSnap"
+        },
+        "file_imports": {
+            "name": "Import souborů",
+            "description": "Importovat soubory pro použití ve Snapchatu"
+        },
+        "friend_tracker": {
+            "name": "Sledování přátel",
+            "description": "Sledovat své přátele na Snapchatu"
+        },
+        "logger_history": {
+            "name": "Historie záznamů",
+            "description": "Zobrazit historii zaznamenaných zpráv"
+        }
+    },
+    "features": {
+        "notices": {
+            "unstable": "⚠️ Nestabilní",
+            "ban_risk": "⚠️ Tato funkce může způsobit zákazy",
+            "internal_behavior": "⚠️ Toto může narušit interní chování Snapchatu"
+        },
+        "properties": {
+            "downloader": {
+                "name": "Stahovač",
+                "description": "Stahovat média Snapchatu",
+                "properties": {
+                    "save_folder": {
+                        "name": "Složka pro ukládání",
+                        "description": "Vyberte adresář, do kterého se mají stahovat všechna média"
+                    },
+                    "auto_download_sources": {
+                        "name": "Zdroje automatického stahování",
+                        "description": "Vyberte zdroje, ze kterých se má automaticky stahovat"
+                    },
+                    "prevent_self_auto_download": {
+                        "name": "Zabránit vlastnímu automatickému stahování",
+                        "description": "Zabraňuje automatickému stahování vašich vlastních snapů"
+                    },
+                    "path_format": {
+                        "name": "Formát cesty",
+                        "description": "Zadejte formát cesty k souboru"
+                    },
+                    "allow_duplicate": {
+                        "name": "Povolit duplikáty",
+                        "description": "Umožňuje stahovat stejná média vícekrát"
+                    },
+                    "merge_overlays": {
+                        "name": "Sloučit překryvy",
+                        "description": "Kombinuje text a média snapu do jednoho souboru"
+                    },
+                    "force_image_format": {
+                        "name": "Vynutit formát obrázku",
+                        "description": "Vynutí ukládání obrázků v zadaném formátu"
+                    },
+                    "force_voice_note_format": {
+                        "name": "Vynutit formát hlasové poznámky",
+                        "description": "Vynutí ukládání hlasových poznámek v zadaném formátu"
+                    },
+                    "auto_download_voice_notes": {
+                        "name": "Automaticky stahovat hlasové poznámky",
+                        "description": "Automaticky stahuje hlasové poznámky při jejich přehrávání"
+                    },
+                    "download_profile_pictures": {
+                        "name": "Stahovat profilové obrázky",
+                        "description": "Umožňuje stahovat profilové obrázky z profilové stránky"
+                    },
+                    "opera_download_button": {
+                        "name": "Tlačítko stahování Opera",
+                        "description": "Přidá tlačítko stahování v pravém horním rohu při prohlížení snapu.\nDlouhým stisknutím tlačítek se vynutí stahování"
+                    },
+                    "download_context_menu": {
+                        "name": "Kontextové menu stahování",
+                        "description": "Umožňuje stahovat/prohlížet zprávy z konverzace nebo příběhu pomocí kontextového menu.\nDlouhým stisknutím tlačítek se vynutí stahování"
+                    },
+                    "ffmpeg_options": {
+                        "name": "Možnosti FFmpeg",
+                        "description": "Zadejte další možnosti FFmpeg",
+                        "properties": {
+                            "threads": {
+                                "name": "Vlákna",
+                                "description": "Počet vláken k použití"
+                            },
+                            "preset": {
+                                "name": "Přednastavení",
+                                "description": "Nastavte rychlost převodu"
+                            },
+                            "constant_rate_factor": {
+                                "name": "Faktor konstantní rychlosti",
+                                "description": "Nastavte faktor konstantní rychlosti pro video kodér\nOd 0 do 51 pro libx264"
+                            },
+                            "video_bitrate": {
+                                "name": "Video bitrate",
+                                "description": "Nastavte video bitrate (kbps)"
+                            },
+                            "audio_bitrate": {
+                                "name": "Audio bitrate",
+                                "description": "Nastavte audio bitrate (kbps)"
+                            },
+                            "custom_video_codec": {
+                                "name": "Vlastní video kodek",
+                                "description": "Nastavte vlastní video kodek (např. libx264)"
+                            },
+                            "custom_audio_codec": {
+                                "name": "Vlastní audio kodek",
+                                "description": "Nastavte vlastní audio kodek (např. AAC)"
+                            }
+                        }
+                    },
+                    "logging": {
+                        "name": "Protokolování",
+                        "description": "Zobrazuje toasty při stahování médií"
+                    },
+                    "custom_path_format": {
+                        "name": "Vlastní formát cesty",
+                        "description": "Zadejte vlastní formát cesty pro stažená média\n\nDostupné proměnné:\n - %username%\n - %source%\n - %hash%\n - %date_time%"
+                    }
+                }
+            },
+            "user_interface": {
+                "name": "Uživatelské rozhraní",
+                "description": "Změnit vzhled a dojem Snapchatu",
+                "properties": {
+                    "enable_app_appearance": {
+                        "name": "Povolit nastavení vzhledu aplikace",
+                        "description": "Povolí skryté nastavení vzhledu aplikace\nNemusí být vyžadováno v novějších verzích Snapchatu"
+                    },
+                    "friend_feed_message_preview": {
+                        "name": "Náhled zprávy v kanálu přátel",
+                        "description": "Zobrazí náhled posledních zpráv v kanálu přátel",
+                        "properties": {
+                            "amount": {
+                                "name": "Množství",
+                                "description": "Množství zpráv k náhledu"
+                            }
+                        }
+                    },
+                    "snap_preview": {
+                        "name": "Náhled snapu",
+                        "description": "Zobrazí malý náhled vedle nepřečtených snapů v chatu"
+                    },
+                    "bootstrap_override": {
+                        "name": "Přepsání bootstrapu",
+                        "description": "Přepíše nastavení bootstrapu uživatelského rozhraní",
+                        "properties": {
+                            "app_appearance": {
+                                "name": "Vzhled aplikace",
+                                "description": "Nastaví trvalý vzhled aplikace"
+                            },
+                            "home_tab": {
+                                "name": "Karta Domů",
+                                "description": "Přepíše úvodní kartu při otevření Snapchatu"
+                            }
+                        }
+                    },
+                    "force_amoled_theme": {
+                        "name": "Tmavý režim Amoled",
+                        "description": "Používá skutečně černé pozadí pro tmavý motiv"
+                    },
+                    "map_friend_nametags": {
+                        "name": "Vylepšené jmenovky přátel na mapě",
+                        "description": "Vylepšuje jmenovky přátel na Snapmapě"
+                    },
+                    "prevent_message_list_auto_scroll": {
+                        "name": "Zabránit automatickému posouvání seznamu zpráv",
+                        "description": "Zabraňuje posouvání seznamu zpráv dolů při odesílání/přijímání zprávy"
+                    },
+                    "streak_expiration_info": {
+                        "name": "Zobrazit informace o vypršení série",
+                        "description": "Zobrazí časovač vypršení série vedle počítadla sérií"
+                    },
+                    "hide_friend_feed_entry": {
+                        "name": "Skrýt položku v kanálu přátel",
+                        "description": "Skryje konkrétního přítele z kanálu přátel\nPro správu této funkce použijte sociální kartu"
+                    },
+                    "hide_streak_restore": {
+                        "name": "Skrýt obnovení série",
+                        "description": "Skryje tlačítko Obnovit v kanálu přátel"
+                    },
+                    "hide_quick_add_suggestions": {
+                        "name": "Skrýt návrhy rychlého přidání",
+                        "description": "Odstraní návrhy rychlého přidání přátel"
+                    },
+                    "hide_story_suggestions": {
+                        "name": "Skrýt návrhy příběhů",
+                        "description": "Odstraní návrhy ze stránky Příběhy"
+                    },
+                    "hide_ui_components": {
+                        "name": "Skrýt komponenty uživatelského rozhraní",
+                        "description": "Vyberte, které komponenty uživatelského rozhraní se mají skrýt"
+                    },
+                    "opera_media_quick_info": {
+                        "name": "Rychlé informace o médiích Opera",
+                        "description": "Zobrazuje užitečné informace o médiích, jako je datum vytvoření, v kontextovém menu prohlížeče opera"
+                    },
+                    "old_bitmoji_selfie": {
+                        "name": "Staré selfie Bitmoji",
+                        "description": "Vrací selfie Bitmoji ze starších verzí Snapchatu"
+                    },
+                    "disable_spotlight": {
+                        "name": "Zakázat Spotlight",
+                        "description": "Zakáže stránku Spotlight"
+                    },
+                    "friend_feed_menu_buttons": {
+                        "name": "Tlačítka menu kanálu přátel",
+                        "description": "Vyberte, která tlačítka se mají zobrazit v menu kanálu přátel"
+                    },
+                    "auto_close_friend_feed_menu": {
+                        "name": "Automaticky zavřít menu kanálu přátel",
+                        "description": "Automaticky zavře menu kanálu přátel po stisknutí tlačítka nastavení"
+                    },
+                    "vertical_story_viewer": {
+                        "name": "Vertikální prohlížeč příběhů",
+                        "description": "Povolí vertikální prohlížeč příběhů pro všechny příběhy"
+                    },
+                    "enable_friend_feed_menu_bar": {
+                        "name": "Lišta menu kanálu přátel",
+                        "description": "Povolí novou lištu menu kanálu přátel"
+                    },
+                    "message_indicators": {
+                        "name": "Indikátory zpráv",
+                        "description": "Přidá ke zprávám specifické ikony indikátorů\nPoznámka: Indikátory nemusí být 100% přesné"
+                    },
+                    "stealth_mode_indicator": {
+                        "name": "Indikátor stealth režimu",
+                        "description": "Přidá emotikon 👻 vedle konverzací v stealth režimu"
+                    },
+                    "edit_text_override": {
+                        "name": "Přepsání úpravy textu",
+                        "description": "Přepíše chování textového pole"
+                    },
+                    "prevent_forced_keyboard": {
+                        "name": "Zabránit vynucené klávesnici",
+                        "description": "Zabraňuje Snapchatu automaticky zobrazovat klávesnici při otevření konverzace"
+                    },
+                    "settings_menu": {
+                        "name": "Menu nastavení",
+                        "description": "Změní způsob, jakým otevíráte menu PurrfectSnap",
+                        "options": {
+                            "default": "Výchozí",
+                            "legacy": "Starší"
+                        }
+                    }
+                }
+            },
+            "messaging": {
+                "name": "Zasílání zpráv",
+                "description": "Změnit způsob interakce s přáteli",
+                "properties": {
+                    "bypass_screenshot_detection": {
+                        "name": "Obejít detekci snímků obrazovky",
+                        "description": "Zabraňuje Snapchatu detekovat pořízení snímku obrazovky"
+                    },
+                    "anonymous_story_viewing": {
+                        "name": "Anonymní prohlížení příběhů",
+                        "description": "Zabraňuje komukoli vědět, že jste viděli jejich příběh"
+                    },
+                    "prevent_story_rewatch_indicator": {
+                        "name": "Zabránit indikátoru opětovného zhlédnutí příběhu",
+                        "description": "Zabraňuje komukoli vědět, že jste znovu zhlédli jejich příběh"
+                    },
+                    "hide_peek_a_peek": {
+                        "name": "Skrýt Peek-a-Peek",
+                        "description": "Zabraňuje odesílání oznámení, když se napůl přejedete do chatu"
+                    },
+                    "hide_bitmoji_presence": {
+                        "name": "Skrýt přítomnost Bitmoji",
+                        "description": "Zabraňuje zobrazování vašeho Bitmoji v chatu"
+                    },
+                    "hide_typing_notifications": {
+                        "name": "Skrýt oznámení o psaní",
+                        "description": "Zabraňuje komukoli vědět, že píšete zprávu"
+                    },
+                    "unlimited_snap_view_time": {
+                        "name": "Neomezená doba prohlížení snapu",
+                        "description": "Odstraňuje časový limit pro prohlížení snapů"
+                    },
+                    "auto_mark_as_read": {
+                        "name": "Automaticky označit jako přečtené",
+                        "description": "Automaticky označí zprávy/snapy jako přečtené, i když je povolen Stealth režim"
+                    },
+                    "mark_snap_as_seen_button": {
+                        "name": "Tlačítko Označit snap jako přečtený",
+                        "description": "Přidá tlačítko pro označení snapu jako přečteného při jeho prohlížení.\nTo bude fungovat i v Stealth režimu"
+                    },
+                    "skip_when_marking_as_seen": {
+                        "name": "Přeskočit při označování jako přečtené",
+                        "description": "Automaticky přeskočí na další snap při označování snapu jako přečteného.\nPoužijte v kombinaci s tlačítkem Označit snap jako přečtený"
+                    },
+                    "loop_media_playback": {
+                        "name": "Smyčka přehrávání médií",
+                        "description": "Smyčkuje přehrávání médií při prohlížení snapů/příběhů"
+                    },
+                    "disable_replay_in_ff": {
+                        "name": "Zakázat opakované přehrávání v FF",
+                        "description": "Zakáže možnost opakovaného přehrávání dlouhým stisknutím z kanálu přátel"
+                    },
+                    "half_swipe_notifier": {
+                        "name": "Oznámení o polovičním přejetí",
+                        "description": "Upozorní vás, když někdo napůl přejede do konverzace",
+                        "properties": {
+                            "min_duration": {
+                                "name": "Minimální doba trvání",
+                                "description": "Minimální doba trvání polovičního přejetí (v sekundách)"
+                            },
+                            "max_duration": {
+                                "name": "Maximální doba trvání",
+                                "description": "Maximální doba trvání polovičního přejetí (v sekundách)"
+                            }
+                        }
+                    },
+                    "call_start_confirmation": {
+                        "name": "Potvrzení zahájení hovoru",
+                        "description": "Zobrazí potvrzovací dialog při zahájení hovoru"
+                    },
+                    "unlimited_conversation_pinning": {
+                        "name": "Neomezené připínání konverzací",
+                        "description": "Umožňuje připnout neomezené množství konverzací lokálně"
+                    },
+                    "disable_snap_mode_restrictions": {
+                        "name": "Zakázat omezení režimu Snap",
+                        "description": "Umožňuje prohlížet samodestrukční snapy bez omezení"
+                    },
+                    "prevent_message_sending": {
+                        "name": "Zabránit odesílání zpráv",
+                        "description": "Zabraňuje odesílání určitých typů zpráv"
+                    },
+                    "friend_mutation_notifier": {
+                        "name": "Oznámení o mutaci přítele",
+                        "description": "Upozorní vás, když se něco změní v profilu přítele"
+                    },
+                    "better_notifications": {
+                        "name": "Lepší oznámení",
+                        "description": "Přidá více informací do přijatých oznámení",
+                        "properties": {
+                            "group_notifications": {
+                                "name": "Skupinová oznámení",
+                                "description": "Seskupí oznámení do jednoho"
+                            },
+                            "chat_preview": {
+                                "name": "Náhled chatu",
+                                "description": "Zobrazí náhled přijatých zpráv v oznámení"
+                            },
+                            "media_preview": {
+                                "name": "Náhled médií",
+                                "description": "Zobrazí náhled vybraných typů médií v oznámení"
+                            },
+                            "media_caption": {
+                                "name": "Popisek médií",
+                                "description": "Zobrazí připojený popisek médií v oznámení"
+                            },
+                            "stacked_media_messages": {
+                                "name": "Skládané mediální zprávy",
+                                "description": "Kombinuje více mediálních zpráv do jednoho textového oznámení, když je nelze zobrazit v náhledu. Použijte v kombinaci s náhledem chatu"
+                            },
+                            "friend_add_source": {
+                                "name": "Zdroj přidání přítele",
+                                "description": "Zobrazí zdroj žádosti o přátelství v oznámení"
+                            },
+                            "reply_button": {
+                                "name": "Tlačítko Odpovědět",
+                                "description": "Přidá tlačítko odpovědi do oznámení"
+                            },
+                            "smart_replies": {
+                                "name": "Chytré odpovědi",
+                                "description": "Přidá navrhované odpovědi do oznámení (Android 10+). Použijte v kombinaci s tlačítkem Odpovědět"
+                            },
+                            "download_button": {
+                                "name": "Tlačítko Stáhnout",
+                                "description": "Umožňuje stahovat média z oznámení"
+                            },
+                            "mark_as_read_button": {
+                                "name": "Tlačítko Označit jako přečtené",
+                                "description": "Umožňuje označit zprávu jako přečtenou z oznámení"
+                            },
+                            "mark_as_read_and_save_in_chat": {
+                                "name": "Označit jako přečtené a uložit v chatu",
+                                "description": "Přidá tlačítko označit jako přečtené a uložit v chatu do oznámení"
+                            }
+                        }
+                    },
+                    "notification_blacklist": {
+                        "name": "Blacklist oznámení",
+                        "description": "Vyberte oznámení, která se mají blokovat"
+                    },
+                    "message_logger": {
+                        "name": "Záznamník zpráv",
+                        "description": "Zabraňuje mazání zpráv",
+                        "properties": {
+                            "keep_my_own_messages": {
+                                "name": "Ponechat mé vlastní zprávy",
+                                "description": "Zabraňuje mazání vašich vlastních zpráv"
+                            },
+                            "auto_purge": {
+                                "name": "Automatické čištění",
+                                "description": "Automaticky maže zprávy v mezipaměti, které jsou starší než zadaná doba"
+                            },
+                            "message_filter": {
+                                "name": "Filtr zpráv",
+                                "description": "Vyberte, které zprávy se mají zaznamenávat (prázdný pro všechny zprávy)"
+                            },
+                            "deleted_message_color": {
+                                "name": "Barva smazané zprávy",
+                                "description": "Nastaví barvu smazaných zpráv"
+                            }
+                        }
+                    },
+                    "auto_save_messages_in_conversations": {
+                        "name": "Automaticky ukládat zprávy",
+                        "description": "Automaticky ukládá každou zprávu v konverzacích"
+                    },
+                    "gallery_media_send_override": {
+                        "name": "Přepsání odeslání médií z galerie",
+                        "description": "Falšuje zdroj médií při odesílání z galerie"
+                    },
+                    "strip_media_metadata": {
+                        "name": "Odstranit metadata médií",
+                        "description": "Odstraní metadata médií před odesláním jako zprávy"
+                    },
+                    "bypass_message_retention_policy": {
+                        "name": "Obejít zásady uchovávání zpráv",
+                        "description": "Zabraňuje mazání zpráv po jejich zhlédnutí"
+                    },
+                    "bypass_message_action_restrictions": {
+                        "name": "Obejít omezení akcí se zprávami",
+                        "description": "Umožňuje reagovat na snap, aniž byste ho otevřeli, nebo uložit neuložitelnou zprávu"
+                    },
+                    "remove_groups_locked_status": {
+                        "name": "Odstranit stav uzamčení skupin",
+                        "description": "Umožňuje zobrazit informace o skupině po vyhození"
+                    },
+                    "double_tap_chat_action": {
+                        "name": "Akce dvojitého klepnutí v chatu",
+                        "description": "Provádí vlastní akci při dvojitém klepnutí na zprávu v chatu"
+                    },
+                    "double_tap_chat_action_custom_emoji": {
+                        "name": "Vlastní reakce emotikonem na akci dvojitého klepnutí v chatu",
+                        "description": "Nastaví vlastní reakci emotikonem na akci dvojitého klepnutí v chatu"
+                    }
+                }
+            },
+            "global": {
+                "name": "Globální",
+                "description": "Upravit globální nastavení Snapchatu",
+                "properties": {
+                    "better_location": {
+                        "name": "Lepší poloha",
+                        "description": "Vylepšuje polohu Snapchatu",
+                        "properties": {
+                            "spoof_location": {
+                                "name": "Falšovat polohu",
+                                "description": "Falšuje vaši polohu na zadanou"
+                            },
+                            "coordinates": {
+                                "name": "Souřadnice",
+                                "description": "Nastavte souřadnice falšované polohy"
+                            },
+                            "walk_radius": {
+                                "name": "Poloměr chůze",
+                                "description": "Náhodně se procházet v tomto poloměru (stopy)"
+                            },
+                            "always_update_location": {
+                                "name": "Vždy aktualizovat polohu",
+                                "description": "Vynutí Snapchat aktualizovat polohu, i když nejsou přijata žádná data GPS"
+                            },
+                            "suspend_location_updates": {
+                                "name": "Pozastavit aktualizace polohy",
+                                "description": "Zabraňuje aktualizaci vaší polohy"
+                            },
+                            "spoof_battery_level": {
+                                "name": "Falšovat úroveň baterie",
+                                "description": "Falšuje úroveň baterie vašeho zařízení na mapě\nHodnota musí být mezi 0 a 100"
+                            },
+                            "spoof_headphones": {
+                                "name": "Falšovat sluchátka",
+                                "description": "Falšuje stav poslechu hudby na mapě"
+                            },
+                            "show_battery_level": {
+                                "name": "Zobrazit úroveň baterie",
+                                "description": "Zobrazuje úroveň baterie vašich přátel na mapě"
+                            }
+                        }
+                    },
+                    "snapchat_plus": {
+                        "name": "Snapchat Plus",
+                        "description": "Povolí funkce Snapchat Plus\nNěkteré funkce na straně serveru nemusí fungovat"
+                    },
+                    "media_upload_quality": {
+                        "name": "Kvalita nahrávání médií",
+                        "description": "Přepíše kvalitu nahrávání médií",
+                        "properties": {
+                            "force_video_upload_source_quality": {
+                                "name": "Vynutit kvalitu zdroje nahrávání videa",
+                                "description": "Vynutí Snapchat používat kvalitu zdroje při nahrávání videí\nVšimněte si, že to nemusí odstranit metadata z médií"
+                            },
+                            "disable_image_compression": {
+                                "name": "Zakázat kompresi obrázků",
+                                "description": "Zakáže kompresi obrázků při nahrávání médií"
+                            },
+                            "custom_image_upload_format": {
+                                "name": "Vlastní formát nahrávání obrázků",
+                                "description": "Nastaví vlastní formát nahrávání obrázků\nVyberte bezeztrátový formát (jako PNG) pro nejlepší kvalitu"
+                            }
+                        }
+                    },
+                    "disable_confirmation_dialogs": {
+                        "name": "Zakázat potvrzovací dialogy",
+                        "description": "Automaticky potvrdí vybrané akce"
+                    },
+                    "auto_updater": {
+                        "name": "Automatický aktualizátor",
+                        "description": "Automaticky kontroluje nové aktualizace"
+                    },
+                    "disable_metrics": {
+                        "name": "Zakázat metriky",
+                        "description": "Blokuje odesílání specifických analytických dat do Snapchatu"
+                    },
+                    "disable_story_sections": {
+                        "name": "Zakázat sekce příběhů",
+                        "description": "Odstraní sekce ze stránky Příběhy\nPro správnou funkci může vyžadovat obnovení"
+                    },
+                    "block_ads": {
+                        "name": "Blokovat reklamy",
+                        "description": "Zabraňuje zobrazování reklam"
+                    },
+                    "disable_custom_tabs": {
+                        "name": "Zakázat vlastní karty",
+                        "description": "Otevírá odkazy v podporovaných aplikacích místo ve webovém prohlížeči"
+                    },
+                    "disable_permission_requests": {
+                        "name": "Zakázat žádosti o oprávnění",
+                        "description": "Zabraňuje Snapchatu žádat o specifická oprávnění"
+                    },
+                    "disable_memories_snap_feed": {
+                        "name": "Zakázat kanál snapů ze vzpomínek",
+                        "description": "Zabraňuje Snapchatu zobrazovat nedávné vzpomínky, když přejedete prstem nahoru v kameře"
+                    },
+                    "spotlight_comments_username": {
+                        "name": "Uživatelské jméno v komentářích Spotlight",
+                        "description": "Zobrazuje uživatelské jméno autora v komentářích Spotlight"
+                    },
+                    "bypass_video_length_restriction": {
+                        "name": "Obejít omezení délky videa",
+                        "description": "Jedno: odešle jedno video\nRozdělit: rozdělí videa po úpravě"
+                    },
+                    "default_video_playback_rate": {
+                        "name": "Výchozí rychlost přehrávání videa",
+                        "description": "Nastaví výchozí rychlost přehrávání videí\nHodnota musí být mezi 0,1 a 4,0"
+                    },
+                    "video_playback_rate_slider": {
+                        "name": "Posuvník rychlosti přehrávání videa",
+                        "description": "Přidá posuvník do kontextového menu opera pro změnu rychlosti přehrávání videa\nPoznámka: Změny se projeví pouze u následujících videí"
+                    },
+                    "disable_google_play_dialogs": {
+                        "name": "Zakázat dialogy služeb Google Play",
+                        "description": "Zabránit zobrazování dialogů o dostupnosti služeb Google Play"
+                    },
+                    "default_volume_controls": {
+                        "name": "Výchozí ovládání hlasitosti",
+                        "description": "Vynutí Snapchat používat systémové ovládání hlasitosti"
+                    },
+                    "disable_telecom_framework": {
+                        "name": "Zakázat telekomunikační framework",
+                        "description": "Zabraňuje Snapchatu používat telekomunikační framework Androidu\nTo vám umožní poslouchat hudbu během hovoru"
+                    },
+                    "hide_active_music": {
+                        "name": "Skrýt aktivní hudbu",
+                        "description": "Zabraňuje Snapchatu vědět, že posloucháte hudbu\nTo vám umožní pořizovat snapy pomocí tlačítek ovládání hlasitosti při poslechu hudby"
+                    },
+                    "disable_snap_splitting": {
+                        "name": "Zakázat rozdělování snapů",
+                        "description": "Zabraňuje rozdělování snapů na více částí\nObrázky, které odešlete, se změní na videa"
+                    }
+                }
+            },
+            "rules": {
+                "name": "Pravidla",
+                "description": "Spravovat automatické funkce pro jednotlivé osoby"
+            },
+            "camera": {
+                "name": "Kamera",
+                "description": "Upravte správná nastavení pro dokonalý snap",
+                "properties": {
+                    "disable_cameras": {
+                        "name": "Zakázat kamery",
+                        "description": "Zabraňuje Snapchatu používat vybrané kamery"
+                    },
+                    "black_photos": {
+                        "name": "Černé fotografie",
+                        "description": "Nahradí pořízené fotografie černým pozadím\nVidea nejsou ovlivněna"
+                    },
+                    "immersive_camera_preview": {
+                        "name": "Pohlcující náhled",
+                        "description": "Zabraňuje Snapchatu ořezávat náhled kamery\nTo může způsobit blikání kamery na některých zařízeních"
+                    },
+                    "override_front_resolution": {
+                        "name": "Přepsat přední rozlišení",
+                        "description": "Přepíše rozlišení kamery pro přední kameru"
+                    },
+                    "override_back_resolution": {
+                        "name": "Přepsat zadní rozlišení",
+                        "description": "Přepíše rozlišení kamery pro zadní kameru"
+                    },
+                    "custom_resolution": {
+                        "name": "Vlastní rozlišení",
+                        "description": "Nastaví vlastní rozlišení kamery, šířka x výška (např. 1920x1080).\nVlastní rozlišení musí být podporováno vaším zařízením"
+                    },
+                    "front_custom_frame_rate": {
+                        "name": "Přední vlastní snímková frekvence",
+                        "description": "Přepíše snímkovou frekvenci přední kamery"
+                    },
+                    "back_custom_frame_rate": {
+                        "name": "Zadní vlastní snímková frekvence",
+                        "description": "Přepíše snímkovou frekvenci zadní kamery"
+                    },
+                    "force_camera_source_encoding": {
+                        "name": "Vynutit kódování zdroje kamery",
+                        "description": "Vynutí kódování zdroje kamery"
+                    },
+                    "startup_default_camera": {
+                        "name": "Výchozí kamera při spuštění",
+                        "description": "Nastaví výchozí kameru při otevření Snapchatu"
+                    },
+                    "hevc_recording": {
+                        "name": "Nahrávání HEVC",
+                        "description": "Používá kodek HEVC (H.265) pro nahrávání videa"
+                    }
+                }
+            },
+            "streaks_reminder": {
+                "name": "Připomenutí sérií",
+                "description": "Pravidelně vás upozorňuje na vaše série",
+                "properties": {
+                    "interval": {
+                        "name": "Interval",
+                        "description": "Interval mezi jednotlivými připomenutími (hodiny)"
+                    },
+                    "remaining_hours": {
+                        "name": "Zbývající čas",
+                        "description": "Zbývající doba před zobrazením oznámení (hodiny)"
+                    },
+                    "group_notifications": {
+                        "name": "Skupinová oznámení",
+                        "description": "Seskupí oznámení do jednoho"
+                    }
+                }
+            },
+            "experimental": {
+                "name": "Experimentální",
+                "description": "Experimentální funkce",
+                "properties": {
+                    "native_hooks": {
+                        "name": "Nativní hooky",
+                        "description": "Nebezpečné funkce, které se napojují na nativní kód Snapchatu",
+                        "properties": {
+                            "composer_hooks": {
+                                "name": "Hooky Composeru",
+                                "description": "Vkládá kód do multiplatformního UI frameworku Composer",
+                                "properties": {
+                                    "show_first_created_username": {
+                                        "name": "Zobrazit první vytvořené uživatelské jméno",
+                                        "description": "Zobrazí první vytvořené uživatelské jméno vedle aktuálního uživatelského jména na profilové stránce"
+                                    },
+                                    "bypass_camera_roll_limit": {
+                                        "name": "Obejít limit galerie",
+                                        "description": "Zvýší maximální množství médií, které můžete odeslat z galerie"
+                                    },
+                                    "custom_self_destruct_snap_delay": {
+                                        "name": "Vlastní zpoždění samodestrukčního snapu",
+                                        "description": "Poskytuje více možností pro časovač samodestrukce při odesílání snapu"
+                                    },
+                                    "composer_console": {
+                                        "name": "Konzole Composeru",
+                                        "description": "Umožňuje spouštět JavaScriptový kód v Composeru (pouze arm64)"
+                                    },
+                                    "composer_logs": {
+                                        "name": "Protokoly Composeru",
+                                        "description": "Přesměruje protokoly konzole Composeru do PurrfectSnap"
+                                    }
+                                }
+                            },
+                            "disable_bitmoji": {
+                                "name": "Zakázat Bitmoji",
+                                "description": "Zakáže Bitmoji profilu přátel"
+                            },
+                            "custom_emoji_font": {
+                                "name": "Vlastní písmo emotikonů",
+                                "description": "Umožňuje používat vlastní písmo emotikonů. Funguje pouze s písmy .ttf"
+                            },
+                            "custom_shared_library": {
+                                "name": "Vlastní sdílená knihovna",
+                                "description": "Načte vlastní sdílenou knihovnu do Snapchatu. Tato funkce je pouze pro testovací účely"
+                            }
+                        }
+                    },
+                    "spoof": {
+                        "name": "Falšovat",
+                        "description": "Falšovat různé informace o vás",
+                        "properties": {
+                            "play_store_installer_package_name": {
+                                "name": "Název balíčku instalačního programu Obchodu Play",
+                                "description": "Přepíše název balíčku instalačního programu na com.android.vending"
+                            },
+                            "remove_vpn_transport_flag": {
+                                "name": "Odstranit příznak transportu VPN",
+                                "description": "Zabraňuje Snapchatu detekovat VPN"
+                            },
+                            "remove_mock_location_flag": {
+                                "name": "Odstranit příznak falešné polohy",
+                                "description": "Zabraňuje Snapchatu detekovat falešnou polohu"
+                            }
+                        }
+                    },
+                    "convert_message_locally": {
+                        "name": "Převést zprávu lokálně",
+                        "description": "Převádí snapy na externí média chatu lokálně. Zobrazí se v kontextovém menu stahování chatu"
+                    },
+                    "media_file_picker": {
+                        "name": "Výběr mediálního souboru",
+                        "description": "Umožňuje vybrat jakýkoli video/audio soubor z galerie"
+                    },
+                    "story_logger": {
+                        "name": "Záznamník příběhů",
+                        "description": "Poskytuje historii příběhů přátel"
+                    },
+                    "call_recorder": {
+                        "name": "Záznamník hovorů",
+                        "description": "Automaticky nahrává audio hovory"
+                    },
+                    "account_switcher": {
+                        "name": "Přepínač účtů",
+                        "description": "Umožňuje přepínat mezi účty bez odhlášení\nDlouhým stisknutím ikony hledání vedle vašeho profilu Bitmoji otevřete menu\nPoznámka: Tato funkce je experimentální a v budoucnu se pravděpodobně změní",
+                        "properties": {
+                            "auto_backup_current_account": {
+                                "name": "Automaticky zálohovat aktuální účet",
+                                "description": "Automaticky zálohuje aktuální účet při odhlášení nebo přepnutí účtů"
+                            }
+                        }
+                    },
+                    "better_transcript": {
+                        "name": "Lepší přepis",
+                        "description": "Vylepšuje přepis hlasových poznámek",
+                        "properties": {
+                            "force_transcription": {
+                                "name": "Vynutit přepis hlasových poznámek",
+                                "description": "Umožňuje přepis všech hlasových poznámek"
+                            },
+                            "preferred_transcription_lang": {
+                                "name": "Preferovaný jazyk přepisu",
+                                "description": "Preferovaný jazyk pro přepis hlasových poznámek (např. EN, ES, FR)"
+                            },
+                            "notification_transcript": {
+                                "name": "Přepis oznámení",
+                                "description": "Přepisuje hlasové poznámky v oznámeních\nTato funkce vyžaduje povolení funkce Náhled chatu v Lepších oznámeních"
+                            }
+                        }
+                    },
+                    "voice_note_auto_play": {
+                        "name": "Automatické přehrávání hlasových poznámek",
+                        "description": "Automaticky přehraje další hlasovou poznámku po skončení aktuální"
+                    },
+                    "friend_notes": {
+                        "name": "Poznámky k přátelům",
+                        "description": "Umožňuje přidávat poznámky k profilům přátel"
+                    },
+                    "cof_experiments": {
+                        "name": "Experimenty COF",
+                        "description": "Povolí nevydané/beta funkce Snapchatu"
+                    },
+                    "context_menu_fix": {
+                        "name": "Oprava kontextového menu",
+                        "description": "Pokusí se opravit menu kanálu přátel, protože když je zařízení offline, nelze ho správně zobrazit"
+                    },
+                    "app_lock": {
+                        "name": "Zámek aplikace",
+                        "description": "Zabraňuje přístupu do Snapchatu bez hesla",
+                        "properties": {
+                            "lock_on_resume": {
+                                "name": "Zamknout při obnovení",
+                                "description": "Zamkne aplikaci při jejím opětovném otevření"
+                            }
+                        }
+                    },
+                    "infinite_story_boost": {
+                        "name": "Nekonečné posílení příběhu",
+                        "description": "Obejít zpoždění limitu posílení příběhu"
+                    },
+                    "meo_passcode_bypass": {
+                        "name": "Obejít heslo My Eyes Only",
+                        "description": "Obejít heslo My Eyes Only\nTo bude fungovat pouze v případě, že bylo heslo zadáno správně dříve"
+                    },
+                    "no_friend_score_delay": {
+                        "name": "Žádné zpoždění skóre přátel",
+                        "description": "Odstraní zpoždění při prohlížení skóre přátel"
+                    },
+                    "best_friend_pinning": {
+                        "name": "Připnutí nejlepšího přítele",
+                        "description": "Umožňuje připnout přítele jako svého nejlepšího přítele číslo jedna. Poznámka: Pouze vy můžete vidět svého připnutého nejlepšího přítele"
+                    },
+                    "e2ee": {
+                        "name": "End-To-End šifrování",
+                        "description": "Šifruje vaše zprávy pomocí AES pomocí sdíleného tajného klíče\nUjistěte se, že si klíč uložíte na bezpečné místo!",
+                        "properties": {
+                            "encrypted_message_indicator": {
+                                "name": "Indikátor šifrovaných zpráv",
+                                "description": "Přidá emotikon 🔒 vedle šifrovaných zpráv"
+                            },
+                            "force_message_encryption": {
+                                "name": "Vynutit šifrování zpráv",
+                                "description": "Zabraňuje odesílání šifrovaných zpráv lidem, kteří nemají povoleno E2E šifrování, pouze když je vybráno více konverzací"
+                            }
+                        }
+                    },
+                    "add_friend_source_spoof": {
+                        "name": "Falšovat zdroj přidání přítele",
+                        "description": "Falšuje zdroj žádosti o přátelství"
+                    },
+                    "hidden_snapchat_plus_features": {
+                        "name": "Skryté funkce Snapchat Plus",
+                        "description": "Povolí nevydané/beta funkce Snapchat Plus\nNemusí fungovat na starších verzích Snapchatu"
+                    },
+                    "custom_streaks_expiration_format": {
+                        "name": "Vlastní formát vypršení sérií",
+                        "description": "Přizpůsobí formát vypršení sérií\n\nDostupné proměnné:\n - %c: Počet sérií\n - %e: Emotikon přesýpacích hodin\n - %d: Dny\n - %h: Hodiny\n - %m: Minuty\n - %s: Sekundy\n - %w: Zbývající čas"
+                    },
+                    "prevent_forced_logout": {
+                        "name": "Zabránit vynucenému odhlášení",
+                        "description": "Zabraňuje Snapchatu vás odhlásit, když se přihlásíte na jiném zařízení"
+                    },
+                    "snapscore_changes": {
+                        "name": "Změny Snapscore",
+                        "description": "Sleduje změny ve Snapscore přátel\nPoužijte tuto funkci pouze v novějších verzích Snapchatu"
+                    }
+                }
+            },
+            "scripting": {
+                "name": "Skriptování",
+                "description": "Spouštět vlastní skripty pro rozšíření PurrfectSnap",
+                "properties": {
+                    "developer_mode": {
+                        "name": "Vývojářský režim",
+                        "description": "Zobrazuje ladicí informace v uživatelském rozhraní Snapchatu"
+                    },
+                    "module_folder": {
+                        "name": "Složka modulů",
+                        "description": "Složka, kde se nacházejí skripty"
+                    },
+                    "auto_reload": {
+                        "name": "Automatické obnovení",
+                        "description": "Automaticky obnovuje skripty při jejich změně"
+                    },
+                    "integrated_ui": {
+                        "name": "Integrované uživatelské rozhraní",
+                        "description": "Umožňuje skriptům přidávat vlastní komponenty uživatelského rozhraní do Snapchatu"
+                    },
+                    "disable_log_anonymization": {
+                        "name": "Zakázat anonymizaci protokolů",
+                        "description": "Zakáže anonymizaci protokolů"
+                    },
+                    "disable_optimization": {
+                        "name": "Zakázat optimalizaci",
+                        "description": "Zakáže optimalizaci skriptů. To může způsobit problémy s výkonem."
+                    }
+                }
+            },
+            "friend_tracker": {
+                "name": "Sledování přátel",
+                "description": "Zaznamenává aktivitu přátel na Snapchatu",
+                "properties": {
+                    "record_messaging_events": {
+                        "name": "Zaznamenávat události zasílání zpráv",
+                        "description": "Zaznamenává události zasílání zpráv, jako je otevření snapu, přečtení zprávy atd."
+                    },
+                    "allow_running_in_background": {
+                        "name": "Povolit běh na pozadí",
+                        "description": "Umožňuje sledovači běžet na pozadí. Poznámka: To výrazně vybije vaši baterii"
+                    },
+                    "auto_purge": {
+                        "name": "Automatické čištění",
+                        "description": "Automaticky maže události v mezipaměti, které jsou starší než zadaná doba"
+                    }
+                }
+            }
+        },
+        "options": {
+            "app_appearance": {
+                "always_light": "Vždy světlý",
+                "always_dark": "Vždy tmavý"
+            },
+            "friend_feed_menu_buttons": {
+                "auto_download": "⬇️ Automatické stahování",
+                "auto_save": "💬 Automaticky ukládat zprávy",
+                "unsaveable_messages": "⬇️ Neuložitelné zprávy",
+                "auto_open_snaps": "📸 Automaticky otevírat snapy",
+                "stealth": "👻 Stealth režim",
+                "mark_snaps_as_seen": "👀 Označit snapy jako přečtené",
+                "mark_stories_as_seen_locally": "👀 Označit příběhy jako přečtené lokálně",
+                "conversation_info": "🧑‍🤝‍🧑 Informace o konverzaci",
+                "e2e_encryption": "🔒 Použít E2E šifrování"
+            },
+            "path_format": {
+                "create_author_folder": "Vytvořit složku pro každého autora",
+                "create_source_folder": "Vytvořit složku pro každý typ zdroje médií",
+                "append_hash": "Přidat jedinečný hash do názvu souboru",
+                "append_source": "Přidat zdroj médií do názvu souboru",
+                "append_username": "Přidat uživatelské jméno do názvu souboru",
+                "append_date_time": "Přidat datum a čas do názvu souboru"
+            },
+            "auto_download_sources": {
+                "friend_snaps": "Snapy přátel",
+                "friend_stories": "Příběhy přátel",
+                "public_stories": "Veřejné příběhy",
+                "spotlight": "Reflektor"
+            },
+            "logging": {
+                "started": "Zahájeno",
+                "success": "Úspěch",
+                "progress": "Průběh",
+                "failure": "Selhání"
+            },
+            "notifications": {
+                "chat_screenshot": "Snímek obrazovky",
+                "chat_screen_record": "Záznam obrazovky",
+                "snap_replay": "Opakované přehrání snapu",
+                "camera_roll_save": "Uložit do galerie",
+                "chat": "Povídání",
+                "chat_reply": "Odpověď v chatu",
+                "snap": "Snap",
+                "typing": "Píše",
+                "stories": "Příběhy",
+                "speaking": "Mluví",
+                "chat_reaction": "Reakce na DM",
+                "group_chat_reaction": "Reakce skupiny",
+                "initiate_audio": "Příchozí audio hovor",
+                "abandon_audio": "Zmeškaný audio hovor",
+                "initiate_video": "Příchozí video hovor",
+                "abandon_video": "Zmeškaný video hovor",
+                "map_live_location": "Živá poloha na mapě"
+            },
+            "gallery_media_send_override": {
+                "always_ask": "Vždy se zeptat",
+                "ORIGINAL": "Původní média",
+                "NOTE": "Hlasová poznámka",
+                "SNAP": "Snap",
+                "SAVEABLE_SNAP": "Uložitelný snap"
+            },
+            "strip_media_metadata": {
+                "hide_caption_text": "Skrýt text popisku",
+                "hide_snap_filters": "Skrýt filtry snapu",
+                "hide_extras": "Skrýt doplňky (např. zmínky)",
+                "remove_audio_note_duration": "Odstranit dobu trvání hlasové poznámky",
+                "remove_audio_note_transcript_capability": "Odstranit schopnost přepisu hlasové poznámky"
+            },
+            "hide_ui_components": {
+                "hide_profile_call_buttons": "Odstranit tlačítka volání v profilu",
+                "hide_chat_call_buttons": "Odstranit tlačítka volání v chatu",
+                "hide_live_location_share_button": "Odstranit tlačítko sdílení živé polohy",
+                "hide_stickers_button": "Odstranit tlačítko nálepek",
+                "hide_voice_record_button": "Odstranit tlačítko nahrávání hlasu",
+                "hide_unread_chat_hint": "Odstranit nápovědu k nepřečtenému chatu",
+                "hide_post_to_story_buttons": "Odstranit tlačítka pro zveřejnění v příběhu před odesláním snapu",
+                "hide_billboard_prompt": "Odstranit výzvu na billboardu v kanálu přátel",
+                "hide_snapchat_plus_gift_reminders": "Odstranit připomenutí dárků Snapchat Plus v konverzacích",
+                "hide_map_reactions": "Odstranit reakce na mapě"
+            },
+            "hide_story_suggestions": {
+                "hide_suggested_friend_stories": "Skrýt navrhované příběhy přátel",
+                "hide_my_stories": "Skrýt mé příběhy"
+            },
+            "home_tab": {
+                "map": "Mapa",
+                "chat": "Povídání",
+                "camera": "Kamera",
+                "discover": "Objevit",
+                "spotlight": "Reflektor"
+            },
+            "add_friend_source_spoof": {
+                "added_by_username": "Podle uživatelského jména",
+                "added_by_mention": "Podle zmínky",
+                "added_by_group_chat": "Podle skupinového chatu",
+                "added_by_qr_code": "Podle QR kódu",
+                "added_by_community": "Podle komunity",
+                "added_by_quick_add": "Podle rychlého přidání (vysoké riziko zákazu)"
+            },
+            "bypass_video_length_restriction": {
+                "single": "Jedno médium",
+                "split": "Rozdělit médium"
+            },
+            "old_bitmoji_selfie": {
+                "2d": "2d bitmoji",
+                "3d": "3d bitmoji"
+            },
+            "disable_confirmation_dialogs": {
+                "erase_message": "Smazat zprávu",
+                "remove_friend": "Odstranit přítele",
+                "block_friend": "Blokovat přítele",
+                "ignore_friend": "Ignorovat přítele",
+                "hide_friend": "Skrýt přítele",
+                "hide_conversation": "Skrýt konverzaci",
+                "clear_conversation": "Vymazat konverzaci z kanálu přátel"
+            },
+            "auto_reload": {
+                "snapchat_only": "Pouze Snapchat",
+                "all": "Vše (Snapchat + PurrfectSnap)"
+            },
+            "edit_text_override": {
+                "multi_line_chat_input": "Víceřádkový vstup chatu",
+                "bypass_text_input_limit": "Obejít limit vstupu textu"
+            },
+            "auto_purge": {
+                "never": "Nikdy",
+                "1_hour": "1 hodina",
+                "3_hours": "3 hodiny",
+                "6_hours": "6 hodin",
+                "12_hours": "12 hodin",
+                "1_day": "1 den",
+                "3_days": "3 dny",
+                "1_week": "1 týden",
+                "2_weeks": "2 týdny",
+                "1_month": "1 měsíc",
+                "3_months": "3 měsíce",
+                "6_months": "6 měsíců"
+            },
+            "disable_story_sections": {
+                "friends": "Přátelé",
+                "suggested_stories": "Navrhované příběhy",
+                "following": "Sledování",
+                "discover": "Objevit"
+            },
+            "disable_cameras": {
+                "front": "Přední kamera",
+                "back": "Zadní kamera"
+            },
+            "disable_permission_requests": {
+                "notifications": "Oznámení",
+                "read_media_images": "Číst obrázky médií",
+                "read_media_video": "Číst video médií",
+                "camera": "Kamera",
+                "microphone": "Mikrofon",
+                "location": "Poloha",
+                "read_contacts": "Číst kontakty",
+                "nearby_devices": "Zařízení v okolí",
+                "phone_calls": "Telefonní hovory"
+            },
+            "message_indicators": {
+                "encryption_indicator": "Přidá ikonu 🔒 vedle zpráv, které byly odeslány pouze vám",
+                "platform_indicator": "Přidá ikonu platformy, ze které bylo médium odesláno (např. Android, iOS, Web)",
+                "location_indicator": "Přidá ikonu 📍 ke snapům, když byly odeslány s povolenou polohou",
+                "ovf_editor_indicator": "Indikuje, zda byl snap odeslán pomocí editoru OVF",
+                "director_mode_indicator": "Přidá ikonu 🎬 ke snapům, když byly odeslány pomocí režimu režiséra, který lze použít k odeslání obrázků z galerie jako snapů"
+            },
+            "auto_mark_as_read": {
+                "conversation_read": "Označit konverzaci jako přečtenou při odeslání zprávy",
+                "snap_reply": "Označit snapy jako přečtené při odpovědi na ně",
+                "save_snap_in_chat": "Označit snapy jako přečtené při jejich ukládání do chatu v režimu Stealth"
+            },
+            "friend_mutation_notifier": {
+                "remove_friend": "Upozornit, když vás někdo odebere jako přítele",
+                "birthday_changes": "Upozornit, když někdo změní své narozeniny",
+                "bitmoji_selfie_changes": "Upozornit, když někdo změní své selfie Bitmoji",
+                "bitmoji_avatar_changes": "Upozornit, když někdo změní svůj avatar Bitmoji",
+                "bitmoji_background_changes": "Upozornit, když někdo změní své pozadí Bitmoji",
+                "bitmoji_scene_changes": "Upozornit, když někdo změní svou scénu Bitmoji"
+            },
+            "snapchat_plus": {
+                "not_subscribed": "Nepředplaceno",
+                "basic": "Základní",
+                "ad_free": "Bez reklam"
+            },
+            "double_tap_chat_action": {
+                "like_message": "Líbí se mi zpráva",
+                "copy_text": "Kopírovat text do schránky",
+                "delete_message": "Smazat zprávu",
+                "mark_as_read": "Označit jako přečtené",
+                "custom_emoji_reaction": "Vlastní reakce emotikonem"
+            },
+            "startup_default_camera": {
+                "front": "Přední kamera",
+                "back": "Zadní kamera"
+            }
+        }
+    },
+    "friend_menu_option": {
+        "mark_snaps_as_seen": "Označit snapy jako přečtené",
+        "mark_stories_as_seen_locally": "Označit příběhy jako přečtené lokálně",
+        "preview": "Náhled",
+        "stealth_mode": "Stealth režim",
+        "auto_download_blacklist": "Blacklist automatického stahování",
+        "anti_auto_save": "Anti automatické ukládání"
+    },
+    "content_type": {
+        "CHAT": "Povídání",
+        "SNAP": "Snap",
+        "EXTERNAL_MEDIA": "Externí média",
+        "NOTE": "Hlasová poznámka",
+        "STICKER": "Nálepka",
+        "SHARE": "Sdílet",
+        "STATUS": "Stav",
+        "LOCATION": "Poloha",
+        "STATUS_SAVE_TO_CAMERA_ROLL": "Uloženo do galerie",
+        "STATUS_CONVERSATION_CAPTURE_SCREENSHOT": "Snímek obrazovky",
+        "STATUS_CONVERSATION_CAPTURE_RECORD": "Záznam obrazovky",
+        "STATUS_CALL_MISSED_VIDEO": "Zmeškaný video hovor",
+        "STATUS_CALL_MISSED_AUDIO": "Zmeškaný audio hovor",
+        "LIVE_LOCATION_SHARE": "Sdílení živé polohy",
+        "CREATIVE_TOOL_ITEM": "Položka kreativního nástroje",
+        "FAMILY_CENTER_INVITE": "Pozvánka do rodinného centra",
+        "FAMILY_CENTER_ACCEPT": "Přijmout rodinné centrum",
+        "FAMILY_CENTER_LEAVE": "Opustit rodinné centrum",
+        "STATUS_PLUS_GIFT": "Dárek Status Plus",
+        "TINY_SNAP": "Malý snap",
+        "STATUS_COUNTDOWN": "Odpočítávání",
+        "MAP_REACTION": "Reakce na mapě"
+    },
+    "media_download_source": {
+        "none": "Žádný",
+        "pending": "Čeká na vyřízení",
+        "chat_media": "Média chatu",
+        "story": "Příběh",
+        "public_story": "Veřejný příběh",
+        "spotlight": "Reflektor",
+        "profile_picture": "Profilový obrázek",
+        "story_logger": "Záznamník příběhů",
+        "message_logger": "Záznamník zpráv",
+        "merged": "Sloučeno",
+        "voice_call": "Hlasový hovor"
+    },
+    "chat_action_menu": {
+        "preview_button": "Náhled",
+        "download_button": "Stáhnout",
+        "delete_logged_message_button": "Smazat zaznamenanou zprávu",
+        "show_chat_edit_history": "Zobrazit historii úprav chatu",
+        "convert_message": "Převést zprávu"
+    },
+    "opera_context_menu": {
+        "download": "Stáhnout média",
+        "sent_at": "Odesláno {date}",
+        "created_at": "Vytvořeno {date}",
+        "expires_at": "Vyprší {date}",
+        "media_size": "Velikost médií: {size}",
+        "media_duration": "Doba trvání médií: {duration} ms",
+        "show_debug_info": "Zobrazit ladicí informace"
+    },
+    "modal_option": {
+        "profile_info": "Informace o profilu",
+        "close": "Zavřít"
+    },
+    "gallery_media_send_override": {
+        "multiple_media_toast": "Můžete odeslat pouze jedno médium najednou"
+    },
+    "mark_as_seen": {
+        "no_unseen_snaps_toast": "Nebyly nalezeny žádné nepřečtené snapy!",
+        "seen_toast": "Označeno jako přečtené!",
+        "unseen_toast": "Označeno jako nepřečtené!",
+        "already_seen_toast": "Již označeno jako přečtené!",
+        "already_unseen_toast": "Již označeno jako nepřečtené!"
+    },
+    "conversation_preview": {
+        "streak_expiration": "vyprší za {day} dní {hour} hodin {minute} minut",
+        "total_messages": "Celkem odeslaných/přijatých zpráv: {count}",
+        "title": "Náhled",
+        "unknown_user": "Neznámý uživatel",
+        "no_messages": "Nebyly nalezeny žádné zprávy!"
+    },
+    "profile_info": {
+        "title": "Informace o profilu",
+        "first_created_username": "První vytvořené uživatelské jméno",
+        "mutable_username": "Měnitelné uživatelské jméno",
+        "display_name": "Zobrazované jméno",
+        "added_date": "Datum přidání",
+        "birthday": "Narozeniny: {day} {month}",
+        "hidden_birthday": "Narozeniny: Skryto",
+        "friendship": "Přátelství",
+        "add_source": "Přidat zdroj",
+        "snapchat_plus": "Snapchat Plus",
+        "snapchat_plus_state": {
+            "subscribed": "Předplaceno",
+            "not_subscribed": "Nepředplaceno"
+        }
+    },
+    "friendship_link_type": {
+        "mutual": "Vzájemné",
+        "outgoing": "Odchozí",
+        "blocked": "Blokováno",
+        "deleted": "Smazáno",
+        "following": "Sledování",
+        "suggested": "Navrženo",
+        "incoming": "Příchozí",
+        "incoming_follower": "Příchozí sledující"
+    },
+    "bulk_messaging_action": {
+        "choose_action_title": "Vyberte akci",
+        "progress_status": "Zpracovávání {index} z {total}",
+        "selection_dialog_continue_button": "Pokračovat",
+        "confirmation_dialog": {
+            "title": "Jste si jisti?",
+            "message": "To ovlivní všechny vybrané přátele. Tuto akci nelze vrátit zpět."
+        },
+        "actions": {
+            "remove_friends": "Odstranit přátele",
+            "clear_conversations": "Vymazat konverzace"
+        }
+    },
+    "chat_export": {
+        "exporter_dialog": {
+            "select_conversations_title": "Vybrat konverzace",
+            "text_field_selection": "{amount} vybráno",
+            "text_field_selection_all": "Vše",
+            "export_file_format_title": "Exportovat formát souboru",
+            "message_type_filter_title": "Filtrovat zprávy podle typu",
+            "amount_of_messages_title": "Množství zpráv (ponechte prázdný pro všechny)",
+            "download_medias_title": "Stáhnout média"
+        },
+        "dialog_negative_button": "Zrušit",
+        "dialog_positive_button": "Exportovat",
+        "exported_to": "Exportováno do {path}",
+        "exporting_chats": "Exportování chatů...",
+        "processing_chats": "Zpracovávání {amount} konverzací...",
+        "export_fail": "Export konverzace {conversation} se nezdařil",
+        "writing_output": "Zapisování výstupu...",
+        "finished": "Hotovo! Nyní můžete tento dialog zavřít.",
+        "no_messages_found": "Nebyly nalezeny žádné zprávy!",
+        "exporting_message": "Exportování {conversation}..."
+    },
+    "button": {
+        "ok": "Dobře",
+        "positive": "Ano",
+        "negative": "Ne",
+        "cancel": "Zrušit",
+        "open": "Otevřít",
+        "download": "Stáhnout",
+        "send": "Odeslat",
+        "restore_original": "Obnovit původní",
+        "convert_external_media": "Převést externí média",
+        "save": "Uložit"
+    },
+    "tracker_events": {
+        "conversation_enter": "Vstup do konverzace",
+        "conversation_exit": "Opuštění konverzace",
+        "started_typing": "Začal psát",
+        "stopped_typing": "Přestal psát",
+        "started_speaking": "Začal mluvit",
+        "stopped_speaking": "Přestal mluvit",
+        "started_peeking": "Začal nahlížet",
+        "stopped_peeking": "Přestal nahlížet",
+        "message_read": "Zpráva přečtena",
+        "message_deleted": "Zpráva smazána",
+        "message_saved": "Zpráva uložena",
+        "message_unsaved": "Zpráva neuložena",
+        "message_edited": "Zpráva upravena",
+        "message_reaction_add": "Přidána reakce na zprávu",
+        "message_reaction_remove": "Odebrána reakce na zprávu",
+        "snap_opened": "Snap otevřen",
+        "snap_replayed": "Snap znovu přehrán",
+        "snap_replayed_twice": "Snap znovu přehrán dvakrát",
+        "snap_screenshot": "Snímek obrazovky snapu",
+        "snap_screen_record": "Záznam obrazovky snapu"
+    },
+    "tracker_actions": {
+        "log": "Protokol",
+        "in_app_notification": "Oznámení v aplikaci",
+        "push_notification": "Push oznámení",
+        "custom": "Vlastní"
+    },
+    "better_notifications": {
+        "button": {
+            "reply": "Odpovědět",
+            "download": "Stáhnout",
+            "mark_as_read": "Označit jako přečtené"
+        }
+    },
+    "profile_picture_downloader": {
+        "button": "Stáhnout profilový obrázek",
+        "title": "Stahovač profilových obrázků",
+        "avatar_option": "Avatar",
+        "background_option": "Pozadí"
+    },
+    "call_start_confirmation": {
+        "dialog_title": "Zahájit hovor",
+        "dialog_message": "Opravdu chcete zahájit hovor?"
+    },
+    "half_swipe_notifier": {
+        "notification_channel_name": "Poloviční přejetí",
+        "notification_content_dm": "{friend} právě napůl přejel do vašeho chatu na {duration} sekund",
+        "notification_content_group": "{friend} právě napůl přejel do {group} na {duration} sekund"
+    },
+    "download_processor": {
+        "attachment_type": {
+            "snap": "Snap",
+            "sticker": "Nálepka",
+            "gif": "Gif",
+            "external_media": "Externí média",
+            "note": "Poznámka",
+            "original_story": "Původní příběh"
+        },
+        "select_attachments_title": "Vybrat přílohy",
+        "download_started_toast": "Stahování zahájeno",
+        "unsupported_content_type_toast": "Nepodporovaný typ obsahu!",
+        "failed_no_longer_available_toast": "Média již nejsou k dispozici",
+        "no_attachments_toast": "Nebyly nalezeny žádné přílohy!",
+        "already_queued_toast": "Média jsou již ve frontě!",
+        "already_downloaded_toast": "Média jsou již stažena!",
+        "content_saved_toast": "Uloženo!",
+        "download_toast": "Stahování {path}...",
+        "processing_toast": "Zpracovávání {path}...",
+        "failed_generic_toast": "Stažení se nezdařilo",
+        "failed_to_create_preview_toast": "Vytvoření náhledu se nezdařilo",
+        "failed_processing_toast": "Zpracování se nezdařilo {error}",
+        "failed_gallery_toast": "Uložení do galerie se nezdařilo {error}",
+        "dash_no_chapter": "Nebyly nalezeny žádné kapitoly",
+        "dash_dialog": {
+            "title": "Stáhnout média dash",
+            "download_all": "Stáhnout vše",
+            "segment_text": "Segment {from} - {to}"
+        }
+    },
+    "streaks_reminder": {
+        "notification_title": "Série",
+        "notification_text": "Ztratíte svou sérii s {friend} za {hoursLeft} hodin"
+    },
+    "biometric_auth": {
+        "unlock_button": "Odemknout",
+        "title": "Odemknout Snapchat",
+        "subtitle": "Pro odemknutí Snapchatu se prosím ověřte"
+    },
+    "end_to_end_encryption": {
+        "toolbox": {
+            "no_shared_key": "S tímto přítelem ještě nemáte sdílený tajný klíč. Kliknutím níže zahájíte nový.",
+            "shared_key_fingerprint": "Váš otisk prstu je:\n\n{fingerprint}\n\nUjistěte se, že se shoduje s otiskem prstu vašeho přítele!",
+            "initiate_exchange_button": "Zahájit výměnu klíčů"
+        },
+        "confirmation_dialogs": {
+            "title": "End-to-end šifrování",
+            "confirmation_1": "VAROVÁNÍ: Tímto přepíšete svůj stávající klíč. Ztratíte přístup ke všem šifrovaným zprávám od tohoto přítele. Opravdu chcete pokračovat?",
+            "confirmation_2": "Opravdu si přejete pokračovat? Toto je vaše poslední šance se vrátit."
+        },
+        "unencrypted_conversation_send_failure_toast": "Nemůžete odesílat šifrovaný obsah do šifrovaných i nešifrovaných konverzací!",
+        "native_hooks_send_failure_toast": "Odeslání se nezdařilo! Povolte prosím nativní hooky v nastavení.",
+        "no_participants_to_encrypt_toast": "V této konverzaci nemáte žádné přátele, se kterými byste mohli šifrovat zprávy!",
+        "encryption_failed_toast": "Šifrování zprávy se nezdařilo! Zkontrolujte logcat pro více podrobností.",
+        "accept_public_key_success_toast": "Veřejný klíč úspěšně přijat!",
+        "accept_secret_key_success_toast": "Hotovo! Nyní můžete s tímto přítelem odesílat a přijímat šifrované zprávy.",
+        "accept_public_key_failure_toast": "Přijetí veřejného klíče se nezdařilo",
+        "accept_secret_key_failure_toast": "Přijetí tajného klíče se nezdařilo",
+        "accept_secret_button": "Přijmout tajemství",
+        "accept_public_key_button": "Přijmout veřejný klíč",
+        "outgoing_pk_message": "Požadavek na výměnu klíčů",
+        "outgoing_secret_message": "Odpověď na výměnu klíčů",
+        "incoming_pk_message": "Právě jste obdrželi požadavek na veřejný klíč. Kliknutím níže ho přijmete.",
+        "incoming_secret_message": "Váš přítel právě přijal váš veřejný klíč. Kliknutím níže přijmete tajemství."
+    },
+    "auto_open_snaps": {
+        "title": "Automaticky otevírat snapy",
+        "notification_content": "{count} snapů otevřeno"
+    },
+    "friend_mutation_observer": {
+        "notification_channel_name": "Pozorovatel mutací přátel",
+        "friend_removed": "{username} vás odebral jako přítele",
+        "birthday_removed": "{username} odstranil své narozeniny ({birthday})",
+        "birthday_added": "{username} přidal své narozeniny ({birthday})",
+        "birthday_changed": "{username} změnil své narozeniny z {oldBirthday} na {newBirthday}",
+        "bitmoji_selfie_changed": "{username} změnil své selfie Bitmoji",
+        "bitmoji_avatar_changed": "{username} změnil svůj avatar Bitmoji",
+        "bitmoji_background_changed": "{username} změnil své pozadí Bitmoji",
+        "bitmoji_scene_changed": "{username} změnil svou scénu Bitmoji"
+    },
+    "material3_strings": {
+        "date_range_picker_start_headline": "Od",
+        "date_range_picker_end_headline": "Do",
+        "date_range_picker_title": "Vybrat rozsah dat",
+        "date_picker_switch_to_calendar_mode": "Kalendář",
+        "date_picker_switch_to_input_mode": "Vstup",
+        "date_range_picker_scroll_to_previous_month": "Předchozí měsíc",
+        "date_range_picker_scroll_to_next_month": "Následující měsíc",
+        "date_picker_today_description": "Dnes",
+        "date_range_picker_day_in_range": "Vybráno",
+        "date_input_invalid_for_pattern": "Neplatné datum",
+        "date_input_invalid_year_range": "Neplatný rok",
+        "date_input_invalid_not_allowed": "Neplatné datum",
+        "date_range_input_invalid_range_input": "Neplatný rozsah dat"
+    },
+    "send_override_dialog": {
+        "title": "Odeslat média jako {type}",
+        "duration": "Doba trvání: {duration}",
+        "saveable_snap_hint": "Učinit snap uložitelným v chatu",
+        "unlimited_duration": "Neomezeně"
+    },
+    "invalid_input_toast": "Neplatný vstup! Ujistěte se, že jste zadali platnou hodnotu."
+}

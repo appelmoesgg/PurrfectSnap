@@ -10,9 +10,11 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavBackStackEntry
+import androidx.navigation.compose.currentBackStackEntryAsState
 import kotlinx.coroutines.asCoroutineDispatcher
 import kotlinx.coroutines.launch
 import me.rhunk.snapenhance.common.data.MessagingRuleType
@@ -29,6 +31,20 @@ import me.rhunk.snapenhance.ui.util.AlertDialogs
 import me.rhunk.snapenhance.ui.util.Dialog
 
 class ManageRuleFeature : Routes.Route()  {
+    override val title: @Composable () -> Unit = {
+        val navBackStackEntry by routes.navController.currentBackStackEntryAsState()
+        val text = remember(navBackStackEntry) {
+            navBackStackEntry?.arguments?.getString("rule_type")?.let { ruleType ->
+                MessagingRuleType.getByName(ruleType)?.let {
+                    context.config.root.rules.getPropertyPair(it.key).let {
+                        context.translation[it.key.propertyName()]
+                    }
+                }
+            }
+        }
+        text?.let { Text(it, maxLines = 1, overflow = TextOverflow.Ellipsis) }
+    }
+
     @Composable
     fun SelectRuleTypeRadio(
         checked: Boolean,

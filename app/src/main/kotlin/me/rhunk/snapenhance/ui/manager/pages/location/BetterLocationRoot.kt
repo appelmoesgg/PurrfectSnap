@@ -1,15 +1,14 @@
 package me.rhunk.snapenhance.ui.manager.pages.location
 
 import android.os.Parcel
-import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.DeleteOutline
 import androidx.compose.material.icons.filled.Edit
-import androidx.compose.material.icons.filled.EditLocation
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -102,6 +101,7 @@ class BetterLocationRoot : Routes.Route() {
                 }
             }  ?: friendsLocation
         }
+
         ElevatedCard(
             shape = MaterialTheme.shapes.large,
             modifier = Modifier.padding(top = 32.dp, bottom = 32.dp)
@@ -161,7 +161,7 @@ class BetterLocationRoot : Routes.Route() {
             ),
             onClick = onClick
         ) {
-            Icon(Icons.Default.EditLocation, contentDescription = null)
+            Icon(Icons.Default.Edit, contentDescription = translation["edit_location_button_description"])
         }
     }
 
@@ -169,6 +169,7 @@ class BetterLocationRoot : Routes.Route() {
         val coordinatesProperty = remember {
             context.config.root.global.betterLocation.getPropertyPair("coordinates")
         }
+
         val updateDispatcher = rememberAsyncUpdateDispatcher()
         val savedCoordinates = rememberAsyncMutableStateList(
             defaultValue = listOf(),
@@ -179,14 +180,17 @@ class BetterLocationRoot : Routes.Route() {
         var showMap by remember { mutableStateOf(false) }
         var addSavedCoordinateDialog by remember { mutableStateOf(false) }
         var showTeleportDialog by remember { mutableStateOf(false) }
+
         val marker = remember { mutableStateOf<Marker?>(null) }
         val mapView = remember { mutableStateOf<MapView?>(null) }
         var spoofedCoordinates by remember(showTeleportDialog, showMap) { mutableStateOf(coordinatesProperty.value.get() as? Pair<*, *>) }
+
         fun addSavedCoordinate(id: Int?, locationCoordinates: LocationCoordinates, onSuccess: suspend (id: Int) -> Unit = {}) {
             context.coroutineScope.launch {
                 onSuccess(context.database.addOrUpdateLocationCoordinate(id, locationCoordinates))
             }
         }
+
         if (showTeleportDialog) {
             me.rhunk.snapenhance.ui.util.Dialog(
                 properties = DialogProperties(usePlatformDefaultWidth = false),
@@ -201,6 +205,7 @@ class BetterLocationRoot : Routes.Route() {
                 }
             )
         }
+
         Column(
             modifier = Modifier
                 .fillMaxSize()
@@ -218,6 +223,7 @@ class BetterLocationRoot : Routes.Route() {
                     .fillMaxWidth()
                     .padding(8.dp)
             )
+
             if (addSavedCoordinateDialog) {
                 me.rhunk.snapenhance.ui.util.Dialog(
                     onDismissRequest = { addSavedCoordinateDialog = false },
@@ -240,6 +246,7 @@ class BetterLocationRoot : Routes.Route() {
                     }
                 )
             }
+
             if (showMap) {
                 me.rhunk.snapenhance.ui.util.Dialog(
                     onDismissRequest = { showMap = false },
@@ -258,12 +265,13 @@ class BetterLocationRoot : Routes.Route() {
                     }
                 )
             }
+
             LazyColumn(
                 modifier = Modifier
                     .fillMaxSize()
-                    .clipToBounds(),
-                contentPadding = PaddingValues(bottom = routes.bottomPadding)
+                    .clipToBounds()
             ) {
+
                 item {
                     @Composable
                     fun ConfigToggle(
@@ -334,7 +342,7 @@ class BetterLocationRoot : Routes.Route() {
                                 addSavedCoordinateDialog = true
                             }
                         ) {
-                            Icon(Icons.Default.Add, contentDescription = "Add")
+                            Icon(Icons.Default.Add, contentDescription = translation["add_icon_description"])
                         }
                     }
                 }
@@ -353,6 +361,7 @@ class BetterLocationRoot : Routes.Route() {
                     val isSelected = spoofedCoordinates == mutableCoordinates.latitude to mutableCoordinates.longitude
                     var showDeleteDialog by remember { mutableStateOf(false) }
                     var showEditDialog by remember { mutableStateOf(false) }
+
                     fun setSpoofedCoordinates() {
                         spoofedCoordinates = mutableCoordinates.latitude to mutableCoordinates.longitude
                         coordinatesProperty.value.setAny(spoofedCoordinates)
@@ -360,6 +369,7 @@ class BetterLocationRoot : Routes.Route() {
                             context.config.writeConfig()
                         }
                     }
+
                     if (showDeleteDialog) {
                         me.rhunk.snapenhance.ui.util.Dialog(
                             onDismissRequest = { showDeleteDialog = false },
@@ -379,6 +389,7 @@ class BetterLocationRoot : Routes.Route() {
                             }
                         )
                     }
+
                     if (showEditDialog) {
                         me.rhunk.snapenhance.ui.util.Dialog(
                             onDismissRequest = { showEditDialog = false },
@@ -406,6 +417,7 @@ class BetterLocationRoot : Routes.Route() {
                             }
                         )
                     }
+
                     ElevatedCard(
                         onClick = {
                             mutableCoordinates = coordinates
@@ -451,13 +463,13 @@ class BetterLocationRoot : Routes.Route() {
                             FilledIconButton(onClick = {
                                 showEditDialog = true
                             }) {
-                                Icon(Icons.Default.Edit, contentDescription = "Edit")
+                                Icon(Icons.Default.Edit, contentDescription = translation["edit_icon_description"])
                             }
                             Spacer(modifier = Modifier.width(4.dp))
                             FilledIconButton(onClick = {
                                 showDeleteDialog = true
                             }) {
-                                Icon(Icons.Default.DeleteOutline, contentDescription = "Delete")
+                                Icon(Icons.Default.DeleteOutline, contentDescription = translation["delete_icon_description"])
                             }
                         }
                     }

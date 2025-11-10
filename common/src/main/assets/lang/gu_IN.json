@@ -1,16 +1,2022 @@
 {
     "setup": {
         "dialogs": {
-            "save_folder": "SnapEnhance ને Snapchat માંથી મીડિયા ડાઉનલોડ કરવા અને સાચવવા માટે સ્ટોરેજ પરવાનગીની જરૂર છે. કૃપા કરીને તે સ્થાન પસંદ કરો જ્યાં મીડિયા ડાઉનલોડ કરવું જોઈએ.",
+            "select_language": "ભાષા પસંદ કરો",
+            "save_folder": "PurrfectSnap ને Snapchat માંથી મીડિયા ડાઉનલોડ કરવા અને સાચવવા માટે સ્ટોરેજ પરવાનગીની જરૂર છે.\nકૃપા કરીને તે સ્થાન પસંદ કરો જ્યાં મીડિયા ડાઉનલોડ થવું જોઈએ.",
             "select_save_folder_button": "ફોલ્ડર પસંદ કરો"
         },
         "mappings": {
-            "generate_failure": "મેપિંગ જનરેટ કરવાનો પ્રયાસ કરતી વખતે એક ભૂલ આવી, કૃપા કરીને ફરી પ્રયાસ કરો.",
-            "generate_failure_no_snapchat": "SnapEnhance Snapchat શોધવામાં અસમર્થ હતું, કૃપા કરીને Snapchat પુનઃસ્થાપિત કરવાનો પ્રયાસ કરો.",
-            "dialog": "Snapchat સંસ્કરણોની વિશાળ શ્રેણીને ગતિશીલ રીતે સમર્થન આપવા માટે, SnapEnhance યોગ્ય રીતે કાર્ય કરવા માટે મેપિંગ જરૂરી છે, આમાં 5 સેકન્ડથી વધુ સમય લાગવો જોઈએ નહીં."
+            "dialog": "મેપિંગ જનરેટ કરી રહ્યું છે, આમાં થોડો સમય લાગી શકે છે...",
+            "generate_failure_no_snapchat": "PurrfectSnap Snapchat શોધી શક્યું નથી, કૃપા કરીને Snapchat ફરીથી ઇન્સ્ટોલ કરવાનો પ્રયાસ કરો.",
+            "generate_failure": "મેપિંગ જનરેટ કરવાનો પ્રયાસ કરતી વખતે એક ભૂલ આવી, કૃપા કરીને ફરી પ્રયાસ કરો."
         },
         "permissions": {
-            "dialog": "ચાલુ રાખવા માટે તમારે નીચેની આવશ્યકતાઓને ફિટ કરવાની જરૂર છે:"
+            "dialog": "આગળ વધવા માટે તમારે નીચેની આવશ્યકતાઓને પૂર્ણ કરવાની જરૂર છે:",
+            "notification_access": "સૂચના ઍક્સેસ",
+            "battery_optimization": "બેટરી ઓપ્ટિમાઇઝેશન",
+            "display_over_other_apps": "અન્ય એપ્લિકેશનો પર પ્રદર્શિત કરો",
+            "request_button": "વિનંતી"
         }
-    }
+    },
+    "scopes": {
+        "friend": "મિત્ર",
+        "group": "જૂથ"
+    },
+    "manager": {
+        "routes": {
+            "tasks": "કાર્યો",
+            "features": "સુવિધાઓ",
+            "manage_rule_feature": "નિયમ સુવિધાનું સંચાલન કરો",
+            "home": "ઘર",
+            "home_settings": "સેટિંગ્સ",
+            "home_logs": "લોગ્સ",
+            "logger_history": "લોગર ઇતિહાસ",
+            "logged_stories": "લોગ કરેલી વાર્તાઓ",
+            "friend_tracker": "મિત્ર ટ્રેકર",
+            "edit_rule": "નિયમ સંપાદિત કરો",
+            "file_imports": "ફાઇલ આયાત",
+            "manage_repos": "ભંડારોનું સંચાલન કરો",
+            "social": "સામાજિક",
+            "manage_scope": "અવકાશનું સંચાલન કરો",
+            "messaging_preview": "પૂર્વાવલોકન",
+            "scripts": "સ્ક્રિપ્ટો",
+            "better_location": "વધુ સારી જગ્યા"
+        },
+        "sections": {
+            "home": {
+                "version_title": "v{versionName} · Eternal દ્વારા ફોર્ક કરેલ",
+                "update_title": "PurrfectSnap અપડેટ",
+                "update_content": "સંસ્કરણ {version} ઉપલબ્ધ છે!",
+                "update_button": "ડાઉનલોડ કરો",
+                "debug_build_summary_title": "તમે PurrfectSnap નું ડિબગ બિલ્ડ ચલાવી રહ્યા છો",
+                "debug_build_summary_content": "સંસ્કરણ {versionName} ({versionCode})",
+                "debug_build_summary_date": "બિલ્ડ તારીખ: {date} ({days} દિવસો પહેલા)",
+                "quick_actions_title": "ઝડપી ક્રિયાઓ",
+                "download_icon_description": "ડાઉનલોડ કરો",
+                "completed_icon_description": "પૂર્ણ",
+                "failed_icon_description": "નિષ્ફળ",
+                "manage_quick_actions_description": "ઝડપી ક્રિયાઓનું સંચાલન કરો",
+                "quick_actions_icon_description": "ઝડપી ક્રિયાઓ",
+                "add_quick_action_description": "ઝડપી ક્રિયા ઉમેરો"
+            },
+            "home_logs": {
+                "no_logs_hint": "કોઈ લોગ ઉપલબ્ધ નથી",
+                "clear_logs_button": "લોગ સાફ કરો",
+                "export_logs_button": "લોગ નિકાસ કરો",
+                "saving_logs_toast": "લોગ સાચવી રહ્યું છે, આમાં થોડો સમય લાગી શકે છે...",
+                "saved_logs_success_toast": "લોગ સફળતાપૂર્વક સાચવવામાં આવ્યા છે",
+                "saved_logs_failure_toast": "લોગ સાચવવામાં નિષ્ફળ"
+            },
+            "home_settings": {
+                "actions_title": "ક્રિયાઓ",
+                "message_logger_title": "સંદેશ લોગર",
+                "debug_title": "ડિબગ",
+                "success_toast": "થઈ ગયું!",
+                "message_logger_summary": "{messageCount} સંદેશાઓ\n{storyCount} વાર્તાઓ",
+                "export_button": "નિકાસ કરો",
+                "clear_button": "સાફ કરો",
+                "view_logger_history_button": "લોગર ઇતિહાસ જુઓ",
+                "updates_title": "અપડેટ્સ",
+                "auto_update_check": "અપડેટ્સ માટે આપમેળે તપાસો",
+                "update_check_frequency": "અપડેટ તપાસવાની આવર્તન",
+                "update_check_frequency_daily": "દૈનિક",
+                "update_check_frequency_weekly": "સાપ્તાહિક",
+                "update_check_frequency_monthly": "માસિક",
+                "theme_icon_description": "થીમ",
+                "app_theme_title": "એપ્લિકેશન થીમ",
+                "theme_mode_system": "સિસ્ટમ",
+                "theme_mode_light": "પ્રકાશ",
+                "theme_mode_dark": "અંધારું",
+                "ui_settings_title": "UI સેટિંગ્સ",
+                "haptic_feedback_label": "હેપ્ટિક પ્રતિસાદ",
+                "test_mode_label": "પરીક્ષણ મોડ (ફક્ત ડિબગિંગ માટે)",
+                "disable_feature_loading_label": "સુવિધા લોડિંગ અક્ષમ કરો",
+                "disable_auto_mapper_label": "ઓટો મેપર અક્ષમ કરો",
+                "disable_bypass_indicator_label": "બાયપાસ સ્થિતિ સૂચક અક્ષમ કરો",
+                "update_notification_channel_name": "PurrfectSnap અપડેટ્સ",
+                "update_notification_channel_description": "PurrfectSnap અપડેટ્સ માટે સૂચનાઓ",
+                "update_notification_title": "PurrfectSnap અપડેટ ઉપલબ્ધ",
+                "update_notification_text": "સંસ્કરણ %s હવે ઉપલબ્ધ છે.",
+                "export_database_failed_toast": "ડેટાબેઝ નિકાસ કરવામાં નિષ્ફળ! {message}",
+                "clear_messages_failed_toast": "સંદેશાઓ સાફ કરવામાં નિષ્ફળ! {message}",
+                "clear_file_failed_toast": "ફાઇલ સાફ કરવામાં નિષ્ફળ! {message}",
+                "debug_file_config": "રૂપરેખાંકન",
+                "debug_file_mappings": "મેપિંગ્સ",
+                "debug_file_message_logger": "સંદેશ લોગર",
+                "debug_file_pinned_best_friend": "પિન કરેલ શ્રેષ્ઠ મિત્ર",
+                "debug_file_native_sig_cache": "મૂળ સહી કેશ"
+            },
+            "tasks": {
+                "no_tasks": "કોઈ કાર્યો નથી",
+                "merge_button": "ભેળવો",
+                "failed_to_open_file": "ફાઇલ ખોલવામાં નિષ્ફળ",
+                "merge_files_toast": "{count} ફાઇલો ભેળવી રહી છે",
+                "remove_selected_tasks_title": "શું તમે ખાતરી કરો છો કે તમે પસંદ કરેલા કાર્યોને દૂર કરવા માંગો છો?",
+                "remove_all_tasks_title": "શું તમે ખાતરી કરો છો કે તમે બધા કાર્યોને દૂર કરવા માંગો છો?",
+                "delete_files_option": "ફાઇલો પણ કાઢી નાખો",
+                "remove_selected_tasks_confirm": "{count} કાર્યો દૂર કરો?",
+                "remove_all_tasks_confirm": "બધા કાર્યો દૂર કરો?",
+                "clear_tasks_description": "કાર્યો સાફ કરો",
+                "file_not_found_icon_description": "ફાઇલ મળી નથી",
+                "image_icon_description": "છબી",
+                "video_icon_description": "વિડિઓ",
+                "audio_icon_description": "ઓડિયો",
+                "file_icon_description": "ફાઇલ",
+                "download_icon_description": "ડાઉનલોડ કરો",
+                "chat_action_icon_description": "ચેટ ક્રિયા",
+                "cancel_icon_description": "રદ કરો",
+                "success_icon_description": "સફળતા",
+                "failure_icon_description": "નિષ્ફળતા",
+                "cancelled_icon_description": "રદ કરેલ",
+                "task_status_failure": "નિષ્ફળતા",
+                "task_status_cancelled": "રદ કરેલ"
+            },
+            "features": {
+                "disabled": "અક્ષમ",
+                "export_option": "નિકાસ કરો",
+                "import_option": "આયાત કરો",
+                "reset_option": "રીસેટ કરો",
+                "config_export_success_toast": "રૂપરેખાંકન સફળતાપૂર્વક નિકાસ કરવામાં આવ્યું",
+                "config_import_success_toast": "રૂપરેખાંકન સફળતાપૂર્વક આયાત કરવામાં આવ્યું",
+                "config_import_failure_toast": "રૂપરેખાંકન આયાત કરવામાં નિષ્ફળ {error}",
+                "config_export_failure_toast": "રૂપરેખાંકન નિકાસ કરવામાં નિષ્ફળ {error}",
+                "saved_config_snackbar": "રૂપરેખાંકન સાચવવામાં આવ્યું",
+                "older_required": "આ સુવિધાને યોગ્ય રીતે કામ કરવા માટે Snapchat v{version} અથવા જૂનીની જરૂર છે",
+                "newer_required": "આ સુવિધાને યોગ્ય રીતે કામ કરવા માટે Snapchat v{version} અથવા નવીની જરૂર છે",
+                "search_button": "શોધો"
+            },
+            "manage_rule_feature": {
+                "disable_state_option": "અક્ષમ",
+                "disable_state_subtext": "કોઈ મિત્રો/જૂથોને અસર થશે નહીં",
+                "whitelist_state_option": "સિવાય કોઈ નહીં ...",
+                "whitelist_state_subtext": "ફક્ત {count} મિત્રો/જૂથો આ નિયમથી પ્રભાવિત થશે",
+                "whitelist_state_button": "મંજૂર મિત્રો/જૂથો પસંદ કરો",
+                "blacklist_state_option": "સિવાય દરેક ...",
+                "blacklist_state_subtext": "સિવાય દરેક {count} મિત્રો/જૂથો આ નિયમથી પ્રભાવિત થશે",
+                "blacklist_state_button": "બાકાત મિત્રો/જૂથો પસંદ કરો",
+                "clear_list_button": "મિત્રો/જૂથોની સૂચિ સાફ કરો",
+                "dialog_clear_confirmation_text": "શું તમે ખાતરી કરો છો કે તમે સૂચિ સાફ કરવા માંગો છો?"
+            },
+            "social": {
+                "friends_tab": "મિત્રો",
+                "groups_tab": "જૂથો",
+                "empty_hint": "(ખાલી)",
+                "streaks_expiration_short": "{hours}ક"
+            },
+            "manage_scope": {
+                "logged_stories_button": "લોગ કરેલી વાર્તાઓ બતાવો",
+                "e2ee_title": "એન્ડ-ટુ-એન્ડ એન્ક્રિપ્શન",
+                "rules_title": "નિયમો",
+                "participants_text": "{count} સહભાગીઓ",
+                "not_found": "મળ્યું નથી",
+                "streaks_title": "સ્ટ્રીક્સ",
+                "streaks_length_text": "લંબાઈ: {length}",
+                "streaks_expiration_text": "{eta} માં સમાપ્ત થાય છે",
+                "streaks_expiration_text_expired": "સમાપ્ત",
+                "reminder_button": "રીમાઇન્ડર સેટ કરો",
+                "delete_scope_confirm_dialog_title": "શું તમે ખાતરી કરો છો કે તમે {scope} કાઢી નાખવા માંગો છો?",
+                "notes_placeholder": "નોંધ ઉમેરવા માટે ક્લિક કરો",
+                "invalid_key_size_32_bytes": "અમાન્ય કી કદ (32 બાઇટ્સ હોવું આવશ્યક છે)",
+                "successfully_imported_key": "કી સફળતાપૂર્વક આયાત કરવામાં આવી",
+                "failed_to_import_key": "કી આયાત કરવામાં નિષ્ફળ: {message}",
+                "export_base64_button": "બેઝ64 નિકાસ કરો",
+                "import_base64_button": "બેઝ64 આયાત કરો"
+            },
+            "logged_stories": {
+                "story_failed_to_load": "લોડ કરવામાં નિષ્ફળ",
+                "no_stories": "કોઈ વાર્તાઓ મળી નથી",
+                "save_from_cache_button": "કેશમાંથી સાચવો",
+                "downloaded_to_path": "{path} પર ડાઉનલોડ થયું",
+                "download_failed": "ડાઉનલોડ નિષ્ફળ: {message}",
+                "posted_at": "{date} ના રોજ પોસ્ટ કર્યું",
+                "created_at": "{date} ના રોજ બનાવ્યું",
+                "failed_to_open_file": "ફાઇલ ખોલવામાં નિષ્ફળ. વધુ માહિતી માટે લોગ તપાસો",
+                "failed_to_get_file": "ફાઇલ મેળવવામાં નિષ્ફળ"
+            },
+            "messaging_preview": {
+                "processed_messages_toast": "{count} સંદેશા પર પ્રક્રિયા કરવામાં આવી",
+                "processed_messages_text": "{count} સંદેશા પર પ્રક્રિયા કરવામાં આવી",
+                "close_button_description": "બંધ કરો",
+                "bridge_connection_failed": "બ્રિજ સાથે કનેક્ટ કરવામાં નિષ્ફળ. ખાતરી કરો કે Snapchat પૃષ્ઠભૂમિમાં ચાલી રહ્યું છે",
+                "bridge_init_failed": "મેસેજિંગ બ્રિજ શરૂ કરવામાં નિષ્ફળ. ખાતરી કરો કે Snapchat પૃષ્ઠભૂમિમાં ચાલી રહ્યું છે",
+                "message_fetch_failed": "સંદેશા મેળવવામાં નિષ્ફળ",
+                "no_message_hint": "કોઈ સંદેશ નથી",
+                "save_selection_option": "પસંદગી સાચવો",
+                "save_all_option": "બધા સાચવો",
+                "unsave_selection_option": "પસંદગી અસાચવો",
+                "unsave_all_option": "બધા અસાચવો",
+                "mark_selection_as_seen_option": "પસંદ કરેલ સ્નેપને જોયેલ તરીકે ચિહ્નિત કરો",
+                "mark_all_as_seen_option": "બધા સ્નેપને જોયેલ તરીકે ચિહ્નિત કરો",
+                "delete_selection_option": "પસંદગી કાઢી નાખો",
+                "delete_all_option": "બધા કાઢી નાખો"
+            },
+            "logger_history": {
+                "download_started_toast": "ડાઉનલોડ શરૂ થયું!",
+                "download_success_toast": "{path} પર ડાઉનલોડ થયું",
+                "download_failed_toast": "{message} ડાઉનલોડ કરવામાં નિષ્ફળ",
+                "edited_at_text": "{message} ({date} ના રોજ સંપાદિત)",
+                "download_button": "ડાઉનલોડ કરો",
+                "select_conversation_placeholder": "વાર્તાલાપ પસંદ કરો",
+                "close_button_description": "બંધ કરો",
+                "search_button_description": "શોધો",
+                "list_friend_format": "મિત્ર {name}",
+                "list_group_format": "જૂથ {name}",
+                "no_more_messages": "વધુ સંદેશા નથી",
+                "reverse_order_checkbox": "ઉલટો ક્રમ",
+                "chat_attachment": "જોડાણ {index}",
+                "empty_message": "ખાલી ચેટ સંદેશ",
+                "message_parse_failed": "સંદેશ પાર્સ કરવામાં નિષ્ફળ",
+                "unknown_sender": "અજ્ઞાત પ્રેષક",
+                "download_attachment_failed_toast": "જોડાણ ડાઉનલોડ કરવામાં નિષ્ફળ",
+                "log_header_format": "{username} ({type}) - {date}"
+            },
+            "file_imports": {
+                "import_file_button": "ફાઇલ આયાત કરો",
+                "file_not_found": "ફાઇલ મળી નથી",
+                "file_import_failed": "ફાઇલ આયાત કરવામાં નિષ્ફળ: {error}",
+                "file_imported": "ફાઇલ સફળતાપૂર્વક આયાત કરવામાં આવી",
+                "file_delete_failed": "ફાઇલ કાઢી નાખવામાં નિષ્ફળ",
+                "no_files_hint": "અહીં તમે Snapchat માં ઉપયોગ માટે ફાઇલો આયાત કરી શકો છો. ફાઇલ આયાત કરવા માટે નીચેનું બટન દબાવો."
+            },
+            "better_location": {
+                "spoofed_coordinates_title": "અક્ષાંશ {latitude}, રેખાંશ {longitude}",
+                "save_coordinates_dialog_title": "કોઓર્ડિનેટ્સ સાચવો",
+                "saved_name_dialog_hint": "સાચવેલું નામ",
+                "latitude_dialog_hint": "અક્ષાંશ",
+                "longitude_dialog_hint": "રેખાંશ",
+                "save_dialog_button": "સાચવો",
+                "choose_location_button": "સ્થાન પસંદ કરો",
+                "teleport_to_friend_button": "મિત્ર પાસે ટેલિપોર્ટ કરો",
+                "spoof_location_toggle": "સ્થાન સ્પૂફ કરો",
+                "suspend_location_updates": "સ્થાન અપડેટ્સ સ્થગિત કરો",
+                "saved_coordinates_title": "સાચવેલા કોઓર્ડિનેટ્સ",
+                "no_saved_coordinates_hint": "કોઈ સાચવેલા કોઓર્ડિનેટ્સ નથી",
+                "delete_dialog_title": "સાચવેલ કોઓર્ડિનેટ કાઢી નાખો",
+                "delete_dialog_message": "શું તમે ખાતરી કરો છો કે તમે આ સાચવેલ કોઓર્ડિનેટ કાઢી નાખવા માંગો છો?",
+                "teleport_to_friend_title": "મિત્ર પાસે ટેલિપોર્ટ કરો",
+                "search_bar": "શોધો",
+                "no_friends_map": "નકશા પર કોઈ મિત્રો નથી",
+                "no_friends_found": "કોઈ મિત્રો મળ્યા નથી",
+                "edit_location_button_description": "સ્થાન સંપાદિત કરો",
+                "add_icon_description": "ઉમેરો",
+                "edit_icon_description": "સંપાદિત કરો",
+                "delete_icon_description": "કાઢી નાખો"
+            }
+        },
+        "dialogs": {
+            "add_friend": {
+                "title": "મિત્ર અથવા જૂથ ઉમેરો",
+                "search_hint": "શોધો",
+                "fetch_error": "ડેટા મેળવવામાં નિષ્ફળ",
+                "category_groups": "જૂથો",
+                "category_friends": "મિત્રો",
+                "participants_text": "{count} સહભાગીઓ",
+                "search_icon_description": "શોધો"
+            },
+            "scripting_warning": {
+                "title": "ચેતવણી",
+                "content": "PurrfectSnap માં સ્ક્રિપ્ટીંગ ટૂલ શામેલ છે, જે તમારા ઉપકરણ પર વપરાશકર્તા-વ્યાખ્યાયિત કોડ ચલાવવાની મંજૂરી આપે છે. અત્યંત સાવધાની રાખો અને ફક્ત જાણીતા, વિશ્વસનીય સ્ત્રોતોમાંથી મોડ્યુલો ઇન્સ્ટોલ કરો. અનધિકૃત અથવા ચકાસાયેલ ન હોય તેવા મોડ્યુલો તમારા સિસ્ટમ માટે સુરક્ષા જોખમો ઉભા કરી શકે છે."
+            },
+            "reset_config": {
+                "title": "રૂપરેખાંકન રીસેટ કરો",
+                "content": "શું તમે ખાતરી કરો છો કે તમે રૂપરેખાંકન રીસેટ કરવા માંગો છો?",
+                "success_toast": "રૂપરેખાંકન સફળતાપૂર્વક રીસેટ કરવામાં આવ્યું"
+            },
+            "export_config": {
+                "title": "સંવેદનશીલ ડેટા નિકાસ કરો?",
+                "content": "શું તમે સંવેદનશીલ ડેટા સાથે રૂપરેખાંકન નિકાસ કરવા માંગો છો? (જેમ કે સ્થાન કોઓર્ડિનેટ્સ, વગેરે)"
+            },
+            "messaging_action": {
+                "title": "પ્રક્રિયા કરવા માટે સામગ્રી પ્રકારો પસંદ કરો",
+                "select_all_button": "બધા પસંદ કરો"
+            },
+            "file_imports": {
+                "no_files_settings_hint": "કોઈ ફાઇલો મળી નથી. ખાતરી કરો કે તમે ફાઇલ આયાત વિભાગમાં જરૂરી ફાઇલો આયાત કરી છે",
+                "settings_select_file_hint": "આયાત કરેલી ફાઇલ પસંદ કરો"
+            },
+            "quick_actions_dialog": {
+                "title": "ઝડપી ક્રિયાઓ સંપાદિત કરો",
+                "subtitle": "તમારી ઝડપી ક્રિયાઓ પસંદ કરો અને કદ આપો."
+            }
+        },
+        "friend_tracker": {
+            "rules_tab": "નિયમો",
+            "logs_tab": "લોગ્સ",
+            "export_dialog_title": "નિકાસ કરો",
+            "bulk_export_button": "જથ્થાબંધ નિકાસ",
+            "individual_export_button": "વ્યક્તિગત નિકાસ",
+            "invalid_import_type_dialog_title": "અમાન્ય આયાત પ્રકાર",
+            "invalid_import_type_dialog_text": "પસંદ કરેલી ફાઇલ આ આયાત પ્રકાર સાથે સુસંગત નથી. કૃપા કરીને સાચો આયાત પ્રકાર પસંદ કરો.",
+            "import_dialog_title": "આયાત કરો",
+            "bulk_import_button": "જથ્થાબંધ આયાત",
+            "individual_import_button": "વ્યક્તિગત આયાત",
+            "import_button_description": "આયાત કરો",
+            "export_button_description": "નિકાસ કરો",
+            "export_button": "નિકાસ કરો",
+            "delete_button_description": "કાઢી નાખો",
+            "delete_button": "કાઢી નાખો",
+            "catalog_button_description": "કેટલોગ",
+            "catalog_button": "કેટલોગ",
+            "add_rule_button_description": "નિયમ ઉમેરો",
+            "add_rule_button": "નિયમ ઉમેરો",
+            "no_rules_found": "કોઈ નિયમો મળ્યા નથી",
+            "empty_rule_name": "(ખાલી)",
+            "events_suffix": "ઘટનાઓ",
+            "scopes_suffix": "અવકાશ",
+            "select_rule_to_export_title": "નિકાસ કરવા માટે નિયમ પસંદ કરો",
+            "deleted_logs_toast": "{count} લોગ કાઢી નાખવામાં આવ્યા",
+            "delete_logs_dialog_title": "લોગ કાઢી નાખવા છે?",
+            "deleting_logs_dialog_text": "{count} લોગ કાઢી રહ્યા છીએ...",
+            "delete_logs_dialog_confirm_text": "આ વર્તમાન ફિલ્ટર અને શોધ ક્વેરીના આધારે લોગ કાઢી નાખશે. આ ક્રિયા પૂર્વવત્ કરી શકાતી નથી.",
+            "exported_logs_toast": "લોગ નિકાસ કરવામાં આવ્યા!",
+            "export_logs_failed_toast": "લોગ નિકાસ કરવામાં નિષ્ફળ. વધુ વિગતો માટે લોગકેટ તપાસો.",
+            "export_logs_dialog_title": "લોગ નિકાસ કરવા છે?",
+            "exporting_logs_dialog_text": "લોગ નિકાસ કરી રહ્યું છે...",
+            "export_logs_dialog_confirm_text": "આ વર્તમાન ફિલ્ટર અને શોધ ક્વેરીના આધારે લોગ નિકાસ કરશે.",
+            "export_as_button": "{type} તરીકે નિકાસ કરો",
+            "filters_title": "ફિલ્ટર્સ",
+            "search_by_label": "દ્વારા શોધો",
+            "newest_first_label": "નવા પહેલા",
+            "since_label": "થી",
+            "until_label": "સુધી",
+            "pick_a_date_button": "તારીખ પસંદ કરો",
+            "search_placeholder": "શોધો",
+            "filter_button_description": "ફિલ્ટર",
+            "clear_button_description": "સાફ કરો",
+            "no_logs_found": "કોઈ લોગ મળ્યા નથી",
+            "log_event_format": "{conversation} માં {event}",
+            "condition_only_inside_conversation": "ફક્ત જ્યારે હું વાર્તાલાપમાં હોઉં",
+            "condition_only_outside_conversation": "ફક્ત જ્યારે હું વાર્તાલાપની બહાર હોઉં",
+            "condition_only_when_app_active": "ફક્ત જ્યારે Snapchat સક્રિય હોય",
+            "condition_only_when_app_inactive": "ફક્ત જ્યારે Snapchat નિષ્ક્રિય હોય",
+            "condition_no_push_notification_when_app_active": "Snapchat સક્રિય હોય ત્યારે કોઈ પુશ સૂચના નહીં",
+            "add_event_dialog_title": "ઘટના ઉમેરો",
+            "event_type_label": "ઘટનાનો પ્રકાર",
+            "triggers_title": "ટ્રિગર્સ",
+            "conditions_title": "શરતો",
+            "add_button": "ઉમેરો",
+            "default_rule_name": "કસ્ટમ નિયમ",
+            "discard_changes_dialog_title": "ફેરફારો કાઢી નાખવા છે?",
+            "discard_changes_dialog_text": "તમારી પાસે સાચવેલા ન હોય તેવા ફેરફારો છે. શું તમે ખાતરી કરો છો કે તમે તેમને કાઢી નાખવા માંગો છો?",
+            "discard_button": "કાઢી નાખો",
+            "cannot_save_rule_dialog_title": "નિયમ સાચવી શકાતો નથી",
+            "cannot_save_rule_dialog_text": "સાચવવા માટે નિયમમાં ઓછામાં ઓછી એક ઘટના હોવી આવશ્યક છે.",
+            "duplicate_rule_name_dialog_title": "ડુપ્લિકેટ નિયમ નામ",
+            "duplicate_rule_name_dialog_text": "આ નામનો નિયમ પહેલેથી જ અસ્તિત્વમાં છે. કૃપા કરીને બીજું નામ પસંદ કરો.",
+            "delete_rule_dialog_title": "નિયમ કાઢી નાખો",
+            "delete_rule_dialog_text": "શું તમે ખાતરી કરો છો કે તમે આ નિયમ કાઢી નાખવા માંગો છો?",
+            "new_rule_title": "નવો નિયમ",
+            "edit_rule_title": "નિયમ સંપાદિત કરો",
+            "back_button_description": "પાછા",
+            "save_button_description": "સાચવો",
+            "general_section_title": "સામાન્ય",
+            "rule_name_label": "નિયમનું નામ",
+            "author_name_label": "લેખકનું નામ",
+            "scope_section_title": "અવકાશ",
+            "scope_all": "બધા",
+            "scope_whitelist": "વ્હાઇટલિસ્ટ",
+            "scope_blacklist": "બ્લેકલિસ્ટ",
+            "select_friends_groups_button": "મિત્રો/જૂથો પસંદ કરો ({count})",
+            "events_section_title": "ઘટનાઓ",
+            "add_event_button": "ઘટના ઉમેરો",
+            "no_events_text": "કોઈ ઘટનાઓ નથી"
+        },
+        "friend_tracker_catalog": {
+            "download_failed": "ડાઉનલોડ નિષ્ફળ: {code}",
+            "error": "ભૂલ: {message}",
+            "no_repos_added": "કોઈ ભંડારો ઉમેરવામાં આવ્યા નથી.",
+            "no_rules_available": "કોઈપણ ભંડારમાંથી કોઈ નિયમો ઉપલબ્ધ નથી.",
+            "by_author": "{author} દ્વારા",
+            "imported_button": "આયાત કરેલ",
+            "import_button": "આયાત કરો",
+            "title": "મિત્ર ટ્રેકર કેટલોગ",
+            "manage_repos_description": "ભંડારોનું સંચાલન કરો"
+        },
+        "friend_tracker_export": {
+            "title": "નિયમો નિકાસ કરો",
+            "back_button_description": "પાછા",
+            "exported_toast": "મિત્ર ટ્રેકર નિયમો નિકાસ કરવામાં આવ્યા!",
+            "export_failed_toast": "નિયમો નિકાસ કરવામાં નિષ્ફળ: {message}",
+            "save_button": "સાચવો",
+            "expand_button_description": "વિસ્તૃત કરો"
+        },
+        "friend_tracker_import": {
+            "title": "નિયમો આયાત કરો",
+            "back_button_description": "પાછા",
+            "imported_toast": "મિત્ર ટ્રેકર નિયમો આયાત કરવામાં આવ્યા!",
+            "import_failed_toast": "નિયમો આયાત કરવામાં નિષ્ફળ: {message}",
+            "confirm_button": "પુષ્ટિ કરો",
+            "expand_button_description": "વિસ્તૃત કરો"
+        },
+        "friend_tracker_repos": {
+            "invalid_repo_title": "અમાન્ય ભંડાર",
+            "add_repo_button": "ભંડાર ઉમેરો",
+            "add_repo_dialog_title": "ભંડાર URL ઉમેરો",
+            "repo_url_label": "ભંડાર URL",
+            "repo_added_toast": "ભંડાર સફળતાપૂર્વક ઉમેરવામાં આવ્યો!",
+            "invalid_repo_error": "આ એક માન્ય મિત્ર ટ્રેકર ભંડાર હોય તેવું લાગતું નથી.",
+            "add_repo_failed_toast": "ભંડાર ઉમેરવામાં નિષ્ફળ: {message}",
+            "add_button": "ઉમેરો",
+            "no_repos_added": "કોઈ ભંડારો ઉમેરવામાં આવ્યા નથી",
+            "remove_button": "દૂર કરો",
+            "remove_repo_dialog_title": "ભંડાર દૂર કરો",
+            "remove_repo_dialog_text": "શું તમે ખાતરી કરો છો કે તમે આ ભંડાર દૂર કરવા માંગો છો?"
+        },
+        "navigation": {
+            "tracker_tab_label": "ટ્રેકર",
+            "customize_bottom_bar_title": "નીચેની પટ્ટીને કસ્ટમાઇઝ કરો",
+            "customize_bottom_bar_subtitle": "ટેબ્સને ફરીથી ગોઠવો, ઉમેરો અથવા દૂર કરો. મહત્તમ પાંચ.",
+            "shown_tabs_title": "બતાવેલ ટેબ્સ",
+            "no_tabs_selected_text": "કોઈ ટેબ પસંદ નથી",
+            "available_tabs_title": "ઉપલબ્ધ ટેબ્સ",
+            "reset_button": "રીસેટ કરો",
+            "done_button": "થઈ ગયું"
+        },
+        "scripting": {
+            "script_already_installed": "સ્ક્રિપ્ટ પહેલેથી જ ઇન્સ્ટોલ કરેલી છે!",
+            "downloading_script": "સ્ક્રિપ્ટ ડાઉનલોડ કરી રહ્યું છે...",
+            "script_downloaded": "{name} સ્ક્રિપ્ટ ડાઉનલોડ થઈ!",
+            "download_script_failed": "સ્ક્રિપ્ટ ડાઉનલોડ કરવામાં નિષ્ફળ. વધુ વિગતો માટે લોગ તપાસો",
+            "import_script_from_url_title": "URL માંથી સ્ક્રિપ્ટ આયાત કરો",
+            "import_script_warning": "ચેતવણી: આયાત કરેલી સ્ક્રિપ્ટો તમારા ઉપકરણ માટે હાનિકારક હોઈ શકે છે. ફક્ત વિશ્વસનીય સ્ત્રોતોમાંથી સ્ક્રિપ્ટો આયાત કરો.",
+            "enter_url_label": "અહીં URL દાખલ કરો:",
+            "script_imported": "{name} સ્ક્રિપ્ટ આયાત થઈ!",
+            "import_failed": "સ્ક્રિપ્ટ આયાત કરવામાં નિષ્ફળ. {message}. વધુ વિગતો માટે લોગ તપાસો",
+            "import_button": "આયાત કરો",
+            "update_module_button": "મોડ્યુલ અપડેટ કરો",
+            "updating_script": "{name} સ્ક્રિપ્ટ અપડેટ કરી રહ્યું છે...",
+            "module_not_found": "મોડ્યુલ મળ્યું નથી",
+            "updated_script": "{name} ને સંસ્કરણ {version} પર અપડેટ કર્યું",
+            "update_module_failed": "મોડ્યુલ અપડેટ કરવામાં નિષ્ફળ. વધુ વિગતો માટે લોગ તપાસો",
+            "edit_module_button": "મોડ્યુલ સંપાદિત કરો",
+            "open_module_failed": "મોડ્યુલ ફાઇલ ખોલવામાં નિષ્ફળ. વધુ વિગતો માટે લોગ તપાસો",
+            "clear_module_data_button": "મોડ્યુલ ડેટા સાફ કરો",
+            "module_data_cleared": "મોડ્યુલ ડેટા સાફ થયો!",
+            "clear_module_data_failed": "મોડ્યુલ ડેટા સાફ કરવામાં નિષ્ફળ. વધુ વિગતો માટે લોગ તપાસો",
+            "delete_module_button": "મોડ્યુલ કાઢી નાખો",
+            "deleted_script": "{name} સ્ક્રિપ્ટ કાઢી નાખવામાં આવી!",
+            "delete_module_failed": "મોડ્યુલ કાઢી નાખવામાં નિષ્ફળ. વધુ વિગતો માટે લોગ તપાસો",
+            "actions_title": "ક્રિયાઓ",
+            "no_description": "કોઈ વર્ણન નથી",
+            "update_available": "અપડેટ ઉપલબ્ધ: {version}",
+            "actions_button": "ક્રિયાઓ",
+            "loaded_script": "{name} સ્ક્રિપ્ટ લોડ થઈ",
+            "unloaded_script": "{name} સ્ક્રિપ્ટ અનલોડ થઈ",
+            "enable_script_failed": "સ્ક્રિપ્ટ સક્ષમ કરવામાં નિષ્ફળ. વધુ વિગતો માટે લોગ તપાસો",
+            "disable_script_failed": "સ્ક્રિપ્ટ અક્ષમ કરવામાં નિષ્ફળ. વધુ વિગતો માટે લોગ તપાસો",
+            "select_scripts_folder_toast": "કૃપા કરીને તમારો સ્ક્રિપ્ટ ફોલ્ડર પસંદ કરો!",
+            "manage_repos_button": "ભંડારોનું સંચાલન કરો",
+            "import_from_url_button": "URL માંથી આયાત કરો",
+            "open_scripts_folder_button": "સ્ક્રિપ્ટ ફોલ્ડર ખોલો",
+            "no_settings_for_module": "આ મોડ્યુલમાં કોઈ સેટિંગ્સ નથી",
+            "installed_scripts_tab": "ઇન્સ્ટોલ કરેલી સ્ક્રિપ્ટો",
+            "catalog_tab": "કેટલોગ",
+            "no_scripts_folder_selected_title": "કોઈ સ્ક્રિપ્ટ ફોલ્ડર પસંદ નથી",
+            "select_folder_button": "ફોલ્ડર પસંદ કરો",
+            "no_scripts_found_title": "કોઈ સ્ક્રિપ્ટો મળી નથી.",
+            "use_catalog_to_add_scripts": "સ્ક્રિપ્ટો ઉમેરવા માટે કેટલોગ ટેબનો ઉપયોગ કરો!",
+            "ok_button_timeout": "ઓકે ({timeout})",
+            "documentation_button": "દસ્તાવેજીકરણ",
+            "catalog": {
+                "script_already_installed": "સ્ક્રિપ્ટ પહેલેથી જ ઇન્સ્ટોલ કરેલી છે!",
+                "download_failed": "ડાઉનલોડ નિષ્ફળ: {code}",
+                "script_downloaded": "સ્ક્રિપ્ટ ડાઉનલોડ થઈ!",
+                "could_not_create_file": "ફાઇલ બનાવી શકાઈ નથી.",
+                "no_scripts_folder_selected": "કોઈ સ્ક્રિપ્ટ ફોલ્ડર પસંદ નથી.",
+                "error": "ભૂલ: {message}",
+                "no_repos_added": "કોઈ ભંડારો ઉમેરવામાં આવ્યા નથી.",
+                "repo_list_info": "અહીં તમે ભંડારોની સૂચિ શોધી શકો છો: ",
+                "link_text": "લિંક",
+                "no_scripts_available": "કોઈપણ ભંડારમાંથી કોઈ સ્ક્રિપ્ટો ઉપલબ્ધ નથી.",
+                "by_author": "{author} દ્વારા",
+                "version": "સંસ્કરણ: {version}",
+                "installed_button": "ઇન્સ્ટોલ કરેલ",
+                "download_button": "ડાઉનલોડ કરો"
+            },
+            "repos": {
+                "invalid_repo_title": "અમાન્ય ભંડાર",
+                "add_repo_button": "ભંડાર ઉમેરો",
+                "add_repo_dialog_title": "ભંડાર URL ઉમેરો",
+                "repo_url_label": "ભંડાર URL",
+                "repo_added_toast": "ભંડાર સફળતાપૂર્વક ઉમેરવામાં આવ્યો!",
+                "invalid_repo_error": "આ એક માન્ય સ્ક્રિપ્ટ ભંડાર હોય તેવું લાગતું નથી.",
+                "add_repo_failed_toast": "ભંડાર ઉમેરવામાં નિષ્ફળ: {message}",
+                "add_button": "ઉમેરો",
+                "no_repos_added": "કોઈ ભંડારો ઉમેરવામાં આવ્યા નથી",
+                "remove_button": "દૂર કરો",
+                "remove_repo_dialog_title": "ભંડાર દૂર કરો",
+                "remove_repo_dialog_text": "શું તમે ખાતરી કરો છો કે તમે આ ભંડાર દૂર કરવા માંગો છો?"
+            }
+        },
+        "features": {
+            "config_import": {
+                "title": "આયાતની પુષ્ટિ કરો",
+                "back_button_description": "પાછા",
+                "config_imported_toast": "રૂપરેખાંકન આયાત થયું!",
+                "confirm_button": "પુષ્ટિ કરો",
+                "expand_button_description": "વિસ્તૃત કરો",
+                "enable_feature": "સુવિધા સક્ષમ કરો",
+                "enabled": "સક્ષમ",
+                "disabled": "અક્ષમ"
+            },
+            "config_export": {
+                "title": "નિકાસ સારાંશ",
+                "back_button_description": "પાછા",
+                "save_button": "સાચવો",
+                "expand_button_description": "વિસ્તૃત કરો",
+                "enable_feature": "સુવિધા સક્ષમ કરો",
+                "enabled": "સક્ષમ",
+                "disabled": "અક્ષમ"
+            }
+        },
+        "manage_repos": {
+            "title": "{type} રિપોઝીટરીઝ મેનેજ કરો",
+            "add_repo_button": "ભંડાર ઉમેરો",
+            "add_repo_dialog_title": "ભંડાર URL ઉમેરો",
+            "repo_url_label": "ભંડાર URL",
+            "repo_added_successfully": "ભંડાર સફળતાપૂર્વક ઉમેરવામાં આવ્યો!",
+            "add_repo_failed": "ભંડાર ઉમેરવામાં નિષ્ફળ: {message}",
+            "add_button": "ઉમેરો",
+            "no_repos_added": "કોઈ ભંડારો ઉમેરવામાં આવ્યા નથી",
+            "remove_button": "દૂર કરો"
+        }
+    },
+    "rules": {
+        "toasts": {
+            "enabled": "{ruleName} સક્ષમ",
+            "disabled": "{ruleName} અક્ષમ"
+        },
+        "modes": {
+            "blacklist": "બ્લેકલિસ્ટ મોડ",
+            "whitelist": "વ્હાઇટલિસ્ટ મોડ"
+        },
+        "properties": {
+            "auto_download": {
+                "name": "ઓટો ડાઉનલોડ",
+                "description": "જોતી વખતે સ્નેપ આપમેળે ડાઉનલોડ કરો",
+                "options": {
+                    "blacklist": "ઓટો ડાઉનલોડમાંથી બાકાત રાખો",
+                    "whitelist": "ઓટો ડાઉનલોડ"
+                }
+            },
+            "stealth": {
+                "name": "સ્ટીલ્થ મોડ",
+                "description": "કોઈને પણ જાણ થતી અટકાવે છે કે તમે તેમના સ્નેપ/ચેટ્સ અને વાર્તાલાપ ખોલ્યા છે",
+                "options": {
+                    "blacklist": "સ્ટીલ્થ મોડમાંથી બાકાત રાખો",
+                    "whitelist": "સ્ટીલ્થ મોડ"
+                }
+            },
+            "auto_save": {
+                "name": "ઓટો સેવ",
+                "description": "જોતી વખતે ચેટ સંદેશા સાચવે છે",
+                "options": {
+                    "blacklist": "ઓટો સેવમાંથી બાકાત રાખો",
+                    "whitelist": "ઓટો સેવ"
+                }
+            },
+            "unsaveable_messages": {
+                "name": "અસાચવી શકાય તેવા સંદેશા",
+                "description": "અન્ય લોકો દ્વારા ચેટમાં સંદેશા સાચવવાથી અટકાવે છે",
+                "options": {
+                    "blacklist": "અસાચવી શકાય તેવા સંદેશાઓમાંથી બાકાત રાખો",
+                    "whitelist": "અસાચવી શકાય તેવા સંદેશા"
+                }
+            },
+            "auto_open_snaps": {
+                "name": "ઓટો ઓપન સ્નેપ્સ",
+                "description": "પ્રાપ્ત કરતી વખતે સ્નેપ આપમેળે ખોલે છે",
+                "options": {
+                    "blacklist": "ઓટો ઓપન સ્નેપ્સમાંથી બાકાત રાખો",
+                    "whitelist": "ઓટો ઓપન સ્નેપ્સ"
+                }
+            },
+            "hide_friend_feed": {
+                "name": "મિત્ર ફીડમાંથી છુપાવો"
+            },
+            "e2e_encryption": {
+                "name": "E2E એન્ક્રિપ્શનનો ઉપયોગ કરો"
+            },
+            "pin_conversation": {
+                "name": "વાર્તાલાપ પિન કરો"
+            },
+            "exclude_message_logger": {
+                "name": "સંદેશ લોગરમાંથી બાકાત રાખો"
+            }
+        }
+    },
+    "actions": {
+        "clean_snapchat_cache": {
+            "name": "Snapchat કેશ સાફ કરો",
+            "description": "Snapchat કેશ સાફ કરે છે"
+        },
+        "manage_friend_list": {
+            "name": "મિત્ર સૂચિનું સંચાલન કરો",
+            "description": "બેકઅપ લેતી વખતે તમારી મિત્ર સૂચિ આયાત/નિકાસ કરો"
+        },
+        "export_chat_messages": {
+            "name": "ચેટ સંદેશા નિકાસ કરો",
+            "description": "વાર્તાલાપ સંદેશાને JSON/HTML/TXT ફાઇલમાં નિકાસ કરે છે"
+        },
+        "export_memories": {
+            "name": "યાદો નિકાસ કરો",
+            "description": "યાદોને ZIP ફાઇલમાં નિકાસ કરે છે"
+        },
+        "bulk_messaging_action": {
+            "name": "જથ્થાબંધ મેસેજિંગ ક્રિયા",
+            "description": "મિત્રોને કાઢી નાખવા અથવા વાર્તાલાપને મોટા પાયે કાઢી નાખવા જેવી કામગીરી કરે છે"
+        },
+        "regen_mappings": {
+            "name": "મેપિંગ્સ ફરીથી જનરેટ કરો",
+            "description": "મેપિંગ્સ જાતે ફરીથી જનરેટ કરો"
+        },
+        "change_language": {
+            "name": "ભાષા બદલો",
+            "description": "PurrfectSnap ની ભાષા બદલો"
+        },
+        "file_imports": {
+            "name": "ફાઇલ આયાત",
+            "description": "Snapchat માં ઉપયોગ માટે ફાઇલો આયાત કરો"
+        },
+        "friend_tracker": {
+            "name": "મિત્ર ટ્રેકર",
+            "description": "Snapchat પર તમારા મિત્રોને ટ્રેક કરો"
+        },
+        "logger_history": {
+            "name": "લોગર ઇતિહાસ",
+            "description": "લોગ કરેલા સંદેશાઓનો ઇતિહાસ જુઓ"
+        }
+    },
+    "features": {
+        "notices": {
+            "unstable": "⚠️ અસ્થિર",
+            "ban_risk": "⚠️ આ સુવિધા પ્રતિબંધનું કારણ બની શકે છે",
+            "internal_behavior": "⚠️ આ Snapchat ના આંતરિક વર્તનને તોડી શકે છે"
+        },
+        "properties": {
+            "downloader": {
+                "name": "ડાઉનલોડર",
+                "description": "Snapchat મીડિયા ડાઉનલોડ કરો",
+                "properties": {
+                    "save_folder": {
+                        "name": "ફોલ્ડર સાચવો",
+                        "description": "બધા મીડિયા ડાઉનલોડ કરવા માટે ડિરેક્ટરી પસંદ કરો"
+                    },
+                    "auto_download_sources": {
+                        "name": "ઓટો ડાઉનલોડ સ્ત્રોતો",
+                        "description": "આપમેળે ડાઉનલોડ કરવા માટે સ્ત્રોતો પસંદ કરો"
+                    },
+                    "prevent_self_auto_download": {
+                        "name": "સ્વયં ઓટો ડાઉનલોડ અટકાવો",
+                        "description": "તમારા પોતાના સ્નેપને આપમેળે ડાઉનલોડ થતા અટકાવે છે"
+                    },
+                    "path_format": {
+                        "name": "પાથ ફોર્મેટ",
+                        "description": "ફાઇલ પાથ ફોર્મેટનો ઉલ્લેખ કરો"
+                    },
+                    "allow_duplicate": {
+                        "name": "ડુપ્લિકેટને મંજૂરી આપો",
+                        "description": "એક જ મીડિયાને ઘણી વખત ડાઉનલોડ કરવાની મંજૂરી આપે છે"
+                    },
+                    "merge_overlays": {
+                        "name": "ઓવરલે ભેળવો",
+                        "description": "સ્નેપના ટેક્સ્ટ અને મીડિયાને એક જ ફાઇલમાં જોડે છે"
+                    },
+                    "force_image_format": {
+                        "name": "છબી ફોર્મેટ દબાણ કરો",
+                        "description": "છબીઓને નિર્દિષ્ટ ફોર્મેટમાં સાચવવા માટે દબાણ કરે છે"
+                    },
+                    "force_voice_note_format": {
+                        "name": "વોઇસ નોટ ફોર્મેટ દબાણ કરો",
+                        "description": "વોઇસ નોટ્સને નિર્દિષ્ટ ફોર્મેટમાં સાચવવા માટે દબાણ કરે છે"
+                    },
+                    "auto_download_voice_notes": {
+                        "name": "ઓટો ડાઉનલોડ વોઇસ નોટ્સ",
+                        "description": "વોઇસ નોટ્સ વગાડતી વખતે આપમેળે ડાઉનલોડ કરે છે"
+                    },
+                    "download_profile_pictures": {
+                        "name": "પ્રોફાઇલ ચિત્રો ડાઉનલોડ કરો",
+                        "description": "તમને પ્રોફાઇલ પૃષ્ઠ પરથી પ્રોફાઇલ ચિત્રો ડાઉનલોડ કરવાની મંજૂરી આપે છે"
+                    },
+                    "opera_download_button": {
+                        "name": "ઓપેરા ડાઉનલોડ બટન",
+                        "description": "સ્નેપ જોતી વખતે ઉપરના જમણા ખૂણામાં ડાઉનલોડ બટન ઉમેરે છે.\nબટનો પર લાંબા સમય સુધી દબાવવાથી ડાઉનલોડ દબાણ થશે"
+                    },
+                    "download_context_menu": {
+                        "name": "ડાઉનલોડ સંદર્ભ મેનૂ",
+                        "description": "તમને સંદર્ભ મેનૂનો ઉપયોગ કરીને વાર્તાલાપ અથવા વાર્તામાંથી સંદેશાઓ ડાઉનલોડ/પૂર્વાવલોકન કરવાની મંજૂરી આપે છે.\nબટનો પર લાંબા સમય સુધી દબાવવાથી ડાઉનલોડ દબાણ થશે"
+                    },
+                    "ffmpeg_options": {
+                        "name": "FFmpeg વિકલ્પો",
+                        "description": "વધારાના FFmpeg વિકલ્પોનો ઉલ્લેખ કરો",
+                        "properties": {
+                            "threads": {
+                                "name": "થ્રેડો",
+                                "description": "ઉપયોગ કરવા માટેના થ્રેડોની સંખ્યા"
+                            },
+                            "preset": {
+                                "name": "પ્રીસેટ",
+                                "description": "રૂપાંતરણની ગતિ સેટ કરો"
+                            },
+                            "constant_rate_factor": {
+                                "name": "સતત દર પરિબળ",
+                                "description": "વિડિઓ એન્કોડર માટે સતત દર પરિબળ સેટ કરો\nlibx264 માટે 0 થી 51 સુધી"
+                            },
+                            "video_bitrate": {
+                                "name": "વિડિઓ બિટરેટ",
+                                "description": "વિડિઓ બિટરેટ સેટ કરો (kbps)"
+                            },
+                            "audio_bitrate": {
+                                "name": "ઓડિયો બિટરેટ",
+                                "description": "ઓડિયો બિટરેટ સેટ કરો (kbps)"
+                            },
+                            "custom_video_codec": {
+                                "name": "કસ્ટમ વિડિઓ કોડેક",
+                                "description": "કસ્ટમ વિડિઓ કોડેક સેટ કરો (દા.ત. libx264)"
+                            },
+                            "custom_audio_codec": {
+                                "name": "કસ્ટમ ઓડિયો કોડેક",
+                                "description": "કસ્ટમ ઓડિયો કોડેક સેટ કરો (દા.ત. AAC)"
+                            }
+                        }
+                    },
+                    "logging": {
+                        "name": "લોગિંગ",
+                        "description": "મીડિયા ડાઉનલોડ કરતી વખતે ટોસ્ટ બતાવે છે"
+                    },
+                    "custom_path_format": {
+                        "name": "કસ્ટમ પાથ ફોર્મેટ",
+                        "description": "ડાઉનલોડ કરેલા મીડિયા માટે કસ્ટમ પાથ ફોર્મેટનો ઉલ્લેખ કરો\n\nઉપલબ્ધ ચલો:\n - %username%\n - %source%\n - %hash%\n - %date_time%"
+                    }
+                }
+            },
+            "user_interface": {
+                "name": "વપરાશકર્તા ઈન્ટરફેસ",
+                "description": "Snapchat નો દેખાવ અને અનુભવ બદલો",
+                "properties": {
+                    "enable_app_appearance": {
+                        "name": "એપ્લિકેશન દેખાવ સેટિંગ્સ સક્ષમ કરો",
+                        "description": "છુપાયેલ એપ્લિકેશન દેખાવ સેટિંગને સક્ષમ કરે છે\nનવા Snapchat સંસ્કરણો પર જરૂરી ન હોઈ શકે"
+                    },
+                    "friend_feed_message_preview": {
+                        "name": "મિત્ર ફીડ સંદેશ પૂર્વાવલોકન",
+                        "description": "મિત્ર ફીડમાં છેલ્લા સંદેશાઓનું પૂર્વાવલોકન બતાવે છે",
+                        "properties": {
+                            "amount": {
+                                "name": "રકમ",
+                                "description": "પૂર્વાવલોકન કરવા માટેના સંદેશાઓની રકમ"
+                            }
+                        }
+                    },
+                    "snap_preview": {
+                        "name": "સ્નેપ પૂર્વાવલોકન",
+                        "description": "ચેટમાં ન જોયેલા સ્નેપની બાજુમાં એક નાનું પૂર્વાવલોકન પ્રદર્શિત કરે છે"
+                    },
+                    "bootstrap_override": {
+                        "name": "બુટસ્ટ્રેપ ઓવરરાઇડ",
+                        "description": "વપરાશકર્તા ઈન્ટરફેસ બુટસ્ટ્રેપ સેટિંગ્સને ઓવરરાઇડ કરે છે",
+                        "properties": {
+                            "app_appearance": {
+                                "name": "એપ્લિકેશન દેખાવ",
+                                "description": "એક સતત એપ્લિકેશન દેખાવ સેટ કરે છે"
+                            },
+                            "home_tab": {
+                                "name": "હોમ ટેબ",
+                                "description": "Snapchat ખોલતી વખતે સ્ટાર્ટઅપ ટેબને ઓવરરાઇડ કરે છે"
+                            }
+                        }
+                    },
+                    "force_amoled_theme": {
+                        "name": "અમોલેડ ડાર્ક મોડ",
+                        "description": "ડાર્ક થીમ માટે સાચા કાળા પૃષ્ઠભૂમિનો ઉપયોગ કરે છે"
+                    },
+                    "map_friend_nametags": {
+                        "name": "ઉન્નત મિત્ર નકશા નામટેગ્સ",
+                        "description": "સ્નેપમેપ પર મિત્રોના નામટેગ્સને સુધારે છે"
+                    },
+                    "prevent_message_list_auto_scroll": {
+                        "name": "સંદેશ સૂચિ ઓટો સ્ક્રોલ અટકાવો",
+                        "description": "સંદેશ મોકલતી/પ્રાપ્ત કરતી વખતે સંદેશ સૂચિને તળિયે સ્ક્રોલ થતી અટકાવે છે"
+                    },
+                    "streak_expiration_info": {
+                        "name": "સ્ટ્રીક સમાપ્તિ માહિતી બતાવો",
+                        "description": "સ્ટ્રીક્સ કાઉન્ટરની બાજુમાં સ્ટ્રીક સમાપ્તિ ટાઇમર બતાવે છે"
+                    },
+                    "hide_friend_feed_entry": {
+                        "name": "મિત્ર ફીડ એન્ટ્રી છુપાવો",
+                        "description": "મિત્ર ફીડમાંથી ચોક્કસ મિત્રને છુપાવે છે\nઆ સુવિધાનું સંચાલન કરવા માટે સામાજિક ટેબનો ઉપયોગ કરો"
+                    },
+                    "hide_streak_restore": {
+                        "name": "સ્ટ્રીક પુનઃસ્થાપિત છુપાવો",
+                        "description": "મિત્ર ફીડમાં પુનઃસ્થાપિત બટનને છુપાવે છે"
+                    },
+                    "hide_quick_add_suggestions": {
+                        "name": "ઝડપી ઉમેરો સૂચનો છુપાવો",
+                        "description": "ઝડપી ઉમેરો મિત્ર સૂચનોને દૂર કરે છે"
+                    },
+                    "hide_story_suggestions": {
+                        "name": "વાર્તા સૂચનો છુપાવો",
+                        "description": "વાર્તાઓ પૃષ્ઠમાંથી સૂચનોને દૂર કરે છે"
+                    },
+                    "hide_ui_components": {
+                        "name": "UI ઘટકો છુપાવો",
+                        "description": "કયા UI ઘટકોને છુપાવવા તે પસંદ કરો"
+                    },
+                    "opera_media_quick_info": {
+                        "name": "ઓપેરા મીડિયા ઝડપી માહિતી",
+                        "description": "ઓપેરા વ્યૂઅર સંદર્ભ મેનૂમાં મીડિયાની ઉપયોગી માહિતી જેમ કે બનાવટની તારીખ બતાવે છે"
+                    },
+                    "old_bitmoji_selfie": {
+                        "name": "જૂનું બિટમોજી સેલ્ફી",
+                        "description": "જૂના Snapchat સંસ્કરણોમાંથી બિટમોજી સેલ્ફી પાછા લાવે છે"
+                    },
+                    "disable_spotlight": {
+                        "name": "સ્પોટલાઇટ અક્ષમ કરો",
+                        "description": "સ્પોટલાઇટ પૃષ્ઠને અક્ષમ કરે છે"
+                    },
+                    "friend_feed_menu_buttons": {
+                        "name": "મિત્ર ફીડ મેનુ બટનો",
+                        "description": "મિત્ર ફીડ મેનુમાં કયા બટનો બતાવવા તે પસંદ કરો"
+                    },
+                    "auto_close_friend_feed_menu": {
+                        "name": "મિત્ર ફીડ મેનુ આપમેળે બંધ કરો",
+                        "description": "સેટિંગ બટન દબાવ્યા પછી મિત્ર ફીડ મેનુ આપમેળે બંધ કરે છે"
+                    },
+                    "vertical_story_viewer": {
+                        "name": "વર્ટિકલ સ્ટોરી વ્યૂઅર",
+                        "description": "બધી વાર્તાઓ માટે વર્ટિકલ સ્ટોરી વ્યૂઅરને સક્ષમ કરે છે"
+                    },
+                    "enable_friend_feed_menu_bar": {
+                        "name": "મિત્ર ફીડ મેનુ બાર",
+                        "description": "નવા મિત્ર ફીડ મેનુ બારને સક્ષમ કરે છે"
+                    },
+                    "message_indicators": {
+                        "name": "સંદેશ સૂચકો",
+                        "description": "સંદેશાઓમાં વિશિષ્ટ સૂચક ચિહ્નો ઉમેરે છે\nનોંધ: સૂચકો 100% સચોટ ન હોઈ શકે"
+                    },
+                    "stealth_mode_indicator": {
+                        "name": "સ્ટીલ્થ મોડ સૂચક",
+                        "description": "સ્ટીલ્થ મોડમાં વાર્તાલાપની બાજુમાં 👻 ઇમોજી ઉમેરે છે"
+                    },
+                    "edit_text_override": {
+                        "name": "ટેક્સ્ટ સંપાદન ઓવરરાઇડ",
+                        "description": "ટેક્સ્ટ ફીલ્ડ વર્તનને ઓવરરાઇડ કરે છે"
+                    },
+                    "prevent_forced_keyboard": {
+                        "name": "દબાણયુક્ત કીબોર્ડ અટકાવો",
+                        "description": "તમે વાર્તાલાપ ખોલો ત્યારે Snapchat ને આપમેળે કીબોર્ડ પોપ અપ થતું અટકાવે છે"
+                    },
+                    "settings_menu": {
+                        "name": "સેટિંગ્સ મેનુ",
+                        "description": "તમે PurrfectSnap મેનુ ખોલવાની રીતને બદલે છે",
+                        "options": {
+                            "default": "ડિફોલ્ટ",
+                            "legacy": "વારસો"
+                        }
+                    }
+                }
+            },
+            "messaging": {
+                "name": "મેસેજિંગ",
+                "description": "તમે મિત્રો સાથે કેવી રીતે ક્રિયાપ્રતિક્રિયા કરો છો તે બદલો",
+                "properties": {
+                    "bypass_screenshot_detection": {
+                        "name": "સ્ક્રીનશોટ શોધને બાયપાસ કરો",
+                        "description": "તમે સ્ક્રીનશોટ લો ત્યારે Snapchat ને શોધવાથી અટકાવે છે"
+                    },
+                    "anonymous_story_viewing": {
+                        "name": "અનામી વાર્તા જોવી",
+                        "description": "કોઈને પણ જાણ થતી અટકાવે છે કે તમે તેમની વાર્તા જોઈ છે"
+                    },
+                    "prevent_story_rewatch_indicator": {
+                        "name": "વાર્તા ફરીથી જોવાનું સૂચક અટકાવો",
+                        "description": "કોઈને પણ જાણ થતી અટકાવે છે કે તમે તેમની વાર્તા ફરીથી જોઈ છે"
+                    },
+                    "hide_peek_a_peek": {
+                        "name": "પીક-એ-પીક છુપાવો",
+                        "description": "તમે ચેટમાં અડધો સ્વાઇપ કરો ત્યારે સૂચના મોકલવાથી અટકાવે છે"
+                    },
+                    "hide_bitmoji_presence": {
+                        "name": "બિટમોજી હાજરી છુપાવો",
+                        "description": "ચેટમાં હોય ત્યારે તમારા બિટમોજીને પોપ અપ થતા અટકાવે છે"
+                    },
+                    "hide_typing_notifications": {
+                        "name": "ટાઇપિંગ સૂચનાઓ છુપાવો",
+                        "description": "કોઈને પણ જાણ થતી અટકાવે છે કે તમે સંદેશ ટાઇપ કરી રહ્યા છો"
+                    },
+                    "unlimited_snap_view_time": {
+                        "name": "અમર્યાદિત સ્નેપ જોવાનો સમય",
+                        "description": "સ્નેપ જોવા માટે સમય મર્યાદા દૂર કરે છે"
+                    },
+                    "auto_mark_as_read": {
+                        "name": "આપમેળે વાંચેલ તરીકે ચિહ્નિત કરો",
+                        "description": "સ્ટીલ્થ મોડ સક્ષમ હોય ત્યારે પણ સંદેશાઓ/સ્નેપને આપમેળે વાંચેલ તરીકે ચિહ્નિત કરે છે"
+                    },
+                    "mark_snap_as_seen_button": {
+                        "name": "સ્નેપને જોયેલ તરીકે ચિહ્નિત કરો બટન",
+                        "description": "સ્નેપ જોતી વખતે તેને જોયેલ તરીકે ચિહ્નિત કરવા માટે એક બટન ઉમેરે છે.\nઆ સ્ટીલ્થ મોડ સક્ષમ હોય ત્યારે પણ કામ કરશે"
+                    },
+                    "skip_when_marking_as_seen": {
+                        "name": "જોયેલ તરીકે ચિહ્નિત કરતી વખતે અવગણો",
+                        "description": "સ્નેપને જોયેલ તરીકે ચિહ્નિત કરતી વખતે આપમેળે આગલા સ્નેપ પર અવગણે છે.\nસ્નેપને જોયેલ તરીકે ચિહ્નિત કરો બટન સાથે સંયોજનમાં ઉપયોગ કરો"
+                    },
+                    "loop_media_playback": {
+                        "name": "લૂપ મીડિયા પ્લેબેક",
+                        "description": "સ્નેપ/વાર્તાઓ જોતી વખતે મીડિયા પ્લેબેકને લૂપ કરે છે"
+                    },
+                    "disable_replay_in_ff": {
+                        "name": "FF માં રિપ્લે અક્ષમ કરો",
+                        "description": "મિત્ર ફીડમાંથી લાંબા સમય સુધી દબાવીને રિપ્લે કરવાની ક્ષમતાને અક્ષમ કરે છે"
+                    },
+                    "half_swipe_notifier": {
+                        "name": "અડધો સ્વાઇપ સૂચક",
+                        "description": "જ્યારે કોઈ વાર્તાલાપમાં અડધો સ્વાઇપ કરે ત્યારે તમને સૂચિત કરે છે",
+                        "properties": {
+                            "min_duration": {
+                                "name": "ન્યૂનતમ અવધિ",
+                                "description": "અડધા સ્વાઇપની ન્યૂનતમ અવધિ (સેકંડમાં)"
+                            },
+                            "max_duration": {
+                                "name": "મહત્તમ અવધિ",
+                                "description": "અડધા સ્વાઇપની મહત્તમ અવધિ (સેકંડમાં)"
+                            }
+                        }
+                    },
+                    "call_start_confirmation": {
+                        "name": "કોલ પ્રારંભ પુષ્ટિ",
+                        "description": "કોલ શરૂ કરતી વખતે પુષ્ટિ સંવાદ બતાવે છે"
+                    },
+                    "unlimited_conversation_pinning": {
+                        "name": "અમર્યાદિત વાર્તાલાપ પિનિંગ",
+                        "description": "તમને સ્થાનિક રીતે અમર્યાદિત સંખ્યામાં વાર્તાલાપ પિન કરવાની મંજૂરી આપે છે"
+                    },
+                    "disable_snap_mode_restrictions": {
+                        "name": "સ્નેપ મોડ પ્રતિબંધો અક્ષમ કરો",
+                        "description": "તમને પ્રતિબંધો વિના સ્વ-વિનાશક સ્નેપ જોવાની મંજૂરી આપે છે"
+                    },
+                    "prevent_message_sending": {
+                        "name": "સંદેશ મોકલવાનું અટકાવો",
+                        "description": "ચોક્કસ પ્રકારના સંદેશા મોકલવાનું અટકાવે છે"
+                    },
+                    "friend_mutation_notifier": {
+                        "name": "મિત્ર મ્યુટેશન સૂચક",
+                        "description": "જ્યારે મિત્રના પ્રોફાઇલમાં કંઈક બદલાય ત્યારે તમને સૂચિત કરે છે"
+                    },
+                    "better_notifications": {
+                        "name": "વધુ સારી સૂચનાઓ",
+                        "description": "પ્રાપ્ત સૂચનાઓમાં વધુ માહિતી ઉમેરે છે",
+                        "properties": {
+                            "group_notifications": {
+                                "name": "જૂથ સૂચનાઓ",
+                                "description": "જૂથ સૂચનાઓને એકમાં જૂથબદ્ધ કરો"
+                            },
+                            "chat_preview": {
+                                "name": "ચેટ પૂર્વાવલોકન",
+                                "description": "સૂચનામાં પ્રાપ્ત સંદેશાઓનું પૂર્વાવલોકન બતાવે છે"
+                            },
+                            "media_preview": {
+                                "name": "મીડિયા પૂર્વાવલોકન",
+                                "description": "સૂચનામાં પસંદ કરેલા મીડિયા પ્રકારોનું પૂર્વાવલોકન બતાવે છે"
+                            },
+                            "media_caption": {
+                                "name": "મીડિયા કેપ્શન",
+                                "description": "સૂચનામાં મીડિયાના જોડાયેલા કેપ્શનને બતાવે છે"
+                            },
+                            "stacked_media_messages": {
+                                "name": "સ્ટેક્ડ મીડિયા સંદેશા",
+                                "description": "જ્યારે તેઓ પૂર્વાવલોકન કરી શકાતા નથી ત્યારે બહુવિધ મીડિયા સંદેશાઓને એક ટેક્સ્ટ સૂચનામાં જોડે છે. ચેટ પૂર્વાવલોકન સાથે સંયોજનમાં ઉપયોગ કરો"
+                            },
+                            "friend_add_source": {
+                                "name": "મિત્ર ઉમેરો સ્ત્રોત",
+                                "description": "સૂચનામાં મિત્ર વિનંતીનો સ્ત્રોત બતાવે છે"
+                            },
+                            "reply_button": {
+                                "name": "જવાબ બટન",
+                                "description": "સૂચનામાં જવાબ બટન ઉમેરે છે"
+                            },
+                            "smart_replies": {
+                                "name": "સ્માર્ટ જવાબો",
+                                "description": "સૂચનાઓમાં સૂચવેલા જવાબો ઉમેરે છે (Android 10+). જવાબ બટન સાથે સંયોજનમાં ઉપયોગ કરો"
+                            },
+                            "download_button": {
+                                "name": "ડાઉનલોડ બટન",
+                                "description": "તમને સૂચનામાંથી મીડિયા ડાઉનલોડ કરવાની મંજૂરી આપે છે"
+                            },
+                            "mark_as_read_button": {
+                                "name": "વાંચેલ તરીકે ચિહ્નિત કરો બટન",
+                                "description": "તમને સૂચનામાંથી સંદેશને વાંચેલ તરીકે ચિહ્નિત કરવાની મંજૂરી આપે છે"
+                            },
+                            "mark_as_read_and_save_in_chat": {
+                                "name": "વાંચેલ તરીકે ચિહ્નિત કરો અને ચેટમાં સાચવો",
+                                "description": "સૂચનામાં વાંચેલ તરીકે ચિહ્નિત કરો અને ચેટમાં સાચવો બટન ઉમેરે છે"
+                            }
+                        }
+                    },
+                    "notification_blacklist": {
+                        "name": "સૂચના બ્લેકલિસ્ટ",
+                        "description": "કઈ સૂચનાઓ અવરોધિત થવી જોઈએ તે પસંદ કરો"
+                    },
+                    "message_logger": {
+                        "name": "સંદેશ લોગર",
+                        "description": "સંદેશાને કાઢી નાખવાથી અટકાવે છે",
+                        "properties": {
+                            "keep_my_own_messages": {
+                                "name": "મારા પોતાના સંદેશા રાખો",
+                                "description": "તમારા પોતાના સંદેશાને કાઢી નાખવાથી અટકાવે છે"
+                            },
+                            "auto_purge": {
+                                "name": "ઓટો પર્જ",
+                                "description": "નિર્દિષ્ટ સમય કરતાં જૂના કેશ્ડ સંદેશાને આપમેળે કાઢી નાખે છે"
+                            },
+                            "message_filter": {
+                                "name": "સંદેશ ફિલ્ટર",
+                                "description": "કયા સંદેશા લોગ થવા જોઈએ તે પસંદ કરો (બધા સંદેશા માટે ખાલી)"
+                            },
+                            "deleted_message_color": {
+                                "name": "કાઢી નાખેલ સંદેશનો રંગ",
+                                "description": "કાઢી નાખેલા સંદેશાઓનો રંગ સેટ કરે છે"
+                            }
+                        }
+                    },
+                    "auto_save_messages_in_conversations": {
+                        "name": "વાર્તાલાપમાં સંદેશા આપમેળે સાચવો",
+                        "description": "વાર્તાલાપમાં દરેક સંદેશને આપમેળે સાચવે છે"
+                    },
+                    "gallery_media_send_override": {
+                        "name": "ગેલેરી મીડિયા મોકલો ઓવરરાઇડ",
+                        "description": "ગેલેરીમાંથી મોકલતી વખતે મીડિયા સ્ત્રોતને સ્પૂફ કરે છે"
+                    },
+                    "strip_media_metadata": {
+                        "name": "મીડિયા મેટાડેટા સ્ટ્રીપ કરો",
+                        "description": "સંદેશ તરીકે મોકલતા પહેલા મીડિયાના મેટાડેટાને દૂર કરે છે"
+                    },
+                    "bypass_message_retention_policy": {
+                        "name": "સંદેશ રીટેન્શન નીતિને બાયપાસ કરો",
+                        "description": "સંદેશા જોયા પછી તેને કાઢી નાખવાથી અટકાવે છે"
+                    },
+                    "bypass_message_action_restrictions": {
+                        "name": "સંદેશ ક્રિયા પ્રતિબંધોને બાયપાસ કરો",
+                        "description": "તમને સ્નેપ ખોલ્યા વિના તેના પર પ્રતિક્રિયા આપવા અથવા અસાચવી શકાય તેવા સંદેશને સાચવવાની મંજૂરી આપે છે"
+                    },
+                    "remove_groups_locked_status": {
+                        "name": "જૂથોની લોક કરેલી સ્થિતિ દૂર કરો",
+                        "description": "તમને બહાર કાઢ્યા પછી જૂથ માહિતી જોવાની મંજૂરી આપે છે"
+                    },
+                    "double_tap_chat_action": {
+                        "name": "ડબલ ટેપ ચેટ ક્રિયા",
+                        "description": "ચેટમાં સંદેશ પર ડબલ ટેપ કરતી વખતે કસ્ટમ ક્રિયા કરે છે"
+                    },
+                    "double_tap_chat_action_custom_emoji": {
+                        "name": "ડબલ ટેપ ચેટ ક્રિયા કસ્ટમ ઇમોજી પ્રતિક્રિયા",
+                        "description": "ડબલ ટેપ ચેટ ક્રિયા માટે કસ્ટમ ઇમોજી પ્રતિક્રિયા સેટ કરે છે"
+                    }
+                }
+            },
+            "global": {
+                "name": "વૈશ્વિક",
+                "description": "વૈશ્વિક Snapchat સેટિંગ્સને ટ્વિક કરો",
+                "properties": {
+                    "better_location": {
+                        "name": "વધુ સારી જગ્યા",
+                        "description": "Snapchat સ્થાનને વધારે છે",
+                        "properties": {
+                            "spoof_location": {
+                                "name": "સ્થાન સ્પૂફ કરો",
+                                "description": "તમારા સ્થાનને નિર્દિષ્ટ સ્થાન પર સ્પૂફ કરે છે"
+                            },
+                            "coordinates": {
+                                "name": "કોઓર્ડિનેટ્સ",
+                                "description": "સ્પૂફ કરેલા સ્થાનના કોઓર્ડિનેટ્સ સેટ કરો"
+                            },
+                            "walk_radius": {
+                                "name": "ચાલવાની ત્રિજ્યા",
+                                "description": "આ ત્રિજ્યામાં રેન્ડમલી ચાલો (ફૂટ)"
+                            },
+                            "always_update_location": {
+                                "name": "હંમેશા સ્થાન અપડેટ કરો",
+                                "description": "કોઈ GPS ડેટા પ્રાપ્ત ન થાય ત્યારે પણ Snapchat ને સ્થાન અપડેટ કરવા દબાણ કરો"
+                            },
+                            "suspend_location_updates": {
+                                "name": "સ્થાન અપડેટ્સ સ્થગિત કરો",
+                                "description": "તમારા સ્થાનને અપડેટ થતું અટકાવે છે"
+                            },
+                            "spoof_battery_level": {
+                                "name": "બેટરી સ્તર સ્પૂફ કરો",
+                                "description": "નકશા પર તમારા ઉપકરણના બેટરી સ્તરને સ્પૂફ કરે છે\nમૂલ્ય 0 અને 100 ની વચ્ચે હોવું આવશ્યક છે"
+                            },
+                            "spoof_headphones": {
+                                "name": "હેડફોન સ્પૂફ કરો",
+                                "description": "નકશા પર સંગીત સાંભળવાની સ્થિતિને સ્પૂફ કરે છે"
+                            },
+                            "show_battery_level": {
+                                "name": "બેટરી સ્તર બતાવો",
+                                "description": "નકશા પર તમારા મિત્રોના બેટરી સ્તરને બતાવે છે"
+                            }
+                        }
+                    },
+                    "snapchat_plus": {
+                        "name": "સ્નેપચેટ વત્તા",
+                        "description": "Snapchat Plus સુવિધાઓને સક્ષમ કરે છે\nકેટલીક સર્વર-સાઇડ સુવિધાઓ કામ ન કરી શકે"
+                    },
+                    "media_upload_quality": {
+                        "name": "મીડિયા અપલોડ ગુણવત્તા",
+                        "description": "મીડિયા અપલોડ ગુણવત્તાને ઓવરરાઇડ કરે છે",
+                        "properties": {
+                            "force_video_upload_source_quality": {
+                                "name": "વિડિઓ અપલોડ સ્ત્રોત ગુણવત્તા દબાણ કરો",
+                                "description": "વિડિઓ અપલોડ કરતી વખતે સ્ત્રોત ગુણવત્તાનો ઉપયોગ કરવા Snapchat ને દબાણ કરે છે\nકૃપા કરીને નોંધો કે આ મીડિયામાંથી મેટાડેટાને દૂર ન કરી શકે"
+                            },
+                            "disable_image_compression": {
+                                "name": "છબી સંકોચન અક્ષમ કરો",
+                                "description": "મીડિયા અપલોડ કરતી વખતે છબી સંકોચનને અક્ષમ કરે છે"
+                            },
+                            "custom_image_upload_format": {
+                                "name": "કસ્ટમ છબી અપલોડ ફોર્મેટ",
+                                "description": "કસ્ટમ છબી અપલોડ ફોર્મેટ સેટ કરે છે\nશ્રેષ્ઠ ગુણવત્તા માટે લોસલેસ ફોર્મેટ (જેમ કે PNG) પસંદ કરો"
+                            }
+                        }
+                    },
+                    "disable_confirmation_dialogs": {
+                        "name": "પુષ્ટિ સંવાદો અક્ષમ કરો",
+                        "description": "પસંદ કરેલી ક્રિયાઓને આપમેળે પુષ્ટિ કરે છે"
+                    },
+                    "auto_updater": {
+                        "name": "ઓટો અપડેટર",
+                        "description": "નવા અપડેટ્સ માટે આપમેળે તપાસે છે"
+                    },
+                    "disable_metrics": {
+                        "name": "મેટ્રિક્સ અક્ષમ કરો",
+                        "description": "Snapchat પર વિશિષ્ટ એનાલિટિક્સ ડેટા મોકલવાનું અવરોધે છે"
+                    },
+                    "disable_story_sections": {
+                        "name": "વાર્તા વિભાગો અક્ષમ કરો",
+                        "description": "વાર્તાઓ પૃષ્ઠમાંથી વિભાગોને દૂર કરે છે\nયોગ્ય રીતે કામ કરવા માટે રિફ્રેશની જરૂર પડી શકે છે"
+                    },
+                    "block_ads": {
+                        "name": "જાહેરાતો અવરોધિત કરો",
+                        "description": "જાહેરાતોને પ્રદર્શિત થતી અટકાવે છે"
+                    },
+                    "disable_custom_tabs": {
+                        "name": "કસ્ટમ ટેબ્સ અક્ષમ કરો",
+                        "description": "વેબ બ્રાઉઝરને બદલે સમર્થિત એપ્લિકેશનોમાં લિંક્સ ખોલે છે"
+                    },
+                    "disable_permission_requests": {
+                        "name": "પરવાનગી વિનંતીઓ અક્ષમ કરો",
+                        "description": "Snapchat ને વિશિષ્ટ પરવાનગીઓ માટે પૂછવાથી અટકાવે છે"
+                    },
+                    "disable_memories_snap_feed": {
+                        "name": "યાદો સ્નેપ ફીડ અક્ષમ કરો",
+                        "description": "તમે કેમેરામાં ઉપર સ્વાઇપ કરો ત્યારે Snapchat ને તાજેતરની યાદો બતાવવાથી અટકાવે છે"
+                    },
+                    "spotlight_comments_username": {
+                        "name": "સ્પોટલાઇટ ટિપ્પણીઓ વપરાશકર્તાનામ",
+                        "description": "સ્પોટલાઇટ ટિપ્પણીઓમાં લેખકનું વપરાશકર્તાનામ બતાવે છે"
+                    },
+                    "bypass_video_length_restriction": {
+                        "name": "વિડિઓ લંબાઈ પ્રતિબંધને બાયપાસ કરો",
+                        "description": "એકલ: એક જ વિડિઓ મોકલે છે\nવિભાજીત: સંપાદન પછી વિડિઓઝને વિભાજીત કરો"
+                    },
+                    "default_video_playback_rate": {
+                        "name": "ડિફોલ્ટ વિડિઓ પ્લેબેક દર",
+                        "description": "વિડિઓઝના પ્લેબેક માટે ડિફોલ્ટ ગતિ સેટ કરે છે\nમૂલ્ય 0.1 અને 4.0 ની વચ્ચે હોવું આવશ્યક છે"
+                    },
+                    "video_playback_rate_slider": {
+                        "name": "વિડિઓ પ્લેબેક દર સ્લાઇડર",
+                        "description": "વિડિઓ પ્લેબેક દર બદલવા માટે ઓપેરા સંદર્ભ મેનૂમાં સ્લાઇડર ઉમેરે છે\nનોંધ: ફેરફારો ફક્ત પછીના વિડિઓઝ પર લાગુ થાય છે"
+                    },
+                    "disable_google_play_dialogs": {
+                        "name": "Google Play સેવાઓ સંવાદો અક્ષમ કરો",
+                        "description": "Google Play સેવાઓ ઉપલબ્ધતા સંવાદોને બતાવવાથી અટકાવો"
+                    },
+                    "default_volume_controls": {
+                        "name": "ડિફોલ્ટ વોલ્યુમ નિયંત્રણો",
+                        "description": "Snapchat ને સિસ્ટમ વોલ્યુમ નિયંત્રણોનો ઉપયોગ કરવા દબાણ કરે છે"
+                    },
+                    "disable_telecom_framework": {
+                        "name": "ટેલિકોમ ફ્રેમવર્ક અક્ષમ કરો",
+                        "description": "Snapchat ને Android ટેલિકોમ ફ્રેમવર્કનો ઉપયોગ કરતા અટકાવે છે\nઆ તમને કોલ પર હોય ત્યારે સંગીત સાંભળવાની મંજૂરી આપે છે"
+                    },
+                    "hide_active_music": {
+                        "name": "સક્રિય સંગીત છુપાવો",
+                        "description": "Snapchat ને જાણ થતી અટકાવે છે કે તમે સંગીત સાંભળી રહ્યા છો\nઆ તમને સંગીત સાંભળતી વખતે નિયંત્રણ વોલ્યુમ બટનોનો ઉપયોગ કરીને સ્નેપ લેવાની મંજૂરી આપશે"
+                    },
+                    "disable_snap_splitting": {
+                        "name": "સ્નેપ વિભાજન અક્ષમ કરો",
+                        "description": "સ્નેપને બહુવિધ ભાગોમાં વિભાજીત થતા અટકાવે છે\nતમે મોકલો છો તે ચિત્રો વિડિઓઝમાં ફેરવાઈ જશે"
+                    }
+                }
+            },
+            "rules": {
+                "name": "નિયમો",
+                "description": "વ્યક્તિગત લોકો માટે સ્વચાલિત સુવિધાઓનું સંચાલન કરો"
+            },
+            "camera": {
+                "name": "કેમેરા",
+                "description": "સંપૂર્ણ સ્નેપ માટે યોગ્ય સેટિંગ્સને સમાયોજિત કરો",
+                "properties": {
+                    "disable_cameras": {
+                        "name": "કેમેરા અક્ષમ કરો",
+                        "description": "Snapchat ને પસંદ કરેલા કેમેરાનો ઉપયોગ કરતા અટકાવે છે"
+                    },
+                    "black_photos": {
+                        "name": "કાળા ફોટા",
+                        "description": "કેપ્ચર કરેલા ફોટાને કાળા પૃષ્ઠભૂમિથી બદલે છે\nવિડિઓઝને અસર થતી નથી"
+                    },
+                    "immersive_camera_preview": {
+                        "name": "ઇમર્સિવ પૂર્વાવલોકન",
+                        "description": "Snapchat ને કેમેરા પૂર્વાવલોકનને કાપવાથી અટકાવે છે\nઆ કેટલાક ઉપકરણો પર કેમેરાને ફ્લિકર કરી શકે છે"
+                    },
+                    "override_front_resolution": {
+                        "name": "આગળના રિઝોલ્યુશનને ઓવરરાઇડ કરો",
+                        "description": "આગળના કેમેરા માટે કેમેરા રિઝોલ્યુશનને ઓવરરાઇડ કરે છે"
+                    },
+                    "override_back_resolution": {
+                        "name": "પાછળના રિઝોલ્યુશનને ઓવરરાઇડ કરો",
+                        "description": "પાછળના કેમેરા માટે કેમેરા રિઝોલ્યુશનને ઓવરરાઇડ કરે છે"
+                    },
+                    "custom_resolution": {
+                        "name": "કસ્ટમ રિઝોલ્યુશન",
+                        "description": "કસ્ટમ કેમેરા રિઝોલ્યુશન સેટ કરે છે, પહોળાઈ x ઊંચાઈ (દા.ત. 1920x1080).\nકસ્ટમ રિઝોલ્યુશન તમારા ઉપકરણ દ્વારા સમર્થિત હોવું આવશ્યક છે"
+                    },
+                    "front_custom_frame_rate": {
+                        "name": "આગળનો કસ્ટમ ફ્રેમ દર",
+                        "description": "આગળના કેમેરાના ફ્રેમ દરને ઓવરરાઇડ કરે છે"
+                    },
+                    "back_custom_frame_rate": {
+                        "name": "પાછળનો કસ્ટમ ફ્રેમ દર",
+                        "description": "પાછળના કેમેરાના ફ્રેમ દરને ઓવરરાઇડ કરે છે"
+                    },
+                    "force_camera_source_encoding": {
+                        "name": "કેમેરા સ્ત્રોત એન્કોડિંગ દબાણ કરો",
+                        "description": "કેમેરા સ્ત્રોત એન્કોડિંગને દબાણ કરે છે"
+                    },
+                    "startup_default_camera": {
+                        "name": "સ્ટાર્ટઅપ ડિફોલ્ટ કેમેરા",
+                        "description": "Snapchat ખોલતી વખતે ડિફોલ્ટ કેમેરા સેટ કરે છે"
+                    },
+                    "hevc_recording": {
+                        "name": "HEVC રેકોર્ડિંગ",
+                        "description": "વિડિઓ રેકોર્ડિંગ માટે HEVC (H.265) કોડેકનો ઉપયોગ કરે છે"
+                    }
+                }
+            },
+            "streaks_reminder": {
+                "name": "સ્ટ્રીક્સ રીમાઇન્ડર",
+                "description": "તમને સમયાંતરે તમારી સ્ટ્રીક્સ વિશે સૂચિત કરે છે",
+                "properties": {
+                    "interval": {
+                        "name": "અંતરાલ",
+                        "description": "દરેક રીમાઇન્ડર વચ્ચેનો અંતરાલ (કલાકો)"
+                    },
+                    "remaining_hours": {
+                        "name": "બાકીનો સમય",
+                        "description": "સૂચના બતાવવામાં આવે તે પહેલાં બાકી રહેલો સમય (કલાકો)"
+                    },
+                    "group_notifications": {
+                        "name": "જૂથ સૂચનાઓ",
+                        "description": "જૂથ સૂચનાઓને એકમાં જૂથબદ્ધ કરો"
+                    }
+                }
+            },
+            "experimental": {
+                "name": "પ્રાયોગિક",
+                "description": "પ્રાયોગિક સુવિધાઓ",
+                "properties": {
+                    "native_hooks": {
+                        "name": "મૂળ હુક્સ",
+                        "description": "અસુરક્ષિત સુવિધાઓ જે Snapchat ના મૂળ કોડમાં હૂક કરે છે",
+                        "properties": {
+                            "composer_hooks": {
+                                "name": "કમ્પોઝર હુક્સ",
+                                "description": "કમ્પોઝર ક્રોસ-પ્લેટફોર્મ UI ફ્રેમવર્કમાં કોડ ઇન્જેક્ટ કરે છે",
+                                "properties": {
+                                    "show_first_created_username": {
+                                        "name": "પ્રથમ બનાવેલ વપરાશકર્તાનામ બતાવો",
+                                        "description": "પ્રોફાઇલ પૃષ્ઠ પર વર્તમાન વપરાશકર્તાનામની બાજુમાં પ્રથમ બનાવેલ વપરાશકર્તાનામ બતાવે છે"
+                                    },
+                                    "bypass_camera_roll_limit": {
+                                        "name": "કેમેરા રોલ મર્યાદાને બાયપાસ કરો",
+                                        "description": "તમે કેમેરા રોલમાંથી મોકલી શકો તે મીડિયાની મહત્તમ રકમ વધારે છે"
+                                    },
+                                    "custom_self_destruct_snap_delay": {
+                                        "name": "કસ્ટમ સ્વ-વિનાશ સ્નેપ વિલંબ",
+                                        "description": "સ્નેપ મોકલતી વખતે સ્વ-વિનાશ ટાઇમર માટે વધુ વિકલ્પો આપે છે"
+                                    },
+                                    "composer_console": {
+                                        "name": "કમ્પોઝર કોન્સોલ",
+                                        "description": "તમને કમ્પોઝરમાં JavaScript કોડ ચલાવવાની મંજૂરી આપે છે (ફક્ત arm64)"
+                                    },
+                                    "composer_logs": {
+                                        "name": "કમ્પોઝર લોગ્સ",
+                                        "description": "કમ્પોઝરના કોન્સોલ લોગ્સને PurrfectSnap પર રીડાયરેક્ટ કરે છે"
+                                    }
+                                }
+                            },
+                            "disable_bitmoji": {
+                                "name": "બિટમોજી અક્ષમ કરો",
+                                "description": "મિત્રો પ્રોફાઇલ બિટમોજીને અક્ષમ કરે છે"
+                            },
+                            "custom_emoji_font": {
+                                "name": "કસ્ટમ ઇમોજી ફોન્ટ",
+                                "description": "તમને કસ્ટમ ઇમોજી ફોન્ટનો ઉપયોગ કરવાની મંજૂરી આપે છે. ફક્ત .ttf ફોન્ટ્સ સાથે કામ કરે છે"
+                            },
+                            "custom_shared_library": {
+                                "name": "કસ્ટમ શેર્ડ લાઇબ્રેરી",
+                                "description": "Snapchat માં કસ્ટમ શેર્ડ લાઇબ્રેરી લોડ કરે છે. આ સુવિધા ફક્ત પરીક્ષણ હેતુઓ માટે છે"
+                            }
+                        }
+                    },
+                    "spoof": {
+                        "name": "સ્પૂફ",
+                        "description": "તમારા વિશેની વિવિધ માહિતીને સ્પૂફ કરો",
+                        "properties": {
+                            "play_store_installer_package_name": {
+                                "name": "પ્લે સ્ટોર ઇન્સ્ટોલર પેકેજ નામ",
+                                "description": "ઇન્સ્ટોલર પેકેજ નામને com.android.vending પર ઓવરરાઇડ કરે છે"
+                            },
+                            "remove_vpn_transport_flag": {
+                                "name": "VPN ટ્રાન્સપોર્ટ ફ્લેગ દૂર કરો",
+                                "description": "Snapchat ને VPN શોધવાથી અટકાવે છે"
+                            },
+                            "remove_mock_location_flag": {
+                                "name": "મૉક સ્થાન ફ્લેગ દૂર કરો",
+                                "description": "Snapchat ને મૉક સ્થાન શોધવાથી અટકાવે છે"
+                            }
+                        }
+                    },
+                    "convert_message_locally": {
+                        "name": "સંદેશને સ્થાનિક રીતે રૂપાંતરિત કરો",
+                        "description": "સ્નેપને સ્થાનિક રીતે ચેટ બાહ્ય મીડિયામાં રૂપાંતરિત કરે છે. આ ચેટ ડાઉનલોડ સંદર્ભ મેનૂમાં દેખાય છે"
+                    },
+                    "media_file_picker": {
+                        "name": "મીડિયા ફાઇલ પીકર",
+                        "description": "તમને ગેલેરીમાંથી કોઈપણ વિડિઓ/ઓડિયો ફાઇલ પસંદ કરવાની મંજૂરી આપે છે"
+                    },
+                    "story_logger": {
+                        "name": "વાર્તા લોગર",
+                        "description": "મિત્રોની વાર્તાઓનો ઇતિહાસ પ્રદાન કરે છે"
+                    },
+                    "call_recorder": {
+                        "name": "કોલ રેકોર્ડર",
+                        "description": "ઓડિયો કોલ્સ આપમેળે રેકોર્ડ કરે છે"
+                    },
+                    "account_switcher": {
+                        "name": "એકાઉન્ટ સ્વિચર",
+                        "description": "તમને લોગ આઉટ કર્યા વિના એકાઉન્ટ્સ વચ્ચે સ્વિચ કરવાની મંજૂરી આપે છે\nમેનુ ખોલવા માટે તમારા બિટમોજી પ્રોફાઇલની બાજુમાં શોધ આઇકોન પર લાંબા સમય સુધી દબાવો\nનોંધ: આ સુવિધા પ્રાયોગિક છે અને ભવિષ્યમાં બદલાવાની શક્યતા છે",
+                        "properties": {
+                            "auto_backup_current_account": {
+                                "name": "વર્તમાન એકાઉન્ટનો ઓટો બેકઅપ",
+                                "description": "લોગ આઉટ કરતી વખતે અથવા એકાઉન્ટ્સ સ્વિચ કરતી વખતે વર્તમાન એકાઉન્ટનો આપમેળે બેકઅપ લે છે"
+                            }
+                        }
+                    },
+                    "better_transcript": {
+                        "name": "વધુ સારી ટ્રાન્સક્રિપ્ટ",
+                        "description": "વોઇસ નોટ ટ્રાન્સક્રિપ્ટને સુધારે છે",
+                        "properties": {
+                            "force_transcription": {
+                                "name": "વોઇસ નોટ ટ્રાન્સક્રિપ્શન દબાણ કરો",
+                                "description": "બધી વોઇસ નોટ્સને ટ્રાન્સક્રાઇબ કરવાની મંજૂરી આપે છે"
+                            },
+                            "preferred_transcription_lang": {
+                                "name": "પસંદગીની ટ્રાન્સક્રિપ્શન ભાષા",
+                                "description": "વોઇસ નોટ ટ્રાન્સક્રિપ્ટ માટે પસંદગીની ભાષા (દા.ત. EN, ES, FR)"
+                            },
+                            "notification_transcript": {
+                                "name": "સૂચના ટ્રાન્સક્રિપ્ટ",
+                                "description": "સૂચનાઓમાં વોઇસ નોટ્સને ટ્રાન્સક્રાઇબ કરે છે\nઆ સુવિધાને વધુ સારી સૂચનાઓમાં ચેટ પૂર્વાવલોકન સુવિધા સક્ષમ કરવાની જરૂર છે"
+                            }
+                        }
+                    },
+                    "voice_note_auto_play": {
+                        "name": "વોઇસ નોટ ઓટો પ્લે",
+                        "description": "વર્તમાન વોઇસ નોટ સમાપ્ત થયા પછી આગલી વોઇસ નોટ આપમેળે વગાડે છે"
+                    },
+                    "friend_notes": {
+                        "name": "મિત્ર નોંધો",
+                        "description": "તમને મિત્રોના પ્રોફાઇલમાં નોંધો ઉમેરવાની મંજૂરી આપે છે"
+                    },
+                    "cof_experiments": {
+                        "name": "COF પ્રયોગો",
+                        "description": "પ્રકાશિત ન થયેલ/બીટા Snapchat સુવિધાઓને સક્ષમ કરે છે"
+                    },
+                    "context_menu_fix": {
+                        "name": "સંદર્ભ મેનુ ફિક્સ",
+                        "description": "મિત્ર ફીડ મેનુને સમારકામ કરવાનો પ્રયાસ કરો કારણ કે જ્યારે ઉપકરણ ઓફલાઇન હોય ત્યારે તે યોગ્ય રીતે પ્રદર્શિત થઈ શકતું નથી"
+                    },
+                    "app_lock": {
+                        "name": "એપ્લિકેશન લોક",
+                        "description": "પાસકોડ વિના Snapchat માં પ્રવેશ અટકાવે છે",
+                        "properties": {
+                            "lock_on_resume": {
+                                "name": "ફરી શરૂ કરવા પર લોક કરો",
+                                "description": "જ્યારે એપ્લિકેશન ફરીથી ખોલવામાં આવે ત્યારે તેને લોક કરે છે"
+                            }
+                        }
+                    },
+                    "infinite_story_boost": {
+                        "name": "અનંત વાર્તા બુસ્ટ",
+                        "description": "વાર્તા બુસ્ટ મર્યાદા વિલંબને બાયપાસ કરો"
+                    },
+                    "meo_passcode_bypass": {
+                        "name": "મારી આંખો ફક્ત પાસકોડ બાયપાસ",
+                        "description": "મારી આંખો ફક્ત પાસકોડને બાયપાસ કરો\nઆ ફક્ત ત્યારે જ કામ કરશે જો પાસકોડ પહેલા યોગ્ય રીતે દાખલ કરવામાં આવ્યો હોય"
+                    },
+                    "no_friend_score_delay": {
+                        "name": "કોઈ મિત્ર સ્કોર વિલંબ નથી",
+                        "description": "મિત્રોનો સ્કોર જોતી વખતે વિલંબ દૂર કરે છે"
+                    },
+                    "best_friend_pinning": {
+                        "name": "શ્રેષ્ઠ મિત્ર પિનિંગ",
+                        "description": "તમને તમારા નંબર વન શ્રેષ્ઠ મિત્ર તરીકે મિત્રને પિન કરવાની મંજૂરી આપે છે. નોંધ: ફક્ત તમે જ તમારા પિન કરેલા શ્રેષ્ઠ મિત્રને જોઈ શકો છો"
+                    },
+                    "e2ee": {
+                        "name": "એન્ડ-ટુ-એન્ડ એન્ક્રિપ્શન",
+                        "description": "તમારા સંદેશાઓને વહેંચાયેલ ગુપ્ત કીનો ઉપયોગ કરીને AES સાથે એન્ક્રિપ્ટ કરે છે\nતમારી કી ક્યાંક સુરક્ષિત સાચવવાની ખાતરી કરો!",
+                        "properties": {
+                            "encrypted_message_indicator": {
+                                "name": "એન્ક્રિપ્ટેડ સંદેશ સૂચક",
+                                "description": "એન્ક્રિપ્ટેડ સંદેશાઓની બાજુમાં 🔒 ઇમોજી ઉમેરે છે"
+                            },
+                            "force_message_encryption": {
+                                "name": "સંદેશ એન્ક્રિપ્શન દબાણ કરો",
+                                "description": "ફક્ત જ્યારે બહુવિધ વાર્તાલાપ પસંદ કરવામાં આવે ત્યારે E2E એન્ક્રિપ્શન સક્ષમ ન હોય તેવા લોકોને એન્ક્રિપ્ટેડ સંદેશા મોકલવાનું અટકાવે છે"
+                            }
+                        }
+                    },
+                    "add_friend_source_spoof": {
+                        "name": "મિત્ર ઉમેરો સ્ત્રોત સ્પૂફ",
+                        "description": "મિત્ર વિનંતીના સ્ત્રોતને સ્પૂફ કરે છે"
+                    },
+                    "hidden_snapchat_plus_features": {
+                        "name": "છુપાયેલ Snapchat Plus સુવિધાઓ",
+                        "description": "પ્રકાશિત ન થયેલ/બીટા Snapchat Plus સુવિધાઓને સક્ષમ કરે છે\nજૂના Snapchat સંસ્કરણો પર કામ ન કરી શકે"
+                    },
+                    "custom_streaks_expiration_format": {
+                        "name": "કસ્ટમ સ્ટ્રીક્સ સમાપ્તિ ફોર્મેટ",
+                        "description": "સ્ટ્રીક્સ સમાપ્તિ ફોર્મેટને કસ્ટમાઇઝ કરે છે\n\nઉપલબ્ધ ચલો:\n - %c: સ્ટ્રીક્સ ગણતરી\n - %e: કલાકગ્લાસ ઇમોજી\n - %d: દિવસો\n - %h: કલાકો\n - %m: મિનિટો\n - %s: સેકંડ\n - %w: બાકીનો સમય"
+                    },
+                    "prevent_forced_logout": {
+                        "name": "દબાણયુક્ત લોગઆઉટ અટકાવો",
+                        "description": "તમે બીજા ઉપકરણ પર લોગિન કરો ત્યારે Snapchat ને તમને લોગ આઉટ કરતા અટકાવે છે"
+                    },
+                    "snapscore_changes": {
+                        "name": "સ્નેપસ્કોર ફેરફારો",
+                        "description": "મિત્રોના સ્નેપસ્કોરમાં ફેરફારોને ટ્રેક કરે છે\nઆ સુવિધાનો ઉપયોગ ફક્ત Snapchat ના નવા સંસ્કરણોમાં કરો"
+                    }
+                }
+            },
+            "scripting": {
+                "name": "સ્ક્રિપ્ટીંગ",
+                "description": "PurrfectSnap ને વિસ્તારવા માટે કસ્ટમ સ્ક્રિપ્ટો ચલાવો",
+                "properties": {
+                    "developer_mode": {
+                        "name": "વિકાસકર્તા મોડ",
+                        "description": "Snapchat ના UI પર ડિબગ માહિતી બતાવે છે"
+                    },
+                    "module_folder": {
+                        "name": "મોડ્યુલ ફોલ્ડર",
+                        "description": "જ્યાં સ્ક્રિપ્ટો સ્થિત છે તે ફોલ્ડર"
+                    },
+                    "auto_reload": {
+                        "name": "ઓટો રીલોડ",
+                        "description": "જ્યારે તેઓ બદલાય ત્યારે સ્ક્રિપ્ટોને આપમેળે રીલોડ કરે છે"
+                    },
+                    "integrated_ui": {
+                        "name": "સંકલિત UI",
+                        "description": "સ્ક્રિપ્ટોને Snapchat માં કસ્ટમ UI ઘટકો ઉમેરવાની મંજૂરી આપે છે"
+                    },
+                    "disable_log_anonymization": {
+                        "name": "લોગ અનામીકરણ અક્ષમ કરો",
+                        "description": "લોગના અનામીકરણને અક્ષમ કરે છે"
+                    },
+                    "disable_optimization": {
+                        "name": "ઓપ્ટિમાઇઝેશન અક્ષમ કરો",
+                        "description": "સ્ક્રિપ્ટોના ઓપ્ટિમાઇઝેશનને અક્ષમ કરે છે. આ પ્રદર્શન સમસ્યાઓનું કારણ બની શકે છે."
+                    }
+                }
+            },
+            "friend_tracker": {
+                "name": "મિત્ર ટ્રેકર",
+                "description": "Snapchat પર મિત્રની પ્રવૃત્તિ રેકોર્ડ કરે છે",
+                "properties": {
+                    "record_messaging_events": {
+                        "name": "મેસેજિંગ ઘટનાઓ રેકોર્ડ કરો",
+                        "description": "સ્નેપ ખોલવા, સંદેશ વાંચવા જેવી મેસેજિંગ ઘટનાઓ રેકોર્ડ કરે છે."
+                    },
+                    "allow_running_in_background": {
+                        "name": "પૃષ્ઠભૂમિમાં ચાલવાની મંજૂરી આપો",
+                        "description": "ટ્રેકરને પૃષ્ઠભૂમિમાં ચાલવાની મંજૂરી આપે છે. નોંધ: આ તમારી બેટરીને નોંધપાત્ર રીતે ડ્રેઇન કરશે"
+                    },
+                    "auto_purge": {
+                        "name": "ઓટો પર્જ",
+                        "description": "નિર્દિષ્ટ સમય કરતાં જૂની કેશ્ડ ઘટનાઓને આપમેળે કાઢી નાખે છે"
+                    }
+                }
+            }
+        },
+        "options": {
+            "app_appearance": {
+                "always_light": "હંમેશા પ્રકાશ",
+                "always_dark": "હંમેશા અંધારું"
+            },
+            "friend_feed_menu_buttons": {
+                "auto_download": "⬇️ ઓટો ડાઉનલોડ",
+                "auto_save": "💬 ઓટો સેવ સંદેશા",
+                "unsaveable_messages": "⬇️ અસાચવી શકાય તેવા સંદેશા",
+                "auto_open_snaps": "📸 ઓટો ઓપન સ્નેપ્સ",
+                "stealth": "👻 સ્ટીલ્થ મોડ",
+                "mark_snaps_as_seen": "👀 સ્નેપને જોયેલ તરીકે ચિહ્નિત કરો",
+                "mark_stories_as_seen_locally": "👀 વાર્તાઓને સ્થાનિક રીતે જોયેલ તરીકે ચિહ્નિત કરો",
+                "conversation_info": "🧑‍🤝‍🧑 વાર્તાલાપ માહિતી",
+                "e2e_encryption": "🔒 E2E એન્ક્રિપ્શનનો ઉપયોગ કરો"
+            },
+            "path_format": {
+                "create_author_folder": "દરેક લેખક માટે ફોલ્ડર બનાવો",
+                "create_source_folder": "દરેક મીડિયા સ્ત્રોત પ્રકાર માટે ફોલ્ડર બનાવો",
+                "append_hash": "ફાઇલનામમાં એક અનન્ય હેશ ઉમેરો",
+                "append_source": "ફાઇલનામમાં મીડિયા સ્ત્રોત ઉમેરો",
+                "append_username": "ફાઇલનામમાં વપરાશકર્તાનામ ઉમેરો",
+                "append_date_time": "ફાઇલનામમાં તારીખ અને સમય ઉમેરો"
+            },
+            "auto_download_sources": {
+                "friend_snaps": "મિત્ર સ્નેપ્સ",
+                "friend_stories": "મિત્ર વાર્તાઓ",
+                "public_stories": "જાહેર વાર્તાઓ",
+                "spotlight": "સ્પોટલાઇટ"
+            },
+            "logging": {
+                "started": "શરૂ થયું",
+                "success": "સફળતા",
+                "progress": "પ્રગતિ",
+                "failure": "નિષ્ફળતા"
+            },
+            "notifications": {
+                "chat_screenshot": "સ્ક્રીનશોટ",
+                "chat_screen_record": "સ્ક્રીન રેકોર્ડ",
+                "snap_replay": "સ્નેપ રિપ્લે",
+                "camera_roll_save": "કેમેરા રોલમાં સાચવો",
+                "chat": "ચેટ",
+                "chat_reply": "ચેટ જવાબ",
+                "snap": "સ્નેપ",
+                "typing": "ટાઇપિંગ",
+                "stories": "વાર્તાઓ",
+                "speaking": "બોલવું",
+                "chat_reaction": "DM પ્રતિક્રિયા",
+                "group_chat_reaction": "જૂથ પ્રતિક્રિયા",
+                "initiate_audio": "ઇનકમિંગ ઓડિયો કોલ",
+                "abandon_audio": "મિસ્ડ ઓડિયો કોલ",
+                "initiate_video": "ઇનકમિંગ વિડિઓ કોલ",
+                "abandon_video": "મિસ્ડ વિડિઓ કોલ",
+                "map_live_location": "નકશો લાઇવ સ્થાન"
+            },
+            "gallery_media_send_override": {
+                "always_ask": "હંમેશા પૂછો",
+                "ORIGINAL": "મૂળ મીડિયા",
+                "NOTE": "ઓડિયો નોટ",
+                "SNAP": "સ્નેપ",
+                "SAVEABLE_SNAP": "સાચવી શકાય તેવું સ્નેપ"
+            },
+            "strip_media_metadata": {
+                "hide_caption_text": "કેપ્શન ટેક્સ્ટ છુપાવો",
+                "hide_snap_filters": "સ્નેપ ફિલ્ટર્સ છુપાવો",
+                "hide_extras": "વધારાની વસ્તુઓ છુપાવો (દા.ત. ઉલ્લેખો)",
+                "remove_audio_note_duration": "ઓડિયો નોટ અવધિ દૂર કરો",
+                "remove_audio_note_transcript_capability": "ઓડિયો નોટ ટ્રાન્સક્રિપ્ટ ક્ષમતા દૂર કરો"
+            },
+            "hide_ui_components": {
+                "hide_profile_call_buttons": "પ્રોફાઇલ કોલ બટનો દૂર કરો",
+                "hide_chat_call_buttons": "ચેટ કોલ બટનો દૂર કરો",
+                "hide_live_location_share_button": "લાઇવ સ્થાન શેર બટન દૂર કરો",
+                "hide_stickers_button": "સ્ટીકરો બટન દૂર કરો",
+                "hide_voice_record_button": "વોઇસ રેકોર્ડ બટન દૂર કરો",
+                "hide_unread_chat_hint": "ન વાંચેલ ચેટ સંકેત દૂર કરો",
+                "hide_post_to_story_buttons": "સ્નેપ મોકલતા પહેલા વાર્તા પર પોસ્ટ બટનો દૂર કરો",
+                "hide_billboard_prompt": "મિત્રો ફીડમાં બિલબોર્ડ પ્રોમ્પ્ટ દૂર કરો",
+                "hide_snapchat_plus_gift_reminders": "વાર્તાલાપમાં Snapchat Plus ભેટ રીમાઇન્ડર્સ દૂર કરો",
+                "hide_map_reactions": "નકશા પ્રતિક્રિયાઓ દૂર કરો"
+            },
+            "hide_story_suggestions": {
+                "hide_suggested_friend_stories": "સૂચવેલ મિત્ર વાર્તાઓ છુપાવો",
+                "hide_my_stories": "મારી વાર્તાઓ છુપાવો"
+            },
+            "home_tab": {
+                "map": "નકશો",
+                "chat": "ચેટ",
+                "camera": "કેમેરા",
+                "discover": "શોધો",
+                "spotlight": "સ્પોટલાઇટ"
+            },
+            "add_friend_source_spoof": {
+                "added_by_username": "વપરાશકર્તાનામ દ્વારા",
+                "added_by_mention": "ઉલ્લેખ દ્વારા",
+                "added_by_group_chat": "જૂથ ચેટ દ્વારા",
+                "added_by_qr_code": "QR કોડ દ્વારા",
+                "added_by_community": "સમુદાય દ્વારા",
+                "added_by_quick_add": "ઝડપી ઉમેરો દ્વારા (પ્રતિબંધિત થવાનું ઉચ્ચ જોખમ)"
+            },
+            "bypass_video_length_restriction": {
+                "single": "એકલ મીડિયા",
+                "split": "વિભાજીત મીડિયા"
+            },
+            "old_bitmoji_selfie": {
+                "2d": "2D બિટમોજી",
+                "3d": "3D બિટમોજી"
+            },
+            "disable_confirmation_dialogs": {
+                "erase_message": "સંદેશ ભૂંસી નાખો",
+                "remove_friend": "મિત્રને દૂર કરો",
+                "block_friend": "મિત્રને અવરોધિત કરો",
+                "ignore_friend": "મિત્રને અવગણો",
+                "hide_friend": "મિત્રને છુપાવો",
+                "hide_conversation": "વાર્તાલાપ છુપાવો",
+                "clear_conversation": "મિત્ર ફીડમાંથી વાર્તાલાપ સાફ કરો"
+            },
+            "auto_reload": {
+                "snapchat_only": "ફક્ત Snapchat",
+                "all": "બધા (Snapchat + PurrfectSnap)"
+            },
+            "edit_text_override": {
+                "multi_line_chat_input": "મલ્ટી લાઇન ચેટ ઇનપુટ",
+                "bypass_text_input_limit": "ટેક્સ્ટ ઇનપુટ મર્યાદાને બાયપાસ કરો"
+            },
+            "auto_purge": {
+                "never": "ક્યારેય નહીં",
+                "1_hour": "1 કલાક",
+                "3_hours": "3 કલાક",
+                "6_hours": "6 કલાક",
+                "12_hours": "12 કલાક",
+                "1_day": "1 દિવસ",
+                "3_days": "3 દિવસ",
+                "1_week": "1 અઠવાડિયું",
+                "2_weeks": "2 અઠવાડિયા",
+                "1_month": "1 મહિનો",
+                "3_months": "3 મહિના",
+                "6_months": "6 મહિના"
+            },
+            "disable_story_sections": {
+                "friends": "મિત્રો",
+                "suggested_stories": "સૂચવેલ વાર્તાઓ",
+                "following": "અનુસરી રહ્યા છે",
+                "discover": "શોધો"
+            },
+            "disable_cameras": {
+                "front": "આગળનો કેમેરો",
+                "back": "પાછળનો કેમેરો"
+            },
+            "disable_permission_requests": {
+                "notifications": "સૂચનાઓ",
+                "read_media_images": "મીડિયા છબીઓ વાંચો",
+                "read_media_video": "મીડિયા વિડિઓ વાંચો",
+                "camera": "કેમેરો",
+                "microphone": "માઇક્રોફોન",
+                "location": "સ્થાન",
+                "read_contacts": "સંપર્કો વાંચો",
+                "nearby_devices": "નજીકના ઉપકરણો",
+                "phone_calls": "ફોન કોલ્સ"
+            },
+            "message_indicators": {
+                "encryption_indicator": "ફક્ત તમને મોકલવામાં આવેલા સંદેશાઓની બાજુમાં 🔒 ચિહ્ન ઉમેરે છે",
+                "platform_indicator": "જે પ્લેટફોર્મ પરથી મીડિયા મોકલવામાં આવ્યું હતું તેનું પ્લેટફોર્મ ચિહ્ન ઉમેરે છે (દા.ત. Android, iOS, Web)",
+                "location_indicator": "જ્યારે સ્થાન સક્ષમ કરીને મોકલવામાં આવે ત્યારે સ્નેપમાં 📍 ચિહ્ન ઉમેરે છે",
+                "ovf_editor_indicator": "જો OVF સંપાદકનો ઉપયોગ કરીને સ્નેપ મોકલવામાં આવ્યો હોય તો સૂચવે છે",
+                "director_mode_indicator": "જ્યારે ડિરેક્ટર મોડનો ઉપયોગ કરીને મોકલવામાં આવે ત્યારે સ્નેપમાં 🎬 ચિહ્ન ઉમેરે છે, જેનો ઉપયોગ ગેલેરી છબીઓને સ્નેપ તરીકે મોકલવા માટે થઈ શકે છે"
+            },
+            "auto_mark_as_read": {
+                "conversation_read": "સંદેશ મોકલતી વખતે વાર્તાલાપને વાંચેલ તરીકે ચિહ્નિત કરો",
+                "snap_reply": "સ્નેપનો જવાબ આપતી વખતે તેને વાંચેલ તરીકે ચિહ્નિત કરો",
+                "save_snap_in_chat": "સ્ટીલ્થ મોડમાં હોય ત્યારે ચેટમાં સ્નેપ સાચવતી વખતે તેને વાંચેલ તરીકે ચિહ્નિત કરો"
+            },
+            "friend_mutation_notifier": {
+                "remove_friend": "જ્યારે કોઈ તમને મિત્ર તરીકે દૂર કરે ત્યારે સૂચિત કરો",
+                "birthday_changes": "જ્યારે કોઈ તેમનો જન્મદિવસ બદલે ત્યારે સૂચિત કરો",
+                "bitmoji_selfie_changes": "જ્યારે કોઈ તેમનું બિટમોજી સેલ્ફી બદલે ત્યારે સૂચિત કરો",
+                "bitmoji_avatar_changes": "જ્યારે કોઈ તેમનું બિટમોજી અવતાર બદલે ત્યારે સૂચિત કરો",
+                "bitmoji_background_changes": "જ્યારે કોઈ તેમનું બિટમોજી પૃષ્ઠભૂમિ બદલે ત્યારે સૂચિત કરો",
+                "bitmoji_scene_changes": "જ્યારે કોઈ તેમની બિટમોજી દ્રશ્ય બદલે ત્યારે સૂચિત કરો"
+            },
+            "snapchat_plus": {
+                "not_subscribed": "સબ્સ્ક્રાઇબ નથી",
+                "basic": "મૂળભૂત",
+                "ad_free": "જાહેરાત મુક્ત"
+            },
+            "double_tap_chat_action": {
+                "like_message": "સંદેશ પસંદ કરો",
+                "copy_text": "ક્લિપબોર્ડ પર ટેક્સ્ટ કૉપિ કરો",
+                "delete_message": "સંદેશ કાઢી નાખો",
+                "mark_as_read": "વાંચેલ તરીકે ચિહ્નિત કરો",
+                "custom_emoji_reaction": "કસ્ટમ ઇમોજી પ્રતિક્રિયા"
+            },
+            "startup_default_camera": {
+                "front": "આગળનો કેમેરો",
+                "back": "પાછળનો કેમેરો"
+            }
+        }
+    },
+    "friend_menu_option": {
+        "mark_snaps_as_seen": "સ્નેપને જોયેલ તરીકે ચિહ્નિત કરો",
+        "mark_stories_as_seen_locally": "વાર્તાઓને સ્થાનિક રીતે જોયેલ તરીકે ચિહ્નિત કરો",
+        "preview": "પૂર્વાવલોકન",
+        "stealth_mode": "સ્ટીલ્થ મોડ",
+        "auto_download_blacklist": "ઓટો ડાઉનલોડ બ્લેકલિસ્ટ",
+        "anti_auto_save": "એન્ટી ઓટો સેવ"
+    },
+    "content_type": {
+        "CHAT": "ચેટ",
+        "SNAP": "સ્નેપ",
+        "EXTERNAL_MEDIA": "બાહ્ય મીડિયા",
+        "NOTE": "ઓડિયો નોટ",
+        "STICKER": "સ્ટીકર",
+        "SHARE": "શેર કરો",
+        "STATUS": "સ્થિતિ",
+        "LOCATION": "સ્થાન",
+        "STATUS_SAVE_TO_CAMERA_ROLL": "કેમેરા રોલમાં સાચવવામાં આવ્યું",
+        "STATUS_CONVERSATION_CAPTURE_SCREENSHOT": "સ્ક્રીનશોટ",
+        "STATUS_CONVERSATION_CAPTURE_RECORD": "સ્ક્રીન રેકોર્ડ",
+        "STATUS_CALL_MISSED_VIDEO": "મિસ્ડ વિડિઓ કોલ",
+        "STATUS_CALL_MISSED_AUDIO": "મિસ્ડ ઓડિયો કોલ",
+        "LIVE_LOCATION_SHARE": "લાઇવ સ્થાન શેર કરો",
+        "CREATIVE_TOOL_ITEM": "સર્જનાત્મક સાધન આઇટમ",
+        "FAMILY_CENTER_INVITE": "કૌટુંબિક કેન્દ્ર આમંત્રણ",
+        "FAMILY_CENTER_ACCEPT": "કૌટુંબિક કેન્દ્ર સ્વીકારો",
+        "FAMILY_CENTER_LEAVE": "કૌટુંબિક કેન્દ્ર છોડો",
+        "STATUS_PLUS_GIFT": "સ્થિતિ પ્લસ ભેટ",
+        "TINY_SNAP": "નાનો સ્નેપ",
+        "STATUS_COUNTDOWN": "કાઉન્ટડાઉન",
+        "MAP_REACTION": "નકશા પ્રતિક્રિયા"
+    },
+    "media_download_source": {
+        "none": "કોઈ નહીં",
+        "pending": "બાકી",
+        "chat_media": "ચેટ મીડિયા",
+        "story": "વાર્તા",
+        "public_story": "જાહેર વાર્તા",
+        "spotlight": "સ્પોટલાઇટ",
+        "profile_picture": "પ્રોફાઇલ ચિત્ર",
+        "story_logger": "વાર્તા લોગર",
+        "message_logger": "સંદેશ લોગર",
+        "merged": "ભેળવેલ",
+        "voice_call": "વોઇસ કોલ"
+    },
+    "chat_action_menu": {
+        "preview_button": "પૂર્વાવલોકન",
+        "download_button": "ડાઉનલોડ કરો",
+        "delete_logged_message_button": "લોગ કરેલ સંદેશ કાઢી નાખો",
+        "show_chat_edit_history": "ચેટ સંપાદન ઇતિહાસ બતાવો",
+        "convert_message": "સંદેશ રૂપાંતરિત કરો"
+    },
+    "opera_context_menu": {
+        "download": "મીડિયા ડાઉનલોડ કરો",
+        "sent_at": "{date} ના રોજ મોકલવામાં આવ્યું",
+        "created_at": "{date} ના રોજ બનાવવામાં આવ્યું",
+        "expires_at": "{date} ના રોજ સમાપ્ત થાય છે",
+        "media_size": "મીડિયાનું કદ: {size}",
+        "media_duration": "મીડિયા અવધિ: {duration} ms",
+        "show_debug_info": "ડિબગ માહિતી બતાવો"
+    },
+    "modal_option": {
+        "profile_info": "પ્રોફાઇલ માહિતી",
+        "close": "બંધ કરો"
+    },
+    "gallery_media_send_override": {
+        "multiple_media_toast": "તમે એક સમયે ફક્ત એક જ મીડિયા મોકલી શકો છો"
+    },
+    "mark_as_seen": {
+        "no_unseen_snaps_toast": "કોઈ ન જોયેલા સ્નેપ મળ્યા નથી!",
+        "seen_toast": "જોયેલ તરીકે ચિહ્નિત!",
+        "unseen_toast": "ન જોયેલ તરીકે ચિહ્નિત!",
+        "already_seen_toast": "પહેલેથી જ જોયેલ તરીકે ચિહ્નિત!",
+        "already_unseen_toast": "પહેલેથી જ ન જોયેલ તરીકે ચિહ્નિત!"
+    },
+    "conversation_preview": {
+        "streak_expiration": "{day} દિવસ {hour} કલાક {minute} મિનિટમાં સમાપ્ત થાય છે",
+        "total_messages": "કુલ મોકલેલા/પ્રાપ્ત સંદેશા: {count}",
+        "title": "પૂર્વાવલોકન",
+        "unknown_user": "અજ્ઞાત વપરાશકર્તા",
+        "no_messages": "કોઈ સંદેશા મળ્યા નથી!"
+    },
+    "profile_info": {
+        "title": "પ્રોફાઇલ માહિતી",
+        "first_created_username": "પ્રથમ બનાવેલ વપરાશકર્તાનામ",
+        "mutable_username": "પરિવર્તનશીલ વપરાશકર્તાનામ",
+        "display_name": "પ્રદર્શન નામ",
+        "added_date": "ઉમેરવાની તારીખ",
+        "birthday": "જન્મદિવસ : {day} {month}",
+        "hidden_birthday": "જન્મદિવસ : છુપાયેલ",
+        "friendship": "મિત્રતા",
+        "add_source": "સ્ત્રોત ઉમેરો",
+        "snapchat_plus": "સ્નેપચેટ વત્તા",
+        "snapchat_plus_state": {
+            "subscribed": "સબ્સ્ક્રાઇબ કરેલ",
+            "not_subscribed": "સબ્સ્ક્રાઇબ નથી"
+        }
+    },
+    "friendship_link_type": {
+        "mutual": "પારસ્પરિક",
+        "outgoing": "આઉટગોઇંગ",
+        "blocked": "અવરોધિત",
+        "deleted": "કાઢી નાખેલ",
+        "following": "અનુસરી રહ્યા છે",
+        "suggested": "સૂચવેલ",
+        "incoming": "ઇનકમિંગ",
+        "incoming_follower": "ઇનકમિંગ અનુયાયી"
+    },
+    "bulk_messaging_action": {
+        "choose_action_title": "ક્રિયા પસંદ કરો",
+        "progress_status": "{total} માંથી {index} પર પ્રક્રિયા કરી રહ્યું છે",
+        "selection_dialog_continue_button": "ચાલુ રાખો",
+        "confirmation_dialog": {
+            "title": "શું તમે ખાતરી કરો છો?",
+            "message": "આ બધા પસંદ કરેલા મિત્રોને અસર કરશે. આ ક્રિયા પૂર્વવત્ કરી શકાતી નથી."
+        },
+        "actions": {
+            "remove_friends": "મિત્રોને દૂર કરો",
+            "clear_conversations": "વાર્તાલાપ સાફ કરો"
+        }
+    },
+    "chat_export": {
+        "exporter_dialog": {
+            "select_conversations_title": "વાર્તાલાપ પસંદ કરો",
+            "text_field_selection": "{amount} પસંદ કરેલ",
+            "text_field_selection_all": "બધા",
+            "export_file_format_title": "ફાઇલ ફોર્મેટ નિકાસ કરો",
+            "message_type_filter_title": "પ્રકાર દ્વારા સંદેશા ફિલ્ટર કરો",
+            "amount_of_messages_title": "સંદેશાઓની સંખ્યા (બધા માટે ખાલી છોડી દો)",
+            "download_medias_title": "મીડિયા ડાઉનલોડ કરો"
+        },
+        "dialog_negative_button": "રદ કરો",
+        "dialog_positive_button": "નિકાસ કરો",
+        "exported_to": "{path} પર નિકાસ કરવામાં આવ્યું",
+        "exporting_chats": "ચેટ્સ નિકાસ કરી રહ્યું છે...",
+        "processing_chats": "{amount} વાર્તાલાપ પર પ્રક્રિયા કરી રહ્યું છે...",
+        "export_fail": "વાર્તાલાપ {conversation} નિકાસ કરવામાં નિષ્ફળ",
+        "writing_output": "આઉટપુટ લખી રહ્યું છે...",
+        "finished": "થઈ ગયું! તમે હવે આ સંવાદ બંધ કરી શકો છો.",
+        "no_messages_found": "કોઈ સંદેશા મળ્યા નથી!",
+        "exporting_message": "{conversation} નિકાસ કરી રહ્યું છે..."
+    },
+    "button": {
+        "ok": "ઓકે",
+        "positive": "હા",
+        "negative": "ના",
+        "cancel": "રદ કરો",
+        "open": "ખોલો",
+        "download": "ડાઉનલોડ કરો",
+        "send": "મોકલો",
+        "restore_original": "મૂળ પુનઃસ્થાપિત કરો",
+        "convert_external_media": "બાહ્ય મીડિયા રૂપાંતરિત કરો",
+        "save": "સાચવો"
+    },
+    "tracker_events": {
+        "conversation_enter": "વાર્તાલાપમાં પ્રવેશ કરો",
+        "conversation_exit": "વાર્તાલાપમાંથી બહાર નીકળો",
+        "started_typing": "ટાઇપ કરવાનું શરૂ કર્યું",
+        "stopped_typing": "ટાઇપ કરવાનું બંધ કર્યું",
+        "started_speaking": "બોલવાનું શરૂ કર્યું",
+        "stopped_speaking": "બોલવાનું બંધ કર્યું",
+        "started_peeking": "ડોકિયું કરવાનું શરૂ કર્યું",
+        "stopped_peeking": "ડોકિયું કરવાનું બંધ કર્યું",
+        "message_read": "સંદેશ વાંચ્યો",
+        "message_deleted": "સંદેશ કાઢી નાખ્યો",
+        "message_saved": "સંદેશ સાચવ્યો",
+        "message_unsaved": "સંદેશ અસાચવ્યો",
+        "message_edited": "સંદેશ સંપાદિત કર્યો",
+        "message_reaction_add": "સંદેશ પ્રતિક્રિયા ઉમેરો",
+        "message_reaction_remove": "સંદેશ પ્રતિક્રિયા દૂર કરો",
+        "snap_opened": "સ્નેપ ખોલ્યો",
+        "snap_replayed": "સ્નેપ ફરીથી ચલાવ્યો",
+        "snap_replayed_twice": "સ્નેપ બે વાર ફરીથી ચલાવ્યો",
+        "snap_screenshot": "સ્નેપ સ્ક્રીનશોટ",
+        "snap_screen_record": "સ્નેપ સ્ક્રીન રેકોર્ડ"
+    },
+    "tracker_actions": {
+        "log": "લોગ",
+        "in_app_notification": "એપ્લિકેશનમાં સૂચના",
+        "push_notification": "પુશ સૂચના",
+        "custom": "કસ્ટમ"
+    },
+    "better_notifications": {
+        "button": {
+            "reply": "જવાબ આપો",
+            "download": "ડાઉનલોડ કરો",
+            "mark_as_read": "વાંચેલ તરીકે ચિહ્નિત કરો"
+        }
+    },
+    "profile_picture_downloader": {
+        "button": "પ્રોફાઇલ ચિત્ર ડાઉનલોડ કરો",
+        "title": "પ્રોફાઇલ ચિત્ર ડાઉનલોડર",
+        "avatar_option": "અવતાર",
+        "background_option": "પૃષ્ઠભૂમિ"
+    },
+    "call_start_confirmation": {
+        "dialog_title": "કોલ શરૂ કરો",
+        "dialog_message": "શું તમે ખાતરી કરો છો કે તમે કોલ શરૂ કરવા માંગો છો?"
+    },
+    "half_swipe_notifier": {
+        "notification_channel_name": "અડધો સ્વાઇપ",
+        "notification_content_dm": "{friend} એ હમણાં જ તમારા ચેટમાં {duration} સેકંડ માટે અડધો સ્વાઇપ કર્યો",
+        "notification_content_group": "{friend} એ હમણાં જ {group} માં {duration} સેકંડ માટે અડધો સ્વાઇપ કર્યો"
+    },
+    "download_processor": {
+        "attachment_type": {
+            "snap": "સ્નેપ",
+            "sticker": "સ્ટીકર",
+            "gif": "જાદુઈ",
+            "external_media": "બાહ્ય મીડિયા",
+            "note": "નોંધ",
+            "original_story": "મૂળ વાર્તા"
+        },
+        "select_attachments_title": "જોડાણો પસંદ કરો",
+        "download_started_toast": "ડાઉનલોડ શરૂ થયું",
+        "unsupported_content_type_toast": "અસમર્થિત સામગ્રી પ્રકાર!",
+        "failed_no_longer_available_toast": "મીડિયા હવે ઉપલબ્ધ નથી",
+        "no_attachments_toast": "કોઈ જોડાણો મળ્યા નથી!",
+        "already_queued_toast": "મીડિયા પહેલેથી જ કતારમાં છે!",
+        "already_downloaded_toast": "મીડિયા પહેલેથી જ ડાઉનલોડ થયેલ છે!",
+        "content_saved_toast": "સાચવવામાં આવ્યું!",
+        "download_toast": "{path} ડાઉનલોડ કરી રહ્યું છે...",
+        "processing_toast": "{path} પર પ્રક્રિયા કરી રહ્યું છે...",
+        "failed_generic_toast": "ડાઉનલોડ કરવામાં નિષ્ફળ",
+        "failed_to_create_preview_toast": "પૂર્વાવલોકન બનાવવામાં નિષ્ફળ",
+        "failed_processing_toast": "પ્રક્રિયા નિષ્ફળ {error}",
+        "failed_gallery_toast": "ગેલેરીમાં સાચવવામાં નિષ્ફળ {error}",
+        "dash_no_chapter": "કોઈ પ્રકરણ મળ્યું નથી",
+        "dash_dialog": {
+            "title": "ડેશ મીડિયા ડાઉનલોડ કરો",
+            "download_all": "બધા ડાઉનલોડ કરો",
+            "segment_text": "સેગમેન્ટ {from} - {to}"
+        }
+    },
+    "streaks_reminder": {
+        "notification_title": "સ્ટ્રીક્સ",
+        "notification_text": "તમે {hoursLeft} કલાકમાં {friend} સાથે તમારી સ્ટ્રીક ગુમાવશો"
+    },
+    "biometric_auth": {
+        "unlock_button": "અનલોક કરો",
+        "title": "Snapchat અનલોક કરો",
+        "subtitle": "કૃપા કરીને Snapchat અનલોક કરવા માટે પ્રમાણિત કરો"
+    },
+    "end_to_end_encryption": {
+        "toolbox": {
+            "no_shared_key": "તમારી પાસે હજી સુધી આ મિત્ર સાથે કોઈ વહેંચાયેલ ગુપ્ત કી નથી. નવું શરૂ કરવા માટે નીચે ક્લિક કરો.",
+            "shared_key_fingerprint": "તમારી ફિંગરપ્રિન્ટ છે:\n\n{fingerprint}\n\nખાતરી કરો કે તે તમારા મિત્રની ફિંગરપ્રિન્ટ સાથે મેળ ખાય છે!",
+            "initiate_exchange_button": "કી વિનિમય શરૂ કરો"
+        },
+        "confirmation_dialogs": {
+            "title": "એન્ડ-ટુ-એન્ડ એન્ક્રિપ્શન",
+            "confirmation_1": "ચેતવણી: આ તમારી હાલની કીને ઓવરરાઇટ કરશે. તમે આ મિત્ર પાસેથી બધા એન્ક્રિપ્ટેડ સંદેશાઓની ઍક્સેસ ગુમાવશો. શું તમે ખાતરી કરો છો કે તમે ચાલુ રાખવા માંગો છો?",
+            "confirmation_2": "શું તમે ખરેખર ખાતરી કરો છો કે તમે ચાલુ રાખવા માંગો છો? આ પાછા હટવાની તમારી છેલ્લી તક છે."
+        },
+        "unencrypted_conversation_send_failure_toast": "તમે એન્ક્રિપ્ટેડ અને અનએન્ક્રિપ્ટેડ બંને વાર્તાલાપમાં એન્ક્રિપ્ટેડ સામગ્રી મોકલી શકતા નથી!",
+        "native_hooks_send_failure_toast": "મોકલવામાં નિષ્ફળ! કૃપા કરીને સેટિંગ્સમાં મૂળ હુક્સ સક્ષમ કરો.",
+        "no_participants_to_encrypt_toast": "આ વાર્તાલાપમાં તમારી પાસે સંદેશા એન્ક્રિપ્ટ કરવા માટે કોઈ મિત્રો નથી!",
+        "encryption_failed_toast": "સંદેશ એન્ક્રિપ્ટ કરવામાં નિષ્ફળ! વધુ વિગતો માટે લોગકેટ તપાસો.",
+        "accept_public_key_success_toast": "જાહેર કી સફળતાપૂર્વક સ્વીકારવામાં આવી!",
+        "accept_secret_key_success_toast": "થઈ ગયું! તમે હવે આ મિત્ર સાથે એન્ક્રિપ્ટેડ સંદેશા મોકલી અને પ્રાપ્ત કરી શકો છો.",
+        "accept_public_key_failure_toast": "જાહેર કી સ્વીકારવામાં નિષ્ફળ",
+        "accept_secret_key_failure_toast": "ગુપ્ત કી સ્વીકારવામાં નિષ્ફળ",
+        "accept_secret_button": "ગુપ્ત સ્વીકારો",
+        "accept_public_key_button": "જાહેર કી સ્વીકારો",
+        "outgoing_pk_message": "કી વિનિમય વિનંતી",
+        "outgoing_secret_message": "કી વિનિમય પ્રતિસાદ",
+        "incoming_pk_message": "તમને હમણાં જ એક જાહેર કી વિનંતી મળી છે. તેને સ્વીકારવા માટે નીચે ક્લિક કરો.",
+        "incoming_secret_message": "તમારા મિત્રએ હમણાં જ તમારી જાહેર કી સ્વીકારી છે. ગુપ્ત સ્વીકારવા માટે નીચે ક્લિક કરો."
+    },
+    "auto_open_snaps": {
+        "title": "ઓટો ઓપન સ્નેપ્સ",
+        "notification_content": "{count} સ્નેપ ખોલ્યા"
+    },
+    "friend_mutation_observer": {
+        "notification_channel_name": "મિત્ર મ્યુટેશન ઓબ્ઝર્વર",
+        "friend_removed": "{username} એ તમને મિત્ર તરીકે દૂર કર્યા છે",
+        "birthday_removed": "{username} એ તેમનો જન્મદિવસ દૂર કર્યો છે ({birthday})",
+        "birthday_added": "{username} એ તેમનો જન્મદિવસ ઉમેર્યો છે ({birthday})",
+        "birthday_changed": "{username} એ તેમનો જન્મદિવસ {oldBirthday} થી {newBirthday} માં બદલ્યો છે",
+        "bitmoji_selfie_changed": "{username} એ તેમનું બિટમોજી સેલ્ફી બદલ્યું છે",
+        "bitmoji_avatar_changed": "{username} એ તેમનું બિટમોજી અવતાર બદલ્યું છે",
+        "bitmoji_background_changed": "{username} એ તેમની બિટમોજી પૃષ્ઠભૂમિ બદલી છે",
+        "bitmoji_scene_changed": "{username} એ તેમની બિટમોજી દ્રશ્ય બદલ્યું છે"
+    },
+    "material3_strings": {
+        "date_range_picker_start_headline": "થી",
+        "date_range_picker_end_headline": "સુધી",
+        "date_range_picker_title": "તારીખ શ્રેણી પસંદ કરો",
+        "date_picker_switch_to_calendar_mode": "કેલેન્ડર",
+        "date_picker_switch_to_input_mode": "ઇનપુટ",
+        "date_range_picker_scroll_to_previous_month": "પહેલાનો મહિનો",
+        "date_range_picker_scroll_to_next_month": "આવતો મહિનો",
+        "date_picker_today_description": "આજે",
+        "date_range_picker_day_in_range": "પસંદ કરેલ",
+        "date_input_invalid_for_pattern": "અમાન્ય તારીખ",
+        "date_input_invalid_year_range": "અમાન્ય વર્ષ",
+        "date_input_invalid_not_allowed": "અમાન્ય તારીખ",
+        "date_range_input_invalid_range_input": "અમાન્ય તારીખ શ્રેણી"
+    },
+    "send_override_dialog": {
+        "title": "{type} તરીકે મીડિયા મોકલો",
+        "duration": "અવધિ: {duration}",
+        "saveable_snap_hint": "ચેટમાં સ્નેપને સાચવી શકાય તેવું બનાવો",
+        "unlimited_duration": "અમર્યાદિત"
+    },
+    "invalid_input_toast": "અમાન્ય ઇનપુટ! ખાતરી કરો કે તમે માન્ય મૂલ્ય દાખલ કર્યું છે."
 }

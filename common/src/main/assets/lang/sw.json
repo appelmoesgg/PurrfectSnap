@@ -1,0 +1,2022 @@
+{
+    "setup": {
+        "dialogs": {
+            "select_language": "Chagua lugha",
+            "save_folder": "PurrfectSnap inahitaji ruhusa ya hifadhi ili kupakua na kuhifadhi midia kutoka Snapchat.\nTafadhali chagua eneo ambapo midia itapakuliwa.",
+            "select_save_folder_button": "Chagua folda"
+        },
+        "mappings": {
+            "dialog": "Inatengeneza ramani, hii inaweza kuchukua muda...",
+            "generate_failure_no_snapchat": "PurrfectSnap haikuweza kutambua Snapchat, tafadhali jaribu kusakinisha tena Snapchat.",
+            "generate_failure": "Kosa limetokea wakati wa kujaribu kutengeneza ramani, tafadhali jaribu tena."
+        },
+        "permissions": {
+            "dialog": "Ili kuendelea, unahitaji kutimiza mahitaji yafuatayo:",
+            "notification_access": "Ufikiaji wa arifa",
+            "battery_optimization": "Uboreshaji wa betri",
+            "display_over_other_apps": "Onyesha juu ya programu zingine",
+            "request_button": "Omba"
+        }
+    },
+    "scopes": {
+        "friend": "Rafiki",
+        "group": "Kikundi"
+    },
+    "manager": {
+        "routes": {
+            "tasks": "Majukumu",
+            "features": "Vipengele",
+            "manage_rule_feature": "Dhibiti kipengele cha kanuni",
+            "home": "Nyumbani",
+            "home_settings": "Mipangilio",
+            "home_logs": "Kumbukumbu",
+            "logger_history": "Historia ya Kumbukumbu",
+            "logged_stories": "Hadithi zilizohifadhiwa",
+            "friend_tracker": "Kifuatilia Marafiki",
+            "edit_rule": "Hariri Kanuni",
+            "file_imports": "Uingizaji wa Faili",
+            "manage_repos": "Dhibiti Hifadhi",
+            "social": "Kijamii",
+            "manage_scope": "Dhibiti Wigo",
+            "messaging_preview": "Onyesho la awali",
+            "scripts": "Hati",
+            "better_location": "Mahali Pazuri Zaidi"
+        },
+        "sections": {
+            "home": {
+                "version_title": "v{versionName} · Imetengenezwa na Eternal",
+                "update_title": "Sasisho la PurrfectSnap",
+                "update_content": "Toleo la {version} linapatikana!",
+                "update_button": "Pakua",
+                "debug_build_summary_title": "Unatumia toleo la utatuzi la PurrfectSnap",
+                "debug_build_summary_content": "Toleo {versionName} ({versionCode})",
+                "debug_build_summary_date": "Tarehe ya kutengenezwa: {date} (siku {days} zilizopita)",
+                "quick_actions_title": "Vitendo vya Haraka",
+                "download_icon_description": "Pakua",
+                "completed_icon_description": "Imekamilika",
+                "failed_icon_description": "Imeshindwa",
+                "manage_quick_actions_description": "Dhibiti vitendo vya haraka",
+                "quick_actions_icon_description": "Vitendo vya Haraka",
+                "add_quick_action_description": "Ongeza kitendo cha haraka"
+            },
+            "home_logs": {
+                "no_logs_hint": "Hakuna kumbukumbu zinazopatikana",
+                "clear_logs_button": "Futa kumbukumbu",
+                "export_logs_button": "Hamisha kumbukumbu",
+                "saving_logs_toast": "Inahifadhi kumbukumbu, hii inaweza kuchukua muda...",
+                "saved_logs_success_toast": "Kumbukumbu zimehifadhiwa kwa mafanikio",
+                "saved_logs_failure_toast": "Imeshindwa kuhifadhi kumbukumbu"
+            },
+            "home_settings": {
+                "actions_title": "Vitendo",
+                "message_logger_title": "Kihifadhi Ujumbe",
+                "debug_title": "Utatuzi",
+                "success_toast": "Imekamilika!",
+                "message_logger_summary": "{messageCount} ujumbe\n{storyCount} hadithi",
+                "export_button": "Hamisha",
+                "clear_button": "Futa",
+                "view_logger_history_button": "Tazama Historia ya Kihifadhi",
+                "updates_title": "Masasisho",
+                "auto_update_check": "Angalia masasisho kiotomatiki",
+                "update_check_frequency": "Marudio ya Kuangalia Masasisho",
+                "update_check_frequency_daily": "Kila siku",
+                "update_check_frequency_weekly": "Kila wiki",
+                "update_check_frequency_monthly": "Kila mwezi",
+                "theme_icon_description": "Mandhari",
+                "app_theme_title": "Mandhari ya programu",
+                "theme_mode_system": "Mfumo",
+                "theme_mode_light": "Mwangaza",
+                "theme_mode_dark": "Giza",
+                "ui_settings_title": "Mipangilio ya UI",
+                "haptic_feedback_label": "Maoni ya kugusa",
+                "test_mode_label": "Hali ya majaribio (Kwa utatuzi tu)",
+                "disable_feature_loading_label": "Zima upakiaji wa vipengele",
+                "disable_auto_mapper_label": "Zima Kiotomatiki cha Ramani",
+                "disable_bypass_indicator_label": "Zima kiashirio cha hali ya kupita",
+                "update_notification_channel_name": "Masasisho ya PurrfectSnap",
+                "update_notification_channel_description": "Arifa za masasisho ya PurrfectSnap",
+                "update_notification_title": "Sasisho la PurrfectSnap linapatikana",
+                "update_notification_text": "Toleo la {version} sasa linapatikana.",
+                "export_database_failed_toast": "Imeshindwa kuhamisha hifadhidata! {message}",
+                "clear_messages_failed_toast": "Imeshindwa kufuta ujumbe! {message}",
+                "clear_file_failed_toast": "Imeshindwa kufuta faili! {message}",
+                "debug_file_config": "Usanidi",
+                "debug_file_mappings": "Ramani",
+                "debug_file_message_logger": "Kihifadhi Ujumbe",
+                "debug_file_pinned_best_friend": "Rafiki Mpendwa Aliyebandikwa",
+                "debug_file_native_sig_cache": "Kashe ya saini asili"
+            },
+            "tasks": {
+                "no_tasks": "Hakuna majukumu",
+                "merge_button": "Unganisha",
+                "failed_to_open_file": "Imeshindwa kufungua faili",
+                "merge_files_toast": "Inaunganisha faili {count}",
+                "remove_selected_tasks_title": "Una uhakika unataka kuondoa majukumu yaliyochaguliwa?",
+                "remove_all_tasks_title": "Una uhakika unataka kuondoa majukumu yote?",
+                "delete_files_option": "Futa faili pia",
+                "remove_selected_tasks_confirm": "Ondoa majukumu {count}?",
+                "remove_all_tasks_confirm": "Ondoa majukumu yote?",
+                "clear_tasks_description": "Futa majukumu",
+                "file_not_found_icon_description": "Faili haipatikani",
+                "image_icon_description": "Picha",
+                "video_icon_description": "Video",
+                "audio_icon_description": "Sauti",
+                "file_icon_description": "Faili",
+                "download_icon_description": "Pakua",
+                "chat_action_icon_description": "Kitendo cha gumzo",
+                "cancel_icon_description": "Ghairi",
+                "success_icon_description": "Imefanikiwa",
+                "failure_icon_description": "Imeshindwa",
+                "cancelled_icon_description": "Imeghairiwa",
+                "task_status_failure": "Imeshindwa",
+                "task_status_cancelled": "Imeghairiwa"
+            },
+            "features": {
+                "disabled": "Imezimwa",
+                "export_option": "Hamisha",
+                "import_option": "Ingiza",
+                "reset_option": "Weka upya",
+                "config_export_success_toast": "Usanidi umehamishwa kwa mafanikio",
+                "config_import_success_toast": "Usanidi umeingizwa kwa mafanikio",
+                "config_import_failure_toast": "Imeshindwa kuingiza usanidi: {error}",
+                "config_export_failure_toast": "Imeshindwa kuhamisha usanidi: {error}",
+                "saved_config_snackbar": "Usanidi umehifadhiwa",
+                "older_required": "Kipengele hiki kinahitaji Snapchat v{version} au toleo la zamani ili kufanya kazi vizuri.",
+                "newer_required": "Kipengele hiki kinahitaji Snapchat v{version} au toleo jipya ili kufanya kazi vizuri.",
+                "search_button": "Tafuta"
+            },
+            "manage_rule_feature": {
+                "disable_state_option": "Imezimwa",
+                "disable_state_subtext": "Hakuna marafiki/vikundi vitakavyoathiriwa",
+                "whitelist_state_option": "Hakuna mtu isipokuwa...",
+                "whitelist_state_subtext": "Marafiki/vikundi {count} pekee ndivyo vitakavyoathiriwa na kanuni hii",
+                "whitelist_state_button": "Chagua marafiki/vikundi vinavyoruhusiwa",
+                "blacklist_state_option": "Kila mtu isipokuwa...",
+                "blacklist_state_subtext": "Kila mtu isipokuwa marafiki/vikundi {count} ataathiriwa na kanuni hii",
+                "blacklist_state_button": "Chagua marafiki/vikundi vilivyotengwa",
+                "clear_list_button": "Futa orodha ya marafiki/vikundi",
+                "dialog_clear_confirmation_text": "Una uhakika unataka kufuta orodha?"
+            },
+            "social": {
+                "friends_tab": "Marafiki",
+                "groups_tab": "Vikundi",
+                "empty_hint": "(tupu)",
+                "streaks_expiration_short": "{hours}s"
+            },
+            "manage_scope": {
+                "logged_stories_button": "Onyesha hadithi zilizohifadhiwa",
+                "e2ee_title": "Usimbuaji wa mwisho-hadi-mwisho",
+                "rules_title": "Kanuni",
+                "participants_text": "Washiriki {count}",
+                "not_found": "Haipatikani",
+                "streaks_title": "Mfululizo",
+                "streaks_length_text": "Urefu: {length}",
+                "streaks_expiration_text": "Inaisha baada ya {eta}",
+                "streaks_expiration_text_expired": "Imeisha muda",
+                "reminder_button": "Weka kikumbusho",
+                "delete_scope_confirm_dialog_title": "Una uhakika unataka kufuta {scope}?",
+                "notes_placeholder": "Bofya ili kuongeza dokezo",
+                "invalid_key_size_32_bytes": "Ukubwa wa ufunguo si sahihi (lazima iwe baiti 32)",
+                "successfully_imported_key": "Ufunguo umeingizwa kwa mafanikio",
+                "failed_to_import_key": "Imeshindwa kuingiza ufunguo: {message}",
+                "export_base64_button": "Hamisha Base64",
+                "import_base64_button": "Ingiza Base64"
+            },
+            "logged_stories": {
+                "story_failed_to_load": "Imeshindwa kupakia",
+                "no_stories": "Hakuna hadithi zilizopatikana",
+                "save_from_cache_button": "Hifadhi kutoka kwenye kashe",
+                "downloaded_to_path": "Imepakuliwa kwa {path}",
+                "download_failed": "Upakuaji umeshindwa: {message}",
+                "posted_at": "Imechapishwa mnamo {date}",
+                "created_at": "Imeundwa mnamo {date}",
+                "failed_to_open_file": "Imeshindwa kufungua faili. Angalia kumbukumbu kwa maelezo zaidi",
+                "failed_to_get_file": "Imeshindwa kupata faili"
+            },
+            "messaging_preview": {
+                "processed_messages_toast": "Ujumbe {count} umechapishwa",
+                "processed_messages_text": "Ujumbe {count} umechapishwa",
+                "close_button_description": "Funga",
+                "bridge_connection_failed": "Imeshindwa kuunganisha kwenye daraja. Hakikisha Snapchat inafanya kazi chinichini",
+                "bridge_init_failed": "Imeshindwa kuanzisha daraja la ujumbe. Hakikisha Snapchat inafanya kazi chinichini",
+                "message_fetch_failed": "Imeshindwa kupata ujumbe",
+                "no_message_hint": "Hakuna ujumbe",
+                "save_selection_option": "Hifadhi uteuzi",
+                "save_all_option": "Hifadhi zote",
+                "unsave_selection_option": "Acha kuhifadhi uteuzi",
+                "unsave_all_option": "Acha kuhifadhi zote",
+                "mark_selection_as_seen_option": "Weka alama kwenye snap iliyochaguliwa kama imeonekana",
+                "mark_all_as_seen_option": "Weka alama kwenye snap zote kama zimeonekana",
+                "delete_selection_option": "Futa uteuzi",
+                "delete_all_option": "Futa zote"
+            },
+            "logger_history": {
+                "download_started_toast": "Upakuaji umeanza!",
+                "download_success_toast": "Imepakuliwa kwa {path}",
+                "download_failed_toast": "Imeshindwa kupakua {message}",
+                "edited_at_text": "{message} (imehaririwa mnamo {date})",
+                "download_button": "Pakua",
+                "select_conversation_placeholder": "Chagua mazungumzo",
+                "close_button_description": "Funga",
+                "search_button_description": "Tafuta",
+                "list_friend_format": "Rafiki {name}",
+                "list_group_format": "Kikundi {name}",
+                "no_more_messages": "Hakuna ujumbe zaidi",
+                "reverse_order_checkbox": "Mpangilio wa kinyume",
+                "chat_attachment": "Kiambatisho {index}",
+                "empty_message": "Ujumbe tupu wa gumzo",
+                "message_parse_failed": "Imeshindwa kuchanganua ujumbe",
+                "unknown_sender": "Mtumaji asiyejulikana",
+                "download_attachment_failed_toast": "Imeshindwa kupakua kiambatisho",
+                "log_header_format": "{username} ({type}) - {date}"
+            },
+            "file_imports": {
+                "import_file_button": "Ingiza faili",
+                "file_not_found": "Faili haipatikani",
+                "file_import_failed": "Imeshindwa kuingiza faili: {error}",
+                "file_imported": "Faili imeingizwa kwa mafanikio",
+                "file_delete_failed": "Imeshindwa kufuta faili",
+                "no_files_hint": "Hapa unaweza kuingiza faili za kutumia katika Snapchat. Bonyeza kitufe hapa chini ili kuingiza faili."
+            },
+            "better_location": {
+                "spoofed_coordinates_title": "LAT {latitude}, LNG {longitude}",
+                "save_coordinates_dialog_title": "Hifadhi kuratibu",
+                "saved_name_dialog_hint": "Jina lililohifadhiwa",
+                "latitude_dialog_hint": "Latitudo",
+                "longitude_dialog_hint": "Longitudo",
+                "save_dialog_button": "Hifadhi",
+                "choose_location_button": "Chagua Mahali",
+                "teleport_to_friend_button": "Safiri kwa rafiki",
+                "spoof_location_toggle": "Danganya eneo",
+                "suspend_location_updates": "Sitisha masasisho ya eneo",
+                "saved_coordinates_title": "Kuratibu zilizohifadhiwa",
+                "no_saved_coordinates_hint": "Hakuna kuratibu zilizohifadhiwa",
+                "delete_dialog_title": "Futa kuratibu zilizohifadhiwa",
+                "delete_dialog_message": "Una uhakika unataka kufuta kuratibu hizi zilizohifadhiwa?",
+                "teleport_to_friend_title": "Safiri kwa rafiki",
+                "search_bar": "Tafuta",
+                "no_friends_map": "Hakuna marafiki kwenye ramani",
+                "no_friends_found": "Hakuna marafiki waliopatikana",
+                "edit_location_button_description": "Hariri Mahali",
+                "add_icon_description": "Ongeza",
+                "edit_icon_description": "Hariri",
+                "delete_icon_description": "Futa"
+            }
+        },
+        "dialogs": {
+            "add_friend": {
+                "title": "Ongeza rafiki au kikundi",
+                "search_hint": "Tafuta",
+                "fetch_error": "Imeshindwa kupata data",
+                "category_groups": "Vikundi",
+                "category_friends": "Marafiki",
+                "participants_text": "Washiriki {count}",
+                "search_icon_description": "Tafuta"
+            },
+            "scripting_warning": {
+                "title": "Onyo",
+                "content": "PurrfectSnap inajumuisha zana ya kuandika hati, inayoruhusu utekelezaji wa msimbo uliobainishwa na mtumiaji kwenye kifaa chako. Tumia tahadhari kali na sakinisha tu moduli kutoka kwa vyanzo vinavyojulikana, vinavyoaminika. Moduli ambazo hazijaidhinishwa au ambazo hazijathibitishwa zinaweza kusababisha hatari za usalama kwenye mfumo wako."
+            },
+            "reset_config": {
+                "title": "Weka upya usanidi",
+                "content": "Una uhakika unataka kuweka upya usanidi?",
+                "success_toast": "Usanidi umewekwa upya kwa mafanikio"
+            },
+            "export_config": {
+                "title": "Hamisha data nyeti?",
+                "content": "Je, ungependa kuhamisha usanidi na data nyeti? (Kama vile kuratibu za eneo, n.k.)"
+            },
+            "messaging_action": {
+                "title": "Chagua aina za maudhui ya kuchakatwa",
+                "select_all_button": "Chagua Zote"
+            },
+            "file_imports": {
+                "no_files_settings_hint": "Hakuna faili zilizopatikana. Hakikisha umeingiza faili zinazohitajika katika sehemu ya uingizaji wa faili",
+                "settings_select_file_hint": "Chagua faili iliyoingizwa"
+            },
+            "quick_actions_dialog": {
+                "title": "Hariri vitendo vya haraka",
+                "subtitle": "Chagua na ubadilishe ukubwa wa vitendo vyako vya haraka."
+            }
+        },
+        "friend_tracker": {
+            "rules_tab": "Kanuni",
+            "logs_tab": "Kumbukumbu",
+            "export_dialog_title": "Hamisha",
+            "bulk_export_button": "Uhamishaji wa jumla",
+            "individual_export_button": "Uhamishaji wa kibinafsi",
+            "invalid_import_type_dialog_title": "Aina ya uingizaji si sahihi",
+            "invalid_import_type_dialog_text": "Faili iliyochaguliwa haiendani na aina hii ya uingizaji. Tafadhali chagua aina sahihi ya uingizaji.",
+            "import_dialog_title": "Ingiza",
+            "bulk_import_button": "Uingizaji wa jumla",
+            "individual_import_button": "Uingizaji wa kibinafsi",
+            "import_button_description": "Ingiza",
+            "export_button_description": "Hamisha",
+            "export_button": "Hamisha",
+            "delete_button_description": "Futa",
+            "delete_button": "Futa",
+            "catalog_button_description": "Katalogi",
+            "catalog_button": "Katalogi",
+            "add_rule_button_description": "Ongeza kanuni",
+            "add_rule_button": "Ongeza kanuni",
+            "no_rules_found": "Hakuna kanuni zilizopatikana",
+            "empty_rule_name": "(tupu)",
+            "events_suffix": "matukio",
+            "scopes_suffix": "wigo",
+            "select_rule_to_export_title": "Chagua Kanuni ya kuhamisha",
+            "deleted_logs_toast": "Kumbukumbu {count} zimefutwa",
+            "delete_logs_dialog_title": "Futa kumbukumbu?",
+            "deleting_logs_dialog_text": "Inafuta kumbukumbu {count}...",
+            "delete_logs_dialog_confirm_text": "Hii itafuta kumbukumbu kulingana na kichujio cha sasa na hoja ya utafutaji. Kitendo hiki hakiwezi kutenduliwa.",
+            "exported_logs_toast": "Kumbukumbu zimehamishwa!",
+            "export_logs_failed_toast": "Imeshindwa kuhamisha kumbukumbu. Angalia LogCat kwa maelezo zaidi.",
+            "export_logs_dialog_title": "Hamisha kumbukumbu?",
+            "exporting_logs_dialog_text": "Inahamisha kumbukumbu...",
+            "export_logs_dialog_confirm_text": "Hii itahamisha kumbukumbu kulingana na kichujio cha sasa na hoja ya utafutaji.",
+            "export_as_button": "Hamisha kama {type}",
+            "filters_title": "Vichujio",
+            "search_by_label": "Tafuta kwa",
+            "newest_first_label": "Mpya kwanza",
+            "since_label": "Tangu",
+            "until_label": "Hadi",
+            "pick_a_date_button": "Chagua tarehe",
+            "search_placeholder": "Tafuta",
+            "filter_button_description": "Kichujio",
+            "clear_button_description": "Futa",
+            "no_logs_found": "Hakuna kumbukumbu zilizopatikana",
+            "log_event_format": "{event} katika {conversation}",
+            "condition_only_inside_conversation": "Ni wakati tu nipo ndani ya mazungumzo",
+            "condition_only_outside_conversation": "Ni wakati tu nipo nje ya mazungumzo",
+            "condition_only_when_app_active": "Ni wakati tu Snapchat inafanya kazi",
+            "condition_only_when_app_inactive": "Ni wakati tu Snapchat haifanyi kazi",
+            "condition_no_push_notification_when_app_active": "Hakuna arifa ya kushinikiza wakati Snapchat inafanya kazi",
+            "add_event_dialog_title": "Ongeza Tukio",
+            "event_type_label": "Aina ya Tukio",
+            "triggers_title": "Vichochezi",
+            "conditions_title": "Masharti",
+            "add_button": "Ongeza",
+            "default_rule_name": "Kanuni maalum",
+            "discard_changes_dialog_title": "Tupa mabadiliko?",
+            "discard_changes_dialog_text": "Una mabadiliko ambayo hayajahifadhiwa. Una uhakika unataka kuyatupa?",
+            "discard_button": "Tupa",
+            "cannot_save_rule_dialog_title": "Haiwezi kuhifadhi kanuni",
+            "cannot_save_rule_dialog_text": "Kanuni lazima iwe na angalau tukio moja ili kuhifadhi.",
+            "duplicate_rule_name_dialog_title": "Jina la kanuni rudufu",
+            "duplicate_rule_name_dialog_text": "Kanuni yenye jina hili tayari ipo. Tafadhali chagua jina tofauti.",
+            "delete_rule_dialog_title": "Futa kanuni",
+            "delete_rule_dialog_text": "Una uhakika unataka kufuta kanuni hii?",
+            "new_rule_title": "Kanuni Mpya",
+            "edit_rule_title": "Hariri Kanuni",
+            "back_button_description": "Nyuma",
+            "save_button_description": "Hifadhi",
+            "general_section_title": "Jumla",
+            "rule_name_label": "Jina la kanuni",
+            "author_name_label": "Jina la mwandishi",
+            "scope_section_title": "Wigo",
+            "scope_all": "Zote",
+            "scope_whitelist": "Orodha nyeupe",
+            "scope_blacklist": "Orodha nyeusi",
+            "select_friends_groups_button": "Chagua marafiki/vikundi ({count})",
+            "events_section_title": "Matukio",
+            "add_event_button": "Ongeza Tukio",
+            "no_events_text": "Hakuna matukio"
+        },
+        "friend_tracker_catalog": {
+            "download_failed": "Imeshindwa kupakua: {code}",
+            "error": "Kosa: {message}",
+            "no_repos_added": "Hakuna hifadhi zilizoongezwa.",
+            "no_rules_available": "Hakuna kanuni zinazopatikana kutoka kwa hifadhi yoyote.",
+            "by_author": "na {author}",
+            "imported_button": "Imeingizwa",
+            "import_button": "Ingiza",
+            "title": "Katalogi ya Kifuatilia Marafiki",
+            "manage_repos_description": "Dhibiti hifadhi"
+        },
+        "friend_tracker_export": {
+            "title": "Hamisha kanuni",
+            "back_button_description": "Nyuma",
+            "exported_toast": "Kanuni za kifuatilia marafiki zimehamishwa!",
+            "export_failed_toast": "Imeshindwa kuhamisha kanuni: {message}",
+            "save_button": "Hifadhi",
+            "expand_button_description": "Panua"
+        },
+        "friend_tracker_import": {
+            "title": "Ingiza kanuni",
+            "back_button_description": "Nyuma",
+            "imported_toast": "Kanuni za kifuatilia marafiki zimeingizwa!",
+            "import_failed_toast": "Imeshindwa kuingiza kanuni: {message}",
+            "confirm_button": "Thibitisha",
+            "expand_button_description": "Panua"
+        },
+        "friend_tracker_repos": {
+            "invalid_repo_title": "Hifadhi si sahihi",
+            "add_repo_button": "Ongeza hifadhi",
+            "add_repo_dialog_title": "Ongeza URL ya hifadhi",
+            "repo_url_label": "URL ya hifadhi",
+            "repo_added_toast": "Hifadhi imeongezwa kwa mafanikio!",
+            "invalid_repo_error": "Hii haionekani kuwa hifadhi halali ya Kifuatilia Marafiki.",
+            "add_repo_failed_toast": "Imeshindwa kuongeza hifadhi: {message}",
+            "add_button": "Ongeza",
+            "no_repos_added": "Hakuna hifadhi zilizoongezwa",
+            "remove_button": "Ondoa",
+            "remove_repo_dialog_title": "Ondoa hifadhi",
+            "remove_repo_dialog_text": "Una uhakika unataka kuondoa hifadhi hii?"
+        },
+        "navigation": {
+            "tracker_tab_label": "Kifuatilia",
+            "customize_bottom_bar_title": "Geuza upau wa chini kukufaa",
+            "customize_bottom_bar_subtitle": "Panga upya, ongeza, au ondoa vichupo. Upeo wa tano.",
+            "shown_tabs_title": "Vichupo vilivyoonyeshwa",
+            "no_tabs_selected_text": "Hakuna vichupo vilivyochaguliwa",
+            "available_tabs_title": "Vichupo vinavyopatikana",
+            "reset_button": "Weka upya",
+            "done_button": "Imekamilika"
+        },
+        "scripting": {
+            "script_already_installed": "Hati tayari imesakinishwa!",
+            "downloading_script": "Inapakua hati...",
+            "script_downloaded": "Hati {name} imepakuliwa!",
+            "download_script_failed": "Imeshindwa kupakua hati. Angalia kumbukumbu kwa maelezo zaidi",
+            "import_script_from_url_title": "Ingiza hati kutoka URL",
+            "import_script_warning": "Onyo: Hati zilizoingizwa zinaweza kuwa na madhara kwa kifaa chako. Ingiza tu hati kutoka kwa vyanzo vinavyoaminika.",
+            "enter_url_label": "Weka URL hapa:",
+            "script_imported": "Hati {name} imeingizwa!",
+            "import_failed": "Imeshindwa kuingiza hati. {message}. Angalia kumbukumbu kwa maelezo zaidi",
+            "import_button": "Ingiza",
+            "update_module_button": "Sasisha moduli",
+            "updating_script": "Inasasisha hati {name}...",
+            "module_not_found": "Moduli haipatikani",
+            "updated_script": "Imesasishwa {name} hadi toleo la {version}",
+            "update_module_failed": "Imeshindwa kusasisha moduli. Angalia kumbukumbu kwa maelezo zaidi",
+            "edit_module_button": "Hariri moduli",
+            "open_module_failed": "Imeshindwa kufungua faili ya moduli. Angalia kumbukumbu kwa maelezo zaidi",
+            "clear_module_data_button": "Futa data ya moduli",
+            "module_data_cleared": "Data ya moduli imefutwa!",
+            "clear_module_data_failed": "Imeshindwa kufuta data ya moduli. Angalia kumbukumbu kwa maelezo zaidi",
+            "delete_module_button": "Futa moduli",
+            "deleted_script": "Hati {name} imefutwa!",
+            "delete_module_failed": "Imeshindwa kufuta moduli. Angalia kumbukumbu kwa maelezo zaidi",
+            "actions_title": "Vitendo",
+            "no_description": "Hakuna maelezo",
+            "update_available": "Sasisho linapatikana: {version}",
+            "actions_button": "Vitendo",
+            "loaded_script": "Hati {name} imepakiwa",
+            "unloaded_script": "Hati {name} haijapakiwa",
+            "enable_script_failed": "Imeshindwa kuwezesha hati. Angalia kumbukumbu kwa maelezo zaidi",
+            "disable_script_failed": "Imeshindwa kuzima hati. Angalia kumbukumbu kwa maelezo zaidi",
+            "select_scripts_folder_toast": "Tafadhali chagua folda yako ya Hati!",
+            "manage_repos_button": "Dhibiti hifadhi",
+            "import_from_url_button": "Ingiza kutoka URL",
+            "open_scripts_folder_button": "Fungua folda ya Hati",
+            "no_settings_for_module": "Moduli hii haina mipangilio yoyote",
+            "installed_scripts_tab": "Hati zilizosakinishwa",
+            "catalog_tab": "Katalogi",
+            "no_scripts_folder_selected_title": "Hakuna folda ya hati iliyochaguliwa",
+            "select_folder_button": "Chagua folda",
+            "no_scripts_found_title": "Hakuna hati zilizopatikana.",
+            "use_catalog_to_add_scripts": "Tumia kichupo cha Katalogi kuongeza hati!",
+            "ok_button_timeout": "Sawa ({timeout})",
+            "documentation_button": "Nyaraka",
+            "catalog": {
+                "script_already_installed": "Hati tayari imesakinishwa!",
+                "download_failed": "Imeshindwa kupakua: {code}",
+                "script_downloaded": "Hati imepakuliwa!",
+                "could_not_create_file": "Haikuweza kuunda faili.",
+                "no_scripts_folder_selected": "Hakuna folda ya hati iliyochaguliwa.",
+                "error": "Kosa: {message}",
+                "no_repos_added": "Hakuna hifadhi zilizoongezwa.",
+                "repo_list_info": "Hapa unaweza kupata orodha ya hifadhi:",
+                "link_text": "Kiungo",
+                "no_scripts_available": "Hakuna hati zinazopatikana kutoka kwa hifadhi yoyote.",
+                "by_author": "na {author}",
+                "version": "Toleo: {version}",
+                "installed_button": "Imesakinishwa",
+                "download_button": "Pakua"
+            },
+            "repos": {
+                "invalid_repo_title": "Hifadhi si sahihi",
+                "add_repo_button": "Ongeza hifadhi",
+                "add_repo_dialog_title": "Ongeza URL ya hifadhi",
+                "repo_url_label": "URL ya hifadhi",
+                "repo_added_toast": "Hifadhi imeongezwa kwa mafanikio!",
+                "invalid_repo_error": "Hii haionekani kuwa hifadhi halali ya hati.",
+                "add_repo_failed_toast": "Imeshindwa kuongeza hifadhi: {message}",
+                "add_button": "Ongeza",
+                "no_repos_added": "Hakuna hifadhi zilizoongezwa",
+                "remove_button": "Ondoa",
+                "remove_repo_dialog_title": "Ondoa hifadhi",
+                "remove_repo_dialog_text": "Una uhakika unataka kuondoa hifadhi hii?"
+            }
+        },
+        "features": {
+            "config_import": {
+                "title": "Thibitisha uingizaji",
+                "back_button_description": "Nyuma",
+                "config_imported_toast": "Usanidi umeingizwa!",
+                "confirm_button": "Thibitisha",
+                "expand_button_description": "Panua",
+                "enable_feature": "Washa kipengele",
+                "enabled": "Imewashwa",
+                "disabled": "Imezimwa"
+            },
+            "config_export": {
+                "title": "Muhtasari wa uhamishaji",
+                "back_button_description": "Nyuma",
+                "save_button": "Hifadhi",
+                "expand_button_description": "Panua",
+                "enable_feature": "Washa kipengele",
+                "enabled": "Imewashwa",
+                "disabled": "Imezimwa"
+            }
+        },
+        "manage_repos": {
+            "title": "Dhibiti hifadhi za {featureName}",
+            "add_repo_button": "Ongeza hifadhi",
+            "add_repo_dialog_title": "Ongeza URL ya hifadhi",
+            "repo_url_label": "URL ya hifadhi",
+            "repo_added_successfully": "Hifadhi imeongezwa kwa mafanikio!",
+            "add_repo_failed": "Imeshindwa kuongeza hifadhi: {message}",
+            "add_button": "Ongeza",
+            "no_repos_added": "Hakuna hifadhi zilizoongezwa",
+            "remove_button": "Ondoa"
+        }
+    },
+    "rules": {
+        "toasts": {
+            "enabled": "{ruleName} imewashwa",
+            "disabled": "{ruleName} imezimwa"
+        },
+        "modes": {
+            "blacklist": "Hali ya orodha nyeusi",
+            "whitelist": "Hali ya orodha nyeupe"
+        },
+        "properties": {
+            "auto_download": {
+                "name": "Upakuaji wa kiotomatiki",
+                "description": "Pakua snap kiotomatiki unapozitazama",
+                "options": {
+                    "blacklist": "Ondoa kwenye upakuaji wa kiotomatiki",
+                    "whitelist": "Upakuaji wa kiotomatiki"
+                }
+            },
+            "stealth": {
+                "name": "Hali ya siri",
+                "description": "Inazuia mtu yeyote kujua kuwa umefungua snap/gumzo zao",
+                "options": {
+                    "blacklist": "Ondoa kwenye hali ya siri",
+                    "whitelist": "Hali ya siri"
+                }
+            },
+            "auto_save": {
+                "name": "Hifadhi kiotomatiki",
+                "description": "Huhifadhi ujumbe wa gumzo unapoutazama",
+                "options": {
+                    "blacklist": "Ondoa kwenye hifadhi ya kiotomatiki",
+                    "whitelist": "Hifadhi kiotomatiki"
+                }
+            },
+            "unsaveable_messages": {
+                "name": "Ujumbe usioweza kuhifadhiwa",
+                "description": "Inazuia ujumbe kuhifadhiwa kwenye gumzo na watu wengine",
+                "options": {
+                    "blacklist": "Ondoa kwenye ujumbe usioweza kuhifadhiwa",
+                    "whitelist": "Ujumbe usioweza kuhifadhiwa"
+                }
+            },
+            "auto_open_snaps": {
+                "name": "Fungua snap kiotomatiki",
+                "description": "Hufungua snap kiotomatiki unapozipokea",
+                "options": {
+                    "blacklist": "Ondoa kwenye kufungua snap kiotomatiki",
+                    "whitelist": "Fungua snap kiotomatiki"
+                }
+            },
+            "hide_friend_feed": {
+                "name": "Ficha kwenye mlisho wa marafiki"
+            },
+            "e2e_encryption": {
+                "name": "Tumia usimbaji fiche wa E2E"
+            },
+            "pin_conversation": {
+                "name": "Bandika mazungumzo"
+            },
+            "exclude_message_logger": {
+                "name": "Ondoa kwenye kihifadhi ujumbe"
+            }
+        }
+    },
+    "actions": {
+        "clean_snapchat_cache": {
+            "name": "Safisha kashe ya Snapchat",
+            "description": "Husafisha kashe ya Snapchat"
+        },
+        "manage_friend_list": {
+            "name": "Dhibiti orodha ya marafiki",
+            "description": "Ingiza/Hamisha orodha yako ya marafiki kwa ajili ya kuhifadhi nakala"
+        },
+        "export_chat_messages": {
+            "name": "Hamisha ujumbe wa gumzo",
+            "description": "Huhamisha ujumbe wa gumzo kwenye faili ya JSON/HTML/TXT"
+        },
+        "export_memories": {
+            "name": "Hamisha kumbukumbu",
+            "description": "Huhamisha kumbukumbu kwenye faili ya zip"
+        },
+        "bulk_messaging_action": {
+            "name": "Kitendo cha ujumbe wa jumla",
+            "description": "Hufanya vitendo kama vile kufuta marafiki kwa jumla au kufuta gumzo"
+        },
+        "regen_mappings": {
+            "name": "Tengeneza ramani upya",
+            "description": "Hutengeneza ramani upya"
+        },
+        "change_language": {
+            "name": "Badilisha lugha",
+            "description": "Hubadilisha lugha ya PurrfectSnap"
+        },
+        "file_imports": {
+            "name": "Uingizaji wa faili",
+            "description": "Ingiza faili za kutumia katika Snapchat"
+        },
+        "friend_tracker": {
+            "name": "Kifuatilia Marafiki",
+            "description": "Fuatilia marafiki zako kwenye Snapchat"
+        },
+        "logger_history": {
+            "name": "Historia ya Kihifadhi",
+            "description": "Angalia historia ya ujumbe uliohifadhiwa"
+        }
+    },
+    "features": {
+        "notices": {
+            "unstable": "⚠ Si thabiti",
+            "ban_risk": "⚠ Kipengele hiki kinaweza kusababisha kupigwa marufuku",
+            "internal_behavior": "⚠ Hii inaweza kuvunja tabia ya ndani ya Snapchat"
+        },
+        "properties": {
+            "downloader": {
+                "name": "Kipakuzi",
+                "description": "Pakua Midia ya Snapchat",
+                "properties": {
+                    "save_folder": {
+                        "name": "Hifadhi folda",
+                        "description": "Chagua saraka ambapo midia yote inapaswa kupakuliwa"
+                    },
+                    "auto_download_sources": {
+                        "name": "Vyanzo vya upakuaji wa kiotomatiki",
+                        "description": "Chagua vyanzo vya kupakua kiotomatiki"
+                    },
+                    "prevent_self_auto_download": {
+                        "name": "Zuia upakuaji wa kiotomatiki wa kibinafsi",
+                        "description": "Huzuia snap zako mwenyewe kupakuliwa kiotomatiki"
+                    },
+                    "path_format": {
+                        "name": "Umbizo la njia",
+                        "description": "Bainisha umbizo la njia ya faili"
+                    },
+                    "allow_duplicate": {
+                        "name": "Ruhusu rudufu",
+                        "description": "Huruhusu midia ileile kupakuliwa mara kadhaa"
+                    },
+                    "merge_overlays": {
+                        "name": "Unganisha viwekeleo",
+                        "description": "Huunganisha maandishi na midia ya snap kuwa faili moja"
+                    },
+                    "force_image_format": {
+                        "name": "Lazimisha umbizo la picha",
+                        "description": "Hulazimisha picha kuhifadhiwa katika umbizo maalum"
+                    },
+                    "force_voice_note_format": {
+                        "name": "Lazimisha umbizo la dokezo la sauti",
+                        "description": "Hulazimisha madokezo ya sauti kuhifadhiwa katika umbizo maalum"
+                    },
+                    "auto_download_voice_notes": {
+                        "name": "Pakua madokezo ya sauti kiotomatiki",
+                        "description": "Hupakua madokezo ya sauti kiotomatiki unapoyacheza"
+                    },
+                    "download_profile_pictures": {
+                        "name": "Pakua picha za wasifu",
+                        "description": "Hukuruhusu kupakua picha za wasifu kutoka kwenye ukurasa wa wasifu"
+                    },
+                    "opera_download_button": {
+                        "name": "Kitufe cha kupakua cha Opera",
+                        "description": "Huongeza kitufe cha kupakua kwenye kona ya juu kulia unapotazama snap.\nKubonyeza kwa muda mrefu kwenye vitufe kutalazimisha upakuaji"
+                    },
+                    "download_context_menu": {
+                        "name": "Menyu ya muktadha ya upakuaji",
+                        "description": "Hukuruhusu kupakua/kuonyesha awali ujumbe kutoka kwa gumzo au hadithi kwa kutumia menyu ya muktadha.\nKubonyeza kwa muda mrefu kwenye vitufe kutalazimisha upakuaji"
+                    },
+                    "ffmpeg_options": {
+                        "name": "Chaguo za FFmpeg",
+                        "description": "Bainisha chaguo za ziada za FFmpeg",
+                        "properties": {
+                            "threads": {
+                                "name": "Nyuzi",
+                                "description": "Idadi ya nyuzi za kutumia"
+                            },
+                            "preset": {
+                                "name": "Weka mapema",
+                                "description": "Weka kasi ya ugeuzaji"
+                            },
+                            "constant_rate_factor": {
+                                "name": "Kiwango cha ukadiriaji cha kudumu",
+                                "description": "Weka kiwango cha ukadiriaji cha kudumu kwa kisimbaji video\nKutoka 0 hadi 51 kwa libx264"
+                            },
+                            "video_bitrate": {
+                                "name": "Kiwango cha data ya video",
+                                "description": "Weka Kiwango cha data ya Video (kbps)"
+                            },
+                            "audio_bitrate": {
+                                "name": "Kiwango cha data ya sauti",
+                                "description": "Weka Kiwango cha data ya Sauti (kbps)"
+                            },
+                            "custom_video_codec": {
+                                "name": "Kisimbaji video maalum",
+                                "description": "Weka kisimbaji video maalum (k.m. libx264)"
+                            },
+                            "custom_audio_codec": {
+                                "name": "Kisimbaji sauti maalum",
+                                "description": "Weka kisimbaji sauti maalum (k.m. aac)"
+                            }
+                        }
+                    },
+                    "logging": {
+                        "name": "Kuweka kumbukumbu",
+                        "description": "Huonyesha ujumbe mfupi midia inapopakuliwa"
+                    },
+                    "custom_path_format": {
+                        "name": "Umbizo la Njia Maalum",
+                        "description": "Bainisha umbizo la njia maalum kwa midia iliyopakuliwa\n\nVigezo vinavyopatikana:\n - %username%\n - %source%\n - %hash%\n - %date_time%"
+                    }
+                }
+            },
+            "user_interface": {
+                "name": "Kiolesura cha mtumiaji",
+                "description": "Geuza kukufaa mwonekano na hisia za Snapchat",
+                "properties": {
+                    "enable_app_appearance": {
+                        "name": "Washa mipangilio ya mwonekano wa programu",
+                        "description": "Huwasha mpangilio wa mwonekano wa programu uliofichwa\nHuweza isihitajike kwenye matoleo mapya ya Snapchat"
+                    },
+                    "friend_feed_message_preview": {
+                        "name": "Onyesho la awali la ujumbe wa mlisho wa marafiki",
+                        "description": "Huonyesha onyesho la awali la ujumbe wa mwisho kwenye mlisho wa marafiki",
+                        "properties": {
+                            "amount": {
+                                "name": "Kiasi",
+                                "description": "Idadi ya ujumbe wa kuonyesha awali"
+                            }
+                        }
+                    },
+                    "snap_preview": {
+                        "name": "Onyesho la awali la snap",
+                        "description": "Huonyesha onyesho la awali dogo kando ya snap ambazo hazijaonekana kwenye gumzo"
+                    },
+                    "bootstrap_override": {
+                        "name": "Ubatilishaji wa Bootstrap",
+                        "description": "Hubatilisha mipangilio ya bootstrap inayoendeshwa na mtumiaji",
+                        "properties": {
+                            "app_appearance": {
+                                "name": "Mwonekano wa programu",
+                                "description": "Huweka mwonekano wa programu unaoendelea"
+                            },
+                            "home_tab": {
+                                "name": "Kichupo cha nyumbani",
+                                "description": "Hubatilisha kichupo cha kuanza unapofungua Snapchat"
+                            }
+                        }
+                    },
+                    "force_amoled_theme": {
+                        "name": "Hali ya giza ya AMOLED",
+                        "description": "Hutumia mandharinyuma meusi halisi kwa mandhari meusi"
+                    },
+                    "map_friend_nametags": {
+                        "name": "Lebo za majina za ramani ya marafiki zilizoboreshwa",
+                        "description": "Huboresha lebo za majina za marafiki kwenye Snapmap"
+                    },
+                    "prevent_message_list_auto_scroll": {
+                        "name": "Zuia orodha ya ujumbe kusogeza kiotomatiki",
+                        "description": "Huzuia orodha ya ujumbe kusogeza chini unapotuma/kupokea ujumbe"
+                    },
+                    "streak_expiration_info": {
+                        "name": "Onyesha maelezo ya kuisha kwa mfululizo",
+                        "description": "Huonyesha kipima muda cha kuisha kando ya kaunta ya mfululizo"
+                    },
+                    "hide_friend_feed_entry": {
+                        "name": "Ficha ingizo la mlisho wa marafiki",
+                        "description": "Huficha rafiki maalum kwenye mlisho wa marafiki\nTumia kichupo cha kijamii kudhibiti kipengele hiki"
+                    },
+                    "hide_streak_restore": {
+                        "name": "Ficha urejeshaji wa mfululizo",
+                        "description": "Huficha kitufe cha kurejesha kwenye mlisho wa marafiki"
+                    },
+                    "hide_quick_add_suggestions": {
+                        "name": "Ficha mapendekezo ya kuongeza haraka",
+                        "description": "Huondoa mapendekezo ya kuongeza rafiki haraka"
+                    },
+                    "hide_story_suggestions": {
+                        "name": "Ficha mapendekezo ya hadithi",
+                        "description": "Huondoa mapendekezo kwenye ukurasa wa hadithi"
+                    },
+                    "hide_ui_components": {
+                        "name": "Ficha vipengele vya UI",
+                        "description": "Chagua ni vipengele vipi vya UI vya kuficha"
+                    },
+                    "opera_media_quick_info": {
+                        "name": "Maelezo ya haraka ya Midia ya Opera",
+                        "description": "Huonyesha maelezo muhimu ya midia kama vile tarehe ya kuundwa kwenye menyu ya muktadha ya kitazamaji cha Opera"
+                    },
+                    "old_bitmoji_selfie": {
+                        "name": "Selfie ya zamani ya Bitmoji",
+                        "description": "Hurudisha selfie za Bitmoji kutoka kwa matoleo ya zamani ya Snapchat"
+                    },
+                    "disable_spotlight": {
+                        "name": "Zima Spotlight",
+                        "description": "Huzima ukurasa wa Spotlight"
+                    },
+                    "friend_feed_menu_buttons": {
+                        "name": "Vitufe vya menyu ya mlisho wa marafiki",
+                        "description": "Chagua ni vitufe vipi vya kuonyesha kwenye menyu ya mlisho wa marafiki"
+                    },
+                    "auto_close_friend_feed_menu": {
+                        "name": "Funga menyu ya mlisho wa marafiki kiotomatiki",
+                        "description": "Hufunga menyu ya mlisho wa marafiki kiotomatiki baada ya kubofya kitufe cha kuweka"
+                    },
+                    "vertical_story_viewer": {
+                        "name": "Kitazamaji hadithi wima",
+                        "description": "Huwasha kitazamaji hadithi wima kwa hadithi zote"
+                    },
+                    "enable_friend_feed_menu_bar": {
+                        "name": "Washa upau wa menyu ya mlisho wa marafiki",
+                        "description": "Huwasha upau mpya wa menyu ya mlisho wa marafiki"
+                    },
+                    "message_indicators": {
+                        "name": "Viashiria vya ujumbe",
+                        "description": "Huongeza aikoni maalum za viashiria kwenye ujumbe\nKumbuka: Viashiria huenda visiwe sahihi kwa 100%"
+                    },
+                    "stealth_mode_indicator": {
+                        "name": "Kiashiria cha hali ya siri",
+                        "description": "Huongeza emoji ya 👻 kando ya mazungumzo katika hali ya siri"
+                    },
+                    "edit_text_override": {
+                        "name": "Ubatilishaji wa maandishi ya kuhariri",
+                        "description": "Hubatilisha tabia ya sehemu ya maandishi"
+                    },
+                    "prevent_forced_keyboard": {
+                        "name": "Zuia kibodi kulazimishwa",
+                        "description": "Huzuia Snapchat kuwasha kibodi kiotomatiki unapofungua gumzo"
+                    },
+                    "settings_menu": {
+                        "name": "Menyu ya Mipangilio",
+                        "description": "Hubadilisha jinsi unavyofungua menyu ya PurrfectSnap",
+                        "options": {
+                            "default": "Chaguo-msingi",
+                            "legacy": "Urithi"
+                        }
+                    }
+                }
+            },
+            "messaging": {
+                "name": "Ujumbe",
+                "description": "Geuza kukufaa jinsi unavyowasiliana na marafiki",
+                "properties": {
+                    "bypass_screenshot_detection": {
+                        "name": "Pita ugunduzi wa picha ya skrini",
+                        "description": "Huzuia Snapchat kugundua unapopiga picha ya skrini"
+                    },
+                    "anonymous_story_viewing": {
+                        "name": "Kutazama hadithi bila kujulikana",
+                        "description": "Huzuia mtu yeyote kujua kuwa umetazama hadithi yake"
+                    },
+                    "prevent_story_rewatch_indicator": {
+                        "name": "Zuia kiashiria cha kutazama tena hadithi",
+                        "description": "Huzuia mtu yeyote kujua kuwa umetazama tena hadithi yake"
+                    },
+                    "hide_peek_a_peek": {
+                        "name": "Ficha chungulia-chungulia",
+                        "description": "Huzuia arifa ya nusu-telezesha unapoingia kwenye gumzo"
+                    },
+                    "hide_bitmoji_presence": {
+                        "name": "Ficha uwepo wa Bitmoji",
+                        "description": "Huzuia Bitmoji yako kuonekana unapokuwa kwenye gumzo"
+                    },
+                    "hide_typing_notifications": {
+                        "name": "Ficha arifa za kuandika",
+                        "description": "Huzuia mtu yeyote kujua kuwa unaandika ujumbe"
+                    },
+                    "unlimited_snap_view_time": {
+                        "name": "Muda wa kutazama snap bila kikomo",
+                        "description": "Huondoa kikomo cha muda wa kutazama snap"
+                    },
+                    "auto_mark_as_read": {
+                        "name": "Weka alama kama imesomwa kiotomatiki",
+                        "description": "Huweka alama kiotomatiki kwenye Ujumbe/Snap kama zimesomwa hata wakati hali ya siri imewashwa"
+                    },
+                    "mark_snap_as_seen_button": {
+                        "name": "Kitufe cha kuweka alama kama imeonekana",
+                        "description": "Huongeza kitufe cha kuweka alama kama imeonekana unapoitazama.\nHii itafanya kazi hata wakati hali ya siri imewashwa"
+                    },
+                    "skip_when_marking_as_seen": {
+                        "name": "Ruka unapoweka alama kama imeonekana",
+                        "description": "Hupita kiotomatiki hadi kwenye snap inayofuata unapoweka alama kwenye snap kama imeonekana.\nTumia pamoja na kitufe cha kuweka alama kama imeonekana"
+                    },
+                    "loop_media_playback": {
+                        "name": "Uchezaji wa midia unaojirudia",
+                        "description": "Hucheza midia kwa kujirudia unapotazama snap/hadithi"
+                    },
+                    "disable_replay_in_ff": {
+                        "name": "Zima uchezaji tena katika FF",
+                        "description": "Huzima uwezo wa kucheza tena kwa kubonyeza kwa muda mrefu kutoka kwenye mlisho wa marafiki"
+                    },
+                    "half_swipe_notifier": {
+                        "name": "Arifa ya nusu-telezesha",
+                        "description": "Hukuarifu mtu anaponusu-telezesha kwenye mazungumzo",
+                        "properties": {
+                            "min_duration": {
+                                "name": "Muda wa chini",
+                                "description": "Muda wa chini wa nusu-telezesha (kwa sekunde)"
+                            },
+                            "max_duration": {
+                                "name": "Muda wa juu",
+                                "description": "Muda wa juu wa nusu-telezesha (kwa sekunde)"
+                            }
+                        }
+                    },
+                    "call_start_confirmation": {
+                        "name": "Uthibitisho wa kuanza simu",
+                        "description": "Huonyesha kidirisha cha uthibitisho unapoanza simu"
+                    },
+                    "unlimited_conversation_pinning": {
+                        "name": "Ubandikaji wa mazungumzo bila kikomo",
+                        "description": "Hukuruhusu kubandika idadi isiyo na kikomo ya mazungumzo"
+                    },
+                    "disable_snap_mode_restrictions": {
+                        "name": "Zima vikwazo vya hali ya SNAP",
+                        "description": "Hukuruhusu kutazama snap zinazojifuta zenyewe bila vikwazo"
+                    },
+                    "prevent_message_sending": {
+                        "name": "Zuia kutuma ujumbe",
+                        "description": "Huzuia kutuma aina fulani za ujumbe"
+                    },
+                    "friend_mutation_notifier": {
+                        "name": "Arifa ya mabadiliko ya rafiki",
+                        "description": "Hukuarifu kitu kinapobadilika kwenye wasifu wa rafiki"
+                    },
+                    "better_notifications": {
+                        "name": "Arifa bora zaidi",
+                        "description": "Huongeza maelezo zaidi kwenye arifa zinazopokelewa",
+                        "properties": {
+                            "group_notifications": {
+                                "name": "Arifa za kikundi",
+                                "description": "Hukusanya arifa za kikundi kuwa moja"
+                            },
+                            "chat_preview": {
+                                "name": "Onyesho la awali la gumzo",
+                                "description": "Huonyesha onyesho la awali la ujumbe uliopokelewa kwenye arifa"
+                            },
+                            "media_preview": {
+                                "name": "Onyesho la awali la midia",
+                                "description": "Huonyesha onyesho la awali la aina za midia zilizochaguliwa kwenye arifa"
+                            },
+                            "media_caption": {
+                                "name": "Maelezo ya midia",
+                                "description": "Huonyesha maelezo ya midia kwenye arifa"
+                            },
+                            "stacked_media_messages": {
+                                "name": "Ujumbe wa midia uliopangwa",
+                                "description": "Huunganisha ujumbe mwingi wa midia kuwa arifa moja ya maandishi wakati haziwezi kuonyeshwa awali. Tumia pamoja na onyesho la awali la gumzo"
+                            },
+                            "friend_add_source": {
+                                "name": "Chanzo cha kuongeza rafiki",
+                                "description": "Huonyesha chanzo cha ombi la urafiki kwenye arifa"
+                            },
+                            "reply_button": {
+                                "name": "Kitufe cha kujibu",
+                                "description": "Huongeza kitufe cha kujibu kwenye arifa"
+                            },
+                            "smart_replies": {
+                                "name": "Majibu mahiri",
+                                "description": "Huongeza majibu yaliyopendekezwa kwenye arifa (Android 10+). Tumia pamoja na kitufe cha kujibu"
+                            },
+                            "download_button": {
+                                "name": "Kitufe cha kupakua",
+                                "description": "Hukuruhusu kupakua midia kutoka kwenye arifa"
+                            },
+                            "mark_as_read_button": {
+                                "name": "Kitufe cha kuweka alama kama imesomwa",
+                                "description": "Hukuruhusu kuweka alama kwenye ujumbe kama umesomwa kutoka kwenye arifa"
+                            },
+                            "mark_as_read_and_save_in_chat": {
+                                "name": "Weka alama kama imesomwa na uhifadhi kwenye gumzo",
+                                "description": "Huongeza kitufe cha kuweka alama kama imesomwa na kuhifadhi kwenye gumzo kwenye arifa"
+                            }
+                        }
+                    },
+                    "notification_blacklist": {
+                        "name": "Orodha nyeusi ya arifa",
+                        "description": "Chagua arifa ambazo zinapaswa kuzuiwa"
+                    },
+                    "message_logger": {
+                        "name": "Kihifadhi ujumbe",
+                        "description": "Huzuia ujumbe kufutwa",
+                        "properties": {
+                            "keep_my_own_messages": {
+                                "name": "Weka ujumbe wangu mwenyewe",
+                                "description": "Huzuia ujumbe wako mwenyewe kufutwa"
+                            },
+                            "auto_purge": {
+                                "name": "Safisha kiotomatiki",
+                                "description": "Hufuta kiotomatiki ujumbe uliohifadhiwa ambao ni wa zamani kuliko muda uliowekwa"
+                            },
+                            "message_filter": {
+                                "name": "Kichujio cha ujumbe",
+                                "description": "Chagua ni ujumbe gani unapaswa kuhifadhiwa (tupu kwa ujumbe wote)"
+                            },
+                            "deleted_message_color": {
+                                "name": "Rangi ya ujumbe uliofutwa",
+                                "description": "Huweka rangi ya ujumbe uliofutwa"
+                            }
+                        }
+                    },
+                    "auto_save_messages_in_conversations": {
+                        "name": "Hifadhi ujumbe kiotomatiki kwenye mazungumzo",
+                        "description": "Huhifadhi kiotomatiki kila ujumbe kwenye mazungumzo"
+                    },
+                    "gallery_media_send_override": {
+                        "name": "Ubatilishaji wa kutuma midia ya ghala",
+                        "description": "Hubatilisha chanzo cha midia unapotuma kutoka kwenye ghala"
+                    },
+                    "strip_media_metadata": {
+                        "name": "Ondoa metadata ya midia",
+                        "description": "Huondoa metadata ya midia kabla ya kuituma kama ujumbe"
+                    },
+                    "bypass_message_retention_policy": {
+                        "name": "Pita sera ya uhifadhi wa ujumbe",
+                        "description": "Huzuia ujumbe kufutwa baada ya kuutazama"
+                    },
+                    "bypass_message_action_restrictions": {
+                        "name": "Pita vikwazo vya vitendo vya ujumbe",
+                        "description": "Hukuruhusu kujibu snap bila kuifungua au kuhifadhi ujumbe usioweza kuhifadhiwa"
+                    },
+                    "remove_groups_locked_status": {
+                        "name": "Ondoa hali ya kufungwa kwa vikundi",
+                        "description": "Hukuruhusu kutazama maelezo ya kikundi baada ya kufukuzwa"
+                    },
+                    "double_tap_chat_action": {
+                        "name": "Kitendo cha gumzo la kugonga mara mbili",
+                        "description": "Hufanya kitendo maalum unapogonga ujumbe mara mbili kwenye gumzo"
+                    },
+                    "double_tap_chat_action_custom_emoji": {
+                        "name": "Mwitikio wa emoji maalum wa kitendo cha gumzo la kugonga mara mbili",
+                        "description": "Huweka mwitikio wa emoji maalum kwa kitendo cha gumzo la kugonga mara mbili"
+                    }
+                }
+            },
+            "global": {
+                "name": "Ulimwengu",
+                "description": "Rekebisha Mipangilio ya Ulimwengu ya Snapchat",
+                "properties": {
+                    "better_location": {
+                        "name": "Mahali pazuri zaidi",
+                        "description": "Huboresha eneo la Snapchat",
+                        "properties": {
+                            "spoof_location": {
+                                "name": "Danganya eneo",
+                                "description": "Hubadilisha eneo lako na lingine maalum"
+                            },
+                            "coordinates": {
+                                "name": "Kuratibu",
+                                "description": "Weka kuratibu za eneo lililodanganywa"
+                            },
+                            "walk_radius": {
+                                "name": "Radi ya kutembea",
+                                "description": "Tembea bila mpangilio ndani ya radi hii (futi)"
+                            },
+                            "always_update_location": {
+                                "name": "Sasisha eneo kila wakati",
+                                "description": "Hulazimisha Snapchat kusasisha eneo hata kama hakuna data ya GPS iliyopokelewa"
+                            },
+                            "suspend_location_updates": {
+                                "name": "Sitisha masasisho ya eneo",
+                                "description": "Huzuia eneo lako kusasishwa"
+                            },
+                            "spoof_battery_level": {
+                                "name": "Danganya kiwango cha betri",
+                                "description": "Hubadilisha kiwango cha betri ya kifaa chako kwenye ramani\nThamani lazima iwe kati ya 0 na 100"
+                            },
+                            "spoof_headphones": {
+                                "name": "Danganya vipokea sauti",
+                                "description": "Hubadilisha hali ya kusikiliza muziki kwenye ramani"
+                            },
+                            "show_battery_level": {
+                                "name": "Onyesha kiwango cha betri",
+                                "description": "Huonyesha kiwango cha betri cha marafiki zako kwenye ramani"
+                            }
+                        }
+                    },
+                    "snapchat_plus": {
+                        "name": "Snapchat Plus",
+                        "description": "Huwasha vipengele vya Snapchat Plus\nBaadhi ya vipengele vya upande wa seva huenda visifanye kazi"
+                    },
+                    "media_upload_quality": {
+                        "name": "Ubora wa Upakiaji wa Midia",
+                        "description": "Hubatilisha ubora wa upakiaji wa midia",
+                        "properties": {
+                            "force_video_upload_source_quality": {
+                                "name": "Lazimisha ubora wa chanzo cha upakiaji wa video",
+                                "description": "Hulazimisha Snapchat kutumia ubora wa chanzo wakati wa kupakia video\nTafadhali kumbuka kuwa hii haiwezi kuondoa metadata kutoka kwa midia"
+                            },
+                            "disable_image_compression": {
+                                "name": "Zima ukandamizaji wa picha",
+                                "description": "Huzima ukandamizaji wa picha wakati wa kupakia midia"
+                            },
+                            "custom_image_upload_format": {
+                                "name": "Umbizo Maalum la Upakiaji wa Picha",
+                                "description": "Huweka umbizo maalum la upakiaji wa picha\nChagua umbizo lisilo na hasara (kama PNG) kwa ubora bora"
+                            }
+                        }
+                    },
+                    "disable_confirmation_dialogs": {
+                        "name": "Zima vidirisha vya uthibitisho",
+                        "description": "Huthibitisha kiotomatiki vitendo vilivyochaguliwa"
+                    },
+                    "auto_updater": {
+                        "name": "Kisasisho kiotomatiki",
+                        "description": "Hukagua kiotomatiki masasisho mapya"
+                    },
+                    "disable_metrics": {
+                        "name": "Zima metriki",
+                        "description": "Huzuia kutuma data maalum ya uchanganuzi kwa Snapchat"
+                    },
+                    "disable_story_sections": {
+                        "name": "Zima sehemu za hadithi",
+                        "description": "Huondoa sehemu kwenye ukurasa wa hadithi\nHuweza kuhitaji kuonyesha upya ili kufanya kazi vizuri"
+                    },
+                    "block_ads": {
+                        "name": "Zuia matangazo",
+                        "description": "Huzuia matangazo kuonyeshwa"
+                    },
+                    "disable_custom_tabs": {
+                        "name": "Zima vichupo maalum",
+                        "description": "Hufungua viungo katika programu zinazotumika badala ya kivinjari cha wavuti kilichojengewa ndani"
+                    },
+                    "disable_permission_requests": {
+                        "name": "Zima maombi ya ruhusa",
+                        "description": "Huzuia Snapchat kuomba ruhusa maalum"
+                    },
+                    "disable_memories_snap_feed": {
+                        "name": "Zima mlisho wa snap wa kumbukumbu",
+                        "description": "Huzuia Snapchat kuonyesha kumbukumbu za hivi karibuni unapobadilisha hadi kwenye kamera"
+                    },
+                    "spotlight_comments_username": {
+                        "name": "Jina la mtumiaji la maoni ya Spotlight",
+                        "description": "Huonyesha jina la mtumiaji la mwandishi katika maoni ya Spotlight"
+                    },
+                    "bypass_video_length_restriction": {
+                        "name": "Pita kizuizi cha urefu wa video",
+                        "description": "Moja: hutuma video moja\nGawanya: hugawanya video baada ya kuihariri"
+                    },
+                    "default_video_playback_rate": {
+                        "name": "Kiwango chaguomsingi cha uchezaji wa video",
+                        "description": "Huweka kasi ya msingi ya uchezaji wa video\nThamani lazima iwe kati ya 0.1 na 4.0"
+                    },
+                    "video_playback_rate_slider": {
+                        "name": "Kitelezi cha kiwango cha uchezaji wa video",
+                        "description": "Huongeza kitelezi kwenye menyu ya muktadha ya Opera ili kubadilisha kiwango cha uchezaji wa video\nKumbuka: Mabadiliko yanatumika tu kwa video zinazofuata"
+                    },
+                    "disable_google_play_dialogs": {
+                        "name": "Zima vidirisha vya Huduma za Google Play",
+                        "description": "Huzuia vidirisha vya upatikanaji wa Huduma za Google Play kuonyeshwa"
+                    },
+                    "default_volume_controls": {
+                        "name": "Vidhibiti chaguomsingi vya sauti",
+                        "description": "Hulazimisha Snapchat kutumia vidhibiti vya sauti vya mfumo"
+                    },
+                    "disable_telecom_framework": {
+                        "name": "Zima Mfumo wa Telecom",
+                        "description": "Huzuia Snapchat kutumia mfumo wa Telecom wa Android\nHii hukuruhusu kusikiliza muziki ukiwa kwenye simu"
+                    },
+                    "hide_active_music": {
+                        "name": "Ficha muziki unaotumika",
+                        "description": "Huzuia Snapchat kujua kuwa unasikiliza muziki\nHii itakuruhusu kupiga snap kwa kutumia vitufe vya kudhibiti sauti unaposikiliza muziki"
+                    },
+                    "disable_snap_splitting": {
+                        "name": "Zima mgawanyiko wa snap",
+                        "description": "Huzuia snap kugawanywa katika sehemu nyingi\nPicha unazotuma zitabadilika kuwa video"
+                    }
+                }
+            },
+            "rules": {
+                "name": "Kanuni",
+                "description": "Dhibiti vipengele vya kiotomatiki kwa watu binafsi"
+            },
+            "camera": {
+                "name": "Kamera",
+                "description": "Rekebisha mipangilio sahihi kwa snap kamili",
+                "properties": {
+                    "disable_cameras": {
+                        "name": "Zima kamera",
+                        "description": "Huzuia Snapchat kutumia kamera zilizochaguliwa"
+                    },
+                    "black_photos": {
+                        "name": "Picha nyeusi",
+                        "description": "Hubadilisha picha zilizopigwa na mandharinyuma meusi\nVideo haziathiriwi"
+                    },
+                    "immersive_camera_preview": {
+                        "name": "Onyesho la awali la kamera linalozama",
+                        "description": "Huzuia Snapchat kupunguza ukubwa wa onyesho la awali la kamera\nHii inaweza kusababisha kamera kuzima kwenye baadhi ya vifaa"
+                    },
+                    "override_front_resolution": {
+                        "name": "Batilisha azimio la mbele",
+                        "description": "Hubatilisha azimio la kamera kwa kamera ya mbele"
+                    },
+                    "override_back_resolution": {
+                        "name": "Batilisha azimio la nyuma",
+                        "description": "Hubatilisha azimio la kamera kwa kamera ya nyuma"
+                    },
+                    "custom_resolution": {
+                        "name": "Azimio maalum",
+                        "description": "Huweka azimio maalum la kamera, upana x urefu (k.m. 1920x1080).\nAzimio maalum lazima liungwe mkono na kifaa chako"
+                    },
+                    "front_custom_frame_rate": {
+                        "name": "Kiwango maalum cha fremu ya mbele",
+                        "description": "Hubatilisha kiwango cha fremu ya kamera ya mbele"
+                    },
+                    "back_custom_frame_rate": {
+                        "name": "Kiwango maalum cha fremu ya nyuma",
+                        "description": "Hubatilisha kiwango cha fremu ya kamera ya nyuma"
+                    },
+                    "force_camera_source_encoding": {
+                        "name": "Lazimisha usimbaji wa chanzo cha kamera",
+                        "description": "Hulazimisha usimbaji wa chanzo cha kamera"
+                    },
+                    "startup_default_camera": {
+                        "name": "Kamera chaguomsingi ya kuanza",
+                        "description": "Huweka kamera chaguomsingi unapofungua Snapchat"
+                    },
+                    "hevc_recording": {
+                        "name": "Kurekodi kwa HEVC",
+                        "description": "Hutumia kisimbaji cha HEVC (H.265) kurekodi video"
+                    }
+                }
+            },
+            "streaks_reminder": {
+                "name": "Kikumbusho cha Mfululizo",
+                "description": "Hukukumbusha mara kwa mara kuhusu mfululizo wako",
+                "properties": {
+                    "interval": {
+                        "name": "Muda",
+                        "description": "Muda kati ya kila kikumbusho (saa)"
+                    },
+                    "remaining_hours": {
+                        "name": "Saa zilizobaki",
+                        "description": "Kiasi cha muda kilichobaki kabla ya arifa kuonyeshwa (saa)"
+                    },
+                    "group_notifications": {
+                        "name": "Arifa za kikundi",
+                        "description": "Hukusanya arifa za kikundi kuwa moja"
+                    }
+                }
+            },
+            "experimental": {
+                "name": "Majaribio",
+                "description": "Vipengele vya majaribio",
+                "properties": {
+                    "native_hooks": {
+                        "name": "Hook za asili",
+                        "description": "Vipengele visivyo salama ambavyo huingia kwenye msimbo wa asili wa Snapchat",
+                        "properties": {
+                            "composer_hooks": {
+                                "name": "Hook za mtunzi",
+                                "description": "Huingiza msimbo kwenye mfumo wa UI wa jukwaa la mtunzi",
+                                "properties": {
+                                    "show_first_created_username": {
+                                        "name": "Onyesha jina la mtumiaji la kwanza lililoundwa",
+                                        "description": "Huonyesha jina la mtumiaji la kwanza lililoundwa kando ya jina la mtumiaji la sasa kwenye ukurasa wa wasifu"
+                                    },
+                                    "bypass_camera_roll_limit": {
+                                        "name": "Pita kikomo cha safu ya kamera",
+                                        "description": "Huongeza idadi ya juu ya midia unayoweza kutuma kutoka kwenye safu ya kamera"
+                                    },
+                                    "custom_self_destruct_snap_delay": {
+                                        "name": "Kuchelewa maalum kwa snap ya kujifuta yenyewe",
+                                        "description": "Hutoa chaguo zaidi kwa kipima muda cha kujifuta chenyewe unapotuma snap"
+                                    },
+                                    "composer_console": {
+                                        "name": "Dashibodi ya mtunzi",
+                                        "description": "Hukuruhusu kutekeleza msimbo wa JavaScript katika mtunzi (arm64 pekee)"
+                                    },
+                                    "composer_logs": {
+                                        "name": "Kumbukumbu za mtunzi",
+                                        "description": "Huelekeza kumbukumbu za dashibodi ya mtunzi kwa PurrfectSnap"
+                                    }
+                                }
+                            },
+                            "disable_bitmoji": {
+                                "name": "Zima Bitmoji",
+                                "description": "Huzima Bitmoji za wasifu wa marafiki"
+                            },
+                            "custom_emoji_font": {
+                                "name": "Fonti maalum ya emoji",
+                                "description": "Hukuruhusu kutumia fonti maalum ya emoji. Inafanya kazi tu na fonti za .ttf"
+                            },
+                            "custom_shared_library": {
+                                "name": "Maktaba maalum iliyoshirikiwa",
+                                "description": "Hupakia maktaba maalum iliyoshirikiwa kwenye Snapchat. Kipengele hiki ni kwa madhumuni ya majaribio pekee"
+                            }
+                        }
+                    },
+                    "spoof": {
+                        "name": "Danganya",
+                        "description": "Danganya taarifa mbalimbali kukuhusu",
+                        "properties": {
+                            "play_store_installer_package_name": {
+                                "name": "Jina la kifurushi cha kisakinishi cha Duka la Google Play",
+                                "description": "Hubatilisha jina la kifurushi cha kisakinishi kuwa com.android.vending"
+                            },
+                            "remove_vpn_transport_flag": {
+                                "name": "Ondoa alama ya usafirishaji ya VPN",
+                                "description": "Huzuia Snapchat kugundua VPN"
+                            },
+                            "remove_mock_location_flag": {
+                                "name": "Ondoa alama ya eneo la kudanganya",
+                                "description": "Huzuia Snapchat kugundua eneo la kudanganya"
+                            }
+                        }
+                    },
+                    "convert_message_locally": {
+                        "name": "Geuza ujumbe ndani ya nchi",
+                        "description": "Hugeuza snap kuwa midia ya gumzo ndani ya nchi. Hii inaonekana kwenye menyu ya muktadha wa gumzo"
+                    },
+                    "media_file_picker": {
+                        "name": "Kichagua faili cha midia",
+                        "description": "Hukuruhusu kuchagua faili yoyote ya video/sauti kutoka kwenye ghala"
+                    },
+                    "story_logger": {
+                        "name": "Kihifadhi hadithi",
+                        "description": "Hutoa historia ya hadithi za marafiki"
+                    },
+                    "call_recorder": {
+                        "name": "Kirekodi simu",
+                        "description": "Hurekodi simu za sauti kiotomatiki"
+                    },
+                    "account_switcher": {
+                        "name": "Kibadilisha akaunti",
+                        "description": "Hukuruhusu kubadilisha kati ya akaunti bila kuingia tena\nBonyeza kwa muda mrefu kwenye aikoni ya utafutaji kando ya wasifu wako wa Bitmoji ili kufungua menyu\nKumbuka: Kipengele hiki ni cha majaribio na kitabadilika katika siku zijazo",
+                        "properties": {
+                            "auto_backup_current_account": {
+                                "name": "Hifadhi nakala ya akaunti ya sasa kiotomatiki",
+                                "description": "Huhifadhi nakala ya akaunti ya sasa kiotomatiki unapoingia au kubadilisha akaunti"
+                            }
+                        }
+                    },
+                    "better_transcript": {
+                        "name": "Nakala bora zaidi",
+                        "description": "Huboresha unukuzi wa sauti",
+                        "properties": {
+                            "force_transcription": {
+                                "name": "Lazimisha unukuzi wa dokezo la sauti",
+                                "description": "Huruhusu madokezo yote ya sauti kunukuliwa"
+                            },
+                            "preferred_transcription_lang": {
+                                "name": "Lugha inayopendelewa ya unukuzi",
+                                "description": "Lugha inayopendelewa kwa unukuzi wa dokezo la sauti (k.m. en, es, fr)"
+                            },
+                            "notification_transcript": {
+                                "name": "Unukuzi wa arifa",
+                                "description": "Hunukuu madokezo ya sauti katika arifa\nKipengele hiki kinahitaji kipengele cha onyesho la awali la gumzo kuwashwa katika arifa bora zaidi"
+                            }
+                        }
+                    },
+                    "voice_note_auto_play": {
+                        "name": "Cheza dokezo la sauti kiotomatiki",
+                        "description": "Hucheza kiotomatiki dokezo la sauti linalofuata baada ya la sasa kumalizika"
+                    },
+                    "friend_notes": {
+                        "name": "Madokezo ya rafiki",
+                        "description": "Hukuruhusu kuongeza madokezo kwenye wasifu wa marafiki"
+                    },
+                    "cof_experiments": {
+                        "name": "Majaribio ya COF",
+                        "description": "Huwasha vipengele vya Snapchat ambavyo havijatolewa/beta"
+                    },
+                    "context_menu_fix": {
+                        "name": "Rekebisha menyu ya muktadha",
+                        "description": "Hujaribu kurekebisha menyu ya mlisho wa marafiki kwani wakati kifaa kiko nje ya mtandao huenda isionyeshwe ipasavyo"
+                    },
+                    "app_lock": {
+                        "name": "Kufunga programu",
+                        "description": "Huzuia ufikiaji wa Snapchat bila nenosiri",
+                        "properties": {
+                            "lock_on_resume": {
+                                "name": "Funga unapoendelea",
+                                "description": "Hufunga programu inapofunguliwa tena"
+                            }
+                        }
+                    },
+                    "infinite_story_boost": {
+                        "name": "Kuongeza hadithi bila kikomo",
+                        "description": "Hupita kikomo cha kuchelewa cha kuongeza hadithi"
+                    },
+                    "meo_passcode_bypass": {
+                        "name": "Pita nenosiri la Macho Yangu Pekee",
+                        "description": "Hupita nenosiri la Macho Yangu Pekee\nHii itafanya kazi tu ikiwa nenosiri limeingizwa kwa usahihi hapo awali"
+                    },
+                    "no_friend_score_delay": {
+                        "name": "Hakuna kuchelewa kwa alama ya rafiki",
+                        "description": "Huondoa ucheleweshaji unapotazama alama za marafiki"
+                    },
+                    "best_friend_pinning": {
+                        "name": "Kubandika rafiki bora",
+                        "description": "Hukuruhusu kubandika rafiki kama rafiki yako bora wa kwanza. KUMBUKA: Ni wewe tu unayeweza kumuona rafiki yako bora"
+                    },
+                    "e2ee": {
+                        "name": "Usimbaji fiche wa mwisho-hadi-mwisho",
+                        "description": "Husimba fiche ujumbe wako na AES kwa kutumia ufunguo wa siri ulioshirikiwa\nHakikisha umehifadhi ufunguo wako mahali salama!",
+                        "properties": {
+                            "encrypted_message_indicator": {
+                                "name": "Kiashiria cha ujumbe uliosimbwa fiche",
+                                "description": "Huongeza emoji ya 🔒 kando ya ujumbe uliosimbwa fiche"
+                            },
+                            "force_message_encryption": {
+                                "name": "Lazimisha usimbaji fiche wa ujumbe",
+                                "description": "Huzuia kutuma ujumbe ambao haujasimbwa fiche kwa watu ambao hawana usimbaji fiche wa E2E uliowashwa tu wakati mazungumzo mengi yamechaguliwa"
+                            }
+                        }
+                    },
+                    "add_friend_source_spoof": {
+                        "name": "Danganya chanzo cha kuongeza rafiki",
+                        "description": "Hubadilisha chanzo cha ombi la urafiki"
+                    },
+                    "hidden_snapchat_plus_features": {
+                        "name": "Vipengele vilivyofichwa vya Snapchat Plus",
+                        "description": "Huwasha vipengele vya Snapchat Plus ambavyo havijatolewa/beta\nHuweza visifanye kazi kwenye matoleo ya zamani ya Snapchat"
+                    },
+                    "custom_streaks_expiration_format": {
+                        "name": "Umbizo maalum la kuisha kwa mfululizo",
+                        "description": "Hubadilisha umbizo la kuisha kwa mfululizo\n\nVigezo vinavyopatikana:\n - %C: Hesabu za mfululizo\n - %E: Emoji ya saa ya mchanga\n - %D: Siku\n - %H: Saa\n - %M: Dakika\n - %S: Sekunde\n - %W: Muda uliosalia"
+                    },
+                    "prevent_forced_logout": {
+                        "name": "Zuia kuingia kwa kulazimishwa",
+                        "description": "Huzuia Snapchat kukutoa unapoingia kwenye kifaa kingine"
+                    },
+                    "snapscore_changes": {
+                        "name": "Mabadiliko ya Snapscore",
+                        "description": "Hufuatilia mabadiliko katika alama za marafiki\nTumia kipengele hiki kwenye matoleo mapya ya Snapchat pekee"
+                    }
+                }
+            },
+            "scripting": {
+                "name": "Uandishi wa hati",
+                "description": "Endesha hati maalum ili kupanua PurrfectSnap",
+                "properties": {
+                    "developer_mode": {
+                        "name": "Hali ya msanidi programu",
+                        "description": "Huonyesha maelezo ya utatuzi juu ya UI ya Snapchat"
+                    },
+                    "module_folder": {
+                        "name": "Folda ya moduli",
+                        "description": "Folda ambapo hati ziko"
+                    },
+                    "auto_reload": {
+                        "name": "Pakia upya kiotomatiki",
+                        "description": "Hupakia upya hati zinapobadilika"
+                    },
+                    "integrated_ui": {
+                        "name": "UI iliyojumuishwa",
+                        "description": "Huruhusu hati kuongeza vipengele maalum vya UI kwenye Snapchat"
+                    },
+                    "disable_log_anonymization": {
+                        "name": "Zima ufichaji wa kumbukumbu",
+                        "description": "Huzima ufichaji wa kumbukumbu"
+                    },
+                    "disable_optimization": {
+                        "name": "Zima uboreshaji",
+                        "description": "Huzima uboreshaji wa hati. Hii inaweza kusababisha matatizo ya utendaji."
+                    }
+                }
+            },
+            "friend_tracker": {
+                "name": "Kifuatilia Marafiki",
+                "description": "Rekodi shughuli za marafiki kwenye Snapchat",
+                "properties": {
+                    "record_messaging_events": {
+                        "name": "Rekodi matukio ya ujumbe",
+                        "description": "Hurekodi matukio ya ujumbe kama vile kufungua snap, kusoma ujumbe, n.k."
+                    },
+                    "allow_running_in_background": {
+                        "name": "Ruhusu kufanya kazi chinichini",
+                        "description": "Huruhusu kifuatiliaji kufanya kazi chinichini. Kumbuka: Hii itatumia betri yako kwa kiasi kikubwa"
+                    },
+                    "auto_purge": {
+                        "name": "Safisha kiotomatiki",
+                        "description": "Hufuta kiotomatiki matukio yaliyohifadhiwa ambayo ni ya zamani kuliko muda uliowekwa"
+                    }
+                }
+            }
+        },
+        "options": {
+            "app_appearance": {
+                "always_light": "Mwangaza kila wakati",
+                "always_dark": "Giza kila wakati"
+            },
+            "friend_feed_menu_buttons": {
+                "auto_download": "Upakuaji wa kiotomatiki",
+                "auto_save": "💬 Hifadhi ujumbe kiotomatiki",
+                "unsaveable_messages": "Ujumbe usioweza kuhifadhiwa",
+                "auto_open_snaps": "📷 Fungua snap kiotomatiki",
+                "stealth": "👻 Hali ya siri",
+                "mark_snaps_as_seen": "👀 Weka alama kwenye snap kama zimeonekana",
+                "mark_stories_as_seen_locally": "Weka alama kwenye hadithi kama zimeonekana ndani ya nchi",
+                "conversation_info": "Maelezo ya mazungumzo",
+                "e2e_encryption": "Tumia usimbaji fiche wa E2E"
+            },
+            "path_format": {
+                "create_author_folder": "Unda folda kwa kila mwandishi",
+                "create_source_folder": "Unda folda kwa kila aina ya chanzo cha midia",
+                "append_hash": "Ongeza heshi ya kipekee kwenye jina la faili",
+                "append_source": "Ongeza chanzo cha midia kwenye jina la faili",
+                "append_username": "Ongeza jina la mtumiaji kwenye jina la faili",
+                "append_date_time": "Ongeza tarehe na saa kwenye jina la faili"
+            },
+            "auto_download_sources": {
+                "friend_snaps": "Snap za marafiki",
+                "friend_stories": "Hadithi za marafiki",
+                "public_stories": "Hadithi za umma",
+                "spotlight": "Spotlight"
+            },
+            "logging": {
+                "started": "Imeanza",
+                "success": "Imefanikiwa",
+                "progress": "Inaendelea",
+                "failure": "Imeshindwa"
+            },
+            "notifications": {
+                "chat_screenshot": "Picha ya skrini ya gumzo",
+                "chat_screen_record": "Rekodi ya skrini ya gumzo",
+                "snap_replay": "Uchezaji tena wa snap",
+                "camera_roll_save": "Hifadhi ya safu ya kamera",
+                "chat": "Gumzo",
+                "chat_reply": "Jibu la gumzo",
+                "snap": "Snap",
+                "typing": "Kuandika",
+                "stories": "Hadithi",
+                "speaking": "Anazungumza",
+                "chat_reaction": "Mwitikio wa DM",
+                "group_chat_reaction": "Mwitikio wa gumzo la kikundi",
+                "initiate_audio": "Simu ya sauti inayoingia",
+                "abandon_audio": "Simu ya sauti iliyokosa",
+                "initiate_video": "Simu ya video inayoingia",
+                "abandon_video": "Simu ya video iliyokosa",
+                "map_live_location": "Eneo la moja kwa moja la ramani"
+            },
+            "gallery_media_send_override": {
+                "always_ask": "Uliza kila wakati",
+                "ORIGINAL": "Midia ya asili",
+                "NOTE": "Dokezo la sauti",
+                "SNAP": "Snap",
+                "SAVEABLE_SNAP": "Snap inayoweza kuhifadhiwa"
+            },
+            "strip_media_metadata": {
+                "hide_caption_text": "Ficha maandishi ya maelezo",
+                "hide_snap_filters": "Ficha vichujio vya snap",
+                "hide_extras": "Ficha ziada (k.m. kutaja)",
+                "remove_audio_note_duration": "Ondoa muda wa dokezo la sauti",
+                "remove_audio_note_transcript_capability": "Ondoa uwezo wa unukuzi wa dokezo la sauti"
+            },
+            "hide_ui_components": {
+                "hide_profile_call_buttons": "Ficha vitufe vya simu vya wasifu",
+                "hide_chat_call_buttons": "Ficha vitufe vya simu vya gumzo",
+                "hide_live_location_share_button": "Ficha kitufe cha kushiriki eneo la moja kwa moja",
+                "hide_stickers_button": "Ficha kitufe cha vibandiko",
+                "hide_voice_record_button": "Ficha kitufe cha kurekodi sauti",
+                "hide_unread_chat_hint": "Ficha dokezo la gumzo ambalo halijasomwa",
+                "hide_post_to_story_buttons": "Ficha vitufe vya kuchapisha kwenye hadithi kabla ya kutuma snap",
+                "hide_billboard_prompt": "Ficha dokezo la bango kwenye mlisho wa marafiki",
+                "hide_snapchat_plus_gift_reminders": "Ficha vikumbusho vya zawadi vya Snapchat Plus kwenye gumzo",
+                "hide_map_reactions": "Ficha miitikio ya ramani"
+            },
+            "hide_story_suggestions": {
+                "hide_suggested_friend_stories": "Ficha hadithi za marafiki zilizopendekezwa",
+                "hide_my_stories": "Ficha hadithi zangu"
+            },
+            "home_tab": {
+                "map": "Ramani",
+                "chat": "Gumzo",
+                "camera": "Kamera",
+                "discover": "Gundua",
+                "spotlight": "Spotlight"
+            },
+            "add_friend_source_spoof": {
+                "added_by_username": "Kwa jina la mtumiaji",
+                "added_by_mention": "Kwa kutaja",
+                "added_by_group_chat": "Kwa gumzo la kikundi",
+                "added_by_qr_code": "Kwa msimbo wa QR",
+                "added_by_community": "Kwa jumuiya",
+                "added_by_quick_add": "Kwa kuongeza haraka (hatari kubwa ya kupigwa marufuku)"
+            },
+            "bypass_video_length_restriction": {
+                "single": "Midia moja",
+                "split": "Gawanya midia"
+            },
+            "old_bitmoji_selfie": {
+                "2d": "Bitmoji ya 2D",
+                "3d": "Bitmoji ya 3D"
+            },
+            "disable_confirmation_dialogs": {
+                "erase_message": "Futa ujumbe",
+                "remove_friend": "Ondoa rafiki",
+                "block_friend": "Zuia rafiki",
+                "ignore_friend": "Puuza rafiki",
+                "hide_friend": "Ficha rafiki",
+                "hide_conversation": "Ficha mazungumzo",
+                "clear_conversation": "Futa mazungumzo kwenye Mlisho wa Marafiki"
+            },
+            "auto_reload": {
+                "snapchat_only": "Snapchat pekee",
+                "all": "Zote (Snapchat + PurrfectSnap)"
+            },
+            "edit_text_override": {
+                "multi_line_chat_input": "Ingizo la gumzo la mistari mingi",
+                "bypass_text_input_limit": "Pita kikomo cha ingizo la maandishi"
+            },
+            "auto_purge": {
+                "never": "Kamwe",
+                "1_hour": "Saa 1",
+                "3_hours": "Saa 3",
+                "6_hours": "Saa 6",
+                "12_hours": "Saa 12",
+                "1_day": "Siku 1",
+                "3_days": "Siku 3",
+                "1_week": "Wiki 1",
+                "2_weeks": "Wiki 2",
+                "1_month": "Mwezi 1",
+                "3_months": "Miezi 3",
+                "6_months": "Miezi 6"
+            },
+            "disable_story_sections": {
+                "friends": "Marafiki",
+                "suggested_stories": "Hadithi zilizopendekezwa",
+                "following": "Wanaofuatiliwa",
+                "discover": "Gundua"
+            },
+            "disable_cameras": {
+                "front": "Kamera ya mbele",
+                "back": "Kamera ya nyuma"
+            },
+            "disable_permission_requests": {
+                "notifications": "Arifa",
+                "read_media_images": "Soma picha za midia",
+                "read_media_video": "Soma video za midia",
+                "camera": "Kamera",
+                "microphone": "Maikrofoni",
+                "location": "Eneo",
+                "read_contacts": "Soma anwani",
+                "nearby_devices": "Vifaa vya karibu",
+                "phone_calls": "Simu"
+            },
+            "message_indicators": {
+                "encryption_indicator": "Huongeza aikoni kando ya ujumbe ambao umetumwa kwako pekee",
+                "platform_indicator": "Huongeza aikoni ya jukwaa ambalo midia ilitumwa (k.m. Android, iOS, Wavuti)",
+                "location_indicator": "Huongeza aikoni ya 📍 kwenye snap zinazotumwa na eneo likiwashwa",
+                "ovf_editor_indicator": "Huonyesha ikiwa snap imetumwa kwa kutumia Kihariri cha OVF",
+                "director_mode_indicator": "Huongeza aikoni ya 🎬 kwenye snap zinazotumwa kwa kutumia hali ya mkurugenzi, ambayo inaweza kutumika kutuma picha za ghala kama snap"
+            },
+            "auto_mark_as_read": {
+                "conversation_read": "Weka mazungumzo kama yamesomwa unapotuma ujumbe",
+                "snap_reply": "Weka alama kwenye snap kama zimesomwa unapozijibu",
+                "save_snap_in_chat": "Weka alama kwenye snap kama zimesomwa unapozihifadhi kwenye gumzo ukiwa katika hali ya siri"
+            },
+            "friend_mutation_notifier": {
+                "remove_friend": "Arifu mtu anapokuondoa kama rafiki",
+                "birthday_changes": "Arifu mtu anapobadilisha siku yake ya kuzaliwa",
+                "bitmoji_selfie_changes": "Arifu mtu anapobadilisha selfie yake ya Bitmoji",
+                "bitmoji_avatar_changes": "Arifu mtu anapobadilisha avatari yake ya Bitmoji",
+                "bitmoji_background_changes": "Arifu mtu anapobadilisha mandharinyuma yake ya Bitmoji",
+                "bitmoji_scene_changes": "Arifu mtu anapobadilisha mandhari yake ya Bitmoji"
+            },
+            "snapchat_plus": {
+                "not_subscribed": "Hujasajiliwa",
+                "basic": "Msingi",
+                "ad_free": "Bila matangazo"
+            },
+            "double_tap_chat_action": {
+                "like_message": "Penda ujumbe",
+                "copy_text": "Nakili maandishi kwenye ubao wa kunakili",
+                "delete_message": "Futa ujumbe",
+                "mark_as_read": "Weka alama kama umesoma",
+                "custom_emoji_reaction": "Mwitikio maalum wa emoji"
+            },
+            "startup_default_camera": {
+                "front": "Kamera ya mbele",
+                "back": "Kamera ya nyuma"
+            }
+        }
+    },
+    "friend_menu_option": {
+        "mark_snaps_as_seen": "Weka alama kwenye snap kama zimeonekana",
+        "mark_stories_as_seen_locally": "Weka alama kwenye hadithi kama zimeonekana ndani ya nchi",
+        "preview": "Onyesho la awali",
+        "stealth_mode": "Hali ya siri",
+        "auto_download_blacklist": "Orodha nyeusi ya upakuaji wa kiotomatiki",
+        "anti_auto_save": "Zuia hifadhi ya kiotomatiki"
+    },
+    "content_type": {
+        "CHAT": "Gumzo",
+        "SNAP": "Snap",
+        "EXTERNAL_MEDIA": "Midia ya nje",
+        "NOTE": "Dokezo la sauti",
+        "STICKER": "Kibandiko",
+        "SHARE": "Shiriki",
+        "STATUS": "Hali",
+        "LOCATION": "Eneo",
+        "STATUS_SAVE_TO_CAMERA_ROLL": "Imehifadhiwa kwenye safu ya kamera",
+        "STATUS_CONVERSATION_CAPTURE_SCREENSHOT": "Picha ya skrini",
+        "STATUS_CONVERSATION_CAPTURE_RECORD": "Rekodi ya skrini",
+        "STATUS_CALL_MISSED_VIDEO": "Simu ya video iliyokosa",
+        "STATUS_CALL_MISSED_AUDIO": "Simu ya sauti iliyokosa",
+        "LIVE_LOCATION_SHARE": "Shiriki eneo la moja kwa moja",
+        "CREATIVE_TOOL_ITEM": "Kipengee cha zana ya ubunifu",
+        "FAMILY_CENTER_INVITE": "Mwaliko wa Kituo cha Familia",
+        "FAMILY_CENTER_ACCEPT": "Kukubali kwa Kituo cha Familia",
+        "FAMILY_CENTER_LEAVE": "Kuondoka kwa Kituo cha Familia",
+        "STATUS_PLUS_GIFT": "Zawadi ya Hali Plus",
+        "TINY_SNAP": "Snap ndogo",
+        "STATUS_COUNTDOWN": "Kipima muda",
+        "MAP_REACTION": "Mwitikio wa ramani"
+    },
+    "media_download_source": {
+        "none": "Hakuna",
+        "pending": "Inasubiri",
+        "chat_media": "Midia ya gumzo",
+        "story": "Hadithi",
+        "public_story": "Hadithi ya umma",
+        "spotlight": "Spotlight",
+        "profile_picture": "Picha ya wasifu",
+        "story_logger": "Kihifadhi hadithi",
+        "message_logger": "Kihifadhi ujumbe",
+        "merged": "Imeunganishwa",
+        "voice_call": "Simu ya sauti"
+    },
+    "chat_action_menu": {
+        "preview_button": "Onyesho la awali",
+        "download_button": "Pakua",
+        "delete_logged_message_button": "Futa ujumbe uliohifadhiwa",
+        "show_chat_edit_history": "Onyesha historia ya uhariri wa gumzo",
+        "convert_message": "Geuza ujumbe"
+    },
+    "opera_context_menu": {
+        "download": "Pakua midia",
+        "sent_at": "Imetumwa mnamo {date}",
+        "created_at": "Imeundwa mnamo {date}",
+        "expires_at": "Inaisha mnamo {date}",
+        "media_size": "Ukubwa wa midia: {size}",
+        "media_duration": "Muda wa midia: {duration} ms",
+        "show_debug_info": "Onyesha maelezo ya utatuzi"
+    },
+    "modal_option": {
+        "profile_info": "Maelezo ya wasifu",
+        "close": "Funga"
+    },
+    "gallery_media_send_override": {
+        "multiple_media_toast": "Unaweza kutuma midia moja tu kwa wakati mmoja"
+    },
+    "mark_as_seen": {
+        "no_unseen_snaps_toast": "Hakuna snap ambazo hazijaonekana zilizopatikana!",
+        "seen_toast": "Imewekwa alama kama imeonekana!",
+        "unseen_toast": "Imewekwa alama kama haijaonekana!",
+        "already_seen_toast": "Tayari imewekwa alama kama imeonekana!",
+        "already_unseen_toast": "Tayari imewekwa alama kama haijaonekana!"
+    },
+    "conversation_preview": {
+        "streak_expiration": "Inaisha baada ya siku {day} saa {hour} dakika {minute}",
+        "total_messages": "Jumla ya ujumbe uliotumwa/kupokelewa: {count}",
+        "title": "Onyesho la awali",
+        "unknown_user": "Mtumiaji asiyejulikana",
+        "no_messages": "Hakuna ujumbe uliopatikana!"
+    },
+    "profile_info": {
+        "title": "Maelezo ya wasifu",
+        "first_created_username": "Jina la mtumiaji la kwanza lililoundwa",
+        "mutable_username": "Jina la mtumiaji linaloweza kubadilishwa",
+        "display_name": "Jina la kuonyesha",
+        "added_date": "Tarehe iliyoongezwa",
+        "birthday": "Siku ya kuzaliwa: {month} {day}",
+        "hidden_birthday": "Siku ya kuzaliwa: imefichwa",
+        "friendship": "Urafiki",
+        "add_source": "Chanzo cha kuongeza",
+        "snapchat_plus": "Snapchat Plus",
+        "snapchat_plus_state": {
+            "subscribed": "Amejisajili",
+            "not_subscribed": "Hajasajiliwa"
+        }
+    },
+    "friendship_link_type": {
+        "mutual": "Pande zote",
+        "outgoing": "Anayetoka",
+        "blocked": "Amezuiwa",
+        "deleted": "Amefutwa",
+        "following": "Anayefuata",
+        "suggested": "Aliyependekezwa",
+        "incoming": "Anayeingia",
+        "incoming_follower": "Mfuasi anayeingia"
+    },
+    "bulk_messaging_action": {
+        "choose_action_title": "Chagua kitendo",
+        "progress_status": "Inachakata {index} kati ya {total}",
+        "selection_dialog_continue_button": "Endelea",
+        "confirmation_dialog": {
+            "title": "Una uhakika?",
+            "message": "Hii itaathiri marafiki wote waliochaguliwa. Kitendo hiki hakiwezi kutenduliwa."
+        },
+        "actions": {
+            "remove_friends": "Ondoa marafiki",
+            "clear_conversations": "Futa mazungumzo"
+        }
+    },
+    "chat_export": {
+        "exporter_dialog": {
+            "select_conversations_title": "Chagua mazungumzo",
+            "text_field_selection": "{amount} imechaguliwa",
+            "text_field_selection_all": "Zote",
+            "export_file_format_title": "Umbizo la faili ya kuhamisha",
+            "message_type_filter_title": "Chuja ujumbe kwa aina",
+            "amount_of_messages_title": "Idadi ya ujumbe (acha tupu kwa zote)",
+            "download_medias_title": "Pakua midia"
+        },
+        "dialog_negative_button": "Ghairi",
+        "dialog_positive_button": "Hamisha",
+        "exported_to": "Imehamishwa kwa {path}",
+        "exporting_chats": "Inahamisha mazungumzo...",
+        "processing_chats": "Inachakata mazungumzo {amount}...",
+        "export_fail": "Imeshindwa kuhamisha mazungumzo {conversation}",
+        "writing_output": "Inaandika matokeo...",
+        "finished": "Imekamilika! Sasa unaweza kufunga kidirisha hiki.",
+        "no_messages_found": "Hakuna ujumbe uliopatikana!",
+        "exporting_message": "Inahamisha {message}..."
+    },
+    "button": {
+        "ok": "Sawa",
+        "positive": "Ndiyo",
+        "negative": "Hapana",
+        "cancel": "Ghairi",
+        "open": "Fungua",
+        "download": "Pakua",
+        "send": "Tuma",
+        "restore_original": "Rejesha asili",
+        "convert_external_media": "Geuza midia ya nje",
+        "save": "Hifadhi"
+    },
+    "tracker_events": {
+        "conversation_enter": "Ingia kwenye mazungumzo",
+        "conversation_exit": "Toka kwenye mazungumzo",
+        "started_typing": "Ameanza kuandika",
+        "stopped_typing": "Ameacha kuandika",
+        "started_speaking": "Ameanza kuzungumza",
+        "stopped_speaking": "Ameacha kuzungumza",
+        "started_peeking": "Ameanza kuchungulia",
+        "stopped_peeking": "Ameacha kuchungulia",
+        "message_read": "Ujumbe umesomwa",
+        "message_deleted": "Ujumbe umefutwa",
+        "message_saved": "Ujumbe umehifadhiwa",
+        "message_unsaved": "Ujumbe haujahifadhiwa",
+        "message_edited": "Ujumbe umehaririwa",
+        "message_reaction_add": "Mwitikio wa ujumbe umeongezwa",
+        "message_reaction_remove": "Mwitikio wa ujumbe umeondolewa",
+        "snap_opened": "Snap imefunguliwa",
+        "snap_replayed": "Snap imechezwa tena",
+        "snap_replayed_twice": "Snap imechezwa tena mara mbili",
+        "snap_screenshot": "Picha ya skrini ya snap",
+        "snap_screen_record": "Rekodi ya skrini ya snap"
+    },
+    "tracker_actions": {
+        "log": "Kumbukumbu",
+        "in_app_notification": "Arifa ya ndani ya programu",
+        "push_notification": "Arifa ya kushinikiza",
+        "custom": "Maalum"
+    },
+    "better_notifications": {
+        "button": {
+            "reply": "Jibu",
+            "download": "Pakua",
+            "mark_as_read": "Weka alama kama imesomwa"
+        }
+    },
+    "profile_picture_downloader": {
+        "button": "Pakua picha ya wasifu",
+        "title": "Kipakuzi cha picha ya wasifu",
+        "avatar_option": "Avatari",
+        "background_option": "Mandharinyuma"
+    },
+    "call_start_confirmation": {
+        "dialog_title": "Anza simu",
+        "dialog_message": "Una uhakika unataka kuanza simu?"
+    },
+    "half_swipe_notifier": {
+        "notification_channel_name": "Nusu-telezesha",
+        "notification_content_dm": "{friend} amenusu-telezesha kwenye gumzo lako kwa sekunde {duration}",
+        "notification_content_group": "{friend} amenusu-telezesha kwenye {group} kwa sekunde {duration}"
+    },
+    "download_processor": {
+        "attachment_type": {
+            "snap": "Snap",
+            "sticker": "Kibandiko",
+            "gif": "GIF",
+            "external_media": "Midia ya nje",
+            "note": "Dokezo",
+            "original_story": "Hadithi ya asili"
+        },
+        "select_attachments_title": "Chagua viambatisho",
+        "download_started_toast": "Upakuaji umeanza",
+        "unsupported_content_type_toast": "Aina ya maudhui haitumiki!",
+        "failed_no_longer_available_toast": "Midia haipatikani tena",
+        "no_attachments_toast": "Hakuna viambatisho vilivyopatikana!",
+        "already_queued_toast": "Midia tayari iko kwenye foleni!",
+        "already_downloaded_toast": "Midia tayari imepakuliwa!",
+        "content_saved_toast": "Imehifadhiwa!",
+        "download_toast": "Inapakua {attachment}...",
+        "processing_toast": "Inachakata {attachment}...",
+        "failed_generic_toast": "Imeshindwa kupakua",
+        "failed_to_create_preview_toast": "Imeshindwa kuunda onyesho la awali",
+        "failed_processing_toast": "Imeshindwa kuchakata: {error}",
+        "failed_gallery_toast": "Imeshindwa kuhifadhi kwenye ghala: {error}",
+        "dash_no_chapter": "Hakuna sura iliyopatikana",
+        "dash_dialog": {
+            "title": "Pakua Midia ya DASH",
+            "download_all": "Pakua Zote",
+            "segment_text": "Sehemu {from} - {to}"
+        }
+    },
+    "streaks_reminder": {
+        "notification_title": "Mfululizo",
+        "notification_text": "Utapoteza mfululizo wako na {friend} baada ya saa {hoursLeft}"
+    },
+    "biometric_auth": {
+        "unlock_button": "Fungua",
+        "title": "Fungua Snapchat",
+        "subtitle": "Tafadhali thibitisha ili kufungua Snapchat"
+    },
+    "end_to_end_encryption": {
+        "toolbox": {
+            "no_shared_key": "Bado huna ufunguo wa siri ulioshirikiwa na rafiki huyu. Bofya hapa chini ili kuanzisha mpya.",
+            "shared_key_fingerprint": "Alama ya vidole ni:\n\n{fingerprint}\n\nHakikisha unakagua ikiwa inalingana na alama ya vidole ya rafiki yako!",
+            "initiate_exchange_button": "Anzisha ubadilishanaji wa ufunguo"
+        },
+        "confirmation_dialogs": {
+            "title": "Usimbaji fiche wa mwisho-hadi-mwisho",
+            "confirmation_1": "Onyo: Hii itaondoa ufunguo wako uliopo. Utapoteza ufikiaji wa ujumbe wote uliosimbwa fiche kutoka kwa rafiki huyu. Una uhakika unataka kuendelea?",
+            "confirmation_2": "Una uhakika kweli unataka kuendelea? Hii ni nafasi yako ya mwisho kurudi nyuma."
+        },
+        "unencrypted_conversation_send_failure_toast": "Huwezi kutuma maudhui yaliyosimbwa fiche kwa mazungumzo yote yaliyosimbwa fiche na yasiyosimbwa fiche!",
+        "native_hooks_send_failure_toast": "Imeshindwa kutuma! Tafadhali washa hook za asili katika mipangilio.",
+        "no_participants_to_encrypt_toast": "Huna marafiki wowote katika mazungumzo haya wa kusimba fiche ujumbe nao!",
+        "encryption_failed_toast": "Imeshindwa kusimba fiche ujumbe! Angalia Logcat kwa maelezo zaidi.",
+        "accept_public_key_success_toast": "Ufunguo wa umma umekubaliwa kwa mafanikio!",
+        "accept_secret_key_success_toast": "Imekamilika! Sasa unaweza kutuma na kupokea ujumbe uliosimbwa fiche na rafiki huyu.",
+        "accept_public_key_failure_toast": "Imeshindwa kukubali ufunguo wa umma",
+        "accept_secret_key_failure_toast": "Imeshindwa kukubali ufunguo wa siri",
+        "accept_secret_button": "Kubali siri",
+        "accept_public_key_button": "Kubali ufunguo wa umma",
+        "outgoing_pk_message": "Ombi la kubadilishana ufunguo",
+        "outgoing_secret_message": "Jibu la kubadilishana ufunguo",
+        "incoming_pk_message": "Umepokea ombi la ufunguo wa umma. Bofya hapa chini ili kulikubali.",
+        "incoming_secret_message": "Rafiki yako amekubali ufunguo wako wa umma. Bofya hapa chini ili kukubali siri."
+    },
+    "auto_open_snaps": {
+        "title": "Fungua snap kiotomatiki",
+        "notification_content": "Snap {count} zimefunguliwa"
+    },
+    "friend_mutation_observer": {
+        "notification_channel_name": "Mfuatiliaji wa mabadiliko ya rafiki",
+        "friend_removed": "{username} amekuondoa kama rafiki",
+        "birthday_removed": "{username} ameondoa siku yake ya kuzaliwa ({birthday})",
+        "birthday_added": "{username} ameongeza siku yake ya kuzaliwa ({birthday})",
+        "birthday_changed": "{username} amebadilisha siku yake ya kuzaliwa kutoka {oldBirthday} hadi {newBirthday}",
+        "bitmoji_selfie_changed": "{username} amebadilisha selfie yake ya Bitmoji",
+        "bitmoji_avatar_changed": "{username} amebadilisha avatari yake ya Bitmoji",
+        "bitmoji_background_changed": "{username} amebadilisha mandharinyuma yake ya Bitmoji",
+        "bitmoji_scene_changed": "{username} amebadilisha mandhari yake ya Bitmoji"
+    },
+    "material3_strings": {
+        "date_range_picker_start_headline": "Kutoka",
+        "date_range_picker_end_headline": "Hadi",
+        "date_range_picker_title": "Chagua kipindi",
+        "date_picker_switch_to_calendar_mode": "Kalenda",
+        "date_picker_switch_to_input_mode": "Ingizo",
+        "date_range_picker_scroll_to_previous_month": "Mwezi uliopita",
+        "date_range_picker_scroll_to_next_month": "Mwezi ujao",
+        "date_picker_today_description": "Leo",
+        "date_range_picker_day_in_range": "Imechaguliwa",
+        "date_input_invalid_for_pattern": "Tarehe si sahihi",
+        "date_input_invalid_year_range": "Mwaka si sahihi",
+        "date_input_invalid_not_allowed": "Tarehe si sahihi",
+        "date_range_input_invalid_range_input": "Kipindi si sahihi"
+    },
+    "send_override_dialog": {
+        "title": "Tuma Midia kama {type}",
+        "duration": "Muda: {duration}",
+        "saveable_snap_hint": "Fanya snap iweze kuhifadhiwa kwenye gumzo",
+        "unlimited_duration": "Bila kikomo"
+    },
+    "invalid_input_toast": "Ingizo si sahihi! Hakikisha umeingiza thamani sahihi."
+}

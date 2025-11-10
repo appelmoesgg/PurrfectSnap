@@ -20,6 +20,14 @@ tasks.register("installTypeScript", org.gradle.api.tasks.Exec::class) {
     } else {
         commandLine("npm", "install", "typescript")
     }
+    doLast {
+        if (!Os.isFamily(Os.FAMILY_WINDOWS)) {
+            val tscScript = project.file("node_modules/.bin/tsc")
+            if (tscScript.exists()) {
+                tscScript.setExecutable(true)
+            }
+        }
+    }
 }
 
 tasks.register("compileTsc", org.gradle.api.tasks.Exec::class) {

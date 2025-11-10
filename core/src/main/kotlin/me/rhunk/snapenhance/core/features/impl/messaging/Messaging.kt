@@ -98,16 +98,18 @@ class Messaging : Feature("Messaging") {
         }
 
         defer {
-            arrayOf("activate", "deactivate", "processTypingActivity").forEach { hook ->
+            arrayOf("activate", "deactivate").forEach { hook ->
                 context.classCache.presenceSession.hook(hook, HookStage.BEFORE, {
-                    context.config.messaging.hideBitmojiPresence.get() || stealthMode.canUseRule(openedConversationUUID.toString())
+                    val conversationId = openedConversationUUID?.toString() ?: return@hook false
+                    context.config.messaging.hideBitmojiPresence.get() || stealthMode.canUseRule(conversationId)
                 }) {
                     it.setResult(null)
                 }
             }
 
             context.classCache.presenceSession.hook("startPeeking", HookStage.BEFORE, {
-                context.config.messaging.hidePeekAPeek.get() || stealthMode.canUseRule(openedConversationUUID.toString())
+                val conversationId = openedConversationUUID?.toString() ?: return@hook false
+                context.config.messaging.hidePeekAPeek.get() || stealthMode.canUseRule(conversationId)
             }) { it.setResult(null) }
 
             //get last opened snap for media downloader
@@ -121,12 +123,6 @@ class Messaging : Feature("Messaging") {
                 if (openedConversationUUID?.toString() == conversationId) {
                     lastFocusedMessageId = param.arg(1)
                 }
-            }
-
-            context.classCache.conversationManager.hook("sendTypingNotification", HookStage.BEFORE, {
-                context.config.messaging.hideTypingNotifications.get() || stealthMode.canUseRule(openedConversationUUID.toString())
-            }) {
-                it.setResult(null)
             }
         }
 

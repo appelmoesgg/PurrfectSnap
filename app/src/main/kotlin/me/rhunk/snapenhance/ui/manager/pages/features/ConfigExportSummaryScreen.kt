@@ -26,6 +26,7 @@ import org.json.JSONArray
 import org.json.JSONObject
 
 class ConfigExportSummaryScreen : Routes.Route() {
+    override val translation by lazy { context.translation.getCategory("manager.features.config_export") }
 
     private data class ImportedFeature(
         val category: String,
@@ -65,7 +66,7 @@ class ConfigExportSummaryScreen : Routes.Route() {
                 if (value is JSONObject) {
                     val niceCategoryName = context.translation["features.properties.$categoryKey.name"] ?: categoryKey.replaceFirstChar { it.uppercase() }
                     if (value.has("state") && !value.has("properties")) {
-                        featureList.add(ImportedFeature(niceCategoryName, "Enable Feature", categoryKey, value.getBoolean("state"), 0))
+                        featureList.add(ImportedFeature(niceCategoryName, translation["enable_feature"], categoryKey, value.getBoolean("state"), 0))
                     } else if (value.has("properties")) {
                         parseProperties(categoryKey, niceCategoryName, value.getJSONObject("properties"), "", 0)
                     }
@@ -84,7 +85,7 @@ class ConfigExportSummaryScreen : Routes.Route() {
                 return v.toString()
             }
             return when (value) {
-                is Boolean -> if (value) "Enabled" else "Disabled"
+                is Boolean -> if (value) translation["enabled"] else translation["disabled"]
                 is JSONArray -> {
                     val list = mutableListOf<String>()
                     for (i in 0 until value.length()) {
@@ -109,10 +110,10 @@ class ConfigExportSummaryScreen : Routes.Route() {
         Scaffold(
             topBar = {
                 TopAppBar(
-                    title = { Text("Export Summary") },
+                    title = { Text(translation["title"]) },
                     navigationIcon = {
                         IconButton(onClick = { routes.navController.popBackStack() }) {
-                            Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back")
+                            Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = translation["back_button_description"])
                         }
                     },
                     actions = {
@@ -134,7 +135,7 @@ class ConfigExportSummaryScreen : Routes.Route() {
                                 }
                             }
                         }) {
-                            Text("Save")
+                            Text(translation["save_button"])
                         }
                     }
                 )
@@ -172,7 +173,7 @@ class ConfigExportSummaryScreen : Routes.Route() {
                                 IconButton(onClick = { expandedState[category] = !isExpanded }) {
                                     Icon(
                                         imageVector = Icons.Default.KeyboardArrowDown,
-                                        contentDescription = "Expand",
+                                        contentDescription = translation["expand_button_description"],
                                         modifier = Modifier.graphicsLayer(rotationZ = rotationState)
                                     )
                                 }

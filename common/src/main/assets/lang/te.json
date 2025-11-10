@@ -1,0 +1,2022 @@
+{
+    "setup": {
+        "dialogs": {
+            "select_language": "భాషను ఎంచుకోండి",
+            "save_folder": "పర్ఫెక్ట్స్నాప్‌కు స్నాప్‌చాట్ నుండి మీడియాను డౌన్‌లోడ్ చేయడానికి మరియు సేవ్ చేయడానికి నిల్వ అనుమతులు అవసరం.\nదయచేసి మీడియాకు డౌన్‌లోడ్ చేయవలసిన స్థానాన్ని ఎంచుకోండి.",
+            "select_save_folder_button": "ఫోల్డర్ ఎంచుకోండి"
+        },
+        "mappings": {
+            "dialog": "మ్యాపింగ్స్‌ను రూపొందించడం, దీనికి కొంత సమయం పట్టవచ్చు ...",
+            "generate_failure_no_snapchat": "పర్ఫెక్ట్స్నాప్ స్నాప్‌చాట్‌ను గుర్తించలేకపోయింది, దయచేసి స్నాప్‌చాట్‌ను మళ్లీ ఇన్‌స్టాల్ చేయడానికి ప్రయత్నించండి.",
+            "generate_failure": "మ్యాపింగ్లను రూపొందించడానికి ప్రయత్నిస్తున్నప్పుడు లోపం సంభవించింది, దయచేసి మళ్ళీ ప్రయత్నించండి."
+        },
+        "permissions": {
+            "dialog": "కొనసాగించడానికి మీరు ఈ క్రింది అవసరాలకు సరిపోయేలా చేయాలి:",
+            "notification_access": "నోటిఫికేషన్ యాక్సెస్",
+            "battery_optimization": "బ్యాటరీ ఆప్టిమైజేషన్",
+            "display_over_other_apps": "ఇతర అనువర్తనాలపై ప్రదర్శించండి",
+            "request_button": "అభ్యర్థన"
+        }
+    },
+    "scopes": {
+        "friend": "స్నేహితుడు",
+        "group": "సమూహం"
+    },
+    "manager": {
+        "routes": {
+            "tasks": "పనులు",
+            "features": "లక్షణాలు",
+            "manage_rule_feature": "నియమం లక్షణాన్ని నిర్వహించండి",
+            "home": "హోమ్",
+            "home_settings": "సెట్టింగులు",
+            "home_logs": "లాగ్స్",
+            "logger_history": "లాగర్ చరిత్ర",
+            "logged_stories": "లాగిన్ చేసిన కథలు",
+            "friend_tracker": "ఫ్రెండ్ ట్రాకర్",
+            "edit_rule": "నియమాన్ని సవరించండి",
+            "file_imports": "ఫైల్ దిగుమతులు",
+            "manage_repos": "రిపోజిటరీలను నిర్వహించండి",
+            "social": "సామాజిక",
+            "manage_scope": "పరిధిని నిర్వహించండి",
+            "messaging_preview": "ప్రివ్యూ",
+            "scripts": "స్క్రిప్ట్స్",
+            "better_location": "మంచి స్థానం"
+        },
+        "sections": {
+            "home": {
+                "version_title": "v{versionName} · ఎటర్నల్ చేత ఫోర్క్ చేయబడింది",
+                "update_title": "పర్ఫెక్ట్స్నాప్ నవీకరణ",
+                "update_content": "వెర్షన్ {version} అందుబాటులో ఉంది!",
+                "update_button": "డౌన్‌లోడ్",
+                "debug_build_summary_title": "మీరు పర్ఫెక్ట్స్నాప్ యొక్క డీబగ్ బిల్డ్ నడుపుతున్నారు",
+                "debug_build_summary_content": "వెర్షన్ {versionName} ({versionCode})",
+                "debug_build_summary_date": "బిల్డ్ తేదీ: {date} ({days} రోజుల క్రితం)",
+                "quick_actions_title": "శీఘ్ర చర్యలు",
+                "download_icon_description": "డౌన్‌లోడ్",
+                "completed_icon_description": "పూర్తయింది",
+                "failed_icon_description": "విఫలమైంది",
+                "manage_quick_actions_description": "శీఘ్ర చర్యలను నిర్వహించండి",
+                "quick_actions_icon_description": "శీఘ్ర చర్యలు",
+                "add_quick_action_description": "శీఘ్ర చర్యను జోడించండి"
+            },
+            "home_logs": {
+                "no_logs_hint": "లాగ్‌లు అందుబాటులో లేవు",
+                "clear_logs_button": "లాగ్‌లు క్లియర్",
+                "export_logs_button": "ఎగుమతి లాగ్‌లు",
+                "saving_logs_toast": "లాగ్‌లను సేవ్ చేస్తోంది, దీనికి కొంత సమయం పట్టవచ్చు ...",
+                "saved_logs_success_toast": "లాగ్‌లు విజయవంతంగా సేవ్ చేయబడ్డాయి",
+                "saved_logs_failure_toast": "లాగ్‌లను సేవ్ చేయడంలో విఫలమైంది"
+            },
+            "home_settings": {
+                "actions_title": "చర్యలు",
+                "message_logger_title": "సందేశ లాగర్",
+                "debug_title": "డీబగ్",
+                "success_toast": "పూర్తయింది!",
+                "message_logger_summary": "{messageCount} సందేశాలు\n{storyCount} కథలు",
+                "export_button": "ఎగుమతి",
+                "clear_button": "క్లియర్",
+                "view_logger_history_button": "లాగర్ చరిత్రను చూడండి",
+                "updates_title": "నవీకరణలు",
+                "auto_update_check": "నవీకరణల కోసం ఆటో చెక్",
+                "update_check_frequency": "నవీకరణ తనిఖీ ఫ్రీక్వెన్సీ",
+                "update_check_frequency_daily": "రోజువారీ",
+                "update_check_frequency_weekly": "వారానికోసారి",
+                "update_check_frequency_monthly": "నెలవారీ",
+                "theme_icon_description": "థీమ్",
+                "app_theme_title": "అనువర్తన థీమ్",
+                "theme_mode_system": "వ్యవస్థ",
+                "theme_mode_light": "కాంతి",
+                "theme_mode_dark": "చీకటి",
+                "ui_settings_title": "UI సెట్టింగులు",
+                "haptic_feedback_label": "హాప్టిక్ ఫీడ్‌బ్యాక్",
+                "test_mode_label": "పరీక్ష మోడ్ (డీబగ్గింగ్ కోసం మాత్రమే)",
+                "disable_feature_loading_label": "ఫీచర్ లోడింగ్‌ను నిలిపివేయండి",
+                "disable_auto_mapper_label": "ఆటో మాపర్‌ను నిలిపివేయండి",
+                "disable_bypass_indicator_label": "బైపాస్ స్థితి సూచికను నిలిపివేయండి",
+                "update_notification_channel_name": "పర్ఫెక్ట్స్నాప్ నవీకరణలు",
+                "update_notification_channel_description": "పర్ఫెక్ట్స్నాప్ నవీకరణల కోసం నోటిఫికేషన్‌లు",
+                "update_notification_title": "పర్ఫెక్ట్స్నాప్ నవీకరణ అందుబాటులో ఉంది",
+                "update_notification_text": "వెర్షన్ {version} ఇప్పుడు అందుబాటులో ఉంది.",
+                "export_database_failed_toast": "డేటాబేస్ ఎగుమతి చేయడంలో విఫలమైంది! {message}",
+                "clear_messages_failed_toast": "సందేశాలను క్లియర్ చేయడంలో విఫలమైంది! {message}",
+                "clear_file_failed_toast": "ఫైల్‌ను క్లియర్ చేయడంలో విఫలమైంది! {message}",
+                "debug_file_config": "కాన్ఫిగరేషన్",
+                "debug_file_mappings": "మ్యాపింగ్స్",
+                "debug_file_message_logger": "సందేశ లాగర్",
+                "debug_file_pinned_best_friend": "పిన్ చేసిన బెస్ట్ ఫ్రెండ్",
+                "debug_file_native_sig_cache": "స్థానిక సంతకం కాష్"
+            },
+            "tasks": {
+                "no_tasks": "పనులు లేవు",
+                "merge_button": "విలీనం",
+                "failed_to_open_file": "ఫైల్ తెరవడంలో విఫలమైంది",
+                "merge_files_toast": "{count} ఫైల్‌లను విలీనం చేయడం",
+                "remove_selected_tasks_title": "మీరు ఎంచుకున్న పనులను తొలగించాలనుకుంటున్నారా?",
+                "remove_all_tasks_title": "మీరు ఖచ్చితంగా అన్ని పనులను తొలగించాలనుకుంటున్నారా?",
+                "delete_files_option": "ఫైళ్ళను కూడా తొలగించండి",
+                "remove_selected_tasks_confirm": "{count} పనులను తొలగించాలా?",
+                "remove_all_tasks_confirm": "అన్ని పనులను తొలగించాలా?",
+                "clear_tasks_description": "స్పష్టమైన పనులు",
+                "file_not_found_icon_description": "ఫైల్ కనుగొనబడలేదు",
+                "image_icon_description": "చిత్రం",
+                "video_icon_description": "వీడియో",
+                "audio_icon_description": "ఆడియో",
+                "file_icon_description": "ఫైల్",
+                "download_icon_description": "డౌన్‌లోడ్",
+                "chat_action_icon_description": "చాట్ చర్య",
+                "cancel_icon_description": "రద్దు చేయండి",
+                "success_icon_description": "విజయం",
+                "failure_icon_description": "వైఫల్యం",
+                "cancelled_icon_description": "రద్దు చేయబడింది",
+                "task_status_failure": "వైఫల్యం",
+                "task_status_cancelled": "రద్దు చేయబడింది"
+            },
+            "features": {
+                "disabled": "నిలిపివేయబడింది",
+                "export_option": "ఎగుమతి",
+                "import_option": "దిగుమతి",
+                "reset_option": "రీసెట్",
+                "config_export_success_toast": "కాన్ఫిగర్ విజయవంతంగా ఎగుమతి చేయబడింది",
+                "config_import_success_toast": "కాన్ఫిగర్ విజయవంతంగా దిగుమతి చేయబడింది",
+                "config_import_failure_toast": "కాన్ఫిగర్ {error} దిగుమతి చేయడంలో విఫలమైంది",
+                "config_export_failure_toast": "కాన్ఫిగర్ {error} ఎగుమతి చేయడంలో విఫలమైంది",
+                "saved_config_snackbar": "కాన్ఫిగర్ సేవ్ చేయబడింది",
+                "older_required": "ఈ లక్షణానికి స్నాప్‌చాట్ v{version} లేదా అంతకంటే పాతది సరిగ్గా పనిచేయడానికి అవసరం",
+                "newer_required": "ఈ లక్షణానికి స్నాప్‌చాట్ v{version} లేదా కొత్తది సరిగ్గా పనిచేయడానికి అవసరం",
+                "search_button": "శోధన"
+            },
+            "manage_rule_feature": {
+                "disable_state_option": "నిలిపివేయబడింది",
+                "disable_state_subtext": "స్నేహితులు/సమూహాలు ఏవీ ప్రభావితం కావు",
+                "whitelist_state_option": "తప్ప ఎవరూ...",
+                "whitelist_state_subtext": "ఈ నియమం ద్వారా {count} స్నేహితులు/సమూహాలు మాత్రమే ప్రభావితమవుతాయి",
+                "whitelist_state_button": "అనుమతించబడిన స్నేహితులు/సమూహాలను ఎంచుకోండి",
+                "blacklist_state_option": "తప్ప అందరూ...",
+                "blacklist_state_subtext": "{count} మినహా ప్రతి ఒక్కరూ ఈ నియమం ద్వారా స్నేహితులు/సమూహాలు ప్రభావితమవుతారు",
+                "blacklist_state_button": "మినహాయించబడిన స్నేహితులు/సమూహాలను ఎంచుకోండి",
+                "clear_list_button": "స్నేహితులు/సమూహాల జాబితాను క్లియర్ చేయండి",
+                "dialog_clear_confirmation_text": "మీరు ఖచ్చితంగా జాబితాను క్లియర్ చేయాలనుకుంటున్నారా?"
+            },
+            "social": {
+                "friends_tab": "స్నేహితులు",
+                "groups_tab": "గుంపులు",
+                "empty_hint": "(ఖాళీ)",
+                "streaks_expiration_short": "{hours}h"
+            },
+            "manage_scope": {
+                "logged_stories_button": "లాగిన్ చేసిన కథలను చూపించు",
+                "e2ee_title": "ఎండ్-టు-ఎండ్ ఎన్క్రిప్షన్",
+                "rules_title": "నియమాలు",
+                "participants_text": "{count} పాల్గొనేవారు",
+                "not_found": "కనుగొనబడలేదు",
+                "streaks_title": "స్ట్రీక్స్",
+                "streaks_length_text": "పొడవు: {length}",
+                "streaks_expiration_text": "{eta} లో ముగుస్తుంది",
+                "streaks_expiration_text_expired": "గడువు ముగిసింది",
+                "reminder_button": "రిమైండర్ సెట్ చేయండి",
+                "delete_scope_confirm_dialog_title": "మీరు ఖచ్చితంగా {scope} ను తొలగించాలనుకుంటున్నారా?",
+                "notes_placeholder": "గమనికను జోడించడానికి క్లిక్ చేయండి",
+                "invalid_key_size_32_bytes": "చెల్లని కీ పరిమాణం (32 బైట్లు ఉండాలి)",
+                "successfully_imported_key": "విజయవంతంగా దిగుమతి చేసుకున్న కీ",
+                "failed_to_import_key": "కీని దిగుమతి చేయడంలో విఫలమైంది: {message}",
+                "export_base64_button": "ఎగుమతి బేస్ 64",
+                "import_base64_button": "దిగుమతి బేస్ 64"
+            },
+            "logged_stories": {
+                "story_failed_to_load": "లోడ్ చేయడంలో విఫలమైంది",
+                "no_stories": "కథలు కనుగొనబడలేదు",
+                "save_from_cache_button": "కాష్ నుండి సేవ్ చేయండి",
+                "downloaded_to_path": "{path} కు డౌన్‌లోడ్ చేయబడింది",
+                "download_failed": "డౌన్‌లోడ్ విఫలమైంది: {message}",
+                "posted_at": "{date} వద్ద పోస్ట్ చేయబడింది",
+                "created_at": "{date} వద్ద సృష్టించబడింది",
+                "failed_to_open_file": "ఫైల్‌ను తెరవడంలో విఫలమైంది. మరింత సమాచారం కోసం లాగ్‌లను తనిఖీ చేయండి",
+                "failed_to_get_file": "ఫైల్ పొందడంలో విఫలమైంది"
+            },
+            "messaging_preview": {
+                "processed_messages_toast": "ప్రాసెస్ చేయబడిన {count} సందేశాలు",
+                "processed_messages_text": "ప్రాసెస్ చేయబడిన {count} సందేశాలు",
+                "close_button_description": "మూసివేయండి",
+                "bridge_connection_failed": "వంతెనకు కనెక్ట్ అవ్వడంలో విఫలమైంది. స్నాప్‌చాట్ నేపథ్యంలో నడుస్తుందని నిర్ధారించుకోండి",
+                "bridge_init_failed": "మెసేజింగ్ వంతెనను ప్రారంభించడంలో విఫలమైంది. స్నాప్‌చాట్ నేపథ్యంలో నడుస్తుందని నిర్ధారించుకోండి",
+                "message_fetch_failed": "సందేశాలను పొందడంలో విఫలమైంది",
+                "no_message_hint": "సందేశం లేదు",
+                "save_selection_option": "ఎంపికను సేవ్ చేయండి",
+                "save_all_option": "అన్నీ సేవ్ చేయండి",
+                "unsave_selection_option": "ఎంపికను అన్సేవ్ చేయండి",
+                "unsave_all_option": "అన్నింటినీ అన్సేవ్ చేయండి",
+                "mark_selection_as_seen_option": "చూసినట్లు ఎంచుకున్న స్నాప్‌ను గుర్తించండి",
+                "mark_all_as_seen_option": "చూసినట్లుగా అన్ని స్నాప్‌లను గుర్తించండి",
+                "delete_selection_option": "ఎంపికను తొలగించండి",
+                "delete_all_option": "అన్నీ తొలగించండి"
+            },
+            "logger_history": {
+                "download_started_toast": "డౌన్‌లోడ్ ప్రారంభమైంది!",
+                "download_success_toast": "{path} కు డౌన్‌లోడ్ చేయబడింది",
+                "download_failed_toast": "{message} డౌన్‌లోడ్ చేయడంలో విఫలమైంది",
+                "edited_at_text": "{message} ({date} వద్ద సవరించబడింది)",
+                "download_button": "డౌన్‌లోడ్",
+                "select_conversation_placeholder": "సంభాషణను ఎంచుకోండి",
+                "close_button_description": "దగ్గరగా",
+                "search_button_description": "శోధన",
+                "list_friend_format": "స్నేహితుడు {name}",
+                "list_group_format": "సమూహం {name}",
+                "no_more_messages": "ఎక్కువ సందేశాలు లేవు",
+                "reverse_order_checkbox": "రివర్స్ ఆర్డర్",
+                "chat_attachment": "అటాచ్మెంట్ {index}",
+                "empty_message": "ఖాళీ చాట్ సందేశం",
+                "message_parse_failed": "సందేశాన్ని అన్వయించడంలో విఫలమైంది",
+                "unknown_sender": "తెలియని పంపినవారు",
+                "download_attachment_failed_toast": "అటాచ్మెంట్ డౌన్‌లోడ్ చేయడంలో విఫలమైంది",
+                "log_header_format": "{username} ({type}) - {date}"
+            },
+            "file_imports": {
+                "import_file_button": "దిగుమతి ఫైల్",
+                "file_not_found": "ఫైల్ కనుగొనబడలేదు",
+                "file_import_failed": "ఫైల్‌ను దిగుమతి చేయడంలో విఫలమైంది: {error}",
+                "file_imported": "ఫైల్ విజయవంతంగా దిగుమతి చేయబడింది",
+                "file_delete_failed": "ఫైల్‌ను తొలగించడంలో విఫలమైంది",
+                "no_files_hint": "ఇక్కడ మీరు స్నాప్‌చాట్‌లో ఉపయోగం కోసం ఫైల్‌లను దిగుమతి చేసుకోవచ్చు. ఫైల్‌ను దిగుమతి చేయడానికి క్రింది బటన్‌ను నొక్కండి."
+            },
+            "better_location": {
+                "spoofed_coordinates_title": "LAT {latitude}, lng {longitude}",
+                "save_coordinates_dialog_title": "కోఆర్డినేట్లను సేవ్ చేయండి",
+                "saved_name_dialog_hint": "సేవ్ చేసిన పేరు",
+                "latitude_dialog_hint": "అక్షాంశం",
+                "longitude_dialog_hint": "రేఖాంశం",
+                "save_dialog_button": "సేవ్",
+                "choose_location_button": "స్థానాన్ని ఎంచుకోండి",
+                "teleport_to_friend_button": "స్నేహితుడికి టెలిపోర్ట్ చేయండి",
+                "spoof_location_toggle": "స్పూఫ్ స్థానం",
+                "suspend_location_updates": "స్థాన నవీకరణలను నిలిపివేయండి",
+                "saved_coordinates_title": "సేవ్ చేసిన కోఆర్డినేట్లు",
+                "no_saved_coordinates_hint": "సేవ్ చేసిన కోఆర్డినేట్లు లేవు",
+                "delete_dialog_title": "సేవ్ చేసిన కోఆర్డినేట్‌ను తొలగించండి",
+                "delete_dialog_message": "ఈ సేవ్ చేసిన కోఆర్డినేట్‌ను మీరు తొలగించాలనుకుంటున్నారా?",
+                "teleport_to_friend_title": "స్నేహితుడికి టెలిపోర్ట్ చేయండి",
+                "search_bar": "శోధన",
+                "no_friends_map": "మ్యాప్‌లో స్నేహితులు లేరు",
+                "no_friends_found": "స్నేహితులు ఎవరూ కనుగొనబడలేదు",
+                "edit_location_button_description": "స్థానాన్ని సవరించండి",
+                "add_icon_description": "జోడించు",
+                "edit_icon_description": "సవరణ",
+                "delete_icon_description": "తొలగించు"
+            }
+        },
+        "dialogs": {
+            "add_friend": {
+                "title": "స్నేహితుడు లేదా సమూహాన్ని జోడించండి",
+                "search_hint": "శోధన",
+                "fetch_error": "డేటాను పొందడంలో విఫలమైంది",
+                "category_groups": "గుంపులు",
+                "category_friends": "స్నేహితులు",
+                "participants_text": "{count} పాల్గొనేవారు",
+                "search_icon_description": "శోధన"
+            },
+            "scripting_warning": {
+                "title": "హెచ్చరిక",
+                    "content": "పర్ఫెక్ట్స్నాప్ స్క్రిప్టింగ్ సాధనాన్ని కలిగి ఉంటుంది, ఇది మీ పరికరంలో వినియోగదారు నిర్వచించిన కోడ్‌ను అమలు చేయడానికి అనుమతిస్తుంది. చాలా జాగ్రత్త వహించండి మరియు తెలిసిన, నమ్మదగిన మూలాల నుండి మాత్రమే మాడ్యూళ్ళను ఇన్స్టాల్ చేయండి. అనధికార లేదా ధృవీకరించని మాడ్యూల్స్ మీ సిస్టమ్‌కు భద్రతా నష్టాలను కలిగించవచ్చు."
+            },
+            "reset_config": {
+                    "title": "కాన్ఫిగర్ రీసెట్ చేయండి",
+                "content": "మీరు ఖచ్చితంగా కాన్ఫిగర్ రీసెట్ చేయాలనుకుంటున్నారా?",
+                    "success_toast": "కాన్ఫిగర్ విజయవంతంగా రీసెట్ చేయబడింది"
+            },
+            "export_config": {
+                "title": "సున్నితమైన డేటాను ఎగుమతి చేయాలా?",
+                    "content": "మీరు సున్నితమైన డేటాతో కాన్ఫిగర్ ఎగుమతి చేయాలనుకుంటున్నారా? (స్థాన కోఆర్డినేట్లు మొదలైనవి)"
+            },
+            "messaging_action": {
+                "title": "ప్రాసెస్ చేయడానికి కంటెంట్ రకాలను ఎంచుకోండి",
+                "select_all_button": "అన్నీ ఎంచుకోండి"
+            },
+            "file_imports": {
+                "no_files_settings_hint": "ఫైల్స్ కనుగొనబడలేదు. మీరు ఫైల్ దిగుమతుల విభాగంలో అవసరమైన ఫైళ్ళను దిగుమతి చేసుకున్నారని నిర్ధారించుకోండి",
+                "settings_select_file_hint": "దిగుమతి చేసుకున్న ఫైల్‌ను ఎంచుకోండి"
+            },
+            "quick_actions_dialog": {
+                "title": "శీఘ్ర చర్యలను సవరించండి",
+                    "subtitle": "మీ శీఘ్ర చర్యలను ఎంచుకోండి మరియు పరిమాణం మార్చండి."
+            }
+        },
+        "friend_tracker": {
+            "rules_tab": "నియమాలు",
+                "logs_tab": "లాగ్‌లు",
+            "export_dialog_title": "ఎగుమతి",
+            "bulk_export_button": "బల్క్ ఎగుమతి",
+            "individual_export_button": "వ్యక్తిగత ఎగుమతి",
+            "invalid_import_type_dialog_title": "చెల్లని దిగుమతి రకం",
+            "invalid_import_type_dialog_text": "ఎంచుకున్న ఫైల్ ఈ దిగుమతి రకానికి అనుకూలంగా లేదు. దయచేసి సరైన దిగుమతి రకాన్ని ఎంచుకోండి.",
+            "import_dialog_title": "దిగుమతి",
+            "bulk_import_button": "బల్క్ దిగుమతి",
+            "individual_import_button": "వ్యక్తిగత దిగుమతి",
+            "import_button_description": "దిగుమతి",
+            "export_button_description": "ఎగుమతి",
+            "export_button": "ఎగుమతి",
+            "delete_button_description": "తొలగించు",
+            "delete_button": "తొలగించు",
+            "catalog_button_description": "కేటలాగ్",
+            "catalog_button": "కేటలాగ్",
+            "add_rule_button_description": "నియమాన్ని జోడించండి",
+            "add_rule_button": "నియమాన్ని జోడించండి",
+            "no_rules_found": "నియమాలు కనుగొనబడలేదు",
+            "empty_rule_name": "(ఖాళీ)",
+            "events_suffix": "సంఘటనలు",
+                "scopes_suffix": "స్కోప్‌లు",
+            "select_rule_to_export_title": "ఎగుమతి చేయడానికి నియమాన్ని ఎంచుకోండి",
+                "deleted_logs_toast": "తొలగించబడినవి {count} లాగ్‌లు",
+            "delete_logs_dialog_title": "లాగ్‌లను తొలగించాలా?",
+                "deleting_logs_dialog_text": "{count} లాగ్‌లను తొలగిస్తోంది...",
+            "delete_logs_dialog_confirm_text": "ఇది ప్రస్తుత ఫిల్టర్ మరియు శోధన ప్రశ్న ఆధారంగా లాగ్‌లను తొలగిస్తుంది. ఈ చర్యను రద్దు చేయలేము.",
+                "exported_logs_toast": "లాగ్‌లు ఎగుమతి చేయబడ్డాయి!",
+            "export_logs_failed_toast": "లాగ్‌లను ఎగుమతి చేయడంలో విఫలమైంది. మరిన్ని వివరాల కోసం లాగ్‌క్యాట్‌ను తనిఖీ చేయండి.",
+                "export_logs_dialog_title": "లాగ్‌లను ఎగుమతి చేయాలా?",
+                "exporting_logs_dialog_text": "లాగ్‌లను ఎగుమతి చేస్తోంది...",
+            "export_logs_dialog_confirm_text": "ఇది ప్రస్తుత ఫిల్టర్ మరియు శోధన ప్రశ్న ఆధారంగా లాగ్‌లను ఎగుమతి చేస్తుంది.",
+            "export_as_button": "{type} గా ఎగుమతి చేయండి",
+            "filters_title": "ఫిల్టర్లు",
+                "search_by_label": "దీని ద్వారా శోధించండి",
+                "newest_first_label": "కొత్తవి మొదట",
+            "since_label": "నుండి",
+            "until_label": "వరకు",
+            "pick_a_date_button": "తేదీని ఎంచుకోండి",
+            "search_placeholder": "శోధన",
+            "filter_button_description": "ఫిల్టర్",
+            "clear_button_description": "క్లియర్",
+            "no_logs_found": "లాగ్‌లు కనుగొనబడలేదు",
+            "log_event_format": "{event} లో {conversation}",
+            "condition_only_inside_conversation": "నేను సంభాషణలో ఉన్నప్పుడు మాత్రమే",
+            "condition_only_outside_conversation": "నేను సంభాషణ వెలుపల ఉన్నప్పుడు మాత్రమే",
+            "condition_only_when_app_active": "స్నాప్‌చాట్ చురుకుగా ఉన్నప్పుడు మాత్రమే",
+            "condition_only_when_app_inactive": "స్నాప్‌చాట్ క్రియారహితంగా ఉన్నప్పుడు మాత్రమే",
+                "condition_no_push_notification_when_app_active": "స్నాప్‌చాట్ చురుకుగా ఉన్నప్పుడు పుష్ నోటిఫికేషన్ లేదు",
+            "add_event_dialog_title": "ఈవెంట్‌ను జోడించండి",
+            "event_type_label": "ఈవెంట్ రకం",
+            "triggers_title": "ట్రిగ్గర్‌లు",
+            "conditions_title": "షరతులు",
+            "add_button": "జోడించు",
+            "default_rule_name": "అనుకూల నియమం",
+            "discard_changes_dialog_title": "మార్పులను విస్మరించాలా?",
+            "discard_changes_dialog_text": "మీకు సేవ్ చేయని మార్పులు ఉన్నాయి. మీరు వాటిని విస్మరించాలనుకుంటున్నారా?",
+            "discard_button": "విస్మరించండి",
+            "cannot_save_rule_dialog_title": "నియమాన్ని సేవ్ చేయలేరు",
+            "cannot_save_rule_dialog_text": "ఒక నియమానికి సేవ్ చేయడానికి కనీసం ఒక సంఘటన అయినా ఉండాలి.",
+            "duplicate_rule_name_dialog_title": "నకిలీ నియమం పేరు",
+            "duplicate_rule_name_dialog_text": "ఈ పేరుతో ఒక నియమం ఇప్పటికే ఉంది. దయచేసి వేరే పేరును ఎంచుకోండి.",
+            "delete_rule_dialog_title": "నియమాన్ని తొలగించండి",
+            "delete_rule_dialog_text": "మీరు ఖచ్చితంగా ఈ నియమాన్ని తొలగించాలనుకుంటున్నారా?",
+            "new_rule_title": "కొత్త నియమం",
+            "edit_rule_title": "నియమాన్ని సవరించండి",
+            "back_button_description": "తిరిగి",
+            "save_button_description": "సేవ్",
+                "general_section_title": "సాధారణం",
+            "rule_name_label": "నియమం పేరు",
+            "author_name_label": "రచయిత పేరు",
+            "scope_section_title": "స్కోప్",
+            "scope_all": "అన్నీ",
+            "scope_whitelist": "వైట్‌లిస్ట్",
+            "scope_blacklist": "బ్లాక్లిస్ట్",
+            "select_friends_groups_button": "స్నేహితులు/సమూహాలను ఎంచుకోండి ({count})",
+            "events_section_title": "సంఘటనలు",
+            "add_event_button": "ఈవెంట్‌ను జోడించండి",
+            "no_events_text": "సంఘటనలు లేవు"
+        },
+        "friend_tracker_catalog": {
+            "download_failed": "డౌన్‌లోడ్ విఫలమైంది: {code}",
+            "error": "లోపం: {message}",
+            "no_repos_added": "రిపోజిటరీలు ఏవీ జోడించబడలేదు.",
+            "no_rules_available": "ఏ రెపో నుండి నియమాలు అందుబాటులో లేవు.",
+            "by_author": "{author} ద్వారా",
+                "imported_button": "దిగుమతి చేయబడింది",
+            "import_button": "దిగుమతి",
+            "title": "ఫ్రెండ్ ట్రాకర్ కేటలాగ్",
+            "manage_repos_description": "రిపోజిటరీలను నిర్వహించండి"
+        },
+        "friend_tracker_export": {
+            "title": "ఎగుమతి నియమాలు",
+            "back_button_description": "తిరిగి",
+            "exported_toast": "ఫ్రెండ్ ట్రాకర్ నియమాలు ఎగుమతి!",
+            "export_failed_toast": "నియమాలను ఎగుమతి చేయడంలో విఫలమైంది: {message}",
+            "save_button": "సేవ్",
+            "expand_button_description": "విస్తరించండి"
+        },
+        "friend_tracker_import": {
+            "title": "దిగుమతి నియమాలు",
+            "back_button_description": "తిరిగి",
+            "imported_toast": "ఫ్రెండ్ ట్రాకర్ నియమాలు దిగుమతి!",
+            "import_failed_toast": "నియమాలను దిగుమతి చేయడంలో విఫలమైంది: {message}",
+            "confirm_button": "నిర్ధారించండి",
+            "expand_button_description": "విస్తరించండి"
+        },
+        "friend_tracker_repos": {
+            "invalid_repo_title": "చెల్లని రిపోజిటరీ",
+            "add_repo_button": "రిపోజిటరీని జోడించండి",
+            "add_repo_dialog_title": "రిపోజిటరీ URL జోడించండి",
+            "repo_url_label": "రిపోజిటరీ url",
+            "repo_added_toast": "రిపోజిటరీ విజయవంతంగా జోడించబడింది!",
+            "invalid_repo_error": "ఇది చెల్లుబాటు అయ్యే ఫ్రెండ్ ట్రాకర్ రిపోజిటరీగా కనిపించడం లేదు.",
+            "add_repo_failed_toast": "రిపోజిటరీని జోడించడంలో విఫలమైంది: {message}",
+            "add_button": "జోడించు",
+            "no_repos_added": "రిపోజిటరీలు జోడించబడలేదు",
+            "remove_button": "తొలగించండి",
+            "remove_repo_dialog_title": "రిపోజిటరీని తొలగించండి",
+            "remove_repo_dialog_text": "మీరు ఖచ్చితంగా ఈ రిపోజిటరీని తొలగించాలనుకుంటున్నారా?"
+        },
+        "navigation": {
+            "tracker_tab_label": "ట్రాకర్",
+            "customize_bottom_bar_title": "దిగువ పట్టీని అనుకూలీకరించండి",
+            "customize_bottom_bar_subtitle": "ట్యాబ్‌లను క్రమాన్ని మార్చండి, జోడించండి లేదా తొలగించండి. గరిష్టంగా ఐదు.",
+            "shown_tabs_title": "చూపిన ట్యాబ్‌లు",
+            "no_tabs_selected_text": "ట్యాబ్‌లు ఏవీ ఎంచుకోవు",
+            "available_tabs_title": "అందుబాటులో ఉన్న ట్యాబ్‌లు",
+            "reset_button": "రీసెట్",
+            "done_button": "పూర్తయింది"
+        },
+        "scripting": {
+            "script_already_installed": "స్క్రిప్ట్ ఇప్పటికే ఇన్‌స్టాల్ చేయబడింది!",
+                "downloading_script": "స్క్రిప్ట్‌ను డౌన్‌లోడ్ చేస్తోంది...",
+            "script_downloaded": "స్క్రిప్ట్ {name} డౌన్‌లోడ్ చేయబడింది!",
+            "download_script_failed": "స్క్రిప్ట్‌ను డౌన్‌లోడ్ చేయడంలో విఫలమైంది. మరిన్ని వివరాల కోసం లాగ్‌లను తనిఖీ చేయండి",
+            "import_script_from_url_title": "URL నుండి స్క్రిప్ట్ దిగుమతి",
+            "import_script_warning": "హెచ్చరిక: దిగుమతి చేసుకున్న స్క్రిప్ట్‌లు మీ పరికరానికి హానికరం. విశ్వసనీయ వనరుల నుండి స్క్రిప్ట్‌లను మాత్రమే దిగుమతి చేయండి.",
+            "enter_url_label": "ఇక్కడ URL ను నమోదు చేయండి:",
+            "script_imported": "స్క్రిప్ట్ {name} దిగుమతి చేయబడింది!",
+            "import_failed": "స్క్రిప్ట్‌ను దిగుమతి చేయడంలో విఫలమైంది. {message}. మరిన్ని వివరాల కోసం లాగ్‌లను తనిఖీ చేయండి",
+            "import_button": "దిగుమతి",
+                "update_module_button": "మాడ్యూల్‌ను నవీకరించండి",
+                "updating_script": "{name} స్క్రిప్ట్‌ను నవీకరిస్తోంది...",
+            "module_not_found": "మాడ్యూల్ కనుగొనబడలేదు",
+                "updated_script": "{name} ను {version} సంస్కరణకు నవీకరించబడింది",
+            "update_module_failed": "మాడ్యూల్‌ను నవీకరించడంలో విఫలమైంది. మరిన్ని వివరాల కోసం లాగ్‌లను తనిఖీ చేయండి",
+            "edit_module_button": "మాడ్యూల్‌ను సవరించండి",
+            "open_module_failed": "మాడ్యూల్ ఫైల్‌ను తెరవడంలో విఫలమైంది. మరిన్ని వివరాల కోసం లాగ్‌లను తనిఖీ చేయండి",
+            "clear_module_data_button": "మాడ్యూల్ డేటాను క్లియర్ చేయండి",
+            "module_data_cleared": "మాడ్యూల్ డేటా క్లియర్ చేయబడింది!",
+            "clear_module_data_failed": "మాడ్యూల్ డేటాను క్లియర్ చేయడంలో విఫలమైంది. మరిన్ని వివరాల కోసం లాగ్‌లను తనిఖీ చేయండి",
+            "delete_module_button": "మాడ్యూల్‌ను తొలగించండి",
+                "deleted_script": "తొలగించబడిన స్క్రిప్ట్ {name}!",
+            "delete_module_failed": "మాడ్యూల్‌ను తొలగించడంలో విఫలమైంది. మరిన్ని వివరాల కోసం లాగ్‌లను తనిఖీ చేయండి",
+            "actions_title": "చర్యలు",
+            "no_description": "వివరణ లేదు",
+            "update_available": "నవీకరణ అందుబాటులో ఉంది: {version}",
+            "actions_button": "చర్యలు",
+                "loaded_script": "లోడ్ చేయబడిన స్క్రిప్ట్ {name}",
+                "unloaded_script": "అన్‌లోడ్ చేయబడిన స్క్రిప్ట్ {name}",
+            "enable_script_failed": "స్క్రిప్ట్‌ను ప్రారంభించడంలో విఫలమైంది. మరిన్ని వివరాల కోసం లాగ్‌లను తనిఖీ చేయండి",
+            "disable_script_failed": "స్క్రిప్ట్‌ను నిలిపివేయడంలో విఫలమైంది. మరిన్ని వివరాల కోసం లాగ్‌లను తనిఖీ చేయండి",
+            "select_scripts_folder_toast": "దయచేసి మీ స్క్రిప్ట్స్ ఫోల్డర్‌ను ఎంచుకోండి!",
+            "manage_repos_button": "రెపోలను నిర్వహించండి",
+            "import_from_url_button": "URL నుండి దిగుమతి",
+                "open_scripts_folder_button": "స్క్రిప్ట్స్ ఫోల్డర్‌ను తెరవండి",
+                "no_settings_for_module": "ఈ మాడ్యూల్‌కు సెట్టింగ్‌లు లేవు",
+            "installed_scripts_tab": "ఇన్‌స్టాల్ చేసిన స్క్రిప్ట్‌లు",
+            "catalog_tab": "కేటలాగ్",
+            "no_scripts_folder_selected_title": "స్క్రిప్ట్స్ ఫోల్డర్ ఎంచుకోలేదు",
+            "select_folder_button": "ఫోల్డర్ ఎంచుకోండి",
+            "no_scripts_found_title": "స్క్రిప్ట్‌లు కనుగొనబడలేదు.",
+            "use_catalog_to_add_scripts": "స్క్రిప్ట్‌లను జోడించడానికి కేటలాగ్ టాబ్‌ను ఉపయోగించండి!",
+            "ok_button_timeout": "సరే ({timeout})",
+            "documentation_button": "డాక్యుమెంటేషన్",
+            "catalog": {
+                "script_already_installed": "స్క్రిప్ట్ ఇప్పటికే ఇన్‌స్టాల్ చేయబడింది!",
+                "download_failed": "డౌన్‌లోడ్ విఫలమైంది: {code}",
+                "script_downloaded": "స్క్రిప్ట్ డౌన్‌లోడ్ చేయబడింది!",
+                "could_not_create_file": "ఫైల్‌ను సృష్టించలేకపోయారు.",
+                "no_scripts_folder_selected": "స్క్రిప్ట్స్ ఫోల్డర్ ఎంచుకోలేదు.",
+                "error": "లోపం: {message}",
+                "no_repos_added": "రిపోజిటరీలు ఏవీ జోడించబడలేదు.",
+                "repo_list_info": "ఇక్కడ మీరు రెపోల జాబితాను కనుగొనవచ్చు:",
+                "link_text": "లింక్",
+                "no_scripts_available": "ఏ రెపో నుండి స్క్రిప్ట్‌లు అందుబాటులో లేవు.",
+                "by_author": "{author} ద్వారా",
+                "version": "వెర్షన్: {version}",
+                    "installed_button": "ఇన్‌స్టాల్ చేయబడింది",
+                "download_button": "డౌన్‌లోడ్"
+            },
+            "repos": {
+                "invalid_repo_title": "చెల్లని రిపోజిటరీ",
+                "add_repo_button": "రిపోజిటరీని జోడించండి",
+                "add_repo_dialog_title": "రిపోజిటరీ URL జోడించండి",
+                "repo_url_label": "రిపోజిటరీ url",
+                "repo_added_toast": "రిపోజిటరీ విజయవంతంగా జోడించబడింది!",
+                    "invalid_repo_error": "ఇది చెల్లుబాటు అయ్యే స్క్రిప్ట్ రిపోజిటరీగా కనిపించడం లేదు.",
+                "add_repo_failed_toast": "రిపోజిటరీని జోడించడంలో విఫలమైంది: {message}",
+                "add_button": "జోడించు",
+                "no_repos_added": "రిపోజిటరీలు జోడించబడలేదు",
+                "remove_button": "తొలగించండి",
+                "remove_repo_dialog_title": "రిపోజిటరీని తొలగించండి",
+                "remove_repo_dialog_text": "మీరు ఖచ్చితంగా ఈ రిపోజిటరీని తొలగించాలనుకుంటున్నారా?"
+            }
+        },
+        "features": {
+            "config_import": {
+                "title": "దిగుమతిని నిర్ధారించండి",
+                "back_button_description": "తిరిగి",
+                "config_imported_toast": "కాన్ఫిగర్ దిగుమతి!",
+                "confirm_button": "నిర్ధారించండి",
+                "expand_button_description": "విస్తరించండి",
+                "enable_feature": "లక్షణాన్ని ప్రారంభించండి",
+                "enabled": "ప్రారంభించబడింది",
+                "disabled": "నిలిపివేయబడింది"
+            },
+            "config_export": {
+                "title": "ఎగుమతి సారాంశం",
+                "back_button_description": "తిరిగి",
+                "save_button": "సేవ్",
+                "expand_button_description": "విస్తరించండి",
+                "enable_feature": "లక్షణాన్ని ప్రారంభించండి",
+                "enabled": "ప్రారంభించబడింది",
+                "disabled": "నిలిపివేయబడింది"
+            }
+        },
+        "manage_repos": {
+            "title": "{featureName} రిపోజిటరీలను నిర్వహించండి",
+            "add_repo_button": "రిపోజిటరీని జోడించండి",
+            "add_repo_dialog_title": "రిపోజిటరీ URL జోడించండి",
+            "repo_url_label": "రిపోజిటరీ url",
+            "repo_added_successfully": "రిపోజిటరీ విజయవంతంగా జోడించబడింది!",
+            "add_repo_failed": "రిపోజిటరీని జోడించడంలో విఫలమైంది: {message}",
+            "add_button": "జోడించు",
+            "no_repos_added": "రిపోజిటరీలు ఏవీ జోడించబడలేదు",
+            "remove_button": "తొలగించండి"
+        }
+    },
+    "rules": {
+        "toasts": {
+            "enabled": "{ruleName} ప్రారంభించబడింది",
+            "disabled": "{ruleName} నిలిపివేయబడింది"
+        },
+        "modes": {
+            "blacklist": "బ్లాక్‌లిస్ట్ మోడ్",
+            "whitelist": "వైట్‌లిస్ట్ మోడ్"
+        },
+        "properties": {
+            "auto_download": {
+                "name": "ఆటో డౌన్‌లోడ్",
+                "description": "స్నాప్‌లను చూసేటప్పుడు స్వయంచాలకంగా డౌన్‌లోడ్ చేయండి",
+                "options": {
+                    "blacklist": "ఆటో డౌన్‌లోడ్ నుండి మినహాయించండి",
+                    "whitelist": "ఆటో డౌన్‌లోడ్"
+                }
+            },
+            "stealth": {
+                "name": "స్టీల్త్ మోడ్",
+                "description": "మీరు వారి స్నాప్‌లు/చాట్‌లు మరియు సంభాషణలను తెరిచారని తెలుసుకోకుండా ఎవరినైనా నిరోధిస్తుంది",
+                "options": {
+                    "blacklist": "స్టీల్త్ మోడ్ నుండి మినహాయించండి",
+                    "whitelist": "స్టీల్త్ మోడ్"
+                }
+            },
+            "auto_save": {
+                "name": "ఆటో సేవ్",
+                "description": "చాట్ సందేశాలను చూసేటప్పుడు వాటిని సేవ్ చేస్తుంది",
+                "options": {
+                    "blacklist": "ఆటో సేవ్ నుండి మినహాయించండి",
+                    "whitelist": "ఆటో సేవ్"
+                }
+            },
+            "unsaveable_messages": {
+                "name": "సేవ్ చేయలేని సందేశాలు",
+                "description": "ఇతర వ్యక్తుల ద్వారా సందేశాలను చాట్‌లో సేవ్ చేయకుండా నిరోధిస్తుంది",
+                "options": {
+                    "blacklist": "సేవ్ చేయలేని సందేశాల నుండి మినహాయించండి",
+                    "whitelist": "సేవ్ చేయలేని సందేశాలు"
+                }
+            },
+            "auto_open_snaps": {
+                "name": "ఆటో ఓపెన్ స్నాప్స్",
+                "description": "వాటిని స్వీకరించేటప్పుడు స్వయంచాలకంగా స్నాప్‌లను తెరుస్తుంది",
+                "options": {
+                    "blacklist": "ఆటో ఓపెన్ స్నాప్‌ల నుండి మినహాయించండి",
+                    "whitelist": "ఆటో ఓపెన్ స్నాప్స్"
+                }
+            },
+            "hide_friend_feed": {
+                "name": "ఫ్రెండ్ ఫీడ్ నుండి దాచండి"
+            },
+            "e2e_encryption": {
+                "name": "E2E గుప్తీకరణను ఉపయోగించండి"
+            },
+            "pin_conversation": {
+                "name": "సంభాషణను పిన్ చేయండి"
+            },
+            "exclude_message_logger": {
+                "name": "సందేశ లాగర్ నుండి మినహాయించండి"
+            }
+        }
+    },
+    "actions": {
+        "clean_snapchat_cache": {
+            "name": "స్నాప్‌చాట్ కాష్‌ను శుభ్రపరచండి",
+            "description": "స్నాప్‌చాట్ కాష్‌ను శుభ్రపరుస్తుంది"
+        },
+        "manage_friend_list": {
+            "name": "స్నేహితుల జాబితాను నిర్వహించండి",
+            "description": "బ్యాకప్ చేసేటప్పుడు మీ స్నేహితుల జాబితాను దిగుమతి/ఎగుమతి చేయండి"
+        },
+        "export_chat_messages": {
+            "name": "చాట్ సందేశాలను ఎగుమతి చేయండి",
+            "description": "సంభాషణ సందేశాలను JSON/HTML/TXT ఫైల్‌లోకి ఎగుమతి చేస్తుంది"
+        },
+        "export_memories": {
+            "name": "జ్ఞాపకాలను ఎగుమతి చేయండి",
+            "description": "జ్ఞాపకాలను జిప్ ఫైల్‌లోకి ఎగుమతి చేస్తుంది"
+        },
+        "bulk_messaging_action": {
+            "name": "బల్క్ మెసేజింగ్ చర్య",
+            "description": "స్నేహితులను తొలగించడం లేదా సంభాషణలను భారీగా తొలగించడం వంటి కార్యకలాపాలను నిర్వహిస్తుంది"
+        },
+        "regen_mappings": {
+            "name": "మ్యాపింగ్‌లను పునరుత్పత్తి చేయండి",
+            "description": "మానవీయంగా మ్యాపింగ్‌లను పునరుత్పత్తి చేయండి"
+        },
+        "change_language": {
+            "name": "భాష మార్చండి",
+            "description": "పర్ఫెక్ట్స్నాప్ యొక్క భాషను మార్చండి"
+        },
+        "file_imports": {
+            "name": "ఫైల్ దిగుమతులు",
+            "description": "స్నాప్‌చాట్‌లో ఉపయోగం కోసం ఫైల్‌లను దిగుమతి చేయండి"
+        },
+        "friend_tracker": {
+            "name": "ఫ్రెండ్ ట్రాకర్",
+            "description": "స్నాప్‌చాట్‌లో మీ స్నేహితులను ట్రాక్ చేయండి"
+        },
+        "logger_history": {
+            "name": "లాగర్ చరిత్ర",
+            "description": "లాగిన్ చేసిన సందేశాల చరిత్రను చూడండి"
+        }
+    },
+    "features": {
+        "notices": {
+            "unstable": "⚠ అస్థిరమైనది",
+            "ban_risk": "⚠ ఈ లక్షణం నిషేధానికి దారితీయవచ్చు",
+            "internal_behavior": "⚠ ఇది స్నాప్‌చాట్ యొక్క అంతర్గత ప్రవర్తనను విచ్ఛిన్నం చేస్తుంది"
+        },
+        "properties": {
+            "downloader": {
+                "name": "డౌన్‌లోడ్",
+                "description": "స్నాప్‌చాట్ మీడియాను డౌన్‌లోడ్ చేయండి",
+                "properties": {
+                    "save_folder": {
+                        "name": "ఫోల్డర్‌ను సేవ్ చేయండి",
+                        "description": "అన్ని మీడియా డౌన్‌లోడ్ చేయవలసిన డైరెక్టరీని ఎంచుకోండి"
+                    },
+                    "auto_download_sources": {
+                        "name": "ఆటో డౌన్‌లోడ్ మూలాలు",
+                        "description": "స్వయంచాలకంగా డౌన్‌లోడ్ చేయడానికి మూలాలను ఎంచుకోండి"
+                    },
+                    "prevent_self_auto_download": {
+                        "name": "స్వీయ ఆటో డౌన్‌లోడ్‌ను నిరోధించండి",
+                        "description": "మీ స్వంత స్నాప్‌లను స్వయంచాలకంగా డౌన్‌లోడ్ చేయకుండా నిరోధిస్తుంది"
+                    },
+                    "path_format": {
+                        "name": "పాత్ ఫార్మాట్",
+                        "description": "ఫైల్ పాత్ ఆకృతిని పేర్కొనండి"
+                    },
+                    "allow_duplicate": {
+                        "name": "నకిలీని అనుమతించండి",
+                        "description": "ఒకే మీడియాను అనేకసార్లు డౌన్‌లోడ్ చేయడానికి అనుమతిస్తుంది"
+                    },
+                    "merge_overlays": {
+                        "name": "అతివ్యాప్తులను విలీనం చేయండి",
+                        "description": "స్నాప్ యొక్క టెక్స్ట్ మరియు మీడియాను ఒకే ఫైల్‌లో మిళితం చేస్తుంది"
+                    },
+                    "force_image_format": {
+                        "name": "చిత్ర ఆకృతిని బలవంతం చేయండి",
+                        "description": "చిత్రాలను పేర్కొన్న ఆకృతిలో సేవ్ చేయమని బలవంతం చేస్తుంది"
+                    },
+                    "force_voice_note_format": {
+                        "name": "వాయిస్ నోట్ ఫార్మాట్‌ను బలవంతం చేయండి",
+                        "description": "వాయిస్ నోట్స్‌ను పేర్కొన్న ఆకృతిలో సేవ్ చేయమని బలవంతం చేస్తుంది"
+                    },
+                    "auto_download_voice_notes": {
+                        "name": "ఆటో డౌన్‌లోడ్ వాయిస్ నోట్స్",
+                        "description": "వాయిస్ నోట్లను ప్లే చేస్తున్నప్పుడు స్వయంచాలకంగా డౌన్‌లోడ్ చేస్తుంది"
+                    },
+                    "download_profile_pictures": {
+                        "name": "ప్రొఫైల్ చిత్రాలను డౌన్‌లోడ్ చేయండి",
+                        "description": "ప్రొఫైల్ పేజీ నుండి ప్రొఫైల్ చిత్రాలను డౌన్‌లోడ్ చేయడానికి మిమ్మల్ని అనుమతిస్తుంది"
+                    },
+                    "opera_download_button": {
+                        "name": "ఒపెరా డౌన్‌లోడ్ బటన్",
+                        "description": "స్నాప్‌ను చూసేటప్పుడు కుడి ఎగువ మూలలో డౌన్‌లోడ్ బటన్‌ను జోడిస్తుంది.\nబటన్‌లపై ఎక్కువసేపు నొక్కితే డౌన్‌లోడ్ బలవంతం అవుతుంది"
+                    },
+                    "download_context_menu": {
+                        "name": "కాంటెక్స్ట్ మెనుని డౌన్‌లోడ్ చేయండి",
+                        "description": "సందర్భ మెనుని ఉపయోగించి సంభాషణ లేదా కథ నుండి సందేశాలను డౌన్‌లోడ్/ప్రివ్యూ చేయడానికి మిమ్మల్ని అనుమతిస్తుంది.\nబటన్‌లపై ఎక్కువసేపు నొక్కితే డౌన్‌లోడ్ బలవంతం అవుతుంది"
+                    },
+                    "ffmpeg_options": {
+                        "name": "FFmpeg ఎంపికలు",
+                        "description": "అదనపు FFmpeg ఎంపికలను పేర్కొనండి",
+                        "properties": {
+                            "threads": {
+                                "name": "థ్రెడ్‌లు",
+                                "description": "ఉపయోగించాల్సిన థ్రెడ్‌ల మొత్తం"
+                            },
+                            "preset": {
+                                "name": "ప్రీసెట్",
+                                "description": "మార్పిడి వేగాన్ని సెట్ చేయండి"
+                            },
+                            "constant_rate_factor": {
+                                "name": "స్థిరమైన రేటు కారకం",
+                                "description": "వీడియో ఎన్‌కోడర్ కోసం స్థిరమైన రేటు కారకాన్ని సెట్ చేయండి\nlibx264 కోసం 0 నుండి 51 వరకు"
+                            },
+                            "video_bitrate": {
+                                "name": "వీడియో బిట్రేట్",
+                                "description": "వీడియో బిట్రేట్ (kbps) ను సెట్ చేయండి"
+                            },
+                            "audio_bitrate": {
+                                "name": "ఆడియో బిట్రేట్",
+                                "description": "ఆడియో బిట్రేట్ (kbps) ను సెట్ చేయండి"
+                            },
+                            "custom_video_codec": {
+                                "name": "అనుకూల వీడియో కోడెక్",
+                                "description": "కస్టమ్ వీడియో కోడెక్‌ను సెట్ చేయండి (ఉదా. libx264)"
+                            },
+                            "custom_audio_codec": {
+                                "name": "కస్టమ్ ఆడియో కోడెక్",
+                                "description": "కస్టమ్ ఆడియో కోడెక్‌ను సెట్ చేయండి (ఉదా. aac)"
+                            }
+                        }
+                    },
+                    "logging": {
+                        "name": "లాగింగ్",
+                        "description": "మీడియా డౌన్‌లోడ్ చేస్తున్నప్పుడు టోస్ట్ చూపిస్తుంది"
+                    },
+                    "custom_path_format": {
+                        "name": "కస్టమ్ పాత్ ఫార్మాట్",
+                        "description": "డౌన్‌లోడ్ చేసిన మీడియా కోసం అనుకూల మార్గం ఆకృతిని పేర్కొనండి\n\nఅందుబాటులో ఉన్న వేరియబుల్స్:\n - %username%\n - %source%\n - %hash%\n - %date_time%"
+                    }
+                }
+            },
+            "user_interface": {
+                "name": "వినియోగదారు ఇంటర్‌ఫేస్",
+                "description": "స్నాప్‌చాట్ యొక్క రూపాన్ని మరియు అనుభూతిని మార్చండి",
+                "properties": {
+                    "enable_app_appearance": {
+                        "name": "అనువర్తన ప్రదర్శన సెట్టింగ్‌లను ప్రారంభించండి",
+                        "description": "దాచిన అనువర్తన ప్రదర్శన సెట్టింగ్‌ను ప్రారంభిస్తుంది\nకొత్త స్నాప్‌చాట్ సంస్కరణల్లో అవసరం లేదు"
+                    },
+                    "friend_feed_message_preview": {
+                        "name": "ఫ్రెండ్ ఫీడ్ సందేశ ప్రివ్యూ",
+                        "description": "ఫ్రెండ్ ఫీడ్‌లోని చివరి సందేశాల ప్రివ్యూను చూపిస్తుంది",
+                        "properties": {
+                            "amount": {
+                                "name": "మొత్తం",
+                                "description": "ప్రివ్యూ చేయడానికి సందేశాల మొత్తం"
+                            }
+                        }
+                    },
+                    "snap_preview": {
+                        "name": "స్నాప్ ప్రివ్యూ",
+                        "description": "చాట్‌లో కనిపించని స్నాప్‌ల పక్కన ఒక చిన్న ప్రివ్యూను ప్రదర్శిస్తుంది"
+                    },
+                    "bootstrap_override": {
+                        "name": "బూట్‌స్ట్రాప్ ఓవర్‌రైడ్",
+                        "description": "వినియోగదారు ఇంటర్‌ఫేస్ బూట్‌స్ట్రాప్ సెట్టింగ్‌లను భర్తీ చేస్తుంది",
+                        "properties": {
+                            "app_appearance": {
+                                "name": "అనువర్తన ప్రదర్శన",
+                                "description": "నిరంతర అనువర్తన రూపాన్ని సెట్ చేస్తుంది"
+                            },
+                            "home_tab": {
+                                "name": "హోమ్ టాబ్",
+                                "description": "స్నాప్‌చాట్ తెరిచినప్పుడు స్టార్టప్ టాబ్‌ను అధిగమిస్తుంది"
+                            }
+                        }
+                    },
+                    "force_amoled_theme": {
+                        "name": "అమోలెడ్ డార్క్ మోడ్",
+                        "description": "చీకటి థీమ్ కోసం నిజమైన నల్ల నేపథ్యాన్ని ఉపయోగిస్తుంది"
+                    },
+                    "map_friend_nametags": {
+                        "name": "మెరుగైన ఫ్రెండ్ మ్యాప్ నేమ్‌ట్యాగ్‌లు",
+                        "description": "స్నాప్‌మ్యాప్‌లో స్నేహితుల నేమ్‌ట్యాగ్‌లను మెరుగుపరుస్తుంది"
+                    },
+                    "prevent_message_list_auto_scroll": {
+                        "name": "సందేశ జాబితా ఆటో స్క్రోల్‌ను నిరోధించండి",
+                        "description": "సందేశాన్ని పంపేటప్పుడు/స్వీకరించేటప్పుడు సందేశ జాబితాను దిగువకు స్క్రోలింగ్ చేయకుండా నిరోధిస్తుంది"
+                    },
+                    "streak_expiration_info": {
+                        "name": "స్ట్రీక్ గడువు సమాచారాన్ని చూపించు",
+                        "description": "స్ట్రీక్స్ కౌంటర్ పక్కన స్ట్రీక్ గడువు టైమర్ చూపిస్తుంది"
+                    },
+                    "hide_friend_feed_entry": {
+                        "name": "ఫ్రెండ్ ఫీడ్ ఎంట్రీని దాచండి",
+                        "description": "ఫ్రెండ్ ఫీడ్ నుండి ఒక నిర్దిష్ట స్నేహితుడిని దాచిపెడుతుంది\nఈ లక్షణాన్ని నిర్వహించడానికి సోషల్ టాబ్‌ను ఉపయోగించండి"
+                    },
+                    "hide_streak_restore": {
+                        "name": "స్ట్రీక్ పునరుద్ధరణను దాచు",
+                        "description": "ఫ్రెండ్ ఫీడ్‌లోని పునరుద్ధరణ బటన్‌ను దాచిపెడుతుంది"
+                    },
+                    "hide_quick_add_suggestions": {
+                        "name": "శీఘ్ర జోడించు సూచనలను దాచండి",
+                        "description": "ఫ్రెండ్ సూచనలను శీఘ్రంగా జోడించుటను తొలగిస్తుంది"
+                    },
+                    "hide_story_suggestions": {
+                        "name": "కథ సూచనలను దాచండి",
+                        "description": "కథల పేజీ నుండి సూచనలను తొలగిస్తుంది"
+                    },
+                    "hide_ui_components": {
+                        "name": "UI భాగాలను దాచండి",
+                        "description": "దాచడానికి ఏ UI భాగాలను ఎంచుకోండి"
+                    },
+                    "opera_media_quick_info": {
+                        "name": "ఒపెరా మీడియా శీఘ్ర సమాచారం",
+                        "description": "ఒపెరా వ్యూయర్ కాంటెక్స్ట్ మెనులో సృష్టి తేదీ వంటి మీడియా యొక్క ఉపయోగకరమైన సమాచారాన్ని చూపిస్తుంది"
+                    },
+                    "old_bitmoji_selfie": {
+                        "name": "పాత బిట్‌మోజీ సెల్ఫీ",
+                        "description": "పాత స్నాప్‌చాట్ సంస్కరణల నుండి బిట్‌మోజీ సెల్ఫీలను తిరిగి తెస్తుంది"
+                    },
+                    "disable_spotlight": {
+                        "name": "స్పాట్‌లైట్‌ను నిలిపివేయండి",
+                        "description": "స్పాట్‌లైట్ పేజీని నిలిపివేస్తుంది"
+                    },
+                    "friend_feed_menu_buttons": {
+                        "name": "స్నేహితుడు ఫీడ్ మెను బటన్లు",
+                        "description": "ఫ్రెండ్ ఫీడ్ మెనులో ఏ బటన్లను చూపించాలో ఎంచుకోండి"
+                    },
+                    "auto_close_friend_feed_menu": {
+                        "name": "ఆటో క్లోజ్ ఫ్రెండ్ ఫీడ్ మెను",
+                        "description": "సెట్టింగ్ బటన్‌ను నొక్కిన తర్వాత ఫ్రెండ్ ఫీడ్ మెనుని స్వయంచాలకంగా మూసివేస్తుంది"
+                    },
+                    "vertical_story_viewer": {
+                        "name": "నిలువు కథ వీక్షకుడు",
+                        "description": "అన్ని కథలకు నిలువు కథ వీక్షకుడిని ప్రారంభిస్తుంది"
+                    },
+                    "enable_friend_feed_menu_bar": {
+                        "name": "స్నేహితుడు ఫీడ్ మెను బార్",
+                        "description": "కొత్త స్నేహితుడు ఫీడ్ మెను బార్‌ను ప్రారంభిస్తుంది"
+                    },
+                    "message_indicators": {
+                        "name": "సందేశ సూచికలు",
+                        "description": "సందేశాలకు నిర్దిష్ట సూచిక చిహ్నాలను జోడిస్తుంది\nగమనిక: సూచికలు 100% ఖచ్చితమైనవి కాకపోవచ్చు"
+                    },
+                    "stealth_mode_indicator": {
+                        "name": "స్టీల్త్ మోడ్ సూచిక",
+                        "description": "స్టీల్త్ మోడ్‌లో సంభాషణల పక్కన 👻 ఎమోజిని జోడిస్తుంది"
+                    },
+                    "edit_text_override": {
+                        "name": "టెక్స్ట్ ఓవర్‌రైడ్‌ను సవరించండి",
+                        "description": "టెక్స్ట్ ఫీల్డ్ ప్రవర్తనను అధిగమిస్తుంది"
+                    },
+                    "prevent_forced_keyboard": {
+                        "name": "బలవంతపు కీబోర్డ్‌ను నిరోధించండి",
+                        "description": "మీరు సంభాషణను తెరిచినప్పుడు స్నాప్‌చాట్ స్వయంచాలకంగా కీబోర్డ్‌ను పాప్ చేయకుండా నిరోధిస్తుంది"
+                    },
+                    "settings_menu": {
+                        "name": "సెట్టింగుల మెను",
+                        "description": "మీరు పర్ఫెక్ట్స్నాప్ మెనుని తెరిచే విధానాన్ని మారుస్తుంది",
+                        "options": {
+                            "default": "డిఫాల్ట్",
+                            "legacy": "లెగసీ"
+                        }
+                    }
+                }
+            },
+            "messaging": {
+                "name": "మెసేజింగ్",
+                "description": "మీరు స్నేహితులతో ఎలా వ్యవహరిస్తారో మార్చండి",
+                "properties": {
+                    "bypass_screenshot_detection": {
+                        "name": "బైపాస్ స్క్రీన్‌షాట్ డిటెక్షన్",
+                        "description": "మీరు స్క్రీన్‌షాట్ తీసుకున్నప్పుడు స్నాప్‌చాట్ గుర్తించకుండా నిరోధిస్తుంది"
+                    },
+                    "anonymous_story_viewing": {
+                        "name": "అనామక కథ వీక్షణ",
+                        "description": "మీరు వారి కథను చూశారని ఎవరికీ తెలియకుండా నిరోధిస్తుంది"
+                    },
+                    "prevent_story_rewatch_indicator": {
+                        "name": "స్టోరీ రీవాచ్ సూచికను నిరోధించండి",
+                        "description": "మీరు వారి కథను తిరిగి చూశారని ఎవరికీ తెలియకుండా నిరోధిస్తుంది"
+                    },
+                    "hide_peek_a_peek": {
+                        "name": "పీక్-ఎ-పీక్ దాచు",
+                        "description": "మీరు సగం చాట్‌లో స్వైప్ చేసినప్పుడు నోటిఫికేషన్ పంపకుండా నిరోధిస్తుంది"
+                    },
+                    "hide_bitmoji_presence": {
+                        "name": "బిట్‌మోజీ ఉనికిని దాచండి",
+                        "description": "చాట్‌లో ఉన్నప్పుడు మీ బిట్‌మోజీ పాప్ అప్ చేయకుండా నిరోధిస్తుంది"
+                    },
+                    "hide_typing_notifications": {
+                        "name": "టైపింగ్ నోటిఫికేషన్లను దాచండి",
+                        "description": "మీరు సందేశం టైప్ చేస్తున్నారని ఎవరికీ తెలియకుండా నిరోధిస్తుంది"
+                    },
+                    "unlimited_snap_view_time": {
+                        "name": "అపరిమిత స్నాప్ వీక్షణ సమయం",
+                        "description": "స్నాప్‌లను చూడటానికి కాలపరిమితిని తొలగిస్తుంది"
+                    },
+                    "auto_mark_as_read": {
+                        "name": "ఆటో మార్క్ చదివినట్లుగా",
+                        "description": "స్టీల్త్ మోడ్ ప్రారంభించబడినప్పుడు కూడా స్వయంచాలకంగా సందేశాలు/స్నాప్‌లను చదివినట్లుగా మార్క్ చేస్తుంది"
+                    },
+                    "mark_snap_as_seen_button": {
+                        "name": "చూసినట్లుగా స్నాప్‌ను మార్క్ చేయండి",
+                        "description": "స్నాప్ చూసేటప్పుడు చూసినట్లుగా మార్క్ చేయడానికి ఒక బటన్‌ను జోడిస్తుంది.\nస్టీల్త్ మోడ్ ప్రారంభించబడినప్పుడు కూడా ఇది పని చేస్తుంది"
+                    },
+                    "skip_when_marking_as_seen": {
+                        "name": "చూసినట్లుగా మార్క్ చేసేటప్పుడు దాటవేయండి",
+                        "description": "చూసినట్లుగా స్నాప్‌ను మార్క్ చేసేటప్పుడు స్వయంచాలకంగా తదుపరి స్నాప్‌కు దాటవేస్తుంది.\nచూసినట్లుగా మార్క్ స్నాప్ బటన్‌తో కలిపి ఉపయోగించండి"
+                    },
+                    "loop_media_playback": {
+                        "name": "లూప్ మీడియా ప్లేబ్యాక్",
+                        "description": "స్నాప్ / కథలను చూసేటప్పుడు మీడియా ప్లేబ్యాక్‌ను లూప్ చేస్తుంది"
+                    },
+                    "disable_replay_in_ff": {
+                        "name": "FFలో రీప్లేను నిలిపివేయండి",
+                        "description": "ఫ్రెండ్ ఫీడ్ నుండి ఎక్కువసేపు నొక్కి రీప్లే చేసే సామర్థ్యాన్ని నిలిపివేస్తుంది"
+                    },
+                    "half_swipe_notifier": {
+                        "name": "సగం స్వైప్ నోటిఫైయర్",
+                        "description": "ఎవరైనా సగం సంభాషణలో స్వైప్ చేసినప్పుడు మీకు తెలియజేస్తుంది",
+                        "properties": {
+                            "min_duration": {
+                                "name": "కనీస వ్యవధి",
+                                "description": "సగం స్వైప్ యొక్క కనీస వ్యవధి (సెకన్లలో)"
+                            },
+                            "max_duration": {
+                                "name": "గరిష్ట వ్యవధి",
+                                "description": "సగం స్వైప్ యొక్క గరిష్ట వ్యవధి (సెకన్లలో)"
+                            }
+                        }
+                    },
+                    "call_start_confirmation": {
+                        "name": "కాల్ ప్రారంభ నిర్ధారణ",
+                        "description": "కాల్ ప్రారంభించేటప్పుడు నిర్ధారణ డైలాగ్‌ను చూపుతుంది"
+                    },
+                    "unlimited_conversation_pinning": {
+                        "name": "అపరిమిత సంభాషణ పిన్నింగ్",
+                        "description": "స్థానికంగా అపరిమిత సంభాషణలను పిన్ చేయడానికి మిమ్మల్ని అనుమతిస్తుంది"
+                    },
+                    "disable_snap_mode_restrictions": {
+                        "name": "స్నాప్ మోడ్ పరిమితులను నిలిపివేయండి",
+                        "description": "పరిమితులు లేకుండా స్వీయ-వినాశన స్నాప్‌లను చూడటానికి మిమ్మల్ని అనుమతిస్తుంది"
+                    },
+                    "prevent_message_sending": {
+                        "name": "సందేశం పంపడాన్ని నిరోధించండి",
+                        "description": "కొన్ని రకాల సందేశాలను పంపడాన్ని నిరోధిస్తుంది"
+                    },
+                    "friend_mutation_notifier": {
+                        "name": "ఫ్రెండ్ మ్యుటేషన్ నోటిఫైయర్",
+                        "description": "స్నేహితుడి ప్రొఫైల్‌లో ఏదైనా మారినప్పుడు మీకు తెలియజేస్తుంది"
+                    },
+                    "better_notifications": {
+                        "name": "మంచి నోటిఫికేషన్‌లు",
+                        "description": "అందుకున్న నోటిఫికేషన్లలో మరింత సమాచారాన్ని జోడిస్తుంది",
+                        "properties": {
+                            "group_notifications": {
+                                "name": "సమూహ నోటిఫికేషన్‌లు",
+                                "description": "సమూహ నోటిఫికేషన్‌లను ఒకేదానిలో సమూహపరుస్తుంది"
+                            },
+                            "chat_preview": {
+                                "name": "చాట్ ప్రివ్యూ",
+                                "description": "నోటిఫికేషన్‌లో అందుకున్న సందేశాల ప్రివ్యూను చూపిస్తుంది"
+                            },
+                            "media_preview": {
+                                "name": "మీడియా ప్రివ్యూ",
+                                "description": "నోటిఫికేషన్‌లో ఎంచుకున్న మీడియా రకాల ప్రివ్యూను చూపిస్తుంది"
+                            },
+                            "media_caption": {
+                                "name": "మీడియా శీర్షిక",
+                                "description": "నోటిఫికేషన్‌లో మీడియా యొక్క జతచేయబడిన శీర్షికను చూపుతుంది"
+                            },
+                            "stacked_media_messages": {
+                                "name": "పేర్చబడిన మీడియా సందేశాలు",
+                                "description": "బహుళ మీడియా సందేశాలను ఒక టెక్స్ట్ నోటిఫికేషన్‌గా మిళితం చేస్తుంది. చాట్ ప్రివ్యూతో కలిపి ఉపయోగించండి"
+                            },
+                            "friend_add_source": {
+                                "name": "స్నేహితుడిని జోడించు మూలం",
+                                "description": "నోటిఫికేషన్‌లో స్నేహితుడి అభ్యర్థన యొక్క మూలాన్ని చూపిస్తుంది"
+                            },
+                            "reply_button": {
+                                "name": "ప్రత్యుత్తర బటన్",
+                                "description": "నోటిఫికేషన్‌కు ప్రత్యుత్తర బటన్‌ను జోడిస్తుంది"
+                            },
+                            "smart_replies": {
+                                "name": "స్మార్ట్ ప్రత్యుత్తరాలు",
+                                "description": "నోటిఫికేషన్‌లకు (ఆండ్రాయిడ్ 10+) సూచించిన ప్రత్యుత్తరాలను జోడిస్తుంది. ప్రత్యుత్తర బటన్‌తో కలిపి ఉపయోగించండి"
+                            },
+                            "download_button": {
+                                "name": "డౌన్‌లోడ్ బటన్",
+                                "description": "నోటిఫికేషన్ నుండి మీడియాను డౌన్‌లోడ్ చేయడానికి మిమ్మల్ని అనుమతిస్తుంది"
+                            },
+                            "mark_as_read_button": {
+                                "name": "చదివినట్లుగా మార్క్ చేయండి",
+                                "description": "నోటిఫికేషన్ నుండి చదివినట్లు సందేశాన్ని మార్క్ చేయడానికి మిమ్మల్ని అనుమతిస్తుంది"
+                            },
+                            "mark_as_read_and_save_in_chat": {
+                                "name": "చాట్‌లో చదివినట్లుగా మార్క్ చేసి సేవ్ చేయండి",
+                                "description": "నోటిఫికేషన్‌కు చదివినట్లుగా మార్క్ చేసి చాట్ బటన్‌లో సేవ్ చేయండి"
+                            }
+                        }
+                    },
+                    "notification_blacklist": {
+                        "name": "నోటిఫికేషన్ బ్లాక్‌లిస్ట్",
+                        "description": "బ్లాక్ చేయవలసిన నోటిఫికేషన్లను ఎంచుకోండి"
+                    },
+                    "message_logger": {
+                        "name": "సందేశ లాగర్",
+                        "description": "సందేశాలను తొలగించకుండా నిరోధిస్తుంది",
+                        "properties": {
+                            "keep_my_own_messages": {
+                                "name": "నా స్వంత సందేశాలను ఉంచండి",
+                                "description": "మీ స్వంత సందేశాలను తొలగించకుండా నిరోధిస్తుంది"
+                            },
+                            "auto_purge": {
+                                "name": "ఆటో ప్రక్షాళన",
+                                "description": "పేర్కొన్న సమయం కంటే పాత కాష్ సందేశాలను స్వయంచాలకంగా తొలగిస్తుంది"
+                            },
+                            "message_filter": {
+                                "name": "సందేశ వడపోత",
+                                "description": "ఏ సందేశాలు లాగిన్ కావాలో ఎంచుకోండి (అన్ని సందేశాలకు ఖాళీ)"
+                            },
+                            "deleted_message_color": {
+                                "name": "తొలగించిన సందేశ రంగు",
+                                "description": "తొలగించిన సందేశాల రంగును సెట్ చేస్తుంది"
+                            }
+                        }
+                    },
+                    "auto_save_messages_in_conversations": {
+                        "name": "ఆటో సేవ్ సందేశాలు",
+                        "description": "సంభాషణలలో ప్రతి సందేశాన్ని స్వయంచాలకంగా సేవ్ చేస్తుంది"
+                    },
+                    "gallery_media_send_override": {
+                        "name": "గ్యాలరీ మీడియా ఓవర్‌రైడ్ పంపండి",
+                        "description": "గ్యాలరీ నుండి పంపేటప్పుడు మీడియా మూలాన్ని స్పూఫ్ చేస్తుంది"
+                    },
+                    "strip_media_metadata": {
+                        "name": "స్ట్రిప్ మీడియా మెటాడేటా",
+                        "description": "సందేశంగా పంపే ముందు మీడియా యొక్క మెటాడేటాను తొలగిస్తుంది"
+                    },
+                    "bypass_message_retention_policy": {
+                        "name": "బైపాస్ సందేశ నిలుపుదల విధానం",
+                        "description": "సందేశాలను చూసిన తర్వాత తొలగించకుండా నిరోధిస్తుంది"
+                    },
+                    "bypass_message_action_restrictions": {
+                        "name": "బైపాస్ సందేశ చర్య పరిమితులు",
+                        "description": "స్నాప్‌కు తెరవకుండా లేదా సేవ్ చేయలేని సందేశాన్ని సేవ్ చేయకుండా స్పందించడానికి మిమ్మల్ని అనుమతిస్తుంది"
+                    },
+                    "remove_groups_locked_status": {
+                        "name": "సమూహాలు లాక్ చేసిన స్థితిని తొలగించండి",
+                        "description": "తన్నబడిన తర్వాత సమూహ సమాచారాన్ని చూడటానికి మిమ్మల్ని అనుమతిస్తుంది"
+                    },
+                    "double_tap_chat_action": {
+                        "name": "డబుల్ ట్యాప్ చాట్ చర్య",
+                        "description": "చాట్‌లో సందేశాన్ని డబుల్ నొక్కేటప్పుడు అనుకూల చర్య చేస్తుంది"
+                    },
+                    "double_tap_chat_action_custom_emoji": {
+                        "name": "డబుల్ ట్యాప్ చాట్ చర్య కస్టమ్ ఎమోజి ప్రతిచర్య",
+                        "description": "డబుల్ ట్యాప్ చాట్ చర్య కోసం అనుకూల ఎమోజి ప్రతిచర్యను సెట్ చేస్తుంది"
+                    }
+                }
+            },
+            "global": {
+                "name": "గ్లోబల్",
+                "description": "గ్లోబల్ స్నాప్‌చాట్ సెట్టింగులను సర్దుబాటు చేయండి",
+                "properties": {
+                    "better_location": {
+                        "name": "మంచి స్థానం",
+                        "description": "స్నాప్‌చాట్ స్థానాన్ని పెంచుతుంది",
+                        "properties": {
+                            "spoof_location": {
+                                "name": "స్పూఫ్ స్థానం",
+                                "description": "మీ స్థానాన్ని పేర్కొన్నదానికి స్పూఫ్ చేస్తుంది"
+                            },
+                            "coordinates": {
+                                "name": "కోఆర్డినేట్లు",
+                                "description": "స్పూఫ్డ్ స్థానం యొక్క కోఆర్డినేట్లను సెట్ చేయండి"
+                            },
+                            "walk_radius": {
+                                "name": "నడక వ్యాసార్థం",
+                                "description": "యాదృచ్చికంగా ఈ వ్యాసార్థం (FT) లోపల నడవండి"
+                            },
+                            "always_update_location": {
+                                "name": "స్థానాన్ని ఎల్లప్పుడూ నవీకరించండి",
+                                "description": "GPS డేటా రాకపోయినా స్థానాన్ని నవీకరించడానికి స్నాప్‌చాట్‌ను బలవంతం చేయండి"
+                            },
+                            "suspend_location_updates": {
+                                "name": "స్థాన నవీకరణలను నిలిపివేయండి",
+                                "description": "మీ స్థానం నవీకరించబడకుండా నిరోధిస్తుంది"
+                            },
+                            "spoof_battery_level": {
+                                "name": "స్పూఫ్ బ్యాటరీ స్థాయి",
+                                "description": "మ్యాప్‌లో మీ పరికరం యొక్క బ్యాటరీ స్థాయిని స్పూఫ్ చేస్తుంది\nవిలువ 0 మరియు 100 మధ్య ఉండాలి"
+                            },
+                            "spoof_headphones": {
+                                "name": "స్పూఫ్ హెడ్‌ఫోన్‌లు",
+                                "description": "మ్యాప్‌లో సంగీతాన్ని వినే స్థితిని స్పూఫ్ చేస్తుంది"
+                            },
+                            "show_battery_level": {
+                                "name": "బ్యాటరీ స్థాయిని చూపించు",
+                                "description": "మ్యాప్‌లో మీ స్నేహితుల బ్యాటరీ స్థాయిని చూపిస్తుంది"
+                            }
+                        }
+                    },
+                    "snapchat_plus": {
+                        "name": "స్నాప్‌చాట్ ప్లస్",
+                        "description": "స్నాప్‌చాట్ ప్లస్ లక్షణాలను ప్రారంభిస్తుంది\nకొన్ని సర్వర్-సైడెడ్ లక్షణాలు పనిచేయకపోవచ్చు"
+                    },
+                    "media_upload_quality": {
+                        "name": "మీడియా అప్‌లోడ్ నాణ్యత",
+                        "description": "మీడియా అప్‌లోడ్ నాణ్యతను అధిగమిస్తుంది",
+                        "properties": {
+                            "force_video_upload_source_quality": {
+                                "name": "ఫోర్స్ వీడియో అప్‌లోడ్ మూలం నాణ్యత",
+                                "description": "వీడియోలను అప్‌లోడ్ చేసేటప్పుడు మూల నాణ్యతను ఉపయోగించడానికి స్నాప్‌చాట్‌ను బలవంతం చేస్తుంది\nఇది మీడియా నుండి మెటాడేటాను తొలగించకపోవచ్చని దయచేసి గమనించండి"
+                            },
+                            "disable_image_compression": {
+                                "name": "చిత్ర కుదింపును నిలిపివేయండి",
+                                "description": "మీడియాను అప్‌లోడ్ చేసేటప్పుడు చిత్ర కుదింపును నిలిపివేస్తుంది"
+                            },
+                            "custom_image_upload_format": {
+                                "name": "అనుకూల చిత్రం అప్‌లోడ్ ఫార్మాట్",
+                                "description": "కస్టమ్ ఇమేజ్ అప్‌లోడ్ ఫార్మాట్‌ను సెట్ చేస్తుంది\nఉత్తమ నాణ్యత కోసం లాస్‌లెస్ ఫార్మాట్ (పిఎన్‌జి వంటివి) ఎంచుకోండి"
+                            }
+                        }
+                    },
+                    "disable_confirmation_dialogs": {
+                        "name": "నిర్ధారణ డైలాగ్‌లను నిలిపివేయండి",
+                        "description": "ఎంచుకున్న చర్యలను స్వయంచాలకంగా నిర్ధారిస్తుంది"
+                    },
+                    "auto_updater": {
+                        "name": "ఆటో అప్‌డేటర్",
+                        "description": "క్రొత్త నవీకరణల కోసం స్వయంచాలకంగా తనిఖీ చేస్తుంది"
+                    },
+                    "disable_metrics": {
+                        "name": "కొలమానాలను నిలిపివేయండి",
+                        "description": "స్నాప్‌చాట్‌కు నిర్దిష్ట విశ్లేషణాత్మక డేటాను పంపే బ్లాక్‌లు"
+                    },
+                    "disable_story_sections": {
+                        "name": "కథ విభాగాలను నిలిపివేయండి",
+                        "description": "కథల పేజీ నుండి విభాగాలను తొలగిస్తుంది\nసరిగ్గా పనిచేయడానికి రిఫ్రెష్ అవసరం కావచ్చు"
+                    },
+                    "block_ads": {
+                        "name": "ప్రకటనలను బ్లాక్ చేయండి",
+                        "description": "ప్రకటనలను ప్రదర్శించకుండా నిరోధిస్తుంది"
+                    },
+                    "disable_custom_tabs": {
+                        "name": "కస్టమ్ ట్యాబ్‌లను నిలిపివేయండి",
+                        "description": "వెబ్ బ్రౌజర్‌లో కాకుండా మద్దతు ఉన్న అనువర్తనాల్లో లింక్‌లను తెరుస్తుంది"
+                    },
+                    "disable_permission_requests": {
+                        "name": "అనుమతి అభ్యర్థనలను నిలిపివేయండి",
+                        "description": "నిర్దిష్ట అనుమతులు అడగకుండా స్నాప్‌చాట్ నిరోధిస్తుంది"
+                    },
+                    "disable_memories_snap_feed": {
+                        "name": "జ్ఞాపకాలు స్నాప్ ఫీడ్ను నిలిపివేయండి",
+                        "description": "మీరు కెమెరాలో స్వైప్ చేసినప్పుడు స్నాప్‌చాట్ ఇటీవలి జ్ఞాపకాలను చూపించకుండా నిరోధిస్తుంది"
+                    },
+                    "spotlight_comments_username": {
+                        "name": "స్పాట్‌లైట్ వ్యాఖ్యలు వినియోగదారు పేరు",
+                        "description": "స్పాట్‌లైట్ వ్యాఖ్యలలో రచయిత వినియోగదారు పేరు చూపిస్తుంది"
+                    },
+                    "bypass_video_length_restriction": {
+                        "name": "వీడియో పొడవు పరిమితులను బైపాస్ చేయండి",
+                        "description": "సింగిల్: ఒకే వీడియోను పంపుతుంది\nస్ప్లిట్: ఎడిటింగ్ తర్వాత వీడియోలను విభజించండి"
+                    },
+                    "default_video_playback_rate": {
+                        "name": "డిఫాల్ట్ వీడియో ప్లేబ్యాక్ రేటు",
+                        "description": "వీడియోల ప్లేబ్యాక్ కోసం డిఫాల్ట్ వేగాన్ని సెట్ చేస్తుంది\nవిలువ 0.1 మరియు 4.0 మధ్య ఉండాలి"
+                    },
+                    "video_playback_rate_slider": {
+                        "name": "వీడియో ప్లేబ్యాక్ రేట్ స్లైడర్",
+                        "description": "వీడియో ప్లేబ్యాక్ రేటును మార్చడానికి ఒపెరా కాంటెక్స్ట్ మెనులో స్లైడర్‌ను జోడిస్తుంది\nగమనిక: మార్పులు తదుపరి వీడియోలకు మాత్రమే వర్తిస్తాయి"
+                    },
+                    "disable_google_play_dialogs": {
+                        "name": "గూగుల్ ప్లే సేవల డైలాగ్‌లను నిలిపివేయండి",
+                        "description": "గూగుల్ ప్లే సేవల లభ్యత డైలాగ్‌లు చూపబడకుండా నిరోధించండి"
+                    },
+                    "default_volume_controls": {
+                        "name": "డిఫాల్ట్ వాల్యూమ్ నియంత్రణలు",
+                        "description": "సిస్టమ్ వాల్యూమ్ నియంత్రణలను ఉపయోగించడానికి స్నాప్‌చాట్‌ను బలవంతం చేస్తుంది"
+                    },
+                    "disable_telecom_framework": {
+                        "name": "టెలికాం ఫ్రేమ్‌వర్క్‌ను నిలిపివేయండి",
+                        "description": "ఆండ్రాయిడ్ టెలికాం ఫ్రేమ్‌వర్క్‌ను ఉపయోగించకుండా స్నాప్‌చాట్ నిరోధిస్తుంది\nఇది కాల్‌లో ఉన్నప్పుడు సంగీతాన్ని వినడానికి మిమ్మల్ని అనుమతిస్తుంది"
+                    },
+                    "hide_active_music": {
+                        "name": "క్రియాశీల సంగీతాన్ని దాచండి",
+                        "description": "మీరు సంగీతాన్ని వింటున్నట్లు తెలుసుకోకుండా స్నాప్‌చాట్ నిరోధిస్తుంది\nసంగీతం వినేటప్పుడు కంట్రోల్ వాల్యూమ్ బటన్లను ఉపయోగించి స్నాప్‌లు తీసుకోవడానికి ఇది మిమ్మల్ని అనుమతిస్తుంది"
+                    },
+                    "disable_snap_splitting": {
+                        "name": "స్నాప్ విభజనను నిలిపివేయండి",
+                        "description": "స్నాప్‌లను బహుళ భాగాలుగా విభజించకుండా నిరోధిస్తుంది\nమీరు పంపే చిత్రాలు వీడియోలుగా మారుతాయి"
+                    }
+                }
+            },
+            "rules": {
+                "name": "నియమాలు",
+                "description": "వ్యక్తిగత వ్యక్తుల కోసం స్వయంచాలక లక్షణాలను నిర్వహించండి"
+            },
+            "camera": {
+                "name": "కెమెరా",
+                "description": "ఖచ్చితమైన స్నాప్ కోసం సరైన సెట్టింగులను సర్దుబాటు చేయండి",
+                "properties": {
+                    "disable_cameras": {
+                        "name": "కెమెరాలను నిలిపివేయండి",
+                        "description": "ఎంచుకున్న కెమెరాలను ఉపయోగించకుండా స్నాప్‌చాట్ నిరోధిస్తుంది"
+                    },
+                    "black_photos": {
+                        "name": "నల్ల ఫోటోలు",
+                        "description": "సంగ్రహించిన ఫోటోలను నల్లని నేపథ్యంతో భర్తీ చేస్తుంది\nవీడియోలు ప్రభావితం కావు"
+                    },
+                    "immersive_camera_preview": {
+                        "name": "లీనమయ్యే ప్రివ్యూ",
+                        "description": "కెమెరా ప్రివ్యూను కత్తిరించకుండా స్నాప్‌చాట్ నిరోధిస్తుంది\nఇది కొన్ని పరికరాల్లో కెమెరా ఆడుకోవడానికి కారణం కావచ్చు"
+                    },
+                    "override_front_resolution": {
+                        "name": "ఫ్రంట్ రిజల్యూషన్‌ను భర్తీ చేయండి",
+                        "description": "ముందు కెమెరా కోసం కెమెరా రిజల్యూషన్‌ను భర్తీ చేస్తుంది"
+                    },
+                    "override_back_resolution": {
+                        "name": "తిరిగి రిజల్యూషన్‌ను భర్తీ చేయండి",
+                        "description": "వెనుక కెమెరా కోసం కెమెరా రిజల్యూషన్‌ను భర్తీ చేస్తుంది"
+                    },
+                    "custom_resolution": {
+                        "name": "అనుకూల తీర్మానం",
+                        "description": "కస్టమ్ కెమెరా రిజల్యూషన్, వెడల్పు x ఎత్తు (ఉదా. 1920x1080) ను సెట్ చేస్తుంది.\nకస్టమ్ రిజల్యూషన్‌కు మీ పరికరం మద్దతు ఇవ్వాలి"
+                    },
+                    "front_custom_frame_rate": {
+                        "name": "ఫ్రంట్ కస్టమ్ ఫ్రేమ్ రేట్",
+                        "description": "ఫ్రంట్ కెమెరా ఫ్రేమ్ రేటును అధిగమిస్తుంది"
+                    },
+                    "back_custom_frame_rate": {
+                        "name": "కస్టమ్ ఫ్రేమ్ రేట్ బ్యాక్",
+                        "description": "వెనుక కెమెరా ఫ్రేమ్ రేటును అధిగమిస్తుంది"
+                    },
+                    "force_camera_source_encoding": {
+                        "name": "ఫోర్స్ కెమెరా సోర్స్ ఎన్కోడింగ్",
+                        "description": "కెమెరా సోర్స్ ఎన్కోడింగ్ను బలవంతం చేస్తుంది"
+                    },
+                    "startup_default_camera": {
+                        "name": "స్టార్టప్ డిఫాల్ట్ కెమెరా",
+                        "description": "స్నాప్‌చాట్ తెరిచేటప్పుడు డిఫాల్ట్ కెమెరాను సెట్ చేస్తుంది"
+                    },
+                    "hevc_recording": {
+                        "name": "HEVC రికార్డింగ్",
+                        "description": "వీడియో రికార్డింగ్ కోసం HEVC (H.265) కోడెక్‌ను ఉపయోగిస్తుంది"
+                    }
+                }
+            },
+            "streaks_reminder": {
+                "name": "స్ట్రీక్స్ రిమైండర్",
+                "description": "మీ స్ట్రీక్స్ గురించి క్రమానుగతంగా మీకు తెలియజేస్తుంది",
+                "properties": {
+                    "interval": {
+                        "name": "విరామం",
+                        "description": "ప్రతి రిమైండర్ (గంటలు) మధ్య విరామం"
+                    },
+                    "remaining_hours": {
+                        "name": "మిగిలిన సమయం",
+                        "description": "నోటిఫికేషన్ చూపించడానికి ముందు మిగిలిన సమయం (గంటలు)"
+                    },
+                    "group_notifications": {
+                        "name": "సమూహ నోటిఫికేషన్‌లు",
+                        "description": "సమూహ నోటిఫికేషన్‌లు ఒకే విధంగా"
+                    }
+                }
+            },
+            "experimental": {
+                "name": "ప్రయోగాత్మక",
+                "description": "ప్రయోగాత్మక లక్షణాలు",
+                "properties": {
+                    "native_hooks": {
+                        "name": "స్థానిక హుక్స్",
+                        "description": "స్నాప్‌చాట్ యొక్క స్థానిక కోడ్‌లోకి హుక్ చేసే అసురక్షిత లక్షణాలు",
+                        "properties": {
+                            "composer_hooks": {
+                                "name": "స్వరకర్త హుక్స్",
+                                "description": "కంపోజర్ క్రాస్-ప్లాట్‌ఫాం UI ఫ్రేమ్‌వర్క్‌లో కోడ్‌ను ఇంజెక్ట్ చేస్తుంది",
+                                "properties": {
+                                    "show_first_created_username": {
+                                        "name": "మొదట సృష్టించిన వినియోగదారు పేరును చూపించు",
+                                        "description": "ప్రొఫైల్ పేజీలోని ప్రస్తుత వినియోగదారు పేరు పక్కన మొదటి సృష్టించిన వినియోగదారు పేరు చూపిస్తుంది"
+                                    },
+                                    "bypass_camera_roll_limit": {
+                                        "name": "బైపాస్ కెమెరా రోల్ పరిమితి",
+                                        "description": "కెమెరా రోల్ నుండి మీరు పంపగల మీడియా గరిష్ట మొత్తాన్ని పెంచుతుంది"
+                                    },
+                                    "custom_self_destruct_snap_delay": {
+                                        "name": "కస్టమ్ సెల్ఫ్ డిస్ట్రక్ట్ స్నాప్ ఆలస్యం",
+                                        "description": "స్నాప్ పంపేటప్పుడు స్వీయ-నాశనం టైమర్ కోసం మరిన్ని ఎంపికలను ఇస్తుంది"
+                                    },
+                                    "composer_console": {
+                                        "name": "స్వరకర్త కన్సోల్",
+                                        "description": "స్వరకర్త (ARM64 మాత్రమే) లో జావాస్క్రిప్ట్ కోడ్‌ను అమలు చేయడానికి మిమ్మల్ని అనుమతిస్తుంది"
+                                    },
+                                    "composer_logs": {
+                                        "name": "స్వరకర్త లాగ్‌లు",
+                                        "description": "స్వరకర్త యొక్క కన్సోల్ లాగ్‌లను పర్ఫెక్ట్స్నాప్‌కు మళ్ళిస్తుంది"
+                                    }
+                                }
+                            },
+                            "disable_bitmoji": {
+                                "name": "బిట్‌మోజీని నిలిపివేయండి",
+                                "description": "స్నేహితుల ప్రొఫైల్ బిట్‌మోజీని నిలిపివేస్తుంది"
+                            },
+                            "custom_emoji_font": {
+                                "name": "కస్టమ్ ఎమోజి ఫాంట్",
+                                "description": "అనుకూల ఎమోజి ఫాంట్‌ను ఉపయోగించడానికి మిమ్మల్ని అనుమతిస్తుంది. .TTF ఫాంట్‌లతో మాత్రమే పనిచేస్తుంది"
+                            },
+                            "custom_shared_library": {
+                                "name": "కస్టమ్ షేర్డ్ లైబ్రరీ",
+                                "description": "కస్టమ్ షేర్డ్ లైబ్రరీని స్నాప్‌చాట్‌లో లోడ్ చేస్తుంది. ఈ లక్షణం పరీక్షా ప్రయోజనాల కోసం మాత్రమే"
+                            }
+                        }
+                    },
+                    "spoof": {
+                        "name": "స్పూఫ్",
+                        "description": "మీ గురించి వివిధ సమాచారాన్ని స్పూఫ్ చేయండి",
+                        "properties": {
+                            "play_store_installer_package_name": {
+                                "name": "ప్లే స్టోర్ ఇన్‌స్టాలర్ ప్యాకేజీ పేరు",
+                                "description": "ఇన్స్టాలర్ ప్యాకేజీ పేరును com.android.vending కు భర్తీ చేస్తుంది"
+                            },
+                            "remove_vpn_transport_flag": {
+                                "name": "VPN రవాణా జెండాను తొలగించండి",
+                                "description": "స్నాప్‌చాట్ VPN లను గుర్తించకుండా నిరోధిస్తుంది"
+                            },
+                            "remove_mock_location_flag": {
+                                "name": "మాక్ స్థాన జెండాను తొలగించండి",
+                                "description": "మాక్ స్థానాన్ని గుర్తించకుండా స్నాప్‌చాట్ నిరోధిస్తుంది"
+                            }
+                        }
+                    },
+                    "convert_message_locally": {
+                        "name": "స్థానికంగా సందేశాన్ని మార్చండి",
+                        "description": "స్థానికంగా బాహ్య మాధ్యమాన్ని చాట్ చేయడానికి స్నాప్‌లను మారుస్తుంది. ఇది చాట్ డౌన్‌లోడ్ కాంటెక్స్ట్ మెనులో కనిపిస్తుంది"
+                    },
+                    "media_file_picker": {
+                        "name": "మీడియా ఫైల్ పికర్",
+                        "description": "గ్యాలరీ నుండి ఏదైనా వీడియో/ఆడియో ఫైల్‌ను ఎంచుకోవడానికి మిమ్మల్ని అనుమతిస్తుంది"
+                    },
+                    "story_logger": {
+                        "name": "స్టోరీ లాగర్",
+                        "description": "స్నేహితుల కథల చరిత్రను అందిస్తుంది"
+                    },
+                    "call_recorder": {
+                        "name": "కాల్ రికార్డర్",
+                        "description": "ఆడియో కాల్‌లను స్వయంచాలకంగా రికార్డ్ చేస్తుంది"
+                    },
+                    "account_switcher": {
+                        "name": "ఖాతా స్విచ్చర్",
+                        "description": "లాగిన్ చేయకుండా ఖాతాల మధ్య మారడానికి మిమ్మల్ని అనుమతిస్తుంది\nమెనుని తెరవడానికి మీ బిట్‌మోజీ ప్రొఫైల్ పక్కన ఉన్న శోధన చిహ్నంపై ఎక్కువసేపు నొక్కండి\nగమనిక: ఈ లక్షణం ప్రయోగాత్మకమైనది మరియు భవిష్యత్తులో మారుతుంది",
+                        "properties": {
+                            "auto_backup_current_account": {
+                                "name": "ఆటో బ్యాకప్ ప్రస్తుత ఖాతా",
+                                "description": "లాగ్ అవుట్ చేసేటప్పుడు లేదా ఖాతాలను మార్చేటప్పుడు ప్రస్తుత ఖాతాను స్వయంచాలకంగా బ్యాకప్ చేస్తుంది"
+                            }
+                        }
+                    },
+                    "better_transcript": {
+                        "name": "మంచి ట్రాన్స్క్రిప్ట్",
+                        "description": "వాయిస్ నోట్ ట్రాన్స్క్రిప్ట్ను మెరుగుపరుస్తుంది",
+                        "properties": {
+                            "force_transcription": {
+                                "name": "ఫోర్స్ వాయిస్ నోట్ ట్రాన్స్క్రిప్షన్",
+                                "description": "అన్ని వాయిస్ నోట్లను లిప్యంతరీకరించడానికి అనుమతిస్తుంది"
+                            },
+                            "preferred_transcription_lang": {
+                                "name": "ఇష్టపడే ట్రాన్స్క్రిప్షన్ భాష",
+                                "description": "వాయిస్ నోట్ ట్రాన్స్క్రిప్ట్ కోసం ఇష్టపడే భాష (ఉదా. EN, ES, FR)"
+                            },
+                            "notification_transcript": {
+                                "name": "నోటిఫికేషన్ ట్రాన్స్క్రిప్ట్",
+                                "description": "నోటిఫికేషన్లలో వాయిస్ నోట్లను లిప్యంతరీకరిస్తుంది\nఈ లక్షణానికి చాట్ ప్రివ్యూ ఫీచర్ మంచి నోటిఫికేషన్లలో ప్రారంభించబడాలి"
+                            }
+                        }
+                    },
+                    "voice_note_auto_play": {
+                        "name": "వాయిస్ నోట్ ఆటో ప్లే",
+                        "description": "ప్రస్తుత ఒకటి ముగిసిన తర్వాత స్వయంచాలకంగా తదుపరి వాయిస్ నోట్‌ను ప్లే చేస్తుంది"
+                    },
+                    "friend_notes": {
+                        "name": "ఫ్రెండ్ నోట్స్",
+                        "description": "స్నేహితుల ప్రొఫైల్‌లకు గమనికలను జోడించడానికి మిమ్మల్ని అనుమతిస్తుంది"
+                    },
+                    "cof_experiments": {
+                        "name": "COF ప్రయోగాలు",
+                        "description": "విడుదల చేయని/బీటా స్నాప్‌చాట్ లక్షణాలను ప్రారంభిస్తుంది"
+                    },
+                    "context_menu_fix": {
+                        "name": "సందర్భ మెను పరిష్కారం",
+                        "description": "పరికరం ఆఫ్‌లైన్‌లో ఉన్నప్పుడు ఫ్రెండ్ ఫీడ్ మెనుని రిపేర్ చేసే ప్రయత్నం సరిగ్గా ప్రదర్శించబడదు"
+                    },
+                    "app_lock": {
+                        "name": "అనువర్తన లాక్",
+                        "description": "పాస్‌కోడ్ లేకుండా స్నాప్‌చాట్‌కు ప్రాప్యతను నిరోధిస్తుంది",
+                        "properties": {
+                            "lock_on_resume": {
+                                "name": "పున ume ప్రారంభం లాక్ చేయండి",
+                                "description": "అనువర్తనం తిరిగి తెరిచినప్పుడు దాన్ని లాక్ చేస్తుంది"
+                            }
+                        }
+                    },
+                    "infinite_story_boost": {
+                        "name": "అనంతమైన కథ బూస్ట్",
+                        "description": "కథను పెంచుతుంది పరిమితి ఆలస్యాన్ని పెంచుతుంది"
+                    },
+                    "meo_passcode_bypass": {
+                        "name": "నా కళ్ళు పాస్‌కోడ్ బైపాస్ మాత్రమే",
+                        "description": "నా కళ్ళు పాస్‌కోడ్‌ను మాత్రమే దాటవేయండి\nపాస్‌కోడ్ ముందు సరిగ్గా నమోదు చేయబడితేనే ఇది పని చేస్తుంది"
+                    },
+                    "no_friend_score_delay": {
+                        "name": "ఫ్రెండ్ స్కోరు ఆలస్యం లేదు",
+                        "description": "ఫ్రెండ్స్ స్కోర్‌ను చూసినప్పుడు ఆలస్యాన్ని తొలగిస్తుంది"
+                    },
+                    "best_friend_pinning": {
+                        "name": "బెస్ట్ ఫ్రెండ్ పిన్నింగ్",
+                        "description": "స్నేహితుడిని మీ నంబర్ వన్ బెస్ట్ ఫ్రెండ్ గా పిన్ చేయడానికి మిమ్మల్ని అనుమతిస్తుంది. గమనిక: మీరు మాత్రమే పిన్ చేసిన బెస్ట్ ఫ్రెండ్‌ను చూడగలరు"
+                    },
+                    "e2ee": {
+                        "name": "ఎండ్-టు-ఎండ్ ఎన్క్రిప్షన్",
+                        "description": "షేర్డ్ సీక్రెట్ కీని ఉపయోగించి మీ సందేశాలను AES తో గుప్తీకరిస్తుంది\nమీ కీని ఎక్కడో సురక్షితంగా సేవ్ చేసేలా చూసుకోండి!",
+                        "properties": {
+                            "encrypted_message_indicator": {
+                                "name": "గుప్తీకరించిన సందేశ సూచిక",
+                                "description": "గుప్తీకరించిన సందేశాల పక్కన 🔒 ఎమోజిని జోడిస్తుంది"
+                            },
+                            "force_message_encryption": {
+                                "name": "ఫోర్స్ మెసేజ్ ఎన్క్రిప్షన్",
+                                "description": "బహుళ సంభాషణలు ఎంచుకున్నప్పుడు మాత్రమే E2E గుప్తీకరణ లేని వ్యక్తులకు గుప్తీకరించిన సందేశాలను పంపడాన్ని నిరోధిస్తుంది"
+                            }
+                        }
+                    },
+                    "add_friend_source_spoof": {
+                        "name": "ఫ్రెండ్ సోర్స్ స్పూఫ్ జోడించండి",
+                        "description": "స్నేహితుల అభ్యర్థన యొక్క మూలాన్ని స్పూఫ్ చేస్తుంది"
+                    },
+                    "hidden_snapchat_plus_features": {
+                        "name": "దాచిన స్నాప్‌చాట్ ప్లస్ ఫీచర్స్",
+                        "description": "విడుదల చేయని/బీటా స్నాప్‌చాట్ ప్లస్ లక్షణాలను ప్రారంభిస్తుంది\nపాత స్నాప్‌చాట్ వెర్షన్లలో పనిచేయకపోవచ్చు"
+                    },
+                    "custom_streaks_expiration_format": {
+                        "name": "కస్టమ్ స్ట్రీక్స్ గడువు ఆకృతి",
+                        "description": "స్ట్రీక్స్ గడువు ఆకృతిని అనుకూలీకరిస్తుంది\n\nఅందుబాటులో ఉన్న వేరియబుల్స్:\n - %సి: స్ట్రీక్స్ లెక్కింపు\n - %ఇ: హర్గ్లాస్ ఎమోజి\n - %D: రోజులు\n - %H: గంటలు\n - %M: నిమిషాలు\n - %s: సెకన్లు\n - %W: మిగిలిన సమయం"
+                    },
+                    "prevent_forced_logout": {
+                        "name": "బలవంతపు లాగ్అవుట్‌ను నిరోధించండి",
+                        "description": "మీరు మరొక పరికరంలో లాగిన్ అయినప్పుడు స్నాప్‌చాట్ మిమ్మల్ని లాగిన్ చేయకుండా నిరోధిస్తుంది"
+                    },
+                    "snapscore_changes": {
+                        "name": "స్నాప్‌స్కోర్ మార్పులు",
+                        "description": "ఫ్రెండ్స్ స్నాప్‌స్కోర్‌లో ట్రాక్‌లు మార్పులు\nఈ లక్షణాన్ని స్నాప్‌చాట్ యొక్క క్రొత్త సంస్కరణల్లో మాత్రమే ఉపయోగించండి"
+                    }
+                }
+            },
+            "scripting": {
+                "name": "స్క్రిప్టింగ్",
+                "description": "పర్ఫెక్ట్స్నాప్‌ను విస్తరించడానికి కస్టమ్ స్క్రిప్ట్‌లను అమలు చేయండి",
+                "properties": {
+                    "developer_mode": {
+                        "name": "డెవలపర్ మోడ్",
+                        "description": "స్నాప్‌చాట్ యొక్క UI లో డీబగ్ సమాచారాన్ని చూపిస్తుంది"
+                    },
+                    "module_folder": {
+                        "name": "మాడ్యూల్ ఫోల్డర్",
+                        "description": "స్క్రిప్ట్‌లు ఉన్న ఫోల్డర్"
+                    },
+                    "auto_reload": {
+                        "name": "ఆటో రీలోడ్",
+                        "description": "స్క్రిప్ట్‌లు మారినప్పుడు స్వయంచాలకంగా మళ్లీ లోడ్ చేస్తాయి"
+                    },
+                    "integrated_ui": {
+                        "name": "ఇంటిగ్రేటెడ్ UI",
+                        "description": "స్నాప్‌చాట్‌కు కస్టమ్ UI భాగాలను జోడించడానికి స్క్రిప్ట్‌లను అనుమతిస్తుంది"
+                    },
+                    "disable_log_anonymization": {
+                        "name": "లాగ్ అనామకతను నిలిపివేయండి",
+                        "description": "లాగ్ల అనామకతను నిలిపివేస్తుంది"
+                    },
+                    "disable_optimization": {
+                        "name": "ఆప్టిమైజేషన్‌ను నిలిపివేయండి",
+                        "description": "స్క్రిప్ట్‌ల ఆప్టిమైజేషన్‌ను నిలిపివేస్తుంది. ఇది పనితీరు సమస్యలకు కారణం కావచ్చు."
+                    }
+                }
+            },
+            "friend_tracker": {
+                "name": "ఫ్రెండ్ ట్రాకర్",
+                "description": "స్నాప్‌చాట్‌లో స్నేహితుడి కార్యాచరణను రికార్డ్ చేస్తుంది",
+                "properties": {
+                    "record_messaging_events": {
+                        "name": "రికార్డ్ మెసేజింగ్ ఈవెంట్స్",
+                        "description": "స్నాప్ తెరవడం, సందేశాన్ని చదవడం మొదలైన మెసేజింగ్ సంఘటనలను రికార్డ్ చేస్తుంది."
+                    },
+                    "allow_running_in_background": {
+                        "name": "నేపథ్యంలో నడపడానికి అనుమతించండి",
+                        "description": "ట్రాకర్‌ను నేపథ్యంలో అమలు చేయడానికి అనుమతిస్తుంది. గమనిక: ఇది మీ బ్యాటరీని గణనీయంగా హరించడం"
+                    },
+                    "auto_purge": {
+                        "name": "ఆటో ప్రక్షాళన",
+                        "description": "పేర్కొన్న సమయం కంటే పాత కాష్ చేసిన సంఘటనలను స్వయంచాలకంగా తొలగిస్తుంది"
+                    }
+                }
+            }
+        },
+        "options": {
+            "app_appearance": {
+                "always_light": "ఎల్లప్పుడూ తేలికైనది",
+                "always_dark": "ఎల్లప్పుడూ చీకటి"
+            },
+            "friend_feed_menu_buttons": {
+                "auto_download": "Auto ఆటో డౌన్‌లోడ్",
+                "auto_save": "Auto ఆటో సేవ్ సందేశాలు",
+                "unsaveable_messages": "Saves సేవ్ చేయలేని సందేశాలు",
+                "auto_open_snaps": "Open ఆటో ఓపెన్ స్నాప్స్",
+                "stealth": "👻 స్టీల్త్ మోడ్",
+                "mark_snaps_as_seen": "Mark చూసినట్లు మార్క్ స్నాప్స్",
+                "mark_stories_as_seen_locally": "The స్థానికంగా చూసినట్లు కథలను గుర్తించండి",
+                "conversation_info": "సంభాషణ సమాచారం",
+                "e2e_encryption": "🔒 E2E గుప్తీకరణను ఉపయోగించండి"
+            },
+            "path_format": {
+                "create_author_folder": "ప్రతి రచయిత కోసం ఫోల్డర్‌ను సృష్టించండి",
+                "create_source_folder": "ప్రతి మీడియా సోర్స్ రకం కోసం ఫోల్డర్‌ను సృష్టించండి",
+                "append_hash": "ఫైల్ పేరుకు ప్రత్యేకమైన హాష్‌ను జోడించండి",
+                "append_source": "ఫైల్ పేరుకు మీడియా మూలాన్ని జోడించండి",
+                "append_username": "ఫైల్ పేరుకు వినియోగదారు పేరును జోడించండి",
+                "append_date_time": "ఫైల్ పేరుకు తేదీ మరియు సమయాన్ని జోడించండి"
+            },
+            "auto_download_sources": {
+                "friend_snaps": "స్నేహితుడు స్నాప్",
+                "friend_stories": "ఫ్రెండ్ కథలు",
+                "public_stories": "పబ్లిక్ స్టోరీస్",
+                "spotlight": "స్పాట్‌లైట్"
+            },
+            "logging": {
+                "started": "ప్రారంభమైంది",
+                "success": "విజయం",
+                "progress": "పురోగతి",
+                "failure": "వైఫల్యం"
+            },
+            "notifications": {
+                "chat_screenshot": "స్క్రీన్ షాట్",
+                "chat_screen_record": "స్క్రీన్ రికార్డ్",
+                "snap_replay": "స్నాప్ రీప్లే",
+                "camera_roll_save": "కెమెరా రోల్ సేవ్",
+                "chat": "చాట్",
+                "chat_reply": "చాట్ ప్రత్యుత్తరం",
+                "snap": "స్నాప్",
+                "typing": "టైపింగ్",
+                "stories": "కథలు",
+                "speaking": "మాట్లాడుతూ",
+                "chat_reaction": "DM ప్రతిచర్య",
+                "group_chat_reaction": "సమూహ ప్రతిచర్య",
+                "initiate_audio": "ఇన్కమింగ్ ఆడియో కాల్",
+                "abandon_audio": "ఆడియో కాల్ తప్పిపోయింది",
+                "initiate_video": "ఇన్‌కమింగ్ వీడియో కాల్",
+                "abandon_video": "వీడియో కాల్ తప్పిపోయింది",
+                "map_live_location": "మ్యాప్ లైవ్ స్థానం"
+            },
+            "gallery_media_send_override": {
+                "always_ask": "ఎల్లప్పుడూ అడగండి",
+                "ORIGINAL": "అసలు మీడియా",
+                "NOTE": "ఆడియో నోట్",
+                "SNAP": "స్నాప్",
+                "SAVEABLE_SNAP": "సేవ్ చేయదగిన స్నాప్"
+            },
+            "strip_media_metadata": {
+                "hide_caption_text": "శీర్షిక వచనాన్ని దాచండి",
+                "hide_snap_filters": "స్నాప్ ఫిల్టర్లను దాచండి",
+                "hide_extras": "అదనపు దాచు (ఉదా. ప్రస్తావనలు)",
+                "remove_audio_note_duration": "ఆడియో నోట్ వ్యవధిని తొలగించండి",
+                "remove_audio_note_transcript_capability": "ఆడియో నోట్ ట్రాన్స్క్రిప్ట్ సామర్థ్యాన్ని తొలగించండి"
+            },
+            "hide_ui_components": {
+                "hide_profile_call_buttons": "ప్రొఫైల్ కాల్ బటన్లను తొలగించండి",
+                "hide_chat_call_buttons": "చాట్ కాల్ బటన్లను తొలగించండి",
+                "hide_live_location_share_button": "లైవ్ లొకేషన్ షేర్ బటన్‌ను తొలగించండి",
+                "hide_stickers_button": "స్టిక్కర్ల బటన్ తొలగించండి",
+                "hide_voice_record_button": "వాయిస్ రికార్డ్ బటన్ తొలగించండి",
+                "hide_unread_chat_hint": "చదవని చాట్ సూచనను తొలగించండి",
+                "hide_post_to_story_buttons": "స్నాప్ పంపే ముందు స్టోరీ బటన్లకు పోస్ట్‌ను తొలగించండి",
+                "hide_billboard_prompt": "స్నేహితుల ఫీడ్‌లో బిల్‌బోర్డ్ ప్రాంప్ట్ తొలగించండి",
+                "hide_snapchat_plus_gift_reminders": "సంభాషణలలో స్నాప్‌చాట్ ప్లస్ గిఫ్ట్ రిమైండర్‌లను తొలగించండి",
+                "hide_map_reactions": "మ్యాప్ ప్రతిచర్యలను తొలగించండి"
+            },
+            "hide_story_suggestions": {
+                "hide_suggested_friend_stories": "సూచించిన స్నేహితుడి కథలను దాచండి",
+                "hide_my_stories": "నా కథలను దాచండి"
+            },
+            "home_tab": {
+                "map": "మ్యాప్",
+                "chat": "చాట్",
+                "camera": "కెమెరా",
+                "discover": "కనుగొనండి",
+                "spotlight": "స్పాట్‌లైట్"
+            },
+            "add_friend_source_spoof": {
+                "added_by_username": "వినియోగదారు పేరు ద్వారా",
+                "added_by_mention": "ప్రస్తావించడం ద్వారా",
+                "added_by_group_chat": "సమూహ చాట్ ద్వారా",
+                "added_by_qr_code": "QR కోడ్ ద్వారా",
+                "added_by_community": "సంఘం ద్వారా",
+                "added_by_quick_add": "శీఘ్ర జోడించడం ద్వారా (నిషేధించబడే అధిక ప్రమాదం)"
+            },
+            "bypass_video_length_restriction": {
+                "single": "సింగిల్ మీడియా",
+                "split": "స్ప్లిట్ మీడియా"
+            },
+            "old_bitmoji_selfie": {
+                "2d": "2 డి బిట్‌మోజీ",
+                "3d": "3 డి బిట్‌మోజీ"
+            },
+            "disable_confirmation_dialogs": {
+                "erase_message": "సందేశాన్ని తొలగించండి",
+                "remove_friend": "స్నేహితుడిని తొలగించండి",
+                "block_friend": "బ్లాక్ ఫ్రెండ్",
+                "ignore_friend": "స్నేహితుడిని విస్మరించండి",
+                "hide_friend": "స్నేహితుడు దాచు",
+                "hide_conversation": "సంభాషణను దాచండి",
+                "clear_conversation": "ఫ్రెండ్ ఫీడ్ నుండి స్పష్టమైన సంభాషణ"
+            },
+            "auto_reload": {
+                "snapchat_only": "స్నాప్‌చాట్ మాత్రమే",
+                "all": "అన్నీ (స్నాప్‌చాట్ + పర్ఫెక్ట్స్నాప్)"
+            },
+            "edit_text_override": {
+                "multi_line_chat_input": "మల్టీ లైన్ చాట్ ఇన్పుట్",
+                "bypass_text_input_limit": "బైపాస్ టెక్స్ట్ ఇన్పుట్ పరిమితి"
+            },
+            "auto_purge": {
+                "never": "ఎప్పుడూ",
+                "1_hour": "1 గంట",
+                "3_hours": "3 గంటలు",
+                "6_hours": "6 గంటలు",
+                "12_hours": "12 గంటలు",
+                "1_day": "1 రోజు",
+                "3_days": "3 రోజులు",
+                "1_week": "1 వారం",
+                "2_weeks": "2 వారాలు",
+                "1_month": "1 నెల",
+                "3_months": "3 నెలలు",
+                "6_months": "6 నెలలు"
+            },
+            "disable_story_sections": {
+                "friends": "స్నేహితులు",
+                "suggested_stories": "సూచించిన కథలు",
+                "following": "క్రింది",
+                "discover": "కనుగొనండి"
+            },
+            "disable_cameras": {
+                "front": "ఫ్రంట్ కెమెరా",
+                "back": "వెనుక కెమెరా"
+            },
+            "disable_permission_requests": {
+                "notifications": "నోటిఫికేషన్‌లు",
+                "read_media_images": "మీడియా చిత్రాలను చదవండి",
+                "read_media_video": "మీడియా వీడియో చదవండి",
+                "camera": "కెమెరా",
+                "microphone": "మైక్రోఫోన్",
+                "location": "స్థానం",
+                "read_contacts": "పరిచయాలను చదవండి",
+                "nearby_devices": "సమీప పరికరాలు",
+                "phone_calls": "ఫోన్ కాల్స్"
+            },
+            "message_indicators": {
+                "encryption_indicator": "మీకు మాత్రమే పంపబడిన సందేశాల పక్కన 🔒 చిహ్నాన్ని జోడిస్తుంది",
+                "platform_indicator": "మీడియా పంపిన ప్లాట్‌ఫాం చిహ్నాన్ని జోడిస్తుంది (ఉదా. ఆండ్రాయిడ్, iOS, వెబ్)",
+                "location_indicator": "స్థాన ప్రారంభించబడినప్పుడు వాటిని పంపినప్పుడు స్నాప్‌లకు 📍 చిహ్నాన్ని జోడిస్తుంది",
+                "ovf_editor_indicator": "OVF ఎడిటర్ ఉపయోగించి స్నాప్ పంపబడిందా అని సూచిస్తుంది",
+                "director_mode_indicator": "డైరెక్టర్ మోడ్‌ను ఉపయోగించి పంపినప్పుడు స్నాప్‌లకు ✏ ఐకాన్‌ను జోడిస్తుంది, ఇది గ్యాలరీ చిత్రాలను స్నాప్‌లుగా పంపడానికి ఉపయోగపడుతుంది"
+            },
+            "auto_mark_as_read": {
+                "conversation_read": "సందేశాన్ని పంపేటప్పుడు సంభాషణను చదవండి",
+                "snap_reply": "వారికి ప్రత్యుత్తరం ఇచ్చేటప్పుడు చదివినట్లుగా మార్క్ స్నాప్‌లు",
+                "save_snap_in_chat": "స్టీల్త్ మోడ్‌లో ఉన్నప్పుడు చాట్‌లో వాటిని సేవ్ చేసేటప్పుడు మార్క్ స్నాప్‌లను చదవండి"
+            },
+            "friend_mutation_notifier": {
+                "remove_friend": "ఎవరైనా మిమ్మల్ని స్నేహితుడిగా తొలగించినప్పుడు తెలియజేయండి",
+                "birthday_changes": "ఎవరైనా వారి పుట్టినరోజును మార్చినప్పుడు తెలియజేయండి",
+                "bitmoji_selfie_changes": "ఎవరైనా వారి బిట్‌మోజీ సెల్ఫీని మార్చినప్పుడు తెలియజేయండి",
+                "bitmoji_avatar_changes": "ఎవరైనా వారి బిట్‌మోజీ అవతార్‌ను మార్చినప్పుడు తెలియజేయండి",
+                "bitmoji_background_changes": "ఎవరైనా వారి బిట్‌మోజీ నేపథ్యాన్ని మార్చినప్పుడు తెలియజేయండి",
+                "bitmoji_scene_changes": "ఎవరైనా వారి బిట్‌మోజీ దృశ్యాన్ని మార్చినప్పుడు తెలియజేయండి"
+            },
+            "snapchat_plus": {
+                "not_subscribed": "చందా పొందలేదు",
+                "basic": "ప్రాథమిక",
+                "ad_free": "ప్రకటన ఉచితం"
+            },
+            "double_tap_chat_action": {
+                "like_message": "సందేశం వంటిది",
+                "copy_text": "క్లిప్‌బోర్డ్‌కు వచనాన్ని కాపీ చేయండి",
+                "delete_message": "సందేశాన్ని తొలగించండి",
+                "mark_as_read": "చదవడానికి గుర్తించండి",
+                "custom_emoji_reaction": "కస్టమ్ ఎమోజి ప్రతిచర్య"
+            },
+            "startup_default_camera": {
+                "front": "ఫ్రంట్ కెమెరా",
+                "back": "వెనుక కెమెరా"
+            }
+        }
+    },
+    "friend_menu_option": {
+        "mark_snaps_as_seen": "చూసినట్లు మార్క్ స్నాప్స్",
+        "mark_stories_as_seen_locally": "స్థానికంగా చూసినట్లు కథలను గుర్తించండి",
+        "preview": "ప్రివ్యూ",
+        "stealth_mode": "స్టీల్త్ మోడ్",
+        "auto_download_blacklist": "ఆటో డౌన్‌లోడ్ బ్లాక్లిస్ట్",
+        "anti_auto_save": "యాంటీ ఆటో సేవ్"
+    },
+    "content_type": {
+        "CHAT": "చాట్",
+        "SNAP": "స్నాప్",
+        "EXTERNAL_MEDIA": "బాహ్య మీడియా",
+        "NOTE": "ఆడియో నోట్",
+        "STICKER": "స్టిక్కర్",
+        "SHARE": "వాటా",
+        "STATUS": "స్థితి",
+        "LOCATION": "స్థానం",
+        "STATUS_SAVE_TO_CAMERA_ROLL": "కెమెరా రోల్‌కు సేవ్ చేయబడింది",
+        "STATUS_CONVERSATION_CAPTURE_SCREENSHOT": "స్క్రీన్ షాట్",
+        "STATUS_CONVERSATION_CAPTURE_RECORD": "స్క్రీన్ రికార్డ్",
+        "STATUS_CALL_MISSED_VIDEO": "వీడియో కాల్ తప్పిపోయింది",
+        "STATUS_CALL_MISSED_AUDIO": "ఆడియో కాల్ తప్పిపోయింది",
+        "LIVE_LOCATION_SHARE": "ప్రత్యక్ష స్థాన వాటా",
+        "CREATIVE_TOOL_ITEM": "సృజనాత్మక సాధన అంశం",
+        "FAMILY_CENTER_INVITE": "కుటుంబ కేంద్రం ఆహ్వానం",
+        "FAMILY_CENTER_ACCEPT": "కుటుంబ కేంద్రం అంగీకరిస్తుంది",
+        "FAMILY_CENTER_LEAVE": "కుటుంబ కేంద్రం సెలవు",
+        "STATUS_PLUS_GIFT": "స్థితి ప్లస్ బహుమతి",
+        "TINY_SNAP": "చిన్న స్నాప్",
+        "STATUS_COUNTDOWN": "కౌంట్‌డౌన్",
+        "MAP_REACTION": "మ్యాప్ ప్రతిచర్య"
+    },
+    "media_download_source": {
+        "none": "ఏదీ లేదు",
+        "pending": "పెండింగ్‌లో ఉంది",
+        "chat_media": "చాట్ మీడియా",
+        "story": "కథ",
+        "public_story": "పబ్లిక్ స్టోరీ",
+        "spotlight": "స్పాట్‌లైట్",
+        "profile_picture": "ప్రొఫైల్ చిత్రం",
+        "story_logger": "స్టోరీ లాగర్",
+        "message_logger": "సందేశ లాగర్",
+        "merged": "విలీనం",
+        "voice_call": "వాయిస్ కాల్"
+    },
+    "chat_action_menu": {
+        "preview_button": "ప్రివ్యూ",
+        "download_button": "డౌన్‌లోడ్",
+        "delete_logged_message_button": "లాగిన్ చేసిన సందేశాన్ని తొలగించండి",
+        "show_chat_edit_history": "చాట్ సవరణ చరిత్రను చూపించు",
+        "convert_message": "సందేశాన్ని మార్చండి"
+    },
+    "opera_context_menu": {
+        "download": "మీడియాను డౌన్‌లోడ్ చేయండి",
+        "sent_at": "{date} వద్ద పంపబడింది",
+        "created_at": "{date} వద్ద సృష్టించబడింది",
+        "expires_at": "{date} వద్ద ముగుస్తుంది",
+        "media_size": "మీడియా పరిమాణం: {size}",
+        "media_duration": "మీడియా వ్యవధి: {duration} MS",
+        "show_debug_info": "డీబగ్ సమాచారం చూపించు"
+    },
+    "modal_option": {
+        "profile_info": "ప్రొఫైల్ సమాచారం",
+        "close": "దగ్గరగా"
+    },
+    "gallery_media_send_override": {
+        "multiple_media_toast": "మీరు ఒకేసారి ఒక మీడియాను మాత్రమే పంపగలరు"
+    },
+    "mark_as_seen": {
+        "no_unseen_snaps_toast": "కనిపించని స్నాప్‌లు కనుగొనబడలేదు!",
+        "seen_toast": "చూసినట్లు గుర్తించబడింది!",
+        "unseen_toast": "కనిపించనిదిగా గుర్తించబడింది!",
+        "already_seen_toast": "ఇప్పటికే చూసినట్లుగా గుర్తించబడింది!",
+        "already_unseen_toast": "ఇప్పటికే కనిపించనిదిగా గుర్తించబడింది!"
+    },
+    "conversation_preview": {
+        "streak_expiration": "{day} రోజులలో ముగుస్తుంది {hour} గంటలు {minute} నిమిషాలు",
+        "total_messages": "మొత్తం పంపిన/స్వీకరించిన సందేశాలు: {count}",
+        "title": "ప్రివ్యూ",
+        "unknown_user": "తెలియని వినియోగదారు",
+        "no_messages": "సందేశాలు కనుగొనబడలేదు!"
+    },
+    "profile_info": {
+        "title": "ప్రొఫైల్ సమాచారం",
+        "first_created_username": "మొదట సృష్టించబడిన వినియోగదారు పేరు",
+        "mutable_username": "మార్చగల వినియోగదారు పేరు",
+        "display_name": "ప్రదర్శన పేరు",
+        "added_date": "తేదీ జోడించబడింది",
+        "birthday": "పుట్టినరోజు: {month} {day}",
+        "hidden_birthday": "పుట్టినరోజు: దాచబడింది",
+        "friendship": "స్నేహం",
+        "add_source": "మూలాన్ని జోడించండి",
+        "snapchat_plus": "స్నాప్‌చాట్ ప్లస్",
+        "snapchat_plus_state": {
+            "subscribed": "చందా",
+            "not_subscribed": "చందా పొందలేదు"
+        }
+    },
+    "friendship_link_type": {
+        "mutual": "మ్యూచువల్",
+        "outgoing": "అవుట్గోయింగ్",
+        "blocked": "నిరోధించబడింది",
+        "deleted": "తొలగించబడింది",
+        "following": "క్రింది",
+        "suggested": "సూచించబడింది",
+        "incoming": "ఇన్కమింగ్",
+        "incoming_follower": "ఇన్కమింగ్ అనుచరుడు"
+    },
+    "bulk_messaging_action": {
+        "choose_action_title": "చర్యను ఎంచుకోండి",
+        "progress_status": "{index} యొక్క ప్రాసెసింగ్ {total}",
+        "selection_dialog_continue_button": "కొనసాగించండి",
+        "confirmation_dialog": {
+            "title": "మీకు ఖచ్చితంగా తెలుసా?",
+            "message": "ఇది ఎంచుకున్న స్నేహితులందరినీ ప్రభావితం చేస్తుంది. ఈ చర్యను రద్దు చేయలేము."
+        },
+        "actions": {
+            "remove_friends": "స్నేహితులను తొలగించండి",
+            "clear_conversations": "స్పష్టమైన సంభాషణలు"
+        }
+    },
+    "chat_export": {
+        "exporter_dialog": {
+            "select_conversations_title": "సంభాషణలను ఎంచుకోండి",
+            "text_field_selection": "{amount} ఎంచుకున్నారు",
+            "text_field_selection_all": "అన్నీ",
+            "export_file_format_title": "ఫైల్ ఫార్మాట్ ఎగుమతి",
+            "message_type_filter_title": "రకం ద్వారా సందేశాలను ఫిల్టర్ చేయండి",
+            "amount_of_messages_title": "సందేశాల మొత్తం (అందరికీ ఖాళీగా ఉంచండి)",
+            "download_medias_title": "మీడియాస్‌ను డౌన్‌లోడ్ చేయండి"
+        },
+        "dialog_negative_button": "రద్దు చేయండి",
+        "dialog_positive_button": "ఎగుమతి",
+        "exported_to": "{path} కు ఎగుమతి చేయబడింది",
+        "exporting_chats": "చాట్‌లను ఎగుమతి చేస్తుంది ...",
+        "processing_chats": "ప్రాసెసింగ్ {amount} సంభాషణలు ...",
+        "export_fail": "సంభాషణను ఎగుమతి చేయడంలో విఫలమైంది {conversation}",
+        "writing_output": "అవుట్పుట్ రాయడం ...",
+        "finished": "పూర్తయింది! మీరు ఇప్పుడు ఈ డైలాగ్‌ను మూసివేయవచ్చు.",
+        "no_messages_found": "సందేశాలు కనుగొనబడలేదు!",
+        "exporting_message": "{message}..."
+    },
+    "button": {
+        "ok": "సరే",
+        "positive": "అవును",
+        "negative": "లేదు",
+        "cancel": "రద్దు చేయండి",
+        "open": "ఓపెన్",
+        "download": "డౌన్‌లోడ్",
+        "send": "పంపండి",
+        "restore_original": "ఒరిజినల్ పునరుద్ధరించండి",
+        "convert_external_media": "బాహ్య మాధ్యమాన్ని మార్చండి",
+        "save": "సేవ్"
+    },
+    "tracker_events": {
+        "conversation_enter": "సంభాషణ నమోదు చేయండి",
+        "conversation_exit": "సంభాషణ నిష్క్రమణ",
+        "started_typing": "టైప్ చేయడం ప్రారంభించింది",
+        "stopped_typing": "టైపింగ్ ఆపివేయబడింది",
+        "started_speaking": "మాట్లాడటం ప్రారంభించారు",
+        "stopped_speaking": "మాట్లాడటం మానేసింది",
+        "started_peeking": "పీకింగ్ ప్రారంభించింది",
+        "stopped_peeking": "పీకింగ్ ఆగిపోయింది",
+        "message_read": "సందేశం చదవండి",
+        "message_deleted": "సందేశం తొలగించబడింది",
+        "message_saved": "సందేశం సేవ్ చేయబడింది",
+        "message_unsaved": "సందేశం సేవ్ చేయబడలేదు",
+        "message_edited": "సందేశం సవరించబడింది",
+        "message_reaction_add": "సందేశ ప్రతిచర్య జోడించు",
+        "message_reaction_remove": "సందేశ ప్రతిచర్య తొలగించండి",
+        "snap_opened": "స్నాప్ తెరిచింది",
+        "snap_replayed": "స్నాప్ రీప్లే",
+        "snap_replayed_twice": "స్నాప్ రెండుసార్లు రీప్లే",
+        "snap_screenshot": "స్నాప్ స్క్రీన్ షాట్",
+        "snap_screen_record": "స్నాప్ స్క్రీన్ రికార్డ్"
+    },
+    "tracker_actions": {
+        "log": "లాగ్",
+        "in_app_notification": "అనువర్తన నోటిఫికేషన్",
+        "push_notification": "పుష్ నోటిఫికేషన్",
+        "custom": "ఆచారం"
+    },
+    "better_notifications": {
+        "button": {
+            "reply": "ప్రత్యుత్తరం",
+            "download": "డౌన్‌లోడ్",
+            "mark_as_read": "చదవడానికి గుర్తించండి"
+        }
+    },
+    "profile_picture_downloader": {
+        "button": "ప్రొఫైల్ చిత్రాన్ని డౌన్‌లోడ్ చేయండి",
+        "title": "ప్రొఫైల్ పిక్చర్ డౌన్‌లోడ్",
+        "avatar_option": "అవతార్",
+        "background_option": "నేపథ్యం"
+    },
+    "call_start_confirmation": {
+        "dialog_title": "కాల్ ప్రారంభించండి",
+        "dialog_message": "మీరు ఖచ్చితంగా కాల్ ప్రారంభించాలనుకుంటున్నారా?"
+    },
+    "half_swipe_notifier": {
+        "notification_channel_name": "సగం స్వైప్",
+        "notification_content_dm": "{friend} {duration} సెకన్ల కోసం మీ చాట్‌లో సగం స్విప్ చేయబడింది",
+        "notification_content_group": "{friend} {duration} సెకన్ల కోసం {group} లోకి సగం స్విప్ చేయబడింది"
+    },
+    "download_processor": {
+        "attachment_type": {
+            "snap": "స్నాప్",
+            "sticker": "స్టిక్కర్",
+            "gif": "Gif",
+            "external_media": "బాహ్య మీడియా",
+            "note": "గమనిక",
+            "original_story": "అసలు కథ"
+        },
+        "select_attachments_title": "జోడింపులను ఎంచుకోండి",
+        "download_started_toast": "డౌన్‌లోడ్ ప్రారంభమైంది",
+        "unsupported_content_type_toast": "మద్దతు లేని కంటెంట్ రకం!",
+        "failed_no_longer_available_toast": "మీడియా ఇకపై అందుబాటులో లేదు",
+        "no_attachments_toast": "జోడింపులు కనుగొనబడలేదు!",
+        "already_queued_toast": "మీడియా ఇప్పటికే క్యూలో ఉంది!",
+        "already_downloaded_toast": "మీడియా ఇప్పటికే డౌన్‌లోడ్ చేయబడింది!",
+        "content_saved_toast": "సేవ్ చేయబడింది!",
+        "download_toast": "డౌన్‌లోడ్ {attachment}...",
+        "processing_toast": "ప్రాసెసింగ్ {attachment}...",
+        "failed_generic_toast": "డౌన్‌లోడ్ చేయడంలో విఫలమైంది",
+        "failed_to_create_preview_toast": "ప్రివ్యూను సృష్టించడంలో విఫలమైంది",
+        "failed_processing_toast": "ప్రాసెసింగ్ విఫలమైంది {error}",
+        "failed_gallery_toast": "గ్యాలరీకి సేవ్ చేయడం విఫలమైంది {error}",
+        "dash_no_chapter": "అధ్యాయం కనుగొనబడలేదు",
+        "dash_dialog": {
+            "title": "డాష్ మీడియాను డౌన్‌లోడ్ చేయండి",
+            "download_all": "అన్నీ డౌన్‌లోడ్ చేయండి",
+            "segment_text": "సెగ్మెంట్ {from} - {to}"
+        }
+    },
+    "streaks_reminder": {
+        "notification_title": "స్ట్రీక్స్",
+        "notification_text": "{hoursLeft} గంటల్లో మీరు {friend} తో మీ పరంపరను కోల్పోతారు"
+    },
+    "biometric_auth": {
+        "unlock_button": "అన్‌లాక్",
+        "title": "స్నాప్‌చాట్‌ను అన్‌లాక్ చేయండి",
+        "subtitle": "స్నాప్‌చాట్‌ను అన్‌లాక్ చేయడానికి దయచేసి ప్రామాణీకరించండి"
+    },
+    "end_to_end_encryption": {
+        "toolbox": {
+            "no_shared_key": "ఈ స్నేహితుడితో మీకు ఇంకా పంచుకున్న రహస్యం లేదు. క్రొత్తదాన్ని ప్రారంభించడానికి క్రింద క్లిక్ చేయండి.",
+            "shared_key_fingerprint": "మీ వేలిముద్ర:\n\n{fingerprint}\n\nఇది మీ స్నేహితుడి వేలిముద్రతో సరిపోతుందో లేదో తనిఖీ చేయండి!",
+            "initiate_exchange_button": "కీ మార్పిడిని ప్రారంభించండి"
+        },
+        "confirmation_dialogs": {
+            "title": "ఎండ్-టు-ఎండ్ ఎన్క్రిప్షన్",
+            "confirmation_1": "హెచ్చరిక: ఇది మీ ప్రస్తుత కీని ఓవర్రైట్ చేస్తుంది. మీరు ఈ స్నేహితుడి నుండి అన్ని గుప్తీకరించిన సందేశాలకు ప్రాప్యతను కోల్పోతారు. మీరు ఖచ్చితంగా కొనసాగించాలనుకుంటున్నారా?",
+            "confirmation_2": "మీరు నిజంగా కొనసాగించాలనుకుంటున్నారా? బ్యాక్ అవుట్ చేయడానికి ఇది మీకు చివరి అవకాశం."
+        },
+        "unencrypted_conversation_send_failure_toast": "మీరు గుప్తీకరించిన మరియు గుప్తీకరించని సంభాషణలకు గుప్తీకరించిన కంటెంట్‌ను పంపలేరు!",
+        "native_hooks_send_failure_toast": "పంపడంలో విఫలమైంది! దయచేసి సెట్టింగులలో స్థానిక హుక్స్ ప్రారంభించండి.",
+        "no_participants_to_encrypt_toast": "ఈ సంభాషణలో సందేశాలను గుప్తీకరించడానికి మీకు స్నేహితులు లేరు!",
+        "encryption_failed_toast": "సందేశాన్ని గుప్తీకరించడంలో విఫలమైంది! మరిన్ని వివరాల కోసం లాగ్‌క్యాట్‌ను తనిఖీ చేయండి.",
+        "accept_public_key_success_toast": "పబ్లిక్ కీ విజయవంతంగా అంగీకరించబడింది!",
+        "accept_secret_key_success_toast": "పూర్తయింది! మీరు ఇప్పుడు ఈ స్నేహితుడితో గుప్తీకరించిన సందేశాలను పంపవచ్చు మరియు స్వీకరించవచ్చు.",
+        "accept_public_key_failure_toast": "పబ్లిక్ కీని అంగీకరించడంలో విఫలమైంది",
+        "accept_secret_key_failure_toast": "రహస్య కీని అంగీకరించడంలో విఫలమైంది",
+        "accept_secret_button": "రహస్యాన్ని అంగీకరించండి",
+        "accept_public_key_button": "పబ్లిక్ కీని అంగీకరించండి",
+        "outgoing_pk_message": "కీ మార్పిడి అభ్యర్థన",
+        "outgoing_secret_message": "కీ మార్పిడి ప్రతిస్పందన",
+        "incoming_pk_message": "మీరు ఇప్పుడే పబ్లిక్ కీ అభ్యర్థనను అందుకున్నారు. దీన్ని అంగీకరించడానికి క్రింద క్లిక్ చేయండి.",
+        "incoming_secret_message": "మీ స్నేహితుడు మీ పబ్లిక్ కీని అంగీకరించారు. రహస్యాన్ని అంగీకరించడానికి క్రింద క్లిక్ చేయండి."
+    },
+    "auto_open_snaps": {
+        "title": "ఆటో ఓపెన్ స్నాప్‌లు",
+        "notification_content": "{count} స్నాప్‌లు తెరవబడ్డాయి"
+    },
+    "friend_mutation_observer": {
+        "notification_channel_name": "ఫ్రెండ్ మ్యుటేషన్ అబ్జర్వర్",
+        "friend_removed": "{username} మిమ్మల్ని స్నేహితుడిగా తొలగించింది",
+        "birthday_removed": "{username} వారి పుట్టినరోజును తొలగించింది ({birthday})",
+        "birthday_added": "{username} వారి పుట్టినరోజును జోడించింది ({birthday})",
+        "birthday_changed": "{username} వారి పుట్టినరోజును {oldBirthday} నుండి {newBirthday} గా మార్చింది",
+        "bitmoji_selfie_changed": "{username} వారి బిట్‌మోజీ సెల్ఫీని మార్చింది",
+        "bitmoji_avatar_changed": "{username} వారి బిట్‌మోజీ అవతార్‌ను మార్చింది",
+        "bitmoji_background_changed": "{username} వారి బిట్‌మోజీ నేపథ్యాన్ని మార్చింది",
+        "bitmoji_scene_changed": "{username} వారి బిట్‌మోజీ దృశ్యాన్ని మార్చింది"
+    },
+    "material3_strings": {
+        "date_range_picker_start_headline": "నుండి",
+        "date_range_picker_end_headline": "To",
+        "date_range_picker_title": "తేదీ పరిధిని ఎంచుకోండి",
+        "date_picker_switch_to_calendar_mode": "క్యాలెండర్",
+        "date_picker_switch_to_input_mode": "ఇన్పుట్",
+        "date_range_picker_scroll_to_previous_month": "మునుపటి నెల",
+        "date_range_picker_scroll_to_next_month": "వచ్చే నెల",
+        "date_picker_today_description": "ఈ రోజు",
+        "date_range_picker_day_in_range": "ఎంచుకున్నారు",
+        "date_input_invalid_for_pattern": "చెల్లని తేదీ",
+        "date_input_invalid_year_range": "చెల్లని సంవత్సరం",
+        "date_input_invalid_not_allowed": "చెల్లని తేదీ",
+        "date_range_input_invalid_range_input": "చెల్లని తేదీ పరిధి"
+    },
+    "send_override_dialog": {
+        "title": "మీడియాను {type} గా పంపండి",
+        "duration": "వ్యవధి: {duration}",
+        "saveable_snap_hint": "చాట్‌లో స్నాప్‌ను సేవ్ చేయగలిగేలా చేయండి",
+        "unlimited_duration": "అపరిమిత"
+    },
+    "invalid_input_toast": "చెల్లని ఇన్పుట్! మీరు చెల్లుబాటు అయ్యే విలువను నమోదు చేశారని నిర్ధారించుకోండి."
+}

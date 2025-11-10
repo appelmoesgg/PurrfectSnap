@@ -1,239 +1,2022 @@
 {
-    "manager": {
-        "routes": {
-            "edit_rule": "Rulus scribere",
-            "features": "Posse",
-            "tasks": "Scribere",
-            "home": "Villa",
-            "home_settings": "Deus maximae",
-            "home_logs": "Papyrus",
-            "social": "Socius",
-            "logger_history": "Logger History",
-            "logged_stories": "Initium Stories",
-            "friend_tracker": "Amicus Tracker",
-            "messaging_preview": "Praevius",
-            "scripts": "Scriptores",
-            "manage_scope": "Curo Scope"
-        },
-        "sections": {
-            "home": {
-                "update_title": "SnapEnhance Update",
-                "update_content": "Versione {version} praesto est!",
-                "update_button": "Download"
-            },
-            "home_logs": {
-                "clear_logs_button": "Patet Acta publica omnia",
-                "export_logs_button": "Acta publica exportare",
-                "saved_logs_success_toast": "Acta servata feliciter",
-                "saved_logs_failure_toast": "Non servare omnia",
-                "no_logs_hint": "Nulla omnia praesto",
-                "saving_logs_toast": "Salvis lignis, hoc potest capere aliquantulum..."
-            },
-            "home_settings": {
-                "actions_title": "Actiones",
-                "message_logger_title": "Nuntius Logger",
-                "debug_title": "Debugere",
-                "success_toast": "Finis!",
-                "message_logger_summary": "{messageCount} nuntia\n{storyCount} fabulas",
-                "export_button": "Exportare",
-                "clear_button": "Patet",
-                "view_logger_history_button": "View Logger History"
-            },
-            "tasks": {
-                "no_tasks": "Non opus",
-                "merge_files_toast": "Bus {numerare} imagini",
-                "remove_selected_tasks_title": "Certus esne munus electum tollere?",
-                "delete_files_option": "Etiam delete lima",
-                "remove_selected_tasks_confirm": "Aufer opera {numerare}?",
-                "remove_all_tasks_confirm": "Omnia opera amove?",
-                "remove_all_tasks_title": "Certus esne munus electum tollere?"
-            },
-            "features": {
-                "disabled": "debilitatum",
-                "export_option": "Exportare",
-                "import_option": "Importare",
-                "reset_option": "Reset",
-                "config_export_success_toast": "Mando emitur feliciter",
-                "saved_config_snackbar": "Mando salvus",
-                "config_import_success_toast": "Mando importari feliciter",
-                "config_import_failure_toast": "Deficio ad config {errorem} importare"
-            },
-            "social": {
-                "friends_tab": "amici",
-                "groups_tab": "Groups",
-                "empty_hint": "(vacuus)",
-                "streaks_expiration_short": "{horas} h"
-            },
-            "manage_scope": {
-                "e2ee_title": "Finis-ad-finem Encryption",
-                "rules_title": "Rulese",
-                "logged_stories_button": "Show Logged Storiese",
-                "participants_text": "{numerare} participantium",
-                "not_found": "Non inveni",
-                "streaks_title": "Striae",
-                "streaks_length_text": "Longitudo: {length}",
-                "streaks_expiration_text": "Expirat in {eta}",
-                "streaks_expiration_text_expired": "Expiratus",
-                "reminder_button": "Set Lorem",
-                "delete_scope_confirm_dialog_title": "Visne delere a {scope}?"
-            },
-            "logged_stories": {
-                "story_failed_to_load": "Deficio ad onus",
-                "no_stories": "Non fabulas invenerunt",
-                "save_from_cache_button": "Nisi ex Cache"
-            },
-            "messaging_preview": {
-                "bridge_connection_failed": "Defecit coniungere ad Snapchat per pontem ministerium",
-                "bridge_init_failed": "Non initialize quantitatem pontis",
-                "message_fetch_failed": "Deficio arcessere",
-                "no_message_hint": "Nulla nuntius",
-                "save_selection_option": "Salvum Electio",
-                "unsave_selection_option": "Electio unsave",
-                "unsave_all_option": "Invidere All",
-                "mark_selection_as_seen_option": "Mark lectus Snap ut videtur",
-                "mark_all_as_seen_option": "Nota omnia Snaps ut videtur",
-                "save_all_option": "Servare All"
-            }
-        },
-        "dialogs": {
-            "scripting_warning": {
-                "content": "SnapEnhance instrumentum scriptionis includit, supplicium usoris definiti codicis in fabrica permittens. Summa cautione utere et tantum modulos ex notis, certis auctoribus institue. Moduli non legitimi vel non probati possunt pericula securitatis in ratiocinatione tua ponere."
-            }
-        }
-    },
     "setup": {
         "dialogs": {
-            "select_language": "Lingua cupere",
-            "select_save_folder_button": "Ordnerus cupere",
-            "save_folder": "SnapEnhance requirit PRAECLUSIO permissiones ut download et salvum Media ex Snapchat.\nElige locum ubi instrumentorum communicationis socialis debet esse recepta."
-        },
-        "permissions": {
-            "notification_access": "Nervus alloware",
-            "battery_optimization": "Akkutis perfectio",
-            "display_over_other_apps": "Druber cuper",
-            "request_button": "Voluntas",
-            "dialog": "Pergere debes aptare sequentia requisita:"
+            "select_language": "Linguam Selecta",
+            "save_folder": "PurrfectSnap requirit permissiones repono ut download et salvum Media ex Snapchat.\nElige locum ubi media debet esse recepta.",
+            "select_save_folder_button": "Selecta Folder"
         },
         "mappings": {
-            "dialog": "Generating Mappings, hoc modicum tempus capere potest.",
-            "generate_failure_no_snapchat": "SnapEnhance Snapchat deprehendere potuit, Aliquam Snapchat reinstalling.",
-            "generate_failure": "Error occurrit dum mappings generare conatur, iterum conare."
+            "dialog": "Generans Mappings, hoc potest capere aliquantulum...",
+            "generate_failure_no_snapchat": "PurrfectSnap non potuit deprehendere Snapchat, conare reinstalling Snapchat.",
+            "generate_failure": "Error occurrit dum conatur generare mappings, conare iterum."
+        },
+        "permissions": {
+            "dialog": "Continuare debes aptare sequentia requisita:",
+            "notification_access": "Accessus Notificatio",
+            "battery_optimization": "Optimisatio Pugna",
+            "display_over_other_apps": "Super Alias Apps Propono",
+            "request_button": "Request"
         }
     },
     "scopes": {
         "friend": "Amicus",
-        "group": "Magnas"
+        "group": "Grex"
+    },
+    "manager": {
+        "routes": {
+            "tasks": "Opera",
+            "features": "Features",
+            "manage_rule_feature": "Curo Regula Feature",
+            "home": "Domus",
+            "home_settings": "Occasus",
+            "home_logs": "Acta",
+            "logger_history": "Logger Historia",
+            "logged_stories": "Initium Stories",
+            "friend_tracker": "Amicus Tracker",
+            "edit_rule": "Recensere Regula",
+            "file_imports": "File Importat",
+            "manage_repos": "Curo Repositories",
+            "social": "Socialis",
+            "manage_scope": "Curo Scope",
+            "messaging_preview": "Praevisum",
+            "scripts": "Scripta",
+            "better_location": "Melior Locus"
+        },
+        "sections": {
+            "home": {
+                "version_title": "v{versionName} · furcatum ab Aeterno",
+                "update_title": "PurrfectSnap Update",
+                "update_content": "Versio {version} praesto est!",
+                "update_button": "Download",
+                "debug_build_summary_title": "Tu curris a debug aedificare de PurrfectSnap",
+                "debug_build_summary_content": "Versio {versionName} ({versionCode})",
+                "debug_build_summary_date": "Aedificare diem: {date} ({days} diebus ago)",
+                "quick_actions_title": "Velox Actiones",
+                "download_icon_description": "Download",
+                "completed_icon_description": "Completur",
+                "failed_icon_description": "Deficio",
+                "manage_quick_actions_description": "Curo Velox Actiones",
+                "quick_actions_icon_description": "Velox Actiones",
+                "add_quick_action_description": "Addere Velox Actio"
+            },
+            "home_logs": {
+                "no_logs_hint": "Nulla acta praesto",
+                "clear_logs_button": "Acta Purgare",
+                "export_logs_button": "Acta Exportare",
+                "saving_logs_toast": "Salvum acta, hoc potest capere aliquantulum...",
+                "saved_logs_success_toast": "Acta servata feliciter",
+                "saved_logs_failure_toast": "Deficio servare acta"
+            },
+            "home_settings": {
+                "actions_title": "Actiones",
+                "message_logger_title": "Nuntius Logger",
+                "debug_title": "Debug",
+                "success_toast": "Actum!",
+                "message_logger_summary": "{messageCount} nuntii\n{storyCount} fabulae",
+                "export_button": "Exportare",
+                "clear_button": "Purgare",
+                "view_logger_history_button": "Videre Logger Historia",
+                "updates_title": "Updates",
+                "auto_update_check": "Auto reprehendo pro updates",
+                "update_check_frequency": "Update reprehendo frequentia",
+                "update_check_frequency_daily": "Cotidie",
+                "update_check_frequency_weekly": "Weekly",
+                "update_check_frequency_monthly": "Menstrua",
+                "theme_icon_description": "Thema",
+                "app_theme_title": "App Thema",
+                "theme_mode_system": "Ratio",
+                "theme_mode_light": "Lux",
+                "theme_mode_dark": "Tenebris",
+                "ui_settings_title": "UI Occasus",
+                "haptic_feedback_label": "Haptic Feedback",
+                "test_mode_label": "Test Modus (TANTUM DEBUGGING)",
+                "disable_feature_loading_label": "Disable Feature Loading",
+                "disable_auto_mapper_label": "Disable Auto Mapper",
+                "disable_bypass_indicator_label": "Disable Bypass Status Indicator",
+                "update_notification_channel_name": "PurrfectSnap Updates",
+                "update_notification_channel_description": "Notificationes pro PurrfectSnap updates",
+                "update_notification_title": "PurrfectSnap Update Available",
+                "update_notification_text": "Version %s nunc praesto est.",
+                "export_database_failed_toast": "Deficio exportare database! {message}",
+                "clear_messages_failed_toast": "Deficio purgare nuntios! {message}",
+                "clear_file_failed_toast": "Deficio purgare file! {message}",
+                "debug_file_config": "Configuratio",
+                "debug_file_mappings": "Mappings",
+                "debug_file_message_logger": "Nuntius Logger",
+                "debug_file_pinned_best_friend": "Pinned Optimus Amicus",
+                "debug_file_native_sig_cache": "Nativus Signature Cache"
+            },
+            "tasks": {
+                "no_tasks": "Nulla opera",
+                "merge_button": "Merge",
+                "failed_to_open_file": "Deficio aperire file",
+                "merge_files_toast": "Merging {count} files",
+                "remove_selected_tasks_title": "Certe vis tollere selecta opera?",
+                "remove_all_tasks_title": "Certe vis tollere omnia opera?",
+                "delete_files_option": "Etiam delere files",
+                "remove_selected_tasks_confirm": "Remove {count} opera?",
+                "remove_all_tasks_confirm": "Remove omnia opera?",
+                "clear_tasks_description": "Purgare opera",
+                "file_not_found_icon_description": "File non inventus",
+                "image_icon_description": "Imago",
+                "video_icon_description": "Video",
+                "audio_icon_description": "Audio",
+                "file_icon_description": "File",
+                "download_icon_description": "Download",
+                "chat_action_icon_description": "Chat Actio",
+                "cancel_icon_description": "Cancel",
+                "success_icon_description": "Successus",
+                "failure_icon_description": "Defectum",
+                "cancelled_icon_description": "Cancellatus",
+                "task_status_failure": "Defectum",
+                "task_status_cancelled": "Cancellatus"
+            },
+            "features": {
+                "disabled": "Disabled",
+                "export_option": "Exportare",
+                "import_option": "Importare",
+                "reset_option": "Reset",
+                "config_export_success_toast": "Config exportata feliciter",
+                "config_import_success_toast": "Config importata feliciter",
+                "config_import_failure_toast": "Deficio importare config {error}",
+                "config_export_failure_toast": "Deficio exportare config {error}",
+                "saved_config_snackbar": "Config salvus",
+                "older_required": "Hoc pluma requirit Snapchat v{version} aut vetustius ad operari recte",
+                "newer_required": "Hoc pluma requirit Snapchat v{version} aut recentius ad operari recte",
+                "search_button": "Quaerere"
+            },
+            "manage_rule_feature": {
+                "disable_state_option": "Disabled",
+                "disable_state_subtext": "Nulli amici/gruppi afficientur",
+                "whitelist_state_option": "Nemo praeter ...",
+                "whitelist_state_subtext": "Tantum {count} amici/gruppi hac regula afficientur",
+                "whitelist_state_button": "Selecta permissus amici/gruppi",
+                "blacklist_state_option": "Omnes praeter ...",
+                "blacklist_state_subtext": "Omnes praeter {count} amici/gruppi hac regula afficientur",
+                "blacklist_state_button": "Selecta exclusi amici/gruppi",
+                "clear_list_button": "Purgare amici/gruppi album",
+                "dialog_clear_confirmation_text": "Certe vis purgare album?"
+            },
+            "social": {
+                "friends_tab": "Amici",
+                "groups_tab": "Gruppi",
+                "empty_hint": "(inane)",
+                "streaks_expiration_short": "{hours}h"
+            },
+            "manage_scope": {
+                "logged_stories_button": "Monstrare Logged Stories",
+                "e2ee_title": "Finis-ad-finem Encryption",
+                "rules_title": "Regulae",
+                "participants_text": "{count} participes",
+                "not_found": "Non inventus",
+                "streaks_title": "Streaks",
+                "streaks_length_text": "Longitudo: {length}",
+                "streaks_expiration_text": "Expirat in {eta}",
+                "streaks_expiration_text_expired": "Expiratus",
+                "reminder_button": "Pone Admonitio",
+                "delete_scope_confirm_dialog_title": "Certe vis delere {scope}?",
+                "notes_placeholder": "Click addere notam",
+                "invalid_key_size_32_bytes": "Invalid key magnitudine (debet esse 32 bytes)",
+                "successfully_imported_key": "Feliciter importata clavis",
+                "failed_to_import_key": "Deficio importare clavis: {message}",
+                "export_base64_button": "Exportare Base64",
+                "import_base64_button": "Importare Base64"
+            },
+            "logged_stories": {
+                "story_failed_to_load": "Deficio onerare",
+                "no_stories": "Nulla fabulas invenitur",
+                "save_from_cache_button": "Salva ex Cache",
+                "downloaded_to_path": "Downloaded ad {path}",
+                "download_failed": "Download defecit: {message}",
+                "posted_at": "Missae ad {date}",
+                "created_at": "Creatus ad {date}",
+                "failed_to_open_file": "Deficio aperire file. Reprehendo acta pro magis info",
+                "failed_to_get_file": "Deficio ut file"
+            },
+            "messaging_preview": {
+                "processed_messages_toast": "Processionaliter {count} nuntios",
+                "processed_messages_text": "Processionaliter {count} nuntios",
+                "close_button_description": "Claudere",
+                "bridge_connection_failed": "Deficio coniungere ad pontem. Fac Snapchat currit in background",
+                "bridge_init_failed": "Deficio initializare nuntius pontem. Fac Snapchat currit in background",
+                "message_fetch_failed": "Deficio arcessere nuntios",
+                "no_message_hint": "Nulla nuntius",
+                "save_selection_option": "Salva Electio",
+                "save_all_option": "Salva Omnia",
+                "unsave_selection_option": "Unsave Electio",
+                "unsave_all_option": "Unsave Omnia",
+                "mark_selection_as_seen_option": "Mark electus Snap ut visum",
+                "mark_all_as_seen_option": "Mark omnes Snaps ut visum",
+                "delete_selection_option": "Delere Electio",
+                "delete_all_option": "Delere Omnia"
+            },
+            "logger_history": {
+                "download_started_toast": "Download coepi!",
+                "download_success_toast": "Downloaded ad {path}",
+                "download_failed_toast": "Deficio ad download {message}",
+                "edited_at_text": "{message} (edited ad {date})",
+                "download_button": "Download",
+                "select_conversation_placeholder": "Select a colloquium",
+                "close_button_description": "Claudere",
+                "search_button_description": "Quaerere",
+                "list_friend_format": "Amicus {name}",
+                "list_group_format": "Grex {name}",
+                "no_more_messages": "Non magis nuntios",
+                "reverse_order_checkbox": "Reverse Ordine",
+                "chat_attachment": "Affectum {index}",
+                "empty_message": "Inanis Chat Nuntius",
+                "message_parse_failed": "Deficio ad parse nuntius",
+                "unknown_sender": "Ignorotus Mittens",
+                "download_attachment_failed_toast": "Deficio ad download affectum",
+                "log_header_format": "{username} ({type}) - {date}"
+            },
+            "file_imports": {
+                "import_file_button": "Importare File",
+                "file_not_found": "File non inventus",
+                "file_import_failed": "Deficio importare file: {error}",
+                "file_imported": "File importata feliciter",
+                "file_delete_failed": "Deficio delere file",
+                "no_files_hint": "Hic potes importare files pro usu in Snapchat. Preme puga pyga infra ad importare file."
+            },
+            "better_location": {
+                "spoofed_coordinates_title": "Lat {latitude}, Lng {longitude}",
+                "save_coordinates_dialog_title": "Salva Coordinatae",
+                "saved_name_dialog_hint": "Nomen Salvum",
+                "latitude_dialog_hint": "Latitudo",
+                "longitude_dialog_hint": "Longitudo",
+                "save_dialog_button": "Salva",
+                "choose_location_button": "Elige Locus",
+                "teleport_to_friend_button": "Teleportare ad Amicum",
+                "spoof_location_toggle": "Spoof Locus",
+                "suspend_location_updates": "Suspende Locus Updates",
+                "saved_coordinates_title": "Salvus Coordinatae",
+                "no_saved_coordinates_hint": "Nulla salvus coordinatae",
+                "delete_dialog_title": "Delere Salvus Coordinata",
+                "delete_dialog_message": "Certe vis delere hanc salvam coordinatam?",
+                "teleport_to_friend_title": "Teleportare ad Amicum",
+                "search_bar": "Quaerere",
+                "no_friends_map": "Nulli amici in tabula",
+                "no_friends_found": "Nulli amici inventi",
+                "edit_location_button_description": "Recensere Locus",
+                "add_icon_description": "Addere",
+                "edit_icon_description": "Recensere",
+                "delete_icon_description": "Delere"
+            }
+        },
+        "dialogs": {
+            "add_friend": {
+                "title": "Adde Amicum vel Group",
+                "search_hint": "Quaerere",
+                "fetch_error": "Deficio arcessere data",
+                "category_groups": "Gruppi",
+                "category_friends": "Amici",
+                "participants_text": "{count} participes",
+                "search_icon_description": "Quaerere"
+            },
+            "scripting_warning": {
+                "title": "Monitum",
+                "content": "PurrfectSnap includit instrumentum scriptionis, permittens exsecutionem usoris definitae codicis in fabrica tua. Utere summa cautione et tantum installare modulos ex notis, certis fontibus. Moduli non legitimi vel non verificati pericula securitatis systemati tuo ponere possunt."
+            },
+            "reset_config": {
+                "title": "Reset config",
+                "content": "Certe vis reset config?",
+                "success_toast": "Config reset feliciter"
+            },
+            "export_config": {
+                "title": "Exportare Sensitiva Data?",
+                "content": "Visne exportare config cum sensitiva data? (Sicut locus coordinatae, etc.)"
+            },
+            "messaging_action": {
+                "title": "Elige contentus genera ad processum",
+                "select_all_button": "Omnia Selecta"
+            },
+            "file_imports": {
+                "no_files_settings_hint": "Nulla files inventa. Fac te importasse requisita files in File Importat sectione",
+                "settings_select_file_hint": "Selecta importata file"
+            },
+            "quick_actions_dialog": {
+                "title": "Recensere Velox Actiones",
+                "subtitle": "Selecta et magnitudine tua velox actiones."
+            }
+        },
+        "friend_tracker": {
+            "rules_tab": "Regulae",
+            "logs_tab": "Acta",
+            "export_dialog_title": "Exportare",
+            "bulk_export_button": "Massa Exportare",
+            "individual_export_button": "Singula Exportare",
+            "invalid_import_type_dialog_title": "Invalidum Importare Typus",
+            "invalid_import_type_dialog_text": "Electus file non est compatible cum hoc importare genus. Elige rectam importare genus.",
+            "import_dialog_title": "Importare",
+            "bulk_import_button": "Massa Importare",
+            "individual_import_button": "Singula Importare",
+            "import_button_description": "Importare",
+            "export_button_description": "Exportare",
+            "export_button": "Exportare",
+            "delete_button_description": "Delere",
+            "delete_button": "Delere",
+            "catalog_button_description": "Catalogus",
+            "catalog_button": "Catalogus",
+            "add_rule_button_description": "Adde Regula",
+            "add_rule_button": "Adde Regula",
+            "no_rules_found": "Nulla regulae inventae",
+            "empty_rule_name": "(inane)",
+            "events_suffix": "eventus",
+            "scopes_suffix": "scopi",
+            "select_rule_to_export_title": "Selecta Regula ad Exportare",
+            "deleted_logs_toast": "Deletum {count} acta",
+            "delete_logs_dialog_title": "Delere acta?",
+            "deleting_logs_dialog_text": "Delens {count} acta...",
+            "delete_logs_dialog_confirm_text": "Hoc delebit acta fundatur in current filter et quaerere query. Hic actio non potest esse factum.",
+            "exported_logs_toast": "Exportata acta!",
+            "export_logs_failed_toast": "Deficio exportare acta. Reprehendo logcat pro magis details.",
+            "export_logs_dialog_title": "Exportare acta?",
+            "exporting_logs_dialog_text": "Exportans acta...",
+            "export_logs_dialog_confirm_text": "Hoc exportabit acta fundatur in current filter et quaerere query.",
+            "export_as_button": "Exportare ut {type}",
+            "filters_title": "Filtra",
+            "search_by_label": "Quaerere per",
+            "newest_first_label": "Novissima primum",
+            "since_label": "Cum",
+            "until_label": "Usque",
+            "pick_a_date_button": "Elige diem",
+            "search_placeholder": "Quaerere",
+            "filter_button_description": "Filtrum",
+            "clear_button_description": "Purgare",
+            "no_logs_found": "Nulla acta inventa",
+            "log_event_format": "{event} in {conversation}",
+            "condition_only_inside_conversation": "Tantum cum sum in colloquio",
+            "condition_only_outside_conversation": "Tantum cum sum extra colloquium",
+            "condition_only_when_app_active": "Tantum cum Snapchat est activum",
+            "condition_only_when_app_inactive": "Tantum cum Snapchat est non activum",
+            "condition_no_push_notification_when_app_active": "Nulla dis notificatio cum Snapchat est activum",
+            "add_event_dialog_title": "Adde Eventus",
+            "event_type_label": "Eventus genus",
+            "triggers_title": "Triggers",
+            "conditions_title": "Conditiones",
+            "add_button": "Addere",
+            "default_rule_name": "Custom Regula",
+            "discard_changes_dialog_title": "Rejicere Mutationes?",
+            "discard_changes_dialog_text": "Habes insalvatus mutationes. Certe vis rejicere eas?",
+            "discard_button": "Rejicere",
+            "cannot_save_rule_dialog_title": "Non potest salvare Regula",
+            "cannot_save_rule_dialog_text": "Regula debet habere saltem unum eventum ad salvandum.",
+            "duplicate_rule_name_dialog_title": "Duplicatus Regula Nomen",
+            "duplicate_rule_name_dialog_text": "Regula cum hoc nomine iam existit. Elige aliud nomen.",
+            "delete_rule_dialog_title": "Delere Regula",
+            "delete_rule_dialog_text": "Certe vis delere hanc regulam?",
+            "new_rule_title": "Nova Regula",
+            "edit_rule_title": "Recensere Regula",
+            "back_button_description": "Retro",
+            "save_button_description": "Salva",
+            "general_section_title": "Generale",
+            "rule_name_label": "Regula Nomen",
+            "author_name_label": "Auctor Nomen",
+            "scope_section_title": "Scopus",
+            "scope_all": "Omnes",
+            "scope_whitelist": "Whitelist",
+            "scope_blacklist": "Blacklist",
+            "select_friends_groups_button": "Selecta Amici/Gruppi ({count})",
+            "events_section_title": "Eventus",
+            "add_event_button": "Adde Eventus",
+            "no_events_text": "Nulla eventus"
+        },
+        "friend_tracker_catalog": {
+            "download_failed": "Deficio download: {code}",
+            "error": "Error: {message}",
+            "no_repos_added": "Nulla repositoria addita.",
+            "no_rules_available": "Nulla regulae praesto ab aliquo repo.",
+            "by_author": "ab {author}",
+            "imported_button": "Importata",
+            "import_button": "Importare",
+            "title": "Amicus Tracker Catalogus",
+            "manage_repos_description": "Curo Repositories"
+        },
+        "friend_tracker_export": {
+            "title": "Exportare Regulae",
+            "back_button_description": "Retro",
+            "exported_toast": "Amicus Tracker Regulae Exportatae!",
+            "export_failed_toast": "Deficio exportare regulas: {message}",
+            "save_button": "Salva",
+            "expand_button_description": "Expandere"
+        },
+        "friend_tracker_import": {
+            "title": "Importare Regulae",
+            "back_button_description": "Retro",
+            "imported_toast": "Amicus Tracker Regulae Importatae!",
+            "import_failed_toast": "Deficio importare regulas: {message}",
+            "confirm_button": "Confirmare",
+            "expand_button_description": "Expandere"
+        },
+        "friend_tracker_repos": {
+            "invalid_repo_title": "Invalidum Repositorium",
+            "add_repo_button": "Adde Repositorium",
+            "add_repo_dialog_title": "Adde Repositorium URL",
+            "repo_url_label": "Repositorium URL",
+            "repo_added_toast": "Repositorium additum feliciter!",
+            "invalid_repo_error": "Hoc non videtur esse validum Amicus Tracker repositorium.",
+            "add_repo_failed_toast": "Deficio addere repositorium: {message}",
+            "add_button": "Addere",
+            "no_repos_added": "Nulla repositoria addita",
+            "remove_button": "Removere",
+            "remove_repo_dialog_title": "Removere Repositorium",
+            "remove_repo_dialog_text": "Certe vis removere hoc repositorium?"
+        },
+        "navigation": {
+            "tracker_tab_label": "Tracker",
+            "customize_bottom_bar_title": "Mos Bottom Bar",
+            "customize_bottom_bar_subtitle": "Reorder, addere vel removere tabs. Max quinque.",
+            "shown_tabs_title": "Monstratum Tabs",
+            "no_tabs_selected_text": "Nulla tabs selecta",
+            "available_tabs_title": "Praesto Tabs",
+            "reset_button": "Reset",
+            "done_button": "Actum"
+        },
+        "scripting": {
+            "script_already_installed": "Script iam installed!",
+            "downloading_script": "Downloading script...",
+            "script_downloaded": "Script {name} downloaded!",
+            "download_script_failed": "Deficio ad download script. Reprehendo acta pro magis details",
+            "import_script_from_url_title": "Importare Script ex URL",
+            "import_script_warning": "Monitum: Importata scripta possunt esse noxia tuo artificio. Tantum importare scripta ex notis, certis fontibus.",
+            "enter_url_label": "Intra URL hic:",
+            "script_imported": "Script {name} importata!",
+            "import_failed": "Deficio importare script. {message}. Reprehendo acta pro magis details",
+            "import_button": "Importare",
+            "update_module_button": "Update Modulo",
+            "updating_script": "Updating script {name}...",
+            "module_not_found": "Modulo non inventus",
+            "updated_script": "Updated {name} ad versionem {version}",
+            "update_module_failed": "Deficio ad update modulo. Reprehendo acta pro magis details",
+            "edit_module_button": "Recensere Modulo",
+            "open_module_failed": "Deficio aperire modulo file. Reprehendo acta pro magis details",
+            "clear_module_data_button": "Purgare Modulo Data",
+            "module_data_cleared": "Modulo data purgata!",
+            "clear_module_data_failed": "Deficio purgare modulo data. Reprehendo acta pro magis details",
+            "delete_module_button": "Delere Modulo",
+            "deleted_script": "Deletum script {name}!",
+            "delete_module_failed": "Deficio delere modulo. Reprehendo acta pro magis details",
+            "actions_title": "Actiones",
+            "no_description": "Nulla descriptio",
+            "update_available": "Update praesto: {version}",
+            "actions_button": "Actiones",
+            "loaded_script": "Oneratus script {name}",
+            "unloaded_script": "Exoneratus script {name}",
+            "enable_script_failed": "Deficio ad enable script. Reprehendo acta pro magis details",
+            "disable_script_failed": "Deficio ad disable script. Reprehendo acta pro magis details",
+            "select_scripts_folder_toast": "Elige tuum scripta folder!",
+            "manage_repos_button": "Curo Repos",
+            "import_from_url_button": "Importare ex URL",
+            "open_scripts_folder_button": "Aperire Scripta Folder",
+            "no_settings_for_module": "Hoc modulo non habet aliquem occasus",
+            "installed_scripts_tab": "Installed Scripta",
+            "catalog_tab": "Catalogus",
+            "no_scripts_folder_selected_title": "Nulla scripta folder selecta",
+            "select_folder_button": "Selecta folder",
+            "no_scripts_found_title": "Nulla scripta inventa.",
+            "use_catalog_to_add_scripts": "Utere catalogus tab ad addere scripta!",
+            "ok_button_timeout": "OK ({timeout})",
+            "documentation_button": "Documenta",
+            "catalog": {
+                "script_already_installed": "Script iam installed!",
+                "download_failed": "Deficio download: {code}",
+                "script_downloaded": "Script downloaded!",
+                "could_not_create_file": "Non potuit creare file.",
+                "no_scripts_folder_selected": "Nulla scripta folder selecta.",
+                "error": "Error: {message}",
+                "no_repos_added": "Nulla repositoria addita.",
+                "repo_list_info": "Hic potes invenire album repos: ",
+                "link_text": "Link",
+                "no_scripts_available": "Nulla scripta praesto ab aliquo repo.",
+                "by_author": "ab {author}",
+                "version": "Versio: {version}",
+                "installed_button": "Installed",
+                "download_button": "Download"
+            },
+            "repos": {
+                "invalid_repo_title": "Invalidum Repositorium",
+                "add_repo_button": "Adde Repositorium",
+                "add_repo_dialog_title": "Adde Repositorium URL",
+                "repo_url_label": "Repositorium URL",
+                "repo_added_toast": "Repositorium additum feliciter!",
+                "invalid_repo_error": "Hoc non videtur esse validum Script repositorium.",
+                "add_repo_failed_toast": "Deficio addere repositorium: {message}",
+                "add_button": "Addere",
+                "no_repos_added": "Nulla repositoria addita",
+                "remove_button": "Removere",
+                "remove_repo_dialog_title": "Removere Repositorium",
+                "remove_repo_dialog_text": "Certe vis removere hoc repositorium?"
+            }
+        },
+        "features": {
+            "config_import": {
+                "title": "Confirmare Importare",
+                "back_button_description": "Retro",
+                "config_imported_toast": "Config Importata!",
+                "confirm_button": "Confirmare",
+                "expand_button_description": "Expandere",
+                "enable_feature": "Admitte Feature",
+                "enabled": "Enabled",
+                "disabled": "Disabled"
+            },
+            "config_export": {
+                "title": "Exportare Summarium",
+                "back_button_description": "Retro",
+                "save_button": "Salva",
+                "expand_button_description": "Expandere",
+                "enable_feature": "Admitte Feature",
+                "enabled": "Enabled",
+                "disabled": "Disabled"
+            }
+        },
+        "manage_repos": {
+            "title": "Curo {type} Repositoria",
+            "add_repo_button": "Adde Repositorium",
+            "add_repo_dialog_title": "Adde Repositorium URL",
+            "repo_url_label": "Repositorium URL",
+            "repo_added_successfully": "Repositorium additum feliciter!",
+            "add_repo_failed": "Deficio addere repositorium: {message}",
+            "add_button": "Addere",
+            "no_repos_added": "Nulla repositoria addita",
+            "remove_button": "Removere"
+        }
+    },
+    "rules": {
+        "toasts": {
+            "enabled": "{ruleName} enabled",
+            "disabled": "{ruleName} disabled"
+        },
+        "modes": {
+            "blacklist": "Blacklist modus",
+            "whitelist": "Whitelist modus"
+        },
+        "properties": {
+            "auto_download": {
+                "name": "Auto download",
+                "description": "Automatice download Snaps cum inspicientes eos",
+                "options": {
+                    "blacklist": "Exclude ab Auto Download",
+                    "whitelist": "Auto Download"
+                }
+            },
+            "stealth": {
+                "name": "Furtim Modus",
+                "description": "Prohibet quemquam scire te aperuisse suas Snaps/Chats et colloquia",
+                "options": {
+                    "blacklist": "Exclude a Furtim Modus",
+                    "whitelist": "Furtim modus"
+                }
+            },
+            "auto_save": {
+                "name": "Auto Salvum",
+                "description": "Salvat Chat Nuntios cum inspicientes eos",
+                "options": {
+                    "blacklist": "Exclude ab Auto salvum",
+                    "whitelist": "Auto salvum"
+                }
+            },
+            "unsaveable_messages": {
+                "name": "Insalvabilia Nuntios",
+                "description": "Prohibet nuntios salvari in chat ab aliis hominibus",
+                "options": {
+                    "blacklist": "Exclude ab Insalvabilia Nuntios",
+                    "whitelist": "Insalvabilia Nuntios"
+                }
+            },
+            "auto_open_snaps": {
+                "name": "Auto Aperi Snaps",
+                "description": "Automatice aperit Snaps cum recipiens eos",
+                "options": {
+                    "blacklist": "Exclude ab Auto Aperi Snaps",
+                    "whitelist": "Auto Aperi Snaps"
+                }
+            },
+            "hide_friend_feed": {
+                "name": "Celare ab Amico Feed"
+            },
+            "e2e_encryption": {
+                "name": "Utere E2E Encryption"
+            },
+            "pin_conversation": {
+                "name": "Pin Conversatio"
+            },
+            "exclude_message_logger": {
+                "name": "Exclude a Nuntius Logger"
+            }
+        }
+    },
+    "actions": {
+        "clean_snapchat_cache": {
+            "name": "Munda Snapchat Cache",
+            "description": "Mundat Snapchat Cache"
+        },
+        "manage_friend_list": {
+            "name": "Curo Amicus Index",
+            "description": "Importare/exportare amicos tuos album cum tergum sursum"
+        },
+        "export_chat_messages": {
+            "name": "Exportare Chat Nuntios",
+            "description": "Exportat colloquium nuntios in JSON/HTML/TXT file"
+        },
+        "export_memories": {
+            "name": "Exportare Memoriae",
+            "description": "Exportat memorias in ZIP file"
+        },
+        "bulk_messaging_action": {
+            "name": "Massa Nuntius Actio",
+            "description": "Peragit operationes sicut delere amicos vel massa deletio colloquiorum"
+        },
+        "regen_mappings": {
+            "name": "Regenerare Mappings",
+            "description": "Manuale regenerare mappings"
+        },
+        "change_language": {
+            "name": "Mutare Linguam",
+            "description": "Mutare linguam PurrfectSnap"
+        },
+        "file_imports": {
+            "name": "File Importat",
+            "description": "Importare files pro usu in Snapchat"
+        },
+        "friend_tracker": {
+            "name": "Amicus Tracker",
+            "description": "Track tuos amicos in Snapchat"
+        },
+        "logger_history": {
+            "name": "Logger Historia",
+            "description": "Videre historiam logged nuntios"
+        }
     },
     "features": {
+        "notices": {
+            "unstable": "⚠ Instabilis",
+            "ban_risk": "⚠ Hoc pluma potest facere bans",
+            "internal_behavior": "⚠ Hoc potest frangere Snapchat internum mores"
+        },
         "properties": {
             "downloader": {
+                "name": "Downloader",
+                "description": "Download Snapchat Media",
                 "properties": {
-                    "custom_path_format": {
-                        "description": "Denota est consuetudo semita forma pro media downloaded\n\nPraesto variabiles:\n - %username%\n - %source%\n - %hash%\n - %date_time%"
+                    "save_folder": {
+                        "name": "Salva Folder",
+                        "description": "Selecta directorium ad quod omnia media debet esse downloaded ad"
                     },
-                    "download_context_menu": {
-                        "description": "Permittit te ut nuntia ex colloquio vel historia utens tabulas contexta notas extrahere/praevisum.\nLong torcular in bullarum et opprimere download"
+                    "auto_download_sources": {
+                        "name": "Auto Download Fontes",
+                        "description": "Selecta fontes ad automatice download ex"
+                    },
+                    "prevent_self_auto_download": {
+                        "name": "Preoccupo Sui Auto Download",
+                        "description": "Prohibet tua Snaps ex esse downloaded automatice"
+                    },
+                    "path_format": {
+                        "name": "Semita Forma",
+                        "description": "Specificare File Semita Forma"
+                    },
+                    "allow_duplicate": {
+                        "name": "Permitte Duplicatus",
+                        "description": "Permittit idem media esse downloaded pluries"
+                    },
+                    "merge_overlays": {
+                        "name": "Merge Overlays",
+                        "description": "Coniungit Textum et media a Snap in unum file"
+                    },
+                    "force_image_format": {
+                        "name": "Cogere Imago Forma",
+                        "description": "Cogit imagines servari in determinata Forma"
+                    },
+                    "force_voice_note_format": {
+                        "name": "Cogere Vox Nota Forma",
+                        "description": "Cogit Vox Notae servari in determinata Forma"
+                    },
+                    "auto_download_voice_notes": {
+                        "name": "Auto Download Vox Notae",
+                        "description": "Automatice downloads vox notae cum ludens eos"
+                    },
+                    "download_profile_pictures": {
+                        "name": "Download Profile Pictures",
+                        "description": "Permittit te download Profile Pictures ex profile pagina"
                     },
                     "opera_download_button": {
-                        "description": "Bullam download in summo angulo dextro addit cum Snap spectabat.\nLong torcular in bullarum et opprimere download"
+                        "name": "Opera Download Puga",
+                        "description": "Addit download puga in summo dextro angulo cum inspicientes a Snap.\nLongum prelum in globulis coget download"
+                    },
+                    "download_context_menu": {
+                        "name": "Download Contextus Menu",
+                        "description": "Permittit te download/praevisum nuntios ex colloquio vel fabula utens contextu menu.\nLongum prelum in globulis coget download"
+                    },
+                    "ffmpeg_options": {
+                        "name": "FFmpeg Optiones",
+                        "description": "Specificare additional FFmpeg optiones",
+                        "properties": {
+                            "threads": {
+                                "name": "Fila",
+                                "description": "Moles filis uti"
+                            },
+                            "preset": {
+                                "name": "Preset",
+                                "description": "Pone celeritatem conversionis"
+                            },
+                            "constant_rate_factor": {
+                                "name": "Constans Rate Factor",
+                                "description": "Pone constantem rate factorem pro video encoder\nEx 0 ad 51 pro libx264"
+                            },
+                            "video_bitrate": {
+                                "name": "Video Bitrate",
+                                "description": "Pone video bitrate (kbps)"
+                            },
+                            "audio_bitrate": {
+                                "name": "Audio Bitrate",
+                                "description": "Pone audio bitrate (kbps)"
+                            },
+                            "custom_video_codec": {
+                                "name": "Custom Video Codec",
+                                "description": "Pone consuetudo Video Codec (eg libx264)"
+                            },
+                            "custom_audio_codec": {
+                                "name": "Custom Audio Codec",
+                                "description": "Pone consuetudo Audio Codec (eg AAC)"
+                            }
+                        }
+                    },
+                    "logging": {
+                        "name": "Logging",
+                        "description": "Ostendit toasts cum media est downloading"
+                    },
+                    "custom_path_format": {
+                        "name": "Custom Semita Forma",
+                        "description": "Specificare consuetudo semita forma pro downloaded media\n\nPraesto variabiles:\n - %username%\n - %source%\n - %hash%\n - %date_time%"
                     }
                 }
             },
             "user_interface": {
+                "name": "User Interface",
+                "description": "Muta aspectum et sentire de Snapchat",
                 "properties": {
-                    "hide_friend_feed_entry": {
-                        "description": "Amicus certus in amicum ab amico Feed\nUtere socialis tab administrare haec factura"
-                    }
-                }
-            },
-            "experimental": {
-                "properties": {
-                    "e2ee": {
-                        "description": "Encryptas epistulas tuas cum AES clavis secreto communi utens\nFac ut clavem tuam alicubi incolumem serves!",
+                    "enable_app_appearance": {
+                        "name": "Admitte App Aspectus Occasus",
+                        "description": "Admittit occultatum App Aspectus Occasus\nNon potest requiri in recentioribus Snapchat versionibus"
+                    },
+                    "friend_feed_message_preview": {
+                        "name": "Amicus Feed Nuntius Praevisum",
+                        "description": "Ostendit praevisum ultimarum nuntiorum in Amico Feed",
                         "properties": {
-                            "force_message_encryption": {
-                                "description": "Prohibet mittens nuntios encrypted ad eos qui non habent E2E Encryption solum cum multiplex colloquia eliguntur"
+                            "amount": {
+                                "name": "Moles",
+                                "description": "Moles nuntiorum ad praevisum"
                             }
                         }
                     },
-                    "account_switcher": {
-                        "description": "Permittit ut commutandum inter rationes sine colligationem e\nLongum premunt in icone investigationis proximam ad profile Bitmoji ut tabulam aperiant\nNota: Haec factura experimentalis est et in futuro verisimile mutatio est"
+                    "snap_preview": {
+                        "name": "Snap Praevisum",
+                        "description": "Ostendit parvum praevisum iuxta invisibilia Snaps in chat"
                     },
-                    "custom_streaks_expiration_format": {
-                        "description": "Virgae Expiration forma customizes\n\nPraesto variabiles:\n - %c: Virgae Comitis\n - %e: Hourglass Emoji\n - %d: Diebus\n - % h: Horae\n - %m: Minutes\n - %s: Secundi\n -% w: Reliquis Tempus"
-                    },
-                    "best_friend_pinning": {
-                        "description": "Permittit tibi amicum suspendere, ut numero unus amicus. Nota: Tantum potes videre te amicissimo confixi"
-                    },
-                    "meo_passcode_bypass": {
-                        "description": "Bypass in oculis meis tantum passcode\nHoc modo operatur, si passcode ante recte ingressus est"
-                    }
-                }
-            },
-            "global": {
-                "properties": {
-                    "hide_active_music": {
-                        "description": "Prohibet Snapchat scire cupis musicam audire\nHoc tibi permittet ut globuli volumen imperium adhibeas snaps ut musicam audias"
-                    },
-                    "media_upload_quality": {
+                    "bootstrap_override": {
+                        "name": "Bootstrap Override",
+                        "description": "Overrides user interface bootstrap occasus",
                         "properties": {
-                            "force_video_upload_source_quality": {
-                                "description": "Copiae Snapchat utendi fons qualis est cum uploading videos\nNota quaeso quod hoc metadata ex instrumentis non removeat"
+                            "app_appearance": {
+                                "name": "App Aspectus",
+                                "description": "Pone pertinax App Aspectus"
                             },
-                            "custom_image_upload_format": {
-                                "description": "Morem imaginis onerationis\nformat\nSelect a lossless format (sicut PNG)\npro optima qualitate"
+                            "home_tab": {
+                                "name": "Domus Tab",
+                                "description": "Overrides startup tab cum aperire Snapchat"
                             }
                         }
                     },
-                    "video_playback_rate_slider": {
-                        "description": "Lapsus lapsus addit in menu contextus operae ut ratem video playback mutare\nNota: Mutationes tantum applicare ad subsequent videos"
+                    "force_amoled_theme": {
+                        "name": "Amoled Tenebris Modus",
+                        "description": "Utitur verum nigrum background pro tenebris thema"
                     },
-                    "better_location": {
-                        "properties": {
-                            "spoof_battery_level": {
-                                "description": "Spoofs pila gradu tuom in tabula\nValorem debet esse inter 0 et 100"
-                            }
+                    "map_friend_nametags": {
+                        "name": "Consectetur Amicus Map Nametags",
+                        "description": "Meliorat Nametags amicorum in Snapmap"
+                    },
+                    "prevent_message_list_auto_scroll": {
+                        "name": "Prohibe Nuntius Index Auto Scroll",
+                        "description": "Prohibet nuntius album a scrolling ad imum cum mittens / recipiens nuntium"
+                    },
+                    "streak_expiration_info": {
+                        "name": "Monstra Streak Expiratio Info",
+                        "description": "Monstrat Streak Expiratio timer iuxta Streaks contra"
+                    },
+                    "hide_friend_feed_entry": {
+                        "name": "Celare Amicus Feed Ingressum",
+                        "description": "Celat specificum amicum ab Amico Feed\nUtere socialis tab ad curo hoc pluma"
+                    },
+                    "hide_streak_restore": {
+                        "name": "Celare Streak Restituere",
+                        "description": "Celat Restituere puga in amico feed"
+                    },
+                    "hide_quick_add_suggestions": {
+                        "name": "Celare Velox Adde Suggestiones",
+                        "description": "Removet velox adde amicus suggestiones"
+                    },
+                    "hide_story_suggestions": {
+                        "name": "Celare Fabula Suggestiones",
+                        "description": "Removet suggestiones ex Stories pagina"
+                    },
+                    "hide_ui_components": {
+                        "name": "Celare UI Components",
+                        "description": "Selecta quae UI components ad celare"
+                    },
+                    "opera_media_quick_info": {
+                        "name": "Opera Media Velox Info",
+                        "description": "Ostendit utilem informationem de media sicut creaturae diem in opera videntium contextu menu"
+                    },
+                    "old_bitmoji_selfie": {
+                        "name": "Vetus Bitmoji Selfie",
+                        "description": "Reducit Bitmoji selfies ex vetustioribus Snapchat versionibus"
+                    },
+                    "disable_spotlight": {
+                        "name": "Disable Spotlight",
+                        "description": "Disables Spotlight pagina"
+                    },
+                    "friend_feed_menu_buttons": {
+                        "name": "Amicus Feed Menu Puga",
+                        "description": "Selecta quae puga pyga ut ostenderet in Amico Feed Menu"
+                    },
+                    "auto_close_friend_feed_menu": {
+                        "name": "Auto Close Amicus Feed Menu",
+                        "description": "Automatice claudit Amicus Feed Menu post premens occasum puga"
+                    },
+                    "vertical_story_viewer": {
+                        "name": "Verticalis Fabula Viewer",
+                        "description": "Admittit verticalis fabula videntium pro omnibus fabulis"
+                    },
+                    "enable_friend_feed_menu_bar": {
+                        "name": "Admitte Amicus Feed Menu Bar",
+                        "description": "Admittit novum Amicus Feed Menu Bar"
+                    },
+                    "message_indicators": {
+                        "name": "Nuntius Indicatores",
+                        "description": "Addit specifica Indicatores icones ad nuntios\nNota: Indicatores non potest esse 100% accurate"
+                    },
+                    "stealth_mode_indicator": {
+                        "name": "Furtim Modus Indicator",
+                        "description": "Addit 👻 emoji iuxta colloquia in furtim modus"
+                    },
+                    "edit_text_override": {
+                        "name": "Recensere Textum Override",
+                        "description": "Overrides textum agri mores"
+                    },
+                    "prevent_forced_keyboard": {
+                        "name": "Prohibe Coactus Cantiones",
+                        "description": "Prohibet Snapchat ab automatice papaver sursum tincidunt cum aperire colloquium"
+                    },
+                    "settings_menu": {
+                        "name": "Occasus Menu",
+                        "description": "Mutat viam aperire PurrfectSnap menu",
+                        "options": {
+                            "default": "Default",
+                            "legacy": "Legatum"
                         }
-                    }
-                }
-            },
-            "camera": {
-                "properties": {
-                    "custom_resolution": {
-                        "description": "Consuetudo constituit cameram solutionis, latitudinis x altitudinis (v.g. 1920x1080).\nConsuetudo resolutio tuom sustentari debet"
-                    },
-                    "immersive_camera_preview": {
-                        "description": "Prohibet Snapchat ex tondentes Camerae preview\nHoc faciat cameram flammis quibusdam machinis"
                     }
                 }
             },
             "messaging": {
+                "name": "Nuntius",
+                "description": "Muta quomodo inter se agere cum amicis",
                 "properties": {
-                    "better_notifications": {
+                    "bypass_screenshot_detection": {
+                        "name": "Bypass Screenshot Deprehensio",
+                        "description": "Prohibet Snapchat a deprehendere cum accipere screenshot"
+                    },
+                    "anonymous_story_viewing": {
+                        "name": "Anonymous Fabula Viewing",
+                        "description": "Prohibet quemquam scire te vidisse fabulam suam"
+                    },
+                    "prevent_story_rewatch_indicator": {
+                        "name": "Prohibe Fabula Rewatch Indicator",
+                        "description": "Prohibet quemquam scire te rewatched fabulam suam"
+                    },
+                    "hide_peek_a_peek": {
+                        "name": "Celare Peek-a-Peek",
+                        "description": "Prohibet notificatio a mitti cum dimidium ungunt in chat"
+                    },
+                    "hide_bitmoji_presence": {
+                        "name": "Celare Bitmoji Praesentia",
+                        "description": "Prohibet tuum Bitmoji a papaver sursum dum in Chat"
+                    },
+                    "hide_typing_notifications": {
+                        "name": "Celare Typing Notificationes",
+                        "description": "Prohibet quemquam scire te typing nuntium"
+                    },
+                    "unlimited_snap_view_time": {
+                        "name": "Infinitus Snap View Tempus",
+                        "description": "Removet Tempus Limitatio pro viewing Snaps"
+                    },
+                    "auto_mark_as_read": {
+                        "name": "Auto Mark ut Lectus",
+                        "description": "Automatice notat nuntios/snaps ut legitur etiam cum Furtim Modus est enabled"
+                    },
+                    "mark_snap_as_seen_button": {
+                        "name": "Mark Snap ut Visum Puga",
+                        "description": "Addit puga pyga ut notet Snap ut visum cum inspicientes eam.\nHoc operabitur etiam cum Furtim Modus est enabled"
+                    },
+                    "skip_when_marking_as_seen": {
+                        "name": "Skip Cum Notans ut Visum",
+                        "description": "Automatice skips ad proximum Snap cum notans a Snap ut visum.\nUtere in compositione cum Mark Snap ut Visum Puga"
+                    },
+                    "loop_media_playback": {
+                        "name": "Loop Media Playback",
+                        "description": "Loops media playback cum inspicientes Snaps / Stories"
+                    },
+                    "disable_replay_in_ff": {
+                        "name": "Disable Replay in FF",
+                        "description": "Disables facultatem ad replay cum diu torcular a Amico Feed"
+                    },
+                    "half_swipe_notifier": {
+                        "name": "Dimidium Swipe Notifier",
+                        "description": "Notificat te cum aliquis dimidium swipes in colloquium",
                         "properties": {
-                            "stacked_media_messages": {
-                                "description": "Multa media nuntia in unum textum notificatio coniungit cum praevideri non possunt. Utere respectu Chat Praevius"
+                            "min_duration": {
+                                "name": "Minimum Duratio",
+                                "description": "Minimum duratio dimidium ungunt (in secundis)"
+                            },
+                            "max_duration": {
+                                "name": "Maximum Duratio",
+                                "description": "Maximum duratio dimidium ungunt (in secundis)"
                             }
                         }
                     },
+                    "call_start_confirmation": {
+                        "name": "Voca Satus Confirmatio",
+                        "description": "Ostendit confirmationem dialogum cum incipiens vocatio"
+                    },
+                    "unlimited_conversation_pinning": {
+                        "name": "Infinitus Conversatio Pinning",
+                        "description": "Permittit te suspendere infinitam quantitatem colloquiorum localiter"
+                    },
+                    "disable_snap_mode_restrictions": {
+                        "name": "Disable Snap Modus Restrictiones",
+                        "description": "Permittit te videre auto-destruens Snaps sine restrictionibus"
+                    },
+                    "prevent_message_sending": {
+                        "name": "Prohibe Nuntius Mittens",
+                        "description": "Prohibet mittens quaedam genera nuntiorum"
+                    },
+                    "friend_mutation_notifier": {
+                        "name": "Amicus Mutatio Notifier",
+                        "description": "Notificat te cum aliquid mutat in amico profile"
+                    },
+                    "better_notifications": {
+                        "name": "Melius Notificationes",
+                        "description": "Addit magis notitia in accepit notificationes",
+                        "properties": {
+                            "group_notifications": {
+                                "name": "Group Notificationes",
+                                "description": "Group notificationes in unum"
+                            },
+                            "chat_preview": {
+                                "name": "Chat Praevisum",
+                                "description": "Ostendit praevisum accepit nuntios in notificatione"
+                            },
+                            "media_preview": {
+                                "name": "Media Praevisum",
+                                "description": "Ostendit praevisum selectae media genera in notificatione"
+                            },
+                            "media_caption": {
+                                "name": "Media Caption",
+                                "description": "Ostendit attachiatus caption de media in notificatione"
+                            },
+                            "stacked_media_messages": {
+                                "name": "Stacked Media Nuntios",
+                                "description": "Coniungit multiplex media nuntios in unum textum notificatio cum non possunt praevideri. Utere in compositione cum Chat Praevisum"
+                            },
+                            "friend_add_source": {
+                                "name": "Amicus Adde Fons",
+                                "description": "Ostendit fontem amici petitionem in notificatione"
+                            },
+                            "reply_button": {
+                                "name": "Respondeo Puga",
+                                "description": "Addit respondeo puga ad notificationem"
+                            },
+                            "smart_replies": {
+                                "name": "Smert Responsa",
+                                "description": "Addit suggessit responsa ad notificationes (Android 10+). Utere in compositione cum Respondeo Puga"
+                            },
+                            "download_button": {
+                                "name": "Download Puga",
+                                "description": "Permittit te download media ex notificatione"
+                            },
+                            "mark_as_read_button": {
+                                "name": "Mark ut Lectus Puga",
+                                "description": "Permittit te notare nuntium ut legitur ex notificatione"
+                            },
+                            "mark_as_read_and_save_in_chat": {
+                                "name": "Mark ut Lectus et Salva in Chat",
+                                "description": "Addit notam ut legitur et salva in chat puga ad notificationem"
+                            }
+                        }
+                    },
+                    "notification_blacklist": {
+                        "name": "Notificatio Blacklist",
+                        "description": "Selecta notificationes quae debet adepto clausus"
+                    },
+                    "message_logger": {
+                        "name": "Nuntius Logger",
+                        "description": "Prohibet nuntios a deleta",
+                        "properties": {
+                            "keep_my_own_messages": {
+                                "name": "Serva Mea Nuntios",
+                                "description": "Prohibet tua nuntios a deleta"
+                            },
+                            "auto_purge": {
+                                "name": "Auto Purga",
+                                "description": "Automatice delet conditivo nuntios qui sunt maior quam certa moles temporis"
+                            },
+                            "message_filter": {
+                                "name": "Nuntius Filter",
+                                "description": "Selecta quae nuntios debet adepto initium (inanis pro omnibus nuntiis)"
+                            },
+                            "deleted_message_color": {
+                                "name": "Deletum Nuntius Color",
+                                "description": "Pone colorem deleti nuntios"
+                            }
+                        }
+                    },
+                    "auto_save_messages_in_conversations": {
+                        "name": "Auto Salva Nuntios in Conversationibus",
+                        "description": "Automatice salvat omnem nuntium in colloquiis"
+                    },
+                    "gallery_media_send_override": {
+                        "name": "Gallery Media Mitte Override",
+                        "description": "Spoofs media fons cum mittens ex Gallery"
+                    },
+                    "strip_media_metadata": {
+                        "name": "Exue Media Metadata",
+                        "description": "Removet metadata de media ante mittens ut nuntium"
+                    },
+                    "bypass_message_retention_policy": {
+                        "name": "Bypass Nuntius Retentio Politia",
+                        "description": "Prohibet nuntios a deleta post inspicientes eos"
+                    },
                     "bypass_message_action_restrictions": {
-                        "description": "Permittit te agere cum frangeretur sine aperto aut nuntio inexplicabili salvare"
+                        "name": "Bypass Nuntius Actio Restrictiones",
+                        "description": "Permittit te agere ad frangeretur sine aperuit eam vel salvare unsaveable nuntius"
+                    },
+                    "remove_groups_locked_status": {
+                        "name": "Remove Groups Locked Status",
+                        "description": "Permittit te videre coetus notitia post calce"
+                    },
+                    "double_tap_chat_action": {
+                        "name": "Duplex Tap Chat Actio",
+                        "description": "Peragit consuetudo actio cum duplex percutiens nuntium in chat"
+                    },
+                    "double_tap_chat_action_custom_emoji": {
+                        "name": "Duplex Tap Chat Actio Custom Emoji Reactio",
+                        "description": "Pone consuetudo emoji reactionem pro duplex ICTUS chat actio"
+                    }
+                }
+            },
+            "global": {
+                "name": "Globalis",
+                "description": "Tweak Globalis Snapchat Occasus",
+                "properties": {
+                    "better_location": {
+                        "name": "Melior Locus",
+                        "description": "Consectetur Snapchat Locus",
+                        "properties": {
+                            "spoof_location": {
+                                "name": "Spoof Locus",
+                                "description": "Spoofs tuum locum ad certum unum"
+                            },
+                            "coordinates": {
+                                "name": "Coordinatae",
+                                "description": "Pone coordinatas spoofed locus"
+                            },
+                            "walk_radius": {
+                                "name": "Ambulare Radius",
+                                "description": "Passim ambulare in hoc radio (ft)"
+                            },
+                            "always_update_location": {
+                                "name": "Semper Update Locus",
+                                "description": "Cogere Snapchat ad update locum etiam si nulla GPS data recipitur"
+                            },
+                            "suspend_location_updates": {
+                                "name": "Suspende Locus Updates",
+                                "description": "Prohibet tuum locum ab adaequatione"
+                            },
+                            "spoof_battery_level": {
+                                "name": "Spoof Pugna Level",
+                                "description": "Spoofs pugna gradu tuo artificio in tabula\nValor debet esse inter 0 et 100"
+                            },
+                            "spoof_headphones": {
+                                "name": "Spoof Headphones",
+                                "description": "Spoofs statum audiendi musicam in tabula"
+                            },
+                            "show_battery_level": {
+                                "name": "Monstra Pugna Level",
+                                "description": "Monstrat pugna gradu amicorum tuorum in tabula"
+                            }
+                        }
+                    },
+                    "snapchat_plus": {
+                        "name": "Snapchat Plus",
+                        "description": "Admittit Snapchat Plus features\nQuidam Servo-sided features non operari"
+                    },
+                    "media_upload_quality": {
+                        "name": "Media Upload Qualitas",
+                        "description": "Overrides media upload qualitas",
+                        "properties": {
+                            "force_video_upload_source_quality": {
+                                "name": "Cogere Video Upload Fons Qualitas",
+                                "description": "Cogit Snapchat uti fons qualitas cum uploading videos\nNota quaeso quod hoc non potest removere metadata ex media"
+                            },
+                            "disable_image_compression": {
+                                "name": "Disable Imago Compressio",
+                                "description": "Disables imago compressio cum uploading media"
+                            },
+                            "custom_image_upload_format": {
+                                "name": "Custom Imago Upload Forma",
+                                "description": "Pone consuetudo imago upload forma\nSelecta a lossless forma (sicut PNG) pro optima qualitate"
+                            }
+                        }
+                    },
+                    "disable_confirmation_dialogs": {
+                        "name": "Disable Confirmatio Dialogi",
+                        "description": "Automatice confirmat selectas actiones"
+                    },
+                    "auto_updater": {
+                        "name": "Auto Updater",
+                        "description": "Automatice compescit pro novis updates"
+                    },
+                    "disable_metrics": {
+                        "name": "Disable Metrica",
+                        "description": "Obstructionum mittens specifica analytica data ad Snapchat"
+                    },
+                    "disable_story_sections": {
+                        "name": "Disable Fabula Sectiones",
+                        "description": "Removet sectiones ex Stories pagina\nPotest requirere a refice ad operari recte"
+                    },
+                    "block_ads": {
+                        "name": "Obstructionum Ads",
+                        "description": "Prohibet Adscriptiones a proponendum"
+                    },
+                    "disable_custom_tabs": {
+                        "name": "Disable Custom Tabs",
+                        "description": "Aperit nexus in suffultus applicationes potius quam in Web Browser"
+                    },
+                    "disable_permission_requests": {
+                        "name": "Disable Permissio Petitiones",
+                        "description": "Prohibet Snapchat a petendo specifica permissiones"
+                    },
+                    "disable_memories_snap_feed": {
+                        "name": "Disable Memoriae Snap Feed",
+                        "description": "Prohibet Snapchat a ostendens recens memorias cum tu ungunt sursum in camera"
+                    },
+                    "spotlight_comments_username": {
+                        "name": "Spotlight Comments Username",
+                        "description": "Ostendit auctor username in Spotlight comments"
+                    },
+                    "bypass_video_length_restriction": {
+                        "name": "Bypass Video Longitudo Restrictiones",
+                        "description": "Singula: mittit unum video\nSplit: scindit videos post edere"
+                    },
+                    "default_video_playback_rate": {
+                        "name": "Default Video Playback Rate",
+                        "description": "Pone default celeritatem pro playback de videos\nValor debet esse inter 0.1 et 4.0"
+                    },
+                    "video_playback_rate_slider": {
+                        "name": "Video Playback Rate Slider",
+                        "description": "Addit lapsus in opera contextu menu mutare video playback rate\nNota: Mutationes tantum applicare ad subsequent videos"
+                    },
+                    "disable_google_play_dialogs": {
+                        "name": "Disable Google Play Services Dialogi",
+                        "description": "Prohibe Google Play Services disponibilitate dialogi a proponendum"
+                    },
+                    "default_volume_controls": {
+                        "name": "Default Volume Imperium",
+                        "description": "Cogit Snapchat uti ratio voluminis imperium"
+                    },
+                    "disable_telecom_framework": {
+                        "name": "Disable Telecom Framework",
+                        "description": "Prohibet Snapchat ab usura Android Telecom framework\nHoc permittit te audire musicam dum in vocatio"
+                    },
+                    "hide_active_music": {
+                        "name": "Celare Activa Musica",
+                        "description": "Prohibet Snapchat a scire te audire musicam\nHoc permittet te accipere snaps utens imperium volumen globulis dum audire musicam"
+                    },
+                    "disable_snap_splitting": {
+                        "name": "Disable Snap Scindens",
+                        "description": "Prohibet Snaps ab esse scissum in plures partes\nPicturae quas mittis convertentur in videos"
+                    }
+                }
+            },
+            "rules": {
+                "name": "Regulae",
+                "description": "Curo Automatic Features pro singulis hominibus"
+            },
+            "camera": {
+                "name": "Camera",
+                "description": "Adjustare ius occasus pro perfecta frangeretur",
+                "properties": {
+                    "disable_cameras": {
+                        "name": "Disable Cameras",
+                        "description": "Prohibet Snapchat ab usura selectae cameras"
+                    },
+                    "black_photos": {
+                        "name": "Nigrum Photos",
+                        "description": "Reponit captas imagines cum nigro background\nVideos non afficiuntur"
+                    },
+                    "immersive_camera_preview": {
+                        "name": "Immersive Praevisum",
+                        "description": "Prohibet Snapchat a Cropping Camera praevisum\nHoc potest facere camera ad flicker in quibusdam machinis"
+                    },
+                    "override_front_resolution": {
+                        "name": "Override Front Resolutio",
+                        "description": "Overrides camera resolutio pro fronte camera"
+                    },
+                    "override_back_resolution": {
+                        "name": "Override Tergum Resolutio",
+                        "description": "Overrides camera resolutio pro tergo camera"
+                    },
+                    "custom_resolution": {
+                        "name": "Custom Resolutio",
+                        "description": "Pone consuetudo camera resolutio, latitudo x altitudo (eg 1920x1080).\nConsuetudo resolutio debet esse suffulta a tuo artificio"
+                    },
+                    "front_custom_frame_rate": {
+                        "name": "Front Custom Frame Rate",
+                        "description": "Overrides fronte camera frame rate"
+                    },
+                    "back_custom_frame_rate": {
+                        "name": "Tergum Custom Frame Rate",
+                        "description": "Overrides tergo camera frame rate"
+                    },
+                    "force_camera_source_encoding": {
+                        "name": "Cogere Camera Fons Encoding",
+                        "description": "Cogit camera fons encoding"
+                    },
+                    "startup_default_camera": {
+                        "name": "Satus Default Camera",
+                        "description": "Pone default camera cum aperire Snapchat"
+                    },
+                    "hevc_recording": {
+                        "name": "HEVC Recording",
+                        "description": "Utitur HEVC (H.265) codec pro video recording"
+                    }
+                }
+            },
+            "streaks_reminder": {
+                "name": "Streaks Admonitio",
+                "description": "Periodice te notificat de tuis Streaks",
+                "properties": {
+                    "interval": {
+                        "name": "Intervallum",
+                        "description": "Intervallum inter singulas admonitiones (horas)"
+                    },
+                    "remaining_hours": {
+                        "name": "Reliquum Tempus",
+                        "description": "Reliqua moles temporis antequam notificatio ostenditur (horas)"
+                    },
+                    "group_notifications": {
+                        "name": "Group Notificationes",
+                        "description": "Group notificationes in unum"
+                    }
+                }
+            },
+            "experimental": {
+                "name": "Experimentalis",
+                "description": "Experimentalis features",
+                "properties": {
+                    "native_hooks": {
+                        "name": "Nativus Hooks",
+                        "description": "Insecure Features qui hamum in Snapchat nativum codicem",
+                        "properties": {
+                            "composer_hooks": {
+                                "name": "Composer Hooks",
+                                "description": "Injects codicem in Composer crucis-platform UI framework",
+                                "properties": {
+                                    "show_first_created_username": {
+                                        "name": "Monstra Primum Creatum Username",
+                                        "description": "Monstrat primum creatum username iuxta currentem username in profile pagina"
+                                    },
+                                    "bypass_camera_roll_limit": {
+                                        "name": "Bypass Camera Roll Limes",
+                                        "description": "Augeat maximam quantitatem mediae quam potes mittere ex camera roll"
+                                    },
+                                    "custom_self_destruct_snap_delay": {
+                                        "name": "Custom Se Destruere Snap Mora",
+                                        "description": "Dat plures optiones pro se-destruere timer cum mittens Snap"
+                                    },
+                                    "composer_console": {
+                                        "name": "Composer Console",
+                                        "description": "Permittit te exsequi JavaScript codicem in Composer (arm64 tantum)"
+                                    },
+                                    "composer_logs": {
+                                        "name": "Composer Acta",
+                                        "description": "Redirects console acta Composer ad PurrfectSnap"
+                                    }
+                                }
+                            },
+                            "disable_bitmoji": {
+                                "name": "Disable Bitmoji",
+                                "description": "Disables Amici Profile Bitmoji"
+                            },
+                            "custom_emoji_font": {
+                                "name": "Custom Emoji Font",
+                                "description": "Permittit te uti consuetudo emoji font. Tantum operatur cum .ttf fonts"
+                            },
+                            "custom_shared_library": {
+                                "name": "Custom Shared Library",
+                                "description": "Onerat consuetudo communis bibliotheca in Snapchat. Hoc pluma est tantum ad probationem proposita"
+                            }
+                        }
+                    },
+                    "spoof": {
+                        "name": "Spoof",
+                        "description": "Spoof varia notitia de te",
+                        "properties": {
+                            "play_store_installer_package_name": {
+                                "name": "Play Store Installer Package Nomen",
+                                "description": "Overrides installer sarcina nomen ad com.android.vending"
+                            },
+                            "remove_vpn_transport_flag": {
+                                "name": "Remove VPN Transport Vexillum",
+                                "description": "Prohibet Snapchat a deprehendere VPNs"
+                            },
+                            "remove_mock_location_flag": {
+                                "name": "Remove Mock Locus Vexillum",
+                                "description": "Prohibet Snapchat a deprehendere Mock locus"
+                            }
+                        }
+                    },
+                    "convert_message_locally": {
+                        "name": "Converte Nuntius Loci",
+                        "description": "Converte snaps ad chat externa media localiter. Hoc apparet in chat download contextu menu"
+                    },
+                    "media_file_picker": {
+                        "name": "Media File Picker",
+                        "description": "Permittit te eligere aliquem video/audio file ex gallery"
+                    },
+                    "story_logger": {
+                        "name": "Fabula Logger",
+                        "description": "Praebet historiam amicorum fabulas"
+                    },
+                    "call_recorder": {
+                        "name": "Voca Recorder",
+                        "description": "Automatice monumentis audio vocat"
+                    },
+                    "account_switcher": {
+                        "name": "Ratio Switcher",
+                        "description": "Permittit te commutandum inter rationes sine logging out\nLongum prelum in quaerere iconem iuxta tuum Bitmoji profile aperire menu\nNota: Hoc pluma est experimentalis et verisimile mutare in posterum",
+                        "properties": {
+                            "auto_backup_current_account": {
+                                "name": "Auto Tergum Current Ratio",
+                                "description": "Automatice terga sursum current propter cum logging de vel switching rationes"
+                            }
+                        }
+                    },
+                    "better_transcript": {
+                        "name": "Melius Transcript",
+                        "description": "Meliorat vocem nota transcript",
+                        "properties": {
+                            "force_transcription": {
+                                "name": "Cogere Vox Nota Transcriptio",
+                                "description": "Permittit omnes vocem notas transcribi"
+                            },
+                            "preferred_transcription_lang": {
+                                "name": "Praeferenda Transcriptio Lingua",
+                                "description": "Praeferenda lingua pro voce nota transcript (eg EN, ES, FR)"
+                            },
+                            "notification_transcript": {
+                                "name": "Notificatio Transcript",
+                                "description": "Transcribit vocem notas in notificationibus\nHoc pluma requirit Chat Praevisum pluma ut enabled in Melius Notificationes"
+                            }
+                        }
+                    },
+                    "voice_note_auto_play": {
+                        "name": "Vox Nota Auto Play",
+                        "description": "Automatice ludit proximum vocem nota post currentem unum finit"
+                    },
+                    "friend_notes": {
+                        "name": "Amicus Notae",
+                        "description": "Permittit te addere notas ad amicos profiles"
+                    },
+                    "cof_experiments": {
+                        "name": "COF Experimenta",
+                        "description": "Admittit unreleased/beta Snapchat features"
+                    },
+                    "context_menu_fix": {
+                        "name": "Contextus Menu Fix",
+                        "description": "Conatus reparare Amicus Feed Menu ut cum fabrica est offline non potest proponendum recte"
+                    },
+                    "app_lock": {
+                        "name": "App Lock",
+                        "description": "Prohibet accessum ad Snapchat sine passcode",
+                        "properties": {
+                            "lock_on_resume": {
+                                "name": "Lock in Resume",
+                                "description": "Serae app cum suus 'reopened"
+                            }
+                        }
+                    },
+                    "infinite_story_boost": {
+                        "name": "Infinita Fabula Boost",
+                        "description": "Bypass Fabula Boost Limes mora"
+                    },
+                    "meo_passcode_bypass": {
+                        "name": "Mea Oculi Tantum Passcode Bypass",
+                        "description": "Bypass Mea Oculi Tantum passcode\nHoc solum operatur si passcode recte ante initum est"
+                    },
+                    "no_friend_score_delay": {
+                        "name": "Nullus Amicus Score Mora",
+                        "description": "Removet moram cum inspicientes Amici Score"
+                    },
+                    "best_friend_pinning": {
+                        "name": "Optimus Amicus Pinning",
+                        "description": "Permittit te suspendere amicum ut numerus unus optimus amicus. Nota: Tantum potes videre tuum pinned optimum amicum"
+                    },
+                    "e2ee": {
+                        "name": "Finis-ad-finem Encryption",
+                        "description": "Encrypts tuum nuntios cum AES utens communi secreto clavis\nFac ut salvum tuum clavis alicubi tutum!",
+                        "properties": {
+                            "encrypted_message_indicator": {
+                                "name": "Encrypted Nuntius Indicator",
+                                "description": "Addit 🔒 emoji iuxta encrypted nuntios"
+                            },
+                            "force_message_encryption": {
+                                "name": "Cogere Nuntius Encryption",
+                                "description": "Prohibet mittens encrypted nuntios ad homines qui non habent E2E Encryption enabled tantum cum multiplex colloquia sunt selectae"
+                            }
+                        }
+                    },
+                    "add_friend_source_spoof": {
+                        "name": "Adde Amicus Fons Spoof",
+                        "description": "Spoofs fontem Amici Request"
+                    },
+                    "hidden_snapchat_plus_features": {
+                        "name": "Occultus Snapchat Plus Features",
+                        "description": "Admittit unreleased/beta Snapchat Plus features\nNon potest operari in vetustioribus Snapchat versionibus"
+                    },
+                    "custom_streaks_expiration_format": {
+                        "name": "Custom Streaks Expiratio Forma",
+                        "description": "Customizes Streaks Expiratio forma\n\nPraesto variabiles:\n - %c: Streaks Comitem\n - %e: Horologium Emoji\n - %d: Dies\n - %h: Horae\n - %m: Minuta\n - %s: Secunda\n - %w: Reliquum Tempus"
+                    },
+                    "prevent_forced_logout": {
+                        "name": "Prohibe Coactus Logout",
+                        "description": "Prohibet Snapchat a logging te cum login in alio artificio"
+                    },
+                    "snapscore_changes": {
+                        "name": "Snapscore Mutationes",
+                        "description": "Vestigia mutationes in amicis Snapscore\nUtere hoc pluma in recentioribus versionibus Snapchat tantum"
+                    }
+                }
+            },
+            "scripting": {
+                "name": "Scripting",
+                "description": "Curre consuetudo scripta ad extendere PurrfectSnap",
+                "properties": {
+                    "developer_mode": {
+                        "name": "Developer Modus",
+                        "description": "Ostendit debug info in Snapchat UI"
+                    },
+                    "module_folder": {
+                        "name": "Modulo Folder",
+                        "description": "Folder ubi scripta sunt locata"
+                    },
+                    "auto_reload": {
+                        "name": "Auto Reload",
+                        "description": "Automatice reloads scripta cum mutantur"
+                    },
+                    "integrated_ui": {
+                        "name": "Integrata UI",
+                        "description": "Permittit scripta addere consuetudo UI components ad Snapchat"
+                    },
+                    "disable_log_anonymization": {
+                        "name": "Disable Log Anonymization",
+                        "description": "Disables anonymization de acta"
+                    },
+                    "disable_optimization": {
+                        "name": "Disable Optimization",
+                        "description": "Disables optimiizationem scriptorum. Hoc potest facere perficientur quaestiones."
+                    }
+                }
+            },
+            "friend_tracker": {
+                "name": "Amicus Tracker",
+                "description": "Records amici actio in Snapchat",
+                "properties": {
+                    "record_messaging_events": {
+                        "name": "Record Nuntius Eventus",
+                        "description": "Records nuntius eventus sicut aperire frangeretur, legere nuntium, etc."
+                    },
+                    "allow_running_in_background": {
+                        "name": "Permitte Currens in Background",
+                        "description": "Permittit tracker currere in background. Nota: Hoc signanter exhauriet tuum altilium"
+                    },
+                    "auto_purge": {
+                        "name": "Auto Purga",
+                        "description": "Automatice delet conditivo eventus qui sunt maior quam certa moles temporis"
                     }
                 }
             }
         },
         "options": {
+            "app_appearance": {
+                "always_light": "Semper Lux",
+                "always_dark": "Semper Tenebris"
+            },
+            "friend_feed_menu_buttons": {
+                "auto_download": "⬇️ Auto Download",
+                "auto_save": "💬 Auto Salva Nuntios",
+                "unsaveable_messages": "⬇️ Insalvabilia Nuntios",
+                "auto_open_snaps": "📷 Auto Aperi Snaps",
+                "stealth": "👻 Furtim Modus",
+                "mark_snaps_as_seen": "👀 Mark Snaps ut visum",
+                "mark_stories_as_seen_locally": "👀 Mark Stories ut visum localiter",
+                "conversation_info": "👤 Conversatio Info",
+                "e2e_encryption": "🔒 Utere E2E Encryption"
+            },
+            "path_format": {
+                "create_author_folder": "Crea folder pro singulis auctor",
+                "create_source_folder": "Crea folder pro singulis media fons genus",
+                "append_hash": "Adde unicum hash ad file nomen",
+                "append_source": "Adde media fons ad file nomen",
+                "append_username": "Adde username ad file nomen",
+                "append_date_time": "Adde diem et tempus ad file nomen"
+            },
+            "auto_download_sources": {
+                "friend_snaps": "Amicus Snaps",
+                "friend_stories": "Amicus Stories",
+                "public_stories": "Publica Stories",
+                "spotlight": "Spotlight"
+            },
+            "logging": {
+                "started": "Coepi",
+                "success": "Successus",
+                "progress": "Progressus",
+                "failure": "Defectum"
+            },
+            "notifications": {
+                "chat_screenshot": "Screenshot",
+                "chat_screen_record": "Screen Record",
+                "snap_replay": "Snap Replay",
+                "camera_roll_save": "Camera Roll Salva",
+                "chat": "Chat",
+                "chat_reply": "Chat Respondeo",
+                "snap": "Snap",
+                "typing": "Typing",
+                "stories": "Stories",
+                "speaking": "Loquens",
+                "chat_reaction": "DM Reactio",
+                "group_chat_reaction": "Group Reactio",
+                "initiate_audio": "Ineuntes Audio Voca",
+                "abandon_audio": "Missed Audio Voca",
+                "initiate_video": "Ineuntes Video Voca",
+                "abandon_video": "Missed Video Voca",
+                "map_live_location": "Map Live Locus"
+            },
+            "gallery_media_send_override": {
+                "always_ask": "Semper Quaerere",
+                "ORIGINAL": "Originale Media",
+                "NOTE": "Audio Nota",
+                "SNAP": "Snap",
+                "SAVEABLE_SNAP": "Salvabile Snap"
+            },
+            "strip_media_metadata": {
+                "hide_caption_text": "Celare Caption Text",
+                "hide_snap_filters": "Celare Snap Filtra",
+                "hide_extras": "Celare Extras (eg mentiones)",
+                "remove_audio_note_duration": "Remove Audio Nota Duratio",
+                "remove_audio_note_transcript_capability": "Remove Audio Nota Transcript Facultas"
+            },
+            "hide_ui_components": {
+                "hide_profile_call_buttons": "Remove Profile Voca Puga",
+                "hide_chat_call_buttons": "Remove Chat Voca Puga",
+                "hide_live_location_share_button": "Remove Live Locus Share Puga",
+                "hide_stickers_button": "Remove Stickers Puga",
+                "hide_voice_record_button": "Remove Vox Record Puga",
+                "hide_unread_chat_hint": "Remove Lectus Chat Admonitus",
+                "hide_post_to_story_buttons": "Remove Post ad Fabula puga ante mittens a Snap",
+                "hide_billboard_prompt": "Remove Billboard Promptus In Amici Feed",
+                "hide_snapchat_plus_gift_reminders": "Remove Snapchat Plus donum admonitiones in colloquiis",
+                "hide_map_reactions": "Remove Map Reactiones"
+            },
+            "hide_story_suggestions": {
+                "hide_suggested_friend_stories": "Celare suggessit amicus fabulas",
+                "hide_my_stories": "Celare Mea Stories"
+            },
+            "home_tab": {
+                "map": "Map",
+                "chat": "Chat",
+                "camera": "Camera",
+                "discover": "Discover",
+                "spotlight": "Spotlight"
+            },
+            "add_friend_source_spoof": {
+                "added_by_username": "Per Username",
+                "added_by_mention": "Per Mentionem",
+                "added_by_group_chat": "Per Group Chat",
+                "added_by_qr_code": "Per QR Code",
+                "added_by_community": "Per Communitatem",
+                "added_by_quick_add": "Per Velox Adde (altum periculum esse interdictum)"
+            },
+            "bypass_video_length_restriction": {
+                "single": "Singula media",
+                "split": "Scindit media"
+            },
+            "old_bitmoji_selfie": {
+                "2d": "2D Bitmoji",
+                "3d": "3D Bitmoji"
+            },
+            "disable_confirmation_dialogs": {
+                "erase_message": "Erase Nuntius",
+                "remove_friend": "Remove Amicus",
+                "block_friend": "Block Amicus",
+                "ignore_friend": "Ignorare Amicus",
+                "hide_friend": "Celare Amicus",
+                "hide_conversation": "Celare Conversatio",
+                "clear_conversation": "Purgare Conversatio ab Amico Feed"
+            },
+            "auto_reload": {
+                "snapchat_only": "Snapchat Tantum",
+                "all": "Omnes (Snapchat + PurrfectSnap)"
+            },
+            "edit_text_override": {
+                "multi_line_chat_input": "Multi Linea Chat Input",
+                "bypass_text_input_limit": "Bypass Text Input Limes"
+            },
+            "auto_purge": {
+                "never": "Numquam",
+                "1_hour": "1 Hora",
+                "3_hours": "3 Horae",
+                "6_hours": "6 Horae",
+                "12_hours": "12 Horae",
+                "1_day": "1 Dies",
+                "3_days": "3 Dies",
+                "1_week": "1 Hebdomada",
+                "2_weeks": "2 Hebdomadae",
+                "1_month": "1 Mensis",
+                "3_months": "3 Menses",
+                "6_months": "6 Menses"
+            },
+            "disable_story_sections": {
+                "friends": "Amici",
+                "suggested_stories": "Suggessit Stories",
+                "following": "Sequens",
+                "discover": "Discover"
+            },
+            "disable_cameras": {
+                "front": "Front Camera",
+                "back": "Tergum Camera"
+            },
+            "disable_permission_requests": {
+                "notifications": "Notificationes",
+                "read_media_images": "Legere Media Imagines",
+                "read_media_video": "Legere Media Video",
+                "camera": "Camera",
+                "microphone": "Microphone",
+                "location": "Locus",
+                "read_contacts": "Legere Contactus",
+                "nearby_devices": "Prope Devices",
+                "phone_calls": "Phone Vocat"
+            },
             "message_indicators": {
-                "director_mode_indicator": "Iconem addit ad tortum cum missis utens Modus Directoris, qui adhiberi potest imagines gallery mittere ut tortum."
+                "encryption_indicator": "Addit 🔒 iconem iuxta nuntios qui missi sunt tantum tibi",
+                "platform_indicator": "Addit platform iconem ex quo media missus est (eg Android, iOS, Web)",
+                "location_indicator": "Addit 📍 iconem ad snaps cum missi sunt cum loco enabled",
+                "ovf_editor_indicator": "Indicat si frangeretur missus est utens OVF Editor",
+                "director_mode_indicator": "Addit 🎬 iconem ad snaps cum missi sunt utens Director Modus, qui potest adhiberi ad mittere gallery imagines ut snaps"
+            },
+            "auto_mark_as_read": {
+                "conversation_read": "Mark colloquium ut legitur cum mittens nuntium",
+                "snap_reply": "Mark snaps ut legitur cum respondens eis",
+                "save_snap_in_chat": "Mark snaps ut legitur cum salvum eos in chat dum in Furtim Modus"
+            },
+            "friend_mutation_notifier": {
+                "remove_friend": "Notificare cum aliquis te removet ut amicus",
+                "birthday_changes": "Notificare cum aliquis mutat suum diem natalem",
+                "bitmoji_selfie_changes": "Notificare cum aliquis mutat suum Bitmoji selfie",
+                "bitmoji_avatar_changes": "Notificare cum aliquis mutat suum Bitmoji avatar",
+                "bitmoji_background_changes": "Notificare cum aliquis mutat suum Bitmoji background",
+                "bitmoji_scene_changes": "Notificare cum aliquis mutat suum Bitmoji scaena"
+            },
+            "snapchat_plus": {
+                "not_subscribed": "Non Subscriptus",
+                "basic": "Basic",
+                "ad_free": "Ad Free"
+            },
+            "double_tap_chat_action": {
+                "like_message": "Sicut Nuntius",
+                "copy_text": "Exemplar Text ad Clipboard",
+                "delete_message": "Delere Nuntius",
+                "mark_as_read": "Mark ut Lectus",
+                "custom_emoji_reaction": "Custom Emoji Reactio"
+            },
+            "startup_default_camera": {
+                "front": "Front Camera",
+                "back": "Tergum Camera"
             }
         }
     },
-    "end_to_end_encryption": {
-        "confirmation_dialogs": {
-            "confirmation_1": "MONITUM: Haec rescribere clavem tuam existentem. Accessum solves ad omnes epistulas encryptas ab hoc amico. Certus esne vis permanere?"
-        },
-        "toolbox": {
-            "no_shared_key": "Secretum communi cum amico nondum habes. Preme infra novam inchoare."
+    "friend_menu_option": {
+        "mark_snaps_as_seen": "Mark Snaps ut visum",
+        "mark_stories_as_seen_locally": "Mark Stories ut visum localiter",
+        "preview": "Praevisum",
+        "stealth_mode": "Furtim Modus",
+        "auto_download_blacklist": "Auto Download Blacklist",
+        "anti_auto_save": "Anti Auto Salvum"
+    },
+    "content_type": {
+        "CHAT": "Chat",
+        "SNAP": "Snap",
+        "EXTERNAL_MEDIA": "Externa Media",
+        "NOTE": "Audio Nota",
+        "STICKER": "Sticker",
+        "SHARE": "Share",
+        "STATUS": "Status",
+        "LOCATION": "Locus",
+        "STATUS_SAVE_TO_CAMERA_ROLL": "Salvus ad Camera Roll",
+        "STATUS_CONVERSATION_CAPTURE_SCREENSHOT": "Screenshot",
+        "STATUS_CONVERSATION_CAPTURE_RECORD": "Screen Record",
+        "STATUS_CALL_MISSED_VIDEO": "Missed Video Voca",
+        "STATUS_CALL_MISSED_AUDIO": "Missed Audio Voca",
+        "LIVE_LOCATION_SHARE": "Live Locus Share",
+        "CREATIVE_TOOL_ITEM": "Creative Ferramenta Item",
+        "FAMILY_CENTER_INVITE": "Familia Centrum Invita",
+        "FAMILY_CENTER_ACCEPT": "Familia Centrum Accipe",
+        "FAMILY_CENTER_LEAVE": "Familia Centrum Relinque",
+        "STATUS_PLUS_GIFT": "Status Plus Donum",
+        "TINY_SNAP": "Parvus Snap",
+        "STATUS_COUNTDOWN": "Countdown",
+        "MAP_REACTION": "Map Reactio"
+    },
+    "media_download_source": {
+        "none": "Nullus",
+        "pending": "Pendente",
+        "chat_media": "Chat Media",
+        "story": "Fabula",
+        "public_story": "Publica Fabula",
+        "spotlight": "Spotlight",
+        "profile_picture": "Profile Imago",
+        "story_logger": "Fabula Logger",
+        "message_logger": "Nuntius Logger",
+        "merged": "Merged",
+        "voice_call": "Vox Voca"
+    },
+    "chat_action_menu": {
+        "preview_button": "Praevisum",
+        "download_button": "Download",
+        "delete_logged_message_button": "Delere Logged Nuntius",
+        "show_chat_edit_history": "Monstrare Chat Recensere Historia",
+        "convert_message": "Converte Nuntius"
+    },
+    "opera_context_menu": {
+        "download": "Download Media",
+        "sent_at": "Missus ad {date}",
+        "created_at": "Creatus ad {date}",
+        "expires_at": "Expirat ad {date}",
+        "media_size": "Media magnitudine: {size}",
+        "media_duration": "Media duratio: {duration} ms",
+        "show_debug_info": "Monstrare Debug Info"
+    },
+    "modal_option": {
+        "profile_info": "Profile Info",
+        "close": "Claudere"
+    },
+    "gallery_media_send_override": {
+        "multiple_media_toast": "Potes tantum mittere unum media ad tempus"
+    },
+    "mark_as_seen": {
+        "no_unseen_snaps_toast": "Nulla invisibilia Snaps inventa!",
+        "seen_toast": "Notatum ut visum!",
+        "unseen_toast": "Notatum ut invisibile!",
+        "already_seen_toast": "Iam notatum ut visum!",
+        "already_unseen_toast": "Iam notatum ut invisibile!"
+    },
+    "conversation_preview": {
+        "streak_expiration": "expirat in {day} diebus {hour} horis {minute} minutis",
+        "total_messages": "Summa missis/acceptis nuntiis: {count}",
+        "title": "Praevisum",
+        "unknown_user": "Ignorotus User",
+        "no_messages": "Nulla nuntia inventa!"
+    },
+    "profile_info": {
+        "title": "Profile Info",
+        "first_created_username": "Primum Creatum Username",
+        "mutable_username": "Mutabile Username",
+        "display_name": "Propono Nomen",
+        "added_date": "Addita Dies",
+        "birthday": "Natalis : {month} {day}",
+        "hidden_birthday": "Natalis : Occultus",
+        "friendship": "Amicitia",
+        "add_source": "Adde Fons",
+        "snapchat_plus": "Snapchat Plus",
+        "snapchat_plus_state": {
+            "subscribed": "Subscriptus",
+            "not_subscribed": "Non Subscriptus"
         }
-    }
+    },
+    "friendship_link_type": {
+        "mutual": "Mutuus",
+        "outgoing": "Exiens",
+        "blocked": "Clausus",
+        "deleted": "Deletus",
+        "following": "Sequens",
+        "suggested": "Suggessit",
+        "incoming": "Ineuntes",
+        "incoming_follower": "Ineuntes Sequens"
+    },
+    "bulk_messaging_action": {
+        "choose_action_title": "Elige actionem",
+        "progress_status": "Processus {index} de {total}",
+        "selection_dialog_continue_button": "Perge",
+        "confirmation_dialog": {
+            "title": "Certe?",
+            "message": "Hoc afficiet omnes selectos amicos. Hic actio non potest esse factum."
+        },
+        "actions": {
+            "remove_friends": "Remove Amicos",
+            "clear_conversations": "Purgare Conversationes"
+        }
+    },
+    "chat_export": {
+        "exporter_dialog": {
+            "select_conversations_title": "Selecta Conversationes",
+            "text_field_selection": "{amount} selecta",
+            "text_field_selection_all": "Omnes",
+            "export_file_format_title": "Exportare File Forma",
+            "message_type_filter_title": "Filtra Nuntios per Typus",
+            "amount_of_messages_title": "Moles Nuntiorum (relinque blank pro omnibus)",
+            "download_medias_title": "Download Medias"
+        },
+        "dialog_negative_button": "Cancel",
+        "dialog_positive_button": "Exportare",
+        "exported_to": "Exportata ad {path}",
+        "exporting_chats": "Exportans Chats...",
+        "processing_chats": "Processus {amount} colloquia...",
+        "export_fail": "Deficio exportare colloquium {conversation}",
+        "writing_output": "Scribens output...",
+        "finished": "Actum! Nunc potes claudere hoc dialogum.",
+        "no_messages_found": "Nulla nuntia inventa!",
+        "exporting_message": "Exportans {conversation}..."
+    },
+    "button": {
+        "ok": "OK",
+        "positive": "Ita",
+        "negative": "Non",
+        "cancel": "Cancel",
+        "open": "Aperi",
+        "download": "Download",
+        "send": "Mitte",
+        "restore_original": "Restitue Originale",
+        "convert_external_media": "Converte Externa Media",
+        "save": "Salva"
+    },
+    "tracker_events": {
+        "conversation_enter": "Conversatio Intra",
+        "conversation_exit": "Conversatio Exitus",
+        "started_typing": "Coepi Typing",
+        "stopped_typing": "Stetit Typing",
+        "started_speaking": "Coepi Loquens",
+        "stopped_speaking": "Stetit Loquens",
+        "started_peeking": "Coepi Peeking",
+        "stopped_peeking": "Stetit Peeking",
+        "message_read": "Nuntius Lectus",
+        "message_deleted": "Nuntius Deletus",
+        "message_saved": "Nuntius Salvus",
+        "message_unsaved": "Nuntius Insalvus",
+        "message_edited": "Nuntius Editus",
+        "message_reaction_add": "Nuntius Reactio Adde",
+        "message_reaction_remove": "Nuntius Reactio Remove",
+        "snap_opened": "Snap Apertus",
+        "snap_replayed": "Snap Replayed",
+        "snap_replayed_twice": "Snap Replayed Bis",
+        "snap_screenshot": "Snap Screenshot",
+        "snap_screen_record": "Snap Screen Record"
+    },
+    "tracker_actions": {
+        "log": "Acta",
+        "in_app_notification": "In-App Notificatio",
+        "push_notification": "Dis Notificatio",
+        "custom": "Custom"
+    },
+    "better_notifications": {
+        "button": {
+            "reply": "Respondeo",
+            "download": "Download",
+            "mark_as_read": "Mark ut Lectus"
+        }
+    },
+    "profile_picture_downloader": {
+        "button": "Download Profile Imago",
+        "title": "Profile Imago Downloader",
+        "avatar_option": "Avatar",
+        "background_option": "Background"
+    },
+    "call_start_confirmation": {
+        "dialog_title": "Satus Voca",
+        "dialog_message": "Certe vis incipere vocatio?"
+    },
+    "half_swipe_notifier": {
+        "notification_channel_name": "Dimidium Swipe",
+        "notification_content_dm": "{friend} iustus dimidium-swiped in tuum chat pro {duration} secundis",
+        "notification_content_group": "{friend} iustus dimidium-swiped in {group} pro {duration} secundis"
+    },
+    "download_processor": {
+        "attachment_type": {
+            "snap": "Snap",
+            "sticker": "Sticker",
+            "gif": "GIF",
+            "external_media": "Externa Media",
+            "note": "Nota",
+            "original_story": "Originalis Fabula"
+        },
+        "select_attachments_title": "Selecta affectus",
+        "download_started_toast": "Download coepi",
+        "unsupported_content_type_toast": "Unsupported contentus genus!",
+        "failed_no_longer_available_toast": "Media non diutius praesto",
+        "no_attachments_toast": "Nulla affectus inventa!",
+        "already_queued_toast": "Media iam in queue!",
+        "already_downloaded_toast": "Media iam downloaded!",
+        "content_saved_toast": "Salvus!",
+        "download_toast": "Downloading {path}...",
+        "processing_toast": "Processus {path}...",
+        "failed_generic_toast": "Deficio ad download",
+        "failed_to_create_preview_toast": "Deficio creare praevisum",
+        "failed_processing_toast": "Deficio processus {error}",
+        "failed_gallery_toast": "Deficio salvis ad gallery {error}",
+        "dash_no_chapter": "Nulla caput inventum",
+        "dash_dialog": {
+            "title": "Download offendas media",
+            "download_all": "Download Omnia",
+            "segment_text": "Segmentum {from} - {to}"
+        }
+    },
+    "streaks_reminder": {
+        "notification_title": "Streaks",
+        "notification_text": "Perdes tuum Streak cum {friend} in {hoursLeft} horis"
+    },
+    "biometric_auth": {
+        "unlock_button": "Reserare",
+        "title": "Reserare Snapchat",
+        "subtitle": "Quaeso authenticas ad reserare Snapchat"
+    },
+    "end_to_end_encryption": {
+        "toolbox": {
+            "no_shared_key": "Non habes communem secretum cum hoc amico adhuc. Preme infra ad novum inchoandum.",
+            "shared_key_fingerprint": "Tua fingerprint est:\n\n{fingerprint}\n\nFac ut inspicias si congruit cum fingerprint amici tui!",
+            "initiate_exchange_button": "Inchoare Key Exchange"
+        },
+        "confirmation_dialogs": {
+            "title": "Finis-ad-finem encryption",
+            "confirmation_1": "MONITUM: Hoc erit overwrite tuum existentem clavem. Perdes accessum ad omnes encrypted nuntios ab hoc amico. Certus es vis permanere?",
+            "confirmation_2": "Esne VERE certus vis permanere? Hoc est ultimum tuum casum ad recedere."
+        },
+        "unencrypted_conversation_send_failure_toast": "Non potes mittere encrypted contentus ad utrumque encrypted et unencrypted colloquia!",
+        "native_hooks_send_failure_toast": "Deficio mittere! Quaeso enable Nativus Hooks in occasus.",
+        "no_participants_to_encrypt_toast": "Non habes aliquem amicos in hoc colloquio ad encrypt nuntios cum!",
+        "encryption_failed_toast": "Deficio encrypt nuntius! Reprehendo logcat pro magis details.",
+        "accept_public_key_success_toast": "Publica clavis feliciter accepta!",
+        "accept_secret_key_success_toast": "Actum! Nunc potes mittere et recipere encrypted nuntios cum hoc amico.",
+        "accept_public_key_failure_toast": "Deficio accipere publicam clavem",
+        "accept_secret_key_failure_toast": "Deficio accipere secretam clavem",
+        "accept_secret_button": "Accipe Secretum",
+        "accept_public_key_button": "Accipe Publicam Clavem",
+        "outgoing_pk_message": "Key commutatio petitio",
+        "outgoing_secret_message": "Key commutatio responsum",
+        "incoming_pk_message": "Tu modo accepisti publicam clavem petitionem. Preme infra ad accipere eam.",
+        "incoming_secret_message": "Amicus tuus modo accepit tuam publicam clavem. Preme infra ad accipere secretum."
+    },
+    "auto_open_snaps": {
+        "title": "Auto Aperi Snaps",
+        "notification_content": "{count} Snaps aperuit"
+    },
+    "friend_mutation_observer": {
+        "notification_channel_name": "Amicus Mutatio Observer",
+        "friend_removed": "{username} te removit ut amicus",
+        "birthday_removed": "{username} removit suum natalem ({birthday})",
+        "birthday_added": "{username} addidit suum natalem ({birthday})",
+        "birthday_changed": "{username} mutavit suum natalem ab {oldBirthday} ad {newBirthday}",
+        "bitmoji_selfie_changed": "{username} mutavit suum Bitmoji selfie",
+        "bitmoji_avatar_changed": "{username} mutavit suum Bitmoji avatar",
+        "bitmoji_background_changed": "{username} mutavit suum Bitmoji background",
+        "bitmoji_scene_changed": "{username} mutavit suum Bitmoji scaena"
+    },
+    "material3_strings": {
+        "date_range_picker_start_headline": "Ab",
+        "date_range_picker_end_headline": "Ad",
+        "date_range_picker_title": "Selecta dies range",
+        "date_picker_switch_to_calendar_mode": "Calendarium",
+        "date_picker_switch_to_input_mode": "Input",
+        "date_range_picker_scroll_to_previous_month": "Mensis praeteritus",
+        "date_range_picker_scroll_to_next_month": "Proximus mensis",
+        "date_picker_today_description": "Hodie",
+        "date_range_picker_day_in_range": "Selecta",
+        "date_input_invalid_for_pattern": "Invalidum diem",
+        "date_input_invalid_year_range": "Invalidum annum",
+        "date_input_invalid_not_allowed": "Invalidum diem",
+        "date_range_input_invalid_range_input": "Invalidum diem range"
+    },
+    "send_override_dialog": {
+        "title": "Mitte media ut {type}",
+        "duration": "Duratio: {duration}",
+        "saveable_snap_hint": "Fac Snap salvabile in chat",
+        "unlimited_duration": "Infinitus"
+    },
+    "invalid_input_toast": "Invalidum input! Fac te intravit validum valorem."
 }

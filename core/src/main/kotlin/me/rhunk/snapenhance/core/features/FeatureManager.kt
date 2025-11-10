@@ -81,6 +81,7 @@ class FeatureManager(
             PreventMessageSending(),
             Notifications(),
             AutoSave(),
+            HideTypingIndicator(),
             UITweaks(),
             ConfigurationOverride(),
             COFOverride(),

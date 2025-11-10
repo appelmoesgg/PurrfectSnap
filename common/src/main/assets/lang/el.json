@@ -1,0 +1,2022 @@
+{
+    "setup": {
+        "dialogs": {
+            "select_language": "Επιλογή Γλώσσας",
+            "save_folder": "Το PurrfectSnap απαιτεί δικαιώματα αποθήκευσης για λήψη και αποθήκευση πολυμέσων από το Snapchat.\nΕπιλέξτε την τοποθεσία στην οποία θα γίνει λήψη των πολυμέσων.",
+            "select_save_folder_button": "Επιλογή φακέλου"
+        },
+        "mappings": {
+            "dialog": "Δημιουργία αντιστοιχίσεων, αυτό μπορεί να διαρκέσει λίγο...",
+            "generate_failure_no_snapchat": "Το PurrfectSnap δεν μπόρεσε να εντοπίσει το Snapchat, δοκιμάστε να το εγκαταστήσετε ξανά.",
+            "generate_failure": "Παρουσιάστηκε σφάλμα κατά τη δημιουργία αντιστοιχίσεων, δοκιμάστε ξανά."
+        },
+        "permissions": {
+            "dialog": "Για να συνεχίσετε, πρέπει να πληροίτε τις ακόλουθες απαιτήσεις:",
+            "notification_access": "Πρόσβαση σε ειδοποιήσεις",
+            "battery_optimization": "Βελτιστοποίηση μπαταρίας",
+            "display_over_other_apps": "Εμφάνιση πάνω από άλλες εφαρμογές",
+            "request_button": "Αίτημα"
+        }
+    },
+    "scopes": {
+        "friend": "Φίλος",
+        "group": "Ομάδα"
+    },
+    "manager": {
+        "routes": {
+            "tasks": "Εργασίες",
+            "features": "Δυνατότητες",
+            "manage_rule_feature": "Διαχείριση δυνατότητας κανόνα",
+            "home": "Αρχική",
+            "home_settings": "Ρυθμίσεις",
+            "home_logs": "Αρχεία καταγραφής",
+            "logger_history": "Ιστορικό καταγραφέα",
+            "logged_stories": "Καταγεγραμμένες ιστορίες",
+            "friend_tracker": "Παρακολούθηση φίλων",
+            "edit_rule": "Επεξεργασία κανόνα",
+            "file_imports": "Εισαγωγές αρχείων",
+            "manage_repos": "Διαχείριση αποθετηρίων",
+            "social": "Κοινωνικά",
+            "manage_scope": "Διαχείριση εύρους",
+            "messaging_preview": "Προεπισκόπηση",
+            "scripts": "Σενάρια",
+            "better_location": "Καλύτερη τοποθεσία"
+        },
+        "sections": {
+            "home": {
+                "version_title": "v{versionName} · διακλαδώθηκε από τον Eternal",
+                "update_title": "Ενημέρωση PurrfectSnap",
+                "update_content": "Η έκδοση {version} είναι διαθέσιμη!",
+                "update_button": "Λήψη",
+                "debug_build_summary_title": "Εκτελείτε μια έκδοση εντοπισμού σφαλμάτων του PurrfectSnap",
+                "debug_build_summary_content": "Έκδοση {versionName} ({versionCode})",
+                "debug_build_summary_date": "Ημερομηνία έκδοσης: {date} (πριν από {days} ημέρες)",
+                "quick_actions_title": "Γρήγορες ενέργειες",
+                "download_icon_description": "Λήψη",
+                "completed_icon_description": "Ολοκληρώθηκε",
+                "failed_icon_description": "Απέτυχε",
+                "manage_quick_actions_description": "Διαχείριση γρήγορων ενεργειών",
+                "quick_actions_icon_description": "Γρήγορες ενέργειες",
+                "add_quick_action_description": "Προσθήκη γρήγορης ενέργειας"
+            },
+            "home_logs": {
+                "no_logs_hint": "Δεν υπάρχουν διαθέσιμα αρχεία καταγραφής",
+                "clear_logs_button": "Εκκαθάριση αρχείων καταγραφής",
+                "export_logs_button": "Εξαγωγή αρχείων καταγραφής",
+                "saving_logs_toast": "Αποθήκευση αρχείων καταγραφής, αυτό μπορεί να διαρκέσει λίγο...",
+                "saved_logs_success_toast": "Τα αρχεία καταγραφής αποθηκεύτηκαν με επιτυχία",
+                "saved_logs_failure_toast": "Η αποθήκευση των αρχείων καταγραφής απέτυχε"
+            },
+            "home_settings": {
+                "actions_title": "Ενέργειες",
+                "message_logger_title": "Καταγραφέας μηνυμάτων",
+                "debug_title": "Εντοπισμός σφαλμάτων",
+                "success_toast": "Έγινε!",
+                "message_logger_summary": "{messageCount} μηνύματα\n{storyCount} ιστορίες",
+                "export_button": "Εξαγωγή",
+                "clear_button": "Εκκαθάριση",
+                "view_logger_history_button": "Προβολή ιστορικού καταγραφέα",
+                "updates_title": "Ενημερώσεις",
+                "auto_update_check": "Αυτόματος έλεγχος για ενημερώσεις",
+                "update_check_frequency": "Συχνότητα ελέγχου ενημερώσεων",
+                "update_check_frequency_daily": "Καθημερινά",
+                "update_check_frequency_weekly": "Εβδομαδιαία",
+                "update_check_frequency_monthly": "Μηνιαία",
+                "theme_icon_description": "Θέμα",
+                "app_theme_title": "Θέμα εφαρμογής",
+                "theme_mode_system": "Σύστημα",
+                "theme_mode_light": "Φωτεινό",
+                "theme_mode_dark": "Σκοτεινό",
+                "ui_settings_title": "Ρυθμίσεις διεπαφής χρήστη",
+                "haptic_feedback_label": "Απτική ανάδραση",
+                "test_mode_label": "Δοκιμαστική λειτουργία (ΜΟΝΟ ΓΙΑ ΕΝΤΟΠΙΣΜΟ ΣΦΑΛΜΑΤΩΝ)",
+                "disable_feature_loading_label": "Απενεργοποίηση φόρτωσης δυνατοτήτων",
+                "disable_auto_mapper_label": "Απενεργοποίηση αυτόματου αντιστοιχιστή",
+                "disable_bypass_indicator_label": "Απενεργοποίηση ένδειξης κατάστασης παράκαμψης",
+                "update_notification_channel_name": "Ενημερώσεις PurrfectSnap",
+                "update_notification_channel_description": "Ειδοποιήσεις για ενημερώσεις του PurrfectSnap",
+                "update_notification_title": "Διαθέσιμη ενημέρωση PurrfectSnap",
+                "update_notification_text": "Η έκδοση %s είναι τώρα διαθέσιμη.",
+                "export_database_failed_toast": "Η εξαγωγή της βάσης δεδομένων απέτυχε! {message}",
+                "clear_messages_failed_toast": "Η εκκαθάριση των μηνυμάτων απέτυχε! {message}",
+                "clear_file_failed_toast": "Η εκκαθάριση του αρχείου απέτυχε! {message}",
+                "debug_file_config": "Διαμόρφωση",
+                "debug_file_mappings": "Αντιστοιχίσεις",
+                "debug_file_message_logger": "Καταγραφέας μηνυμάτων",
+                "debug_file_pinned_best_friend": "Καρφιτσωμένος καλύτερος φίλος",
+                "debug_file_native_sig_cache": "Προσωρινή μνήμη εγγενών υπογραφών"
+            },
+            "tasks": {
+                "no_tasks": "Δεν υπάρχουν εργασίες",
+                "merge_button": "Συγχώνευση",
+                "failed_to_open_file": "Το άνοιγμα του αρχείου απέτυχε",
+                "merge_files_toast": "Συγχώνευση {count} αρχείων",
+                "remove_selected_tasks_title": "Είστε βέβαιοι ότι θέλετε να καταργήσετε τις επιλεγμένες εργασίες;",
+                "remove_all_tasks_title": "Είστε βέβαιοι ότι θέλετε να καταργήσετε όλες τις εργασίες;",
+                "delete_files_option": "Διαγραφή και των αρχείων",
+                "remove_selected_tasks_confirm": "Κατάργηση {count} εργασιών;",
+                "remove_all_tasks_confirm": "Κατάργηση όλων των εργασιών;",
+                "clear_tasks_description": "Εκκαθάριση εργασιών",
+                "file_not_found_icon_description": "Το αρχείο δεν βρέθηκε",
+                "image_icon_description": "Εικόνα",
+                "video_icon_description": "Βίντεο",
+                "audio_icon_description": "Ήχος",
+                "file_icon_description": "Αρχείο",
+                "download_icon_description": "Λήψη",
+                "chat_action_icon_description": "Ενέργεια συνομιλίας",
+                "cancel_icon_description": "Ακύρωση",
+                "success_icon_description": "Επιτυχία",
+                "failure_icon_description": "Αποτυχία",
+                "cancelled_icon_description": "Ακυρώθηκε",
+                "task_status_failure": "Αποτυχία",
+                "task_status_cancelled": "Ακυρώθηκε"
+            },
+            "features": {
+                "disabled": "Απενεργοποιημένο",
+                "export_option": "Εξαγωγή",
+                "import_option": "Εισαγωγή",
+                "reset_option": "Επαναφορά",
+                "config_export_success_toast": "Η διαμόρφωση εξήχθη με επιτυχία",
+                "config_import_success_toast": "Η διαμόρφωση εισήχθη με επιτυχία",
+                "config_import_failure_toast": "Η εισαγωγή της διαμόρφωσης απέτυχε {error}",
+                "config_export_failure_toast": "Η εξαγωγή της διαμόρφωσης απέτυχε {error}",
+                "saved_config_snackbar": "Η διαμόρφωση αποθηκεύτηκε",
+                "older_required": "Αυτή η δυνατότητα απαιτεί το Snapchat v{version} ή παλαιότερη για να λειτουργήσει σωστά",
+                "newer_required": "Αυτή η δυνατότητα απαιτεί το Snapchat v{version} ή νεότερη για να λειτουργήσει σωστά",
+                "search_button": "Αναζήτηση"
+            },
+            "manage_rule_feature": {
+                "disable_state_option": "Απενεργοποιημένο",
+                "disable_state_subtext": "Κανένας φίλος/ομάδα δεν θα επηρεαστεί",
+                "whitelist_state_option": "Κανείς εκτός από...",
+                "whitelist_state_subtext": "Μόνο {count} φίλοι/ομάδες θα επηρεαστούν από αυτόν τον κανόνα",
+                "whitelist_state_button": "Επιλογή επιτρεπόμενων φίλων/ομάδων",
+                "blacklist_state_option": "Όλοι εκτός από...",
+                "blacklist_state_subtext": "Όλοι εκτός από {count} φίλοι/ομάδες θα επηρεαστούν από αυτόν τον κανόνα",
+                "blacklist_state_button": "Επιλογή εξαιρούμενων φίλων/ομάδων",
+                "clear_list_button": "Εκκαθάριση λίστας φίλων/ομάδων",
+                "dialog_clear_confirmation_text": "Είστε βέβαιοι ότι θέλετε να εκκαθαρίσετε τη λίστα;"
+            },
+            "social": {
+                "friends_tab": "Φίλοι",
+                "groups_tab": "Ομάδες",
+                "empty_hint": "(κενό)",
+                "streaks_expiration_short": "{hours}ώ"
+            },
+            "manage_scope": {
+                "logged_stories_button": "Εμφάνιση καταγεγραμμένων ιστοριών",
+                "e2ee_title": "Κρυπτογράφηση από άκρο σε άκρο",
+                "rules_title": "Κανόνες",
+                "participants_text": "{count} συμμετέχοντες",
+                "not_found": "Δεν βρέθηκε",
+                "streaks_title": "Σερί",
+                "streaks_length_text": "Μήκος: {length}",
+                "streaks_expiration_text": "Λήγει σε {eta}",
+                "streaks_expiration_text_expired": "Έληξε",
+                "reminder_button": "Ορισμός υπενθύμισης",
+                "delete_scope_confirm_dialog_title": "Είστε βέβαιοι ότι θέλετε να διαγράψετε ένα {scope};",
+                "notes_placeholder": "Κάντε κλικ για να προσθέσετε μια σημείωση",
+                "invalid_key_size_32_bytes": "Μη έγκυρο μέγεθος κλειδιού (πρέπει να είναι 32 byte)",
+                "successfully_imported_key": "Το κλειδί εισήχθη με επιτυχία",
+                "failed_to_import_key": "Η εισαγωγή του κλειδιού απέτυχε: {message}",
+                "export_base64_button": "Εξαγωγή Base64",
+                "import_base64_button": "Εισαγωγή Base64"
+            },
+            "logged_stories": {
+                "story_failed_to_load": "Η φόρτωση της ιστορίας απέτυχε",
+                "no_stories": "Δεν βρέθηκαν ιστορίες",
+                "save_from_cache_button": "Αποθήκευση από την προσωρινή μνήμη",
+                "downloaded_to_path": "Λήψη στο {path}",
+                "download_failed": "Η λήψη απέτυχε: {message}",
+                "posted_at": "Δημοσιεύτηκε στις {date}",
+                "created_at": "Δημιουργήθηκε στις {date}",
+                "failed_to_open_file": "Το άνοιγμα του αρχείου απέτυχε. Ελέγξτε τα αρχεία καταγραφής για περισσότερες πληροφορίες",
+                "failed_to_get_file": "Η λήψη του αρχείου απέτυχε"
+            },
+            "messaging_preview": {
+                "processed_messages_toast": "Επεξεργάστηκαν {count} μηνύματα",
+                "processed_messages_text": "Επεξεργάστηκαν {count} μηνύματα",
+                "close_button_description": "Κλείσιμο",
+                "bridge_connection_failed": "Η σύνδεση με τη γέφυρα απέτυχε. Βεβαιωθείτε ότι το Snapchat εκτελείται στο παρασκήνιο",
+                "bridge_init_failed": "Η αρχικοποίηση της γέφυρας μηνυμάτων απέτυχε. Βεβαιωθείτε ότι το Snapchat εκτελείται στο παρασκήνιο",
+                "message_fetch_failed": "Η ανάκτηση των μηνυμάτων απέτυχε",
+                "no_message_hint": "Κανένα μήνυμα",
+                "save_selection_option": "Αποθήκευση επιλογής",
+                "save_all_option": "Αποθήκευση όλων",
+                "unsave_selection_option": "Κατάργηση αποθήκευσης επιλογής",
+                "unsave_all_option": "Κατάργηση αποθήκευσης όλων",
+                "mark_selection_as_seen_option": "Σήμανση επιλεγμένου Snap ως αναγνωσμένου",
+                "mark_all_as_seen_option": "Σήμανση όλων των Snaps ως αναγνωσμένων",
+                "delete_selection_option": "Διαγραφή επιλογής",
+                "delete_all_option": "Διαγραφή όλων"
+            },
+            "logger_history": {
+                "download_started_toast": "Η λήψη ξεκίνησε!",
+                "download_success_toast": "Λήψη στο {path}",
+                "download_failed_toast": "Η λήψη του {message} απέτυχε",
+                "edited_at_text": "{message} (επεξεργάστηκε στις {date})",
+                "download_button": "Λήψη",
+                "select_conversation_placeholder": "Επιλογή συνομιλίας",
+                "close_button_description": "Κλείσιμο",
+                "search_button_description": "Αναζήτηση",
+                "list_friend_format": "Φίλος {name}",
+                "list_group_format": "Ομάδα {name}",
+                "no_more_messages": "Δεν υπάρχουν άλλα μηνύματα",
+                "reverse_order_checkbox": "Αντίστροφη σειρά",
+                "chat_attachment": "Συνημμένο {index}",
+                "empty_message": "Κενό μήνυμα συνομιλίας",
+                "message_parse_failed": "Η ανάλυση του μηνύματος απέτυχε",
+                "unknown_sender": "Άγνωστος αποστολέας",
+                "download_attachment_failed_toast": "Η λήψη του συνημμένου απέτυχε",
+                "log_header_format": "{username} ({type}) - {date}"
+            },
+            "file_imports": {
+                "import_file_button": "Εισαγωγή αρχείου",
+                "file_not_found": "Το αρχείο δεν βρέθηκε",
+                "file_import_failed": "Η εισαγωγή του αρχείου απέτυχε: {error}",
+                "file_imported": "Το αρχείο εισήχθη με επιτυχία",
+                "file_delete_failed": "Η διαγραφή του αρχείου απέτυχε",
+                "no_files_hint": "Εδώ μπορείτε να εισαγάγετε αρχεία για χρήση στο Snapchat. Πατήστε το παρακάτω κουμπί για να εισαγάγετε ένα αρχείο."
+            },
+            "better_location": {
+                "spoofed_coordinates_title": "Πλάτος {latitude}, Μήκος {longitude}",
+                "save_coordinates_dialog_title": "Αποθήκευση συντεταγμένων",
+                "saved_name_dialog_hint": "Αποθηκευμένο όνομα",
+                "latitude_dialog_hint": "Γεωγραφικό πλάτος",
+                "longitude_dialog_hint": "Γεωγραφικό μήκος",
+                "save_dialog_button": "Αποθήκευση",
+                "choose_location_button": "Επιλογή τοποθεσίας",
+                "teleport_to_friend_button": "Τηλεμεταφορά σε φίλο",
+                "spoof_location_toggle": "Παραποίηση τοποθεσίας",
+                "suspend_location_updates": "Αναστολή ενημερώσεων τοποθεσίας",
+                "saved_coordinates_title": "Αποθηκευμένες συντεταγμένες",
+                "no_saved_coordinates_hint": "Δεν υπάρχουν αποθηκευμένες συντεταγμένες",
+                "delete_dialog_title": "Διαγραφή αποθηκευμένης συντεταγμένης",
+                "delete_dialog_message": "Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτήν την αποθηκευμένη συντεταγμένη;",
+                "teleport_to_friend_title": "Τηλεμεταφορά σε φίλο",
+                "search_bar": "Αναζήτηση",
+                "no_friends_map": "Δεν υπάρχουν φίλοι στον χάρτη",
+                "no_friends_found": "Δεν βρέθηκαν φίλοι",
+                "edit_location_button_description": "Επεξεργασία τοποθεσίας",
+                "add_icon_description": "Προσθήκη",
+                "edit_icon_description": "Επεξεργασία",
+                "delete_icon_description": "Διαγραφή"
+            }
+        },
+        "dialogs": {
+            "add_friend": {
+                "title": "Προσθήκη φίλου ή ομάδας",
+                "search_hint": "Αναζήτηση",
+                "fetch_error": "Η ανάκτηση δεδομένων απέτυχε",
+                "category_groups": "Ομάδες",
+                "category_friends": "Φίλοι",
+                "participants_text": "{count} συμμετέχοντες",
+                "search_icon_description": "Αναζήτηση"
+            },
+            "scripting_warning": {
+                "title": "Προειδοποίηση",
+                "content": "Το PurrfectSnap περιλαμβάνει ένα εργαλείο δέσμης ενεργειών, το οποίο επιτρέπει την εκτέλεση κώδικα που ορίζεται από τον χρήστη στη συσκευή σας. Να είστε εξαιρετικά προσεκτικοί και να εγκαθιστάτε λειτουργικές μονάδες μόνο από γνωστές, αξιόπιστες πηγές. Οι μη εξουσιοδοτημένες ή μη επαληθευμένες λειτουργικές μονάδες ενδέχεται να αποτελούν κίνδυνο για την ασφάλεια του συστήματός σας."
+            },
+            "reset_config": {
+                "title": "Επαναφορά διαμόρφωσης",
+                "content": "Είστε βέβαιοι ότι θέλετε να επαναφέρετε τη διαμόρφωση;",
+                "success_toast": "Η διαμόρφωση επαναφέρθηκε με επιτυχία"
+            },
+            "export_config": {
+                "title": "Εξαγωγή ευαίσθητων δεδομένων;",
+                "content": "Θέλετε να εξαγάγετε τη διαμόρφωση με ευαίσθητα δεδομένα; (π.χ. συντεταγμένες τοποθεσίας κ.λπ.)"
+            },
+            "messaging_action": {
+                "title": "Επιλέξτε τύπους περιεχομένου για επεξεργασία",
+                "select_all_button": "Επιλογή όλων"
+            },
+            "file_imports": {
+                "no_files_settings_hint": "Δεν βρέθηκαν αρχεία. Βεβαιωθείτε ότι έχετε εισαγάγει τα απαιτούμενα αρχεία στην ενότητα Εισαγωγές αρχείων",
+                "settings_select_file_hint": "Επιλογή εισαγόμενου αρχείου"
+            },
+            "quick_actions_dialog": {
+                "title": "Επεξεργασία γρήγορων ενεργειών",
+                "subtitle": "Επιλέξτε και προσαρμόστε το μέγεθος των γρήγορων ενεργειών σας."
+            }
+        },
+        "friend_tracker": {
+            "rules_tab": "Κανόνες",
+            "logs_tab": "Αρχεία καταγραφής",
+            "export_dialog_title": "Εξαγωγή",
+            "bulk_export_button": "Μαζική εξαγωγή",
+            "individual_export_button": "Ατομική εξαγωγή",
+            "invalid_import_type_dialog_title": "Μη έγκυρος τύπος εισαγωγής",
+            "invalid_import_type_dialog_text": "Το επιλεγμένο αρχείο δεν είναι συμβατό με αυτόν τον τύπο εισαγωγής. Επιλέξτε τον σωστό τύπο εισαγωγής.",
+            "import_dialog_title": "Εισαγωγή",
+            "bulk_import_button": "Μαζική εισαγωγή",
+            "individual_import_button": "Ατομική εισαγωγή",
+            "import_button_description": "Εισαγωγή",
+            "export_button_description": "Εξαγωγή",
+            "export_button": "Εξαγωγή",
+            "delete_button_description": "Διαγραφή",
+            "delete_button": "Διαγραφή",
+            "catalog_button_description": "Κατάλογος",
+            "catalog_button": "Κατάλογος",
+            "add_rule_button_description": "Προσθήκη κανόνα",
+            "add_rule_button": "Προσθήκη κανόνα",
+            "no_rules_found": "Δεν βρέθηκαν κανόνες",
+            "empty_rule_name": "(κενό)",
+            "events_suffix": "συμβάντα",
+            "scopes_suffix": "εύρη",
+            "select_rule_to_export_title": "Επιλογή κανόνα για εξαγωγή",
+            "deleted_logs_toast": "Διαγράφηκαν {count} αρχεία καταγραφής",
+            "delete_logs_dialog_title": "Διαγραφή αρχείων καταγραφής;",
+            "deleting_logs_dialog_text": "Διαγραφή {count} αρχείων καταγραφής...",
+            "delete_logs_dialog_confirm_text": "Αυτό θα διαγράψει τα αρχεία καταγραφής με βάση το τρέχον φίλτρο και το ερώτημα αναζήτησης. Αυτή η ενέργεια δεν μπορεί να αναιρεθεί.",
+            "exported_logs_toast": "Τα αρχεία καταγραφής εξήχθησαν!",
+            "export_logs_failed_toast": "Η εξαγωγή των αρχείων καταγραφής απέτυχε. Ελέγξτε το logcat για περισσότερες λεπτομέρειες.",
+            "export_logs_dialog_title": "Εξαγωγή αρχείων καταγραφής;",
+            "exporting_logs_dialog_text": "Εξαγωγή αρχείων καταγραφής...",
+            "export_logs_dialog_confirm_text": "Αυτό θα εξαγάγει τα αρχεία καταγραφής με βάση το τρέχον φίλτρο και το ερώτημα αναζήτησης.",
+            "export_as_button": "Εξαγωγή ως {type}",
+            "filters_title": "Φίλτρα",
+            "search_by_label": "Αναζήτηση κατά",
+            "newest_first_label": "Νεότερα πρώτα",
+            "since_label": "Από",
+            "until_label": "Έως",
+            "pick_a_date_button": "Επιλογή ημερομηνίας",
+            "search_placeholder": "Αναζήτηση",
+            "filter_button_description": "Φίλτρο",
+            "clear_button_description": "Εκκαθάριση",
+            "no_logs_found": "Δεν βρέθηκαν αρχεία καταγραφής",
+            "log_event_format": "{event} στο {conversation}",
+            "condition_only_inside_conversation": "Μόνο όταν είμαι μέσα στη συνομιλία",
+            "condition_only_outside_conversation": "Μόνο όταν είμαι έξω από τη συνομιλία",
+            "condition_only_when_app_active": "Μόνο όταν το Snapchat είναι ενεργό",
+            "condition_only_when_app_inactive": "Μόνο όταν το Snapchat είναι ανενεργό",
+            "condition_no_push_notification_when_app_active": "Καμία ειδοποίηση push όταν το Snapchat είναι ενεργό",
+            "add_event_dialog_title": "Προσθήκη συμβάντος",
+            "event_type_label": "Τύπος συμβάντος",
+            "triggers_title": "Εναύσματα",
+            "conditions_title": "Συνθήκες",
+            "add_button": "Προσθήκη",
+            "default_rule_name": "Προσαρμοσμένος κανόνας",
+            "discard_changes_dialog_title": "Απόρριψη αλλαγών;",
+            "discard_changes_dialog_text": "Έχετε μη αποθηκευμένες αλλαγές. Είστε βέβαιοι ότι θέλετε να τις απορρίψετε;",
+            "discard_button": "Απόρριψη",
+            "cannot_save_rule_dialog_title": "Δεν είναι δυνατή η αποθήκευση του κανόνα",
+            "cannot_save_rule_dialog_text": "Ένας κανόνας πρέπει να έχει τουλάχιστον ένα συμβάν για να αποθηκευτεί.",
+            "duplicate_rule_name_dialog_title": "Διπλότυπο όνομα κανόνα",
+            "duplicate_rule_name_dialog_text": "Υπάρχει ήδη ένας κανόνας με αυτό το όνομα. Επιλέξτε ένα διαφορετικό όνομα.",
+            "delete_rule_dialog_title": "Διαγραφή κανόνα",
+            "delete_rule_dialog_text": "Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτόν τον κανόνα;",
+            "new_rule_title": "Νέος κανόνας",
+            "edit_rule_title": "Επεξεργασία κανόνα",
+            "back_button_description": "Πίσω",
+            "save_button_description": "Αποθήκευση",
+            "general_section_title": "Γενικά",
+            "rule_name_label": "Όνομα κανόνα",
+            "author_name_label": "Όνομα συγγραφέα",
+            "scope_section_title": "Εύρος",
+            "scope_all": "Όλα",
+            "scope_whitelist": "Λευκή λίστα",
+            "scope_blacklist": "Μαύρη λίστα",
+            "select_friends_groups_button": "Επιλογή φίλων/ομάδων ({count})",
+            "events_section_title": "Συμβάντα",
+            "add_event_button": "Προσθήκη συμβάντος",
+            "no_events_text": "Κανένα συμβάν"
+        },
+        "friend_tracker_catalog": {
+            "download_failed": "Η λήψη απέτυχε: {code}",
+            "error": "Σφάλμα: {message}",
+            "no_repos_added": "Δεν προστέθηκαν αποθετήρια.",
+            "no_rules_available": "Δεν υπάρχουν διαθέσιμοι κανόνες από κανένα αποθετήριο.",
+            "by_author": "από {author}",
+            "imported_button": "Εισήχθη",
+            "import_button": "Εισαγωγή",
+            "title": "Κατάλογος παρακολούθησης φίλων",
+            "manage_repos_description": "Διαχείριση αποθετηρίων"
+        },
+        "friend_tracker_export": {
+            "title": "Εξαγωγή κανόνων",
+            "back_button_description": "Πίσω",
+            "exported_toast": "Οι κανόνες παρακολούθησης φίλων εξήχθησαν!",
+            "export_failed_toast": "Η εξαγωγή των κανόνων απέτυχε: {message}",
+            "save_button": "Αποθήκευση",
+            "expand_button_description": "Επέκταση"
+        },
+        "friend_tracker_import": {
+            "title": "Εισαγωγή κανόνων",
+            "back_button_description": "Πίσω",
+            "imported_toast": "Οι κανόνες παρακολούθησης φίλων εισήχθησαν!",
+            "import_failed_toast": "Η εισαγωγή των κανόνων απέτυχε: {message}",
+            "confirm_button": "Επιβεβαίωση",
+            "expand_button_description": "Επέκταση"
+        },
+        "friend_tracker_repos": {
+            "invalid_repo_title": "Μη έγκυρο αποθετήριο",
+            "add_repo_button": "Προσθήκη αποθετηρίου",
+            "add_repo_dialog_title": "Προσθήκη URL αποθετηρίου",
+            "repo_url_label": "URL αποθετηρίου",
+            "repo_added_toast": "Το αποθετήριο προστέθηκε με επιτυχία!",
+            "invalid_repo_error": "Αυτό δεν φαίνεται να είναι ένα έγκυρο αποθετήριο παρακολούθησης φίλων.",
+            "add_repo_failed_toast": "Η προσθήκη του αποθετηρίου απέτυχε: {message}",
+            "add_button": "Προσθήκη",
+            "no_repos_added": "Δεν προστέθηκαν αποθετήρια",
+            "remove_button": "Κατάργηση",
+            "remove_repo_dialog_title": "Κατάργηση αποθετηρίου",
+            "remove_repo_dialog_text": "Είστε βέβαιοι ότι θέλετε να καταργήσετε αυτό το αποθετήριο;"
+        },
+        "navigation": {
+            "tracker_tab_label": "Παρακολούθηση",
+            "customize_bottom_bar_title": "Προσαρμογή κάτω γραμμής",
+            "customize_bottom_bar_subtitle": "Αναδιάταξη, προσθήκη ή κατάργηση καρτελών. Το πολύ πέντε.",
+            "shown_tabs_title": "Εμφανιζόμενες καρτέλες",
+            "no_tabs_selected_text": "Δεν επιλέχθηκαν καρτέλες",
+            "available_tabs_title": "Διαθέσιμες καρτέλες",
+            "reset_button": "Επαναφορά",
+            "done_button": "Έγινε"
+        },
+        "scripting": {
+            "script_already_installed": "Το σενάριο έχει ήδη εγκατασταθεί!",
+            "downloading_script": "Λήψη σεναρίου...",
+            "script_downloaded": "Το σενάριο {name} λήφθηκε!",
+            "download_script_failed": "Η λήψη του σεναρίου απέτυχε. Ελέγξτε τα αρχεία καταγραφής για περισσότερες λεπτομέρειες",
+            "import_script_from_url_title": "Εισαγωγή σεναρίου από URL",
+            "import_script_warning": "Προειδοποίηση: Τα εισαγόμενα σενάρια μπορεί να είναι επιβλαβή για τη συσκευή σας. Εισαγάγετε σενάρια μόνο από αξιόπιστες πηγές.",
+            "enter_url_label": "Εισαγάγετε το URL εδώ:",
+            "script_imported": "Το σενάριο {name} εισήχθη!",
+            "import_failed": "Η εισαγωγή του σεναρίου απέτυχε. {message}. Ελέγξτε τα αρχεία καταγραφής για περισσότερες λεπτομέρειες",
+            "import_button": "Εισαγωγή",
+            "update_module_button": "Ενημέρωση λειτουργικής μονάδας",
+            "updating_script": "Ενημέρωση σεναρίου {name}...",
+            "module_not_found": "Η λειτουργική μονάδα δεν βρέθηκε",
+            "updated_script": "Ενημερώθηκε το {name} στην έκδοση {version}",
+            "update_module_failed": "Η ενημέρωση της λειτουργικής μονάδας απέτυχε. Ελέγξτε τα αρχεία καταγραφής για περισσότερες λεπτομέρειες",
+            "edit_module_button": "Επεξεργασία λειτουργικής μονάδας",
+            "open_module_failed": "Το άνοιγμα του αρχείου της λειτουργικής μονάδας απέτυχε. Ελέγξτε τα αρχεία καταγραφής για περισσότερες λεπτομέρειες",
+            "clear_module_data_button": "Εκκαθάριση δεδομένων λειτουργικής μονάδας",
+            "module_data_cleared": "Τα δεδομένα της λειτουργικής μονάδας εκκαθαρίστηκαν!",
+            "clear_module_data_failed": "Η εκκαθάριση των δεδομένων της λειτουργικής μονάδας απέτυχε. Ελέγξτε τα αρχεία καταγραφής για περισσότερες λεπτομέρειες",
+            "delete_module_button": "Διαγραφή λειτουργικής μονάδας",
+            "deleted_script": "Διαγράφηκε το σενάριο {name}!",
+            "delete_module_failed": "Η διαγραφή της λειτουργικής μονάδας απέτυχε. Ελέγξτε τα αρχεία καταγραφής για περισσότερες λεπτομέρειες",
+            "actions_title": "Ενέργειες",
+            "no_description": "Καμία περιγραφή",
+            "update_available": "Διαθέσιμη ενημέρωση: {version}",
+            "actions_button": "Ενέργειες",
+            "loaded_script": "Φορτώθηκε το σενάριο {name}",
+            "unloaded_script": "Αποφορτώθηκε το σενάριο {name}",
+            "enable_script_failed": "Η ενεργοποίηση του σεναρίου απέτυχε. Ελέγξτε τα αρχεία καταγραφής για περισσότερες λεπτομέρειες",
+            "disable_script_failed": "Η απενεργοποίηση του σεναρίου απέτυχε. Ελέγξτε τα αρχεία καταγραφής για περισσότερες λεπτομέρειες",
+            "select_scripts_folder_toast": "Επιλέξτε τον φάκελο των σεναρίων σας!",
+            "manage_repos_button": "Διαχείριση αποθετηρίων",
+            "import_from_url_button": "Εισαγωγή από URL",
+            "open_scripts_folder_button": "Άνοιγμα φακέλου σεναρίων",
+            "no_settings_for_module": "Αυτή η λειτουργική μονάδα δεν έχει ρυθμίσεις",
+            "installed_scripts_tab": "Εγκατεστημένα σενάρια",
+            "catalog_tab": "Κατάλογος",
+            "no_scripts_folder_selected_title": "Δεν επιλέχθηκε φάκελος σεναρίων",
+            "select_folder_button": "Επιλογή φακέλου",
+            "no_scripts_found_title": "Δεν βρέθηκαν σενάρια.",
+            "use_catalog_to_add_scripts": "Χρησιμοποιήστε την καρτέλα του καταλόγου για να προσθέσετε σενάρια!",
+            "ok_button_timeout": "Εντάξει ({timeout})",
+            "documentation_button": "Τεκμηρίωση",
+            "catalog": {
+                "script_already_installed": "Το σενάριο έχει ήδη εγκατασταθεί!",
+                "download_failed": "Η λήψη απέτυχε: {code}",
+                "script_downloaded": "Το σενάριο λήφθηκε!",
+                "could_not_create_file": "Δεν ήταν δυνατή η δημιουργία του αρχείου.",
+                "no_scripts_folder_selected": "Δεν επιλέχθηκε φάκελος σεναρίων.",
+                "error": "Σφάλμα: {message}",
+                "no_repos_added": "Δεν προστέθηκαν αποθετήρια.",
+                "repo_list_info": "Εδώ μπορείτε να βρείτε μια λίστα με αποθετήρια: ",
+                "link_text": "Σύνδεσμος",
+                "no_scripts_available": "Δεν υπάρχουν διαθέσιμα σενάρια από κανένα αποθετήριο.",
+                "by_author": "από {author}",
+                "version": "Έκδοση: {version}",
+                "installed_button": "Εγκατεστημένο",
+                "download_button": "Λήψη"
+            },
+            "repos": {
+                "invalid_repo_title": "Μη έγκυρο αποθετήριο",
+                "add_repo_button": "Προσθήκη αποθετηρίου",
+                "add_repo_dialog_title": "Προσθήκη URL αποθετηρίου",
+                "repo_url_label": "URL αποθετηρίου",
+                "repo_added_toast": "Το αποθετήριο προστέθηκε με επιτυχία!",
+                "invalid_repo_error": "Αυτό δεν φαίνεται να είναι ένα έγκυρο αποθετήριο σεναρίων.",
+                "add_repo_failed_toast": "Η προσθήκη του αποθετηρίου απέτυχε: {message}",
+                "add_button": "Προσθήκη",
+                "no_repos_added": "Δεν προστέθηκαν αποθετήρια",
+                "remove_button": "Κατάργηση",
+                "remove_repo_dialog_title": "Κατάργηση αποθετηρίου",
+                "remove_repo_dialog_text": "Είστε βέβαιοι ότι θέλετε να καταργήσετε αυτό το αποθετήριο;"
+            }
+        },
+        "features": {
+            "config_import": {
+                "title": "Επιβεβαίωση εισαγωγής",
+                "back_button_description": "Πίσω",
+                "config_imported_toast": "Η διαμόρφωση εισήχθη!",
+                "confirm_button": "Επιβεβαίωση",
+                "expand_button_description": "Επέκταση",
+                "enable_feature": "Ενεργοποίηση δυνατότητας",
+                "enabled": "Ενεργοποιημένο",
+                "disabled": "Απενεργοποιημένο"
+            },
+            "config_export": {
+                "title": "Σύνοψη εξαγωγής",
+                "back_button_description": "Πίσω",
+                "save_button": "Αποθήκευση",
+                "expand_button_description": "Επέκταση",
+                "enable_feature": "Ενεργοποίηση δυνατότητας",
+                "enabled": "Ενεργοποιημένο",
+                "disabled": "Απενεργοποιημένο"
+            }
+        },
+        "manage_repos": {
+            "title": "Διαχείριση αποθετηρίων {type}",
+            "add_repo_button": "Προσθήκη αποθετηρίου",
+            "add_repo_dialog_title": "Προσθήκη URL αποθετηρίου",
+            "repo_url_label": "URL αποθετηρίου",
+            "repo_added_successfully": "Το αποθετήριο προστέθηκε με επιτυχία!",
+            "add_repo_failed": "Η προσθήκη του αποθετηρίου απέτυχε: {message}",
+            "add_button": "Προσθήκη",
+            "no_repos_added": "Δεν προστέθηκαν αποθετήρια",
+            "remove_button": "Κατάργηση"
+        }
+    },
+    "rules": {
+        "toasts": {
+            "enabled": "{ruleName} ενεργοποιήθηκε",
+            "disabled": "{ruleName} απενεργοποιήθηκε"
+        },
+        "modes": {
+            "blacklist": "Λειτουργία μαύρης λίστας",
+            "whitelist": "Λειτουργία λευκής λίστας"
+        },
+        "properties": {
+            "auto_download": {
+                "name": "Αυτόματη λήψη",
+                "description": "Αυτόματη λήψη των Snaps κατά την προβολή τους",
+                "options": {
+                    "blacklist": "Εξαίρεση από την αυτόματη λήψη",
+                    "whitelist": "Αυτόματη λήψη"
+                }
+            },
+            "stealth": {
+                "name": "Λειτουργία μυστικότητας",
+                "description": "Αποτρέπει οποιονδήποτε να γνωρίζει ότι έχετε ανοίξει τα Snaps/Chats και τις συνομιλίες του",
+                "options": {
+                    "blacklist": "Εξαίρεση από τη λειτουργία μυστικότητας",
+                    "whitelist": "Λειτουργία μυστικότητας"
+                }
+            },
+            "auto_save": {
+                "name": "Αυτόματη αποθήκευση",
+                "description": "Αποθηκεύει τα μηνύματα συνομιλίας κατά την προβολή τους",
+                "options": {
+                    "blacklist": "Εξαίρεση από την αυτόματη αποθήκευση",
+                    "whitelist": "Αυτόματη αποθήκευση"
+                }
+            },
+            "unsaveable_messages": {
+                "name": "Μη αποθηκεύσιμα μηνύματα",
+                "description": "Αποτρέπει την αποθήκευση μηνυμάτων στη συνομιλία από άλλα άτομα",
+                "options": {
+                    "blacklist": "Εξαίρεση από τα μη αποθηκεύσιμα μηνύματα",
+                    "whitelist": "Μη αποθηκεύσιμα μηνύματα"
+                }
+            },
+            "auto_open_snaps": {
+                "name": "Αυτόματο άνοιγμα Snaps",
+                "description": "Ανοίγει αυτόματα τα Snaps κατά τη λήψη τους",
+                "options": {
+                    "blacklist": "Εξαίρεση από το αυτόματο άνοιγμα Snaps",
+                    "whitelist": "Αυτόματο άνοιγμα Snaps"
+                }
+            },
+            "hide_friend_feed": {
+                "name": "Απόκρυψη από τη ροή φίλων"
+            },
+            "e2e_encryption": {
+                "name": "Χρήση κρυπτογράφησης E2E"
+            },
+            "pin_conversation": {
+                "name": "Καρφίτσωμα συνομιλίας"
+            },
+            "exclude_message_logger": {
+                "name": "Εξαίρεση από τον καταγραφέα μηνυμάτων"
+            }
+        }
+    },
+    "actions": {
+        "clean_snapchat_cache": {
+            "name": "Εκκαθάριση προσωρινής μνήμης του Snapchat",
+            "description": "Εκκαθαρίζει την προσωρινή μνήμη του Snapchat"
+        },
+        "manage_friend_list": {
+            "name": "Διαχείριση λίστας φίλων",
+            "description": "Εισαγωγή/εξαγωγή της λίστας φίλων σας κατά τη δημιουργία αντιγράφων ασφαλείας"
+        },
+        "export_chat_messages": {
+            "name": "Εξαγωγή μηνυμάτων συνομιλίας",
+            "description": "Εξάγει τα μηνύματα συνομιλίας σε αρχείο JSON/HTML/TXT"
+        },
+        "export_memories": {
+            "name": "Εξαγωγή αναμνήσεων",
+            "description": "Εξάγει τις αναμνήσεις σε αρχείο ZIP"
+        },
+        "bulk_messaging_action": {
+            "name": "Μαζική ενέργεια μηνυμάτων",
+            "description": "Εκτελεί λειτουργίες όπως διαγραφή φίλων ή μαζική διαγραφή συνομιλιών"
+        },
+        "regen_mappings": {
+            "name": "Επαναδημιουργία αντιστοιχίσεων",
+            "description": "Επαναδημιουργία αντιστοιχίσεων με μη αυτόματο τρόπο"
+        },
+        "change_language": {
+            "name": "Αλλαγή γλώσσας",
+            "description": "Αλλαγή της γλώσσας του PurrfectSnap"
+        },
+        "file_imports": {
+            "name": "Εισαγωγές αρχείων",
+            "description": "Εισαγωγή αρχείων για χρήση στο Snapchat"
+        },
+        "friend_tracker": {
+            "name": "Παρακολούθηση φίλων",
+            "description": "Παρακολούθηση των φίλων σας στο Snapchat"
+        },
+        "logger_history": {
+            "name": "Ιστορικό καταγραφέα",
+            "description": "Προβολή του ιστορικού των καταγεγραμμένων μηνυμάτων"
+        }
+    },
+    "features": {
+        "notices": {
+            "unstable": "⚠️ Ασταθές",
+            "ban_risk": "⚠️ Αυτή η δυνατότητα μπορεί να προκαλέσει αποκλεισμό",
+            "internal_behavior": "⚠️ Αυτό μπορεί να διαταράξει την εσωτερική συμπεριφορά του Snapchat"
+        },
+        "properties": {
+            "downloader": {
+                "name": "Λήπτης",
+                "description": "Λήψη πολυμέσων του Snapchat",
+                "properties": {
+                    "save_folder": {
+                        "name": "Φάκελος αποθήκευσης",
+                        "description": "Επιλέξτε τον κατάλογο στον οποίο θα γίνει λήψη όλων των πολυμέσων"
+                    },
+                    "auto_download_sources": {
+                        "name": "Πηγές αυτόματης λήψης",
+                        "description": "Επιλέξτε τις πηγές από τις οποίες θα γίνει αυτόματη λήψη"
+                    },
+                    "prevent_self_auto_download": {
+                        "name": "Αποτροπή αυτόματης λήψης από τον εαυτό σας",
+                        "description": "Αποτρέπει την αυτόματη λήψη των δικών σας Snaps"
+                    },
+                    "path_format": {
+                        "name": "Μορφή διαδρομής",
+                        "description": "Καθορίστε τη μορφή διαδρομής αρχείου"
+                    },
+                    "allow_duplicate": {
+                        "name": "Να επιτρέπονται τα διπλότυπα",
+                        "description": "Επιτρέπει τη λήψη των ίδιων πολυμέσων πολλές φορές"
+                    },
+                    "merge_overlays": {
+                        "name": "Συγχώνευση επικαλύψεων",
+                        "description": "Συνδυάζει το κείμενο και τα πολυμέσα ενός Snap σε ένα μόνο αρχείο"
+                    },
+                    "force_image_format": {
+                        "name": "Εξαναγκασμός μορφής εικόνας",
+                        "description": "Εξαναγκάζει την αποθήκευση των εικόνων σε μια καθορισμένη μορφή"
+                    },
+                    "force_voice_note_format": {
+                        "name": "Εξαναγκασμός μορφής φωνητικής σημείωσης",
+                        "description": "Εξαναγκάζει την αποθήκευση των φωνητικών σημειώσεων σε μια καθορισμένη μορφή"
+                    },
+                    "auto_download_voice_notes": {
+                        "name": "Αυτόματη λήψη φωνητικών σημειώσεων",
+                        "description": "Κάνει αυτόματη λήψη των φωνητικών σημειώσεων κατά την αναπαραγωγή τους"
+                    },
+                    "download_profile_pictures": {
+                        "name": "Λήψη εικόνων προφίλ",
+                        "description": "Σας επιτρέπει να κάνετε λήψη εικόνων προφίλ από τη σελίδα του προφίλ"
+                    },
+                    "opera_download_button": {
+                        "name": "Κουμπί λήψης Opera",
+                        "description": "Προσθέτει ένα κουμπί λήψης στην επάνω δεξιά γωνία κατά την προβολή ενός Snap.\nΤο παρατεταμένο πάτημα στα κουμπιά θα εξαναγκάσει τη λήψη"
+                    },
+                    "download_context_menu": {
+                        "name": "Μενού περιβάλλοντος λήψης",
+                        "description": "Σας επιτρέπει να κάνετε λήψη/προεπισκόπηση μηνυμάτων από μια συνομιλία ή μια ιστορία χρησιμοποιώντας το μενού περιβάλλοντος.\nΤο παρατεταμένο πάτημα στα κουμπιά θα εξαναγκάσει τη λήψη"
+                    },
+                    "ffmpeg_options": {
+                        "name": "Επιλογές FFmpeg",
+                        "description": "Καθορίστε πρόσθετες επιλογές FFmpeg",
+                        "properties": {
+                            "threads": {
+                                "name": "Νήματα",
+                                "description": "Ο αριθμός των νημάτων που θα χρησιμοποιηθούν"
+                            },
+                            "preset": {
+                                "name": "Προεπιλογή",
+                                "description": "Ορίστε την ταχύτητα της μετατροπής"
+                            },
+                            "constant_rate_factor": {
+                                "name": "Συντελεστής σταθερού ρυθμού",
+                                "description": "Ορίστε τον συντελεστή σταθερού ρυθμού για τον κωδικοποιητή βίντεο\nΑπό 0 έως 51 για το libx264"
+                            },
+                            "video_bitrate": {
+                                "name": "Ρυθμός bit βίντεο",
+                                "description": "Ορίστε τον ρυθμό bit του βίντεο (kbps)"
+                            },
+                            "audio_bitrate": {
+                                "name": "Ρυθμός bit ήχου",
+                                "description": "Ορίστε τον ρυθμό bit του ήχου (kbps)"
+                            },
+                            "custom_video_codec": {
+                                "name": "Προσαρμοσμένος κωδικοποιητής βίντεο",
+                                "description": "Ορίστε έναν προσαρμοσμένο κωδικοποιητή βίντεο (π.χ. libx264)"
+                            },
+                            "custom_audio_codec": {
+                                "name": "Προσαρμοσμένος κωδικοποιητής ήχου",
+                                "description": "Ορίστε έναν προσαρμοσμένο κωδικοποιητή ήχου (π.χ. AAC)"
+                            }
+                        }
+                    },
+                    "logging": {
+                        "name": "Καταγραφή",
+                        "description": "Εμφανίζει αναδυόμενα μηνύματα κατά τη λήψη πολυμέσων"
+                    },
+                    "custom_path_format": {
+                        "name": "Προσαρμοσμένη μορφή διαδρομής",
+                        "description": "Καθορίστε μια προσαρμοσμένη μορφή διαδρομής για τα ληφθέντα πολυμέσα\n\nΔιαθέσιμες μεταβλητές:\n - %username%\n - %source%\n - %hash%\n - %date_time%"
+                    }
+                }
+            },
+            "user_interface": {
+                "name": "Διεπαφή χρήστη",
+                "description": "Αλλάξτε την εμφάνιση και την αίσθηση του Snapchat",
+                "properties": {
+                    "enable_app_appearance": {
+                        "name": "Ενεργοποίηση ρυθμίσεων εμφάνισης εφαρμογής",
+                        "description": "Ενεργοποιεί την κρυφή ρύθμιση εμφάνισης εφαρμογής\nΕνδέχεται να μην απαιτείται σε νεότερες εκδόσεις του Snapchat"
+                    },
+                    "friend_feed_message_preview": {
+                        "name": "Προεπισκόπηση μηνύματος ροής φίλων",
+                        "description": "Εμφανίζει μια προεπισκόπηση των τελευταίων μηνυμάτων στη ροή φίλων",
+                        "properties": {
+                            "amount": {
+                                "name": "Ποσότητα",
+                                "description": "Η ποσότητα των μηνυμάτων που θα προβληθούν"
+                            }
+                        }
+                    },
+                    "snap_preview": {
+                        "name": "Προεπισκόπηση Snap",
+                        "description": "Εμφανίζει μια μικρή προεπισκόπηση δίπλα σε μη αναγνωσμένα Snaps στη συνομιλία"
+                    },
+                    "bootstrap_override": {
+                        "name": "Παράκαμψη Bootstrap",
+                        "description": "Παρακάμπτει τις ρυθμίσεις bootstrap της διεπαφής χρήστη",
+                        "properties": {
+                            "app_appearance": {
+                                "name": "Εμφάνιση εφαρμογής",
+                                "description": "Ορίζει μια μόνιμη εμφάνιση εφαρμογής"
+                            },
+                            "home_tab": {
+                                "name": "Καρτέλα Αρχική",
+                                "description": "Παρακάμπτει την καρτέλα εκκίνησης κατά το άνοιγμα του Snapchat"
+                            }
+                        }
+                    },
+                    "force_amoled_theme": {
+                        "name": "Σκοτεινή λειτουργία Amoled",
+                        "description": "Χρησιμοποιεί ένα πραγματικά μαύρο φόντο για το σκούρο θέμα"
+                    },
+                    "map_friend_nametags": {
+                        "name": "Βελτιωμένες ετικέτες ονομάτων φίλων στον χάρτη",
+                        "description": "Βελτιώνει τις ετικέτες ονομάτων των φίλων στο Snapmap"
+                    },
+                    "prevent_message_list_auto_scroll": {
+                        "name": "Αποτροπή αυτόματης κύλισης της λίστας μηνυμάτων",
+                        "description": "Αποτρέπει την κύλιση της λίστας μηνυμάτων προς τα κάτω κατά την αποστολή/λήψη ενός μηνύματος"
+                    },
+                    "streak_expiration_info": {
+                        "name": "Εμφάνιση πληροφοριών λήξης σερί",
+                        "description": "Εμφανίζει έναν χρονοδιακόπτη λήξης σερί δίπλα στον μετρητή σερί"
+                    },
+                    "hide_friend_feed_entry": {
+                        "name": "Απόκρυψη καταχώρισης ροής φίλων",
+                        "description": "Αποκρύπτει έναν συγκεκριμένο φίλο από τη ροή φίλων\nΧρησιμοποιήστε την καρτέλα κοινωνικών δικτύων για να διαχειριστείτε αυτήν τη δυνατότητα"
+                    },
+                    "hide_streak_restore": {
+                        "name": "Απόκρυψη επαναφοράς σερί",
+                        "description": "Αποκρύπτει το κουμπί Επαναφορά στη ροή φίλων"
+                    },
+                    "hide_quick_add_suggestions": {
+                        "name": "Απόκρυψη προτάσεων γρήγορης προσθήκης",
+                        "description": "Καταργεί τις προτάσεις γρήγορης προσθήκης φίλων"
+                    },
+                    "hide_story_suggestions": {
+                        "name": "Απόκρυψη προτάσεων ιστορίας",
+                        "description": "Καταργεί τις προτάσεις από τη σελίδα Ιστορίες"
+                    },
+                    "hide_ui_components": {
+                        "name": "Απόκρυψη στοιχείων διεπαφής χρήστη",
+                        "description": "Επιλέξτε ποια στοιχεία διεπαφής χρήστη θα αποκρύψετε"
+                    },
+                    "opera_media_quick_info": {
+                        "name": "Γρήγορες πληροφορίες πολυμέσων Opera",
+                        "description": "Εμφανίζει χρήσιμες πληροφορίες πολυμέσων, όπως ημερομηνία δημιουργίας, στο μενού περιβάλλοντος του προγράμματος προβολής opera"
+                    },
+                    "old_bitmoji_selfie": {
+                        "name": "Παλιά selfie Bitmoji",
+                        "description": "Επαναφέρει τα selfie Bitmoji από παλαιότερες εκδόσεις του Snapchat"
+                    },
+                    "disable_spotlight": {
+                        "name": "Απενεργοποίηση Spotlight",
+                        "description": "Απενεργοποιεί τη σελίδα Spotlight"
+                    },
+                    "friend_feed_menu_buttons": {
+                        "name": "Κουμπιά μενού ροής φίλων",
+                        "description": "Επιλέξτε ποια κουμπιά θα εμφανίζονται στο μενού ροής φίλων"
+                    },
+                    "auto_close_friend_feed_menu": {
+                        "name": "Αυτόματο κλείσιμο μενού ροής φίλων",
+                        "description": "Κλείνει αυτόματα το μενού ροής φίλων μετά το πάτημα ενός κουμπιού ρύθμισης"
+                    },
+                    "vertical_story_viewer": {
+                        "name": "Κάθετος προβολέας ιστοριών",
+                        "description": "Ενεργοποιεί τον κάθετο προβολέα ιστοριών για όλες τις ιστορίες"
+                    },
+                    "enable_friend_feed_menu_bar": {
+                        "name": "Γραμμή μενού ροής φίλων",
+                        "description": "Ενεργοποιεί τη νέα γραμμή μενού ροής φίλων"
+                    },
+                    "message_indicators": {
+                        "name": "Ενδείξεις μηνυμάτων",
+                        "description": "Προσθέτει συγκεκριμένα εικονίδια ενδείξεων στα μηνύματα\nΣημείωση: Οι ενδείξεις ενδέχεται να μην είναι 100% ακριβείς"
+                    },
+                    "stealth_mode_indicator": {
+                        "name": "Ένδειξη λειτουργίας μυστικότητας",
+                        "description": "Προσθέτει ένα emoji 👻 δίπλα στις συνομιλίες σε λειτουργία μυστικότητας"
+                    },
+                    "edit_text_override": {
+                        "name": "Παράκαμψη επεξεργασίας κειμένου",
+                        "description": "Παρακάμπτει τη συμπεριφορά του πεδίου κειμένου"
+                    },
+                    "prevent_forced_keyboard": {
+                        "name": "Αποτροπή εξαναγκασμένου πληκτρολογίου",
+                        "description": "Αποτρέπει το Snapchat από το να εμφανίζει αυτόματα το πληκτρολόγιο όταν ανοίγετε μια συνομιλία"
+                    },
+                    "settings_menu": {
+                        "name": "Μενού ρυθμίσεων",
+                        "description": "Αλλάζει τον τρόπο με τον οποίο ανοίγετε το μενού του PurrfectSnap",
+                        "options": {
+                            "default": "Προεπιλογή",
+                            "legacy": "Παλαιού τύπου"
+                        }
+                    }
+                }
+            },
+            "messaging": {
+                "name": "Μηνύματα",
+                "description": "Αλλάξτε τον τρόπο με τον οποίο αλληλεπιδράτε με τους φίλους σας",
+                "properties": {
+                    "bypass_screenshot_detection": {
+                        "name": "Παράκαμψη ανίχνευσης στιγμιότυπου οθόνης",
+                        "description": "Αποτρέπει το Snapchat από το να ανιχνεύει πότε τραβάτε ένα στιγμιότυπο οθόνης"
+                    },
+                    "anonymous_story_viewing": {
+                        "name": "Ανώνυμη προβολή ιστορίας",
+                        "description": "Αποτρέπει οποιονδήποτε να γνωρίζει ότι έχετε δει την ιστορία του"
+                    },
+                    "prevent_story_rewatch_indicator": {
+                        "name": "Αποτροπή ένδειξης επανάληψης προβολής ιστορίας",
+                        "description": "Αποτρέπει οποιονδήποτε να γνωρίζει ότι έχετε ξαναδεί την ιστορία του"
+                    },
+                    "hide_peek_a_peek": {
+                        "name": "Απόκρυψη Peek-a-Peek",
+                        "description": "Αποτρέπει την αποστολή ειδοποίησης όταν σύρετε το μισό σε μια συνομιλία"
+                    },
+                    "hide_bitmoji_presence": {
+                        "name": "Απόκρυψη παρουσίας Bitmoji",
+                        "description": "Αποτρέπει την εμφάνιση του Bitmoji σας ενώ βρίσκεστε στη συνομιλία"
+                    },
+                    "hide_typing_notifications": {
+                        "name": "Απόκρυψη ειδοποιήσεων πληκτρολόγησης",
+                        "description": "Αποτρέπει οποιονδήποτε να γνωρίζει ότι πληκτρολογείτε ένα μήνυμα"
+                    },
+                    "unlimited_snap_view_time": {
+                        "name": "Απεριόριστος χρόνος προβολής Snap",
+                        "description": "Καταργεί το χρονικό όριο για την προβολή των Snaps"
+                    },
+                    "auto_mark_as_read": {
+                        "name": "Αυτόματη σήμανση ως αναγνωσμένο",
+                        "description": "Σημειώνει αυτόματα τα μηνύματα/snaps ως αναγνωσμένα ακόμη και όταν είναι ενεργοποιημένη η λειτουργία μυστικότητας"
+                    },
+                    "mark_snap_as_seen_button": {
+                        "name": "Κουμπί σήμανσης Snap ως αναγνωσμένου",
+                        "description": "Προσθέτει ένα κουμπί για να επισημάνετε ένα Snap ως αναγνωσμένο κατά την προβολή του.\nΑυτό θα λειτουργήσει ακόμη και όταν είναι ενεργοποιημένη η λειτουργία μυστικότητας"
+                    },
+                    "skip_when_marking_as_seen": {
+                        "name": "Παράλειψη κατά τη σήμανση ως αναγνωσμένο",
+                        "description": "Παραλείπει αυτόματα στο επόμενο Snap κατά τη σήμανση ενός Snap ως αναγνωσμένου.\nΧρήση σε συνδυασμό με το κουμπί Σήμανση Snap ως αναγνωσμένου"
+                    },
+                    "loop_media_playback": {
+                        "name": "Επανάληψη αναπαραγωγής πολυμέσων",
+                        "description": "Επαναλαμβάνει την αναπαραγωγή πολυμέσων κατά την προβολή Snaps/Ιστοριών"
+                    },
+                    "disable_replay_in_ff": {
+                        "name": "Απενεργοποίηση επανάληψης στο FF",
+                        "description": "Απενεργοποιεί τη δυνατότητα επανάληψης με παρατεταμένο πάτημα από τη ροή φίλων"
+                    },
+                    "half_swipe_notifier": {
+                        "name": "Ειδοποιητής μισού σάρωσης",
+                        "description": "Σας ειδοποιεί όταν κάποιος σύρει το μισό σε μια συνομιλία",
+                        "properties": {
+                            "min_duration": {
+                                "name": "Ελάχιστη διάρκεια",
+                                "description": "Η ελάχιστη διάρκεια της μισής σάρωσης (σε δευτερόλεπτα)"
+                            },
+                            "max_duration": {
+                                "name": "Μέγιστη διάρκεια",
+                                "description": "Η μέγιστη διάρκεια της μισής σάρωσης (σε δευτερόλεπτα)"
+                            }
+                        }
+                    },
+                    "call_start_confirmation": {
+                        "name": "Επιβεβαίωση έναρξης κλήσης",
+                        "description": "Εμφανίζει ένα παράθυρο διαλόγου επιβεβαίωσης κατά την έναρξη μιας κλήσης"
+                    },
+                    "unlimited_conversation_pinning": {
+                        "name": "Απεριόριστο καρφίτσωμα συνομιλιών",
+                        "description": "Σας επιτρέπει να καρφιτσώνετε έναν απεριόριστο αριθμό συνομιλιών τοπικά"
+                    },
+                    "disable_snap_mode_restrictions": {
+                        "name": "Απενεργοποίηση περιορισμών λειτουργίας Snap",
+                        "description": "Σας επιτρέπει να βλέπετε αυτοκαταστρεφόμενα Snaps χωρίς περιορισμούς"
+                    },
+                    "prevent_message_sending": {
+                        "name": "Αποτροπή αποστολής μηνυμάτων",
+                        "description": "Αποτρέπει την αποστολή ορισμένων τύπων μηνυμάτων"
+                    },
+                    "friend_mutation_notifier": {
+                        "name": "Ειδοποιητής μετάλλαξης φίλου",
+                        "description": "Σας ειδοποιεί όταν κάτι αλλάζει στο προφίλ ενός φίλου"
+                    },
+                    "better_notifications": {
+                        "name": "Καλύτερες ειδοποιήσεις",
+                        "description": "Προσθέτει περισσότερες πληροφορίες στις ληφθείσες ειδοποιήσεις",
+                        "properties": {
+                            "group_notifications": {
+                                "name": "Ειδοποιήσεις ομάδας",
+                                "description": "Ομαδοποιεί τις ειδοποιήσεις σε μία"
+                            },
+                            "chat_preview": {
+                                "name": "Προεπισκόπηση συνομιλίας",
+                                "description": "Εμφανίζει μια προεπισκόπηση των ληφθέντων μηνυμάτων στην ειδοποίηση"
+                            },
+                            "media_preview": {
+                                "name": "Προεπισκόπηση πολυμέσων",
+                                "description": "Εμφανίζει μια προεπισκόπηση των επιλεγμένων τύπων πολυμέσων στην ειδοποίηση"
+                            },
+                            "media_caption": {
+                                "name": "Λεζάντα πολυμέσων",
+                                "description": "Εμφανίζει τη συνημμένη λεζάντα των πολυμέσων στην ειδοποίηση"
+                            },
+                            "stacked_media_messages": {
+                                "name": "Στοιβαγμένα μηνύματα πολυμέσων",
+                                "description": "Συνδυάζει πολλά μηνύματα πολυμέσων σε μία ειδοποίηση κειμένου όταν δεν μπορούν να προβληθούν. Χρήση σε συνδυασμό με την προεπισκόπηση συνομιλίας"
+                            },
+                            "friend_add_source": {
+                                "name": "Πηγή προσθήκης φίλου",
+                                "description": "Εμφανίζει την πηγή μιας αίτησης φιλίας στην ειδοποίηση"
+                            },
+                            "reply_button": {
+                                "name": "Κουμπί απάντησης",
+                                "description": "Προσθέτει ένα κουμπί απάντησης στην ειδοποίηση"
+                            },
+                            "smart_replies": {
+                                "name": "Έξυπνες απαντήσεις",
+                                "description": "Προσθέτει προτεινόμενες απαντήσεις στις ειδοποιήσεις (Android 10+). Χρήση σε συνδυασμό με το κουμπί απάντησης"
+                            },
+                            "download_button": {
+                                "name": "Κουμπί λήψης",
+                                "description": "Σας επιτρέπει να κάνετε λήψη πολυμέσων από την ειδοποίηση"
+                            },
+                            "mark_as_read_button": {
+                                "name": "Κουμπί σήμανσης ως αναγνωσμένο",
+                                "description": "Σας επιτρέπει να επισημάνετε ένα μήνυμα ως αναγνωσμένο από την ειδοποίηση"
+                            },
+                            "mark_as_read_and_save_in_chat": {
+                                "name": "Σήμανση ως αναγνωσμένο και αποθήκευση στη συνομιλία",
+                                "description": "Προσθέτει ένα κουμπί σήμανσης ως αναγνωσμένο και αποθήκευσης στη συνομιλία στην ειδοποίηση"
+                            }
+                        }
+                    },
+                    "notification_blacklist": {
+                        "name": "Μαύρη λίστα ειδοποιήσεων",
+                        "description": "Επιλέξτε ποιες ειδοποιήσεις θα αποκλειστούν"
+                    },
+                    "message_logger": {
+                        "name": "Καταγραφέας μηνυμάτων",
+                        "description": "Αποτρέπει τη διαγραφή μηνυμάτων",
+                        "properties": {
+                            "keep_my_own_messages": {
+                                "name": "Διατήρηση των δικών μου μηνυμάτων",
+                                "description": "Αποτρέπει τη διαγραφή των δικών σας μηνυμάτων"
+                            },
+                            "auto_purge": {
+                                "name": "Αυτόματη εκκαθάριση",
+                                "description": "Διαγράφει αυτόματα τα προσωρινά αποθηκευμένα μηνύματα που είναι παλαιότερα από το καθορισμένο χρονικό διάστημα"
+                            },
+                            "message_filter": {
+                                "name": "Φίλτρο μηνυμάτων",
+                                "description": "Επιλέξτε ποια μηνύματα θα καταγραφούν (κενό για όλα τα μηνύματα)"
+                            },
+                            "deleted_message_color": {
+                                "name": "Χρώμα διαγραμμένου μηνύματος",
+                                "description": "Ορίζει το χρώμα των διαγραμμένων μηνυμάτων"
+                            }
+                        }
+                    },
+                    "auto_save_messages_in_conversations": {
+                        "name": "Αυτόματη αποθήκευση μηνυμάτων",
+                        "description": "Αποθηκεύει αυτόματα κάθε μήνυμα στις συνομιλίες"
+                    },
+                    "gallery_media_send_override": {
+                        "name": "Παράκαμψη αποστολής πολυμέσων γκαλερί",
+                        "description": "Παραποιεί την πηγή πολυμέσων κατά την αποστολή από τη Γκαλερί"
+                    },
+                    "strip_media_metadata": {
+                        "name": "Αφαίρεση μεταδεδομένων πολυμέσων",
+                        "description": "Αφαιρεί τα μεταδεδομένα των πολυμέσων πριν από την αποστολή τους ως μήνυμα"
+                    },
+                    "bypass_message_retention_policy": {
+                        "name": "Παράκαμψη πολιτικής διατήρησης μηνυμάτων",
+                        "description": "Αποτρέπει τη διαγραφή μηνυμάτων μετά την προβολή τους"
+                    },
+                    "bypass_message_action_restrictions": {
+                        "name": "Παράκαμψη περιορισμών ενέργειας μηνυμάτων",
+                        "description": "Σας επιτρέπει να αντιδράσετε σε ένα snap χωρίς να το έχετε ανοίξει ή να αποθηκεύσετε ένα μη αποθηκεύσιμο μήνυμα"
+                    },
+                    "remove_groups_locked_status": {
+                        "name": "Κατάργηση κατάστασης κλειδώματος ομάδων",
+                        "description": "Σας επιτρέπει να βλέπετε πληροφορίες ομάδας μετά την αποβολή σας"
+                    },
+                    "double_tap_chat_action": {
+                        "name": "Ενέργεια διπλού πατήματος στη συνομιλία",
+                        "description": "Εκτελεί μια προσαρμοσμένη ενέργεια όταν πατάτε δύο φορές ένα μήνυμα στη συνομιλία"
+                    },
+                    "double_tap_chat_action_custom_emoji": {
+                        "name": "Προσαρμοσμένη αντίδραση emoji σε ενέργεια διπλού πατήματος στη συνομιλία",
+                        "description": "Ορίζει μια προσαρμοσμένη αντίδραση emoji για την ενέργεια διπλού πατήματος στη συνομιλία"
+                    }
+                }
+            },
+            "global": {
+                "name": "Παγκόσμιο",
+                "description": "Προσαρμόστε τις παγκόσμιες ρυθμίσεις του Snapchat",
+                "properties": {
+                    "better_location": {
+                        "name": "Καλύτερη τοποθεσία",
+                        "description": "Βελτιώνει την τοποθεσία του Snapchat",
+                        "properties": {
+                            "spoof_location": {
+                                "name": "Παραποίηση τοποθεσίας",
+                                "description": "Παραποιεί την τοποθεσία σας σε μια καθορισμένη"
+                            },
+                            "coordinates": {
+                                "name": "Συντεταγμένες",
+                                "description": "Ορίστε τις συντεταγμένες της παραποιημένης τοποθεσίας"
+                            },
+                            "walk_radius": {
+                                "name": "Ακτίνα περπατήματος",
+                                "description": "Περπατήστε τυχαία μέσα σε αυτήν την ακτίνα (πόδια)"
+                            },
+                            "always_update_location": {
+                                "name": "Πάντα ενημέρωση τοποθεσίας",
+                                "description": "Εξαναγκάζει το Snapchat να ενημερώνει την τοποθεσία ακόμη και αν δεν λαμβάνονται δεδομένα GPS"
+                            },
+                            "suspend_location_updates": {
+                                "name": "Αναστολή ενημερώσεων τοποθεσίας",
+                                "description": "Αποτρέπει την ενημέρωση της τοποθεσίας σας"
+                            },
+                            "spoof_battery_level": {
+                                "name": "Παραποίηση επιπέδου μπαταρίας",
+                                "description": "Παραποιεί το επίπεδο της μπαταρίας της συσκευής σας στον χάρτη\nΗ τιμή πρέπει να είναι μεταξύ 0 και 100"
+                            },
+                            "spoof_headphones": {
+                                "name": "Παραποίηση ακουστικών",
+                                "description": "Παραποιεί την κατάσταση ακρόασης μουσικής στον χάρτη"
+                            },
+                            "show_battery_level": {
+                                "name": "Εμφάνιση επιπέδου μπαταρίας",
+                                "description": "Εμφανίζει το επίπεδο της μπαταρίας των φίλων σας στον χάρτη"
+                            }
+                        }
+                    },
+                    "snapchat_plus": {
+                        "name": "Snapchat Plus",
+                        "description": "Ενεργοποιεί τις δυνατότητες του Snapchat Plus\nΟρισμένες δυνατότητες από την πλευρά του διακομιστή ενδέχεται να μην λειτουργούν"
+                    },
+                    "media_upload_quality": {
+                        "name": "Ποιότητα μεταφόρτωσης πολυμέσων",
+                        "description": "Παρακάμπτει την ποιότητα μεταφόρτωσης πολυμέσων",
+                        "properties": {
+                            "force_video_upload_source_quality": {
+                                "name": "Εξαναγκασμός ποιότητας πηγής μεταφόρτωσης βίντεο",
+                                "description": "Εξαναγκάζει το Snapchat να χρησιμοποιεί την ποιότητα της πηγής κατά τη μεταφόρτωση βίντεο\nΛάβετε υπόψη ότι αυτό ενδέχεται να μην αφαιρέσει τα μεταδεδομένα από τα πολυμέσα"
+                            },
+                            "disable_image_compression": {
+                                "name": "Απενεργοποίηση συμπίεσης εικόνας",
+                                "description": "Απενεργοποιεί τη συμπίεση εικόνας κατά τη μεταφόρτωση πολυμέσων"
+                            },
+                            "custom_image_upload_format": {
+                                "name": "Προσαρμοσμένη μορφή μεταφόρτωσης εικόνας",
+                                "description": "Ορίζει μια προσαρμοσμένη μορφή μεταφόρτωσης εικόνας\nΕπιλέξτε μια μορφή χωρίς απώλειες (όπως PNG) για την καλύτερη ποιότητα"
+                            }
+                        }
+                    },
+                    "disable_confirmation_dialogs": {
+                        "name": "Απενεργοποίηση παραθύρων διαλόγου επιβεβαίωσης",
+                        "description": "Επιβεβαιώνει αυτόματα τις επιλεγμένες ενέργειες"
+                    },
+                    "auto_updater": {
+                        "name": "Αυτόματος ενημερωτής",
+                        "description": "Ελέγχει αυτόματα για νέες ενημερώσεις"
+                    },
+                    "disable_metrics": {
+                        "name": "Απενεργοποίηση μετρήσεων",
+                        "description": "Αποκλείει την αποστολή συγκεκριμένων αναλυτικών δεδομένων στο Snapchat"
+                    },
+                    "disable_story_sections": {
+                        "name": "Απενεργοποίηση ενοτήτων ιστορίας",
+                        "description": "Καταργεί ενότητες από τη σελίδα Ιστορίες\nΕνδέχεται να απαιτείται ανανέωση για να λειτουργήσει σωστά"
+                    },
+                    "block_ads": {
+                        "name": "Αποκλεισμός διαφημίσεων",
+                        "description": "Αποτρέπει την εμφάνιση διαφημίσεων"
+                    },
+                    "disable_custom_tabs": {
+                        "name": "Απενεργοποίηση προσαρμοσμένων καρτελών",
+                        "description": "Ανοίγει συνδέσμους σε υποστηριζόμενες εφαρμογές αντί για το πρόγραμμα περιήγησης ιστού"
+                    },
+                    "disable_permission_requests": {
+                        "name": "Απενεργοποίηση αιτημάτων άδειας",
+                        "description": "Αποτρέπει το Snapchat από το να ζητά συγκεκριμένες άδειες"
+                    },
+                    "disable_memories_snap_feed": {
+                        "name": "Απενεργοποίηση ροής Snap αναμνήσεων",
+                        "description": "Αποτρέπει το Snapchat από το να εμφανίζει πρόσφατες αναμνήσεις όταν σύρετε προς τα πάνω στην κάμερα"
+                    },
+                    "spotlight_comments_username": {
+                        "name": "Όνομα χρήστη σχολίων Spotlight",
+                        "description": "Εμφανίζει το όνομα χρήστη του συγγραφέα στα σχόλια του Spotlight"
+                    },
+                    "bypass_video_length_restriction": {
+                        "name": "Παράκαμψη περιορισμού μήκους βίντεο",
+                        "description": "Μεμονωμένο: στέλνει ένα μεμονωμένο βίντεο\nΔιαίρεση: διαίρεση βίντεο μετά την επεξεργασία"
+                    },
+                    "default_video_playback_rate": {
+                        "name": "Προεπιλεγμένος ρυθμός αναπαραγωγής βίντεο",
+                        "description": "Ορίζει την προεπιλεγμένη ταχύτητα για την αναπαραγωγή βίντεο\nΗ τιμή πρέπει να είναι μεταξύ 0,1 και 4,0"
+                    },
+                    "video_playback_rate_slider": {
+                        "name": "Ρυθμιστικό ρυθμού αναπαραγωγής βίντεο",
+                        "description": "Προσθέτει ένα ρυθμιστικό στο μενού περιβάλλοντος του opera για να αλλάξετε τον ρυθμό αναπαραγωγής του βίντεο\nΣημείωση: Οι αλλαγές ισχύουν μόνο για τα επόμενα βίντεο"
+                    },
+                    "disable_google_play_dialogs": {
+                        "name": "Απενεργοποίηση παραθύρων διαλόγου των Υπηρεσιών Google Play",
+                        "description": "Αποτροπή εμφάνισης παραθύρων διαλόγου διαθεσιμότητας των Υπηρεσιών Google Play"
+                    },
+                    "default_volume_controls": {
+                        "name": "Προεπιλεγμένα στοιχεία ελέγχου έντασης",
+                        "description": "Εξαναγκάζει το Snapchat να χρησιμοποιεί τα στοιχεία ελέγχου έντασης του συστήματος"
+                    },
+                    "disable_telecom_framework": {
+                        "name": "Απενεργοποίηση πλαισίου τηλεπικοινωνιών",
+                        "description": "Αποτρέπει το Snapchat από τη χρήση του πλαισίου τηλεπικοινωνιών του Android\nΑυτό σας επιτρέπει να ακούτε μουσική κατά τη διάρκεια μιας κλήσης"
+                    },
+                    "hide_active_music": {
+                        "name": "Απόκρυψη ενεργής μουσικής",
+                        "description": "Αποτρέπει το Snapchat από το να γνωρίζει ότι ακούτε μουσική\nΑυτό θα σας επιτρέψει να τραβήξετε snaps χρησιμοποιώντας τα κουμπιά ελέγχου έντασης ενώ ακούτε μουσική"
+                    },
+                    "disable_snap_splitting": {
+                        "name": "Απενεργοποίηση διαίρεσης Snap",
+                        "description": "Αποτρέπει τη διαίρεση των Snaps σε πολλά μέρη\nΟι εικόνες που στέλνετε θα μετατραπούν σε βίντεο"
+                    }
+                }
+            },
+            "rules": {
+                "name": "Κανόνες",
+                "description": "Διαχείριση αυτόματων δυνατοτήτων για μεμονωμένα άτομα"
+            },
+            "camera": {
+                "name": "Κάμερα",
+                "description": "Προσαρμόστε τις σωστές ρυθμίσεις για το τέλειο snap",
+                "properties": {
+                    "disable_cameras": {
+                        "name": "Απενεργοποίηση καμερών",
+                        "description": "Αποτρέπει το Snapchat από τη χρήση των επιλεγμένων καμερών"
+                    },
+                    "black_photos": {
+                        "name": "Μαύρες φωτογραφίες",
+                        "description": "Αντικαθιστά τις ληφθείσες φωτογραφίες με ένα μαύρο φόντο\nΤα βίντεο δεν επηρεάζονται"
+                    },
+                    "immersive_camera_preview": {
+                        "name": "Καθηλωτική προεπισκόπηση",
+                        "description": "Αποτρέπει το Snapchat από την περικοπή της προεπισκόπησης της κάμερας\nΑυτό μπορεί να προκαλέσει τρεμόπαιγμα της κάμερας σε ορισμένες συσκευές"
+                    },
+                    "override_front_resolution": {
+                        "name": "Παράκαμψη ανάλυσης μπροστινής κάμερας",
+                        "description": "Παρακάμπτει την ανάλυση της κάμερας για την μπροστινή κάμερα"
+                    },
+                    "override_back_resolution": {
+                        "name": "Παράκαμψη ανάλυσης πίσω κάμερας",
+                        "description": "Παρακάμπτει την ανάλυση της κάμερας για την πίσω κάμερα"
+                    },
+                    "custom_resolution": {
+                        "name": "Προσαρμοσμένη ανάλυση",
+                        "description": "Ορίζει μια προσαρμοσμένη ανάλυση κάμερας, πλάτος x ύψος (π.χ. 1920x1080).\nΗ προσαρμοσμένη ανάλυση πρέπει να υποστηρίζεται από τη συσκευή σας"
+                    },
+                    "front_custom_frame_rate": {
+                        "name": "Προσαρμοσμένος ρυθμός καρέ μπροστινής κάμερας",
+                        "description": "Παρακάμπτει τον ρυθμό καρέ της μπροστινής κάμερας"
+                    },
+                    "back_custom_frame_rate": {
+                        "name": "Προσαρμοσμένος ρυθμός καρέ πίσω κάμερας",
+                        "description": "Παρακάμπτει τον ρυθμό καρέ της πίσω κάμερας"
+                    },
+                    "force_camera_source_encoding": {
+                        "name": "Εξαναγκασμός κωδικοποίησης πηγής κάμερας",
+                        "description": "Εξαναγκάζει την κωδικοποίηση της πηγής της κάμερας"
+                    },
+                    "startup_default_camera": {
+                        "name": "Προεπιλεγμένη κάμερα εκκίνησης",
+                        "description": "Ορίζει την προεπιλεγμένη κάμερα κατά το άνοιγμα του Snapchat"
+                    },
+                    "hevc_recording": {
+                        "name": "Εγγραφή HEVC",
+                        "description": "Χρησιμοποιεί τον κωδικοποιητή HEVC (H.265) για εγγραφή βίντεο"
+                    }
+                }
+            },
+            "streaks_reminder": {
+                "name": "Υπενθύμιση σερί",
+                "description": "Σας ειδοποιεί περιοδικά για τα σερί σας",
+                "properties": {
+                    "interval": {
+                        "name": "Διάστημα",
+                        "description": "Το διάστημα μεταξύ κάθε υπενθύμισης (ώρες)"
+                    },
+                    "remaining_hours": {
+                        "name": "Υπολειπόμενος χρόνος",
+                        "description": "Ο υπολειπόμενος χρόνος πριν από την εμφάνιση της ειδοποίησης (ώρες)"
+                    },
+                    "group_notifications": {
+                        "name": "Ειδοποιήσεις ομάδας",
+                        "description": "Ομαδοποιεί τις ειδοποιήσεις σε μία"
+                    }
+                }
+            },
+            "experimental": {
+                "name": "Πειραματικό",
+                "description": "Πειραματικές δυνατότητες",
+                "properties": {
+                    "native_hooks": {
+                        "name": "Εγγενείς αγκίστρια",
+                        "description": "Μη ασφαλείς δυνατότητες που συνδέονται με τον εγγενή κώδικα του Snapchat",
+                        "properties": {
+                            "composer_hooks": {
+                                "name": "Αγκίστρια Composer",
+                                "description": "Εισάγει κώδικα στο πλαίσιο διεπαφής χρήστη πολλαπλών πλατφορμών του Composer",
+                                "properties": {
+                                    "show_first_created_username": {
+                                        "name": "Εμφάνιση πρώτου δημιουργημένου ονόματος χρήστη",
+                                        "description": "Εμφανίζει το πρώτο δημιουργημένο όνομα χρήστη δίπλα στο τρέχον όνομα χρήστη στη σελίδα του προφίλ"
+                                    },
+                                    "bypass_camera_roll_limit": {
+                                        "name": "Παράκαμψη ορίου ρολού κάμερας",
+                                        "description": "Αυξάνει τη μέγιστη ποσότητα πολυμέσων που μπορείτε να στείλετε από το ρολό της κάμερας"
+                                    },
+                                    "custom_self_destruct_snap_delay": {
+                                        "name": "Προσαρμοσμένη καθυστέρηση αυτοκαταστροφής Snap",
+                                        "description": "Παρέχει περισσότερες επιλογές για τον χρονοδιακόπτη αυτοκαταστροφής κατά την αποστολή ενός Snap"
+                                    },
+                                    "composer_console": {
+                                        "name": "Κονσόλα Composer",
+                                        "description": "Σας επιτρέπει να εκτελείτε κώδικα JavaScript στο Composer (μόνο arm64)"
+                                    },
+                                    "composer_logs": {
+                                        "name": "Αρχεία καταγραφής Composer",
+                                        "description": "Ανακατευθύνει τα αρχεία καταγραφής της κονσόλας του Composer στο PurrfectSnap"
+                                    }
+                                }
+                            },
+                            "disable_bitmoji": {
+                                "name": "Απενεργοποίηση Bitmoji",
+                                "description": "Απενεργοποιεί το Bitmoji του προφίλ φίλων"
+                            },
+                            "custom_emoji_font": {
+                                "name": "Προσαρμοσμένη γραμματοσειρά emoji",
+                                "description": "Σας επιτρέπει να χρησιμοποιείτε μια προσαρμοσμένη γραμματοσειρά emoji. Λειτουργεί μόνο με γραμματοσειρές .ttf"
+                            },
+                            "custom_shared_library": {
+                                "name": "Προσαρμοσμένη κοινόχρηστη βιβλιοθήκη",
+                                "description": "Φορτώνει μια προσαρμοσμένη κοινόχρηστη βιβλιοθήκη στο Snapchat. Αυτή η δυνατότητα είναι μόνο για δοκιμαστικούς σκοπούς"
+                            }
+                        }
+                    },
+                    "spoof": {
+                        "name": "Παραποίηση",
+                        "description": "Παραποιήστε διάφορες πληροφορίες για εσάς",
+                        "properties": {
+                            "play_store_installer_package_name": {
+                                "name": "Όνομα πακέτου εγκατάστασης του Play Store",
+                                "description": "Παρακάμπτει το όνομα του πακέτου εγκατάστασης σε com.android.vending"
+                            },
+                            "remove_vpn_transport_flag": {
+                                "name": "Κατάργηση σημαίας μεταφοράς VPN",
+                                "description": "Αποτρέπει το Snapchat από την ανίχνευση VPN"
+                            },
+                            "remove_mock_location_flag": {
+                                "name": "Κατάργηση σημαίας ψευδούς τοποθεσίας",
+                                "description": "Αποτρέπει το Snapchat από την ανίχνευση ψευδούς τοποθεσίας"
+                            }
+                        }
+                    },
+                    "convert_message_locally": {
+                        "name": "Μετατροπή μηνύματος τοπικά",
+                        "description": "Μετατρέπει τα snaps σε εξωτερικά πολυμέσα συνομιλίας τοπικά. Αυτό εμφανίζεται στο μενού περιβάλλοντος λήψης συνομιλίας"
+                    },
+                    "media_file_picker": {
+                        "name": "Επιλογέας αρχείων πολυμέσων",
+                        "description": "Σας επιτρέπει να επιλέξετε οποιοδήποτε αρχείο βίντεο/ήχου από τη γκαλερί"
+                    },
+                    "story_logger": {
+                        "name": "Καταγραφέας ιστοριών",
+                        "description": "Παρέχει ένα ιστορικό των ιστοριών των φίλων"
+                    },
+                    "call_recorder": {
+                        "name": "Εγγραφέας κλήσεων",
+                        "description": "Καταγράφει αυτόματα τις ηχητικές κλήσεις"
+                    },
+                    "account_switcher": {
+                        "name": "Εναλλαγή λογαριασμών",
+                        "description": "Σας επιτρέπει να κάνετε εναλλαγή μεταξύ λογαριασμών χωρίς να αποσυνδεθείτε\nΠατήστε παρατεταμένα το εικονίδιο αναζήτησης δίπλα στο προφίλ σας Bitmoji για να ανοίξετε το μενού\nΣημείωση: Αυτή η δυνατότητα είναι πειραματική και πιθανότατα θα αλλάξει στο μέλλον",
+                        "properties": {
+                            "auto_backup_current_account": {
+                                "name": "Αυτόματη δημιουργία αντιγράφων ασφαλείας του τρέχοντος λογαριασμού",
+                                "description": "Δημιουργεί αυτόματα αντίγραφα ασφαλείας του τρέχοντος λογαριασμού κατά την αποσύνδεση ή την εναλλαγή λογαριασμών"
+                            }
+                        }
+                    },
+                    "better_transcript": {
+                        "name": "Καλύτερη μεταγραφή",
+                        "description": "Βελτιώνει τη μεταγραφή των φωνητικών σημειώσεων",
+                        "properties": {
+                            "force_transcription": {
+                                "name": "Εξαναγκασμός μεταγραφής φωνητικής σημείωσης",
+                                "description": "Επιτρέπει τη μεταγραφή όλων των φωνητικών σημειώσεων"
+                            },
+                            "preferred_transcription_lang": {
+                                "name": "Προτιμώμενη γλώσσα μεταγραφής",
+                                "description": "Η προτιμώμενη γλώσσα για τη μεταγραφή της φωνητικής σημείωσης (π.χ. EN, ES, FR)"
+                            },
+                            "notification_transcript": {
+                                "name": "Μεταγραφή ειδοποίησης",
+                                "description": "Μεταγράφει τις φωνητικές σημειώσεις στις ειδοποιήσεις\nΑυτή η δυνατότητα απαιτεί την ενεργοποίηση της δυνατότητας Προεπισκόπηση συνομιλίας στις Καλύτερες ειδοποιήσεις"
+                            }
+                        }
+                    },
+                    "voice_note_auto_play": {
+                        "name": "Αυτόματη αναπαραγωγή φωνητικής σημείωσης",
+                        "description": "Αναπαράγει αυτόματα την επόμενη φωνητική σημείωση μετά την ολοκλήρωση της τρέχουσας"
+                    },
+                    "friend_notes": {
+                        "name": "Σημειώσεις φίλων",
+                        "description": "Σας επιτρέπει να προσθέτετε σημειώσεις στα προφίλ των φίλων"
+                    },
+                    "cof_experiments": {
+                        "name": "Πειράματα COF",
+                        "description": "Ενεργοποιεί ακυκλοφόρητες/beta δυνατότητες του Snapchat"
+                    },
+                    "context_menu_fix": {
+                        "name": "Διόρθωση μενού περιβάλλοντος",
+                        "description": "Προσπάθεια επισκευής του μενού ροής φίλων, καθώς όταν η συσκευή είναι εκτός σύνδεσης, δεν μπορεί να εμφανιστεί σωστά"
+                    },
+                    "app_lock": {
+                        "name": "Κλείδωμα εφαρμογής",
+                        "description": "Αποτρέπει την πρόσβαση στο Snapchat χωρίς κωδικό πρόσβασης",
+                        "properties": {
+                            "lock_on_resume": {
+                                "name": "Κλείδωμα κατά την επαναφορά",
+                                "description": "Κλειδώνει την εφαρμογή όταν ανοίγει ξανά"
+                            }
+                        }
+                    },
+                    "infinite_story_boost": {
+                        "name": "Απεριόριστη ενίσχυση ιστορίας",
+                        "description": "Παράκαμψη της καθυστέρησης ορίου ενίσχυσης ιστορίας"
+                    },
+                    "meo_passcode_bypass": {
+                        "name": "Παράκαμψη κωδικού πρόσβασης My Eyes Only",
+                        "description": "Παράκαμψη του κωδικού πρόσβασης My Eyes Only\nΑυτό θα λειτουργήσει μόνο εάν ο κωδικός πρόσβασης έχει εισαχθεί σωστά προηγουμένως"
+                    },
+                    "no_friend_score_delay": {
+                        "name": "Καμία καθυστέρηση βαθμολογίας φίλου",
+                        "description": "Καταργεί την καθυστέρηση κατά την προβολή της βαθμολογίας ενός φίλου"
+                    },
+                    "best_friend_pinning": {
+                        "name": "Καρφίτσωμα καλύτερου φίλου",
+                        "description": "Σας επιτρέπει να καρφιτσώσετε έναν φίλο ως τον νούμερο ένα καλύτερό σας φίλο. Σημείωση: Μόνο εσείς μπορείτε να δείτε τον καρφιτσωμένο καλύτερό σας φίλο"
+                    },
+                    "e2ee": {
+                        "name": "Κρυπτογράφηση από άκρο σε άκρο",
+                        "description": "Κρυπτογραφεί τα μηνύματά σας με AES χρησιμοποιώντας ένα κοινό μυστικό κλειδί\nΒεβαιωθείτε ότι έχετε αποθηκεύσει το κλειδί σας κάπου ασφαλές!",
+                        "properties": {
+                            "encrypted_message_indicator": {
+                                "name": "Ένδειξη κρυπτογραφημένου μηνύματος",
+                                "description": "Προσθέτει ένα emoji 🔒 δίπλα στα κρυπτογραφημένα μηνύματα"
+                            },
+                            "force_message_encryption": {
+                                "name": "Εξαναγκασμός κρυπτογράφησης μηνυμάτων",
+                                "description": "Αποτρέπει την αποστολή κρυπτογραφημένων μηνυμάτων σε άτομα που δεν έχουν ενεργοποιημένη την κρυπτογράφηση από άκρο σε άκρο μόνο όταν επιλέγονται πολλές συνομιλίες"
+                            }
+                        }
+                    },
+                    "add_friend_source_spoof": {
+                        "name": "Παραποίηση πηγής προσθήκης φίλου",
+                        "description": "Παραποιεί την πηγή μιας αίτησης φιλίας"
+                    },
+                    "hidden_snapchat_plus_features": {
+                        "name": "Κρυφές δυνατότητες του Snapchat Plus",
+                        "description": "Ενεργοποιεί ακυκλοφόρητες/beta δυνατότητες του Snapchat Plus\nΕνδέχεται να μην λειτουργεί σε παλαιότερες εκδόσεις του Snapchat"
+                    },
+                    "custom_streaks_expiration_format": {
+                        "name": "Προσαρμοσμένη μορφή λήξης σερί",
+                        "description": "Προσαρμόζει τη μορφή λήξης των σερί\n\nΔιαθέσιμες μεταβλητές:\n - %c: Αριθμός σερί\n - %e: Emoji κλεψύδρας\n - %d: Ημέρες\n - %h: Ώρες\n - %m: Λεπτά\n - %s: Δευτερόλεπτα\n - %w: Υπολειπόμενος χρόνος"
+                    },
+                    "prevent_forced_logout": {
+                        "name": "Αποτροπή εξαναγκασμένης αποσύνδεσης",
+                        "description": "Αποτρέπει το Snapchat από το να σας αποσυνδέσει όταν συνδέεστε σε άλλη συσκευή"
+                    },
+                    "snapscore_changes": {
+                        "name": "Αλλαγές Snapscore",
+                        "description": "Παρακολουθεί τις αλλαγές στο Snapscore των φίλων\nΧρησιμοποιήστε αυτήν τη δυνατότητα μόνο σε νεότερες εκδόσεις του Snapchat"
+                    }
+                }
+            },
+            "scripting": {
+                "name": "Δημιουργία σεναρίων",
+                "description": "Εκτελέστε προσαρμοσμένα σενάρια για να επεκτείνετε το PurrfectSnap",
+                "properties": {
+                    "developer_mode": {
+                        "name": "Λειτουργία προγραμματιστή",
+                        "description": "Εμφανίζει πληροφορίες εντοπισμού σφαλμάτων στη διεπαφή χρήστη του Snapchat"
+                    },
+                    "module_folder": {
+                        "name": "Φάκελος λειτουργικής μονάδας",
+                        "description": "Ο φάκελος όπου βρίσκονται τα σενάρια"
+                    },
+                    "auto_reload": {
+                        "name": "Αυτόματη επαναφόρτωση",
+                        "description": "Επαναφορτώνει αυτόματα τα σενάρια όταν αλλάζουν"
+                    },
+                    "integrated_ui": {
+                        "name": "Ενσωματωμένη διεπαφή χρήστη",
+                        "description": "Επιτρέπει στα σενάρια να προσθέτουν προσαρμοσμένα στοιχεία διεπαφής χρήστη στο Snapchat"
+                    },
+                    "disable_log_anonymization": {
+                        "name": "Απενεργοποίηση ανωνυμοποίησης αρχείων καταγραφής",
+                        "description": "Απενεργοποιεί την ανωνυμοποίηση των αρχείων καταγραφής"
+                    },
+                    "disable_optimization": {
+                        "name": "Απενεργοποίηση βελτιστοποίησης",
+                        "description": "Απενεργοποιεί τη βελτιστοποίηση των σεναρίων. Αυτό μπορεί να προκαλέσει προβλήματα απόδοσης."
+                    }
+                }
+            },
+            "friend_tracker": {
+                "name": "Παρακολούθηση φίλων",
+                "description": "Καταγράφει τη δραστηριότητα των φίλων στο Snapchat",
+                "properties": {
+                    "record_messaging_events": {
+                        "name": "Καταγραφή συμβάντων μηνυμάτων",
+                        "description": "Καταγράφει συμβάντα μηνυμάτων όπως το άνοιγμα ενός snap, την ανάγνωση ενός μηνύματος κ.λπ."
+                    },
+                    "allow_running_in_background": {
+                        "name": "Να επιτρέπεται η εκτέλεση στο παρασκήνιο",
+                        "description": "Επιτρέπει στον ιχνηλάτη να εκτελείται στο παρασκήνιο. Σημείωση: Αυτό θα εξαντλήσει σημαντικά την μπαταρία σας"
+                    },
+                    "auto_purge": {
+                        "name": "Αυτόματη εκκαθάριση",
+                        "description": "Διαγράφει αυτόματα τα προσωρινά αποθηκευμένα συμβάντα που είναι παλαιότερα από το καθορισμένο χρονικό διάστημα"
+                    }
+                }
+            }
+        },
+        "options": {
+            "app_appearance": {
+                "always_light": "Πάντα φωτεινό",
+                "always_dark": "Πάντα σκοτεινό"
+            },
+            "friend_feed_menu_buttons": {
+                "auto_download": "⬇️ Αυτόματη λήψη",
+                "auto_save": "💬 Αυτόματη αποθήκευση μηνυμάτων",
+                "unsaveable_messages": "⬇️ Μη αποθηκεύσιμα μηνύματα",
+                "auto_open_snaps": "📸 Αυτόματο άνοιγμα Snaps",
+                "stealth": "👻 Λειτουργία μυστικότητας",
+                "mark_snaps_as_seen": "👀 Σήμανση Snaps ως αναγνωσμένων",
+                "mark_stories_as_seen_locally": "👀 Σήμανση ιστοριών ως αναγνωσμένων τοπικά",
+                "conversation_info": "🧑‍🤝‍🧑 Πληροφορίες συνομιλίας",
+                "e2e_encryption": "🔒 Χρήση κρυπτογράφησης E2E"
+            },
+            "path_format": {
+                "create_author_folder": "Δημιουργία φακέλου για κάθε συγγραφέα",
+                "create_source_folder": "Δημιουργία φακέλου για κάθε τύπο πηγής πολυμέσων",
+                "append_hash": "Προσθήκη ενός μοναδικού hash στο όνομα του αρχείου",
+                "append_source": "Προσθήκη της πηγής πολυμέσων στο όνομα του αρχείου",
+                "append_username": "Προσθήκη του ονόματος χρήστη στο όνομα του αρχείου",
+                "append_date_time": "Προσθήκη της ημερομηνίας και της ώρας στο όνομα του αρχείου"
+            },
+            "auto_download_sources": {
+                "friend_snaps": "Snaps φίλων",
+                "friend_stories": "Ιστορίες φίλων",
+                "public_stories": "Δημόσιες ιστορίες",
+                "spotlight": "Κέντρο προσοχής"
+            },
+            "logging": {
+                "started": "Ξεκίνησε",
+                "success": "Επιτυχία",
+                "progress": "Πρόοδος",
+                "failure": "Αποτυχία"
+            },
+            "notifications": {
+                "chat_screenshot": "Στιγμιότυπο οθόνης",
+                "chat_screen_record": "Εγγραφή οθόνης",
+                "snap_replay": "Επανάληψη Snap",
+                "camera_roll_save": "Αποθήκευση στο ρολό της κάμερας",
+                "chat": "Συνομιλία",
+                "chat_reply": "Απάντηση συνομιλίας",
+                "snap": "Θραύση",
+                "typing": "Πληκτρολογεί",
+                "stories": "Ιστορίες",
+                "speaking": "Μιλάει",
+                "chat_reaction": "Αντίδραση DM",
+                "group_chat_reaction": "Αντίδραση ομάδας",
+                "initiate_audio": "Εισερχόμενη ηχητική κλήση",
+                "abandon_audio": "Αναπάντητη ηχητική κλήση",
+                "initiate_video": "Εισερχόμενη βιντεοκλήση",
+                "abandon_video": "Αναπάντητη βιντεοκλήση",
+                "map_live_location": "Ζωντανή τοποθεσία στον χάρτη"
+            },
+            "gallery_media_send_override": {
+                "always_ask": "Πάντα να ρωτάτε",
+                "ORIGINAL": "Πρωτότυπο πολυμέσο",
+                "NOTE": "Ηχητική σημείωση",
+                "SNAP": "Θραύση",
+                "SAVEABLE_SNAP": "Αποθηκεύσιμο Snap"
+            },
+            "strip_media_metadata": {
+                "hide_caption_text": "Απόκρυψη κειμένου λεζάντας",
+                "hide_snap_filters": "Απόκρυψη φίλτρων Snap",
+                "hide_extras": "Απόκρυψη πρόσθετων (π.χ. αναφορές)",
+                "remove_audio_note_duration": "Κατάργηση διάρκειας ηχητικής σημείωσης",
+                "remove_audio_note_transcript_capability": "Κατάργηση δυνατότητας μεταγραφής ηχητικής σημείωσης"
+            },
+            "hide_ui_components": {
+                "hide_profile_call_buttons": "Κατάργηση κουμπιών κλήσης προφίλ",
+                "hide_chat_call_buttons": "Κατάργηση κουμπιών κλήσης συνομιλίας",
+                "hide_live_location_share_button": "Κατάργηση κουμπιού κοινής χρήσης ζωντανής τοποθεσίας",
+                "hide_stickers_button": "Κατάργηση κουμπιού αυτοκόλλητων",
+                "hide_voice_record_button": "Κατάργηση κουμπιού εγγραφής φωνής",
+                "hide_unread_chat_hint": "Κατάργηση υπόδειξης μη αναγνωσμένης συνομιλίας",
+                "hide_post_to_story_buttons": "Κατάργηση κουμπιών δημοσίευσης στην ιστορία πριν από την αποστολή ενός Snap",
+                "hide_billboard_prompt": "Κατάργηση προτροπής billboard στη ροή φίλων",
+                "hide_snapchat_plus_gift_reminders": "Κατάργηση υπενθυμίσεων δώρων του Snapchat Plus στις συνομιλίες",
+                "hide_map_reactions": "Κατάργηση αντιδράσεων χάρτη"
+            },
+            "hide_story_suggestions": {
+                "hide_suggested_friend_stories": "Απόκρυψη προτεινόμενων ιστοριών φίλων",
+                "hide_my_stories": "Απόκρυψη των ιστοριών μου"
+            },
+            "home_tab": {
+                "map": "Χάρτης",
+                "chat": "Συνομιλία",
+                "camera": "Κάμερα",
+                "discover": "Ανακάλυψη",
+                "spotlight": "Κέντρο προσοχής"
+            },
+            "add_friend_source_spoof": {
+                "added_by_username": "Κατά όνομα χρήστη",
+                "added_by_mention": "Κατά αναφορά",
+                "added_by_group_chat": "Κατά ομαδική συνομιλία",
+                "added_by_qr_code": "Κατά κωδικό QR",
+                "added_by_community": "Κατά κοινότητα",
+                "added_by_quick_add": "Κατά γρήγορη προσθήκη (υψηλός κίνδυνος αποκλεισμού)"
+            },
+            "bypass_video_length_restriction": {
+                "single": "Μεμονωμένο πολυμέσο",
+                "split": "Διαίρεση πολυμέσων"
+            },
+            "old_bitmoji_selfie": {
+                "2d": "2D Bitmoji",
+                "3d": "3D Bitmoji"
+            },
+            "disable_confirmation_dialogs": {
+                "erase_message": "Διαγραφή μηνύματος",
+                "remove_friend": "Κατάργηση φίλου",
+                "block_friend": "Αποκλεισμός φίλου",
+                "ignore_friend": "Αγνόηση φίλου",
+                "hide_friend": "Απόκρυψη φίλου",
+                "hide_conversation": "Απόκρυψη συνομιλίας",
+                "clear_conversation": "Εκκαθάριση συνομιλίας από τη ροή φίλων"
+            },
+            "auto_reload": {
+                "snapchat_only": "Μόνο Snapchat",
+                "all": "Όλα (Snapchat + PurrfectSnap)"
+            },
+            "edit_text_override": {
+                "multi_line_chat_input": "Είσοδος συνομιλίας πολλαπλών γραμμών",
+                "bypass_text_input_limit": "Παράκαμψη ορίου εισαγωγής κειμένου"
+            },
+            "auto_purge": {
+                "never": "Ποτέ",
+                "1_hour": "1 ώρα",
+                "3_hours": "3 ώρες",
+                "6_hours": "6 ώρες",
+                "12_hours": "12 ώρες",
+                "1_day": "1 ημέρα",
+                "3_days": "3 ημέρες",
+                "1_week": "1 εβδομάδα",
+                "2_weeks": "2 εβδομάδες",
+                "1_month": "1 μήνας",
+                "3_months": "3 μήνες",
+                "6_months": "6 μήνες"
+            },
+            "disable_story_sections": {
+                "friends": "Φίλοι",
+                "suggested_stories": "Προτεινόμενες ιστορίες",
+                "following": "Ακολουθείτε",
+                "discover": "Ανακάλυψη"
+            },
+            "disable_cameras": {
+                "front": "Μπροστινή κάμερα",
+                "back": "Πίσω κάμερα"
+            },
+            "disable_permission_requests": {
+                "notifications": "Ειδοποιήσεις",
+                "read_media_images": "Ανάγνωση εικόνων πολυμέσων",
+                "read_media_video": "Ανάγνωση βίντεο πολυμέσων",
+                "camera": "Κάμερα",
+                "microphone": "Μικρόφωνο",
+                "location": "Τοποθεσία",
+                "read_contacts": "Ανάγνωση επαφών",
+                "nearby_devices": "Κοντινές συσκευές",
+                "phone_calls": "Τηλεφωνικές κλήσεις"
+            },
+            "message_indicators": {
+                "encryption_indicator": "Προσθέτει ένα εικονίδιο 🔒 δίπλα στα μηνύματα που έχουν σταλεί μόνο σε εσάς",
+                "platform_indicator": "Προσθέτει το εικονίδιο της πλατφόρμας από την οποία στάλθηκε ένα πολυμέσο (π.χ. Android, iOS, Web)",
+                "location_indicator": "Προσθέτει ένα εικονίδιο 📍 στα snaps όταν έχουν σταλεί με ενεργοποιημένη την τοποθεσία",
+                "ovf_editor_indicator": "Υποδεικνύει εάν ένα snap έχει σταλεί με τον επεξεργαστή OVF",
+                "director_mode_indicator": "Προσθέτει ένα εικονίδιο 🎬 στα snaps όταν έχουν σταλεί με τη λειτουργία σκηνοθέτη, η οποία μπορεί να χρησιμοποιηθεί για την αποστολή εικόνων γκαλερί ως snaps"
+            },
+            "auto_mark_as_read": {
+                "conversation_read": "Σήμανση της συνομιλίας ως αναγνωσμένης κατά την αποστολή ενός μηνύματος",
+                "snap_reply": "Σήμανση των snaps ως αναγνωσμένων κατά την απάντηση σε αυτά",
+                "save_snap_in_chat": "Σήμανση των snaps ως αναγνωσμένων κατά την αποθήκευσή τους στη συνομιλία σε λειτουργία μυστικότητας"
+            },
+            "friend_mutation_notifier": {
+                "remove_friend": "Ειδοποίηση όταν κάποιος σας καταργεί ως φίλο",
+                "birthday_changes": "Ειδοποίηση όταν κάποιος αλλάζει τα γενέθλιά του",
+                "bitmoji_selfie_changes": "Ειδοποίηση όταν κάποιος αλλάζει το selfie του Bitmoji",
+                "bitmoji_avatar_changes": "Ειδοποίηση όταν κάποιος αλλάζει το avatar του Bitmoji",
+                "bitmoji_background_changes": "Ειδοποίηση όταν κάποιος αλλάζει το φόντο του Bitmoji",
+                "bitmoji_scene_changes": "Ειδοποίηση όταν κάποιος αλλάζει τη σκηνή του Bitmoji"
+            },
+            "snapchat_plus": {
+                "not_subscribed": "Δεν έχετε εγγραφεί",
+                "basic": "Βασικό",
+                "ad_free": "Χωρίς διαφημίσεις"
+            },
+            "double_tap_chat_action": {
+                "like_message": "Μου αρέσει το μήνυμα",
+                "copy_text": "Αντιγραφή κειμένου στο πρόχειρο",
+                "delete_message": "Διαγραφή μηνύματος",
+                "mark_as_read": "Σήμανση ως αναγνωσμένο",
+                "custom_emoji_reaction": "Προσαρμοσμένη αντίδραση emoji"
+            },
+            "startup_default_camera": {
+                "front": "Μπροστινή κάμερα",
+                "back": "Πίσω κάμερα"
+            }
+        }
+    },
+    "friend_menu_option": {
+        "mark_snaps_as_seen": "Σήμανση Snaps ως αναγνωσμένων",
+        "mark_stories_as_seen_locally": "Σήμανση ιστοριών ως αναγνωσμένων τοπικά",
+        "preview": "Προεπισκόπηση",
+        "stealth_mode": "Λειτουργία μυστικότητας",
+        "auto_download_blacklist": "Μαύρη λίστα αυτόματης λήψης",
+        "anti_auto_save": "Αντι-αυτόματη αποθήκευση"
+    },
+    "content_type": {
+        "CHAT": "Συνομιλία",
+        "SNAP": "Θραύση",
+        "EXTERNAL_MEDIA": "Εξωτερικά πολυμέσα",
+        "NOTE": "Ηχητική σημείωση",
+        "STICKER": "Αυτοκόλλητο",
+        "SHARE": "Κοινή χρήση",
+        "STATUS": "Κατάσταση",
+        "LOCATION": "Τοποθεσία",
+        "STATUS_SAVE_TO_CAMERA_ROLL": "Αποθηκεύτηκε στο ρολό της κάμερας",
+        "STATUS_CONVERSATION_CAPTURE_SCREENSHOT": "Στιγμιότυπο οθόνης",
+        "STATUS_CONVERSATION_CAPTURE_RECORD": "Εγγραφή οθόνης",
+        "STATUS_CALL_MISSED_VIDEO": "Αναπάντητη βιντεοκλήση",
+        "STATUS_CALL_MISSED_AUDIO": "Αναπάντητη ηχητική κλήση",
+        "LIVE_LOCATION_SHARE": "Κοινή χρήση ζωντανής τοποθεσίας",
+        "CREATIVE_TOOL_ITEM": "Στοιχείο δημιουργικού εργαλείου",
+        "FAMILY_CENTER_INVITE": "Πρόσκληση στο Οικογενειακό Κέντρο",
+        "FAMILY_CENTER_ACCEPT": "Αποδοχή Οικογενειακού Κέντρου",
+        "FAMILY_CENTER_LEAVE": "Αποχώρηση από το Οικογενειακό Κέντρο",
+        "STATUS_PLUS_GIFT": "Δώρο Status Plus",
+        "TINY_SNAP": "Μικρό Snap",
+        "STATUS_COUNTDOWN": "Αντίστροφη μέτρηση",
+        "MAP_REACTION": "Αντίδραση χάρτη"
+    },
+    "media_download_source": {
+        "none": "Κανένα",
+        "pending": "Σε εκκρεμότητα",
+        "chat_media": "Πολυμέσα συνομιλίας",
+        "story": "Ιστορία",
+        "public_story": "Δημόσια ιστορία",
+        "spotlight": "Κέντρο προσοχής",
+        "profile_picture": "Εικόνα προφίλ",
+        "story_logger": "Καταγραφέας ιστοριών",
+        "message_logger": "Καταγραφέας μηνυμάτων",
+        "merged": "Συγχωνεύτηκε",
+        "voice_call": "Φωνητική κλήση"
+    },
+    "chat_action_menu": {
+        "preview_button": "Προεπισκόπηση",
+        "download_button": "Λήψη",
+        "delete_logged_message_button": "Διαγραφή καταγεγραμμένου μηνύματος",
+        "show_chat_edit_history": "Εμφάνιση ιστορικού επεξεργασίας συνομιλίας",
+        "convert_message": "Μετατροπή μηνύματος"
+    },
+    "opera_context_menu": {
+        "download": "Λήψη πολυμέσων",
+        "sent_at": "Στάλθηκε στις {date}",
+        "created_at": "Δημιουργήθηκε στις {date}",
+        "expires_at": "Λήγει στις {date}",
+        "media_size": "Μέγεθος πολυμέσων: {size}",
+        "media_duration": "Διάρκεια πολυμέσων: {duration} ms",
+        "show_debug_info": "Εμφάνιση πληροφοριών εντοπισμού σφαλμάτων"
+    },
+    "modal_option": {
+        "profile_info": "Πληροφορίες προφίλ",
+        "close": "Κλείσιμο"
+    },
+    "gallery_media_send_override": {
+        "multiple_media_toast": "Μπορείτε να στείλετε μόνο ένα πολυμέσο κάθε φορά"
+    },
+    "mark_as_seen": {
+        "no_unseen_snaps_toast": "Δεν βρέθηκαν μη αναγνωσμένα Snaps!",
+        "seen_toast": "Σημειώθηκε ως αναγνωσμένο!",
+        "unseen_toast": "Σημειώθηκε ως μη αναγνωσμένο!",
+        "already_seen_toast": "Έχει ήδη σημειωθεί ως αναγνωσμένο!",
+        "already_unseen_toast": "Έχει ήδη σημειωθεί ως μη αναγνωσμένο!"
+    },
+    "conversation_preview": {
+        "streak_expiration": "λήγει σε {day} ημέρες {hour} ώρες {minute} λεπτά",
+        "total_messages": "Συνολικά απεσταλμένα/ληφθέντα μηνύματα: {count}",
+        "title": "Προεπισκόπηση",
+        "unknown_user": "Άγνωστος χρήστης",
+        "no_messages": "Δεν βρέθηκαν μηνύματα!"
+    },
+    "profile_info": {
+        "title": "Πληροφορίες προφίλ",
+        "first_created_username": "Πρώτο δημιουργημένο όνομα χρήστη",
+        "mutable_username": "Μεταβλητό όνομα χρήστη",
+        "display_name": "Εμφανιζόμενο όνομα",
+        "added_date": "Ημερομηνία προσθήκης",
+        "birthday": "Γενέθλια: {day} {month}",
+        "hidden_birthday": "Γενέθλια: Κρυφό",
+        "friendship": "Φιλία",
+        "add_source": "Προσθήκη πηγής",
+        "snapchat_plus": "Snapchat Plus",
+        "snapchat_plus_state": {
+            "subscribed": "Εγγεγραμμένος",
+            "not_subscribed": "Μη εγγεγραμμένος"
+        }
+    },
+    "friendship_link_type": {
+        "mutual": "Αμοιβαία",
+        "outgoing": "Εξερχόμενη",
+        "blocked": "Αποκλεισμένος",
+        "deleted": "Διαγραμμένος",
+        "following": "Ακολουθείτε",
+        "suggested": "Προτεινόμενος",
+        "incoming": "Εισερχόμενη",
+        "incoming_follower": "Εισερχόμενος ακόλουθος"
+    },
+    "bulk_messaging_action": {
+        "choose_action_title": "Επιλέξτε μια ενέργεια",
+        "progress_status": "Επεξεργασία {index} από {total}",
+        "selection_dialog_continue_button": "Συνέχεια",
+        "confirmation_dialog": {
+            "title": "Είστε σίγουροι;",
+            "message": "Αυτό θα επηρεάσει όλους τους επιλεγμένους φίλους. Αυτή η ενέργεια δεν μπορεί να αναιρεθεί."
+        },
+        "actions": {
+            "remove_friends": "Κατάργηση φίλων",
+            "clear_conversations": "Εκκαθάριση συνομιλιών"
+        }
+    },
+    "chat_export": {
+        "exporter_dialog": {
+            "select_conversations_title": "Επιλογή συνομιλιών",
+            "text_field_selection": "{amount} επιλέχθηκαν",
+            "text_field_selection_all": "Όλα",
+            "export_file_format_title": "Εξαγωγή μορφής αρχείου",
+            "message_type_filter_title": "Φιλτράρισμα μηνυμάτων κατά τύπο",
+            "amount_of_messages_title": "Ποσότητα μηνυμάτων (αφήστε κενό για όλα)",
+            "download_medias_title": "Λήψη πολυμέσων"
+        },
+        "dialog_negative_button": "Ακύρωση",
+        "dialog_positive_button": "Εξαγωγή",
+        "exported_to": "Εξήχθη στο {path}",
+        "exporting_chats": "Εξαγωγή συνομιλιών...",
+        "processing_chats": "Επεξεργασία {amount} συνομιλιών...",
+        "export_fail": "Η εξαγωγή της συνομιλίας {conversation} απέτυχε",
+        "writing_output": "Εγγραφή εξόδου...",
+        "finished": "Έγινε! Μπορείτε τώρα να κλείσετε αυτό το παράθυρο διαλόγου.",
+        "no_messages_found": "Δεν βρέθηκαν μηνύματα!",
+        "exporting_message": "Εξαγωγή {conversation}..."
+    },
+    "button": {
+        "ok": "ΟΚ",
+        "positive": "Ναι",
+        "negative": "Όχι",
+        "cancel": "Ακύρωση",
+        "open": "Άνοιγμα",
+        "download": "Λήψη",
+        "send": "Αποστολή",
+        "restore_original": "Επαναφορά πρωτοτύπου",
+        "convert_external_media": "Μετατροπή εξωτερικών πολυμέσων",
+        "save": "Αποθήκευση"
+    },
+    "tracker_events": {
+        "conversation_enter": "Είσοδος στη συνομιλία",
+        "conversation_exit": "Έξοδος από τη συνομιλία",
+        "started_typing": "Άρχισε να πληκτρολογεί",
+        "stopped_typing": "Σταμάτησε να πληκτρολογεί",
+        "started_speaking": "Άρχισε να μιλάει",
+        "stopped_speaking": "Σταμάτησε να μιλάει",
+        "started_peeking": "Άρχισε να κρυφοκοιτάζει",
+        "stopped_peeking": "Σταμάτησε να κρυφοκοιτάζει",
+        "message_read": "Το μήνυμα διαβάστηκε",
+        "message_deleted": "Το μήνυμα διαγράφηκε",
+        "message_saved": "Το μήνυμα αποθηκεύτηκε",
+        "message_unsaved": "Το μήνυμα δεν αποθηκεύτηκε",
+        "message_edited": "Το μήνυμα επεξεργάστηκε",
+        "message_reaction_add": "Προσθήκη αντίδρασης σε μήνυμα",
+        "message_reaction_remove": "Κατάργηση αντίδρασης σε μήνυμα",
+        "snap_opened": "Το Snap άνοιξε",
+        "snap_replayed": "Το Snap επαναλήφθηκε",
+        "snap_replayed_twice": "Το Snap επαναλήφθηκε δύο φορές",
+        "snap_screenshot": "Στιγμιότυπο οθόνης Snap",
+        "snap_screen_record": "Εγγραφή οθόνης Snap"
+    },
+    "tracker_actions": {
+        "log": "Αρχείο καταγραφής",
+        "in_app_notification": "Ειδοποίηση εντός εφαρμογής",
+        "push_notification": "Ειδοποίηση push",
+        "custom": "Προσαρμοσμένο"
+    },
+    "better_notifications": {
+        "button": {
+            "reply": "Απάντηση",
+            "download": "Λήψη",
+            "mark_as_read": "Σήμανση ως αναγνωσμένο"
+        }
+    },
+    "profile_picture_downloader": {
+        "button": "Λήψη εικόνας προφίλ",
+        "title": "Λήπτης εικόνων προφίλ",
+        "avatar_option": "Είδωλο",
+        "background_option": "Φόντο"
+    },
+    "call_start_confirmation": {
+        "dialog_title": "Έναρξη κλήσης",
+        "dialog_message": "Είστε βέβαιοι ότι θέλετε να ξεκινήσετε μια κλήση;"
+    },
+    "half_swipe_notifier": {
+        "notification_channel_name": "Μισό σάρωμα",
+        "notification_content_dm": "Ο {friend} μόλις σάρωσε το μισό στη συνομιλία σας για {duration} δευτερόλεπτα",
+        "notification_content_group": "Ο {friend} μόλις σάρωσε το μισό στο {group} για {duration} δευτερόλεπτα"
+    },
+    "download_processor": {
+        "attachment_type": {
+            "snap": "Θραύση",
+            "sticker": "Αυτοκόλλητο",
+            "gif": "Γειτονιά",
+            "external_media": "Εξωτερικά πολυμέσα",
+            "note": "Σημείωση",
+            "original_story": "Πρωτότυπη ιστορία"
+        },
+        "select_attachments_title": "Επιλογή συνημμένων",
+        "download_started_toast": "Η λήψη ξεκίνησε",
+        "unsupported_content_type_toast": "Μη υποστηριζόμενος τύπος περιεχομένου!",
+        "failed_no_longer_available_toast": "Τα πολυμέσα δεν είναι πλέον διαθέσιμα",
+        "no_attachments_toast": "Δεν βρέθηκαν συνημμένα!",
+        "already_queued_toast": "Τα πολυμέσα βρίσκονται ήδη στην ουρά!",
+        "already_downloaded_toast": "Τα πολυμέσα έχουν ήδη ληφθεί!",
+        "content_saved_toast": "Αποθηκεύτηκε!",
+        "download_toast": "Λήψη {path}...",
+        "processing_toast": "Επεξεργασία {path}...",
+        "failed_generic_toast": "Η λήψη απέτυχε",
+        "failed_to_create_preview_toast": "Η δημιουργία προεπισκόπησης απέτυχε",
+        "failed_processing_toast": "Η επεξεργασία απέτυχε {error}",
+        "failed_gallery_toast": "Η αποθήκευση στη γκαλερί απέτυχε {error}",
+        "dash_no_chapter": "Δεν βρέθηκε κεφάλαιο",
+        "dash_dialog": {
+            "title": "Λήψη πολυμέσων dash",
+            "download_all": "Λήψη όλων",
+            "segment_text": "Τμήμα {from} - {to}"
+        }
+    },
+    "streaks_reminder": {
+        "notification_title": "Σερί",
+        "notification_text": "Θα χάσετε το σερί σας με τον/την {friend} σε {hoursLeft} ώρες"
+    },
+    "biometric_auth": {
+        "unlock_button": "Ξεκλείδωμα",
+        "title": "Ξεκλείδωμα του Snapchat",
+        "subtitle": "Παρακαλώ, επαληθεύστε την ταυτότητά σας για να ξεκλειδώσετε το Snapchat"
+    },
+    "end_to_end_encryption": {
+        "toolbox": {
+            "no_shared_key": "Δεν έχετε ακόμη κοινό μυστικό κλειδί με αυτόν τον φίλο. Κάντε κλικ παρακάτω για να ξεκινήσετε ένα νέο.",
+            "shared_key_fingerprint": "Το δακτυλικό σας αποτύπωμα είναι:\n\n{fingerprint}\n\nΒεβαιωθείτε ότι ταιριάζει με το δακτυλικό αποτύπωμα του φίλου σας!",
+            "initiate_exchange_button": "Έναρξη ανταλλαγής κλειδιών"
+        },
+        "confirmation_dialogs": {
+            "title": "Κρυπτογράφηση από άκρο σε άκρο",
+            "confirmation_1": "ΠΡΟΕΙΔΟΠΟΙΗΣΗ: Αυτό θα αντικαταστήσει το υπάρχον κλειδί σας. Θα χάσετε την πρόσβαση σε όλα τα κρυπτογραφημένα μηνύματα από αυτόν τον φίλο. Είστε βέβαιοι ότι θέλετε να συνεχίσετε;",
+            "confirmation_2": "Είστε ΠΡΑΓΜΑΤΙΚΑ βέβαιοι ότι θέλετε να συνεχίσετε; Αυτή είναι η τελευταία σας ευκαιρία να υπαναχωρήσετε."
+        },
+        "unencrypted_conversation_send_failure_toast": "Δεν μπορείτε να στείλετε κρυπτογραφημένο περιεχόμενο τόσο σε κρυπτογραφημένες όσο και σε μη κρυπτογραφημένες συνομιλίες!",
+        "native_hooks_send_failure_toast": "Η αποστολή απέτυχε! Ενεργοποιήστε τα εγγενή αγκίστρια στις ρυθμίσεις.",
+        "no_participants_to_encrypt_toast": "Δεν έχετε φίλους σε αυτήν τη συνομιλία για να κρυπτογραφήσετε μηνύματα!",
+        "encryption_failed_toast": "Η κρυπτογράφηση του μηνύματος απέτυχε! Ελέγξτε το logcat για περισσότερες λεπτομέρειες.",
+        "accept_public_key_success_toast": "Το δημόσιο κλειδί έγινε αποδεκτό με επιτυχία!",
+        "accept_secret_key_success_toast": "Έγινε! Μπορείτε τώρα να στέλνετε και να λαμβάνετε κρυπτογραφημένα μηνύματα με αυτόν τον φίλο.",
+        "accept_public_key_failure_toast": "Η αποδοχή του δημόσιου κλειδιού απέτυχε",
+        "accept_secret_key_failure_toast": "Η αποδοχή του μυστικού κλειδιού απέτυχε",
+        "accept_secret_button": "Αποδοχή μυστικού",
+        "accept_public_key_button": "Αποδοχή δημόσιου κλειδιού",
+        "outgoing_pk_message": "Αίτημα ανταλλαγής κλειδιών",
+        "outgoing_secret_message": "Απάντηση ανταλλαγής κλειδιών",
+        "incoming_pk_message": "Μόλις λάβατε ένα αίτημα δημόσιου κλειδιού. Κάντε κλικ παρακάτω για να το αποδεχτείτε.",
+        "incoming_secret_message": "Ο φίλος σας μόλις αποδέχτηκε το δημόσιο κλειδί σας. Κάντε κλικ παρακάτω για να αποδεχτείτε το μυστικό."
+    },
+    "auto_open_snaps": {
+        "title": "Αυτόματο άνοιγμα Snaps",
+        "notification_content": "{count} Snaps άνοιξαν"
+    },
+    "friend_mutation_observer": {
+        "notification_channel_name": "Παρατηρητής μετάλλαξης φίλου",
+        "friend_removed": "Ο/Η {username} σας έχει καταργήσει ως φίλο",
+        "birthday_removed": "Ο/Η {username} έχει καταργήσει τα γενέθλιά του/της ({birthday})",
+        "birthday_added": "Ο/Η {username} έχει προσθέσει τα γενέθλιά του/της ({birthday})",
+        "birthday_changed": "Ο/Η {username} έχει αλλάξει τα γενέθλιά του/της από {oldBirthday} σε {newBirthday}",
+        "bitmoji_selfie_changed": "Ο/Η {username} έχει αλλάξει το selfie του/της Bitmoji",
+        "bitmoji_avatar_changed": "Ο/Η {username} έχει αλλάξει το avatar του/της Bitmoji",
+        "bitmoji_background_changed": "Ο/Η {username} έχει αλλάξει το φόντο του/της Bitmoji",
+        "bitmoji_scene_changed": "Ο/Η {username} έχει αλλάξει τη σκηνή του/της Bitmoji"
+    },
+    "material3_strings": {
+        "date_range_picker_start_headline": "Από",
+        "date_range_picker_end_headline": "Έως",
+        "date_range_picker_title": "Επιλογή εύρους ημερομηνιών",
+        "date_picker_switch_to_calendar_mode": "Ημερολόγιο",
+        "date_picker_switch_to_input_mode": "Είσοδος",
+        "date_range_picker_scroll_to_previous_month": "Προηγούμενος μήνας",
+        "date_range_picker_scroll_to_next_month": "Επόμενος μήνας",
+        "date_picker_today_description": "Σήμερα",
+        "date_range_picker_day_in_range": "Επιλέχθηκε",
+        "date_input_invalid_for_pattern": "Μη έγκυρη ημερομηνία",
+        "date_input_invalid_year_range": "Μη έγκυρο έτος",
+        "date_input_invalid_not_allowed": "Μη έγκυρη ημερομηνία",
+        "date_range_input_invalid_range_input": "Μη έγκυρο εύρος ημερομηνιών"
+    },
+    "send_override_dialog": {
+        "title": "Αποστολή πολυμέσων ως {type}",
+        "duration": "Διάρκεια: {duration}",
+        "saveable_snap_hint": "Κάντε το Snap αποθηκεύσιμο στη συνομιλία",
+        "unlimited_duration": "Απεριόριστο"
+    },
+    "invalid_input_toast": "Μη έγκυρη εισαγωγή! Βεβαιωθείτε ότι έχετε εισαγάγει μια έγκυρη τιμή."
+}

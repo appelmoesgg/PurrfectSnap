@@ -1,0 +1,2022 @@
+{
+    "setup": {
+        "dialogs": {
+            "select_language": "เลือกภาษา",
+            "save_folder": "PurrfectSnap ต้องการสิทธิ์ในการจัดเก็บข้อมูลเพื่อดาวน์โหลดและบันทึกสื่อจาก Snapchat\nโปรดเลือกตำแหน่งที่ควรดาวน์โหลดสื่อไป",
+            "select_save_folder_button": "เลือกโฟลเดอร์"
+        },
+        "mappings": {
+            "dialog": "กำลังสร้างการแมป อาจใช้เวลาสักครู่ ...",
+            "generate_failure_no_snapchat": "PurrfectSnap ตรวจไม่พบ Snapchat โปรดลองติดตั้ง Snapchat ใหม่",
+            "generate_failure": "เกิดข้อผิดพลาดขณะพยายามสร้างการแมป โปรดลองอีกครั้ง"
+        },
+        "permissions": {
+            "dialog": "หากต้องการดำเนินการต่อ คุณจะต้องปฏิบัติตามข้อกำหนดต่อไปนี้:",
+            "notification_access": "การเข้าถึงการแจ้งเตือน",
+            "battery_optimization": "การเพิ่มประสิทธิภาพแบตเตอรี่",
+            "display_over_other_apps": "แสดงบนแอปอื่นๆ",
+            "request_button": "ขอ"
+        }
+    },
+    "scopes": {
+        "friend": "เพื่อน",
+        "group": "กลุ่ม"
+    },
+    "manager": {
+        "routes": {
+            "tasks": "งาน",
+            "features": "คุณสมบัติ",
+            "manage_rule_feature": "จัดการคุณสมบัติกฎ",
+            "home": "บ้าน",
+            "home_settings": "การตั้งค่า",
+            "home_logs": "บันทึก",
+            "logger_history": "ประวัติคนตัดไม้",
+            "logged_stories": "เรื่องราวที่บันทึกไว้",
+            "friend_tracker": "ติดตามเพื่อน",
+            "edit_rule": "แก้ไขกฎ",
+            "file_imports": "การนำเข้าไฟล์",
+            "manage_repos": "จัดการที่เก็บข้อมูล",
+            "social": "ทางสังคม",
+            "manage_scope": "จัดการขอบเขต",
+            "messaging_preview": "ดูตัวอย่าง",
+            "scripts": "สคริปต์",
+            "better_location": "ทำเลที่ตั้งดีกว่า"
+        },
+        "sections": {
+            "home": {
+                "version_title": "v{versionName} · แยกโดย Eternal",
+                "update_title": "อัพเดต PurrfectSnap",
+                "update_content": "เวอร์ชัน {version} พร้อมใช้งานแล้ว!",
+                "update_button": "ดาวน์โหลด",
+                "debug_build_summary_title": "คุณกำลังเรียกใช้รุ่นแก้ไขข้อบกพร่องของ PurrfectSnap",
+                "debug_build_summary_content": "เวอร์ชัน __ตัวยึด_0__ (__ตัวยึดตำแหน่ง_1__)",
+                "debug_build_summary_date": "วันที่สร้าง: {date} ({days} วันที่ผ่านมา)",
+                "quick_actions_title": "การดำเนินการด่วน",
+                "download_icon_description": "ดาวน์โหลด",
+                "completed_icon_description": "สมบูรณ์",
+                "failed_icon_description": "ล้มเหลว",
+                "manage_quick_actions_description": "จัดการการดำเนินการด่วน",
+                "quick_actions_icon_description": "การดำเนินการด่วน",
+                "add_quick_action_description": "เพิ่มการดำเนินการด่วน"
+            },
+            "home_logs": {
+                "no_logs_hint": "ไม่มีบันทึกที่ใช้ได้",
+                "clear_logs_button": "ล้างบันทึก",
+                "export_logs_button": "ส่งออกบันทึก",
+                "saving_logs_toast": "กำลังบันทึกบันทึก อาจใช้เวลาสักครู่ ...",
+                "saved_logs_success_toast": "บันทึกบันทึกเรียบร้อยแล้ว",
+                "saved_logs_failure_toast": "ไม่สามารถบันทึกบันทึกได้"
+            },
+            "home_settings": {
+                "actions_title": "การดำเนินการ",
+                "message_logger_title": "เครื่องบันทึกข้อความ",
+                "debug_title": "ดีบัก",
+                "success_toast": "เสร็จแล้ว!",
+                "message_logger_summary": "__ตัวยึดตำแหน่ง_0__ ข้อความ\n__ตัวยึดตำแหน่ง_1__ เรื่องราว",
+                "export_button": "ส่งออก",
+                "clear_button": "ชัดเจน",
+                "view_logger_history_button": "ดูประวัติคนตัดไม้",
+                "updates_title": "อัพเดท",
+                "auto_update_check": "ตรวจสอบการอัปเดตอัตโนมัติ",
+                "update_check_frequency": "อัพเดตความถี่ในการตรวจสอบ",
+                "update_check_frequency_daily": "รายวัน",
+                "update_check_frequency_weekly": "รายสัปดาห์",
+                "update_check_frequency_monthly": "รายเดือน",
+                "theme_icon_description": "ธีม",
+                "app_theme_title": "ธีมแอป",
+                "theme_mode_system": "ระบบ",
+                "theme_mode_light": "แสงสว่าง",
+                "theme_mode_dark": "มืด",
+                "ui_settings_title": "การตั้งค่า UI",
+                "haptic_feedback_label": "การตอบสนองแบบสัมผัส",
+                "test_mode_label": "โหมดทดสอบ (สำหรับการดีบักเท่านั้น)",
+                "disable_feature_loading_label": "ปิดการใช้งานการโหลดคุณสมบัติ",
+                "disable_auto_mapper_label": "ปิดการใช้งาน Mapper อัตโนมัติ",
+                "disable_bypass_indicator_label": "ปิดใช้งานตัวบ่งชี้สถานะบายพาส",
+                "update_notification_channel_name": "อัพเดต PurrfectSnap",
+                "update_notification_channel_description": "การแจ้งเตือนสำหรับการอัพเดต PurrfectSnap",
+                "update_notification_title": "มีการอัปเดต PurrfectSnap",
+                "update_notification_text": "เวอร์ชัน %s พร้อมใช้งานแล้ว",
+                "export_database_failed_toast": "ส่งออกฐานข้อมูลไม่สำเร็จ! __ตัวยึดตำแหน่ง__0__",
+                "clear_messages_failed_toast": "ไม่สามารถล้างข้อความได้! __ตัวยึดตำแหน่ง__0__",
+                "clear_file_failed_toast": "ไม่สามารถล้างไฟล์ได้! __ตัวยึดตำแหน่ง__0__",
+                "debug_file_config": "การกำหนดค่า",
+                "debug_file_mappings": "การแมป",
+                "debug_file_message_logger": "เครื่องบันทึกข้อความ",
+                "debug_file_pinned_best_friend": "ปักหมุดเพื่อนที่ดีที่สุด",
+                "debug_file_native_sig_cache": "แคชลายเซ็นดั้งเดิม"
+            },
+            "tasks": {
+                "no_tasks": "ไม่มีงาน",
+                "merge_button": "ผสาน",
+                "failed_to_open_file": "ไม่สามารถเปิดไฟล์ได้",
+                "merge_files_toast": "การรวมไฟล์ {count}",
+                "remove_selected_tasks_title": "คุณแน่ใจหรือไม่ว่าต้องการลบงานที่เลือก",
+                "remove_all_tasks_title": "คุณแน่ใจหรือไม่ว่าต้องการลบงานทั้งหมด",
+                "delete_files_option": "ลบไฟล์ด้วย",
+                "remove_selected_tasks_confirm": "ลบงาน {count} หรือไม่",
+                "remove_all_tasks_confirm": "ลบงานทั้งหมดใช่ไหม",
+                "clear_tasks_description": "ล้างงาน",
+                "file_not_found_icon_description": "ไม่พบไฟล์",
+                "image_icon_description": "ภาพ",
+                "video_icon_description": "วีดีโอ",
+                "audio_icon_description": "เสียง",
+                "file_icon_description": "ไฟล์",
+                "download_icon_description": "ดาวน์โหลด",
+                "chat_action_icon_description": "การดำเนินการแชท",
+                "cancel_icon_description": "ยกเลิก",
+                "success_icon_description": "ความสำเร็จ",
+                "failure_icon_description": "ความล้มเหลว",
+                "cancelled_icon_description": "ยกเลิก",
+                "task_status_failure": "ความล้มเหลว",
+                "task_status_cancelled": "ยกเลิก"
+            },
+            "features": {
+                "disabled": "พิการ",
+                "export_option": "ส่งออก",
+                "import_option": "นำเข้า",
+                "reset_option": "รีเซ็ต",
+                "config_export_success_toast": "ส่งออกการกำหนดค่าเรียบร้อยแล้ว",
+                "config_import_success_toast": "นำเข้าการกำหนดค่าเรียบร้อยแล้ว",
+                "config_import_failure_toast": "ไม่สามารถนำเข้าการกำหนดค่า {error}",
+                "config_export_failure_toast": "ไม่สามารถส่งออกการกำหนดค่า {error}",
+                "saved_config_snackbar": "บันทึกการกำหนดค่าแล้ว",
+                "older_required": "คุณลักษณะนี้ต้องใช้ Snapchat v{version} หรือเก่ากว่าจึงจะทำงานได้อย่างถูกต้อง",
+                "newer_required": "คุณลักษณะนี้ต้องใช้ Snapchat v{version} หรือใหม่กว่าจึงจะทำงานได้อย่างถูกต้อง",
+                "search_button": "ค้นหา"
+            },
+            "manage_rule_feature": {
+                "disable_state_option": "พิการ",
+                "disable_state_subtext": "ไม่มีเพื่อน/กลุ่มใดที่จะได้รับผลกระทบ",
+                "whitelist_state_option": "ไม่มีใครนอกจาก...",
+                "whitelist_state_subtext": "เฉพาะเพื่อน/กลุ่ม {count} เท่านั้นที่จะได้รับผลกระทบจากกฎนี้",
+                "whitelist_state_button": "เลือกเพื่อน/กลุ่มที่อนุญาต",
+                "blacklist_state_option": "ทุกคนยกเว้น...",
+                "blacklist_state_subtext": "ทุกคนยกเว้น {count} เพื่อน/กลุ่มจะได้รับผลกระทบจากกฎนี้",
+                "blacklist_state_button": "เลือกเพื่อน/กลุ่มที่ยกเว้น",
+                "clear_list_button": "ล้างรายชื่อเพื่อน/กลุ่ม",
+                "dialog_clear_confirmation_text": "คุณแน่ใจหรือไม่ว่าต้องการล้างรายการ"
+            },
+            "social": {
+                "friends_tab": "เพื่อน",
+                "groups_tab": "กลุ่ม",
+                "empty_hint": "(ว่างเปล่า)",
+                "streaks_expiration_short": "__ตัวยึดตำแหน่ง_0__ชม"
+            },
+            "manage_scope": {
+                "logged_stories_button": "แสดงเรื่องราวที่บันทึกไว้",
+                "e2ee_title": "การเข้ารหัสจากต้นทางถึงปลายทาง",
+                "rules_title": "กฎ",
+                "participants_text": "{count} ผู้เข้าร่วม",
+                "not_found": "ไม่พบ",
+                "streaks_title": "มีลายทาง",
+                "streaks_length_text": "ความยาว: __ตัวยึด_0__",
+                "streaks_expiration_text": "หมดอายุใน {eta}",
+                "streaks_expiration_text_expired": "หมดอายุแล้ว",
+                "reminder_button": "ตั้งการเตือน",
+                "delete_scope_confirm_dialog_title": "คุณแน่ใจหรือไม่ว่าต้องการลบ {scope}",
+                "notes_placeholder": "คลิกเพื่อเพิ่มบันทึก",
+                "invalid_key_size_32_bytes": "ขนาดคีย์ไม่ถูกต้อง (ต้องเป็น 32 ไบต์)",
+                "successfully_imported_key": "นำเข้าคีย์สำเร็จแล้ว",
+                "failed_to_import_key": "ไม่สามารถนำเข้าคีย์: {message}",
+                "export_base64_button": "ฐานส่งออก64",
+                "import_base64_button": "นำเข้า Base64"
+            },
+            "logged_stories": {
+                "story_failed_to_load": "โหลดไม่สำเร็จ",
+                "no_stories": "ไม่พบเรื่องราว",
+                "save_from_cache_button": "บันทึกจากแคช",
+                "downloaded_to_path": "ดาวน์โหลดไปที่ {path}",
+                "download_failed": "การดาวน์โหลดล้มเหลว: {message}",
+                "posted_at": "โพสต์ที่ {date}",
+                "created_at": "สร้างที่ {date}",
+                "failed_to_open_file": "ไม่สามารถเปิดไฟล์ได้ ตรวจสอบบันทึกเพื่อดูข้อมูลเพิ่มเติม",
+                "failed_to_get_file": "ไม่สามารถรับไฟล์"
+            },
+            "messaging_preview": {
+                "processed_messages_toast": "ประมวลผลข้อความ {count} แล้ว",
+                "processed_messages_text": "ประมวลผลข้อความ {count} แล้ว",
+                "close_button_description": "ปิด",
+                "bridge_connection_failed": "ไม่สามารถเชื่อมต่อกับบริดจ์ได้ ตรวจสอบให้แน่ใจว่า Snapchat ทำงานในพื้นหลัง",
+                "bridge_init_failed": "ไม่สามารถเริ่มต้นบริดจ์การรับส่งข้อความได้ ตรวจสอบให้แน่ใจว่า Snapchat ทำงานในพื้นหลัง",
+                "message_fetch_failed": "เรียกข้อความไม่สำเร็จ",
+                "no_message_hint": "ไม่มีข้อความ",
+                "save_selection_option": "บันทึกการเลือก",
+                "save_all_option": "บันทึกทั้งหมด",
+                "unsave_selection_option": "ยกเลิกการบันทึกการเลือก",
+                "unsave_all_option": "ยกเลิกการบันทึกทั้งหมด",
+                "mark_selection_as_seen_option": "ทำเครื่องหมายเลือก Snap ตามที่เห็น",
+                "mark_all_as_seen_option": "ทำเครื่องหมาย Snaps ทั้งหมดตามที่เห็น",
+                "delete_selection_option": "ลบการเลือก",
+                "delete_all_option": "ลบทั้งหมด"
+            },
+            "logger_history": {
+                "download_started_toast": "เริ่มดาวน์โหลดแล้ว!",
+                "download_success_toast": "ดาวน์โหลดไปที่ {path}",
+                "download_failed_toast": "ไม่สามารถดาวน์โหลด {message}",
+                "edited_at_text": "{message} (แก้ไขที่ {date})",
+                "download_button": "ดาวน์โหลด",
+                "select_conversation_placeholder": "เลือกการสนทนา",
+                "close_button_description": "ปิด",
+                "search_button_description": "ค้นหา",
+                "list_friend_format": "เพื่อน __ตัวยึดตำแหน่ง_0__",
+                "list_group_format": "กลุ่ม __ตัวยึดตำแหน่ง_0__",
+                "no_more_messages": "ไม่มีข้อความอีกต่อไป",
+                "reverse_order_checkbox": "ลำดับย้อนกลับ",
+                "chat_attachment": "ไฟล์แนบ __ตัวยึดตำแหน่ง_0__",
+                "empty_message": "ข้อความแชทว่างเปล่า",
+                "message_parse_failed": "ไม่สามารถแยกวิเคราะห์ข้อความ",
+                "unknown_sender": "ผู้ส่งที่ไม่รู้จัก",
+                "download_attachment_failed_toast": "ดาวน์โหลดไฟล์แนบไม่สำเร็จ",
+                "log_header_format": "__ตัวยึด_0__ (__ตัวยึด_1__) - __ตัวยึด_2__"
+            },
+            "file_imports": {
+                "import_file_button": "นำเข้าไฟล์",
+                "file_not_found": "ไม่พบไฟล์",
+                "file_import_failed": "ไม่สามารถนำเข้าไฟล์: {error}",
+                "file_imported": "นำเข้าไฟล์เรียบร้อยแล้ว",
+                "file_delete_failed": "ไม่สามารถลบไฟล์ได้",
+                "no_files_hint": "ที่นี่คุณสามารถนำเข้าไฟล์เพื่อใช้ใน Snapchat กดปุ่มด้านล่างเพื่อนำเข้าไฟล์"
+            },
+            "better_location": {
+                "spoofed_coordinates_title": "ละติจูด {latitude}, Lng {longitude}",
+                "save_coordinates_dialog_title": "บันทึกพิกัด",
+                "saved_name_dialog_hint": "ชื่อที่บันทึกไว้",
+                "latitude_dialog_hint": "ละติจูด",
+                "longitude_dialog_hint": "ลองจิจูด",
+                "save_dialog_button": "บันทึก",
+                "choose_location_button": "เลือกสถานที่",
+                "teleport_to_friend_button": "เทเลพอร์ตไปหาเพื่อน",
+                "spoof_location_toggle": "สถานที่ปลอมแปลง",
+                "suspend_location_updates": "ระงับการอัปเดตตำแหน่ง",
+                "saved_coordinates_title": "พิกัดที่บันทึกไว้",
+                "no_saved_coordinates_hint": "ไม่มีพิกัดที่บันทึกไว้",
+                "delete_dialog_title": "ลบพิกัดที่บันทึกไว้",
+                "delete_dialog_message": "คุณแน่ใจหรือไม่ว่าต้องการลบพิกัดที่บันทึกไว้นี้",
+                "teleport_to_friend_title": "เทเลพอร์ตไปหาเพื่อน",
+                "search_bar": "ค้นหา",
+                "no_friends_map": "ไม่มีเพื่อนบนแผนที่",
+                "no_friends_found": "ไม่พบเพื่อน",
+                "edit_location_button_description": "แก้ไขสถานที่",
+                "add_icon_description": "เพิ่ม",
+                "edit_icon_description": "แก้ไข",
+                "delete_icon_description": "ลบ"
+            }
+        },
+        "dialogs": {
+            "add_friend": {
+                "title": "เพิ่มเพื่อนหรือกลุ่ม",
+                "search_hint": "ค้นหา",
+                "fetch_error": "ดึงข้อมูลไม่สำเร็จ",
+                "category_groups": "กลุ่ม",
+                "category_friends": "เพื่อน",
+                "participants_text": "{count} ผู้เข้าร่วม",
+                "search_icon_description": "ค้นหา"
+            },
+            "scripting_warning": {
+                "title": "คำเตือน",
+                "content": "PurrfectSnap มีเครื่องมือสคริปต์ที่ช่วยให้สามารถรันโค้ดที่ผู้ใช้กำหนดบนอุปกรณ์ของคุณได้ ใช้ความระมัดระวังอย่างยิ่งและติดตั้งโมดูลจากแหล่งที่รู้จักและเชื่อถือได้เท่านั้น โมดูลที่ไม่ได้รับอนุญาตหรือไม่ได้รับการตรวจสอบอาจก่อให้เกิดความเสี่ยงด้านความปลอดภัยต่อระบบของคุณ"
+            },
+            "reset_config": {
+                "title": "รีเซ็ตการกำหนดค่า",
+                "content": "คุณแน่ใจหรือไม่ว่าต้องการรีเซ็ตการกำหนดค่า",
+                "success_toast": "รีเซ็ตการกำหนดค่าสำเร็จแล้ว"
+            },
+            "export_config": {
+                "title": "ส่งออกข้อมูลที่ละเอียดอ่อนใช่ไหม",
+                "content": "คุณต้องการส่งออกการกำหนดค่าด้วยข้อมูลที่ละเอียดอ่อนหรือไม่ (เช่นพิกัดตำแหน่ง ฯลฯ )"
+            },
+            "messaging_action": {
+                "title": "เลือกประเภทเนื้อหาที่จะประมวลผล",
+                "select_all_button": "เลือกทั้งหมด"
+            },
+            "file_imports": {
+                "no_files_settings_hint": "ไม่พบไฟล์ ตรวจสอบให้แน่ใจว่าคุณได้นำเข้าไฟล์ที่จำเป็นในส่วนการนำเข้าไฟล์",
+                "settings_select_file_hint": "เลือกไฟล์ที่นำเข้า"
+            },
+            "quick_actions_dialog": {
+                "title": "แก้ไขการดำเนินการด่วน",
+                "subtitle": "เลือกและปรับขนาดการดำเนินการด่วนของคุณ"
+            }
+        },
+        "friend_tracker": {
+            "rules_tab": "กฎ",
+            "logs_tab": "บันทึก",
+            "export_dialog_title": "ส่งออก",
+            "bulk_export_button": "การส่งออกจำนวนมาก",
+            "individual_export_button": "การส่งออกส่วนบุคคล",
+            "invalid_import_type_dialog_title": "ประเภทการนำเข้าไม่ถูกต้อง",
+            "invalid_import_type_dialog_text": "ไฟล์ที่เลือกเข้ากันไม่ได้กับประเภทการนำเข้านี้ โปรดเลือกประเภทการนำเข้าที่ถูกต้อง",
+            "import_dialog_title": "นำเข้า",
+            "bulk_import_button": "การนำเข้าจำนวนมาก",
+            "individual_import_button": "การนำเข้าส่วนบุคคล",
+            "import_button_description": "นำเข้า",
+            "export_button_description": "ส่งออก",
+            "export_button": "ส่งออก",
+            "delete_button_description": "ลบ",
+            "delete_button": "ลบ",
+            "catalog_button_description": "แคตตาล็อก",
+            "catalog_button": "แคตตาล็อก",
+            "add_rule_button_description": "เพิ่มกฎ",
+            "add_rule_button": "เพิ่มกฎ",
+            "no_rules_found": "ไม่พบกฎเกณฑ์",
+            "empty_rule_name": "(ว่างเปล่า)",
+            "events_suffix": "เหตุการณ์ต่างๆ",
+            "scopes_suffix": "ขอบเขต",
+            "select_rule_to_export_title": "เลือกกฎที่จะส่งออก",
+            "deleted_logs_toast": "ลบบันทึก {count} แล้ว",
+            "delete_logs_dialog_title": "ลบบันทึกใช่ไหม",
+            "deleting_logs_dialog_text": "กำลังลบบันทึก {count}...",
+            "delete_logs_dialog_confirm_text": "การดำเนินการนี้จะลบบันทึกตามตัวกรองปัจจุบันและคำค้นหา การดำเนินการนี้ไม่สามารถยกเลิกได้",
+            "exported_logs_toast": "บันทึกที่ส่งออก!",
+            "export_logs_failed_toast": "ส่งออกบันทึกไม่สำเร็จ ตรวจสอบ logcat เพื่อดูรายละเอียดเพิ่มเติม",
+            "export_logs_dialog_title": "ส่งออกบันทึก?",
+            "exporting_logs_dialog_text": "กำลังส่งออกบันทึก...",
+            "export_logs_dialog_confirm_text": "การดำเนินการนี้จะส่งออกบันทึกตามตัวกรองปัจจุบันและคำค้นหา",
+            "export_as_button": "ส่งออกเป็น {type}",
+            "filters_title": "ตัวกรอง",
+            "search_by_label": "ค้นหาโดย",
+            "newest_first_label": "ใหม่ล่าสุดก่อน",
+            "since_label": "เนื่องจาก",
+            "until_label": "จนกระทั่ง",
+            "pick_a_date_button": "เลือกวัน",
+            "search_placeholder": "ค้นหา",
+            "filter_button_description": "กรอง",
+            "clear_button_description": "ชัดเจน",
+            "no_logs_found": "ไม่พบบันทึก",
+            "log_event_format": "__ตัวยึดตำแหน่ง_0__ ใน __ตัวยึดตำแหน่ง_1__",
+            "condition_only_inside_conversation": "เฉพาะเมื่อฉันอยู่ในการสนทนา",
+            "condition_only_outside_conversation": "เมื่อฉันออกไปสนทนาข้างนอกเท่านั้น",
+            "condition_only_when_app_active": "เมื่อ Snapchat ทำงานอยู่เท่านั้น",
+            "condition_only_when_app_inactive": "เฉพาะเมื่อ Snapchat ไม่ได้ใช้งานเท่านั้น",
+            "condition_no_push_notification_when_app_active": "ไม่มีการแจ้งเตือนเมื่อ Snapchat ทำงานอยู่",
+            "add_event_dialog_title": "เพิ่มเหตุการณ์",
+            "event_type_label": "ประเภทเหตุการณ์",
+            "triggers_title": "ทริกเกอร์",
+            "conditions_title": "เงื่อนไข",
+            "add_button": "เพิ่ม",
+            "default_rule_name": "กฎที่กำหนดเอง",
+            "discard_changes_dialog_title": "ยกเลิกการเปลี่ยนแปลงใช่ไหม",
+            "discard_changes_dialog_text": "คุณมีการเปลี่ยนแปลงที่ยังไม่ได้บันทึก คุณแน่ใจหรือไม่ว่าต้องการยกเลิก",
+            "discard_button": "ทิ้ง",
+            "cannot_save_rule_dialog_title": "ไม่สามารถบันทึกกฎได้",
+            "cannot_save_rule_dialog_text": "กฎต้องมีอย่างน้อยหนึ่งเหตุการณ์ที่จะบันทึก",
+            "duplicate_rule_name_dialog_title": "ชื่อกฎที่ซ้ำกัน",
+            "duplicate_rule_name_dialog_text": "มีกฎที่ใช้ชื่อนี้อยู่แล้ว โปรดเลือกชื่ออื่น",
+            "delete_rule_dialog_title": "ลบกฎ",
+            "delete_rule_dialog_text": "คุณแน่ใจหรือไม่ว่าต้องการลบกฎนี้",
+            "new_rule_title": "กฎใหม่",
+            "edit_rule_title": "แก้ไขกฎ",
+            "back_button_description": "กลับ",
+            "save_button_description": "บันทึก",
+            "general_section_title": "ทั่วไป",
+            "rule_name_label": "ชื่อกฎ",
+            "author_name_label": "ชื่อผู้แต่ง",
+            "scope_section_title": "ขอบเขต",
+            "scope_all": "ทั้งหมด",
+            "scope_whitelist": "ไวท์ลิสต์",
+            "scope_blacklist": "บัญชีดำ",
+            "select_friends_groups_button": "เลือกเพื่อน/กลุ่ม ({count})",
+            "events_section_title": "กิจกรรม",
+            "add_event_button": "เพิ่มเหตุการณ์",
+            "no_events_text": "ไม่มีกิจกรรม"
+        },
+        "friend_tracker_catalog": {
+            "download_failed": "การดาวน์โหลดล้มเหลว: {code}",
+            "error": "ข้อผิดพลาด: {message}",
+            "no_repos_added": "ไม่มีการเพิ่มที่เก็บข้อมูล",
+            "no_rules_available": "ไม่มีกฎเกณฑ์จาก repo ใด ๆ",
+            "by_author": "โดย __ตัวยึดตำแหน่ง_0__",
+            "imported_button": "นำเข้า",
+            "import_button": "นำเข้า",
+            "title": "แคตตาล็อกติดตามเพื่อน",
+            "manage_repos_description": "จัดการที่เก็บข้อมูล"
+        },
+        "friend_tracker_export": {
+            "title": "กฎการส่งออก",
+            "back_button_description": "กลับ",
+            "exported_toast": "ส่งออกกฎการติดตามเพื่อนแล้ว!",
+            "export_failed_toast": "ไม่สามารถส่งออกกฎ: {message}",
+            "save_button": "บันทึก",
+            "expand_button_description": "ขยาย"
+        },
+        "friend_tracker_import": {
+            "title": "กฎการนำเข้า",
+            "back_button_description": "กลับ",
+            "imported_toast": "นำเข้ากฎการติดตามเพื่อนแล้ว!",
+            "import_failed_toast": "ไม่สามารถนำเข้ากฎ: {message}",
+            "confirm_button": "ยืนยัน",
+            "expand_button_description": "ขยาย"
+        },
+        "friend_tracker_repos": {
+            "invalid_repo_title": "พื้นที่เก็บข้อมูลไม่ถูกต้อง",
+            "add_repo_button": "เพิ่มพื้นที่เก็บข้อมูล",
+            "add_repo_dialog_title": "เพิ่ม URL ที่เก็บ",
+            "repo_url_label": "URL ที่เก็บ",
+            "repo_added_toast": "เพิ่มพื้นที่เก็บข้อมูลเรียบร้อยแล้ว!",
+            "invalid_repo_error": "ดูเหมือนจะไม่ใช่พื้นที่เก็บข้อมูล Friend Tracker ที่ถูกต้อง",
+            "add_repo_failed_toast": "ไม่สามารถเพิ่มที่เก็บ: {message}",
+            "add_button": "เพิ่ม",
+            "no_repos_added": "ไม่มีการเพิ่มที่เก็บข้อมูล",
+            "remove_button": "ลบ",
+            "remove_repo_dialog_title": "ลบพื้นที่เก็บข้อมูล",
+            "remove_repo_dialog_text": "คุณแน่ใจหรือไม่ว่าต้องการลบที่เก็บนี้"
+        },
+        "navigation": {
+            "tracker_tab_label": "ตัวติดตาม",
+            "customize_bottom_bar_title": "ปรับแต่งแถบด้านล่าง",
+            "customize_bottom_bar_subtitle": "เรียงลำดับ เพิ่ม หรือลบแท็บ สูงสุดห้า",
+            "shown_tabs_title": "แท็บที่แสดง",
+            "no_tabs_selected_text": "ไม่ได้เลือกแท็บ",
+            "available_tabs_title": "แท็บที่มีอยู่",
+            "reset_button": "รีเซ็ต",
+            "done_button": "เสร็จแล้ว"
+        },
+        "scripting": {
+            "script_already_installed": "ติดตั้งสคริปต์แล้ว!",
+            "downloading_script": "กำลังดาวน์โหลดสคริปต์...",
+            "script_downloaded": "ดาวน์โหลดสคริปต์ {name} แล้ว!",
+            "download_script_failed": "ดาวน์โหลดสคริปต์ไม่สำเร็จ ตรวจสอบบันทึกเพื่อดูรายละเอียดเพิ่มเติม",
+            "import_script_from_url_title": "นำเข้าสคริปต์จาก URL",
+            "import_script_warning": "คำเตือน: สคริปต์ที่นำเข้าอาจเป็นอันตรายต่ออุปกรณ์ของคุณ นำเข้าสคริปต์จากแหล่งที่เชื่อถือได้เท่านั้น",
+            "enter_url_label": "ป้อน URL ที่นี่:",
+            "script_imported": "สคริปต์ {name} นำเข้าแล้ว!",
+            "import_failed": "ไม่สามารถนำเข้าสคริปต์ __ตัวยึดตำแหน่ง_0__. ตรวจสอบบันทึกเพื่อดูรายละเอียดเพิ่มเติม",
+            "import_button": "นำเข้า",
+            "update_module_button": "อัพเดตโมดูล",
+            "updating_script": "กำลังอัปเดตสคริปต์ {name}...",
+            "module_not_found": "ไม่พบโมดูล",
+            "updated_script": "อัปเดต {name} เป็นเวอร์ชัน {version}",
+            "update_module_failed": "ไม่สามารถอัปเดตโมดูลได้ ตรวจสอบบันทึกเพื่อดูรายละเอียดเพิ่มเติม",
+            "edit_module_button": "แก้ไขโมดูล",
+            "open_module_failed": "ไม่สามารถเปิดไฟล์โมดูลได้ ตรวจสอบบันทึกเพื่อดูรายละเอียดเพิ่มเติม",
+            "clear_module_data_button": "ล้างข้อมูลโมดูล",
+            "module_data_cleared": "ล้างข้อมูลโมดูลแล้ว!",
+            "clear_module_data_failed": "ไม่สามารถล้างข้อมูลโมดูลได้ ตรวจสอบบันทึกเพื่อดูรายละเอียดเพิ่มเติม",
+            "delete_module_button": "ลบโมดูล",
+            "deleted_script": "ลบสคริปต์ {name}!",
+            "delete_module_failed": "ไม่สามารถลบโมดูล ตรวจสอบบันทึกเพื่อดูรายละเอียดเพิ่มเติม",
+            "actions_title": "การดำเนินการ",
+            "no_description": "ไม่มีคำอธิบาย",
+            "update_available": "มีการอัปเดต: {version}",
+            "actions_button": "การดำเนินการ",
+            "loaded_script": "สคริปต์ที่โหลด {name}",
+            "unloaded_script": "สคริปต์ยกเลิกการโหลด {name}",
+            "enable_script_failed": "ไม่สามารถเปิดใช้งานสคริปต์ได้ ตรวจสอบบันทึกเพื่อดูรายละเอียดเพิ่มเติม",
+            "disable_script_failed": "ไม่สามารถปิดการใช้งานสคริปต์ ตรวจสอบบันทึกเพื่อดูรายละเอียดเพิ่มเติม",
+            "select_scripts_folder_toast": "โปรดเลือกโฟลเดอร์สคริปต์ของคุณ!",
+            "manage_repos_button": "จัดการ Repos",
+            "import_from_url_button": "นำเข้าจาก URL",
+            "open_scripts_folder_button": "เปิดโฟลเดอร์สคริปต์",
+            "no_settings_for_module": "โมดูลนี้ไม่มีการตั้งค่าใดๆ",
+            "installed_scripts_tab": "สคริปต์ที่ติดตั้ง",
+            "catalog_tab": "แคตตาล็อก",
+            "no_scripts_folder_selected_title": "ไม่ได้เลือกโฟลเดอร์สคริปต์",
+            "select_folder_button": "เลือกโฟลเดอร์",
+            "no_scripts_found_title": "ไม่พบสคริปต์",
+            "use_catalog_to_add_scripts": "ใช้แท็บแคตตาล็อกเพื่อเพิ่มสคริปต์!",
+            "ok_button_timeout": "ตกลง (__ตัวยึดตำแหน่ง_0__)",
+            "documentation_button": "เอกสารประกอบ",
+            "catalog": {
+                "script_already_installed": "ติดตั้งสคริปต์แล้ว!",
+                "download_failed": "การดาวน์โหลดล้มเหลว: {code}",
+                "script_downloaded": "ดาวน์โหลดสคริปต์แล้ว!",
+                "could_not_create_file": "ไม่สามารถสร้างไฟล์ได้",
+                "no_scripts_folder_selected": "ไม่ได้เลือกโฟลเดอร์สคริปต์",
+                "error": "ข้อผิดพลาด: {message}",
+                "no_repos_added": "ไม่มีการเพิ่มที่เก็บข้อมูล",
+                "repo_list_info": "คุณจะพบรายการ repos ได้ที่นี่:",
+                "link_text": "ลิงค์",
+                "no_scripts_available": "ไม่มีสคริปต์จาก repo ใด ๆ",
+                "by_author": "โดย __ตัวยึดตำแหน่ง_0__",
+                "version": "เวอร์ชัน: __ตัวยึดตำแหน่ง_0__",
+                "installed_button": "ติดตั้งแล้ว",
+                "download_button": "ดาวน์โหลด"
+            },
+            "repos": {
+                "invalid_repo_title": "พื้นที่เก็บข้อมูลไม่ถูกต้อง",
+                "add_repo_button": "เพิ่มพื้นที่เก็บข้อมูล",
+                "add_repo_dialog_title": "เพิ่ม URL ที่เก็บ",
+                "repo_url_label": "URL ที่เก็บ",
+                "repo_added_toast": "เพิ่มพื้นที่เก็บข้อมูลเรียบร้อยแล้ว!",
+                "invalid_repo_error": "ดูเหมือนจะไม่ใช่ที่เก็บสคริปต์ที่ถูกต้อง",
+                "add_repo_failed_toast": "ไม่สามารถเพิ่มที่เก็บ: {message}",
+                "add_button": "เพิ่ม",
+                "no_repos_added": "ไม่มีการเพิ่มที่เก็บข้อมูล",
+                "remove_button": "ลบ",
+                "remove_repo_dialog_title": "ลบพื้นที่เก็บข้อมูล",
+                "remove_repo_dialog_text": "คุณแน่ใจหรือไม่ว่าต้องการลบที่เก็บนี้"
+            }
+        },
+        "features": {
+            "config_import": {
+                "title": "ยืนยันการนำเข้า",
+                "back_button_description": "กลับ",
+                "config_imported_toast": "นำเข้าการกำหนดค่าแล้ว!",
+                "confirm_button": "ยืนยัน",
+                "expand_button_description": "ขยาย",
+                "enable_feature": "เปิดใช้งานคุณสมบัติ",
+                "enabled": "เปิดใช้งานแล้ว",
+                "disabled": "พิการ"
+            },
+            "config_export": {
+                "title": "สรุปการส่งออก",
+                "back_button_description": "กลับ",
+                "save_button": "บันทึก",
+                "expand_button_description": "ขยาย",
+                "enable_feature": "เปิดใช้งานคุณสมบัติ",
+                "enabled": "เปิดใช้งานแล้ว",
+                "disabled": "พิการ"
+            }
+        },
+        "manage_repos": {
+            "title": "จัดการที่เก็บ {type}",
+            "add_repo_button": "เพิ่มพื้นที่เก็บข้อมูล",
+            "add_repo_dialog_title": "เพิ่ม URL ที่เก็บ",
+            "repo_url_label": "URL ที่เก็บ",
+            "repo_added_successfully": "เพิ่มพื้นที่เก็บข้อมูลเรียบร้อยแล้ว!",
+            "add_repo_failed": "ไม่สามารถเพิ่มที่เก็บ: {message}",
+            "add_button": "เพิ่ม",
+            "no_repos_added": "ไม่มีการเพิ่มที่เก็บข้อมูล",
+            "remove_button": "ลบ"
+        }
+    },
+    "rules": {
+        "toasts": {
+            "enabled": "{ruleName} เปิดใช้งานแล้ว",
+            "disabled": "{ruleName} ปิดการใช้งาน"
+        },
+        "modes": {
+            "blacklist": "โหมดบัญชีดำ",
+            "whitelist": "โหมดไวท์ลิสต์"
+        },
+        "properties": {
+            "auto_download": {
+                "name": "ดาวน์โหลดอัตโนมัติ",
+                "description": "ดาวน์โหลด Snaps โดยอัตโนมัติเมื่อดู",
+                "options": {
+                    "blacklist": "แยกออกจากการดาวน์โหลดอัตโนมัติ",
+                    "whitelist": "ดาวน์โหลดอัตโนมัติ"
+                }
+            },
+            "stealth": {
+                "name": "โหมดซ่อนตัว",
+                "description": "ป้องกันไม่ให้ใครรู้ว่าคุณได้เปิด Snaps/แชทและการสนทนาของพวกเขาแล้ว",
+                "options": {
+                    "blacklist": "แยกออกจากโหมดซ่อนตัว",
+                    "whitelist": "โหมดซ่อนตัว"
+                }
+            },
+            "auto_save": {
+                "name": "บันทึกอัตโนมัติ",
+                "description": "บันทึกข้อความแชทเมื่อดู",
+                "options": {
+                    "blacklist": "แยกออกจากบันทึกอัตโนมัติ",
+                    "whitelist": "บันทึกอัตโนมัติ"
+                }
+            },
+            "unsaveable_messages": {
+                "name": "ข้อความที่ไม่สามารถบันทึกได้",
+                "description": "ป้องกันไม่ให้บุคคลอื่นบันทึกข้อความในการแชท",
+                "options": {
+                    "blacklist": "แยกออกจากข้อความที่ไม่สามารถบันทึกได้",
+                    "whitelist": "ข้อความที่ไม่สามารถบันทึกได้"
+                }
+            },
+            "auto_open_snaps": {
+                "name": "เปิด Snaps อัตโนมัติ",
+                "description": "เปิด Snaps โดยอัตโนมัติเมื่อได้รับ",
+                "options": {
+                    "blacklist": "แยกออกจาก Auto Open Snaps",
+                    "whitelist": "เปิด Snaps อัตโนมัติ"
+                }
+            },
+            "hide_friend_feed": {
+                "name": "ซ่อนจากฟีดเพื่อน"
+            },
+            "e2e_encryption": {
+                "name": "ใช้การเข้ารหัส E2E"
+            },
+            "pin_conversation": {
+                "name": "ปักหมุดการสนทนา"
+            },
+            "exclude_message_logger": {
+                "name": "แยกออกจากเครื่องบันทึกข้อความ"
+            }
+        }
+    },
+    "actions": {
+        "clean_snapchat_cache": {
+            "name": "ทำความสะอาดแคช Snapchat",
+            "description": "ทำความสะอาดแคช Snapchat"
+        },
+        "manage_friend_list": {
+            "name": "จัดการรายชื่อเพื่อน",
+            "description": "นำเข้า/ส่งออกรายชื่อเพื่อนของคุณเมื่อสำรองข้อมูล"
+        },
+        "export_chat_messages": {
+            "name": "ส่งออกข้อความแชท",
+            "description": "ส่งออกข้อความการสนทนาเป็นไฟล์ JSON/HTML/TXT"
+        },
+        "export_memories": {
+            "name": "ส่งออกความทรงจำ",
+            "description": "ส่งออกความทรงจำเป็นไฟล์ ZIP"
+        },
+        "bulk_messaging_action": {
+            "name": "การดำเนินการส่งข้อความจำนวนมาก",
+            "description": "ดำเนินการต่างๆ เช่น การลบเพื่อนหรือการลบการสนทนาจำนวนมาก"
+        },
+        "regen_mappings": {
+            "name": "สร้างการแมปใหม่",
+            "description": "สร้างการแมปใหม่ด้วยตนเอง"
+        },
+        "change_language": {
+            "name": "เปลี่ยนภาษา",
+            "description": "เปลี่ยนภาษาของ PurrfectSnap"
+        },
+        "file_imports": {
+            "name": "การนำเข้าไฟล์",
+            "description": "นำเข้าไฟล์เพื่อใช้ใน Snapchat"
+        },
+        "friend_tracker": {
+            "name": "ติดตามเพื่อน",
+            "description": "ติดตามเพื่อนของคุณบน Snapchat"
+        },
+        "logger_history": {
+            "name": "ประวัติคนตัดไม้",
+            "description": "ดูประวัติข้อความที่บันทึกไว้"
+        }
+    },
+    "features": {
+        "notices": {
+            "unstable": "⚠ ไม่เสถียร",
+            "ban_risk": "⚠ คุณสมบัตินี้อาจทำให้เกิดการแบน",
+            "internal_behavior": "⚠ สิ่งนี้อาจทำลายพฤติกรรมภายในของ Snapchat"
+        },
+        "properties": {
+            "downloader": {
+                "name": "ดาวน์โหลด",
+                "description": "ดาวน์โหลด Snapchat สื่อ",
+                "properties": {
+                    "save_folder": {
+                        "name": "บันทึกโฟลเดอร์",
+                        "description": "เลือกไดเร็กทอรีที่ควรดาวน์โหลดสื่อทั้งหมดไป"
+                    },
+                    "auto_download_sources": {
+                        "name": "แหล่งดาวน์โหลดอัตโนมัติ",
+                        "description": "เลือกแหล่งที่จะดาวน์โหลดโดยอัตโนมัติ"
+                    },
+                    "prevent_self_auto_download": {
+                        "name": "ป้องกันการดาวน์โหลดอัตโนมัติด้วยตนเอง",
+                        "description": "ป้องกันไม่ให้ Snaps ของคุณถูกดาวน์โหลดโดยอัตโนมัติ"
+                    },
+                    "path_format": {
+                        "name": "รูปแบบเส้นทาง",
+                        "description": "ระบุรูปแบบเส้นทางไฟล์"
+                    },
+                    "allow_duplicate": {
+                        "name": "อนุญาตให้ทำซ้ำ",
+                        "description": "อนุญาตให้ดาวน์โหลดสื่อเดียวกันได้หลายครั้ง"
+                    },
+                    "merge_overlays": {
+                        "name": "ผสานการซ้อนทับ",
+                        "description": "รวมข้อความและสื่อของ Snap ไว้ในไฟล์เดียว"
+                    },
+                    "force_image_format": {
+                        "name": "รูปแบบภาพบังคับ",
+                        "description": "บังคับให้บันทึกรูปภาพในรูปแบบที่ระบุ"
+                    },
+                    "force_voice_note_format": {
+                        "name": "บังคับรูปแบบบันทึกเสียง",
+                        "description": "บังคับให้บันทึกเสียงบันทึกในรูปแบบที่ระบุ"
+                    },
+                    "auto_download_voice_notes": {
+                        "name": "ดาวน์โหลดบันทึกเสียงอัตโนมัติ",
+                        "description": "ดาวน์โหลดบันทึกเสียงโดยอัตโนมัติเมื่อเล่น"
+                    },
+                    "download_profile_pictures": {
+                        "name": "ดาวน์โหลดรูปภาพโปรไฟล์",
+                        "description": "อนุญาตให้คุณดาวน์โหลดรูปภาพโปรไฟล์จากหน้าโปรไฟล์"
+                    },
+                    "opera_download_button": {
+                        "name": "ปุ่มดาวน์โหลด Opera",
+                        "description": "เพิ่มปุ่มดาวน์โหลดที่มุมขวาบนเมื่อดู Snap\nการกดปุ่มค้างไว้จะบังคับให้ดาวน์โหลด"
+                    },
+                    "download_context_menu": {
+                        "name": "ดาวน์โหลดเมนูบริบท",
+                        "description": "ช่วยให้คุณสามารถดาวน์โหลด/ดูตัวอย่างข้อความจากการสนทนาหรือเรื่องราวโดยใช้เมนูบริบท\nการกดปุ่มค้างไว้จะบังคับให้ดาวน์โหลด"
+                    },
+                    "ffmpeg_options": {
+                        "name": "ตัวเลือก FFmpeg",
+                        "description": "ระบุตัวเลือก FFmpeg เพิ่มเติม",
+                        "properties": {
+                            "threads": {
+                                "name": "กระทู้",
+                                "description": "จำนวนเธรดที่จะใช้"
+                            },
+                            "preset": {
+                                "name": "ที่ตั้งไว้ล่วงหน้า",
+                                "description": "ตั้งค่าความเร็วของการแปลง"
+                            },
+                            "constant_rate_factor": {
+                                "name": "ปัจจัยอัตราคงที่",
+                                "description": "ตั้งค่าปัจจัยอัตราคงที่สำหรับตัวเข้ารหัสวิดีโอ\nจาก 0 ถึง 51 สำหรับ libx264"
+                            },
+                            "video_bitrate": {
+                                "name": "อัตราบิตของวิดีโอ",
+                                "description": "ตั้งค่าบิตเรตของวิดีโอ (kbps)"
+                            },
+                            "audio_bitrate": {
+                                "name": "อัตราบิตของเสียง",
+                                "description": "ตั้งค่าบิตเรตเสียง (kbps)"
+                            },
+                            "custom_video_codec": {
+                                "name": "ตัวแปลงสัญญาณวิดีโอแบบกำหนดเอง",
+                                "description": "ตั้งค่า Video Codec แบบกำหนดเอง (เช่น libx264)"
+                            },
+                            "custom_audio_codec": {
+                                "name": "ตัวแปลงสัญญาณเสียงแบบกำหนดเอง",
+                                "description": "ตั้งค่าตัวแปลงสัญญาณเสียงแบบกำหนดเอง (เช่น AAC)"
+                            }
+                        }
+                    },
+                    "logging": {
+                        "name": "การบันทึก",
+                        "description": "แสดงคำอวยพรเมื่อมีการดาวน์โหลดสื่อ"
+                    },
+                    "custom_path_format": {
+                        "name": "รูปแบบเส้นทางที่กำหนดเอง",
+                        "description": "ระบุรูปแบบเส้นทางที่กำหนดเองสำหรับสื่อที่ดาวน์โหลด\n\nตัวแปรที่มีอยู่:\n - %ชื่อผู้ใช้%\n - %แหล่งที่มา%\n - %แฮช%\n - %วันที่_เวลา%"
+                    }
+                }
+            },
+            "user_interface": {
+                "name": "ส่วนต่อประสานกับผู้ใช้",
+                "description": "เปลี่ยนรูปลักษณ์ของ Snapchat",
+                "properties": {
+                    "enable_app_appearance": {
+                        "name": "เปิดใช้งานการตั้งค่าลักษณะที่ปรากฏของแอป",
+                        "description": "เปิดใช้งานการตั้งค่าลักษณะที่ปรากฏของแอปที่ซ่อนอยู่\nอาจไม่จำเป็นสำหรับ Snapchat เวอร์ชันใหม่กว่า"
+                    },
+                    "friend_feed_message_preview": {
+                        "name": "ดูตัวอย่างข้อความฟีดเพื่อน",
+                        "description": "แสดงตัวอย่างข้อความล่าสุดในฟีดเพื่อน",
+                        "properties": {
+                            "amount": {
+                                "name": "จำนวน",
+                                "description": "จำนวนข้อความที่จะดูตัวอย่าง"
+                            }
+                        }
+                    },
+                    "snap_preview": {
+                        "name": "ดูตัวอย่างสแนป",
+                        "description": "แสดงตัวอย่างเล็กๆ ถัดจาก Snaps ที่มองไม่เห็นในแชท"
+                    },
+                    "bootstrap_override": {
+                        "name": "Bootstrap แทนที่",
+                        "description": "แทนที่การตั้งค่าบูตสแตรปของอินเทอร์เฟซผู้ใช้",
+                        "properties": {
+                            "app_appearance": {
+                                "name": "รูปลักษณ์ของแอพ",
+                                "description": "ตั้งค่าลักษณะที่ปรากฏของแอปแบบถาวร"
+                            },
+                            "home_tab": {
+                                "name": "แท็บหน้าแรก",
+                                "description": "แทนที่แท็บเริ่มต้นเมื่อเปิด Snapchat"
+                            }
+                        }
+                    },
+                    "force_amoled_theme": {
+                        "name": "โหมดมืด Amoled",
+                        "description": "ใช้พื้นหลังสีดำจริงสำหรับธีมสีเข้ม"
+                    },
+                    "map_friend_nametags": {
+                        "name": "แท็กชื่อแผนที่เพื่อนที่ได้รับการปรับปรุง",
+                        "description": "ปรับปรุง Nametags ของเพื่อนบน Snapmap"
+                    },
+                    "prevent_message_list_auto_scroll": {
+                        "name": "ป้องกันรายการข้อความเลื่อนอัตโนมัติ",
+                        "description": "ป้องกันไม่ให้รายการข้อความเลื่อนไปที่ด้านล่างเมื่อส่ง/รับข้อความ"
+                    },
+                    "streak_expiration_info": {
+                        "name": "แสดงข้อมูลการหมดอายุของริ้ว",
+                        "description": "แสดงตัวจับเวลาการหมดอายุของ Streak ถัดจากตัวนับ Streaks"
+                    },
+                    "hide_friend_feed_entry": {
+                        "name": "ซ่อนรายการฟีดเพื่อน",
+                        "description": "ซ่อนเพื่อนที่ระบุจากฟีดเพื่อน\nใช้แท็บโซเชียลเพื่อจัดการฟีเจอร์นี้"
+                    },
+                    "hide_streak_restore": {
+                        "name": "ซ่อนการคืนค่าริ้ว",
+                        "description": "ซ่อนปุ่มคืนค่าในฟีดเพื่อน"
+                    },
+                    "hide_quick_add_suggestions": {
+                        "name": "ซ่อนคำแนะนำเพิ่มด่วน",
+                        "description": "ลบการแนะนำเพื่อนอย่างรวดเร็ว"
+                    },
+                    "hide_story_suggestions": {
+                        "name": "ซ่อนคำแนะนำเรื่องราว",
+                        "description": "ลบคำแนะนำออกจากหน้าเรื่องราว"
+                    },
+                    "hide_ui_components": {
+                        "name": "ซ่อนส่วนประกอบ UI",
+                        "description": "เลือกองค์ประกอบ UI ที่จะซ่อน"
+                    },
+                    "opera_media_quick_info": {
+                        "name": "ข้อมูลด่วนของ Opera Media",
+                        "description": "แสดงข้อมูลที่เป็นประโยชน์ของสื่อ เช่น วันที่สร้างในเมนูบริบทของโปรแกรมดูโอเปร่า"
+                    },
+                    "old_bitmoji_selfie": {
+                        "name": "เซลฟี่ Bitmoji เก่า",
+                        "description": "นำภาพเซลฟี่ Bitmoji กลับมาจาก Snapchat เวอร์ชันเก่า"
+                    },
+                    "disable_spotlight": {
+                        "name": "ปิดการใช้งานสปอตไลท์",
+                        "description": "ปิดการใช้งานหน้าสปอตไลท์"
+                    },
+                    "friend_feed_menu_buttons": {
+                        "name": "ปุ่มเมนูฟีดเพื่อน",
+                        "description": "เลือกปุ่มที่จะแสดงในเมนูฟีดเพื่อน"
+                    },
+                    "auto_close_friend_feed_menu": {
+                        "name": "ปิดเมนูฟีดเพื่อนอัตโนมัติ",
+                        "description": "ปิดเมนูฟีดเพื่อนโดยอัตโนมัติหลังจากกดปุ่มตั้งค่า"
+                    },
+                    "vertical_story_viewer": {
+                        "name": "โปรแกรมดูเรื่องราวแนวตั้ง",
+                        "description": "เปิดใช้งานโปรแกรมดูเรื่องราวแนวตั้งสำหรับเรื่องราวทั้งหมด"
+                    },
+                    "enable_friend_feed_menu_bar": {
+                        "name": "แถบเมนูฟีดเพื่อน",
+                        "description": "เปิดใช้งานแถบเมนูฟีดเพื่อนใหม่"
+                    },
+                    "message_indicators": {
+                        "name": "ตัวบ่งชี้ข้อความ",
+                        "description": "เพิ่มไอคอนตัวบ่งชี้เฉพาะให้กับข้อความ\nหมายเหตุ: ตัวบ่งชี้อาจไม่แม่นยำ 100%"
+                    },
+                    "stealth_mode_indicator": {
+                        "name": "ตัวบ่งชี้โหมดซ่อนตัว",
+                        "description": "เพิ่มอิโมจิ 🎃 ถัดจากการสนทนาในโหมดซ่อนตัว"
+                    },
+                    "edit_text_override": {
+                        "name": "แก้ไขการแทนที่ข้อความ",
+                        "description": "แทนที่ลักษณะการทำงานของช่องข้อความ"
+                    },
+                    "prevent_forced_keyboard": {
+                        "name": "ป้องกันการบังคับคีย์บอร์ด",
+                        "description": "ป้องกันไม่ให้ Snapchat เปิดคีย์บอร์ดโดยอัตโนมัติเมื่อคุณเปิดการสนทนา"
+                    },
+                    "settings_menu": {
+                        "name": "เมนูการตั้งค่า",
+                        "description": "เปลี่ยนวิธีการเปิดเมนู PurrfectSnap",
+                        "options": {
+                            "default": "ค่าเริ่มต้น",
+                            "legacy": "มรดก"
+                        }
+                    }
+                }
+            },
+            "messaging": {
+                "name": "การส่งข้อความ",
+                "description": "เปลี่ยนวิธีการโต้ตอบกับเพื่อน",
+                "properties": {
+                    "bypass_screenshot_detection": {
+                        "name": "บายพาสการตรวจจับภาพหน้าจอ",
+                        "description": "ป้องกันไม่ให้ Snapchat ตรวจพบเมื่อคุณถ่ายภาพหน้าจอ"
+                    },
+                    "anonymous_story_viewing": {
+                        "name": "การดูเรื่องราวที่ไม่ระบุชื่อ",
+                        "description": "ป้องกันไม่ให้ใครรู้ว่าคุณได้เห็นเรื่องราวของพวกเขาแล้ว"
+                    },
+                    "prevent_story_rewatch_indicator": {
+                        "name": "ป้องกันตัวบ่งชี้การดูเรื่องราวซ้ำ",
+                        "description": "ป้องกันไม่ให้ใครรู้ว่าคุณได้ดูเรื่องราวของพวกเขาซ้ำแล้ว"
+                    },
+                    "hide_peek_a_peek": {
+                        "name": "ซ่อน Peek-a-Peek",
+                        "description": "ป้องกันไม่ให้มีการส่งการแจ้งเตือนเมื่อคุณปัดนิ้วลงครึ่งหนึ่งในการแชท"
+                    },
+                    "hide_bitmoji_presence": {
+                        "name": "ซ่อนการแสดงตนของ Bitmoji",
+                        "description": "ป้องกันไม่ให้ Bitmoji ของคุณปรากฏขึ้นขณะอยู่ในแชท"
+                    },
+                    "hide_typing_notifications": {
+                        "name": "ซ่อนการแจ้งเตือนการพิมพ์",
+                        "description": "ป้องกันไม่ให้ใครรู้ว่าคุณกำลังพิมพ์ข้อความ"
+                    },
+                    "unlimited_snap_view_time": {
+                        "name": "ไม่จำกัดเวลาดู Snap",
+                        "description": "ลบการจำกัดเวลาสำหรับการดู Snaps"
+                    },
+                    "auto_mark_as_read": {
+                        "name": "ทำเครื่องหมายอัตโนมัติว่าอ่านแล้ว",
+                        "description": "ทำเครื่องหมายข้อความ/สแน็ปอินว่าอ่านแล้วโดยอัตโนมัติแม้ว่าจะเปิดใช้งานโหมดซ่อนตัวก็ตาม"
+                    },
+                    "mark_snap_as_seen_button": {
+                        "name": "ทำเครื่องหมายปุ่ม Snap ตามที่เห็น",
+                        "description": "เพิ่มปุ่มเพื่อทำเครื่องหมาย Snap ตามที่เห็นเมื่อดู\nสิ่งนี้จะทำงานได้แม้ว่าจะเปิดใช้งานโหมดซ่อนตัวก็ตาม"
+                    },
+                    "skip_when_marking_as_seen": {
+                        "name": "ข้ามเมื่อทำเครื่องหมายว่าดูแล้ว",
+                        "description": "ข้ามไปยัง Snap ถัดไปโดยอัตโนมัติเมื่อทำเครื่องหมาย Snap ตามที่เห็น\nใช้ร่วมกับปุ่มทำเครื่องหมาย Snap ตามที่เห็น"
+                    },
+                    "loop_media_playback": {
+                        "name": "การเล่นสื่อแบบวนซ้ำ",
+                        "description": "วนการเล่นสื่อเมื่อดู Snaps / Stories"
+                    },
+                    "disable_replay_in_ff": {
+                        "name": "ปิดการใช้งานการเล่นซ้ำใน FF",
+                        "description": "ปิดการใช้งานความสามารถในการเล่นซ้ำด้วยการกดแบบยาวจากฟีดเพื่อน"
+                    },
+                    "half_swipe_notifier": {
+                        "name": "ตัวแจ้งเตือนการปัดครึ่งนิ้ว",
+                        "description": "แจ้งเตือนคุณเมื่อมีคนปัดนิ้วเข้าสู่การสนทนาเพียงครึ่งเดียว",
+                        "properties": {
+                            "min_duration": {
+                                "name": "ระยะเวลาขั้นต่ำ",
+                                "description": "ระยะเวลาขั้นต่ำของการปัดครึ่งนิ้ว (เป็นวินาที)"
+                            },
+                            "max_duration": {
+                                "name": "ระยะเวลาสูงสุด",
+                                "description": "ระยะเวลาสูงสุดของการปัดครึ่งนิ้ว (เป็นวินาที)"
+                            }
+                        }
+                    },
+                    "call_start_confirmation": {
+                        "name": "การยืนยันการเริ่มต้นการโทร",
+                        "description": "แสดงข้อความยืนยันเมื่อเริ่มการโทร"
+                    },
+                    "unlimited_conversation_pinning": {
+                        "name": "การปักหมุดการสนทนาไม่จำกัด",
+                        "description": "ช่วยให้คุณสามารถปักหมุดการสนทนาในเครื่องได้ไม่จำกัดจำนวน"
+                    },
+                    "disable_snap_mode_restrictions": {
+                        "name": "ปิดใช้งานข้อจำกัดโหมดสแน็ป",
+                        "description": "ช่วยให้คุณดู Snaps ที่ทำลายตัวเองได้โดยไม่มีข้อจำกัด"
+                    },
+                    "prevent_message_sending": {
+                        "name": "ป้องกันการส่งข้อความ",
+                        "description": "ป้องกันการส่งข้อความบางประเภท"
+                    },
+                    "friend_mutation_notifier": {
+                        "name": "ตัวแจ้งการกลายพันธุ์ของเพื่อน",
+                        "description": "แจ้งเตือนคุณเมื่อมีการเปลี่ยนแปลงในโปรไฟล์ของเพื่อน"
+                    },
+                    "better_notifications": {
+                        "name": "การแจ้งเตือนที่ดีขึ้น",
+                        "description": "เพิ่มข้อมูลเพิ่มเติมในการแจ้งเตือนที่ได้รับ",
+                        "properties": {
+                            "group_notifications": {
+                                "name": "การแจ้งเตือนแบบกลุ่ม",
+                                "description": "การแจ้งเตือนกลุ่มเป็นอันเดียว"
+                            },
+                            "chat_preview": {
+                                "name": "ดูตัวอย่างการแชท",
+                                "description": "แสดงตัวอย่างข้อความที่ได้รับในการแจ้งเตือน"
+                            },
+                            "media_preview": {
+                                "name": "การแสดงตัวอย่างสื่อ",
+                                "description": "แสดงตัวอย่างสื่อประเภทที่เลือกในการแจ้งเตือน"
+                            },
+                            "media_caption": {
+                                "name": "คำบรรยายสื่อ",
+                                "description": "แสดงคำบรรยายสื่อที่แนบมาในการแจ้งเตือน"
+                            },
+                            "stacked_media_messages": {
+                                "name": "ข้อความสื่อแบบซ้อน",
+                                "description": "รวมข้อความสื่อหลายรายการไว้ในการแจ้งเตือนข้อความเดียวเมื่อไม่สามารถดูตัวอย่างได้ ใช้ร่วมกับการดูตัวอย่างแชท"
+                            },
+                            "friend_add_source": {
+                                "name": "เพื่อนเพิ่มแหล่งที่มา",
+                                "description": "แสดงแหล่งที่มาของคำขอเป็นเพื่อนในการแจ้งเตือน"
+                            },
+                            "reply_button": {
+                                "name": "ปุ่มตอบกลับ",
+                                "description": "เพิ่มปุ่มตอบกลับไปยังการแจ้งเตือน"
+                            },
+                            "smart_replies": {
+                                "name": "การตอบกลับอัจฉริยะ",
+                                "description": "เพิ่มการตอบกลับที่แนะนำสำหรับการแจ้งเตือน (Android 10+) ใช้ร่วมกับปุ่มตอบกลับ"
+                            },
+                            "download_button": {
+                                "name": "ปุ่มดาวน์โหลด",
+                                "description": "ให้คุณดาวน์โหลดสื่อจากการแจ้งเตือน"
+                            },
+                            "mark_as_read_button": {
+                                "name": "ทำเครื่องหมายว่าปุ่มอ่านแล้ว",
+                                "description": "ช่วยให้คุณสามารถทำเครื่องหมายข้อความว่าอ่านแล้วจากการแจ้งเตือน"
+                            },
+                            "mark_as_read_and_save_in_chat": {
+                                "name": "ทำเครื่องหมายว่าอ่านแล้วและบันทึกในการแชท",
+                                "description": "เพิ่มเครื่องหมายว่าอ่านแล้วและบันทึกในปุ่มแชทในการแจ้งเตือน"
+                            }
+                        }
+                    },
+                    "notification_blacklist": {
+                        "name": "บัญชีดำการแจ้งเตือน",
+                        "description": "เลือกการแจ้งเตือนที่ควรถูกบล็อก"
+                    },
+                    "message_logger": {
+                        "name": "เครื่องบันทึกข้อความ",
+                        "description": "ป้องกันไม่ให้ข้อความถูกลบ",
+                        "properties": {
+                            "keep_my_own_messages": {
+                                "name": "เก็บข้อความของฉันเอง",
+                                "description": "ป้องกันไม่ให้ข้อความของคุณถูกลบ"
+                            },
+                            "auto_purge": {
+                                "name": "ล้างอัตโนมัติ",
+                                "description": "ลบข้อความแคชที่เก่ากว่าระยะเวลาที่ระบุโดยอัตโนมัติ"
+                            },
+                            "message_filter": {
+                                "name": "ตัวกรองข้อความ",
+                                "description": "เลือกข้อความที่จะบันทึก (ว่างสำหรับข้อความทั้งหมด)"
+                            },
+                            "deleted_message_color": {
+                                "name": "สีข้อความที่ถูกลบ",
+                                "description": "ตั้งค่าสีของข้อความที่ถูกลบ"
+                            }
+                        }
+                    },
+                    "auto_save_messages_in_conversations": {
+                        "name": "บันทึกข้อความอัตโนมัติ",
+                        "description": "บันทึกทุกข้อความในการสนทนาโดยอัตโนมัติ"
+                    },
+                    "gallery_media_send_override": {
+                        "name": "แทนที่การส่งสื่อแกลเลอรี",
+                        "description": "ปลอมแปลงแหล่งสื่อเมื่อส่งจากแกลเลอรี"
+                    },
+                    "strip_media_metadata": {
+                        "name": "ตัดข้อมูลเมตาของสื่อ",
+                        "description": "ลบข้อมูลเมตาของสื่อก่อนที่จะส่งเป็นข้อความ"
+                    },
+                    "bypass_message_retention_policy": {
+                        "name": "ข้ามนโยบายการเก็บรักษาข้อความ",
+                        "description": "ป้องกันไม่ให้ข้อความถูกลบหลังจากดูแล้ว"
+                    },
+                    "bypass_message_action_restrictions": {
+                        "name": "ข้ามข้อจำกัดการดำเนินการข้อความ",
+                        "description": "ช่วยให้คุณโต้ตอบได้ทันทีโดยไม่ต้องเปิดหรือบันทึกข้อความที่ไม่สามารถบันทึกได้"
+                    },
+                    "remove_groups_locked_status": {
+                        "name": "ลบสถานะล็อคกลุ่ม",
+                        "description": "ช่วยให้คุณดูข้อมูลกลุ่มหลังจากถูกเตะ"
+                    },
+                    "double_tap_chat_action": {
+                        "name": "การดำเนินการแชทด้วยการแตะสองครั้ง",
+                        "description": "ดำเนินการแบบกำหนดเองเมื่อแตะสองครั้งที่ข้อความในการแชท"
+                    },
+                    "double_tap_chat_action_custom_emoji": {
+                        "name": "ปฏิกิริยาโต้ตอบอีโมจิที่กำหนดเองด้วยการแตะสองครั้ง",
+                        "description": "ตั้งค่าการตอบสนองอีโมจิแบบกำหนดเองสำหรับการแชทด้วยการแตะสองครั้ง"
+                    }
+                }
+            },
+            "global": {
+                "name": "ทั่วโลก",
+                "description": "ปรับแต่งการตั้งค่า Snapchat ทั่วโลก",
+                "properties": {
+                    "better_location": {
+                        "name": "ทำเลที่ตั้งดีกว่า",
+                        "description": "ปรับปรุงตำแหน่ง Snapchat",
+                        "properties": {
+                            "spoof_location": {
+                                "name": "สถานที่ปลอมแปลง",
+                                "description": "ปลอมแปลงตำแหน่งของคุณไปยังตำแหน่งที่ระบุ"
+                            },
+                            "coordinates": {
+                                "name": "พิกัด",
+                                "description": "กำหนดพิกัดของตำแหน่งที่ถูกปลอมแปลง"
+                            },
+                            "walk_radius": {
+                                "name": "รัศมีการเดิน",
+                                "description": "สุ่มเดินไปรอบๆ ในรัศมีนี้ (ฟุต)"
+                            },
+                            "always_update_location": {
+                                "name": "อัปเดตตำแหน่งเสมอ",
+                                "description": "บังคับให้ Snapchat อัปเดตตำแหน่งแม้ว่าจะไม่ได้รับข้อมูล GPS ก็ตาม"
+                            },
+                            "suspend_location_updates": {
+                                "name": "ระงับการอัปเดตตำแหน่ง",
+                                "description": "ป้องกันไม่ให้ตำแหน่งของคุณอัปเดต"
+                            },
+                            "spoof_battery_level": {
+                                "name": "ระดับแบตเตอรี่ปลอม",
+                                "description": "ปลอมแปลงระดับแบตเตอรี่ของอุปกรณ์ของคุณบนแผนที่\nค่าต้องอยู่ระหว่าง 0 ถึง 100"
+                            },
+                            "spoof_headphones": {
+                                "name": "หูฟังปลอม",
+                                "description": "ปลอมแปลงสถานะการฟังเพลงบนแผนที่"
+                            },
+                            "show_battery_level": {
+                                "name": "แสดงระดับแบตเตอรี่",
+                                "description": "แสดงระดับแบตเตอรี่ของเพื่อนของคุณบนแผนที่"
+                            }
+                        }
+                    },
+                    "snapchat_plus": {
+                        "name": "สแนปแชต พลัส",
+                        "description": "เปิดใช้งานคุณสมบัติ Snapchat Plus\nคุณลักษณะฝั่งเซิร์ฟเวอร์บางอย่างอาจไม่ทำงาน"
+                    },
+                    "media_upload_quality": {
+                        "name": "คุณภาพการอัพโหลดสื่อ",
+                        "description": "แทนที่คุณภาพการอัพโหลดสื่อ",
+                        "properties": {
+                            "force_video_upload_source_quality": {
+                                "name": "บังคับคุณภาพแหล่งที่มาของการอัปโหลดวิดีโอ",
+                                "description": "บังคับให้ Snapchat ใช้คุณภาพแหล่งที่มาเมื่ออัปโหลดวิดีโอ\nโปรดทราบว่าการดำเนินการนี้อาจไม่สามารถลบข้อมูลเมตาออกจากสื่อได้"
+                            },
+                            "disable_image_compression": {
+                                "name": "ปิดใช้งานการบีบอัดรูปภาพ",
+                                "description": "ปิดใช้งานการบีบอัดภาพเมื่ออัพโหลดสื่อ"
+                            },
+                            "custom_image_upload_format": {
+                                "name": "รูปแบบการอัปโหลดรูปภาพที่กำหนดเอง",
+                                "description": "ตั้งค่ารูปแบบการอัพโหลดรูปภาพแบบกำหนดเอง\nเลือกรูปแบบแบบไม่สูญเสียข้อมูล (เช่น PNG) เพื่อให้ได้คุณภาพที่ดีที่สุด"
+                            }
+                        }
+                    },
+                    "disable_confirmation_dialogs": {
+                        "name": "ปิดการใช้งานกล่องโต้ตอบการยืนยัน",
+                        "description": "ยืนยันการกระทำที่เลือกโดยอัตโนมัติ"
+                    },
+                    "auto_updater": {
+                        "name": "อัปเดตอัตโนมัติ",
+                        "description": "ตรวจสอบการอัปเดตใหม่โดยอัตโนมัติ"
+                    },
+                    "disable_metrics": {
+                        "name": "ปิดการใช้งานตัวชี้วัด",
+                        "description": "บล็อกการส่งข้อมูลการวิเคราะห์เฉพาะไปยัง Snapchat"
+                    },
+                    "disable_story_sections": {
+                        "name": "ปิดการใช้งานส่วนเรื่องราว",
+                        "description": "ลบส่วนต่างๆ ออกจากหน้าเรื่องราว\nอาจต้องมีการรีเฟรชเพื่อให้ทำงานได้อย่างถูกต้อง"
+                    },
+                    "block_ads": {
+                        "name": "บล็อกโฆษณา",
+                        "description": "ป้องกันไม่ให้โฆษณาแสดง"
+                    },
+                    "disable_custom_tabs": {
+                        "name": "ปิดการใช้งานแท็บแบบกำหนดเอง",
+                        "description": "เปิดลิงก์ในแอปพลิเคชันที่รองรับ แทนที่จะเปิดในเว็บเบราว์เซอร์"
+                    },
+                    "disable_permission_requests": {
+                        "name": "ปิดการใช้งานการร้องขอสิทธิ์",
+                        "description": "ป้องกันไม่ให้ Snapchat ขอสิทธิ์เฉพาะ"
+                    },
+                    "disable_memories_snap_feed": {
+                        "name": "ปิดใช้งานฟีด Snap ความทรงจำ",
+                        "description": "ป้องกันไม่ให้ Snapchat แสดงความทรงจำล่าสุดเมื่อคุณปัดขึ้นในกล้อง"
+                    },
+                    "spotlight_comments_username": {
+                        "name": "ชื่อผู้ใช้ความคิดเห็นสปอตไลท์",
+                        "description": "แสดงชื่อผู้ใช้ของผู้เขียนในความคิดเห็นของ Spotlight"
+                    },
+                    "bypass_video_length_restriction": {
+                        "name": "บายพาสข้อจำกัดความยาววิดีโอ",
+                        "description": "โสด: ส่งวิดีโอเดียว\nแยก: แยกวิดีโอหลังจากแก้ไข"
+                    },
+                    "default_video_playback_rate": {
+                        "name": "อัตราการเล่นวิดีโอเริ่มต้น",
+                        "description": "ตั้งค่าความเร็วเริ่มต้นสำหรับการเล่นวิดีโอ\nค่าต้องอยู่ระหว่าง 0.1 ถึง 4.0"
+                    },
+                    "video_playback_rate_slider": {
+                        "name": "ตัวเลื่อนอัตราการเล่นวิดีโอ",
+                        "description": "เพิ่มแถบเลื่อนในเมนูบริบทของโอเปร่าเพื่อเปลี่ยนอัตราการเล่นวิดีโอ\nหมายเหตุ: การเปลี่ยนแปลงมีผลกับวิดีโอต่อๆ ไปเท่านั้น"
+                    },
+                    "disable_google_play_dialogs": {
+                        "name": "ปิดการใช้งานกล่องโต้ตอบบริการ Google Play",
+                        "description": "ป้องกันไม่ให้แสดงกล่องโต้ตอบความพร้อมใช้งานของบริการ Google Play"
+                    },
+                    "default_volume_controls": {
+                        "name": "การควบคุมระดับเสียงเริ่มต้น",
+                        "description": "บังคับให้ Snapchat ใช้การควบคุมระดับเสียงของระบบ"
+                    },
+                    "disable_telecom_framework": {
+                        "name": "ปิดการใช้งานกรอบโทรคมนาคม",
+                        "description": "ป้องกันไม่ให้ Snapchat ใช้เฟรมเวิร์ก Android Telecom\nซึ่งจะทำให้คุณสามารถฟังเพลงขณะใช้สายได้"
+                    },
+                    "hide_active_music": {
+                        "name": "ซ่อนเพลงที่ใช้งานอยู่",
+                        "description": "ป้องกันไม่ให้ Snapchat รู้ว่าคุณกำลังฟังเพลง\nซึ่งจะช่วยให้คุณสามารถถ่ายภาพได้โดยใช้ปุ่มควบคุมระดับเสียงขณะฟังเพลง"
+                    },
+                    "disable_snap_splitting": {
+                        "name": "ปิดใช้งานการแยก Snap",
+                        "description": "ป้องกันไม่ให้ Snaps ถูกแบ่งออกเป็นหลายส่วน\nรูปภาพที่คุณส่งจะกลายเป็นวิดีโอ"
+                    }
+                }
+            },
+            "rules": {
+                "name": "กฎ",
+                "description": "จัดการคุณสมบัติอัตโนมัติสำหรับบุคคลแต่ละบุคคล"
+            },
+            "camera": {
+                "name": "กล้อง",
+                "description": "ปรับการตั้งค่าที่เหมาะสมเพื่อให้ได้ภาพที่สมบูรณ์แบบ",
+                "properties": {
+                    "disable_cameras": {
+                        "name": "ปิดการใช้งานกล้อง",
+                        "description": "ป้องกันไม่ให้ Snapchat ใช้กล้องที่เลือก"
+                    },
+                    "black_photos": {
+                        "name": "ภาพถ่ายสีดำ",
+                        "description": "แทนที่ภาพถ่ายที่ถ่ายด้วยพื้นหลังสีดำ\nวิดีโอจะไม่ได้รับผลกระทบ"
+                    },
+                    "immersive_camera_preview": {
+                        "name": "การแสดงตัวอย่างที่สมจริง",
+                        "description": "ป้องกันไม่ให้ Snapchat ครอบตัดการแสดงตัวอย่างกล้อง\nนี่อาจทำให้กล้องสั่นไหวในอุปกรณ์บางอย่าง"
+                    },
+                    "override_front_resolution": {
+                        "name": "แทนที่ความละเอียดด้านหน้า",
+                        "description": "แทนที่ความละเอียดของกล้องสำหรับกล้องหน้า"
+                    },
+                    "override_back_resolution": {
+                        "name": "แทนที่ความละเอียดด้านหลัง",
+                        "description": "แทนที่ความละเอียดของกล้องสำหรับกล้องหลัง"
+                    },
+                    "custom_resolution": {
+                        "name": "ความละเอียดที่กำหนดเอง",
+                        "description": "ตั้งค่าความละเอียดของกล้องเอง กว้าง x สูง (เช่น 1920x1080)\nอุปกรณ์ของคุณต้องรองรับความละเอียดที่กำหนดเอง"
+                    },
+                    "front_custom_frame_rate": {
+                        "name": "อัตราเฟรมที่กำหนดเองด้านหน้า",
+                        "description": "แทนที่อัตราเฟรมของกล้องหน้า"
+                    },
+                    "back_custom_frame_rate": {
+                        "name": "กลับอัตราเฟรมที่กำหนดเอง",
+                        "description": "แทนที่อัตราเฟรมของกล้องหลัง"
+                    },
+                    "force_camera_source_encoding": {
+                        "name": "บังคับให้เข้ารหัสแหล่งที่มาของกล้อง",
+                        "description": "บังคับให้เข้ารหัสแหล่งที่มาของกล้อง"
+                    },
+                    "startup_default_camera": {
+                        "name": "กล้องเริ่มต้นเริ่มต้น",
+                        "description": "ตั้งค่ากล้องเริ่มต้นเมื่อเปิด Snapchat"
+                    },
+                    "hevc_recording": {
+                        "name": "การบันทึก HEVC",
+                        "description": "ใช้ตัวแปลงสัญญาณ HEVC (H.265) สำหรับการบันทึกวิดีโอ"
+                    }
+                }
+            },
+            "streaks_reminder": {
+                "name": "การแจ้งเตือนลายเส้น",
+                "description": "แจ้งให้คุณทราบเป็นระยะเกี่ยวกับลายเส้นของคุณ",
+                "properties": {
+                    "interval": {
+                        "name": "ช่วงเวลา",
+                        "description": "ช่วงเวลาระหว่างการเตือนแต่ละครั้ง (ชั่วโมง)"
+                    },
+                    "remaining_hours": {
+                        "name": "เวลาที่เหลืออยู่",
+                        "description": "ระยะเวลาที่เหลือก่อนที่จะแสดงการแจ้งเตือน (ชั่วโมง)"
+                    },
+                    "group_notifications": {
+                        "name": "การแจ้งเตือนแบบกลุ่ม",
+                        "description": "การแจ้งเตือนกลุ่มเป็นอันเดียว"
+                    }
+                }
+            },
+            "experimental": {
+                "name": "การทดลอง",
+                "description": "คุณสมบัติการทดลอง",
+                "properties": {
+                    "native_hooks": {
+                        "name": "ตะขอพื้นเมือง",
+                        "description": "คุณสมบัติที่ไม่ปลอดภัยที่เชื่อมต่อกับโค้ดเนทิฟของ Snapchat",
+                        "properties": {
+                            "composer_hooks": {
+                                "name": "นักแต่งเพลงฮุคส์",
+                                "description": "แทรกโค้ดลงในเฟรมเวิร์ก UI ข้ามแพลตฟอร์มของ Composer",
+                                "properties": {
+                                    "show_first_created_username": {
+                                        "name": "แสดงชื่อผู้ใช้ที่สร้างขึ้นครั้งแรก",
+                                        "description": "แสดงชื่อผู้ใช้ที่สร้างขึ้นครั้งแรกถัดจากชื่อผู้ใช้ปัจจุบันในหน้าโปรไฟล์"
+                                    },
+                                    "bypass_camera_roll_limit": {
+                                        "name": "บายพาสขีดจำกัดม้วนฟิล์ม",
+                                        "description": "เพิ่มจำนวนสื่อสูงสุดที่คุณสามารถส่งจากม้วนฟิล์ม"
+                                    },
+                                    "custom_self_destruct_snap_delay": {
+                                        "name": "ความล่าช้าในการทำลายตนเองของ Snap แบบกำหนดเอง",
+                                        "description": "ให้ตัวเลือกเพิ่มเติมสำหรับตัวจับเวลาการทำลายตนเองเมื่อส่ง Snap"
+                                    },
+                                    "composer_console": {
+                                        "name": "คอนโซลนักแต่งเพลง",
+                                        "description": "ช่วยให้คุณสามารถรันโค้ด JavaScript ใน Composer (arm64 เท่านั้น)"
+                                    },
+                                    "composer_logs": {
+                                        "name": "บันทึกของผู้แต่ง",
+                                        "description": "เปลี่ยนเส้นทางบันทึกคอนโซลของ Composer ไปยัง PurrfectSnap"
+                                    }
+                                }
+                            },
+                            "disable_bitmoji": {
+                                "name": "ปิดการใช้งาน Bitmoji",
+                                "description": "ปิดการใช้งานโปรไฟล์เพื่อน Bitmoji"
+                            },
+                            "custom_emoji_font": {
+                                "name": "แบบอักษรอีโมจิที่กำหนดเอง",
+                                "description": "ช่วยให้คุณใช้แบบอักษรอีโมจิที่กำหนดเองได้ ใช้ได้กับแบบอักษร .ttf เท่านั้น"
+                            },
+                            "custom_shared_library": {
+                                "name": "ไลบรารีที่ใช้ร่วมกันแบบกำหนดเอง",
+                                "description": "โหลดไลบรารีที่ใช้ร่วมกันแบบกำหนดเองลงใน Snapchat คุณลักษณะนี้มีไว้เพื่อการทดสอบเท่านั้น"
+                            }
+                        }
+                    },
+                    "spoof": {
+                        "name": "หลอก",
+                        "description": "ปลอมแปลงข้อมูลต่างๆ เกี่ยวกับคุณ",
+                        "properties": {
+                            "play_store_installer_package_name": {
+                                "name": "ชื่อแพ็คเกจตัวติดตั้ง Play Store",
+                                "description": "แทนที่ชื่อแพ็คเกจตัวติดตั้งเป็น com.android.vending"
+                            },
+                            "remove_vpn_transport_flag": {
+                                "name": "ลบการตั้งค่าสถานะการขนส่ง VPN",
+                                "description": "ป้องกันไม่ให้ Snapchat ตรวจจับ VPN"
+                            },
+                            "remove_mock_location_flag": {
+                                "name": "ลบธงตำแหน่งจำลอง",
+                                "description": "ป้องกันไม่ให้ Snapchat ตรวจจับตำแหน่งจำลอง"
+                            }
+                        }
+                    },
+                    "convert_message_locally": {
+                        "name": "แปลงข้อความในเครื่อง",
+                        "description": "แปลงสแนปเพื่อแชทสื่อภายนอกในเครื่อง ซึ่งจะปรากฏในเมนูบริบทการดาวน์โหลดแชท"
+                    },
+                    "media_file_picker": {
+                        "name": "ตัวเลือกไฟล์มีเดีย",
+                        "description": "ให้คุณเลือกไฟล์วิดีโอ/เสียงจากแกลเลอรี"
+                    },
+                    "story_logger": {
+                        "name": "เครื่องบันทึกเรื่องราว",
+                        "description": "นำเสนอประวัติเรื่องราวของเพื่อนๆ"
+                    },
+                    "call_recorder": {
+                        "name": "บันทึกการโทร",
+                        "description": "บันทึกการโทรด้วยเสียงโดยอัตโนมัติ"
+                    },
+                    "account_switcher": {
+                        "name": "ตัวสลับบัญชี",
+                        "description": "ช่วยให้คุณสามารถสลับระหว่างบัญชีโดยไม่ต้องออกจากระบบ\nกดที่ไอคอนค้นหาถัดจากโปรไฟล์ Bitmoji ของคุณค้างไว้เพื่อเปิดเมนู\nหมายเหตุ: คุณลักษณะนี้ยังอยู่ในช่วงทดลองและอาจมีการเปลี่ยนแปลงในอนาคต",
+                        "properties": {
+                            "auto_backup_current_account": {
+                                "name": "สำรองบัญชีกระแสรายวันอัตโนมัติ",
+                                "description": "สำรองข้อมูลบัญชีปัจจุบันโดยอัตโนมัติเมื่อออกจากระบบหรือเปลี่ยนบัญชี"
+                            }
+                        }
+                    },
+                    "better_transcript": {
+                        "name": "การถอดเสียงที่ดีขึ้น",
+                        "description": "ปรับปรุงการถอดเสียงบันทึกเสียง",
+                        "properties": {
+                            "force_transcription": {
+                                "name": "บังคับให้ถอดเสียงบันทึกเสียง",
+                                "description": "อนุญาตให้ถอดเสียงบันทึกเสียงทั้งหมด"
+                            },
+                            "preferred_transcription_lang": {
+                                "name": "ภาษาการถอดความที่ต้องการ",
+                                "description": "ภาษาที่ต้องการสำหรับการถอดเสียงบันทึกเสียง (เช่น EN, ES, FR)"
+                            },
+                            "notification_transcript": {
+                                "name": "สำเนาการแจ้งเตือน",
+                                "description": "ถอดเสียงบันทึกเสียงในการแจ้งเตือน\nคุณลักษณะนี้จำเป็นต้องเปิดใช้งานคุณลักษณะตัวอย่างการแชทในการแจ้งเตือนที่ดีกว่า"
+                            }
+                        }
+                    },
+                    "voice_note_auto_play": {
+                        "name": "บันทึกเสียงเล่นอัตโนมัติ",
+                        "description": "เล่นบันทึกเสียงถัดไปโดยอัตโนมัติหลังจากบันทึกเสียงปัจจุบันเสร็จสิ้น"
+                    },
+                    "friend_notes": {
+                        "name": "บันทึกของเพื่อน",
+                        "description": "ช่วยให้คุณสามารถเพิ่มบันทึกลงในโปรไฟล์เพื่อนได้"
+                    },
+                    "cof_experiments": {
+                        "name": "การทดลอง COF",
+                        "description": "เปิดใช้งานคุณสมบัติ Snapchat ที่ยังไม่เผยแพร่/เบต้า"
+                    },
+                    "context_menu_fix": {
+                        "name": "แก้ไขเมนูบริบท",
+                        "description": "พยายามซ่อมแซมเมนูฟีดเพื่อน เนื่องจากเมื่ออุปกรณ์ออฟไลน์อยู่จะไม่สามารถแสดงได้อย่างถูกต้อง"
+                    },
+                    "app_lock": {
+                        "name": "ล็อคแอพ",
+                        "description": "ป้องกันการเข้าถึง Snapchat โดยไม่ต้องใช้รหัสผ่าน",
+                        "properties": {
+                            "lock_on_resume": {
+                                "name": "ล็อคประวัติการทำงาน",
+                                "description": "ล็อคแอปเมื่อเปิดขึ้นมาใหม่"
+                            }
+                        }
+                    },
+                    "infinite_story_boost": {
+                        "name": "เพิ่มเรื่องราวที่ไม่มีที่สิ้นสุด",
+                        "description": "ข้ามความล่าช้าของขีดจำกัดการเพิ่มเรื่องราว"
+                    },
+                    "meo_passcode_bypass": {
+                        "name": "บายพาสรหัสผ่าน My Eyes Only",
+                        "description": "ข้ามรหัสผ่าน My Eyes Only\nวิธีนี้จะใช้งานได้ก็ต่อเมื่อมีการป้อนรหัสผ่านอย่างถูกต้องก่อนหน้านี้"
+                    },
+                    "no_friend_score_delay": {
+                        "name": "ไม่มีความล่าช้าของคะแนนเพื่อน",
+                        "description": "ลบความล่าช้าในการดูคะแนนเพื่อน"
+                    },
+                    "best_friend_pinning": {
+                        "name": "ปักหมุดเพื่อนที่ดีที่สุด",
+                        "description": "ให้คุณปักหมุดเพื่อนเป็นเพื่อนที่ดีที่สุดอันดับหนึ่งของคุณ หมายเหตุ: มีเพียงคุณเท่านั้นที่สามารถเห็นเพื่อนสนิทที่คุณปักหมุดไว้"
+                    },
+                    "e2ee": {
+                        "name": "การเข้ารหัสจากต้นทางถึงปลายทาง",
+                        "description": "เข้ารหัสข้อความของคุณด้วย AES โดยใช้รหัสลับที่ใช้ร่วมกัน\nอย่าลืมเก็บกุญแจของคุณไว้ในที่ปลอดภัย!",
+                        "properties": {
+                            "encrypted_message_indicator": {
+                                "name": "ตัวบ่งชี้ข้อความที่เข้ารหัส",
+                                "description": "เพิ่ม 🔒 อีโมจิ ถัดจากข้อความที่เข้ารหัส"
+                            },
+                            "force_message_encryption": {
+                                "name": "บังคับให้เข้ารหัสข้อความ",
+                                "description": "ป้องกันการส่งข้อความที่เข้ารหัสไปยังผู้ที่ไม่ได้เปิดใช้งานการเข้ารหัส E2E เมื่อเลือกการสนทนาหลายรายการเท่านั้น"
+                            }
+                        }
+                    },
+                    "add_friend_source_spoof": {
+                        "name": "เพิ่มแหล่งที่มาของเพื่อนปลอม",
+                        "description": "ปลอมแปลงแหล่งที่มาของคำขอเป็นเพื่อน"
+                    },
+                    "hidden_snapchat_plus_features": {
+                        "name": "คุณสมบัติ Snapchat Plus ที่ซ่อนอยู่",
+                        "description": "เปิดใช้งานฟีเจอร์ Snapchat Plus ที่ยังไม่เผยแพร่/เบต้า\nอาจใช้ไม่ได้กับ Snapchat เวอร์ชันเก่า"
+                    },
+                    "custom_streaks_expiration_format": {
+                        "name": "รูปแบบการหมดอายุของ Streaks แบบกำหนดเอง",
+                        "description": "ปรับแต่งรูปแบบการหมดอายุของ Streaks\n\nตัวแปรที่มีอยู่:\n - %c: จำนวนลายเส้น\n - %e: อิโมจินาฬิกาทราย\n - %d: วัน\n - %h: ชั่วโมง\n - %m: นาที\n - %s: วินาที\n - %w: เวลาที่เหลืออยู่"
+                    },
+                    "prevent_forced_logout": {
+                        "name": "ป้องกันการบังคับให้ออกจากระบบ",
+                        "description": "ป้องกันไม่ให้ Snapchat ออกจากระบบเมื่อคุณเข้าสู่ระบบบนอุปกรณ์อื่น"
+                    },
+                    "snapscore_changes": {
+                        "name": "การเปลี่ยนแปลงสแนปสกอร์",
+                        "description": "ติดตามการเปลี่ยนแปลงใน Snapscore ของเพื่อน\nใช้ฟีเจอร์นี้ใน Snapchat เวอร์ชันใหม่เท่านั้น"
+                    }
+                }
+            },
+            "scripting": {
+                "name": "การเขียนสคริปต์",
+                "description": "เรียกใช้สคริปต์แบบกำหนดเองเพื่อขยาย PurrfectSnap",
+                "properties": {
+                    "developer_mode": {
+                        "name": "โหมดนักพัฒนาซอฟต์แวร์",
+                        "description": "แสดงข้อมูลการแก้ไขข้อบกพร่องบน UI ของ Snapchat"
+                    },
+                    "module_folder": {
+                        "name": "โฟลเดอร์โมดูล",
+                        "description": "โฟลเดอร์ที่มีสคริปต์อยู่"
+                    },
+                    "auto_reload": {
+                        "name": "โหลดซ้ำอัตโนมัติ",
+                        "description": "โหลดสคริปต์ซ้ำโดยอัตโนมัติเมื่อมีการเปลี่ยนแปลง"
+                    },
+                    "integrated_ui": {
+                        "name": "UI แบบรวม",
+                        "description": "อนุญาตให้สคริปต์เพิ่มองค์ประกอบ UI ที่กำหนดเองลงใน Snapchat"
+                    },
+                    "disable_log_anonymization": {
+                        "name": "ปิดใช้งานการลบข้อมูลระบุตัวตนของบันทึก",
+                        "description": "ปิดใช้งานการไม่ระบุชื่อบันทึก"
+                    },
+                    "disable_optimization": {
+                        "name": "ปิดการใช้งานการเพิ่มประสิทธิภาพ",
+                        "description": "ปิดใช้งานการปรับสคริปต์ให้เหมาะสม นี่อาจทำให้เกิดปัญหาด้านประสิทธิภาพการทำงาน"
+                    }
+                }
+            },
+            "friend_tracker": {
+                "name": "ติดตามเพื่อน",
+                "description": "บันทึกกิจกรรมของเพื่อนใน Snapchat",
+                "properties": {
+                    "record_messaging_events": {
+                        "name": "บันทึกเหตุการณ์การส่งข้อความ",
+                        "description": "บันทึกเหตุการณ์การส่งข้อความ เช่น การเปิดสแน็ป การอ่านข้อความ ฯลฯ"
+                    },
+                    "allow_running_in_background": {
+                        "name": "อนุญาตให้ทำงานในพื้นหลัง",
+                        "description": "อนุญาตให้ตัวติดตามทำงานในพื้นหลัง หมายเหตุ: การดำเนินการนี้จะทำให้แบตเตอรี่ของคุณหมดลงอย่างมาก"
+                    },
+                    "auto_purge": {
+                        "name": "ล้างอัตโนมัติ",
+                        "description": "ลบเหตุการณ์แคชที่เก่ากว่าระยะเวลาที่ระบุโดยอัตโนมัติ"
+                    }
+                }
+            }
+        },
+        "options": {
+            "app_appearance": {
+                "always_light": "สว่างเสมอ",
+                "always_dark": "มืดมนเสมอ"
+            },
+            "friend_feed_menu_buttons": {
+                "auto_download": "⬇️ ดาวน์โหลดอัตโนมัติ",
+                "auto_save": "💌 บันทึกข้อความอัตโนมัติ",
+                "unsaveable_messages": "⬇️ ข้อความที่ไม่สามารถบันทึกได้",
+                "auto_open_snaps": "📷 เปิดสแนปอัตโนมัติ",
+                "stealth": "🎃 โหมดซ่อนตัว",
+                "mark_snaps_as_seen": "👀 ทำเครื่องหมาย Snaps ตามที่เห็น",
+                "mark_stories_as_seen_locally": "👀 ทำเครื่องหมายเรื่องราวตามที่เห็นในพื้นที่",
+                "conversation_info": "👤 ข้อมูลการสนทนา",
+                "e2e_encryption": "🔒 ใช้การเข้ารหัส E2E"
+            },
+            "path_format": {
+                "create_author_folder": "สร้างโฟลเดอร์สำหรับผู้เขียนแต่ละคน",
+                "create_source_folder": "สร้างโฟลเดอร์สำหรับแหล่งสื่อแต่ละประเภท",
+                "append_hash": "เพิ่มแฮชที่ไม่ซ้ำให้กับชื่อไฟล์",
+                "append_source": "เพิ่มแหล่งสื่อลงในชื่อไฟล์",
+                "append_username": "เพิ่มชื่อผู้ใช้ให้กับชื่อไฟล์",
+                "append_date_time": "เพิ่มวันที่และเวลาให้กับชื่อไฟล์"
+            },
+            "auto_download_sources": {
+                "friend_snaps": "สแนปเพื่อน",
+                "friend_stories": "เรื่องราวของเพื่อน",
+                "public_stories": "เรื่องสาธารณะ",
+                "spotlight": "สปอตไลท์"
+            },
+            "logging": {
+                "started": "เริ่ม",
+                "success": "ความสำเร็จ",
+                "progress": "ความคืบหน้า",
+                "failure": "ความล้มเหลว"
+            },
+            "notifications": {
+                "chat_screenshot": "ภาพหน้าจอ",
+                "chat_screen_record": "บันทึกหน้าจอ",
+                "snap_replay": "สแน็ปเล่นซ้ำ",
+                "camera_roll_save": "บันทึกม้วนฟิล์ม",
+                "chat": "แชท",
+                "chat_reply": "ตอบแชท",
+                "snap": "สแน็ป",
+                "typing": "กำลังพิมพ์",
+                "stories": "เรื่องราว",
+                "speaking": "การพูด",
+                "chat_reaction": "ปฏิกิริยา DM",
+                "group_chat_reaction": "ปฏิกิริยาของกลุ่ม",
+                "initiate_audio": "สายเรียกเข้าด้วยเสียง",
+                "abandon_audio": "ไม่ได้รับสายสนทนา",
+                "initiate_video": "สายวิดีโอขาเข้า",
+                "abandon_video": "ไม่ได้รับสายวิดีโอ",
+                "map_live_location": "แผนที่ตำแหน่งสด"
+            },
+            "gallery_media_send_override": {
+                "always_ask": "ถามเสมอ",
+                "ORIGINAL": "สื่อต้นฉบับ",
+                "NOTE": "หมายเหตุเสียง",
+                "SNAP": "สแน็ป",
+                "SAVEABLE_SNAP": "Snap ที่บันทึกได้"
+            },
+            "strip_media_metadata": {
+                "hide_caption_text": "ซ่อนข้อความคำบรรยาย",
+                "hide_snap_filters": "ซ่อนตัวกรอง Snap",
+                "hide_extras": "ซ่อนสิ่งพิเศษ (เช่น การกล่าวถึง)",
+                "remove_audio_note_duration": "ลบระยะเวลาบันทึกเสียง",
+                "remove_audio_note_transcript_capability": "ลบความสามารถในการถอดเสียงบันทึกย่อ"
+            },
+            "hide_ui_components": {
+                "hide_profile_call_buttons": "ลบปุ่มโทรโปรไฟล์",
+                "hide_chat_call_buttons": "ลบปุ่มโทรแชท",
+                "hide_live_location_share_button": "ลบปุ่มแชร์ตำแหน่งสด",
+                "hide_stickers_button": "ปุ่มลบสติ๊กเกอร์",
+                "hide_voice_record_button": "ลบปุ่มบันทึกเสียง",
+                "hide_unread_chat_hint": "ลบคำแนะนำการแชทที่ยังไม่ได้อ่าน",
+                "hide_post_to_story_buttons": "ลบปุ่มโพสต์ไปที่เรื่องราวก่อนที่จะส่ง Snap",
+                "hide_billboard_prompt": "ลบ Billboard Prompt ในฟีดเพื่อน",
+                "hide_snapchat_plus_gift_reminders": "ลบการแจ้งเตือนของขวัญ Snapchat Plus ในการสนทนา",
+                "hide_map_reactions": "ลบปฏิกิริยาของแผนที่"
+            },
+            "hide_story_suggestions": {
+                "hide_suggested_friend_stories": "ซ่อนเรื่องราวของเพื่อนที่แนะนำ",
+                "hide_my_stories": "ซ่อนเรื่องราวของฉัน"
+            },
+            "home_tab": {
+                "map": "แผนที่",
+                "chat": "แชท",
+                "camera": "กล้อง",
+                "discover": "ค้นพบ",
+                "spotlight": "สปอตไลท์"
+            },
+            "add_friend_source_spoof": {
+                "added_by_username": "โดยชื่อผู้ใช้",
+                "added_by_mention": "โดยการกล่าวถึง",
+                "added_by_group_chat": "โดยการแชทเป็นกลุ่ม",
+                "added_by_qr_code": "โดยคิวอาร์โค้ด",
+                "added_by_community": "โดยชุมชน",
+                "added_by_quick_add": "โดย Quick Add (มีความเสี่ยงสูงที่จะถูกแบน)"
+            },
+            "bypass_video_length_restriction": {
+                "single": "สื่อเดี่ยว",
+                "split": "แยกสื่อ"
+            },
+            "old_bitmoji_selfie": {
+                "2d": "บิตโมจิ 2 มิติ",
+                "3d": "3D บิตโมจิ"
+            },
+            "disable_confirmation_dialogs": {
+                "erase_message": "ลบข้อความ",
+                "remove_friend": "ลบเพื่อน",
+                "block_friend": "บล็อกเพื่อน",
+                "ignore_friend": "ไม่สนใจเพื่อน",
+                "hide_friend": "ซ่อนเพื่อน",
+                "hide_conversation": "ซ่อนการสนทนา",
+                "clear_conversation": "ล้างการสนทนาจากฟีดเพื่อน"
+            },
+            "auto_reload": {
+                "snapchat_only": "สแนปแชทเท่านั้น",
+                "all": "ทั้งหมด (Snapchat + PurrfectSnap)"
+            },
+            "edit_text_override": {
+                "multi_line_chat_input": "อินพุตแชทหลายสาย",
+                "bypass_text_input_limit": "ข้ามขีดจำกัดการป้อนข้อความ"
+            },
+            "auto_purge": {
+                "never": "ไม่เคย",
+                "1_hour": "1 ชม",
+                "3_hours": "3 ชั่วโมง",
+                "6_hours": "6 ชั่วโมง",
+                "12_hours": "12 ชม",
+                "1_day": "1 วัน",
+                "3_days": "3 วัน",
+                "1_week": "1 สัปดาห์",
+                "2_weeks": "2 สัปดาห์",
+                "1_month": "1 เดือน",
+                "3_months": "3 เดือน",
+                "6_months": "6 เดือน"
+            },
+            "disable_story_sections": {
+                "friends": "เพื่อน",
+                "suggested_stories": "เรื่องแนะนำ",
+                "following": "กำลังติดตาม",
+                "discover": "ค้นพบ"
+            },
+            "disable_cameras": {
+                "front": "กล้องหน้า",
+                "back": "กล้องหลัง"
+            },
+            "disable_permission_requests": {
+                "notifications": "การแจ้งเตือน",
+                "read_media_images": "อ่านภาพสื่อ",
+                "read_media_video": "อ่านสื่อวิดีโอ",
+                "camera": "กล้อง",
+                "microphone": "ไมโครโฟน",
+                "location": "ที่ตั้ง",
+                "read_contacts": "อ่านรายชื่อติดต่อ",
+                "nearby_devices": "อุปกรณ์ใกล้เคียง",
+                "phone_calls": "โทรศัพท์"
+            },
+            "message_indicators": {
+                "encryption_indicator": "เพิ่มไอคอน 🔒 ถัดจากข้อความที่ส่งถึงคุณเท่านั้น",
+                "platform_indicator": "เพิ่มไอคอนแพลตฟอร์มที่ใช้ส่งสื่อ (เช่น Android, iOS, เว็บ)",
+                "location_indicator": "เพิ่มไอคอน 📍 เพื่อสแน็ปเมื่อถูกส่งโดยเปิดใช้งานตำแหน่ง",
+                "ovf_editor_indicator": "ระบุว่าสแนปถูกส่งโดยใช้ OVF Editor หรือไม่",
+                "director_mode_indicator": "เพิ่มไอคอน ✏️ เพื่อสแน็ปเมื่อถูกส่งโดยใช้โหมดผู้กำกับ ซึ่งสามารถใช้เพื่อส่งภาพแกลเลอรี่เป็นสแนป"
+            },
+            "auto_mark_as_read": {
+                "conversation_read": "ทำเครื่องหมายการสนทนาว่าอ่านแล้วเมื่อส่งข้อความ",
+                "snap_reply": "ทำเครื่องหมายว่าอ่านแล้วเมื่อตอบกลับ",
+                "save_snap_in_chat": "ทำเครื่องหมายว่าอ่านแล้วเมื่อบันทึกลงในแชทขณะอยู่ในโหมดซ่อนตัว"
+            },
+            "friend_mutation_notifier": {
+                "remove_friend": "แจ้งเตือนเมื่อมีคนลบคุณออกจากการเป็นเพื่อน",
+                "birthday_changes": "แจ้งเตือนเมื่อมีคนเปลี่ยนวันเกิด",
+                "bitmoji_selfie_changes": "แจ้งเตือนเมื่อมีคนเปลี่ยน Bitmoji เซลฟีของตน",
+                "bitmoji_avatar_changes": "แจ้งเตือนเมื่อมีคนเปลี่ยนอวาตาร์ Bitmoji",
+                "bitmoji_background_changes": "แจ้งเตือนเมื่อมีคนเปลี่ยนพื้นหลัง Bitmoji",
+                "bitmoji_scene_changes": "แจ้งเตือนเมื่อมีคนเปลี่ยนฉาก Bitmoji"
+            },
+            "snapchat_plus": {
+                "not_subscribed": "ไม่ได้สมัครสมาชิก",
+                "basic": "ขั้นพื้นฐาน",
+                "ad_free": "โฆษณาฟรี"
+            },
+            "double_tap_chat_action": {
+                "like_message": "ชอบข้อความ",
+                "copy_text": "คัดลอกข้อความไปยังคลิปบอร์ด",
+                "delete_message": "ลบข้อความ",
+                "mark_as_read": "ทำเครื่องหมายว่าอ่านแล้ว",
+                "custom_emoji_reaction": "ปฏิกิริยาอีโมจิแบบกำหนดเอง"
+            },
+            "startup_default_camera": {
+                "front": "กล้องหน้า",
+                "back": "กล้องหลัง"
+            }
+        }
+    },
+    "friend_menu_option": {
+        "mark_snaps_as_seen": "ทำเครื่องหมาย Snaps ตามที่เห็น",
+        "mark_stories_as_seen_locally": "ทำเครื่องหมายเรื่องราวตามที่เห็นในท้องถิ่น",
+        "preview": "ดูตัวอย่าง",
+        "stealth_mode": "โหมดซ่อนตัว",
+        "auto_download_blacklist": "ดาวน์โหลดบัญชีดำอัตโนมัติ",
+        "anti_auto_save": "ป้องกันการบันทึกอัตโนมัติ"
+    },
+    "content_type": {
+        "CHAT": "แชท",
+        "SNAP": "สแน็ป",
+        "EXTERNAL_MEDIA": "สื่อภายนอก",
+        "NOTE": "หมายเหตุเสียง",
+        "STICKER": "สติ๊กเกอร์",
+        "SHARE": "แบ่งปัน",
+        "STATUS": "สถานะ",
+        "LOCATION": "ที่ตั้ง",
+        "STATUS_SAVE_TO_CAMERA_ROLL": "บันทึกลงในม้วนฟิล์มแล้ว",
+        "STATUS_CONVERSATION_CAPTURE_SCREENSHOT": "ภาพหน้าจอ",
+        "STATUS_CONVERSATION_CAPTURE_RECORD": "บันทึกหน้าจอ",
+        "STATUS_CALL_MISSED_VIDEO": "ไม่ได้รับสายวิดีโอ",
+        "STATUS_CALL_MISSED_AUDIO": "ไม่ได้รับสายสนทนา",
+        "LIVE_LOCATION_SHARE": "แบ่งปันตำแหน่งสด",
+        "CREATIVE_TOOL_ITEM": "รายการเครื่องมือสร้างสรรค์",
+        "FAMILY_CENTER_INVITE": "เชิญศูนย์ครอบครัว",
+        "FAMILY_CENTER_ACCEPT": "ศูนย์ครอบครัวยอมรับ",
+        "FAMILY_CENTER_LEAVE": "ลาศูนย์ครอบครัว",
+        "STATUS_PLUS_GIFT": "ของขวัญสถานะพลัส",
+        "TINY_SNAP": "สแนปเล็กๆ",
+        "STATUS_COUNTDOWN": "นับถอยหลัง",
+        "MAP_REACTION": "ปฏิกิริยาแผนที่"
+    },
+    "media_download_source": {
+        "none": "ไม่มี",
+        "pending": "รอดำเนินการ",
+        "chat_media": "สื่อสนทนา",
+        "story": "เรื่องราว",
+        "public_story": "เรื่องราวสาธารณะ",
+        "spotlight": "สปอตไลท์",
+        "profile_picture": "รูปโปรไฟล์",
+        "story_logger": "เครื่องบันทึกเรื่องราว",
+        "message_logger": "เครื่องบันทึกข้อความ",
+        "merged": "รวมแล้ว",
+        "voice_call": "โทรด้วยเสียง"
+    },
+    "chat_action_menu": {
+        "preview_button": "ดูตัวอย่าง",
+        "download_button": "ดาวน์โหลด",
+        "delete_logged_message_button": "ลบข้อความที่บันทึกไว้",
+        "show_chat_edit_history": "แสดงประวัติการแก้ไขแชท",
+        "convert_message": "แปลงข้อความ"
+    },
+    "opera_context_menu": {
+        "download": "ดาวน์โหลดสื่อ",
+        "sent_at": "ส่งที่ {date}",
+        "created_at": "สร้างที่ {date}",
+        "expires_at": "หมดอายุที่ {date}",
+        "media_size": "ขนาดสื่อ: {size}",
+        "media_duration": "ระยะเวลาสื่อ: {duration} ms",
+        "show_debug_info": "แสดงข้อมูลการแก้ไขข้อบกพร่อง"
+    },
+    "modal_option": {
+        "profile_info": "ข้อมูลโปรไฟล์",
+        "close": "ปิด"
+    },
+    "gallery_media_send_override": {
+        "multiple_media_toast": "คุณสามารถส่งสื่อได้ครั้งละหนึ่งรายการเท่านั้น"
+    },
+    "mark_as_seen": {
+        "no_unseen_snaps_toast": "ไม่พบ Snaps ที่มองไม่เห็น!",
+        "seen_toast": "ทำเครื่องหมายว่าเห็นแล้ว!",
+        "unseen_toast": "ทำเครื่องหมายว่ามองไม่เห็น!",
+        "already_seen_toast": "ทำเครื่องหมายว่าเห็นแล้ว!",
+        "already_unseen_toast": "ทำเครื่องหมายว่าไม่เห็นแล้ว!"
+    },
+    "conversation_preview": {
+        "streak_expiration": "หมดอายุใน {day} วัน {hour} ชั่วโมง {minute} นาที",
+        "total_messages": "ข้อความที่ส่ง/รับทั้งหมด: {count}",
+        "title": "ดูตัวอย่าง",
+        "unknown_user": "ผู้ใช้ที่ไม่รู้จัก",
+        "no_messages": "ไม่พบข้อความ!"
+    },
+    "profile_info": {
+        "title": "ข้อมูลโปรไฟล์",
+        "first_created_username": "ชื่อผู้ใช้ที่สร้างขึ้นครั้งแรก",
+        "mutable_username": "ชื่อผู้ใช้ที่ไม่แน่นอน",
+        "display_name": "ชื่อที่แสดง",
+        "added_date": "เพิ่มวันที่",
+        "birthday": "วันเกิด : {month} {day}",
+        "hidden_birthday": "วันเกิด : ซ่อนเร้น",
+        "friendship": "มิตรภาพ",
+        "add_source": "เพิ่มแหล่งที่มา",
+        "snapchat_plus": "สแนปแชต พลัส",
+        "snapchat_plus_state": {
+            "subscribed": "สมัครสมาชิกแล้ว",
+            "not_subscribed": "ไม่ได้สมัครสมาชิก"
+        }
+    },
+    "friendship_link_type": {
+        "mutual": "ซึ่งกันและกัน",
+        "outgoing": "ขาออก",
+        "blocked": "ถูกบล็อก",
+        "deleted": "ลบแล้ว",
+        "following": "กำลังติดตาม",
+        "suggested": "แนะนำ",
+        "incoming": "เข้ามา",
+        "incoming_follower": "ผู้ติดตามที่เข้ามา"
+    },
+    "bulk_messaging_action": {
+        "choose_action_title": "เลือกการกระทำ",
+        "progress_status": "กำลังประมวลผล {index} จาก {total}",
+        "selection_dialog_continue_button": "ดำเนินการต่อ",
+        "confirmation_dialog": {
+            "title": "คุณแน่ใจเหรอ?",
+            "message": "สิ่งนี้จะส่งผลต่อเพื่อนที่เลือกทั้งหมด การดำเนินการนี้ไม่สามารถยกเลิกได้"
+        },
+        "actions": {
+            "remove_friends": "ลบเพื่อน",
+            "clear_conversations": "ล้างการสนทนา"
+        }
+    },
+    "chat_export": {
+        "exporter_dialog": {
+            "select_conversations_title": "เลือกการสนทนา",
+            "text_field_selection": "{amount} เลือกแล้ว",
+            "text_field_selection_all": "ทั้งหมด",
+            "export_file_format_title": "รูปแบบไฟล์ส่งออก",
+            "message_type_filter_title": "กรองข้อความตามประเภท",
+            "amount_of_messages_title": "จำนวนข้อความ (เว้นว่างไว้สำหรับทั้งหมด)",
+            "download_medias_title": "ดาวน์โหลดมีเดีย"
+        },
+        "dialog_negative_button": "ยกเลิก",
+        "dialog_positive_button": "ส่งออก",
+        "exported_to": "ส่งออกไปยัง {path}",
+        "exporting_chats": "กำลังส่งออกแชท...",
+        "processing_chats": "กำลังประมวลผล {amount} การสนทนา...",
+        "export_fail": "ไม่สามารถส่งออกการสนทนา {conversation}",
+        "writing_output": "กำลังเขียนเอาต์พุต...",
+        "finished": "เสร็จแล้ว! ตอนนี้คุณสามารถปิดกล่องโต้ตอบนี้ได้แล้ว",
+        "no_messages_found": "ไม่พบข้อความ!",
+        "exporting_message": "กำลังส่งออก {conversation}..."
+    },
+    "button": {
+        "ok": "ตกลง",
+        "positive": "ใช่",
+        "negative": "เลขที่",
+        "cancel": "ยกเลิก",
+        "open": "เปิด",
+        "download": "ดาวน์โหลด",
+        "send": "ส่ง",
+        "restore_original": "คืนค่าต้นฉบับ",
+        "convert_external_media": "แปลงสื่อภายนอก",
+        "save": "บันทึก"
+    },
+    "tracker_events": {
+        "conversation_enter": "เข้าสู่การสนทนา",
+        "conversation_exit": "ออกจากการสนทนา",
+        "started_typing": "เริ่มพิมพ์",
+        "stopped_typing": "หยุดพิมพ์แล้ว",
+        "started_speaking": "เริ่มพูด",
+        "stopped_speaking": "หยุดพูดแล้ว",
+        "started_peeking": "เริ่มแอบดู",
+        "stopped_peeking": "หยุดการแอบดู",
+        "message_read": "อ่านข้อความ",
+        "message_deleted": "ลบข้อความแล้ว",
+        "message_saved": "บันทึกข้อความแล้ว",
+        "message_unsaved": "ข้อความที่ไม่ได้บันทึก",
+        "message_edited": "แก้ไขข้อความแล้ว",
+        "message_reaction_add": "เพิ่มการโต้ตอบข้อความ",
+        "message_reaction_remove": "ลบปฏิกิริยาโต้ตอบข้อความ",
+        "snap_opened": "เปิดสแนปแล้ว",
+        "snap_replayed": "Snap เล่นซ้ำ",
+        "snap_replayed_twice": "Snap เล่นซ้ำสองครั้ง",
+        "snap_screenshot": "สแนปภาพหน้าจอ",
+        "snap_screen_record": "บันทึกหน้าจอ Snap"
+    },
+    "tracker_actions": {
+        "log": "บันทึก",
+        "in_app_notification": "การแจ้งเตือนในแอป",
+        "push_notification": "การแจ้งเตือนแบบพุช",
+        "custom": "กำหนดเอง"
+    },
+    "better_notifications": {
+        "button": {
+            "reply": "ตอบ",
+            "download": "ดาวน์โหลด",
+            "mark_as_read": "ทำเครื่องหมายว่าอ่านแล้ว"
+        }
+    },
+    "profile_picture_downloader": {
+        "button": "ดาวน์โหลดรูปโปรไฟล์",
+        "title": "เครื่องมือดาวน์โหลดรูปภาพโปรไฟล์",
+        "avatar_option": "อวตาร",
+        "background_option": "พื้นหลัง"
+    },
+    "call_start_confirmation": {
+        "dialog_title": "เริ่มการโทร",
+        "dialog_message": "คุณแน่ใจหรือไม่ว่าต้องการเริ่มการโทร?"
+    },
+    "half_swipe_notifier": {
+        "notification_channel_name": "ปัดครึ่ง",
+        "notification_content_dm": "{friend} เพียงปัดนิ้วครึ่งเข้าไปในแชทของคุณเป็นเวลา {duration} วินาที",
+        "notification_content_group": "{friend} เพียงปัดครึ่งลงใน {group} เป็นเวลา {duration} วินาที"
+    },
+    "download_processor": {
+        "attachment_type": {
+            "snap": "สแน็ป",
+            "sticker": "สติ๊กเกอร์",
+            "gif": "กิฟ",
+            "external_media": "สื่อภายนอก",
+            "note": "บันทึก",
+            "original_story": "เรื่องราวดั้งเดิม"
+        },
+        "select_attachments_title": "เลือกไฟล์แนบ",
+        "download_started_toast": "เริ่มดาวน์โหลดแล้ว",
+        "unsupported_content_type_toast": "ประเภทเนื้อหาที่ไม่รองรับ!",
+        "failed_no_longer_available_toast": "สื่อไม่มีอีกต่อไป",
+        "no_attachments_toast": "ไม่พบเอกสารแนบ!",
+        "already_queued_toast": "สื่อเข้าคิวแล้ว!",
+        "already_downloaded_toast": "ดาวน์โหลดสื่อแล้ว!",
+        "content_saved_toast": "บันทึกแล้ว!",
+        "download_toast": "กำลังดาวน์โหลด {path}...",
+        "processing_toast": "กำลังประมวลผล {path}...",
+        "failed_generic_toast": "ดาวน์โหลดไม่สำเร็จ",
+        "failed_to_create_preview_toast": "ไม่สามารถสร้างการแสดงตัวอย่างได้",
+        "failed_processing_toast": "การประมวลผลล้มเหลว {error}",
+        "failed_gallery_toast": "ไม่สามารถบันทึกลงในแกลเลอรี {error}",
+        "dash_no_chapter": "ไม่พบบท",
+        "dash_dialog": {
+            "title": "ดาวน์โหลดสื่อประ",
+            "download_all": "ดาวน์โหลดทั้งหมด",
+            "segment_text": "ส่วน {from} - {to}"
+        }
+    },
+    "streaks_reminder": {
+        "notification_title": "มีลายทาง",
+        "notification_text": "คุณจะสูญเสียสตรีคของคุณด้วย {friend} ใน {hoursLeft} ชั่วโมง"
+    },
+    "biometric_auth": {
+        "unlock_button": "ปลดล็อค",
+        "title": "ปลดล็อคสแนปแชท",
+        "subtitle": "โปรดตรวจสอบสิทธิ์เพื่อปลดล็อค Snapchat"
+    },
+    "end_to_end_encryption": {
+        "toolbox": {
+            "no_shared_key": "คุณยังไม่มีความลับที่เปิดเผยกับเพื่อนคนนี้ คลิกด้านล่างเพื่อเริ่มต้นใหม่",
+            "shared_key_fingerprint": "ลายนิ้วมือของคุณคือ:\n\n__ตัวยึดตำแหน่ง__0__\n\nอย่าลืมตรวจสอบว่าตรงกับลายนิ้วมือของเพื่อนของคุณหรือไม่!",
+            "initiate_exchange_button": "เริ่มต้นการแลกเปลี่ยนคีย์"
+        },
+        "confirmation_dialogs": {
+            "title": "การเข้ารหัสจากต้นทางถึงปลายทาง",
+            "confirmation_1": "คำเตือน: การดำเนินการนี้จะเขียนทับคีย์ที่มีอยู่ของคุณ คุณจะสูญเสียการเข้าถึงข้อความที่เข้ารหัสทั้งหมดจากเพื่อนคนนี้ คุณแน่ใจหรือไม่ว่าต้องการดำเนินการต่อ?",
+            "confirmation_2": "คุณแน่ใจจริงๆ ว่าต้องการดำเนินการต่อหรือไม่ นี่เป็นโอกาสสุดท้ายของคุณที่จะถอยกลับ"
+        },
+        "unencrypted_conversation_send_failure_toast": "คุณไม่สามารถส่งเนื้อหาที่เข้ารหัสไปยังการสนทนาทั้งที่เข้ารหัสและไม่ได้เข้ารหัสได้!",
+        "native_hooks_send_failure_toast": "ส่งไม่สำเร็จ! โปรดเปิดใช้งาน Native Hooks ในการตั้งค่า",
+        "no_participants_to_encrypt_toast": "คุณไม่มีเพื่อนในการสนทนานี้ที่จะเข้ารหัสข้อความด้วย!",
+        "encryption_failed_toast": "ล้มเหลวในการเข้ารหัสข้อความ! ตรวจสอบ logcat เพื่อดูรายละเอียดเพิ่มเติม",
+        "accept_public_key_success_toast": "ยอมรับรหัสสาธารณะสำเร็จแล้ว!",
+        "accept_secret_key_success_toast": "เสร็จแล้ว! ตอนนี้คุณสามารถส่งและรับข้อความที่เข้ารหัสกับเพื่อนคนนี้ได้แล้ว",
+        "accept_public_key_failure_toast": "ไม่สามารถยอมรับรหัสสาธารณะได้",
+        "accept_secret_key_failure_toast": "ไม่สามารถยอมรับรหัสลับได้",
+        "accept_secret_button": "ยอมรับความลับ",
+        "accept_public_key_button": "ยอมรับกุญแจสาธารณะ",
+        "outgoing_pk_message": "คำขอแลกเปลี่ยนกุญแจ",
+        "outgoing_secret_message": "การตอบสนองการแลกเปลี่ยนคีย์",
+        "incoming_pk_message": "คุณเพิ่งได้รับคำขอกุญแจสาธารณะ คลิกด้านล่างเพื่อยอมรับ",
+        "incoming_secret_message": "เพื่อนของคุณเพิ่งยอมรับกุญแจสาธารณะของคุณ คลิกด้านล่างเพื่อยอมรับความลับ"
+    },
+    "auto_open_snaps": {
+        "title": "เปิด Snaps อัตโนมัติ",
+        "notification_content": "{count} เปิดสแนปแล้ว"
+    },
+    "friend_mutation_observer": {
+        "notification_channel_name": "ผู้สังเกตการณ์การกลายพันธุ์ของเพื่อน",
+        "friend_removed": "{username} ลบคุณออกจากการเป็นเพื่อน",
+        "birthday_removed": "{username} ลบวันเกิดของพวกเขาแล้ว ({birthday})",
+        "birthday_added": "{username} ได้เพิ่มวันเกิดของพวกเขา ({birthday})",
+        "birthday_changed": "{username} ได้เปลี่ยนวันเกิดของพวกเขาจาก {oldBirthday} เป็น {newBirthday}",
+        "bitmoji_selfie_changed": "{username} ได้เปลี่ยนรูปเซลฟี่ Bitmoji ของพวกเขา",
+        "bitmoji_avatar_changed": "{username} ได้เปลี่ยนอวาตาร์ Bitmoji ของพวกเขา",
+        "bitmoji_background_changed": "{username} ได้เปลี่ยนพื้นหลัง Bitmoji แล้ว",
+        "bitmoji_scene_changed": "{username} ได้เปลี่ยนฉาก Bitmoji ของพวกเขา"
+    },
+    "material3_strings": {
+        "date_range_picker_start_headline": "จาก",
+        "date_range_picker_end_headline": "ถึง",
+        "date_range_picker_title": "เลือกช่วงวันที่",
+        "date_picker_switch_to_calendar_mode": "ปฏิทิน",
+        "date_picker_switch_to_input_mode": "ป้อนข้อมูล",
+        "date_range_picker_scroll_to_previous_month": "เดือนที่แล้ว",
+        "date_range_picker_scroll_to_next_month": "เดือนหน้า",
+        "date_picker_today_description": "วันนี้",
+        "date_range_picker_day_in_range": "เลือกแล้ว",
+        "date_input_invalid_for_pattern": "วันที่ไม่ถูกต้อง",
+        "date_input_invalid_year_range": "ปีไม่ถูกต้อง",
+        "date_input_invalid_not_allowed": "วันที่ไม่ถูกต้อง",
+        "date_range_input_invalid_range_input": "ช่วงวันที่ไม่ถูกต้อง"
+    },
+    "send_override_dialog": {
+        "title": "ส่งสื่อเป็น {type}",
+        "duration": "ระยะเวลา: {duration}",
+        "saveable_snap_hint": "ทำให้ Snap สามารถบันทึกได้ในแชท",
+        "unlimited_duration": "ไม่จำกัด"
+    },
+    "invalid_input_toast": "ข้อมูลไม่ถูกต้อง! ตรวจสอบให้แน่ใจว่าคุณป้อนค่าที่ถูกต้อง"
+}

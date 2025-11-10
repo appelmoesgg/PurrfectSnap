@@ -50,6 +50,7 @@ data class FriendTrackerRepoEntry(
 
 @OptIn(ExperimentalMaterial3Api::class)
 class FriendTrackerCatalog : Routes.Route() {
+    override val translation by lazy { context.translation.getCategory("manager.friend_tracker_catalog") }
 
     @Composable
     private fun AvailableRulesTab() {
@@ -76,7 +77,7 @@ class FriendTrackerCatalog : Routes.Route() {
                     repos.forEach { repoRoot ->
                         val indexUrl = if (repoRoot.endsWith("/")) "${repoRoot}index.json" else "$repoRoot/index.json"
                         try {
-                            val req = Request.Builder().url(indexUrl).build()
+                            val req = Request.Builder().url(indexUrl).build() // ktlint-disable indent_wrapped_argument
                             okHttpClient.newCall(req).execute().use { response ->
                                 if (response.isSuccessful) {
                                     response.body?.charStream()?.let { reader ->
@@ -116,14 +117,14 @@ class FriendTrackerCatalog : Routes.Route() {
             coroutineScope.launch(Dispatchers.IO) {
                 val rawUrl = if (repoUrl.endsWith("/")) repoUrl + entry.path else repoUrl + "/" + entry.path
                 try {
-                    val req = Request.Builder().url(rawUrl).build()
+                    val req = Request.Builder().url(rawUrl).build() // ktlint-disable indent_wrapped_argument
                     okHttpClient.newCall(req).execute().use { response ->
                         if (!response.isSuccessful) {
-                            withContext(Dispatchers.Main) { context.shortToast("Failed download: ${response.code}") }
+                            withContext(Dispatchers.Main) { context.shortToast(translation.format("download_failed", "code" to response.code.toString())) }
                             return@use
                         }
                         val content = response.body?.string()
-                        if (content != null) {
+                        if (content != null) { // ktlint-disable no-multi-spaces
                             withContext(Dispatchers.Main) {
                                 routes.friendTrackerConfigJsonForImport = content
                                 routes.friendTrackerConfigImport.navigate()
@@ -132,7 +133,7 @@ class FriendTrackerCatalog : Routes.Route() {
                     }
                 } catch (e: Exception) {
                     withContext(Dispatchers.Main) {
-                        context.shortToast("Error: ${e.localizedMessage}")
+                        context.shortToast(translation.format("error", "message" to (e.localizedMessage ?: "Unknown")))
                     }
                 }
             }
@@ -144,7 +145,7 @@ class FriendTrackerCatalog : Routes.Route() {
                 contentAlignment = Alignment.Center
             ) {
                 Text(
-                    text = "No repositories added.",
+                    text = translation["no_repos_added"],
                     style = MaterialTheme.typography.headlineSmall,
                     fontWeight = FontWeight.Bold,
                     textAlign = TextAlign.Center,
@@ -168,7 +169,7 @@ class FriendTrackerCatalog : Routes.Route() {
                         }
                     } else if (allRules.isEmpty() && repositories.isNotEmpty()) {
                         Text(
-                            text = "No rules available from any repo.",
+                            text = translation["no_rules_available"],
                             modifier = Modifier
                                 .padding(16.dp)
                                 .fillMaxWidth(),
@@ -214,7 +215,7 @@ class FriendTrackerCatalog : Routes.Route() {
                                     )
                                     entry.author?.let {
                                         Text(
-                                            text = "by $it",
+                                            text = translation.format("by_author", "author" to it),
                                             maxLines = 1,
                                             fontSize = 10.sp,
                                             fontWeight = FontWeight.Light,
@@ -237,7 +238,7 @@ class FriendTrackerCatalog : Routes.Route() {
                                 },
                                 enabled = !isImported
                             ) {
-                                Text(if (isImported) "Imported" else "Import")
+                                Text(if (isImported) translation["imported_button"] else translation["import_button"])
                             }
                         }
                     }
@@ -246,10 +247,10 @@ class FriendTrackerCatalog : Routes.Route() {
         }
     }
 
-    override val title: @Composable () -> Unit = { Text("Friend Tracker Catalog") }
+    override val title: @Composable () -> Unit = { Text(translation["title"]) }
     override val topBarActions: @Composable RowScope.() -> Unit = {
         IconButton(onClick = { routes.manageFriendTrackerRepos.navigate() }) {
-            Icon(Icons.Default.Public, contentDescription = "Manage Repositories")
+            Icon(Icons.Default.Public, contentDescription = translation["manage_repos_description"])
         }
     }
     override val content: @Composable (NavBackStackEntry) -> Unit = {

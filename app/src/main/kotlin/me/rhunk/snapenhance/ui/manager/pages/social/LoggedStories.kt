@@ -21,6 +21,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.core.content.FileProvider
 import androidx.navigation.NavBackStackEntry
+import androidx.navigation.compose.currentBackStackEntryAsState
+import androidx.compose.ui.text.style.TextOverflow
 import coil.annotation.ExperimentalCoilApi
 import coil.compose.rememberAsyncImagePainter
 import me.rhunk.snapenhance.bridge.DownloadCallback
@@ -40,6 +42,16 @@ import java.util.UUID
 import kotlin.math.absoluteValue
 
 class LoggedStories : Routes.Route() {
+    override val title: @Composable () -> Unit = {
+        val navBackStackEntry by routes.navController.currentBackStackEntryAsState()
+        val text = remember(navBackStackEntry) {
+            navBackStackEntry?.arguments?.getString("id")?.let {
+                context.database.getFriendInfo(it)?.displayName
+            }
+        }
+        text?.let { Text(it, maxLines = 1, overflow = TextOverflow.Ellipsis) }
+    }
+
     @OptIn(ExperimentalCoilApi::class, ExperimentalLayoutApi::class)
     override val content: @Composable (NavBackStackEntry) -> Unit = content@{ navBackStackEntry ->
         val userId = navBackStackEntry.arguments?.getString("id") ?: return@content
@@ -61,11 +73,11 @@ class LoggedStories : Routes.Route() {
                     remoteSideContext = context,
                     callback = object: DownloadCallback.Default() {
                         override fun onSuccess(outputPath: String?) {
-                            context.shortToast("Downloaded to $outputPath")
+                            context.shortToast(translation.format("downloaded_to_path", "path" to (outputPath ?: "")))
                         }
 
                         override fun onFailure(message: String?, throwable: String?) {
-                            context.shortToast("Failed to download $message")
+                            context.shortToast(translation.format("download_failed", "message" to (message ?: "")))
                         }
                     }
                 ).enqueue(DownloadRequest(
@@ -103,14 +115,14 @@ class LoggedStories : Routes.Route() {
                                 DateFormat.getDateTimeInstance().format(Date(it))
                             }
                         }?.let {
-                            Text(text = "Posted at $it")
+                            Text(text = translation.format("posted_at", "date" to it))
                         }
                         remember {
                             story.createdAt.takeIf { it >= 0L }?.let {
                                 DateFormat.getDateTimeInstance().format(Date(it))
                             }
                         }?.let {
-                            Text(text = "Created at $it")
+                            Text(text = translation.format("created_at", "date" to it))
                         }
 
                         FlowRow(
@@ -147,11 +159,11 @@ class LoggedStories : Routes.Route() {
                                                 addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION or Intent.FLAG_ACTIVITY_NEW_TASK)
                                             })
                                         }.onFailure {
-                                            context.shortToast("Failed to open file. Check logs for more info")
+                                            context.shortToast(translation["failed_to_open_file"])
                                             context.log.error("Failed to open file", it)
                                         }
                                     } ?: run {
-                                        context.shortToast("Failed to get file")
+                                        context.shortToast(translation["failed_to_get_file"])
                                         return@Button
                                     }
                                 }

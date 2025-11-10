@@ -38,6 +38,7 @@ data class ScriptRepoEntry(
 @Composable
 fun ScriptCatalog(root: ScriptingRootSection) {
     val context = root.context
+    val translation = remember { context.translation.getCategory("manager.scripting.catalog") }
     val coroutineScope = rememberCoroutineScope()
     val okHttpClient = remember { OkHttpClient() }
     val gson = remember { context.gson }
@@ -103,25 +104,25 @@ fun ScriptCatalog(root: ScriptingRootSection) {
         coroutineScope.launch(Dispatchers.IO) {
             if (isScriptInstalled(entry.name)) {
                 withContext(Dispatchers.Main) {
-                    context.shortToast("Script already installed!")
+                    context.shortToast(translation["script_already_installed"])
                 }
                 return@launch
             }
-            
+
             val rawUrl = if (repoUrl.endsWith("/")) repoUrl + entry.filepath else repoUrl + "/" + entry.filepath
-            
+
             if (root.isScriptInstalledByUrl(rawUrl)) {
                 withContext(Dispatchers.Main) {
-                    context.shortToast("Script already installed!")
+                    context.shortToast(translation["script_already_installed"])
                 }
                 return@launch
             }
-            
+
             try {
                 val req = Request.Builder().url(rawUrl).build()
                 okHttpClient.newCall(req).execute().use { response ->
                     if (!response.isSuccessful) {
-                        withContext(Dispatchers.Main) { context.shortToast("Failed download: ${response.code}") }
+                        withContext(Dispatchers.Main) { context.shortToast(translation.format("download_failed", "code" to response.code.toString())) }
                         return@use
                     }
                     val content = response.body?.bytes()
@@ -134,24 +135,24 @@ fun ScriptCatalog(root: ScriptingRootSection) {
                                     output.write(content)
                                 }
                                 withContext(Dispatchers.Main) {
-                                    context.shortToast("Script downloaded!")
+                                    context.shortToast(translation["script_downloaded"])
                                     root.reloadDispatcher.dispatch()
                                 }
                             } else {
                                 withContext(Dispatchers.Main) {
-                                    context.shortToast("Could not create file.")
+                                    context.shortToast(translation["could_not_create_file"])
                                 }
                             }
                         } else {
                             withContext(Dispatchers.Main) {
-                                context.shortToast("No scripts folder selected.")
+                                context.shortToast(translation["no_scripts_folder_selected"])
                             }
                         }
                     }
                 }
             } catch (e: Exception) {
                 withContext(Dispatchers.Main) {
-                    context.shortToast("Error: ${e.localizedMessage}")
+                    context.shortToast(translation.format("error", "message" to (e.localizedMessage ?: "Unknown")))
                 }
             }
         }
@@ -167,7 +168,7 @@ fun ScriptCatalog(root: ScriptingRootSection) {
                 modifier = Modifier.padding(16.dp)
             ) {
                 Text(
-                    text = "No repositories added.",
+                    text = translation["no_repos_added"],
                     style = MaterialTheme.typography.headlineSmall,
                     fontWeight = FontWeight.Bold,
                     textAlign = TextAlign.Center,
@@ -179,17 +180,17 @@ fun ScriptCatalog(root: ScriptingRootSection) {
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     Text(
-                        text = "Here you can find a list of repos: ",
+                        text = translation["repo_list_info"],
                         style = MaterialTheme.typography.bodyLarge,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
                     Text(
-                        text = "Link",
+                        text = translation["link_text"],
                         style = MaterialTheme.typography.bodyLarge,
                         color = MaterialTheme.colorScheme.primary,
                         modifier = Modifier.clickable {
                             context.androidContext.openLink(
-                                "https://github.com/particle-box/PurrfectSnap/blob/main/app/src/main/kotlin/me/rhunk/snapenhance/ui/manager/pages/scripting/ScriptRepos.md"
+                                "https://github.com/particle-box/PurrfectSnap/blob/dev/app/src/main/kotlin/me/rhunk/snapenhance/ui/manager/pages/scripting/ScriptRepos.md"
                             )
                         }
                     )
@@ -208,7 +209,7 @@ fun ScriptCatalog(root: ScriptingRootSection) {
                     }
                 } else if (allScripts.isEmpty() && repositories.isNotEmpty()) {
                     Text(
-                        text = "No scripts available from any repo.",
+                        text = translation["no_scripts_available"],
                         modifier = Modifier
                             .padding(16.dp)
                             .fillMaxWidth(),
@@ -222,11 +223,11 @@ fun ScriptCatalog(root: ScriptingRootSection) {
             items(allScripts) { (repoUrl, entry) ->
                 var isDownloading by remember { mutableStateOf(false) }
                 var isAlreadyInstalled by remember { mutableStateOf(false) }
-                
+
                 LaunchedEffect(entry) {
                     isAlreadyInstalled = isScriptInstalled(entry.name)
                 }
-                
+
                 ElevatedCard(Modifier.padding(bottom = 8.dp).animateContentSize()) {
                     Row(
                         modifier = Modifier
@@ -253,7 +254,7 @@ fun ScriptCatalog(root: ScriptingRootSection) {
                                 )
                                 entry.author?.let {
                                     Text(
-                                        text = "by $it",
+                                        text = translation.format("by_author", "author" to it),
                                         maxLines = 1,
                                         fontSize = 10.sp,
                                         fontWeight = FontWeight.Light,
@@ -270,7 +271,7 @@ fun ScriptCatalog(root: ScriptingRootSection) {
                                 )
                             }
                             Text(
-                                text = "Version: ${entry.version ?: "N/A"}",
+                                text = translation.format("version", "version" to (entry.version ?: "N/A")),
                                 fontWeight = FontWeight.Light,
                                 fontSize = 11.sp
                             )
@@ -288,13 +289,13 @@ fun ScriptCatalog(root: ScriptingRootSection) {
                             }
                         ) {
                             when {
-                                isAlreadyInstalled -> Text("Installed")
+                                isAlreadyInstalled -> Text(translation["installed_button"])
                                 isDownloading -> CircularProgressIndicator(
                                     modifier = Modifier.size(18.dp),
                                     strokeWidth = 2.dp,
                                     color = MaterialTheme.colorScheme.onPrimary
                                 )
-                                else -> Text("Download")
+                                else -> Text(translation["download_button"])
                             }
                         }
                     }

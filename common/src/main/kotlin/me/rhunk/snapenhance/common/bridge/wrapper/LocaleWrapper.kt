@@ -13,7 +13,10 @@ import java.util.Locale
 
 
 class LocaleWrapper(
-    private val fileHandleManager: LazyBridgeValue<FileHandleManager>
+    private val context: Context,
+    private val fileHandleManager: LazyBridgeValue<FileHandleManager>,
+    private val prefix: String = "",
+    private val parent: LocaleWrapper? = null
 ) {
     companion object {
         const val DEFAULT_LOCALE = "en_US"
@@ -76,14 +79,21 @@ class LocaleWrapper(
         }
     }
 
-    fun reload(locale: String) {
+    fun reload(locale: String, isSetup: Boolean = false) {
         userLocale = locale
         translationMap.clear()
         load()
+        if (isSetup) return
+        context.sendBroadcast(android.content.Intent("me.rhunk.snapenhance.RESTART"))
     }
 
-    operator fun get(key: String) = translationMap[key] ?: key.also { AbstractLogger.directDebug("Missing translation for $key") }
-    fun getOrNull(key: String) = translationMap[key]
+    operator fun get(key: String) = getOrNull(key) ?: key.also { AbstractLogger.directDebug("Missing translation for $key") }
+
+    fun getOrNull(key: String): String? {
+        val prefixedKey = if (prefix.isNotEmpty()) "$prefix.$key" else key
+        return translationMap[prefixedKey] ?: parent?.getOrNull(key)
+    }
+
 
     fun format(key: String, vararg args: Pair<String, String>): String {
         return args.fold(get(key)) { acc, pair ->
@@ -92,12 +102,8 @@ class LocaleWrapper(
     }
 
     fun getCategory(key: String): LocaleWrapper {
-        return LocaleWrapper(fileHandleManager).apply {
-            translationMap.putAll(
-                this@LocaleWrapper.translationMap
-                    .filterKeys { it.startsWith("$key.") }
-                    .mapKeys { it.key.substring(key.length + 1) }
-            )
+        return LocaleWrapper(context, fileHandleManager, key, this).also {
+            it.translationMap.putAll(this.translationMap)
         }
     }
 }

@@ -140,7 +140,7 @@ class AddFriendDialog(
                     .padding(end = 10.dp),
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Text, imeAction = ImeAction.Done),
                 leadingIcon = {
-                    Icon(Icons.Filled.Search, contentDescription = "Search")
+                    Icon(Icons.Filled.Search, contentDescription = translation["search_icon_description"])
                 }
             )
         }

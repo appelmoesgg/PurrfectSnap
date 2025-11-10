@@ -7,20 +7,21 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateListOf
-import androidx.compose.runtime.mutableStateMapOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.text.style.TextAlign
+import me.rhunk.snapenhance.common.bridge.wrapper.LocaleWrapper
 
 @Composable
 fun QuickActionsDialog(
     quickActions: Map<Pair<String, ImageVector>, Any>,
     selectedQuickActions: List<String>,
     onDismiss: () -> Unit,
-    onSave: (List<String>) -> Unit
+    onSave: (List<String>) -> Unit,
+    translation: LocaleWrapper
 ) {
     val selected = remember { mutableStateListOf(*selectedQuickActions.toTypedArray()) }
 
@@ -28,7 +29,7 @@ fun QuickActionsDialog(
         onDismissRequest = onDismiss,
         title = {
             Text(
-                text = "Edit Quick Actions",
+                text = translation["manager.dialogs.quick_actions_dialog.title"],
                 style = MaterialTheme.typography.headlineSmall,
                 textAlign = TextAlign.Center,
                 modifier = Modifier
@@ -41,7 +42,7 @@ fun QuickActionsDialog(
                     .verticalScroll(rememberScrollState())
             ) {
                 Text(
-                    text = "Select and size your quick actions.",
+                    text = translation["manager.dialogs.quick_actions_dialog.subtitle"],
                     style = MaterialTheme.typography.bodyMedium,
                     textAlign = TextAlign.Center,
                     modifier = Modifier
@@ -86,7 +87,7 @@ fun QuickActionsDialog(
                 onClick = { onSave(selected.toList()) },
                 shape = MaterialTheme.shapes.medium
             ) {
-                Text("Save")
+                Text(translation["button.save"])
             }
         },
         dismissButton = {
@@ -94,7 +95,7 @@ fun QuickActionsDialog(
                 onClick = onDismiss,
                 shape = MaterialTheme.shapes.medium
             ) {
-                Text("Cancel")
+                Text(translation["button.cancel"])
             }
         },
         containerColor = MaterialTheme.colorScheme.surface

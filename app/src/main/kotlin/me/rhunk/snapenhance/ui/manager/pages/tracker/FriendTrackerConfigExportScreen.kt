@@ -54,6 +54,8 @@ import me.rhunk.snapenhance.ui.util.saveFile
 import org.json.JSONArray
 
 class FriendTrackerConfigExportScreen : Routes.Route() {
+    override val translation by lazy { context.translation.getCategory("manager.friend_tracker_export") }
+
     @OptIn(ExperimentalMaterial3Api::class)
     override val content: @Composable (androidx.navigation.NavBackStackEntry) -> Unit = { navBackStackEntry ->
         val ruleId = navBackStackEntry.arguments?.getString("rule_id")?.toIntOrNull()
@@ -76,10 +78,10 @@ class FriendTrackerConfigExportScreen : Routes.Route() {
         Scaffold(
             topBar = {
                 TopAppBar(
-                    title = { Text("Export Rules") },
+                    title = { Text(translation["title"]) },
                     navigationIcon = {
                         IconButton(onClick = { routes.navController.popBackStack() }) {
-                            Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back")
+                            Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = translation["back_button_description"])
                         }
                     },
                     actions = {
@@ -89,15 +91,15 @@ class FriendTrackerConfigExportScreen : Routes.Route() {
                                     context.androidContext.contentResolver.openOutputStream(android.net.Uri.parse(uri))?.use {
                                         trackerData?.let { data ->
                                             context.gson.toJson(data).byteInputStream().copyTo(it)
-                                            context.shortToast("Friend Tracker Rules Exported!")
+                                            context.shortToast(translation["exported_toast"])
                                         }
                                     }
                                 }.onFailure {
-                                    context.longToast("Failed to export rules: ${it.message}")
+                                    context.longToast(translation.format("export_failed_toast", "message" to (it.message ?: "Unknown")))
                                 }
                             }
                         }) {
-                            Text("Save")
+                            Text(translation["save_button"])
                         }
                     }
                 )
@@ -127,7 +129,7 @@ class FriendTrackerConfigExportScreen : Routes.Route() {
                                 IconButton(onClick = { isExpanded = !isExpanded }) {
                                     Icon(
                                         imageVector = Icons.Default.KeyboardArrowDown,
-                                        contentDescription = "Expand",
+                                        contentDescription = translation["expand_button_description"],
                                         modifier = Modifier.graphicsLayer(rotationZ = rotationState)
                                     )
                                 }

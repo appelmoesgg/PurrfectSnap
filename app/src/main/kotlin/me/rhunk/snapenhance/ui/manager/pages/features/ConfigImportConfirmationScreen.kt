@@ -48,6 +48,7 @@ import org.json.JSONArray
 import org.json.JSONObject
 
 class ConfigImportConfirmationScreen : Routes.Route() {
+    override val translation by lazy { context.translation.getCategory("manager.features.config_import") }
 
     private data class ImportedFeature(
         val category: String,
@@ -127,7 +128,7 @@ class ConfigImportConfirmationScreen : Routes.Route() {
                         featureList.add(
                             ImportedFeature(
                                 niceCategoryName,
-                                "Enable Feature",
+                                translation["enable_feature"],
                                 categoryKey,
                                 value.getBoolean("state"),
                                 0
@@ -157,7 +158,7 @@ class ConfigImportConfirmationScreen : Routes.Route() {
                 return v.toString()
             }
             return when (value) {
-                is Boolean -> if (value) "Enabled" else "Disabled"
+                is Boolean -> if (value) translation["enabled"] else translation["disabled"]
                 is JSONArray -> {
                     val list = mutableListOf<String>()
                     for (i in 0 until value.length()) {
@@ -181,12 +182,12 @@ class ConfigImportConfirmationScreen : Routes.Route() {
         Scaffold(
             topBar = {
                 TopAppBar(
-                    title = { Text("Confirm Import") },
+                    title = { Text(translation["title"]) },
                     navigationIcon = {
                         IconButton(onClick = { routes.navController.popBackStack() }) {
                             Icon(
                                 Icons.AutoMirrored.Filled.ArrowBack,
-                                contentDescription = "Back"
+                                contentDescription = translation["back_button_description"]
                             )
                         }
                     },
@@ -204,13 +205,13 @@ class ConfigImportConfirmationScreen : Routes.Route() {
                                     )
                                     // Return is not needed since last statement in lambda
                                 }
-                                context.shortToast("Config Imported!")
+                                context.shortToast(translation["config_imported_toast"])
                                 context.coroutineScope.launch(Dispatchers.Main) {
                                     routes.features.navigateReload()
                                 }
                             }
                         }) {
-                            Text("Confirm")
+                            Text(translation["confirm_button"])
                         }
                     }
                 )
@@ -249,7 +250,7 @@ class ConfigImportConfirmationScreen : Routes.Route() {
                                 IconButton(onClick = { expandedState[category] = !isExpanded }) {
                                     Icon(
                                         imageVector = Icons.Default.KeyboardArrowDown,
-                                        contentDescription = "Expand",
+                                        contentDescription = translation["expand_button_description"],
                                         modifier = Modifier.graphicsLayer(rotationZ = rotationState)
                                     )
                                 }

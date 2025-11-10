@@ -4,7 +4,7 @@ declare var _getImportsFunctionName: string;
 declare var _runtimeName: boolean;
 export const runtimeName = _runtimeName;
 
-const remoteImports = require(_runtimeName + '_core/src/DeviceBridge')[_getImportsFunctionName]();
+const remoteImports = require(_runtimeName + '_core/DeviceBridge')[_getImportsFunctionName]();
 
 function callRemoteFunction(method: string, ...args: any[]): any | null {
     return remoteImports[method](...args);

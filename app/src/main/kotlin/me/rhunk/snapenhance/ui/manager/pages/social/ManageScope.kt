@@ -16,6 +16,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavBackStackEntry
 import androidx.navigation.compose.currentBackStackEntryAsState
+import androidx.compose.ui.text.style.TextOverflow
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -38,6 +39,21 @@ import kotlin.io.encoding.Base64
 import kotlin.io.encoding.ExperimentalEncodingApi
 
 class ManageScope: Routes.Route() {
+    override val title: @Composable () -> Unit = {
+        val navBackStackEntry by routes.navController.currentBackStackEntryAsState()
+        val text by rememberAsyncMutableState<String?>(null, keys = arrayOf(navBackStackEntry)) {
+            val scope = navBackStackEntry?.arguments?.getString("scope")?.let { SocialScope.getByName(it) }
+            val id = navBackStackEntry?.arguments?.getString("id")
+            if (scope == null || id == null) return@rememberAsyncMutableState null
+
+            when (scope) {
+                SocialScope.FRIEND -> context.database.getFriendInfo(id)?.displayName
+                SocialScope.GROUP -> context.database.getGroupInfo(id)?.name
+            }
+        }
+        text?.let { Text(it, maxLines = 1, overflow = TextOverflow.Ellipsis) }
+    }
+
     private val dialogs by lazy { AlertDialogs(context.translation) }
 
     private fun deleteScope(scope: SocialScope, id: String, coroutineScope: CoroutineScope) {
@@ -162,7 +178,7 @@ class ManageScope: Routes.Route() {
         EditNoteTextField(
             modifier = Modifier.padding(8.dp),
             primaryColor = Color.White,
-            translation = context.translation,
+            placeholder = context.translation["manager.sections.manage_scope.notes_placeholder"],
             content = scopeNotes,
             setContent = { scopeNotes = it }
         )
@@ -306,18 +322,18 @@ class ManageScope: Routes.Route() {
                                 runCatching {
                                     val key = Base64.decode(newKey)
                                     if (key.size != 32) {
-                                        context.longToast("Invalid key size (must be 32 bytes)")
+                                        context.longToast(translation["invalid_key_size_32_bytes"])
                                         return@runCatching
                                     }
 
                                     context.coroutineScope.launch {
                                         context.e2eeImplementation.storeSharedSecretKey(friend.userId, key)
-                                        context.longToast("Successfully imported key")
+                                        context.longToast(translation["successfully_imported_key"])
                                     }
 
                                     hasSecretKey = true
                                 }.onFailure {
-                                    context.longToast("Failed to import key: ${it.message}")
+                                    context.longToast(translation.format("failed_to_import_key", "message" to (it.message ?: "")))
                                     context.log.error("Failed to import key", it)
                                 }
                             })
@@ -349,7 +365,7 @@ class ManageScope: Routes.Route() {
                                     }
                                 }) {
                                     Text(
-                                        text = "Export Base64",
+                                        text = translation["export_base64_button"],
                                         maxLines = 1
                                     )
                                 }
@@ -357,7 +373,7 @@ class ManageScope: Routes.Route() {
 
                             OutlinedButton(onClick = { importDialog = true }) {
                                 Text(
-                                    text = "Import Base64",
+                                    text = translation["import_base64_button"],
                                     maxLines = 1
                                 )
                             }

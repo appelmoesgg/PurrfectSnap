@@ -56,7 +56,7 @@ class ModContext(
     private val _config by lazy { ModConfig(androidContext, lazyFileHandlerManager) }
     val config get() = _config.root
     val log by lazy { CoreLogger(this.bridgeClient) }
-    val translation by lazy { LocaleWrapper(lazyFileHandlerManager) }
+    val translation by lazy { LocaleWrapper(androidContext, lazyFileHandlerManager) }
     val httpServer = HttpServer()
     val messageSender = MessageSender(this)
 

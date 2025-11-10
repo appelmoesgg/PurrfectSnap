@@ -1,4 +1,4 @@
-﻿{
+{
     "setup": {
         "dialogs": {
             "select_language": "Select Language",
@@ -18,12 +18,10 @@
             "request_button": "Request"
         }
     },
-
     "scopes": {
         "friend": "Friend",
         "group": "Group"
     },
-
     "manager": {
         "routes": {
             "tasks": "Tasks",
@@ -53,7 +51,13 @@
                 "debug_build_summary_title": "You are running a debug build of PurrfectSnap",
                 "debug_build_summary_content": "Version {versionName} ({versionCode})",
                 "debug_build_summary_date": "Build date: {date} ({days} days ago)",
-                "quick_actions_title": "Quick Actions"
+                "quick_actions_title": "Quick Actions",
+                "download_icon_description": "Download",
+                "completed_icon_description": "Completed",
+                "failed_icon_description": "Failed",
+                "manage_quick_actions_description": "Manage Quick Actions",
+                "quick_actions_icon_description": "Quick Actions",
+                "add_quick_action_description": "Add Quick Action"
             },
             "home_logs": {
                 "no_logs_hint": "No logs available",
@@ -70,14 +74,47 @@
                 "success_toast": "Done!",
                 "message_logger_summary": "{messageCount} messages\n{storyCount} stories",
                 "export_button": "Export",
+                "view_button": "View",
                 "clear_button": "Clear",
+                "backup_button": "Backup",
+                "restore_button": "Restore",
                 "view_logger_history_button": "View Logger History",
+                "friend_notes_title": "Friend Notes",
+                "friend_notes_description": "Backup or restore your friend notes.",
+                "friend_notes_backup_success": "Backup successful",
+                "friend_notes_backup_failure": "Failed to backup notes! {error}",
+                "friend_notes_restore_success": "Restore successful",
+                "friend_notes_restore_failure": "Failed to restore notes! {error}",
+                "friend_notes_no_notes_to_backup": "No notes to backup",
                 "updates_title": "Updates",
                 "auto_update_check": "Auto check for updates",
                 "update_check_frequency": "Update check frequency",
                 "update_check_frequency_daily": "Daily",
                 "update_check_frequency_weekly": "Weekly",
-                "update_check_frequency_monthly": "Monthly"
+                "update_check_frequency_monthly": "Monthly",
+                "theme_icon_description": "Theme",
+                "app_theme_title": "App Theme",
+                "theme_mode_system": "System",
+                "theme_mode_light": "Light",
+                "theme_mode_dark": "Dark",
+                "ui_settings_title": "UI Settings",
+                "haptic_feedback_label": "Haptic Feedback",
+                "test_mode_label": "Test Mode (FOR DEBUGGING ONLY)",
+                "disable_feature_loading_label": "Disable Feature Loading",
+                "disable_auto_mapper_label": "Disable Auto Mapper",
+                "disable_bypass_indicator_label": "Disable Bypass Status Indicator",
+                "update_notification_channel_name": "PurrfectSnap Updates",
+                "update_notification_channel_description": "Notifications for PurrfectSnap updates",
+                "update_notification_title": "PurrfectSnap Update Available",
+                "update_notification_text": "Version %s is now available.",
+                "export_database_failed_toast": "Failed to export database! {message}",
+                "clear_messages_failed_toast": "Failed to clear messages! {message}",
+                "clear_file_failed_toast": "Failed to clear file! {message}",
+                "debug_file_config": "Configuration",
+                "debug_file_mappings": "Mappings",
+                "debug_file_message_logger": "Message Logger",
+                "debug_file_pinned_best_friend": "Pinned Best Friend",
+                "debug_file_native_sig_cache": "Native Signature Cache"
             },
             "tasks": {
                 "no_tasks": "No tasks",
@@ -88,7 +125,21 @@
                 "remove_all_tasks_title": "Are you sure you want to remove all tasks?",
                 "delete_files_option": "Also delete files",
                 "remove_selected_tasks_confirm": "Remove {count} tasks?",
-                "remove_all_tasks_confirm": "Remove all tasks?"
+                "remove_all_tasks_confirm": "Remove all tasks?",
+                "clear_tasks_description": "Clear tasks",
+                "file_not_found_icon_description": "File not found",
+                "image_icon_description": "Image",
+                "video_icon_description": "Video",
+                "audio_icon_description": "Audio",
+                "file_icon_description": "File",
+                "download_icon_description": "Download",
+                "chat_action_icon_description": "Chat Action",
+                "cancel_icon_description": "Cancel",
+                "success_icon_description": "Success",
+                "failure_icon_description": "Failure",
+                "cancelled_icon_description": "Cancelled",
+                "task_status_failure": "Failure",
+                "task_status_cancelled": "Cancelled"
             },
             "features": {
                 "disabled": "Disabled",
@@ -134,14 +185,28 @@
                 "streaks_expiration_text_expired": "Expired",
                 "reminder_button": "Set Reminder",
                 "delete_scope_confirm_dialog_title": "Are you sure you want to delete a {scope}?",
-                "notes_placeholder": "Click to add a note"
+                "notes_placeholder": "Click to add a note",
+                "invalid_key_size_32_bytes": "Invalid key size (must be 32 bytes)",
+                "successfully_imported_key": "Successfully imported key",
+                "failed_to_import_key": "Failed to import key: {message}",
+                "export_base64_button": "Export Base64",
+                "import_base64_button": "Import Base64"
             },
             "logged_stories": {
                 "story_failed_to_load": "Failed to load",
                 "no_stories": "No stories found",
-                "save_from_cache_button": "Save from Cache"
+                "save_from_cache_button": "Save from Cache",
+                "downloaded_to_path": "Downloaded to {path}",
+                "download_failed": "Download failed: {message}",
+                "posted_at": "Posted at {date}",
+                "created_at": "Created at {date}",
+                "failed_to_open_file": "Failed to open file. Check logs for more info",
+                "failed_to_get_file": "Failed to get file"
             },
             "messaging_preview": {
+                "processed_messages_toast": "Processed {count} messages",
+                "processed_messages_text": "Processed {count} messages",
+                "close_button_description": "Close",
                 "bridge_connection_failed": "Failed to connect to bridge. Make sure Snapchat is running in the background",
                 "bridge_init_failed": "Failed to initialize messaging bridge. Make sure Snapchat is running in the background",
                 "message_fetch_failed": "Failed to fetch messages",
@@ -150,12 +215,20 @@
                 "save_all_option": "Save All",
                 "unsave_selection_option": "Unsave Selection",
                 "unsave_all_option": "Unsave All",
-                "mark_selection_as_seen_option":  "Mark selected Snap as seen",
+                "mark_selection_as_seen_option": "Mark selected Snap as seen",
                 "mark_all_as_seen_option": "Mark all Snaps as seen",
                 "delete_selection_option": "Delete Selection",
                 "delete_all_option": "Delete All"
             },
             "logger_history": {
+                "download_started_toast": "Download started!",
+                "download_success_toast": "Downloaded to {path}",
+                "download_failed_toast": "Failed to download {message}",
+                "edited_at_text": "{message} (edited at {date})",
+                "download_button": "Download",
+                "select_conversation_placeholder": "Select a conversation",
+                "close_button_description": "Close",
+                "search_button_description": "Search",
                 "list_friend_format": "Friend {name}",
                 "list_group_format": "Group {name}",
                 "no_more_messages": "No more messages",
@@ -164,7 +237,8 @@
                 "empty_message": "Empty Chat Message",
                 "message_parse_failed": "Failed to parse message",
                 "unknown_sender": "Unknown Sender",
-                "download_attachment_failed_toast": "Failed to download attachment"
+                "download_attachment_failed_toast": "Failed to download attachment",
+                "log_header_format": "{username} ({type}) - {date}"
             },
             "file_imports": {
                 "import_file_button": "Import File",
@@ -192,7 +266,11 @@
                 "teleport_to_friend_title": "Teleport to Friend",
                 "search_bar": "Search",
                 "no_friends_map": "No friends on the map",
-                "no_friends_found": "No friends found"
+                "no_friends_found": "No friends found",
+                "edit_location_button_description": "Edit Location",
+                "add_icon_description": "Add",
+                "edit_icon_description": "Edit",
+                "delete_icon_description": "Delete"
             }
         },
         "dialogs": {
@@ -202,7 +280,8 @@
                 "fetch_error": "Failed to fetch data",
                 "category_groups": "Groups",
                 "category_friends": "Friends",
-                "participants_text": "{count} participants"
+                "participants_text": "{count} participants",
+                "search_icon_description": "Search"
             },
             "scripting_warning": {
                 "title": "Warning",
@@ -224,10 +303,254 @@
             "file_imports": {
                 "no_files_settings_hint": "No files found. Make sure you have imported the required files in the File Imports section",
                 "settings_select_file_hint": "Select an imported file"
+            },
+            "quick_actions_dialog": {
+                "title": "Edit Quick Actions",
+                "subtitle": "Select and size your quick actions."
             }
+        },
+        "friend_tracker": {
+            "rules_tab": "Rules",
+            "logs_tab": "Logs",
+            "export_dialog_title": "Export",
+            "bulk_export_button": "Bulk Export",
+            "individual_export_button": "Individual Export",
+            "invalid_import_type_dialog_title": "Invalid Import Type",
+            "invalid_import_type_dialog_text": "The selected file is not compatible with this import type. Please select the correct import type.",
+            "import_dialog_title": "Import",
+            "bulk_import_button": "Bulk Import",
+            "individual_import_button": "Individual Import",
+            "import_button_description": "Import",
+            "export_button_description": "Export",
+            "export_button": "Export",
+            "delete_button_description": "Delete",
+            "delete_button": "Delete",
+            "catalog_button_description": "Catalog",
+            "catalog_button": "Catalog",
+            "add_rule_button_description": "Add Rule",
+            "add_rule_button": "Add Rule",
+            "no_rules_found": "No rules found",
+            "empty_rule_name": "(empty)",
+            "events_suffix": "events",
+            "scopes_suffix": "scopes",
+            "select_rule_to_export_title": "Select Rule to Export",
+            "deleted_logs_toast": "Deleted {count} logs",
+            "delete_logs_dialog_title": "Delete logs?",
+            "deleting_logs_dialog_text": "Deleting {count} logs...",
+            "delete_logs_dialog_confirm_text": "This will delete logs based on the current filter and the search query. This action cannot be undone.",
+            "exported_logs_toast": "Exported logs!",
+            "export_logs_failed_toast": "Failed to export logs. Check logcat for more details.",
+            "export_logs_dialog_title": "Export logs?",
+            "exporting_logs_dialog_text": "Exporting logs...",
+            "export_logs_dialog_confirm_text": "This will export logs based on the current filter and the search query.",
+            "export_as_button": "Export as {type}",
+            "filters_title": "Filters",
+            "search_by_label": "Search by",
+            "newest_first_label": "Newest first",
+            "since_label": "Since",
+            "until_label": "Until",
+            "pick_a_date_button": "Pick a date",
+            "search_placeholder": "Search",
+            "filter_button_description": "Filter",
+            "clear_button_description": "Clear",
+            "no_logs_found": "No logs found",
+            "log_event_format": "{event} in {conversation}",
+            "condition_only_inside_conversation": "Only when I'm inside conversation",
+            "condition_only_outside_conversation": "Only when I'm outside conversation",
+            "condition_only_when_app_active": "Only when Snapchat is active",
+            "condition_only_when_app_inactive": "Only when Snapchat is inactive",
+            "condition_no_push_notification_when_app_active": "No notification when Snapchat is active",
+            "add_event_dialog_title": "Add Event",
+            "event_type_label": "Event type",
+            "triggers_title": "Triggers",
+            "conditions_title": "Conditions",
+            "add_button": "Add",
+            "default_rule_name": "Custom Rule",
+            "discard_changes_dialog_title": "Discard Changes?",
+            "discard_changes_dialog_text": "You have unsaved changes. Are you sure you want to discard them?",
+            "discard_button": "Discard",
+            "cannot_save_rule_dialog_title": "Cannot Save Rule",
+            "cannot_save_rule_dialog_text": "A rule must have at least one event to save.",
+            "duplicate_rule_name_dialog_title": "Duplicate Rule Name",
+            "duplicate_rule_name_dialog_text": "A rule with this name already exists. Please choose a different name.",
+            "delete_rule_dialog_title": "Delete Rule",
+            "delete_rule_dialog_text": "Are you sure you want to delete this rule?",
+            "new_rule_title": "New Rule",
+            "edit_rule_title": "Edit Rule",
+            "back_button_description": "Back",
+            "save_button_description": "Save",
+            "general_section_title": "General",
+            "rule_name_label": "Rule Name",
+            "author_name_label": "Author Name",
+            "scope_section_title": "Scope",
+            "scope_all": "All",
+            "scope_whitelist": "Whitelist",
+            "scope_blacklist": "Blacklist",
+            "select_friends_groups_button": "Select Friends/Groups ({count})",
+            "events_section_title": "Events",
+            "add_event_button": "Add Event",
+            "no_events_text": "No events"
+        },
+        "friend_tracker_catalog": {
+            "download_failed": "Failed download: {code}",
+            "error": "Error: {message}",
+            "no_repos_added": "No repositories added.",
+            "no_rules_available": "No rules available from any repo.",
+            "by_author": "by {author}",
+            "imported_button": "Imported",
+            "import_button": "Import",
+            "title": "Friend Tracker Catalog",
+            "manage_repos_description": "Manage Repositories"
+        },
+        "friend_tracker_export": {
+            "title": "Export Rules",
+            "back_button_description": "Back",
+            "exported_toast": "Friend Tracker Rules Exported!",
+            "export_failed_toast": "Failed to export rules: {message}",
+            "save_button": "Save",
+            "expand_button_description": "Expand"
+        },
+        "friend_tracker_import": {
+            "title": "Import Rules",
+            "back_button_description": "Back",
+            "imported_toast": "Friend Tracker Rules Imported!",
+            "import_failed_toast": "Failed to import rules: {message}",
+            "confirm_button": "Confirm",
+            "expand_button_description": "Expand"
+        },
+        "friend_tracker_repos": {
+            "invalid_repo_title": "Invalid Repository",
+            "add_repo_button": "Add Repository",
+            "add_repo_dialog_title": "Add Repository URL",
+            "repo_url_label": "Repository URL",
+            "repo_added_toast": "Repository added successfully!",
+            "invalid_repo_error": "This does not appear to be a valid Friend Tracker repository.",
+            "add_repo_failed_toast": "Failed to add repository: {message}",
+            "add_button": "Add",
+            "no_repos_added": "No repositories added",
+            "remove_button": "Remove",
+            "remove_repo_dialog_title": "Remove Repository",
+            "remove_repo_dialog_text": "Are you sure you want to remove this repository?"
+        },
+        "navigation": {
+            "tracker_tab_label": "Tracker",
+            "customize_bottom_bar_title": "Customize Bottom Bar",
+            "customize_bottom_bar_subtitle": "Reorder, add or remove tabs. Max of five.",
+            "shown_tabs_title": "Shown Tabs",
+            "no_tabs_selected_text": "No tabs selected",
+            "available_tabs_title": "Available Tabs",
+            "reset_button": "Reset",
+            "done_button": "Done"
+        },
+        "scripting": {
+            "script_already_installed": "Script already installed!",
+            "downloading_script": "Downloading script...",
+            "script_downloaded": "Script {name} downloaded!",
+            "download_script_failed": "Failed to download script. Check logs for more details",
+            "import_script_from_url_title": "Import Script from URL",
+            "import_script_warning": "Warning: Imported scripts can be harmful to your device. Only import scripts from trusted sources.",
+            "enter_url_label": "Enter URL here:",
+            "script_imported": "Script {name} imported!",
+            "import_failed": "Failed to import script. {message}. Check logs for more details",
+            "import_button": "Import",
+            "update_module_button": "Update Module",
+            "updating_script": "Updating script {name}...",
+            "module_not_found": "Module not found",
+            "updated_script": "Updated {name} to version {version}",
+            "update_module_failed": "Failed to update module. Check logs for more details",
+            "edit_module_button": "Edit Module",
+            "open_module_failed": "Failed to open module file. Check logs for more details",
+            "clear_module_data_button": "Clear Module Data",
+            "module_data_cleared": "Module data cleared!",
+            "clear_module_data_failed": "Failed to clear module data. Check logs for more details",
+            "delete_module_button": "Delete Module",
+            "deleted_script": "Deleted script {name}!",
+            "delete_module_failed": "Failed to delete module. Check logs for more details",
+            "actions_title": "Actions",
+            "no_description": "No description",
+            "update_available": "Update available: {version}",
+            "actions_button": "Actions",
+            "loaded_script": "Loaded script {name}",
+            "unloaded_script": "Unloaded script {name}",
+            "enable_script_failed": "Failed to enable script. Check logs for more details",
+            "disable_script_failed": "Failed to disable script. Check logs for more details",
+            "select_scripts_folder_toast": "Please select your scripts folder!",
+            "manage_repos_button": "Manage Repos",
+            "import_from_url_button": "Import from URL",
+            "open_scripts_folder_button": "Open Scripts Folder",
+            "no_settings_for_module": "This module does not have any settings",
+            "installed_scripts_tab": "Installed Scripts",
+            "catalog_tab": "Catalog",
+            "no_scripts_folder_selected_title": "No scripts folder selected",
+            "select_folder_button": "Select folder",
+            "no_scripts_found_title": "No scripts found.",
+            "use_catalog_to_add_scripts": "Use the catalog tab to add scripts!",
+            "ok_button_timeout": "OK ({timeout})",
+            "documentation_button": "Documentation",
+            "catalog": {
+                "script_already_installed": "Script already installed!",
+                "download_failed": "Failed download: {code}",
+                "script_downloaded": "Script downloaded!",
+                "could_not_create_file": "Could not create file.",
+                "no_scripts_folder_selected": "No scripts folder selected.",
+                "error": "Error: {message}",
+                "no_repos_added": "No repositories added.",
+                "repo_list_info": "Here you can find a list of repos: ",
+                "link_text": "Link",
+                "no_scripts_available": "No scripts available from any repo.",
+                "by_author": "by {author}",
+                "version": "Version: {version}",
+                "installed_button": "Installed",
+                "download_button": "Download"
+            },
+            "repos": {
+                "invalid_repo_title": "Invalid Repository",
+                "add_repo_button": "Add Repository",
+                "add_repo_dialog_title": "Add Repository URL",
+                "repo_url_label": "Repository URL",
+                "repo_added_toast": "Repository added successfully!",
+                "invalid_repo_error": "This does not appear to be a valid Script repository.",
+                "add_repo_failed_toast": "Failed to add repository: {message}",
+                "add_button": "Add",
+                "no_repos_added": "No repositories added",
+                "remove_button": "Remove",
+                "remove_repo_dialog_title": "Remove Repository",
+                "remove_repo_dialog_text": "Are you sure you want to remove this repository?"
+            }
+        },
+        "features": {
+            "config_import": {
+                "title": "Confirm Import",
+                "back_button_description": "Back",
+                "config_imported_toast": "Config Imported!",
+                "confirm_button": "Confirm",
+                "expand_button_description": "Expand",
+                "enable_feature": "Enable Feature",
+                "enabled": "Enabled",
+                "disabled": "Disabled"
+            },
+            "config_export": {
+                "title": "Export Summary",
+                "back_button_description": "Back",
+                "save_button": "Save",
+                "expand_button_description": "Expand",
+                "enable_feature": "Enable Feature",
+                "enabled": "Enabled",
+                "disabled": "Disabled"
+            }
+        },
+        "manage_repos": {
+            "title": "Manage {type} Repositories",
+            "add_repo_button": "Add Repository",
+            "add_repo_dialog_title": "Add Repository URL",
+            "repo_url_label": "Repository URL",
+            "repo_added_successfully": "Repository added successfully!",
+            "add_repo_failed": "Failed to add repository: {message}",
+            "add_button": "Add",
+            "no_repos_added": "No repositories added",
+            "remove_button": "Remove"
         }
     },
-
     "rules": {
         "toasts": {
             "enabled": "{ruleName} enabled",
@@ -252,6 +575,14 @@
                 "options": {
                     "blacklist": "Exclude from Stealth Mode",
                     "whitelist": "Stealth mode"
+                }
+            },
+            "hide_typing_indicator": {
+                "name": "Hide Typing Indicator",
+                "description": "Prevents anyone from knowing you're typing",
+                "options": {
+                    "blacklist": "Exclude from Hide Typing Indicator",
+                    "whitelist": "Hide Typing Indicator"
                 }
             },
             "auto_save": {
@@ -292,7 +623,6 @@
             }
         }
     },
-
     "actions": {
         "clean_snapchat_cache": {
             "name": "Clean Snapchat Cache",
@@ -335,12 +665,14 @@
             "description": "View the history of logged messages"
         }
     },
-
     "features": {
+        "friend_notes": {
+            "placeholder": "Click to add a note"
+        },
         "notices": {
-            "unstable": "\u26A0 Unstable",
-            "ban_risk": "\u26A0 This feature may cause bans",
-            "internal_behavior": "\u26A0 This may break Snapchat internal behavior"
+            "unstable": "⚠ Unstable",
+            "ban_risk": "⚠ This feature may cause bans",
+            "internal_behavior": "⚠ This may break Snapchat internal behavior"
         },
         "properties": {
             "downloader": {
@@ -545,7 +877,7 @@
                     },
                     "stealth_mode_indicator": {
                         "name": "Stealth Mode Indicator",
-                        "description": "Adds a \uD83D\uDC7B emoji next to conversations in stealth mode"
+                        "description": "Adds a 👻 emoji next to conversations in stealth mode"
                     },
                     "edit_text_override": {
                         "name": "Edit Text Override",
@@ -588,10 +920,6 @@
                     "hide_bitmoji_presence": {
                         "name": "Hide Bitmoji Presence",
                         "description": "Prevents your Bitmoji from popping up while in Chat"
-                    },
-                    "hide_typing_notifications": {
-                        "name": "Hide Typing Notifications",
-                        "description": "Prevents anyone from knowing you're typing a message"
                     },
                     "unlimited_snap_view_time": {
                         "name": "Unlimited Snap View Time",
@@ -1125,7 +1453,7 @@
                         "properties": {
                             "encrypted_message_indicator": {
                                 "name": "Encrypted Message Indicator",
-                                "description": "Adds a \uD83D\uDD12 emoji next to encrypted messages"
+                                "description": "Adds a 🔒 emoji next to encrypted messages"
                             },
                             "force_message_encryption": {
                                 "name": "Force Message Encryption",
@@ -1210,15 +1538,15 @@
                 "always_dark": "Always Dark"
             },
             "friend_feed_menu_buttons": {
-                "auto_download": "\u2B07\uFE0F Auto Download",
-                "auto_save": "\uD83D\uDCAC Auto Save Messages",
-                "unsaveable_messages": "\u2B07\uFE0F Unsaveable Messages",
-                "auto_open_snaps": "\uD83D\uDCF7 Auto Open Snaps",
-                "stealth": "\uD83D\uDC7B Stealth Mode",
-                "mark_snaps_as_seen": "\uD83D\uDC40 Mark Snaps as seen",
-                "mark_stories_as_seen_locally": "\uD83D\uDC40 Mark Stories as seen locally",
-                "conversation_info": "\uD83D\uDC64 Conversation Info",
-                "e2e_encryption": "\uD83D\uDD12 Use E2E Encryption"
+                "auto_download": "⬇️ Auto Download",
+                "auto_save": "💬 Auto Save Messages",
+                "unsaveable_messages": "⬇️ Unsaveable Messages",
+                "auto_open_snaps": "📷 Auto Open Snaps",
+                "stealth": "👻 Stealth Mode",
+                "mark_snaps_as_seen": "👀 Mark Snaps as seen",
+                "mark_stories_as_seen_locally": "👀 Mark Stories as seen locally",
+                "conversation_info": "👤 Conversation Info",
+                "e2e_encryption": "🔒 Use E2E Encryption"
             },
             "path_format": {
                 "create_author_folder": "Create folder for each author",
@@ -1349,7 +1677,7 @@
                 "following": "Following",
                 "discover": "Discover"
             },
-            "disable_cameras":{
+            "disable_cameras": {
                 "front": "Front Camera",
                 "back": "Back Camera"
             },
@@ -1365,11 +1693,11 @@
                 "phone_calls": "Phone Calls"
             },
             "message_indicators": {
-                "encryption_indicator": "Adds a \uD83D\uDD12 icon next to messages that have been sent only to you",
+                "encryption_indicator": "Adds a 🔒 icon next to messages that have been sent only to you",
                 "platform_indicator": "Adds the platform icon from which a media was sent (e.g. Android, iOS, Web)",
-                "location_indicator": "Adds a \uD83D\uDCCD icon to snaps when they have been sent with location enabled",
+                "location_indicator": "Adds a 📍 icon to snaps when they have been sent with location enabled",
                 "ovf_editor_indicator": "Indicates if a snap has been sent using OVF Editor",
-                "director_mode_indicator": "Adds a \u270F\uFE0F icon to snaps when they have been sent using Director Mode, which can be used to send gallery images as snaps"
+                "director_mode_indicator": "Adds a ✏️ icon to snaps when they have been sent using Director Mode, which can be used to send gallery images as snaps"
             },
             "auto_mark_as_read": {
                 "conversation_read": "Mark conversation as read when sending a message",
@@ -1384,7 +1712,7 @@
                 "bitmoji_background_changes": "Notify when someone changes their Bitmoji background",
                 "bitmoji_scene_changes": "Notify when someone changes their Bitmoji scene"
             },
-            "snapchat_plus":{
+            "snapchat_plus": {
                 "not_subscribed": "Not Subscribed",
                 "basic": "Basic",
                 "ad_free": "Ad Free"
@@ -1402,7 +1730,6 @@
             }
         }
     },
-
     "friend_menu_option": {
         "mark_snaps_as_seen": "Mark Snaps as seen",
         "mark_stories_as_seen_locally": "Mark Stories as seen locally",
@@ -1411,7 +1738,6 @@
         "auto_download_blacklist": "Auto Download Blacklist",
         "anti_auto_save": "Anti Auto Save"
     },
-
     "content_type": {
         "CHAT": "Chat",
         "SNAP": "Snap",
@@ -1436,7 +1762,6 @@
         "STATUS_COUNTDOWN": "Countdown",
         "MAP_REACTION": "Map Reaction"
     },
-
     "media_download_source": {
         "none": "None",
         "pending": "Pending",
@@ -1450,7 +1775,6 @@
         "merged": "Merged",
         "voice_call": "Voice Call"
     },
-
     "chat_action_menu": {
         "preview_button": "Preview",
         "download_button": "Download",
@@ -1458,7 +1782,6 @@
         "show_chat_edit_history": "Show Chat Edit History",
         "convert_message": "Convert Message"
     },
-
     "opera_context_menu": {
         "download": "Download Media",
         "sent_at": "Sent at {date}",
@@ -1468,16 +1791,13 @@
         "media_duration": "Media duration: {duration} ms",
         "show_debug_info": "Show Debug Info"
     },
-
     "modal_option": {
         "profile_info": "Profile Info",
         "close": "Close"
     },
-
     "gallery_media_send_override": {
         "multiple_media_toast": "You can only send one media at a time"
     },
-
     "mark_as_seen": {
         "no_unseen_snaps_toast": "No unseen Snaps found!",
         "seen_toast": "Marked as seen!",
@@ -1485,7 +1805,6 @@
         "already_seen_toast": "Already marked as seen!",
         "already_unseen_toast": "Already marked as unseen!"
     },
-
     "conversation_preview": {
         "streak_expiration": "expires in {day} days {hour} hours {minute} minutes",
         "total_messages": "Total sent/received messages: {count}",
@@ -1493,7 +1812,6 @@
         "unknown_user": "Unknown User",
         "no_messages": "No messages found!"
     },
-
     "profile_info": {
         "title": "Profile Info",
         "first_created_username": "First Created Username",
@@ -1510,7 +1828,6 @@
             "not_subscribed": "Not Subscribed"
         }
     },
-
     "friendship_link_type": {
         "mutual": "Mutual",
         "outgoing": "Outgoing",
@@ -1521,7 +1838,6 @@
         "incoming": "Incoming",
         "incoming_follower": "Incoming Follower"
     },
-
     "bulk_messaging_action": {
         "choose_action_title": "Choose an action",
         "progress_status": "Processing {index} of {total}",
@@ -1535,7 +1851,6 @@
             "clear_conversations": "Clear Conversations"
         }
     },
-
     "chat_export": {
         "exporter_dialog": {
             "select_conversations_title": "Select Conversations",
@@ -1557,7 +1872,6 @@
         "no_messages_found": "No messages found!",
         "exporting_message": "Exporting {conversation}..."
     },
-
     "button": {
         "ok": "OK",
         "positive": "Yes",
@@ -1567,9 +1881,9 @@
         "download": "Download",
         "send": "Send",
         "restore_original": "Restore Original",
-        "convert_external_media": "Convert External Media"
+        "convert_external_media": "Convert External Media",
+        "save": "Save"
     },
-
     "tracker_events": {
         "conversation_enter": "Conversation Enter",
         "conversation_exit": "Conversation Exit",
@@ -1592,14 +1906,12 @@
         "snap_screenshot": "Snap Screenshot",
         "snap_screen_record": "Snap Screen Record"
     },
-
     "tracker_actions": {
         "log": "Log",
         "in_app_notification": "In-App Notification",
         "push_notification": "Push Notification",
         "custom": "Custom"
     },
-
     "better_notifications": {
         "button": {
             "reply": "Reply",
@@ -1607,25 +1919,21 @@
             "mark_as_read": "Mark as Read"
         }
     },
-
     "profile_picture_downloader": {
         "button": "Download Profile Picture",
         "title": "Profile Picture Downloader",
         "avatar_option": "Avatar",
         "background_option": "Background"
     },
-
     "call_start_confirmation": {
         "dialog_title": "Start Call",
         "dialog_message": "Are you sure you want to start a call?"
     },
-
     "half_swipe_notifier": {
         "notification_channel_name": "Half Swipe",
         "notification_content_dm": "{friend} just half-swiped into your chat for {duration} seconds",
         "notification_content_group": "{friend} just half-swiped into {group} for {duration} seconds"
     },
-
     "download_processor": {
         "attachment_type": {
             "snap": "Snap",
@@ -1656,18 +1964,15 @@
             "segment_text": "Segment {from} - {to}"
         }
     },
-
     "streaks_reminder": {
         "notification_title": "Streaks",
         "notification_text": "You will lose your Streak with {friend} in {hoursLeft} hours"
     },
-
     "biometric_auth": {
         "unlock_button": "Unlock",
         "title": "Unlock Snapchat",
         "subtitle": "Please authenticate to unlock Snapchat"
     },
-
     "end_to_end_encryption": {
         "toolbox": {
             "no_shared_key": "You don't have a shared secret with this friend yet. Click below to initiate a new one.",
@@ -1694,12 +1999,10 @@
         "incoming_pk_message": "You just received a public key request. Click below to accept it.",
         "incoming_secret_message": "Your friend just accepted your public key. Click below to accept the secret."
     },
-
     "auto_open_snaps": {
         "title": "Auto Open Snaps",
         "notification_content": "{count} Snaps opened"
     },
-
     "friend_mutation_observer": {
         "notification_channel_name": "Friend Mutation Observer",
         "friend_removed": "{username} has removed you as a friend",
@@ -1711,7 +2014,6 @@
         "bitmoji_background_changed": "{username} has changed their Bitmoji background",
         "bitmoji_scene_changed": "{username} has changed their Bitmoji scene"
     },
-
     "material3_strings": {
         "date_range_picker_start_headline": "From",
         "date_range_picker_end_headline": "To",
@@ -1727,11 +2029,11 @@
         "date_input_invalid_not_allowed": "Invalid date",
         "date_range_input_invalid_range_input": "Invalid date range"
     },
-
     "send_override_dialog": {
         "title": "Send media as {type}",
         "duration": "Duration: {duration}",
         "saveable_snap_hint": "Make Snap saveable in the chat",
         "unlimited_duration": "Unlimited"
-    }
+    },
+    "invalid_input_toast": "Invalid input! Make sure you entered a valid value."
 }

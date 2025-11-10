@@ -43,6 +43,7 @@ import me.rhunk.snapenhance.ui.manager.Routes
 import me.rhunk.snapenhance.ui.util.Dialog
 
 class MessagingPreview: Routes.Route() {
+    override val translation by lazy { context.translation.getCategory("manager.social.messaging_preview") }
     private lateinit var coroutineScope: CoroutineScope
     private lateinit var previewScrollState: LazyListState
 
@@ -188,7 +189,7 @@ class MessagingPreview: Routes.Route() {
                         context.log.verbose("Failed to process messages: ${it.message}")
                         return@invokeOnCompletion
                     }
-                    context.longToast("Processed ${processMessageCount.intValue} messages")
+                    context.longToast(translation.format("processed_messages_toast", "count" to processMessageCount.intValue.toString()))
                 }
             }
         }
@@ -249,7 +250,7 @@ class MessagingPreview: Routes.Route() {
                     horizontalAlignment = Alignment.CenterHorizontally,
                     verticalArrangement = Arrangement.spacedBy(5.dp))
                 {
-                    Text("Processed ${processMessageCount.intValue} messages")
+                    Text(translation.format("processed_messages_text", "count" to processMessageCount.intValue.toString()))
                     if (activeTask?.hasFixedGoal() == true) {
                         LinearProgressIndicator(
                             progress = { processMessageCount.intValue.toFloat() / selectedMessages.size.toFloat() },
@@ -277,7 +278,7 @@ class MessagingPreview: Routes.Route() {
 
         if (selectedMessages.isNotEmpty()) {
             IconButton(onClick = { selectedMessages.clear() }) {
-                Icon(imageVector = Icons.Filled.Close, contentDescription = "Close")
+                Icon(imageVector = Icons.Filled.Close, contentDescription = translation["close_button_description"])
             }
         }
 

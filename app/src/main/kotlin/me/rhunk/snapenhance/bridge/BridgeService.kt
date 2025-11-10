@@ -197,6 +197,14 @@ class BridgeService : Service() {
             remoteSideContext.database.setScopeNotes(id, content)
         }
 
+        override fun getAllScopeNotes(): Map<String, String> {
+            return remoteSideContext.database.getAllScopeNotes()
+        }
+
+        override fun setAllScopeNotes(notes: Map<String, String>) {
+            remoteSideContext.database.setAllScopeNotes(notes)
+        }
+
         override fun getScriptingInterface() = remoteSideContext.scriptManager
 
         override fun getE2eeInterface() = remoteSideContext.e2eeImplementation

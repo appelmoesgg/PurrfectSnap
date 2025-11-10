@@ -12,7 +12,13 @@ try {
 
     if (config.composerLogs) {
         ["log", "error", "warn", "info", "debug"].forEach(method => {
-            console[method] = (...args: any) => log(method, Array.from(args).join(" "));
+            console[method] = (...args: any) => log(method, Array.from(args).map(arg => {
+                try {
+                    return typeof arg === 'object' && arg !== null ? JSON.stringify(arg) : String(arg);
+                } catch (e) {
+                    return '[unserializable]';
+                }
+            }).join(' '));
         })
     }
 

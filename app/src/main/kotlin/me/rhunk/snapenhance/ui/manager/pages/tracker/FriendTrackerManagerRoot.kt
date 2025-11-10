@@ -61,7 +61,13 @@ class FriendTrackerManagerRoot : Routes.Route() {
         CONVERSATION, USERNAME, EVENT
     }
 
-    private val titles = listOf("Rules", "Logs")
+    override val translation by lazy { context.translation.getCategory("manager.friend_tracker") }
+    private val titles by lazy {
+        listOf(
+            translation["rules_tab"],
+            translation["logs_tab"]
+        )
+    }
     private var currentPage by mutableIntStateOf(0)
     private lateinit var logDeleteAction : () -> Unit
     private lateinit var exportAction : () -> Unit
@@ -75,10 +81,10 @@ class FriendTrackerManagerRoot : Routes.Route() {
         if (showExportDialog) {
             ChoiceDialog(
                 onDismissRequest = { showExportDialog = false },
-                title = "Export",
+                title = translation["export_dialog_title"],
                 choices = listOf(
-                    "Bulk Export" to { Icon(Icons.Default.UploadFile, null) },
-                    "Individual Export" to { Icon(Icons.Default.FileOpen, null) }
+                    translation["bulk_export_button"] to { Icon(Icons.Default.UploadFile, translation["bulk_export_button"]) },
+                    translation["individual_export_button"] to { Icon(Icons.Default.FileOpen, translation["individual_export_button"]) }
                 ),
                 onChoiceSelected = { index ->
                     showExportDialog = false
@@ -102,7 +108,8 @@ class FriendTrackerManagerRoot : Routes.Route() {
                     routes.friendTrackerConfigExport.navigate {
                         this["rule_id"] = rule.id.toString()
                     }
-                }
+                },
+                translation = translation
             )
         }
 
@@ -128,11 +135,11 @@ class FriendTrackerManagerRoot : Routes.Route() {
         if (showInvalidImportTypeDialog) {
             AlertDialog(
                 onDismissRequest = { showInvalidImportTypeDialog = false },
-                title = { Text("Invalid Import Type") },
-                text = { Text("The selected file is not compatible with this import type. Please select the correct import type.") },
+                title = { Text(translation["invalid_import_type_dialog_title"]) },
+                text = { Text(translation["invalid_import_type_dialog_text"]) },
                 confirmButton = {
                     Button(onClick = { showInvalidImportTypeDialog = false }) {
-                        Text("OK")
+                        Text(translation["button.ok"])
                     }
                 }
             )
@@ -141,10 +148,10 @@ class FriendTrackerManagerRoot : Routes.Route() {
         if (showImportDialog) {
             ChoiceDialog(
                 onDismissRequest = { showImportDialog = false },
-                title = "Import",
+                title = translation["import_dialog_title"],
                 choices = listOf(
-                    "Bulk Import" to { Icon(Icons.Default.UploadFile, null) },
-                    "Individual Import" to { Icon(Icons.Default.FileOpen, null) }
+                    translation["bulk_import_button"] to { Icon(Icons.Default.UploadFile, translation["bulk_import_button"]) },
+                    translation["individual_import_button"] to { Icon(Icons.Default.FileOpen, translation["individual_import_button"]) }
                 ),
                 onChoiceSelected = { index ->
                     showImportDialog = false
@@ -160,12 +167,12 @@ class FriendTrackerManagerRoot : Routes.Route() {
             IconButton(onClick = {
                 showImportDialog = true
             }) {
-                Icon(Icons.Default.FolderOpen, contentDescription = "Import")
+                Icon(Icons.Default.FolderOpen, contentDescription = translation["import_button_description"])
             }
             IconButton(onClick = {
                 showExportDialog = true
             }) {
-                Icon(Icons.Default.SaveAlt, contentDescription = "Export")
+                Icon(Icons.Default.SaveAlt, contentDescription = translation["export_button_description"])
             }
         }
     }
@@ -183,17 +190,17 @@ class FriendTrackerManagerRoot : Routes.Route() {
                     verticalArrangement = Arrangement.spacedBy(6.dp),
                 ) {
                     ExtendedFloatingActionButton(
-                        icon = { Icon(Icons.Default.SaveAlt, contentDescription = "Export") },
+                        icon = { Icon(Icons.Default.SaveAlt, contentDescription = translation["export_button_description"]) },
                         expanded = true,
-                        text = { Text("Export") },
+                        text = { Text(translation["export_button"]) },
                         onClick = {
                             context.coroutineScope.launch { exportAction() }
                         }
                     )
                     ExtendedFloatingActionButton(
-                        icon = { Icon(Icons.Default.DeleteOutline, contentDescription = "Delete") },
+                        icon = { Icon(Icons.Default.DeleteOutline, contentDescription = translation["delete_button_description"]) },
                         expanded = true,
-                        text = { Text("Delete") },
+                        text = { Text(translation["delete_button"]) },
                         onClick = {
                             context.coroutineScope.launch { logDeleteAction() }
                         }
@@ -203,15 +210,15 @@ class FriendTrackerManagerRoot : Routes.Route() {
             0 -> {
                 Column(verticalArrangement = Arrangement.spacedBy(6.dp), horizontalAlignment = Alignment.End) {
                     ExtendedFloatingActionButton(
-                        icon = { Icon(Icons.Default.Store, contentDescription = "Catalog") },
+                        icon = { Icon(Icons.Default.Store, contentDescription = translation["catalog_button_description"]) },
                         expanded = true,
-                        text = { Text("Catalog") },
+                        text = { Text(translation["catalog_button"]) },
                         onClick = { routes.friendTrackerCatalog.navigate() }
                     )
                     ExtendedFloatingActionButton(
-                        icon = { Icon(Icons.Default.Add, contentDescription = "Add Rule") },
+                        icon = { Icon(Icons.Default.Add, contentDescription = translation["add_rule_button_description"]) },
                         expanded = true,
-                        text = { Text("Add Rule") },
+                        text = { Text(translation["add_rule_button"]) },
                         onClick = { routes.editRule.navigate() }
                     )
                 }
@@ -235,14 +242,14 @@ class FriendTrackerManagerRoot : Routes.Route() {
             ) {
                 item {
                     if (rules.isEmpty()) {
-                        Text("No rules found", modifier = Modifier
+                        Text(translation["no_rules_found"], modifier = Modifier
                             .padding(16.dp)
                             .fillMaxWidth(), textAlign = TextAlign.Center, fontWeight = FontWeight.Light)
                     }
                 }
                 items(rules, key = { it.id }) { rule ->
                     val ruleName by rememberAsyncMutableState(defaultValue = rule.name) {
-                        context.database.getTrackerRule(rule.id)?.name ?: "(empty)"
+                        context.database.getTrackerRule(rule.id)?.name ?: translation["empty_rule_name"]
                     }
                     val eventCount by rememberAsyncMutableState(defaultValue = 0) {
                         context.database.getTrackerEvents(rule.id).size
@@ -279,11 +286,13 @@ class FriendTrackerManagerRoot : Routes.Route() {
                                 Text(ruleName, fontSize = 20.sp, fontWeight = FontWeight.Bold)
                                 Text(buildString {
                                     append(eventCount)
-                                    append(" events")
+                                    append(" ")
+                                    append(translation["events_suffix"])
                                     if (scopeCount > 0) {
                                         append(", ")
                                         append(scopeCount)
-                                        append(" scopes")
+                                        append(" ")
+                                        append(translation["scopes_suffix"])
                                     }
                                 }, fontSize = 13.sp, fontWeight = FontWeight.Light)
                             }
@@ -404,7 +413,8 @@ class FriendTrackerManagerRoot : Routes.Route() {
 private fun SelectRuleDialog(
     onDismissRequest: () -> Unit,
     rules: List<me.rhunk.snapenhance.common.data.TrackerRule>,
-    onRuleSelected: (me.rhunk.snapenhance.common.data.TrackerRule) -> Unit
+    onRuleSelected: (me.rhunk.snapenhance.common.data.TrackerRule) -> Unit,
+    translation: me.rhunk.snapenhance.common.bridge.wrapper.LocaleWrapper
 ) {
     Dialog(onDismissRequest = onDismissRequest) {
         Card(
@@ -415,7 +425,7 @@ private fun SelectRuleDialog(
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.spacedBy(10.dp)
             ) {
-                Text("Select Rule to Export", style = MaterialTheme.typography.headlineSmall)
+                Text(translation["manager.friend_tracker.select_rule_to_export_title"], style = MaterialTheme.typography.headlineSmall)
                 LazyColumn(
                     verticalArrangement = Arrangement.spacedBy(8.dp)
                 ) {
@@ -433,7 +443,7 @@ private fun SelectRuleDialog(
                     }
                 }
                 TextButton(onClick = onDismissRequest) {
-                    Text("Cancel")
+                    Text(translation["button.cancel"])
                 }
             }
         }

@@ -1,0 +1,2022 @@
+{
+    "setup": {
+        "dialogs": {
+            "select_language": "Chọn ngôn ngữ",
+            "save_folder": "PurrfectSnap yêu cầu quyền lưu trữ để tải xuống và lưu phương tiện từ Snapchat.\nVui lòng chọn vị trí nơi phương tiện sẽ được tải xuống.",
+            "select_save_folder_button": "Chọn thư mục"
+        },
+        "mappings": {
+            "dialog": "Đang tạo Ánh xạ, quá trình này có thể mất một lúc ...",
+            "generate_failure_no_snapchat": "PurrfectSnap không thể phát hiện Snapchat, vui lòng thử cài đặt lại Snapchat.",
+            "generate_failure": "Đã xảy ra lỗi khi cố gắng tạo ánh xạ, vui lòng thử lại."
+        },
+        "permissions": {
+            "dialog": "Để tiếp tục, bạn cần phải đáp ứng các yêu cầu sau:",
+            "notification_access": "Truy cập thông báo",
+            "battery_optimization": "Tối ưu hóa pin",
+            "display_over_other_apps": "Hiển thị trên các ứng dụng khác",
+            "request_button": "Lời yêu cầu"
+        }
+    },
+    "scopes": {
+        "friend": "Bạn bè",
+        "group": "Nhóm"
+    },
+    "manager": {
+        "routes": {
+            "tasks": "Nhiệm vụ",
+            "features": "Đặc trưng",
+            "manage_rule_feature": "Quản lý tính năng quy tắc",
+            "home": "Trang chủ",
+            "home_settings": "Cài đặt",
+            "home_logs": "Nhật ký",
+            "logger_history": "Lịch sử ghi nhật ký",
+            "logged_stories": "Câu chuyện đã đăng nhập",
+            "friend_tracker": "Theo dõi bạn bè",
+            "edit_rule": "Chỉnh sửa quy tắc",
+            "file_imports": "Nhập tệp",
+            "manage_repos": "Quản lý kho lưu trữ",
+            "social": "Xã hội",
+            "manage_scope": "Quản lý phạm vi",
+            "messaging_preview": "Xem trước",
+            "scripts": "Tập lệnh",
+            "better_location": "Vị trí tốt hơn"
+        },
+        "sections": {
+            "home": {
+                "version_title": "v{versionName} · phân nhánh bởi Eternal",
+                "update_title": "Cập nhật PurrfectSnap",
+                "update_content": "Đã có phiên bản {version}!",
+                "update_button": "Tải xuống",
+                "debug_build_summary_title": "Bạn đang chạy bản dựng gỡ lỗi của PurrfectSnap",
+                "debug_build_summary_content": "Phiên bản {versionName} ({versionCode})",
+                "debug_build_summary_date": "Ngày xây dựng: {date} ({days} ngày trước)",
+                "quick_actions_title": "Thao tác nhanh",
+                "download_icon_description": "Tải xuống",
+                "completed_icon_description": "Hoàn thành",
+                "failed_icon_description": "Thất bại",
+                "manage_quick_actions_description": "Quản lý thao tác nhanh",
+                "quick_actions_icon_description": "Thao tác nhanh",
+                "add_quick_action_description": "Thêm hành động nhanh"
+            },
+            "home_logs": {
+                "no_logs_hint": "Không có nhật ký nào",
+                "clear_logs_button": "Xóa nhật ký",
+                "export_logs_button": "Xuất nhật ký",
+                "saving_logs_toast": "Đang lưu nhật ký, quá trình này có thể mất một lúc...",
+                "saved_logs_success_toast": "Nhật ký được lưu thành công",
+                "saved_logs_failure_toast": "Không lưu được nhật ký"
+            },
+            "home_settings": {
+                "actions_title": "hành động",
+                "message_logger_title": "Trình ghi tin nhắn",
+                "debug_title": "Gỡ lỗi",
+                "success_toast": "Xong!",
+                "message_logger_summary": "__giữ chỗ_0__ tin nhắn\n__giữ chỗ_1__ câu chuyện",
+                "export_button": "Xuất khẩu",
+                "clear_button": "Thông thoáng",
+                "view_logger_history_button": "Xem lịch sử ghi nhật ký",
+                "updates_title": "Cập nhật",
+                "auto_update_check": "Tự động kiểm tra các bản cập nhật",
+                "update_check_frequency": "Tần suất kiểm tra cập nhật",
+                "update_check_frequency_daily": "Hằng ngày",
+                "update_check_frequency_weekly": "hàng tuần",
+                "update_check_frequency_monthly": "hàng tháng",
+                "theme_icon_description": "chủ đề",
+                "app_theme_title": "Chủ đề ứng dụng",
+                "theme_mode_system": "Hệ thống",
+                "theme_mode_light": "Ánh sáng",
+                "theme_mode_dark": "Tối tăm",
+                "ui_settings_title": "Cài đặt giao diện người dùng",
+                "haptic_feedback_label": "Phản hồi xúc giác",
+                "test_mode_label": "Chế độ kiểm tra (CHỈ ĐỂ GỠ LỖI)",
+                "disable_feature_loading_label": "Tắt tải tính năng",
+                "disable_auto_mapper_label": "Tắt Trình ánh xạ tự động",
+                "disable_bypass_indicator_label": "Tắt chỉ báo trạng thái bỏ qua",
+                "update_notification_channel_name": "Cập nhật PurrfectSnap",
+                "update_notification_channel_description": "Thông báo về cập nhật PurrfectSnap",
+                "update_notification_title": "Đã có bản cập nhật PurrfectSnap",
+                "update_notification_text": "Hiện đã có phiên bản %s.",
+                "export_database_failed_toast": "Không xuất được cơ sở dữ liệu! __giữ chỗ_0__",
+                "clear_messages_failed_toast": "Không thể xóa tin nhắn! __giữ chỗ_0__",
+                "clear_file_failed_toast": "Không thể xóa tập tin! __giữ chỗ_0__",
+                "debug_file_config": "Cấu hình",
+                "debug_file_mappings": "Ánh xạ",
+                "debug_file_message_logger": "Trình ghi tin nhắn",
+                "debug_file_pinned_best_friend": "Đã ghim người bạn thân nhất",
+                "debug_file_native_sig_cache": "Bộ đệm chữ ký gốc"
+            },
+            "tasks": {
+                "no_tasks": "Không có nhiệm vụ",
+                "merge_button": "Hợp nhất",
+                "failed_to_open_file": "Không mở được tập tin",
+                "merge_files_toast": "Hợp nhất các tệp {count}",
+                "remove_selected_tasks_title": "Bạn có chắc chắn muốn xóa các tác vụ đã chọn không?",
+                "remove_all_tasks_title": "Bạn có chắc chắn muốn xóa tất cả công việc không?",
+                "delete_files_option": "Đồng thời xóa các tập tin",
+                "remove_selected_tasks_confirm": "Xóa nhiệm vụ {count}?",
+                "remove_all_tasks_confirm": "Xóa tất cả việc cần làm?",
+                "clear_tasks_description": "Xóa nhiệm vụ",
+                "file_not_found_icon_description": "Không tìm thấy tập tin",
+                "image_icon_description": "Hình ảnh",
+                "video_icon_description": "Băng hình",
+                "audio_icon_description": "Âm thanh",
+                "file_icon_description": "Tài liệu",
+                "download_icon_description": "Tải xuống",
+                "chat_action_icon_description": "Hành động trò chuyện",
+                "cancel_icon_description": "Hủy bỏ",
+                "success_icon_description": "Thành công",
+                "failure_icon_description": "Sự thất bại",
+                "cancelled_icon_description": "Đã hủy",
+                "task_status_failure": "Sự thất bại",
+                "task_status_cancelled": "Đã hủy"
+            },
+            "features": {
+                "disabled": "Tàn tật",
+                "export_option": "Xuất khẩu",
+                "import_option": "Nhập khẩu",
+                "reset_option": "Cài lại",
+                "config_export_success_toast": "Đã xuất cấu hình thành công",
+                "config_import_success_toast": "Cấu hình được nhập thành công",
+                "config_import_failure_toast": "Không nhập được cấu hình {error}",
+                "config_export_failure_toast": "Không xuất được cấu hình {error}",
+                "saved_config_snackbar": "Đã lưu cấu hình",
+                "older_required": "Tính năng này yêu cầu Snapchat v{version} trở lên để hoạt động chính xác",
+                "newer_required": "Tính năng này yêu cầu Snapchat v{version} hoặc mới hơn để hoạt động chính xác",
+                "search_button": "Tìm kiếm"
+            },
+            "manage_rule_feature": {
+                "disable_state_option": "Tàn tật",
+                "disable_state_subtext": "Không có bạn bè/nhóm nào sẽ bị ảnh hưởng",
+                "whitelist_state_option": "Không ai ngoại trừ...",
+                "whitelist_state_subtext": "Chỉ {count} bạn bè/nhóm sẽ bị ảnh hưởng bởi quy tắc này",
+                "whitelist_state_button": "Chọn bạn bè/nhóm được phép",
+                "blacklist_state_option": "Tất cả mọi người ngoại trừ...",
+                "blacklist_state_subtext": "Mọi người ngoại trừ {count} bạn bè/nhóm sẽ bị ảnh hưởng bởi quy tắc này",
+                "blacklist_state_button": "Chọn bạn bè/nhóm bị loại trừ",
+                "clear_list_button": "Xóa danh sách bạn bè/nhóm",
+                "dialog_clear_confirmation_text": "Bạn có chắc chắn muốn xóa danh sách không?"
+            },
+            "social": {
+                "friends_tab": "Bạn",
+                "groups_tab": "Nhóm",
+                "empty_hint": "(trống)",
+                "streaks_expiration_short": "__giữ chỗ_0__h"
+            },
+            "manage_scope": {
+                "logged_stories_button": "Hiển thị các câu chuyện đã ghi",
+                "e2ee_title": "Mã hóa đầu cuối",
+                "rules_title": "Quy tắc",
+                "participants_text": "__giữ chỗ_0__ người tham gia",
+                "not_found": "Không tìm thấy",
+                "streaks_title": "Vệt",
+                "streaks_length_text": "Độ dài: {length}",
+                "streaks_expiration_text": "Hết hạn sau {eta}",
+                "streaks_expiration_text_expired": "Hết hạn",
+                "reminder_button": "Đặt lời nhắc",
+                "delete_scope_confirm_dialog_title": "Bạn có chắc chắn muốn xóa {scope} không?",
+                "notes_placeholder": "Bấm để thêm ghi chú",
+                "invalid_key_size_32_bytes": "Kích thước khóa không hợp lệ (phải là 32 byte)",
+                "successfully_imported_key": "Đã nhập khóa thành công",
+                "failed_to_import_key": "Không nhập được khóa: {message}",
+                "export_base64_button": "Xuất khẩu Base64",
+                "import_base64_button": "Cơ sở nhập khẩu64"
+            },
+            "logged_stories": {
+                "story_failed_to_load": "Không tải được",
+                "no_stories": "Không tìm thấy câu chuyện nào",
+                "save_from_cache_button": "Lưu từ bộ nhớ đệm",
+                "downloaded_to_path": "Đã tải xuống {path}",
+                "download_failed": "Tải xuống không thành công: {message}",
+                "posted_at": "Đăng tại {date}",
+                "created_at": "Được tạo tại {date}",
+                "failed_to_open_file": "Không thể mở tập tin. Kiểm tra nhật ký để biết thêm thông tin",
+                "failed_to_get_file": "Không lấy được tập tin"
+            },
+            "messaging_preview": {
+                "processed_messages_toast": "Đã xử lý {count} tin nhắn",
+                "processed_messages_text": "Đã xử lý {count} tin nhắn",
+                "close_button_description": "Đóng",
+                "bridge_connection_failed": "Không thể kết nối với cầu. Đảm bảo Snapchat đang chạy ở chế độ nền",
+                "bridge_init_failed": "Không khởi tạo được cầu nối nhắn tin. Đảm bảo Snapchat đang chạy ở chế độ nền",
+                "message_fetch_failed": "Không tìm nạp được tin nhắn",
+                "no_message_hint": "Không có tin nhắn",
+                "save_selection_option": "Lưu lựa chọn",
+                "save_all_option": "Lưu tất cả",
+                "unsave_selection_option": "Bỏ lưu lựa chọn",
+                "unsave_all_option": "Bỏ lưu tất cả",
+                "mark_selection_as_seen_option": "Đánh dấu chọn Snap là đã xem",
+                "mark_all_as_seen_option": "Đánh dấu tất cả Snaps là đã xem",
+                "delete_selection_option": "Xóa lựa chọn",
+                "delete_all_option": "Xóa tất cả"
+            },
+            "logger_history": {
+                "download_started_toast": "Đã bắt đầu tải xuống!",
+                "download_success_toast": "Đã tải xuống {path}",
+                "download_failed_toast": "Không tải xuống được {message}",
+                "edited_at_text": "{message} (được chỉnh sửa tại {date})",
+                "download_button": "Tải xuống",
+                "select_conversation_placeholder": "Chọn một cuộc trò chuyện",
+                "close_button_description": "Đóng",
+                "search_button_description": "Tìm kiếm",
+                "list_friend_format": "Bạn bè __giữ chỗ_0__",
+                "list_group_format": "Nhóm __giữ chỗ_0__",
+                "no_more_messages": "Không còn tin nhắn nào nữa",
+                "reverse_order_checkbox": "Thứ tự ngược lại",
+                "chat_attachment": "Tệp đính kèm {index}",
+                "empty_message": "Tin nhắn trò chuyện trống",
+                "message_parse_failed": "Không thể phân tích tin nhắn",
+                "unknown_sender": "Người gửi không xác định",
+                "download_attachment_failed_toast": "Không tải được tệp đính kèm xuống",
+                "log_header_format": "{username} ({type}) - {date}"
+            },
+            "file_imports": {
+                "import_file_button": "Nhập tệp",
+                "file_not_found": "Không tìm thấy tập tin",
+                "file_import_failed": "Không thể nhập tệp: {error}",
+                "file_imported": "Đã nhập tệp thành công",
+                "file_delete_failed": "Không thể xóa tập tin",
+                "no_files_hint": "Tại đây bạn có thể nhập tệp để sử dụng trong Snapchat. Nhấn nút bên dưới để nhập tập tin."
+            },
+            "better_location": {
+                "spoofed_coordinates_title": "Vĩ độ {latitude}, Long {longitude}",
+                "save_coordinates_dialog_title": "Lưu tọa độ",
+                "saved_name_dialog_hint": "Tên đã lưu",
+                "latitude_dialog_hint": "Vĩ độ",
+                "longitude_dialog_hint": "Kinh độ",
+                "save_dialog_button": "Cứu",
+                "choose_location_button": "Chọn vị trí",
+                "teleport_to_friend_button": "Dịch chuyển đến bạn bè",
+                "spoof_location_toggle": "Vị trí giả mạo",
+                "suspend_location_updates": "Tạm dừng cập nhật vị trí",
+                "saved_coordinates_title": "Tọa độ đã lưu",
+                "no_saved_coordinates_hint": "Không có tọa độ nào được lưu",
+                "delete_dialog_title": "Xóa tọa độ đã lưu",
+                "delete_dialog_message": "Bạn có chắc chắn muốn xóa tọa độ đã lưu này không?",
+                "teleport_to_friend_title": "Dịch chuyển đến bạn bè",
+                "search_bar": "Tìm kiếm",
+                "no_friends_map": "Không có bạn bè trên bản đồ",
+                "no_friends_found": "Không tìm thấy bạn bè",
+                "edit_location_button_description": "Chỉnh sửa vị trí",
+                "add_icon_description": "Thêm vào",
+                "edit_icon_description": "Biên tập",
+                "delete_icon_description": "Xóa bỏ"
+            }
+        },
+        "dialogs": {
+            "add_friend": {
+                "title": "Thêm bạn bè hoặc nhóm",
+                "search_hint": "Tìm kiếm",
+                "fetch_error": "Không thể tìm nạp dữ liệu",
+                "category_groups": "Nhóm",
+                "category_friends": "Bạn",
+                "participants_text": "__giữ chỗ_0__ người tham gia",
+                "search_icon_description": "Tìm kiếm"
+            },
+            "scripting_warning": {
+                "title": "Cảnh báo",
+                "content": "PurrfectSnap bao gồm một công cụ tạo tập lệnh, cho phép thực thi mã do người dùng xác định trên thiết bị của bạn. Hãy hết sức thận trọng và chỉ cài đặt các mô-đun từ các nguồn đã biết, đáng tin cậy. Các mô-đun trái phép hoặc chưa được xác minh có thể gây ra rủi ro bảo mật cho hệ thống của bạn."
+            },
+            "reset_config": {
+                "title": "Đặt lại cấu hình",
+                "content": "Bạn có chắc chắn muốn đặt lại cấu hình không?",
+                "success_toast": "Đặt lại cấu hình thành công"
+            },
+            "export_config": {
+                "title": "Xuất dữ liệu nhạy cảm?",
+                "content": "Bạn có muốn xuất cấu hình có dữ liệu nhạy cảm không? (Chẳng hạn như tọa độ vị trí, v.v.)"
+            },
+            "messaging_action": {
+                "title": "Chọn loại nội dung để xử lý",
+                "select_all_button": "Chọn tất cả"
+            },
+            "file_imports": {
+                "no_files_settings_hint": "Không tìm thấy tập tin nào. Đảm bảo bạn đã nhập các tệp được yêu cầu trong phần Nhập tệp",
+                "settings_select_file_hint": "Chọn một tập tin đã nhập"
+            },
+            "quick_actions_dialog": {
+                "title": "Chỉnh sửa thao tác nhanh",
+                "subtitle": "Chọn và kích thước các hành động nhanh chóng của bạn."
+            }
+        },
+        "friend_tracker": {
+            "rules_tab": "Quy tắc",
+            "logs_tab": "Nhật ký",
+            "export_dialog_title": "Xuất khẩu",
+            "bulk_export_button": "Xuất số lượng lớn",
+            "individual_export_button": "Xuất riêng lẻ",
+            "invalid_import_type_dialog_title": "Loại nhập không hợp lệ",
+            "invalid_import_type_dialog_text": "Tệp đã chọn không tương thích với kiểu nhập này. Vui lòng chọn đúng loại nhập.",
+            "import_dialog_title": "Nhập khẩu",
+            "bulk_import_button": "Nhập số lượng lớn",
+            "individual_import_button": "Nhập khẩu riêng lẻ",
+            "import_button_description": "Nhập khẩu",
+            "export_button_description": "Xuất khẩu",
+            "export_button": "Xuất khẩu",
+            "delete_button_description": "Xóa bỏ",
+            "delete_button": "Xóa bỏ",
+            "catalog_button_description": "Danh mục",
+            "catalog_button": "Danh mục",
+            "add_rule_button_description": "Thêm quy tắc",
+            "add_rule_button": "Thêm quy tắc",
+            "no_rules_found": "Không tìm thấy quy tắc nào",
+            "empty_rule_name": "(trống)",
+            "events_suffix": "sự kiện",
+            "scopes_suffix": "phạm vi",
+            "select_rule_to_export_title": "Chọn quy tắc để xuất",
+            "deleted_logs_toast": "Đã xóa nhật ký {count}",
+            "delete_logs_dialog_title": "Xóa nhật ký?",
+            "deleting_logs_dialog_text": "Đang xóa nhật ký {count}...",
+            "delete_logs_dialog_confirm_text": "Thao tác này sẽ xóa nhật ký dựa trên bộ lọc hiện tại và truy vấn tìm kiếm. Không thể hoàn tác hành động này.",
+            "exported_logs_toast": "Nhật ký đã xuất!",
+            "export_logs_failed_toast": "Không thể xuất nhật ký. Kiểm tra logcat để biết thêm chi tiết.",
+            "export_logs_dialog_title": "Xuất nhật ký?",
+            "exporting_logs_dialog_text": "Đang xuất nhật ký...",
+            "export_logs_dialog_confirm_text": "Thao tác này sẽ xuất nhật ký dựa trên bộ lọc hiện tại và truy vấn tìm kiếm.",
+            "export_as_button": "Xuất dưới dạng {type}",
+            "filters_title": "Bộ lọc",
+            "search_by_label": "Tìm kiếm theo",
+            "newest_first_label": "Mới nhất đầu tiên",
+            "since_label": "Từ",
+            "until_label": "Cho đến khi",
+            "pick_a_date_button": "Chọn một ngày",
+            "search_placeholder": "Tìm kiếm",
+            "filter_button_description": "Lọc",
+            "clear_button_description": "Thông thoáng",
+            "no_logs_found": "Không tìm thấy nhật ký nào",
+            "log_event_format": "{event} trong {conversation}",
+            "condition_only_inside_conversation": "Chỉ khi tôi ở trong cuộc trò chuyện",
+            "condition_only_outside_conversation": "Chỉ khi tôi ở bên ngoài trò chuyện",
+            "condition_only_when_app_active": "Chỉ khi Snapchat hoạt động",
+            "condition_only_when_app_inactive": "Chỉ khi Snapchat không hoạt động",
+            "condition_no_push_notification_when_app_active": "Không có thông báo khi Snapchat hoạt động",
+            "add_event_dialog_title": "Thêm sự kiện",
+            "event_type_label": "Loại sự kiện",
+            "triggers_title": "Trình kích hoạt",
+            "conditions_title": "Điều kiện",
+            "add_button": "Thêm vào",
+            "default_rule_name": "Quy tắc tùy chỉnh",
+            "discard_changes_dialog_title": "Hủy thay đổi?",
+            "discard_changes_dialog_text": "Bạn có những thay đổi chưa được lưu. Bạn có chắc chắn muốn loại bỏ chúng không?",
+            "discard_button": "Loại bỏ",
+            "cannot_save_rule_dialog_title": "Không thể lưu quy tắc",
+            "cannot_save_rule_dialog_text": "Một quy tắc phải có ít nhất một sự kiện để lưu.",
+            "duplicate_rule_name_dialog_title": "Tên quy tắc trùng lặp",
+            "duplicate_rule_name_dialog_text": "Một quy tắc có tên này đã tồn tại. Vui lòng chọn một tên khác.",
+            "delete_rule_dialog_title": "Xóa quy tắc",
+            "delete_rule_dialog_text": "Bạn có chắc chắn muốn xóa quy tắc này không?",
+            "new_rule_title": "Quy tắc mới",
+            "edit_rule_title": "Chỉnh sửa quy tắc",
+            "back_button_description": "Mặt sau",
+            "save_button_description": "Cứu",
+            "general_section_title": "Tổng quan",
+            "rule_name_label": "Tên quy tắc",
+            "author_name_label": "Tên tác giả",
+            "scope_section_title": "Phạm vi",
+            "scope_all": "Tất cả",
+            "scope_whitelist": "Danh sách trắng",
+            "scope_blacklist": "Danh sách đen",
+            "select_friends_groups_button": "Chọn Bạn bè/Nhóm ({count})",
+            "events_section_title": "Sự kiện",
+            "add_event_button": "Thêm sự kiện",
+            "no_events_text": "Không có sự kiện"
+        },
+        "friend_tracker_catalog": {
+            "download_failed": "Tải xuống không thành công: {code}",
+            "error": "Lỗi: {message}",
+            "no_repos_added": "Không có kho lưu trữ nào được thêm vào.",
+            "no_rules_available": "Không có quy tắc nào có sẵn từ bất kỳ repo nào.",
+            "by_author": "bởi {author}",
+            "imported_button": "Đã nhập",
+            "import_button": "Nhập khẩu",
+            "title": "Danh mục theo dõi bạn bè",
+            "manage_repos_description": "Quản lý kho lưu trữ"
+        },
+        "friend_tracker_export": {
+            "title": "Quy tắc xuất khẩu",
+            "back_button_description": "Mặt sau",
+            "exported_toast": "Đã xuất quy tắc theo dõi bạn bè!",
+            "export_failed_toast": "Không xuất được quy tắc: {message}",
+            "save_button": "Cứu",
+            "expand_button_description": "Mở rộng"
+        },
+        "friend_tracker_import": {
+            "title": "Quy tắc nhập khẩu",
+            "back_button_description": "Mặt sau",
+            "imported_toast": "Đã nhập quy tắc theo dõi bạn bè!",
+            "import_failed_toast": "Không thể nhập quy tắc: {message}",
+            "confirm_button": "Xác nhận",
+            "expand_button_description": "Mở rộng"
+        },
+        "friend_tracker_repos": {
+            "invalid_repo_title": "Kho lưu trữ không hợp lệ",
+            "add_repo_button": "Thêm kho lưu trữ",
+            "add_repo_dialog_title": "Thêm URL kho lưu trữ",
+            "repo_url_label": "URL kho lưu trữ",
+            "repo_added_toast": "Đã thêm kho lưu trữ thành công!",
+            "invalid_repo_error": "Có vẻ như đây không phải là kho lưu trữ theo dõi bạn bè hợp lệ.",
+            "add_repo_failed_toast": "Không thêm được kho lưu trữ: {message}",
+            "add_button": "Thêm vào",
+            "no_repos_added": "Không có kho lưu trữ nào được thêm vào",
+            "remove_button": "Di dời",
+            "remove_repo_dialog_title": "Xóa kho lưu trữ",
+            "remove_repo_dialog_text": "Bạn có chắc chắn muốn xóa kho lưu trữ này không?"
+        },
+        "navigation": {
+            "tracker_tab_label": "Trình theo dõi",
+            "customize_bottom_bar_title": "Tùy chỉnh thanh dưới cùng",
+            "customize_bottom_bar_subtitle": "Sắp xếp lại, thêm hoặc xóa các tab. Tối đa là năm.",
+            "shown_tabs_title": "Tab được hiển thị",
+            "no_tabs_selected_text": "Không có tab nào được chọn",
+            "available_tabs_title": "Các tab có sẵn",
+            "reset_button": "Cài lại",
+            "done_button": "Xong"
+        },
+        "scripting": {
+            "script_already_installed": "Tập lệnh đã được cài đặt sẵn!",
+            "downloading_script": "Đang tải xuống tập lệnh...",
+            "script_downloaded": "Đã tải xuống tập lệnh {name}!",
+            "download_script_failed": "Không tải được tập lệnh xuống. Kiểm tra nhật ký để biết thêm chi tiết",
+            "import_script_from_url_title": "Nhập tập lệnh từ URL",
+            "import_script_warning": "Cảnh báo: Các tập lệnh đã nhập có thể gây hại cho thiết bị của bạn. Chỉ nhập tập lệnh từ các nguồn đáng tin cậy.",
+            "enter_url_label": "Nhập URL vào đây:",
+            "script_imported": "Đã nhập tập lệnh {name}!",
+            "import_failed": "Không thể nhập tập lệnh. __giữ chỗ_0__. Kiểm tra nhật ký để biết thêm chi tiết",
+            "import_button": "Nhập khẩu",
+            "update_module_button": "Mô-đun cập nhật",
+            "updating_script": "Đang cập nhật tập lệnh {name}...",
+            "module_not_found": "Không tìm thấy mô-đun",
+            "updated_script": "Đã cập nhật {name} lên phiên bản {version}",
+            "update_module_failed": "Không thể cập nhật mô-đun. Kiểm tra nhật ký để biết thêm chi tiết",
+            "edit_module_button": "Chỉnh sửa mô-đun",
+            "open_module_failed": "Không thể mở tập tin mô-đun. Kiểm tra nhật ký để biết thêm chi tiết",
+            "clear_module_data_button": "Xóa dữ liệu mô-đun",
+            "module_data_cleared": "Đã xóa dữ liệu mô-đun!",
+            "clear_module_data_failed": "Không thể xóa dữ liệu mô-đun. Kiểm tra nhật ký để biết thêm chi tiết",
+            "delete_module_button": "Xóa mô-đun",
+            "deleted_script": "Đã xóa tập lệnh {name}!",
+            "delete_module_failed": "Không thể xóa mô-đun. Kiểm tra nhật ký để biết thêm chi tiết",
+            "actions_title": "hành động",
+            "no_description": "Không có mô tả",
+            "update_available": "Đã có bản cập nhật: {version}",
+            "actions_button": "hành động",
+            "loaded_script": "Đã tải tập lệnh {name}",
+            "unloaded_script": "Tập lệnh đã được dỡ bỏ {name}",
+            "enable_script_failed": "Không bật được tập lệnh. Kiểm tra nhật ký để biết thêm chi tiết",
+            "disable_script_failed": "Không tắt được tập lệnh. Kiểm tra nhật ký để biết thêm chi tiết",
+            "select_scripts_folder_toast": "Vui lòng chọn thư mục tập lệnh của bạn!",
+            "manage_repos_button": "Quản lý kho lưu trữ",
+            "import_from_url_button": "Nhập từ URL",
+            "open_scripts_folder_button": "Mở thư mục tập lệnh",
+            "no_settings_for_module": "Mô-đun này không có bất kỳ cài đặt nào",
+            "installed_scripts_tab": "Tập lệnh đã cài đặt",
+            "catalog_tab": "Danh mục",
+            "no_scripts_folder_selected_title": "Không có thư mục tập lệnh nào được chọn",
+            "select_folder_button": "Chọn thư mục",
+            "no_scripts_found_title": "Không tìm thấy tập lệnh nào.",
+            "use_catalog_to_add_scripts": "Sử dụng tab danh mục để thêm tập lệnh!",
+            "ok_button_timeout": "Được rồi (__giữ chỗ_0__)",
+            "documentation_button": "Tài liệu",
+            "catalog": {
+                "script_already_installed": "Tập lệnh đã được cài đặt sẵn!",
+                "download_failed": "Tải xuống không thành công: {code}",
+                "script_downloaded": "Đã tải xuống tập lệnh!",
+                "could_not_create_file": "Không thể tạo tập tin.",
+                "no_scripts_folder_selected": "Không có thư mục tập lệnh nào được chọn.",
+                "error": "Lỗi: {message}",
+                "no_repos_added": "Không có kho lưu trữ nào được thêm vào.",
+                "repo_list_info": "Tại đây bạn có thể tìm thấy danh sách các kho lưu trữ:",
+                "link_text": "liên kết",
+                "no_scripts_available": "Không có tập lệnh nào có sẵn từ bất kỳ repo nào.",
+                "by_author": "bởi {author}",
+                "version": "Phiên bản: {version}",
+                "installed_button": "Đã cài đặt",
+                "download_button": "Tải xuống"
+            },
+            "repos": {
+                "invalid_repo_title": "Kho lưu trữ không hợp lệ",
+                "add_repo_button": "Thêm kho lưu trữ",
+                "add_repo_dialog_title": "Thêm URL kho lưu trữ",
+                "repo_url_label": "URL kho lưu trữ",
+                "repo_added_toast": "Đã thêm kho lưu trữ thành công!",
+                "invalid_repo_error": "Đây dường như không phải là kho lưu trữ Script hợp lệ.",
+                "add_repo_failed_toast": "Không thêm được kho lưu trữ: {message}",
+                "add_button": "Thêm vào",
+                "no_repos_added": "Không có kho lưu trữ nào được thêm vào",
+                "remove_button": "Di dời",
+                "remove_repo_dialog_title": "Xóa kho lưu trữ",
+                "remove_repo_dialog_text": "Bạn có chắc chắn muốn xóa kho lưu trữ này không?"
+            }
+        },
+        "features": {
+            "config_import": {
+                "title": "Xác nhận nhập",
+                "back_button_description": "Mặt sau",
+                "config_imported_toast": "Đã nhập cấu hình!",
+                "confirm_button": "Xác nhận",
+                "expand_button_description": "Mở rộng",
+                "enable_feature": "Bật tính năng",
+                "enabled": "Đã bật",
+                "disabled": "Tàn tật"
+            },
+            "config_export": {
+                "title": "Xuất Tóm tắt",
+                "back_button_description": "Mặt sau",
+                "save_button": "Cứu",
+                "expand_button_description": "Mở rộng",
+                "enable_feature": "Bật tính năng",
+                "enabled": "Đã bật",
+                "disabled": "Tàn tật"
+            }
+        },
+        "manage_repos": {
+            "title": "Quản lý kho lưu trữ {type}",
+            "add_repo_button": "Thêm kho lưu trữ",
+            "add_repo_dialog_title": "Thêm URL kho lưu trữ",
+            "repo_url_label": "URL kho lưu trữ",
+            "repo_added_successfully": "Đã thêm kho lưu trữ thành công!",
+            "add_repo_failed": "Không thêm được kho lưu trữ: {message}",
+            "add_button": "Thêm vào",
+            "no_repos_added": "Không có kho lưu trữ nào được thêm vào",
+            "remove_button": "Di dời"
+        }
+    },
+    "rules": {
+        "toasts": {
+            "enabled": "Đã bật {ruleName}",
+            "disabled": "{ruleName} bị vô hiệu hóa"
+        },
+        "modes": {
+            "blacklist": "Chế độ danh sách đen",
+            "whitelist": "Chế độ danh sách trắng"
+        },
+        "properties": {
+            "auto_download": {
+                "name": "Tự động tải xuống",
+                "description": "Tự động tải xuống Snaps khi xem chúng",
+                "options": {
+                    "blacklist": "Loại trừ khỏi Tự động tải xuống",
+                    "whitelist": "Tự động tải xuống"
+                }
+            },
+            "stealth": {
+                "name": "Chế độ tàng hình",
+                "description": "Ngăn không cho bất kỳ ai biết bạn đã mở Snap/Trò chuyện và cuộc trò chuyện của họ",
+                "options": {
+                    "blacklist": "Loại trừ khỏi Chế độ ẩn",
+                    "whitelist": "Chế độ tàng hình"
+                }
+            },
+            "auto_save": {
+                "name": "Tự động lưu",
+                "description": "Lưu tin nhắn trò chuyện khi xem chúng",
+                "options": {
+                    "blacklist": "Loại trừ khỏi Tự động lưu",
+                    "whitelist": "Tự động lưu"
+                }
+            },
+            "unsaveable_messages": {
+                "name": "Tin nhắn không thể lưu",
+                "description": "Ngăn người khác lưu tin nhắn trong cuộc trò chuyện",
+                "options": {
+                    "blacklist": "Loại trừ khỏi tin nhắn không thể lưu",
+                    "whitelist": "Tin nhắn không thể lưu"
+                }
+            },
+            "auto_open_snaps": {
+                "name": "Tự động mở Snaps",
+                "description": "Tự động mở Snaps khi nhận được chúng",
+                "options": {
+                    "blacklist": "Loại trừ khỏi Snaps tự động mở",
+                    "whitelist": "Tự động mở Snaps"
+                }
+            },
+            "hide_friend_feed": {
+                "name": "Ẩn khỏi Nguồn cấp dữ liệu của Bạn bè"
+            },
+            "e2e_encryption": {
+                "name": "Sử dụng mã hóa E2E"
+            },
+            "pin_conversation": {
+                "name": "Ghim cuộc trò chuyện"
+            },
+            "exclude_message_logger": {
+                "name": "Loại trừ khỏi Trình ghi tin nhắn"
+            }
+        }
+    },
+    "actions": {
+        "clean_snapchat_cache": {
+            "name": "Làm sạch bộ đệm Snapchat",
+            "description": "Làm sạch bộ đệm Snapchat"
+        },
+        "manage_friend_list": {
+            "name": "Quản lý danh sách bạn bè",
+            "description": "Nhập/xuất danh sách bạn bè của bạn khi sao lưu"
+        },
+        "export_chat_messages": {
+            "name": "Xuất tin nhắn trò chuyện",
+            "description": "Xuất tin nhắn hội thoại thành tệp JSON/HTML/TXT"
+        },
+        "export_memories": {
+            "name": "Xuất ký ức",
+            "description": "Xuất ký ức thành tệp ZIP"
+        },
+        "bulk_messaging_action": {
+            "name": "Hành động nhắn tin hàng loạt",
+            "description": "Thực hiện các thao tác như xóa bạn bè hoặc xóa hàng loạt cuộc trò chuyện"
+        },
+        "regen_mappings": {
+            "name": "Tạo lại ánh xạ",
+            "description": "Tạo lại ánh xạ theo cách thủ công"
+        },
+        "change_language": {
+            "name": "Thay đổi ngôn ngữ",
+            "description": "Thay đổi ngôn ngữ của PurrfectSnap"
+        },
+        "file_imports": {
+            "name": "Nhập tệp",
+            "description": "Nhập tệp để sử dụng trong Snapchat"
+        },
+        "friend_tracker": {
+            "name": "Theo dõi bạn bè",
+            "description": "Theo dõi bạn bè của bạn trên Snapchat"
+        },
+        "logger_history": {
+            "name": "Lịch sử ghi nhật ký",
+            "description": "Xem lịch sử tin nhắn đã ghi"
+        }
+    },
+    "features": {
+        "notices": {
+            "unstable": "⚠ Không ổn định",
+            "ban_risk": "⚠ Tính năng này có thể gây ra lệnh cấm",
+            "internal_behavior": "⚠ Điều này có thể phá vỡ hành vi nội bộ của Snapchat"
+        },
+        "properties": {
+            "downloader": {
+                "name": "Trình tải xuống",
+                "description": "Tải xuống Snapchat Media",
+                "properties": {
+                    "save_folder": {
+                        "name": "Lưu thư mục",
+                        "description": "Chọn thư mục mà tất cả phương tiện sẽ được tải xuống"
+                    },
+                    "auto_download_sources": {
+                        "name": "Nguồn tải xuống tự động",
+                        "description": "Chọn các nguồn để tự động tải xuống từ"
+                    },
+                    "prevent_self_auto_download": {
+                        "name": "Ngăn chặn việc tự động tải xuống",
+                        "description": "Ngăn chặn việc tải xuống Snaps của riêng bạn một cách tự động"
+                    },
+                    "path_format": {
+                        "name": "Định dạng đường dẫn",
+                        "description": "Chỉ định định dạng đường dẫn tệp"
+                    },
+                    "allow_duplicate": {
+                        "name": "Cho phép trùng lặp",
+                        "description": "Cho phép tải xuống cùng một phương tiện nhiều lần"
+                    },
+                    "merge_overlays": {
+                        "name": "Hợp nhất lớp phủ",
+                        "description": "Kết hợp Văn bản và phương tiện của Snap vào một tệp duy nhất"
+                    },
+                    "force_image_format": {
+                        "name": "Buộc định dạng hình ảnh",
+                        "description": "Buộc hình ảnh được lưu ở Định dạng được chỉ định"
+                    },
+                    "force_voice_note_format": {
+                        "name": "Buộc định dạng ghi chú giọng nói",
+                        "description": "Buộc lưu Ghi chú bằng giọng nói ở Định dạng được chỉ định"
+                    },
+                    "auto_download_voice_notes": {
+                        "name": "Tự động tải xuống Ghi chú bằng giọng nói",
+                        "description": "Tự động tải xuống ghi chú giọng nói khi phát chúng"
+                    },
+                    "download_profile_pictures": {
+                        "name": "Tải xuống ảnh hồ sơ",
+                        "description": "Cho phép bạn tải xuống Ảnh hồ sơ từ trang hồ sơ"
+                    },
+                    "opera_download_button": {
+                        "name": "Nút tải xuống Opera",
+                        "description": "Thêm nút tải xuống ở góc trên bên phải khi xem Snap.\nNhấn và giữ các nút sẽ buộc tải xuống"
+                    },
+                    "download_context_menu": {
+                        "name": "Trình đơn ngữ cảnh tải xuống",
+                        "description": "Cho phép bạn tải xuống/xem trước tin nhắn từ một cuộc trò chuyện hoặc một câu chuyện bằng menu ngữ cảnh.\nNhấn và giữ các nút sẽ buộc tải xuống"
+                    },
+                    "ffmpeg_options": {
+                        "name": "Tùy chọn FFmpeg",
+                        "description": "Chỉ định các tùy chọn FFmpeg bổ sung",
+                        "properties": {
+                            "threads": {
+                                "name": "chủ đề",
+                                "description": "Số lượng chủ đề sử dụng"
+                            },
+                            "preset": {
+                                "name": "cài sẵn",
+                                "description": "Đặt tốc độ chuyển đổi"
+                            },
+                            "constant_rate_factor": {
+                                "name": "Hệ số tỷ lệ không đổi",
+                                "description": "Đặt hệ số tốc độ không đổi cho bộ mã hóa video\nTừ 0 đến 51 cho libx264"
+                            },
+                            "video_bitrate": {
+                                "name": "Tốc độ bit của video",
+                                "description": "Đặt tốc độ bit video (kbps)"
+                            },
+                            "audio_bitrate": {
+                                "name": "Tốc độ bit âm thanh",
+                                "description": "Đặt tốc độ bit âm thanh (kbps)"
+                            },
+                            "custom_video_codec": {
+                                "name": "Bộ giải mã video tùy chỉnh",
+                                "description": "Đặt Codec video tùy chỉnh (ví dụ: libx264)"
+                            },
+                            "custom_audio_codec": {
+                                "name": "Bộ giải mã âm thanh tùy chỉnh",
+                                "description": "Đặt Codec âm thanh tùy chỉnh (ví dụ: AAC)"
+                            }
+                        }
+                    },
+                    "logging": {
+                        "name": "Ghi nhật ký",
+                        "description": "Hiển thị chúc mừng khi phương tiện đang tải xuống"
+                    },
+                    "custom_path_format": {
+                        "name": "Định dạng đường dẫn tùy chỉnh",
+                        "description": "Chỉ định định dạng đường dẫn tùy chỉnh cho phương tiện đã tải xuống\n\nCác biến có sẵn:\n - %tên người dùng%\n - %nguồn%\n - %băm%\n - %date_time%"
+                    }
+                }
+            },
+            "user_interface": {
+                "name": "Giao diện người dùng",
+                "description": "Thay đổi giao diện của Snapchat",
+                "properties": {
+                    "enable_app_appearance": {
+                        "name": "Bật cài đặt giao diện ứng dụng",
+                        "description": "Bật cài đặt giao diện ứng dụng ẩn\nCó thể không bắt buộc trên các phiên bản Snapchat mới hơn"
+                    },
+                    "friend_feed_message_preview": {
+                        "name": "Xem trước tin nhắn trên nguồn cấp dữ liệu bạn bè",
+                        "description": "Hiển thị bản xem trước của tin nhắn cuối cùng trong Nguồn cấp dữ liệu bạn bè",
+                        "properties": {
+                            "amount": {
+                                "name": "Số lượng",
+                                "description": "Số lượng tin nhắn được xem trước"
+                            }
+                        }
+                    },
+                    "snap_preview": {
+                        "name": "Xem trước nhanh",
+                        "description": "Hiển thị một bản xem trước nhỏ bên cạnh các Snap chưa được xem trong cuộc trò chuyện"
+                    },
+                    "bootstrap_override": {
+                        "name": "Ghi đè Bootstrap",
+                        "description": "Ghi đè cài đặt khởi động giao diện người dùng",
+                        "properties": {
+                            "app_appearance": {
+                                "name": "Giao diện ứng dụng",
+                                "description": "Đặt giao diện ứng dụng liên tục"
+                            },
+                            "home_tab": {
+                                "name": "Tab Trang chủ",
+                                "description": "Ghi đè tab khởi động khi mở Snapchat"
+                            }
+                        }
+                    },
+                    "force_amoled_theme": {
+                        "name": "Chế độ tối Amoled",
+                        "description": "Sử dụng nền đen thực sự cho chủ đề tối"
+                    },
+                    "map_friend_nametags": {
+                        "name": "Thẻ tên bản đồ bạn bè nâng cao",
+                        "description": "Cải thiện Thẻ tên của bạn bè trên Snapmap"
+                    },
+                    "prevent_message_list_auto_scroll": {
+                        "name": "Ngăn danh sách tin nhắn tự động cuộn",
+                        "description": "Ngăn danh sách tin nhắn cuộn xuống cuối khi gửi/nhận tin nhắn"
+                    },
+                    "streak_expiration_info": {
+                        "name": "Hiển thị thông tin hết hạn chuỗi",
+                        "description": "Hiển thị bộ đếm thời gian hết hạn của vệt bên cạnh bộ đếm vệt"
+                    },
+                    "hide_friend_feed_entry": {
+                        "name": "Ẩn mục nhập nguồn cấp dữ liệu bạn bè",
+                        "description": "Ẩn một người bạn cụ thể khỏi Nguồn cấp dữ liệu bạn bè\nSử dụng tab xã hội để quản lý tính năng này"
+                    },
+                    "hide_streak_restore": {
+                        "name": "Ẩn Khôi phục Chuỗi",
+                        "description": "Ẩn nút Khôi phục trong nguồn cấp dữ liệu bạn bè"
+                    },
+                    "hide_quick_add_suggestions": {
+                        "name": "Ẩn đề xuất thêm nhanh",
+                        "description": "Loại bỏ đề xuất thêm bạn bè nhanh chóng"
+                    },
+                    "hide_story_suggestions": {
+                        "name": "Ẩn gợi ý câu chuyện",
+                        "description": "Xóa đề xuất khỏi trang Câu chuyện"
+                    },
+                    "hide_ui_components": {
+                        "name": "Ẩn thành phần giao diện người dùng",
+                        "description": "Chọn thành phần giao diện người dùng nào cần ẩn"
+                    },
+                    "opera_media_quick_info": {
+                        "name": "Thông tin nhanh về Opera Media",
+                        "description": "Hiển thị thông tin hữu ích của phương tiện như ngày tạo trong menu ngữ cảnh của trình xem opera"
+                    },
+                    "old_bitmoji_selfie": {
+                        "name": "Ảnh tự sướng Bitmoji cũ",
+                        "description": "Mang lại ảnh tự chụp Bitmoji từ các phiên bản Snapchat cũ hơn"
+                    },
+                    "disable_spotlight": {
+                        "name": "Tắt tiêu điểm",
+                        "description": "Tắt trang Spotlight"
+                    },
+                    "friend_feed_menu_buttons": {
+                        "name": "Nút menu nguồn cấp dữ liệu bạn bè",
+                        "description": "Chọn nút nào sẽ hiển thị trong Menu Nguồn cấp dữ liệu Bạn bè"
+                    },
+                    "auto_close_friend_feed_menu": {
+                        "name": "Tự động đóng menu nguồn cấp dữ liệu bạn bè",
+                        "description": "Tự động đóng Menu Nguồn cấp dữ liệu bạn bè sau khi nhấn nút cài đặt"
+                    },
+                    "vertical_story_viewer": {
+                        "name": "Trình xem câu chuyện dọc",
+                        "description": "Cho phép trình xem câu chuyện dọc cho tất cả các câu chuyện"
+                    },
+                    "enable_friend_feed_menu_bar": {
+                        "name": "Thanh menu nguồn cấp dữ liệu bạn bè",
+                        "description": "Kích hoạt Thanh menu Nguồn cấp dữ liệu Bạn bè mới"
+                    },
+                    "message_indicators": {
+                        "name": "Chỉ báo tin nhắn",
+                        "description": "Thêm biểu tượng chỉ báo cụ thể vào tin nhắn\nLưu ý: Các chỉ số có thể không chính xác 100%"
+                    },
+                    "stealth_mode_indicator": {
+                        "name": "Chỉ báo chế độ ẩn",
+                        "description": "Thêm biểu tượng cảm xúc 👻 bên cạnh cuộc trò chuyện ở chế độ ẩn"
+                    },
+                    "edit_text_override": {
+                        "name": "Chỉnh sửa ghi đè văn bản",
+                        "description": "Ghi đè hành vi của trường văn bản"
+                    },
+                    "prevent_forced_keyboard": {
+                        "name": "Ngăn chặn bàn phím cưỡng bức",
+                        "description": "Ngăn Snapchat tự động bật bàn phím khi bạn mở cuộc trò chuyện"
+                    },
+                    "settings_menu": {
+                        "name": "Trình đơn cài đặt",
+                        "description": "Thay đổi cách bạn mở menu PurrfectSnap",
+                        "options": {
+                            "default": "Mặc định",
+                            "legacy": "Di sản"
+                        }
+                    }
+                }
+            },
+            "messaging": {
+                "name": "Nhắn tin",
+                "description": "Thay đổi cách bạn tương tác với bạn bè",
+                "properties": {
+                    "bypass_screenshot_detection": {
+                        "name": "Bỏ qua phát hiện ảnh chụp màn hình",
+                        "description": "Ngăn Snapchat phát hiện khi bạn chụp ảnh màn hình"
+                    },
+                    "anonymous_story_viewing": {
+                        "name": "Xem câu chuyện ẩn danh",
+                        "description": "Ngăn chặn bất cứ ai biết bạn đã xem câu chuyện của họ"
+                    },
+                    "prevent_story_rewatch_indicator": {
+                        "name": "Ngăn chặn chỉ báo xem lại câu chuyện",
+                        "description": "Ngăn không cho người khác biết bạn đã xem lại câu chuyện của họ"
+                    },
+                    "hide_peek_a_peek": {
+                        "name": "Ẩn Nhìn trộm",
+                        "description": "Ngăn thông báo được gửi khi bạn vuốt nửa chừng vào cuộc trò chuyện"
+                    },
+                    "hide_bitmoji_presence": {
+                        "name": "Ẩn sự hiện diện của Bitmoji",
+                        "description": "Ngăn Bitmoji của bạn bật lên khi đang trò chuyện"
+                    },
+                    "hide_typing_notifications": {
+                        "name": "Ẩn thông báo gõ",
+                        "description": "Ngăn không cho người khác biết bạn đang gõ tin nhắn"
+                    },
+                    "unlimited_snap_view_time": {
+                        "name": "Thời gian xem Snap không giới hạn",
+                        "description": "Loại bỏ giới hạn thời gian để xem Snaps"
+                    },
+                    "auto_mark_as_read": {
+                        "name": "Tự động đánh dấu là đã đọc",
+                        "description": "Tự động đánh dấu tin nhắn/ảnh chụp nhanh là đã đọc ngay cả khi bật Chế độ ẩn"
+                    },
+                    "mark_snap_as_seen_button": {
+                        "name": "Đánh dấu nút chụp là đã xem",
+                        "description": "Thêm nút để đánh dấu một Snap là đã thấy khi xem nó.\nĐiều này sẽ hoạt động ngay cả khi Chế độ ẩn được bật"
+                    },
+                    "skip_when_marking_as_seen": {
+                        "name": "Bỏ qua khi đánh dấu là đã xem",
+                        "description": "Tự động chuyển sang Snap tiếp theo khi đánh dấu một Snap là đã xem.\nSử dụng kết hợp với nút Mark Snap as Seen"
+                    },
+                    "loop_media_playback": {
+                        "name": "Phát lại phương tiện vòng lặp",
+                        "description": "Lặp lại quá trình phát lại phương tiện khi xem Snaps / Stories"
+                    },
+                    "disable_replay_in_ff": {
+                        "name": "Vô hiệu hóa phát lại trong FF",
+                        "description": "Vô hiệu hóa khả năng phát lại khi nhấn và giữ từ Nguồn cấp dữ liệu bạn bè"
+                    },
+                    "half_swipe_notifier": {
+                        "name": "Trình thông báo vuốt một nửa",
+                        "description": "Thông báo cho bạn khi ai đó vuốt nhẹ vào cuộc trò chuyện",
+                        "properties": {
+                            "min_duration": {
+                                "name": "Thời lượng tối thiểu",
+                                "description": "Thời lượng tối thiểu của một nửa lần vuốt (tính bằng giây)"
+                            },
+                            "max_duration": {
+                                "name": "Thời lượng tối đa",
+                                "description": "Thời lượng tối đa của một nửa lần vuốt (tính bằng giây)"
+                            }
+                        }
+                    },
+                    "call_start_confirmation": {
+                        "name": "Xác nhận bắt đầu cuộc gọi",
+                        "description": "Hiển thị hộp thoại xác nhận khi bắt đầu cuộc gọi"
+                    },
+                    "unlimited_conversation_pinning": {
+                        "name": "Ghim cuộc trò chuyện không giới hạn",
+                        "description": "Cho phép bạn ghim số lượng cuộc hội thoại không giới hạn cục bộ"
+                    },
+                    "disable_snap_mode_restrictions": {
+                        "name": "Vô hiệu hóa hạn chế chế độ chụp",
+                        "description": "Cho phép bạn xem Snaps tự hủy mà không bị hạn chế"
+                    },
+                    "prevent_message_sending": {
+                        "name": "Ngăn chặn việc gửi tin nhắn",
+                        "description": "Ngăn chặn gửi một số loại tin nhắn"
+                    },
+                    "friend_mutation_notifier": {
+                        "name": "Trình thông báo đột biến bạn bè",
+                        "description": "Thông báo cho bạn khi có gì đó thay đổi trong hồ sơ của bạn bè"
+                    },
+                    "better_notifications": {
+                        "name": "Thông báo tốt hơn",
+                        "description": "Thêm thông tin khác trong thông báo đã nhận",
+                        "properties": {
+                            "group_notifications": {
+                                "name": "Thông báo nhóm",
+                                "description": "Nhóm thông báo thành một thông báo duy nhất"
+                            },
+                            "chat_preview": {
+                                "name": "Xem trước cuộc trò chuyện",
+                                "description": "Hiển thị bản xem trước của tin nhắn đã nhận trong thông báo"
+                            },
+                            "media_preview": {
+                                "name": "Xem trước phương tiện",
+                                "description": "Hiển thị bản xem trước của các loại phương tiện đã chọn trong thông báo"
+                            },
+                            "media_caption": {
+                                "name": "Chú thích phương tiện",
+                                "description": "Hiển thị chú thích đính kèm của phương tiện trong thông báo"
+                            },
+                            "stacked_media_messages": {
+                                "name": "Tin nhắn phương tiện xếp chồng",
+                                "description": "Kết hợp nhiều tin nhắn đa phương tiện thành một thông báo văn bản khi không thể xem trước chúng. Sử dụng kết hợp với Chat Preview"
+                            },
+                            "friend_add_source": {
+                                "name": "Bạn bè Thêm nguồn",
+                                "description": "Hiển thị nguồn của yêu cầu kết bạn trong thông báo"
+                            },
+                            "reply_button": {
+                                "name": "Nút trả lời",
+                                "description": "Thêm nút trả lời vào thông báo"
+                            },
+                            "smart_replies": {
+                                "name": "Trả lời thông minh",
+                                "description": "Thêm câu trả lời được đề xuất cho thông báo (Android 10+). Sử dụng kết hợp với Nút Trả lời"
+                            },
+                            "download_button": {
+                                "name": "Nút tải xuống",
+                                "description": "Cho phép bạn tải xuống phương tiện từ thông báo"
+                            },
+                            "mark_as_read_button": {
+                                "name": "Nút đánh dấu là đã đọc",
+                                "description": "Cho phép bạn đánh dấu tin nhắn là đã đọc từ thông báo"
+                            },
+                            "mark_as_read_and_save_in_chat": {
+                                "name": "Đánh dấu là đã đọc và lưu trong trò chuyện",
+                                "description": "Thêm dấu là đã đọc và lưu trong nút trò chuyện vào thông báo"
+                            }
+                        }
+                    },
+                    "notification_blacklist": {
+                        "name": "Danh sách đen thông báo",
+                        "description": "Chọn thông báo sẽ bị chặn"
+                    },
+                    "message_logger": {
+                        "name": "Trình ghi tin nhắn",
+                        "description": "Ngăn chặn tin nhắn bị xóa",
+                        "properties": {
+                            "keep_my_own_messages": {
+                                "name": "Giữ tin nhắn của riêng tôi",
+                                "description": "Ngăn chặn tin nhắn của chính bạn bị xóa"
+                            },
+                            "auto_purge": {
+                                "name": "Tự động thanh lọc",
+                                "description": "Tự động xóa các tin nhắn được lưu trong bộ nhớ cache cũ hơn khoảng thời gian được chỉ định"
+                            },
+                            "message_filter": {
+                                "name": "Bộ lọc tin nhắn",
+                                "description": "Chọn tin nhắn nào sẽ được ghi lại (trống cho tất cả tin nhắn)"
+                            },
+                            "deleted_message_color": {
+                                "name": "Màu tin nhắn đã xóa",
+                                "description": "Đặt màu của tin nhắn đã xóa"
+                            }
+                        }
+                    },
+                    "auto_save_messages_in_conversations": {
+                        "name": "Tự động lưu tin nhắn",
+                        "description": "Tự động lưu mọi tin nhắn trong cuộc trò chuyện"
+                    },
+                    "gallery_media_send_override": {
+                        "name": "Ghi đè gửi phương tiện thư viện",
+                        "description": "Giả mạo nguồn phương tiện khi gửi từ Thư viện"
+                    },
+                    "strip_media_metadata": {
+                        "name": "Dải siêu dữ liệu phương tiện",
+                        "description": "Xóa siêu dữ liệu của phương tiện trước khi gửi dưới dạng tin nhắn"
+                    },
+                    "bypass_message_retention_policy": {
+                        "name": "Bỏ qua chính sách lưu giữ tin nhắn",
+                        "description": "Ngăn chặn tin nhắn bị xóa sau khi xem chúng"
+                    },
+                    "bypass_message_action_restrictions": {
+                        "name": "Bỏ qua hạn chế hành động tin nhắn",
+                        "description": "Cho phép bạn phản ứng với ảnh chụp nhanh mà không cần mở nó hoặc lưu tin nhắn không thể lưu"
+                    },
+                    "remove_groups_locked_status": {
+                        "name": "Xóa trạng thái khóa nhóm",
+                        "description": "Cho phép xem thông tin nhóm sau khi bị đá"
+                    },
+                    "double_tap_chat_action": {
+                        "name": "Hành động trò chuyện nhấn đúp",
+                        "description": "Thực hiện hành động tùy chỉnh khi nhấn đúp vào tin nhắn trong cuộc trò chuyện"
+                    },
+                    "double_tap_chat_action_custom_emoji": {
+                        "name": "Nhấn đúp vào hành động trò chuyện Phản ứng biểu tượng cảm xúc tùy chỉnh",
+                        "description": "Đặt phản ứng biểu tượng cảm xúc tùy chỉnh cho hành động trò chuyện nhấn đúp"
+                    }
+                }
+            },
+            "global": {
+                "name": "Toàn cầu",
+                "description": "Tinh chỉnh cài đặt Snapchat toàn cầu",
+                "properties": {
+                    "better_location": {
+                        "name": "Vị trí tốt hơn",
+                        "description": "Tăng cường vị trí Snapchat",
+                        "properties": {
+                            "spoof_location": {
+                                "name": "Vị trí giả mạo",
+                                "description": "Giả mạo vị trí của bạn đến một vị trí được chỉ định"
+                            },
+                            "coordinates": {
+                                "name": "tọa độ",
+                                "description": "Đặt tọa độ của vị trí giả mạo"
+                            },
+                            "walk_radius": {
+                                "name": "Bán kính bước đi",
+                                "description": "Đi bộ ngẫu nhiên trong bán kính này (ft)"
+                            },
+                            "always_update_location": {
+                                "name": "Luôn cập nhật vị trí",
+                                "description": "Buộc Snapchat cập nhật vị trí ngay cả khi không nhận được dữ liệu GPS"
+                            },
+                            "suspend_location_updates": {
+                                "name": "Tạm dừng cập nhật vị trí",
+                                "description": "Ngăn không cho cập nhật vị trí của bạn"
+                            },
+                            "spoof_battery_level": {
+                                "name": "Mức pin giả mạo",
+                                "description": "Giả mạo mức pin của thiết bị của bạn trên bản đồ\nGiá trị phải nằm trong khoảng từ 0 đến 100"
+                            },
+                            "spoof_headphones": {
+                                "name": "Tai nghe giả mạo",
+                                "description": "Giả mạo trạng thái nghe nhạc trên bản đồ"
+                            },
+                            "show_battery_level": {
+                                "name": "Hiển thị mức pin",
+                                "description": "Hiển thị mức pin của bạn bè trên bản đồ"
+                            }
+                        }
+                    },
+                    "snapchat_plus": {
+                        "name": "Snapchat Plus",
+                        "description": "Kích hoạt tính năng Snapchat Plus\nMột số tính năng phía Máy chủ có thể không hoạt động"
+                    },
+                    "media_upload_quality": {
+                        "name": "Chất lượng tải lên phương tiện",
+                        "description": "Ghi đè chất lượng tải lên phương tiện",
+                        "properties": {
+                            "force_video_upload_source_quality": {
+                                "name": "Buộc chất lượng nguồn tải lên video",
+                                "description": "Buộc Snapchat sử dụng chất lượng nguồn khi tải video lên\nXin lưu ý rằng thao tác này có thể không xóa siêu dữ liệu khỏi phương tiện"
+                            },
+                            "disable_image_compression": {
+                                "name": "Vô hiệu hóa nén hình ảnh",
+                                "description": "Vô hiệu hóa nén hình ảnh khi tải lên phương tiện"
+                            },
+                            "custom_image_upload_format": {
+                                "name": "Định dạng tải lên hình ảnh tùy chỉnh",
+                                "description": "Đặt định dạng tải lên hình ảnh tùy chỉnh\nChọn định dạng lossless (như PNG) để có chất lượng tốt nhất"
+                            }
+                        }
+                    },
+                    "disable_confirmation_dialogs": {
+                        "name": "Tắt hộp thoại xác nhận",
+                        "description": "Tự động xác nhận các hành động đã chọn"
+                    },
+                    "auto_updater": {
+                        "name": "Tự động cập nhật",
+                        "description": "Tự động kiểm tra các bản cập nhật mới"
+                    },
+                    "disable_metrics": {
+                        "name": "Vô hiệu hóa số liệu",
+                        "description": "Chặn gửi dữ liệu phân tích cụ thể tới Snapchat"
+                    },
+                    "disable_story_sections": {
+                        "name": "Tắt phần câu chuyện",
+                        "description": "Xóa các phần khỏi trang Câu chuyện\nCó thể yêu cầu làm mới để hoạt động bình thường"
+                    },
+                    "block_ads": {
+                        "name": "Chặn quảng cáo",
+                        "description": "Ngăn chặn quảng cáo được hiển thị"
+                    },
+                    "disable_custom_tabs": {
+                        "name": "Vô hiệu hóa các tab tùy chỉnh",
+                        "description": "Mở liên kết trong các ứng dụng được hỗ trợ thay vì trong Trình duyệt Web"
+                    },
+                    "disable_permission_requests": {
+                        "name": "Vô hiệu hóa yêu cầu cấp phép",
+                        "description": "Ngăn Snapchat yêu cầu các quyền cụ thể"
+                    },
+                    "disable_memories_snap_feed": {
+                        "name": "Tắt nguồn cấp dữ liệu Snap của kỷ niệm",
+                        "description": "Ngăn Snapchat hiển thị những kỷ niệm gần đây khi bạn vuốt lên trong máy ảnh"
+                    },
+                    "spotlight_comments_username": {
+                        "name": "Bình luận tiêu điểm Tên người dùng",
+                        "description": "Hiển thị tên người dùng tác giả trong nhận xét Spotlight"
+                    },
+                    "bypass_video_length_restriction": {
+                        "name": "Bỏ qua các hạn chế về độ dài video",
+                        "description": "Single: gửi một video duy nhất\nSplit: chia nhỏ video sau khi chỉnh sửa"
+                    },
+                    "default_video_playback_rate": {
+                        "name": "Tốc độ phát lại video mặc định",
+                        "description": "Đặt tốc độ mặc định để phát lại video\nGiá trị phải nằm trong khoảng từ 0,1 đến 4,0"
+                    },
+                    "video_playback_rate_slider": {
+                        "name": "Thanh trượt tốc độ phát lại video",
+                        "description": "Thêm thanh trượt trong menu ngữ cảnh opera để thay đổi tốc độ phát lại video\nLưu ý: Thay đổi chỉ áp dụng cho các video tiếp theo"
+                    },
+                    "disable_google_play_dialogs": {
+                        "name": "Tắt hộp thoại Dịch vụ Google Play",
+                        "description": "Ngăn không cho hiển thị hộp thoại về tính khả dụng của Dịch vụ Google Play"
+                    },
+                    "default_volume_controls": {
+                        "name": "Điều khiển âm lượng mặc định",
+                        "description": "Buộc Snapchat sử dụng điều khiển âm lượng hệ thống"
+                    },
+                    "disable_telecom_framework": {
+                        "name": "Vô hiệu hóa khung viễn thông",
+                        "description": "Ngăn Snapchat sử dụng khung Android Telecom\nĐiều này cho phép bạn nghe nhạc trong khi gọi điện"
+                    },
+                    "hide_active_music": {
+                        "name": "Ẩn nhạc đang hoạt động",
+                        "description": "Ngăn Snapchat biết bạn đang nghe nhạc\nĐiều này sẽ cho phép bạn chụp ảnh nhanh bằng các nút điều khiển âm lượng trong khi nghe nhạc"
+                    },
+                    "disable_snap_splitting": {
+                        "name": "Tắt tính năng chia tách Snap",
+                        "description": "Ngăn chặn việc chia Snap thành nhiều phần\nHình ảnh bạn gửi sẽ chuyển thành video"
+                    }
+                }
+            },
+            "rules": {
+                "name": "Quy tắc",
+                "description": "Quản lý các tính năng tự động cho từng người"
+            },
+            "camera": {
+                "name": "Máy ảnh",
+                "description": "Điều chỉnh cài đặt phù hợp để có bức ảnh chụp hoàn hảo",
+                "properties": {
+                    "disable_cameras": {
+                        "name": "Vô hiệu hóa máy ảnh",
+                        "description": "Ngăn Snapchat sử dụng các máy ảnh đã chọn"
+                    },
+                    "black_photos": {
+                        "name": "Ảnh đen",
+                        "description": "Thay thế ảnh đã chụp bằng nền đen\nVideo không bị ảnh hưởng"
+                    },
+                    "immersive_camera_preview": {
+                        "name": "Xem trước phong phú",
+                        "description": "Ngăn Snapchat cắt xén phần xem trước của máy ảnh\nĐiều này có thể khiến máy ảnh bị rung trên một số thiết bị"
+                    },
+                    "override_front_resolution": {
+                        "name": "Ghi đè độ phân giải phía trước",
+                        "description": "Ghi đè độ phân giải camera cho camera trước"
+                    },
+                    "override_back_resolution": {
+                        "name": "Ghi đè độ phân giải quay lại",
+                        "description": "Ghi đè độ phân giải camera cho camera sau"
+                    },
+                    "custom_resolution": {
+                        "name": "Độ phân giải tùy chỉnh",
+                        "description": "Đặt độ phân giải camera tùy chỉnh, chiều rộng x chiều cao (ví dụ: 1920x1080).\nĐộ phân giải tùy chỉnh phải được thiết bị của bạn hỗ trợ"
+                    },
+                    "front_custom_frame_rate": {
+                        "name": "Tốc độ khung hình tùy chỉnh phía trước",
+                        "description": "Ghi đè tốc độ khung hình của camera trước"
+                    },
+                    "back_custom_frame_rate": {
+                        "name": "Quay lại Tốc độ khung hình tùy chỉnh",
+                        "description": "Ghi đè tốc độ khung hình của camera sau"
+                    },
+                    "force_camera_source_encoding": {
+                        "name": "Buộc mã hóa nguồn máy ảnh",
+                        "description": "Buộc mã hóa nguồn camera"
+                    },
+                    "startup_default_camera": {
+                        "name": "Máy ảnh mặc định khởi động",
+                        "description": "Đặt camera mặc định khi mở Snapchat"
+                    },
+                    "hevc_recording": {
+                        "name": "Ghi âm HEVC",
+                        "description": "Sử dụng codec HEVC (H.265) để quay video"
+                    }
+                }
+            },
+            "streaks_reminder": {
+                "name": "Nhắc nhở vệt",
+                "description": "Thông báo định kỳ cho bạn về Chuỗi của bạn",
+                "properties": {
+                    "interval": {
+                        "name": "Khoảng thời gian",
+                        "description": "Khoảng thời gian giữa mỗi lần nhắc nhở (giờ)"
+                    },
+                    "remaining_hours": {
+                        "name": "Thời gian còn lại",
+                        "description": "Khoảng thời gian còn lại trước khi thông báo được hiển thị (giờ)"
+                    },
+                    "group_notifications": {
+                        "name": "Thông báo nhóm",
+                        "description": "Nhóm thông báo thành một thông báo duy nhất"
+                    }
+                }
+            },
+            "experimental": {
+                "name": "thực nghiệm",
+                "description": "Tính năng thử nghiệm",
+                "properties": {
+                    "native_hooks": {
+                        "name": "Móc bản địa",
+                        "description": "Các tính năng không an toàn gắn vào mã gốc của Snapchat",
+                        "properties": {
+                            "composer_hooks": {
+                                "name": "Móc soạn nhạc",
+                                "description": "Đưa mã vào khung giao diện người dùng đa nền tảng của Composer",
+                                "properties": {
+                                    "show_first_created_username": {
+                                        "name": "Hiển thị tên người dùng được tạo đầu tiên",
+                                        "description": "Hiển thị tên người dùng được tạo đầu tiên bên cạnh tên người dùng hiện tại trong trang hồ sơ"
+                                    },
+                                    "bypass_camera_roll_limit": {
+                                        "name": "Bỏ qua giới hạn cuộn camera",
+                                        "description": "Tăng lượng phương tiện tối đa bạn có thể gửi từ thư viện ảnh"
+                                    },
+                                    "custom_self_destruct_snap_delay": {
+                                        "name": "Độ trễ chụp tự hủy tùy chỉnh",
+                                        "description": "Cung cấp thêm tùy chọn hẹn giờ tự hủy khi gửi Snap"
+                                    },
+                                    "composer_console": {
+                                        "name": "Bảng điều khiển dành cho nhà soạn nhạc",
+                                        "description": "Cho phép bạn thực thi mã JavaScript trong Composer (chỉ arm64)"
+                                    },
+                                    "composer_logs": {
+                                        "name": "Nhật ký soạn nhạc",
+                                        "description": "Chuyển hướng nhật ký bảng điều khiển của Composer sang PurrfectSnap"
+                                    }
+                                }
+                            },
+                            "disable_bitmoji": {
+                                "name": "Tắt Bitmoji",
+                                "description": "Vô hiệu hóa hồ sơ bạn bè Bitmoji"
+                            },
+                            "custom_emoji_font": {
+                                "name": "Phông chữ biểu tượng cảm xúc tùy chỉnh",
+                                "description": "Cho phép bạn sử dụng phông chữ biểu tượng cảm xúc tùy chỉnh. Chỉ hoạt động với phông chữ .ttf"
+                            },
+                            "custom_shared_library": {
+                                "name": "Thư viện chia sẻ tùy chỉnh",
+                                "description": "Tải thư viện chia sẻ tùy chỉnh vào Snapchat. Tính năng này chỉ dành cho mục đích thử nghiệm"
+                            }
+                        }
+                    },
+                    "spoof": {
+                        "name": "giả mạo",
+                        "description": "Giả mạo nhiều thông tin khác nhau về bạn",
+                        "properties": {
+                            "play_store_installer_package_name": {
+                                "name": "Tên gói trình cài đặt Cửa hàng Play",
+                                "description": "Ghi đè tên gói cài đặt thành com.android.vending"
+                            },
+                            "remove_vpn_transport_flag": {
+                                "name": "Xóa cờ truyền tải VPN",
+                                "description": "Ngăn Snapchat phát hiện VPN"
+                            },
+                            "remove_mock_location_flag": {
+                                "name": "Xóa cờ vị trí mô phỏng",
+                                "description": "Ngăn Snapchat phát hiện vị trí giả"
+                            }
+                        }
+                    },
+                    "convert_message_locally": {
+                        "name": "Chuyển đổi tin nhắn cục bộ",
+                        "description": "Chuyển đổi snaps để trò chuyện phương tiện bên ngoài cục bộ. Điều này xuất hiện trong menu ngữ cảnh tải xuống trò chuyện"
+                    },
+                    "media_file_picker": {
+                        "name": "Bộ chọn tệp phương tiện",
+                        "description": "Cho phép bạn chọn bất kỳ tệp video/âm thanh nào từ thư viện"
+                    },
+                    "story_logger": {
+                        "name": "Trình ghi câu chuyện",
+                        "description": "Cung cấp lịch sử câu chuyện của bạn bè"
+                    },
+                    "call_recorder": {
+                        "name": "Ghi âm cuộc gọi",
+                        "description": "Tự động ghi lại cuộc gọi âm thanh"
+                    },
+                    "account_switcher": {
+                        "name": "Trình chuyển đổi tài khoản",
+                        "description": "Cho phép bạn chuyển đổi giữa các tài khoản mà không cần đăng xuất\nNhấn và giữ biểu tượng tìm kiếm bên cạnh hồ sơ Bitmoji của bạn để mở menu\nLưu ý: Tính năng này đang thử nghiệm và có thể sẽ thay đổi trong tương lai",
+                        "properties": {
+                            "auto_backup_current_account": {
+                                "name": "Tự động sao lưu tài khoản hiện tại",
+                                "description": "Tự động sao lưu tài khoản hiện tại khi đăng xuất hoặc chuyển đổi tài khoản"
+                            }
+                        }
+                    },
+                    "better_transcript": {
+                        "name": "Bảng điểm tốt hơn",
+                        "description": "Cải thiện bản ghi ghi chú bằng giọng nói",
+                        "properties": {
+                            "force_transcription": {
+                                "name": "Buộc phiên âm ghi chú bằng giọng nói",
+                                "description": "Cho phép ghi lại tất cả các ghi chú bằng giọng nói"
+                            },
+                            "preferred_transcription_lang": {
+                                "name": "Ngôn ngữ phiên âm ưa thích",
+                                "description": "Ngôn ngữ ưu tiên cho bản ghi chú thoại (ví dụ: EN, ES, FR)"
+                            },
+                            "notification_transcript": {
+                                "name": "Bản ghi thông báo",
+                                "description": "Phiên âm ghi chú giọng nói trong thông báo\nTính năng này yêu cầu bật tính năng Xem trước trò chuyện trong Thông báo tốt hơn"
+                            }
+                        }
+                    },
+                    "voice_note_auto_play": {
+                        "name": "Ghi chú bằng giọng nói Tự động phát",
+                        "description": "Tự động phát ghi chú thoại tiếp theo sau khi ghi chú hiện tại kết thúc"
+                    },
+                    "friend_notes": {
+                        "name": "Ghi chú của bạn bè",
+                        "description": "Cho phép bạn thêm ghi chú vào hồ sơ bạn bè"
+                    },
+                    "cof_experiments": {
+                        "name": "Thí nghiệm COF",
+                        "description": "Kích hoạt các tính năng Snapchat chưa được phát hành/beta"
+                    },
+                    "context_menu_fix": {
+                        "name": "Sửa menu ngữ cảnh",
+                        "description": "Cố gắng sửa lại Menu Friend Feed vì khi thiết bị ngoại tuyến không thể hiển thị chính xác"
+                    },
+                    "app_lock": {
+                        "name": "Khóa ứng dụng",
+                        "description": "Ngăn chặn truy cập Snapchat mà không cần mật mã",
+                        "properties": {
+                            "lock_on_resume": {
+                                "name": "Khóa khi tiếp tục",
+                                "description": "Khóa ứng dụng khi mở lại"
+                            }
+                        }
+                    },
+                    "infinite_story_boost": {
+                        "name": "Tăng cường câu chuyện vô hạn",
+                        "description": "Bỏ qua độ trễ Giới hạn tăng cường câu chuyện"
+                    },
+                    "meo_passcode_bypass": {
+                        "name": "My Eyes Only Bỏ qua mật mã",
+                        "description": "Bỏ qua mật mã My Eyes Only\nĐiều này sẽ chỉ hoạt động nếu mật mã đã được nhập chính xác trước đó"
+                    },
+                    "no_friend_score_delay": {
+                        "name": "Không có sự chậm trễ về điểm bạn bè",
+                        "description": "Loại bỏ độ trễ khi xem Điểm bạn bè"
+                    },
+                    "best_friend_pinning": {
+                        "name": "Ghim người bạn thân nhất",
+                        "description": "Cho phép bạn ghim một người bạn làm người bạn thân số một của mình. Lưu ý: Chỉ bạn mới có thể nhìn thấy người bạn thân đã ghim của mình"
+                    },
+                    "e2ee": {
+                        "name": "Mã hóa đầu cuối",
+                        "description": "Mã hóa tin nhắn của bạn bằng AES bằng khóa bí mật chung\nĐảm bảo lưu chìa khóa của bạn ở nơi nào đó an toàn!",
+                        "properties": {
+                            "encrypted_message_indicator": {
+                                "name": "Chỉ báo tin nhắn được mã hóa",
+                                "description": "Thêm biểu tượng cảm xúc 🔒 bên cạnh tin nhắn được mã hóa"
+                            },
+                            "force_message_encryption": {
+                                "name": "Buộc mã hóa tin nhắn",
+                                "description": "Ngăn việc gửi tin nhắn được mã hóa tới những người không bật Mã hóa E2E chỉ khi chọn nhiều cuộc hội thoại"
+                            }
+                        }
+                    },
+                    "add_friend_source_spoof": {
+                        "name": "Thêm giả mạo nguồn bạn bè",
+                        "description": "Giả mạo nguồn của Yêu cầu kết bạn"
+                    },
+                    "hidden_snapchat_plus_features": {
+                        "name": "Các tính năng ẩn của Snapchat Plus",
+                        "description": "Kích hoạt các tính năng Snapchat Plus chưa được phát hành/beta\nCó thể không hoạt động trên các phiên bản Snapchat cũ hơn"
+                    },
+                    "custom_streaks_expiration_format": {
+                        "name": "Định dạng hết hạn của vệt tùy chỉnh",
+                        "description": "Tùy chỉnh định dạng Hết hạn của Vệt\n\nCác biến có sẵn:\n - %c: Số lượng vệt\n - %e: Biểu tượng cảm xúc đồng hồ cát\n - %d: Ngày\n - %h: Số giờ\n - %m: Phút\n - %s: Giây\n - %w: Thời gian còn lại"
+                    },
+                    "prevent_forced_logout": {
+                        "name": "Ngăn chặn buộc phải đăng xuất",
+                        "description": "Ngăn Snapchat đăng xuất bạn khi bạn đăng nhập trên thiết bị khác"
+                    },
+                    "snapscore_changes": {
+                        "name": "Thay đổi điểm nhanh",
+                        "description": "Theo dõi những thay đổi trong Snapscore của bạn bè\nChỉ sử dụng tính năng này trong các phiên bản Snapchat mới hơn"
+                    }
+                }
+            },
+            "scripting": {
+                "name": "Viết kịch bản",
+                "description": "Chạy các tập lệnh tùy chỉnh để mở rộng PurrfectSnap",
+                "properties": {
+                    "developer_mode": {
+                        "name": "Chế độ nhà phát triển",
+                        "description": "Hiển thị thông tin gỡ lỗi trên giao diện người dùng của Snapchat"
+                    },
+                    "module_folder": {
+                        "name": "Thư mục mô-đun",
+                        "description": "Thư mục chứa script"
+                    },
+                    "auto_reload": {
+                        "name": "Tự động tải lại",
+                        "description": "Tự động tải lại tập lệnh khi chúng thay đổi"
+                    },
+                    "integrated_ui": {
+                        "name": "Giao diện người dùng tích hợp",
+                        "description": "Cho phép tập lệnh thêm các thành phần UI tùy chỉnh vào Snapchat"
+                    },
+                    "disable_log_anonymization": {
+                        "name": "Vô hiệu hóa ẩn danh nhật ký",
+                        "description": "Tắt tính năng ẩn danh của nhật ký"
+                    },
+                    "disable_optimization": {
+                        "name": "Tắt tối ưu hóa",
+                        "description": "Vô hiệu hóa việc tối ưu hóa các tập lệnh. Điều này có thể gây ra vấn đề về hiệu suất."
+                    }
+                }
+            },
+            "friend_tracker": {
+                "name": "Theo dõi bạn bè",
+                "description": "Ghi lại hoạt động của bạn bè trên Snapchat",
+                "properties": {
+                    "record_messaging_events": {
+                        "name": "Ghi lại sự kiện nhắn tin",
+                        "description": "Ghi lại các sự kiện nhắn tin như mở snap, đọc tin nhắn, v.v."
+                    },
+                    "allow_running_in_background": {
+                        "name": "Cho phép chạy trong nền",
+                        "description": "Cho phép trình theo dõi chạy ở chế độ nền. Lưu ý: Điều này sẽ làm hao pin đáng kể"
+                    },
+                    "auto_purge": {
+                        "name": "Tự động thanh lọc",
+                        "description": "Tự động xóa các sự kiện được lưu trong bộ nhớ cache cũ hơn khoảng thời gian đã chỉ định"
+                    }
+                }
+            }
+        },
+        "options": {
+            "app_appearance": {
+                "always_light": "Luôn sáng",
+                "always_dark": "Luôn tối"
+            },
+            "friend_feed_menu_buttons": {
+                "auto_download": "⬇️ Tự động tải xuống",
+                "auto_save": "💬 Tự động lưu tin nhắn",
+                "unsaveable_messages": "⬇️ Tin nhắn không thể lưu",
+                "auto_open_snaps": "📷 Tự động mở ảnh chụp nhanh",
+                "stealth": "👻 Chế độ ẩn",
+                "mark_snaps_as_seen": "👀 Đánh dấu Snaps là đã xem",
+                "mark_stories_as_seen_locally": "👀 Đánh dấu các câu chuyện là đã xem tại địa phương",
+                "conversation_info": "👤 Thông tin cuộc trò chuyện",
+                "e2e_encryption": "🔒 Sử dụng Mã hóa E2E"
+            },
+            "path_format": {
+                "create_author_folder": "Tạo thư mục cho mỗi tác giả",
+                "create_source_folder": "Tạo thư mục cho từng loại nguồn phương tiện",
+                "append_hash": "Thêm một hàm băm duy nhất vào tên tệp",
+                "append_source": "Thêm nguồn phương tiện vào tên tệp",
+                "append_username": "Thêm tên người dùng vào tên tệp",
+                "append_date_time": "Thêm ngày và giờ vào tên tệp"
+            },
+            "auto_download_sources": {
+                "friend_snaps": "Ảnh chụp bạn bè",
+                "friend_stories": "Câu chuyện bạn bè",
+                "public_stories": "Câu chuyện công khai",
+                "spotlight": "Điểm sáng"
+            },
+            "logging": {
+                "started": "Đã bắt đầu",
+                "success": "Thành công",
+                "progress": "Tiến triển",
+                "failure": "Sự thất bại"
+            },
+            "notifications": {
+                "chat_screenshot": "Ảnh chụp màn hình",
+                "chat_screen_record": "Bản ghi màn hình",
+                "snap_replay": "Phát lại nhanh",
+                "camera_roll_save": "Lưu cuộn camera",
+                "chat": "Trò chuyện",
+                "chat_reply": "Trò chuyện Trả lời",
+                "snap": "Chụp nhanh",
+                "typing": "đánh máy",
+                "stories": "Truyện",
+                "speaking": "Nói",
+                "chat_reaction": "Phản ứng DM",
+                "group_chat_reaction": "Phản ứng nhóm",
+                "initiate_audio": "Cuộc gọi âm thanh đến",
+                "abandon_audio": "Cuộc gọi âm thanh bị nhỡ",
+                "initiate_video": "Cuộc gọi video đến",
+                "abandon_video": "Cuộc gọi video bị nhỡ",
+                "map_live_location": "Bản đồ vị trí trực tiếp"
+            },
+            "gallery_media_send_override": {
+                "always_ask": "Luôn hỏi",
+                "ORIGINAL": "Phương tiện gốc",
+                "NOTE": "Ghi chú âm thanh",
+                "SNAP": "Chụp nhanh",
+                "SAVEABLE_SNAP": "Ảnh chụp có thể lưu được"
+            },
+            "strip_media_metadata": {
+                "hide_caption_text": "Ẩn văn bản chú thích",
+                "hide_snap_filters": "Ẩn bộ lọc chụp nhanh",
+                "hide_extras": "Ẩn phần bổ sung (ví dụ: đề cập)",
+                "remove_audio_note_duration": "Xóa thời lượng ghi chú âm thanh",
+                "remove_audio_note_transcript_capability": "Xóa khả năng ghi chú âm thanh"
+            },
+            "hide_ui_components": {
+                "hide_profile_call_buttons": "Xóa nút gọi hồ sơ",
+                "hide_chat_call_buttons": "Xóa nút gọi trò chuyện",
+                "hide_live_location_share_button": "Xóa nút chia sẻ vị trí trực tiếp",
+                "hide_stickers_button": "Nút xóa nhãn dán",
+                "hide_voice_record_button": "Xóa nút ghi âm giọng nói",
+                "hide_unread_chat_hint": "Xóa gợi ý trò chuyện chưa đọc",
+                "hide_post_to_story_buttons": "Xóa nút Đăng lên Câu chuyện trước khi gửi Snap",
+                "hide_billboard_prompt": "Xóa lời nhắc trên bảng quảng cáo trong nguồn cấp dữ liệu bạn bè",
+                "hide_snapchat_plus_gift_reminders": "Xóa lời nhắc quà tặng Snapchat Plus trong cuộc trò chuyện",
+                "hide_map_reactions": "Xóa phản ứng trên bản đồ"
+            },
+            "hide_story_suggestions": {
+                "hide_suggested_friend_stories": "Ẩn câu chuyện bạn bè được đề xuất",
+                "hide_my_stories": "Ẩn câu chuyện của tôi"
+            },
+            "home_tab": {
+                "map": "Bản đồ",
+                "chat": "Trò chuyện",
+                "camera": "Máy ảnh",
+                "discover": "Phát hiện",
+                "spotlight": "Điểm sáng"
+            },
+            "add_friend_source_spoof": {
+                "added_by_username": "Theo tên người dùng",
+                "added_by_mention": "Bằng cách đề cập",
+                "added_by_group_chat": "Bằng trò chuyện nhóm",
+                "added_by_qr_code": "Bằng mã QR",
+                "added_by_community": "Theo cộng đồng",
+                "added_by_quick_add": "Bằng Quick Add (nguy cơ bị cấm cao)"
+            },
+            "bypass_video_length_restriction": {
+                "single": "Phương tiện đơn",
+                "split": "Chia phương tiện"
+            },
+            "old_bitmoji_selfie": {
+                "2d": "Biểu tượng cảm xúc 2D",
+                "3d": "Bitmoji 3D"
+            },
+            "disable_confirmation_dialogs": {
+                "erase_message": "Xóa tin nhắn",
+                "remove_friend": "Xóa bạn bè",
+                "block_friend": "Chặn bạn bè",
+                "ignore_friend": "Bỏ qua bạn bè",
+                "hide_friend": "Ẩn bạn bè",
+                "hide_conversation": "Ẩn cuộc trò chuyện",
+                "clear_conversation": "Xóa cuộc trò chuyện khỏi Nguồn cấp dữ liệu bạn bè"
+            },
+            "auto_reload": {
+                "snapchat_only": "Chỉ Snapchat",
+                "all": "Tất cả (Snapchat + PurrfectSnap)"
+            },
+            "edit_text_override": {
+                "multi_line_chat_input": "Đầu vào trò chuyện nhiều dòng",
+                "bypass_text_input_limit": "Bỏ qua giới hạn nhập văn bản"
+            },
+            "auto_purge": {
+                "never": "Không bao giờ",
+                "1_hour": "1 giờ",
+                "3_hours": "3 giờ",
+                "6_hours": "6 giờ",
+                "12_hours": "12 giờ",
+                "1_day": "1 ngày",
+                "3_days": "3 ngày",
+                "1_week": "1 tuần",
+                "2_weeks": "2 tuần",
+                "1_month": "1 tháng",
+                "3_months": "3 tháng",
+                "6_months": "6 tháng"
+            },
+            "disable_story_sections": {
+                "friends": "Bạn",
+                "suggested_stories": "Câu chuyện được đề xuất",
+                "following": "Tiếp theo",
+                "discover": "Phát hiện"
+            },
+            "disable_cameras": {
+                "front": "Camera trước",
+                "back": "Camera lùi"
+            },
+            "disable_permission_requests": {
+                "notifications": "Thông báo",
+                "read_media_images": "Đọc hình ảnh phương tiện",
+                "read_media_video": "Đọc video truyền thông",
+                "camera": "Máy ảnh",
+                "microphone": "Micrô",
+                "location": "Vị trí",
+                "read_contacts": "Đọc Danh bạ",
+                "nearby_devices": "Thiết bị lân cận",
+                "phone_calls": "Cuộc gọi điện thoại"
+            },
+            "message_indicators": {
+                "encryption_indicator": "Thêm biểu tượng 🔒 bên cạnh các tin nhắn chỉ được gửi cho bạn",
+                "platform_indicator": "Thêm biểu tượng nền tảng mà phương tiện được gửi từ đó (ví dụ: Android, iOS, Web)",
+                "location_indicator": "Thêm biểu tượng 📍 vào ảnh chụp nhanh khi chúng được gửi với tính năng định vị được bật",
+                "ovf_editor_indicator": "Cho biết liệu ảnh chụp nhanh đã được gửi bằng OVF Editor hay chưa",
+                "director_mode_indicator": "Thêm biểu tượng ✏️ vào ảnh chụp nhanh khi chúng được gửi bằng Chế độ Giám đốc, có thể được sử dụng để gửi hình ảnh thư viện dưới dạng ảnh chụp nhanh"
+            },
+            "auto_mark_as_read": {
+                "conversation_read": "Đánh dấu cuộc trò chuyện là đã đọc khi gửi tin nhắn",
+                "snap_reply": "Đánh dấu ảnh chụp nhanh là đã đọc khi trả lời chúng",
+                "save_snap_in_chat": "Đánh dấu ảnh chụp nhanh là đã đọc khi lưu chúng trong cuộc trò chuyện ở Chế độ ẩn"
+            },
+            "friend_mutation_notifier": {
+                "remove_friend": "Thông báo khi ai đó xóa bạn khỏi danh sách bạn bè",
+                "birthday_changes": "Thông báo khi ai đó thay đổi ngày sinh của họ",
+                "bitmoji_selfie_changes": "Thông báo khi ai đó thay đổi ảnh selfie Bitmoji của họ",
+                "bitmoji_avatar_changes": "Thông báo khi ai đó thay đổi hình đại diện Bitmoji của họ",
+                "bitmoji_background_changes": "Thông báo khi ai đó thay đổi nền Bitmoji của họ",
+                "bitmoji_scene_changes": "Thông báo khi ai đó thay đổi cảnh Bitmoji của họ"
+            },
+            "snapchat_plus": {
+                "not_subscribed": "Chưa đăng ký",
+                "basic": "Nền tảng",
+                "ad_free": "Quảng cáo miễn phí"
+            },
+            "double_tap_chat_action": {
+                "like_message": "Thích tin nhắn",
+                "copy_text": "Sao chép văn bản vào Clipboard",
+                "delete_message": "Xóa tin nhắn",
+                "mark_as_read": "Đánh dấu là đã đọc",
+                "custom_emoji_reaction": "Phản ứng biểu tượng cảm xúc tùy chỉnh"
+            },
+            "startup_default_camera": {
+                "front": "Camera trước",
+                "back": "Camera lùi"
+            }
+        }
+    },
+    "friend_menu_option": {
+        "mark_snaps_as_seen": "Đánh dấu Snaps như đã thấy",
+        "mark_stories_as_seen_locally": "Đánh dấu các câu chuyện là đã được xem tại địa phương",
+        "preview": "Xem trước",
+        "stealth_mode": "Chế độ tàng hình",
+        "auto_download_blacklist": "Tự động tải xuống danh sách đen",
+        "anti_auto_save": "Chống tự động lưu"
+    },
+    "content_type": {
+        "CHAT": "Trò chuyện",
+        "SNAP": "Chụp nhanh",
+        "EXTERNAL_MEDIA": "Phương tiện bên ngoài",
+        "NOTE": "Ghi chú âm thanh",
+        "STICKER": "Hình dán",
+        "SHARE": "Chia sẻ",
+        "STATUS": "Trạng thái",
+        "LOCATION": "Vị trí",
+        "STATUS_SAVE_TO_CAMERA_ROLL": "Đã lưu vào Thư viện ảnh",
+        "STATUS_CONVERSATION_CAPTURE_SCREENSHOT": "Ảnh chụp màn hình",
+        "STATUS_CONVERSATION_CAPTURE_RECORD": "Bản ghi màn hình",
+        "STATUS_CALL_MISSED_VIDEO": "Cuộc gọi video bị nhỡ",
+        "STATUS_CALL_MISSED_AUDIO": "Cuộc gọi âm thanh bị nhỡ",
+        "LIVE_LOCATION_SHARE": "Chia sẻ vị trí trực tiếp",
+        "CREATIVE_TOOL_ITEM": "Mục công cụ sáng tạo",
+        "FAMILY_CENTER_INVITE": "Lời mời của Trung tâm Gia đình",
+        "FAMILY_CENTER_ACCEPT": "Trung tâm gia đình",
+        "FAMILY_CENTER_LEAVE": "Nghỉ phép ở trung tâm gia đình",
+        "STATUS_PLUS_GIFT": "Quà tặng Status Plus",
+        "TINY_SNAP": "Ảnh chụp nhỏ",
+        "STATUS_COUNTDOWN": "Đếm ngược",
+        "MAP_REACTION": "Phản ứng bản đồ"
+    },
+    "media_download_source": {
+        "none": "Không có",
+        "pending": "Chưa giải quyết",
+        "chat_media": "Phương tiện trò chuyện",
+        "story": "Câu chuyện",
+        "public_story": "Câu chuyện công khai",
+        "spotlight": "Điểm sáng",
+        "profile_picture": "Ảnh hồ sơ",
+        "story_logger": "Trình ghi câu chuyện",
+        "message_logger": "Trình ghi tin nhắn",
+        "merged": "Đã hợp nhất",
+        "voice_call": "Cuộc gọi thoại"
+    },
+    "chat_action_menu": {
+        "preview_button": "Xem trước",
+        "download_button": "Tải xuống",
+        "delete_logged_message_button": "Xóa tin nhắn đã ghi",
+        "show_chat_edit_history": "Hiển thị lịch sử chỉnh sửa trò chuyện",
+        "convert_message": "Chuyển đổi tin nhắn"
+    },
+    "opera_context_menu": {
+        "download": "Tải xuống phương tiện",
+        "sent_at": "Đã gửi tại {date}",
+        "created_at": "Được tạo tại {date}",
+        "expires_at": "Hết hạn lúc {date}",
+        "media_size": "Kích thước phương tiện: {size}",
+        "media_duration": "Thời lượng phương tiện: {duration} ms",
+        "show_debug_info": "Hiển thị thông tin gỡ lỗi"
+    },
+    "modal_option": {
+        "profile_info": "Thông tin hồ sơ",
+        "close": "Đóng"
+    },
+    "gallery_media_send_override": {
+        "multiple_media_toast": "Bạn chỉ có thể gửi một phương tiện tại một thời điểm"
+    },
+    "mark_as_seen": {
+        "no_unseen_snaps_toast": "Không tìm thấy Snap nào chưa được nhìn thấy!",
+        "seen_toast": "Đánh dấu là đã thấy!",
+        "unseen_toast": "Đã đánh dấu là chưa thấy!",
+        "already_seen_toast": "Đã được đánh dấu là đã thấy!",
+        "already_unseen_toast": "Đã được đánh dấu là chưa nhìn thấy!"
+    },
+    "conversation_preview": {
+        "streak_expiration": "hết hạn sau {day} ngày {hour} giờ {minute} phút",
+        "total_messages": "Tổng số tin nhắn đã gửi/nhận: {count}",
+        "title": "Xem trước",
+        "unknown_user": "Người dùng không xác định",
+        "no_messages": "Không tìm thấy tin nhắn nào!"
+    },
+    "profile_info": {
+        "title": "Thông tin hồ sơ",
+        "first_created_username": "Tên người dùng được tạo lần đầu",
+        "mutable_username": "Tên người dùng có thể thay đổi",
+        "display_name": "Tên hiển thị",
+        "added_date": "Ngày thêm",
+        "birthday": "Ngày sinh : {month} {day}",
+        "hidden_birthday": "Ngày sinh: Ẩn",
+        "friendship": "Tình bạn",
+        "add_source": "Thêm nguồn",
+        "snapchat_plus": "Snapchat Plus",
+        "snapchat_plus_state": {
+            "subscribed": "Đã đăng ký",
+            "not_subscribed": "Chưa đăng ký"
+        }
+    },
+    "friendship_link_type": {
+        "mutual": "Qua lại",
+        "outgoing": "Hướng ngoại",
+        "blocked": "Bị chặn",
+        "deleted": "Đã xóa",
+        "following": "Tiếp theo",
+        "suggested": "được đề xuất",
+        "incoming": "Đang đến",
+        "incoming_follower": "Người theo dõi sắp tới"
+    },
+    "bulk_messaging_action": {
+        "choose_action_title": "Chọn một hành động",
+        "progress_status": "Đang xử lý {index} trong số {total}",
+        "selection_dialog_continue_button": "Tiếp tục",
+        "confirmation_dialog": {
+            "title": "Bạn có chắc không?",
+            "message": "Điều này sẽ ảnh hưởng đến tất cả bạn bè đã chọn. Không thể hoàn tác hành động này."
+        },
+        "actions": {
+            "remove_friends": "Xóa bạn bè",
+            "clear_conversations": "Xóa cuộc trò chuyện"
+        }
+    },
+    "chat_export": {
+        "exporter_dialog": {
+            "select_conversations_title": "Chọn cuộc trò chuyện",
+            "text_field_selection": "__giữ chỗ_0__ đã chọn",
+            "text_field_selection_all": "Tất cả",
+            "export_file_format_title": "Xuất định dạng tệp",
+            "message_type_filter_title": "Lọc tin nhắn theo loại",
+            "amount_of_messages_title": "Số lượng tin nhắn (để trống cho tất cả)",
+            "download_medias_title": "Tải xuống phương tiện"
+        },
+        "dialog_negative_button": "Hủy bỏ",
+        "dialog_positive_button": "Xuất khẩu",
+        "exported_to": "Đã xuất sang {path}",
+        "exporting_chats": "Đang xuất cuộc trò chuyện...",
+        "processing_chats": "Đang xử lý {amount} cuộc hội thoại...",
+        "export_fail": "Không xuất được cuộc trò chuyện {conversation}",
+        "writing_output": "Viết đầu ra...",
+        "finished": "Xong! Bây giờ bạn có thể đóng hộp thoại này.",
+        "no_messages_found": "Không tìm thấy tin nhắn nào!",
+        "exporting_message": "Đang xuất {conversation}..."
+    },
+    "button": {
+        "ok": "ĐƯỢC RỒI",
+        "positive": "Đúng",
+        "negative": "KHÔNG",
+        "cancel": "Hủy bỏ",
+        "open": "Mở",
+        "download": "Tải xuống",
+        "send": "Gửi",
+        "restore_original": "Khôi phục bản gốc",
+        "convert_external_media": "Chuyển đổi phương tiện bên ngoài",
+        "save": "Cứu"
+    },
+    "tracker_events": {
+        "conversation_enter": "Cuộc trò chuyện Nhập",
+        "conversation_exit": "Thoát cuộc trò chuyện",
+        "started_typing": "Đã bắt đầu nhập",
+        "stopped_typing": "Đã dừng gõ",
+        "started_speaking": "Bắt đầu nói",
+        "stopped_speaking": "ngừng nói",
+        "started_peeking": "Bắt đầu nhìn trộm",
+        "stopped_peeking": "Đã ngừng nhìn trộm",
+        "message_read": "Tin nhắn đã đọc",
+        "message_deleted": "Đã xóa tin nhắn",
+        "message_saved": "Đã lưu tin nhắn",
+        "message_unsaved": "Tin nhắn chưa được lưu",
+        "message_edited": "Tin nhắn đã được chỉnh sửa",
+        "message_reaction_add": "Phản ứng tin nhắn Thêm",
+        "message_reaction_remove": "Phản hồi tin nhắn Xóa",
+        "snap_opened": "Đã mở nhanh",
+        "snap_replayed": "Đã phát lại ảnh chụp nhanh",
+        "snap_replayed_twice": "Snap được phát lại hai lần",
+        "snap_screenshot": "Chụp ảnh màn hình",
+        "snap_screen_record": "Ghi màn hình chụp nhanh"
+    },
+    "tracker_actions": {
+        "log": "Nhật ký",
+        "in_app_notification": "Thông báo trong ứng dụng",
+        "push_notification": "Thông báo đẩy",
+        "custom": "Phong tục"
+    },
+    "better_notifications": {
+        "button": {
+            "reply": "Hồi đáp",
+            "download": "Tải xuống",
+            "mark_as_read": "Đánh dấu là đã đọc"
+        }
+    },
+    "profile_picture_downloader": {
+        "button": "Tải xuống ảnh hồ sơ",
+        "title": "Trình tải ảnh hồ sơ",
+        "avatar_option": "Hình đại diện",
+        "background_option": "Lý lịch"
+    },
+    "call_start_confirmation": {
+        "dialog_title": "Bắt đầu cuộc gọi",
+        "dialog_message": "Bạn có chắc chắn muốn bắt đầu cuộc gọi không?"
+    },
+    "half_swipe_notifier": {
+        "notification_channel_name": "Vuốt một nửa",
+        "notification_content_dm": "{friend} vừa vuốt một nửa vào cuộc trò chuyện của bạn trong {duration} giây",
+        "notification_content_group": "{friend} vừa vuốt một nửa vào {group} trong {duration} giây"
+    },
+    "download_processor": {
+        "attachment_type": {
+            "snap": "Chụp nhanh",
+            "sticker": "Hình dán",
+            "gif": "GIF",
+            "external_media": "Phương tiện bên ngoài",
+            "note": "Ghi chú",
+            "original_story": "Câu chuyện gốc"
+        },
+        "select_attachments_title": "Chọn tệp đính kèm",
+        "download_started_toast": "Đã bắt đầu tải xuống",
+        "unsupported_content_type_toast": "Loại nội dung không được hỗ trợ!",
+        "failed_no_longer_available_toast": "Phương tiện không còn khả dụng",
+        "no_attachments_toast": "Không tìm thấy tệp đính kèm nào!",
+        "already_queued_toast": "Phương tiện đã được xếp hàng!",
+        "already_downloaded_toast": "Phương tiện đã được tải xuống!",
+        "content_saved_toast": "Đã lưu!",
+        "download_toast": "Đang tải xuống {path}...",
+        "processing_toast": "Đang xử lý {path}...",
+        "failed_generic_toast": "Không thể tải xuống",
+        "failed_to_create_preview_toast": "Không tạo được bản xem trước",
+        "failed_processing_toast": "Xử lý không thành công {error}",
+        "failed_gallery_toast": "Không lưu được vào thư viện {error}",
+        "dash_no_chapter": "Không tìm thấy chương",
+        "dash_dialog": {
+            "title": "Tải xuống phương tiện dash",
+            "download_all": "Tải xuống tất cả",
+            "segment_text": "Phân đoạn {from} - {to}"
+        }
+    },
+    "streaks_reminder": {
+        "notification_title": "Vệt",
+        "notification_text": "Bạn sẽ mất Chuỗi của mình với {friend} sau {hoursLeft} giờ"
+    },
+    "biometric_auth": {
+        "unlock_button": "Mở khóa",
+        "title": "Mở khóa Snapchat",
+        "subtitle": "Vui lòng xác thực để mở khóa Snapchat"
+    },
+    "end_to_end_encryption": {
+        "toolbox": {
+            "no_shared_key": "Bạn chưa có bí mật nào được chia sẻ với người bạn này. Nhấp vào bên dưới để bắt đầu một cái mới.",
+            "shared_key_fingerprint": "Dấu vân tay của bạn là:\n\n__giữ chỗ_0__\n\nHãy chắc chắn kiểm tra xem nó có khớp với dấu vân tay của bạn bè bạn không!",
+            "initiate_exchange_button": "Bắt đầu trao đổi khóa"
+        },
+        "confirmation_dialogs": {
+            "title": "Mã hóa đầu cuối",
+            "confirmation_1": "CẢNH BÁO: Thao tác này sẽ ghi đè khóa hiện có của bạn. Bạn sẽ mất quyền truy cập vào tất cả các tin nhắn được mã hóa từ người bạn này. Bạn có chắc chắn muốn tiếp tục không?",
+            "confirmation_2": "Bạn có THỰC SỰ chắc chắn muốn tiếp tục không? Đây là cơ hội cuối cùng để bạn rút lui."
+        },
+        "unencrypted_conversation_send_failure_toast": "Bạn không thể gửi nội dung được mã hóa tới cả cuộc trò chuyện được mã hóa và không được mã hóa!",
+        "native_hooks_send_failure_toast": "Không gửi được! Vui lòng bật Móc gốc trong cài đặt.",
+        "no_participants_to_encrypt_toast": "Bạn không có bạn bè nào trong cuộc trò chuyện này để mã hóa tin nhắn!",
+        "encryption_failed_toast": "Không thể mã hóa tin nhắn! Kiểm tra logcat để biết thêm chi tiết.",
+        "accept_public_key_success_toast": "Khóa công khai được chấp nhận thành công!",
+        "accept_secret_key_success_toast": "Xong! Bây giờ bạn có thể gửi và nhận tin nhắn được mã hóa với người bạn này.",
+        "accept_public_key_failure_toast": "Không thể chấp nhận khóa công khai",
+        "accept_secret_key_failure_toast": "Không thể chấp nhận khóa bí mật",
+        "accept_secret_button": "Chấp nhận bí mật",
+        "accept_public_key_button": "Chấp nhận khóa công khai",
+        "outgoing_pk_message": "Yêu cầu trao đổi khóa",
+        "outgoing_secret_message": "Phản hồi trao đổi khóa",
+        "incoming_pk_message": "Bạn vừa nhận được yêu cầu khóa công khai. Bấm vào bên dưới để chấp nhận nó.",
+        "incoming_secret_message": "Bạn của bạn vừa chấp nhận khóa công khai của bạn. Nhấp vào bên dưới để chấp nhận bí mật."
+    },
+    "auto_open_snaps": {
+        "title": "Tự động mở Snaps",
+        "notification_content": "{count} Đã mở phần đính kèm"
+    },
+    "friend_mutation_observer": {
+        "notification_channel_name": "Người quan sát đột biến bạn bè",
+        "friend_removed": "{username} đã xóa bạn khỏi danh sách bạn bè",
+        "birthday_removed": "{username} đã xóa ngày sinh của họ ({birthday})",
+        "birthday_added": "{username} đã thêm ngày sinh của họ ({birthday})",
+        "birthday_changed": "{username} đã thay đổi ngày sinh của họ từ {oldBirthday} thành {newBirthday}",
+        "bitmoji_selfie_changed": "{username} đã thay đổi ảnh selfie Bitmoji của họ",
+        "bitmoji_avatar_changed": "{username} đã thay đổi hình đại diện Bitmoji của họ",
+        "bitmoji_background_changed": "{username} đã thay đổi nền Bitmoji của họ",
+        "bitmoji_scene_changed": "{username} đã thay đổi cảnh Bitmoji của họ"
+    },
+    "material3_strings": {
+        "date_range_picker_start_headline": "Từ",
+        "date_range_picker_end_headline": "ĐẾN",
+        "date_range_picker_title": "Chọn phạm vi ngày",
+        "date_picker_switch_to_calendar_mode": "Lịch",
+        "date_picker_switch_to_input_mode": "đầu vào",
+        "date_range_picker_scroll_to_previous_month": "Tháng trước",
+        "date_range_picker_scroll_to_next_month": "Tháng tiếp theo",
+        "date_picker_today_description": "Hôm nay",
+        "date_range_picker_day_in_range": "Đã chọn",
+        "date_input_invalid_for_pattern": "Ngày không hợp lệ",
+        "date_input_invalid_year_range": "Năm không hợp lệ",
+        "date_input_invalid_not_allowed": "Ngày không hợp lệ",
+        "date_range_input_invalid_range_input": "Phạm vi ngày không hợp lệ"
+    },
+    "send_override_dialog": {
+        "title": "Gửi phương tiện dưới dạng {type}",
+        "duration": "Thời lượng: {duration}",
+        "saveable_snap_hint": "Làm cho Snap có thể lưu được trong cuộc trò chuyện",
+        "unlimited_duration": "Không giới hạn"
+    },
+    "invalid_input_toast": "Đầu vào không hợp lệ! Đảm bảo bạn đã nhập một giá trị hợp lệ."
+}

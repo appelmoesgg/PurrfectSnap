@@ -30,3 +30,27 @@ fun AppDatabase.deleteScopeNotes(id: String) {
         database.execSQL("DELETE FROM notes WHERE id = ?", arrayOf(id))
     }
 }
+
+fun AppDatabase.getAllScopeNotes(): Map<String, String> {
+    return database.rawQuery("SELECT id, content FROM notes", null).use {
+        val map = mutableMapOf<String, String>()
+        while (it.moveToNext()) {
+            map[it.getString(0)] = it.getString(1)
+        }
+        map
+    }
+}
+
+fun AppDatabase.setAllScopeNotes(notes: Map<String, String>) {
+    executeAsync {
+        database.beginTransaction()
+        try {
+            for ((id, content) in notes) {
+                database.execSQL("INSERT OR REPLACE INTO notes (id, content) VALUES (?, ?)", arrayOf(id, content))
+            }
+            database.setTransactionSuccessful()
+        } finally {
+            database.endTransaction()
+        }
+    }
+}

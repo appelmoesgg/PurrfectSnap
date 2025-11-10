@@ -67,12 +67,23 @@ class ComposerHooks: Feature("ComposerHooks") {
                             result = (context.native.composerEval("""
                                 (() => {
                                     try {
-                                        $codeContent
+                                        const retVal = (() => { $codeContent })();
+                                        if (typeof retVal === 'undefined') {
+                                            return 'undefined';
+                                        }
+                                        if (retVal === null) {
+                                            return 'null';
+                                        }
+                                        try {
+                                            return JSON.stringify(retVal, null, 2);
+                                        } catch {
+                                            return retVal.toString();
+                                        }
                                     } catch (e) {
                                         return e.toString()
                                     }
                                 })()
-                            """.trimIndent()) ?: "(no result)").also {
+                            """.trimIndent()) ?: "(no result)").toString().also {
                                 context.log.verbose("result: $it", "ComposerConsole")
                             }
                         }
@@ -174,7 +185,7 @@ class ComposerHooks: Feature("ComposerHooks") {
                 const i = setInterval(() => {
                     try {
                         const _runtimeName = "${if (SnapEnhance.classCache.nativeBridge.name == "com.snapchat.client.valdi.NativeBridge") "valdi" else "composer"}";
-                        require(_runtimeName + '_core/src/DeviceBridge').getDisplayWidth();
+                        require(_runtimeName + '_core/DeviceBridge').getDisplayWidth();
                         clearInterval(i);
                         (() => { const _getImportsFunctionName = "$getImportsFunctionName"; $loaderScript })();
                     } catch (e) {}

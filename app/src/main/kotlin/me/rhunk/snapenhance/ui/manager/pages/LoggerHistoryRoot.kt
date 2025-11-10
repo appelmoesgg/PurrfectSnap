@@ -22,6 +22,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.core.net.toUri
 import androidx.navigation.NavBackStackEntry
 import com.google.gson.JsonParser
 import kotlinx.coroutines.Dispatchers
@@ -46,12 +47,14 @@ import me.rhunk.snapenhance.core.features.impl.downloader.decoder.MessageDecoder
 import me.rhunk.snapenhance.download.DownloadProcessor
 import me.rhunk.snapenhance.storage.findFriend
 import me.rhunk.snapenhance.ui.manager.Routes
+import java.net.URLDecoder
 import java.text.DateFormat
 import java.util.concurrent.ConcurrentHashMap
 import kotlin.math.absoluteValue
 
 
 class LoggerHistoryRoot : Routes.Route() {
+    override val translation by lazy { context.translation.getCategory("manager.logger_history") }
     private lateinit var loggerWrapper: LoggerWrapper
     private var selectedConversation by mutableStateOf<String?>(null)
     private var stringFilter by mutableStateOf("")
@@ -69,18 +72,18 @@ class LoggerHistoryRoot : Routes.Route() {
     }
 
     private fun downloadAttachment(creationTimestamp: Long, attachment: DecodedAttachment) {
-        context.shortToast("Download started!")
+        context.shortToast(translation["download_started_toast"])
         val attachmentHash = attachment.mediaUniqueId!!.longHashCode().absoluteValue.toString()
 
         DownloadProcessor(
             remoteSideContext = context,
             callback = object: DownloadCallback.Default() {
                 override fun onSuccess(outputPath: String?) {
-                    context.shortToast("Downloaded to $outputPath")
+                    context.shortToast(translation.format("download_success_toast", "path" to outputPath.toString()))
                 }
 
                 override fun onFailure(message: String?, throwable: String?) {
-                    context.shortToast("Failed to download $message")
+                    context.shortToast(translation.format("download_failed_toast", "message" to message.toString()))
                 }
             }
         ).enqueue(
@@ -128,7 +131,8 @@ class LoggerHistoryRoot : Routes.Route() {
                         decodeMessage(message) { contentType, messageReader, attachments ->
                             @Composable
                             fun ContentHeader() {
-                                Text("${message.username} (${contentType.toString().lowercase()}) - ${DateFormat.getDateTimeInstance().format(message.sendTimestamp)}", modifier = Modifier.padding(end = 4.dp), fontWeight = FontWeight.ExtraLight)
+                                val date = remember { DateFormat.getDateTimeInstance().format(message.sendTimestamp) }
+                                Text(translation.format("log_header_format", "username" to message.username, "type" to contentType.toString().lowercase(), "date" to date), modifier = Modifier.padding(end = 4.dp), fontWeight = FontWeight.ExtraLight)
                             }
 
                             if (contentType == ContentType.CHAT) {
@@ -156,7 +160,7 @@ class LoggerHistoryRoot : Routes.Route() {
                                                         context.androidContext.copyToClipboard(messageEdit.message)
                                                     })
                                                 }.fillMaxWidth().padding(start = 4.dp),
-                                                text = messageEdit.message + " (edited at $date)",
+                                                text = translation.format("edited_at_text", "message" to messageEdit.message, "date" to date),
                                                 fontWeight = FontWeight.Light,
                                                 fontStyle = FontStyle.Italic,
                                                 fontSize = 12.sp
@@ -190,7 +194,7 @@ class LoggerHistoryRoot : Routes.Route() {
                                             }) {
                                                 Icon(
                                                     imageVector = Icons.Default.Download,
-                                                    contentDescription = "Download",
+                                                    contentDescription = translation["download_button"],
                                                     modifier = Modifier.padding(end = 4.dp)
                                                 )
                                                 Text(translation.format("chat_attachment", "index" to (index + 1).toString()))
@@ -204,7 +208,7 @@ class LoggerHistoryRoot : Routes.Route() {
                     }.onFailure {
                         context.log.error("Failed to parse message", it)
                         contentView = {
-                            Text("[${translation["message_parse_failed"]}]")
+                            Text(translation["message_parse_failed"])
                         }
                     }
                 }
@@ -214,9 +218,14 @@ class LoggerHistoryRoot : Routes.Route() {
 
 
     @OptIn(ExperimentalMaterial3Api::class)
-    override val content: @Composable (NavBackStackEntry) -> Unit = {
+    override val content: @Composable (NavBackStackEntry) -> Unit = { navBackStackEntry ->
         LaunchedEffect(Unit) {
-            loggerWrapper = LoggerWrapper(context.androidContext)
+            val uri = navBackStackEntry.arguments?.getString("uri")?.let {
+                runCatching {
+                    URLDecoder.decode(it, "UTF-8").toUri()
+                }.getOrNull()
+            }
+            loggerWrapper = LoggerWrapper(context.androidContext, uri)
         }
 
         val conversationInfoCache = remember { ConcurrentHashMap<String, String?>() }
@@ -251,7 +260,7 @@ class LoggerHistoryRoot : Routes.Route() {
                 }
 
                 OutlinedTextField(
-                    value = selectedConversationInfo ?: "Select a conversation",
+                    value = selectedConversationInfo ?: translation["select_conversation_placeholder"],
                     onValueChange = {},
                     readOnly = true,
                     modifier = Modifier
@@ -399,7 +408,7 @@ class LoggerHistoryRoot : Routes.Route() {
             Icon(
                 imageVector = if (showSearchTextField) Icons.Filled.Close
                 else Icons.Filled.Search,
-                contentDescription = null
+                contentDescription = translation[if (showSearchTextField) "close_button_description" else "search_button_description"]
             )
         }
     }

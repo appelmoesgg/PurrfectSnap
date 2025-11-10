@@ -110,6 +110,7 @@ class Navigation(
     private val navController: NavHostController,
     val routes: Routes = Routes(context).also { it.navController = navController }
 ) {
+    private val translation by lazy { context.translation.getCategory("manager.navigation") }
     var openBottomBarCustomization by mutableStateOf(false)
     @Composable
     fun TopBar() {
@@ -122,7 +123,13 @@ class Navigation(
         TopAppBar(
             title = {
                 currentRoute?.apply {
-                    title?.invoke() ?: routeInfo.translatedKey?.value?.let { Text(it) }
+                    title?.invoke() ?: routeInfo.translatedKey?.value?.let {
+                        Text(
+                            text = it,
+                            maxLines = 1,
+                            overflow = TextOverflow.Ellipsis
+                        )
+                    }
                 }
             },
             navigationIcon = {
@@ -299,7 +306,7 @@ class Navigation(
                                 alwaysShowLabel = true,
                                 icon = { Icon(imageVector = route.routeInfo.icon, contentDescription = null) },
                                 label = {
-                                    val label = if (route.routeInfo.id == "friend_tracker") "Tracker" else context.translation["manager.routes.${route.routeInfo.key.substringBefore("/")}"]
+                                    val label = context.translation["manager.routes.${route.routeInfo.key.substringBefore("/")}"]
                                     val isLong = label.length > 11
                                     Text(
                                         text = label,
@@ -339,9 +346,9 @@ class Navigation(
                                 .padding(horizontal = 20.dp, vertical = 16.dp)
                         ) {
                             Column(Modifier.fillMaxSize()) {
-                                Text(text = "Customize Bottom Bar", style = MaterialTheme.typography.titleLarge, color = MaterialTheme.colorScheme.onSurface)
+                                Text(text = translation["customize_bottom_bar_title"], style = MaterialTheme.typography.titleLarge, color = MaterialTheme.colorScheme.onSurface)
                                 Spacer(Modifier.height(4.dp))
-                                Text(text = "Reorder, add or remove tabs. Max of five.", style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                                Text(text = translation["customize_bottom_bar_subtitle"], style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
                             }
                             Box(
                                 modifier = Modifier
@@ -354,10 +361,10 @@ class Navigation(
                             )
                         }
                         Spacer(Modifier.height(8.dp))
-                        Text(text = "Shown Tabs", style = MaterialTheme.typography.titleSmall, modifier = Modifier.padding(horizontal = 16.dp))
+                        Text(text = translation["shown_tabs_title"], style = MaterialTheme.typography.titleSmall, modifier = Modifier.padding(horizontal = 16.dp))
                         Spacer(Modifier.height(8.dp))
                         if (selectedTabIds.isEmpty()) {
-                            Text(text = "No tabs selected", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                            Text(text = translation["no_tabs_selected_text"], style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
                         } else {
                             val haptic = LocalHapticFeedback.current
                             var draggingId by remember { mutableStateOf<String?>(null) }
@@ -374,7 +381,7 @@ class Navigation(
                             ) {
                                 itemsIndexed(selectedTabIds, key = { _, id -> id }) { index, id ->
                                     val route = availableRouteMap[id] ?: return@itemsIndexed
-                                    val label = if (route.routeInfo.id == "friend_tracker") "Tracker" else context.translation["manager.routes.${route.routeInfo.key.substringBefore("/")}"]
+                                    val label = context.translation["manager.routes.${route.routeInfo.key.substringBefore("/")}"]
                                     val isDragging = draggingId == id
                                     ElevatedCard(
                                         modifier = Modifier
@@ -441,7 +448,7 @@ class Navigation(
                             }
                         }
                         Spacer(Modifier.height(16.dp))
-                        Text(text = "Available Tabs", style = MaterialTheme.typography.titleSmall, modifier = Modifier.padding(horizontal = 16.dp))
+                        Text(text = translation["available_tabs_title"], style = MaterialTheme.typography.titleSmall, modifier = Modifier.padding(horizontal = 16.dp))
                         Spacer(Modifier.height(8.dp))
                         FlowRow(
                             modifier = Modifier
@@ -452,7 +459,7 @@ class Navigation(
                             availableRoutes.forEach { route ->
                                 val id = route.routeInfo.id
                                 val already = selectedTabIds.contains(id)
-                                val label = if (id == "friend_tracker") "Tracker" else context.translation["manager.routes.${route.routeInfo.key.substringBefore("/")}"]
+                                val label = context.translation["manager.routes.${route.routeInfo.key.substringBefore("/")}"]
                                 AnimatedVisibility(
                                     visible = !already && selectedTabIds.size < 5,
                                     enter = scaleIn(tween(160), initialScale = 0.95f) + fadeIn(tween(180)) + slideInVertically(tween(180), initialOffsetY = { it / 3 }),
@@ -482,8 +489,8 @@ class Navigation(
                             OutlinedButton(onClick = {
                                 selectedTabIds = defaultOrder
                                 saveSelected(selectedTabIds)
-                            }) { Text(text = "Reset", style = MaterialTheme.typography.labelLarge) }
-                            Button(onClick = { openBottomBarCustomization = false }) { Text(text = "Done", style = MaterialTheme.typography.labelLarge) }
+                            }) { Text(text = translation["reset_button"], style = MaterialTheme.typography.labelLarge) }
+                            Button(onClick = { openBottomBarCustomization = false }) { Text(text = translation["done_button"], style = MaterialTheme.typography.labelLarge) }
                         }
                         Spacer(Modifier.height(8.dp))
                     }

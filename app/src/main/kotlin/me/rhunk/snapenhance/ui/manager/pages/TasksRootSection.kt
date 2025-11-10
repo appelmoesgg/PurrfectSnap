@@ -50,6 +50,7 @@ import java.util.UUID
 import kotlin.math.absoluteValue
 
 class TasksRootSection : Routes.Route() {
+    override val translation by lazy { context.translation.getCategory("manager.sections.tasks") }
     private var activeTasks by mutableStateOf(listOf<PendingTask>())
     private lateinit var recentTasks: MutableList<Task>
     private val taskSelection = mutableStateListOf<Pair<Task, DocumentFile?>>()
@@ -165,7 +166,7 @@ class TasksRootSection : Routes.Route() {
         IconButton(onClick = {
             showConfirmDialog = true
         }) {
-            Icon(Icons.Filled.Delete, contentDescription = "Clear tasks")
+            Icon(Icons.Filled.Delete, contentDescription = translation["clear_tasks_description"])
         }
 
         if (showConfirmDialog) {
@@ -370,17 +371,17 @@ class TasksRootSection : Routes.Route() {
                             )
                         } else {
                             when {
-                                !isDocumentFileReadable -> Icon(Icons.Filled.DeleteOutline, contentDescription = "File not found")
-                                documentFileMimeType.contains("image") -> Icon(Icons.Filled.Image, contentDescription = "Image")
-                                documentFileMimeType.contains("video") -> Icon(Icons.Filled.Videocam, contentDescription = "Video")
-                                documentFileMimeType.contains("audio") -> Icon(Icons.Filled.MusicNote, contentDescription = "Audio")
-                                else -> Icon(Icons.Filled.FileCopy, contentDescription = "File")
+                                !isDocumentFileReadable -> Icon(Icons.Filled.DeleteOutline, contentDescription = translation["file_not_found_icon_description"])
+                                documentFileMimeType.contains("image") -> Icon(Icons.Filled.Image, contentDescription = translation["image_icon_description"])
+                                documentFileMimeType.contains("video") -> Icon(Icons.Filled.Videocam, contentDescription = translation["video_icon_description"])
+                                documentFileMimeType.contains("audio") -> Icon(Icons.Filled.MusicNote, contentDescription = translation["audio_icon_description"])
+                                else -> Icon(Icons.Filled.FileCopy, contentDescription = translation["file_icon_description"])
                             }
                         }
                     } ?: run {
                         when (task.type) {
-                            TaskType.DOWNLOAD -> Icon(Icons.Filled.Download, contentDescription = "Download")
-                            TaskType.CHAT_ACTION -> Icon(Icons.Filled.ChatBubble, contentDescription = "Chat Action")
+                            TaskType.DOWNLOAD -> Icon(Icons.Filled.Download, contentDescription = translation["download_icon_description"])
+                            TaskType.CHAT_ACTION -> Icon(Icons.Filled.ChatBubble, contentDescription = translation["chat_action_icon_description"])
                         }
                     }
                 }
@@ -404,7 +405,8 @@ class TasksRootSection : Routes.Route() {
                     ) {
                         if (taskStatus.isFinalStage()) {
                             if (taskStatus != TaskStatus.SUCCESS) {
-                                Text("$taskStatus", style = MaterialTheme.typography.bodySmall)
+                                val statusKey = "task_status_${taskStatus.name.lowercase()}"
+                                Text(translation.getOrNull(statusKey) ?: "$taskStatus", style = MaterialTheme.typography.bodySmall)
                             }
                         } else {
                             taskProgressLabel?.let {
@@ -433,13 +435,13 @@ class TasksRootSection : Routes.Route() {
                                 context.log.error("Failed to cancel task $pendingTask", throwable)
                             }
                         }) {
-                            Icon(Icons.Filled.Close, contentDescription = "Cancel")
+                            Icon(Icons.Filled.Close, contentDescription = translation["cancel_icon_description"])
                         }
                     } else {
                         when (taskStatus) {
-                            TaskStatus.SUCCESS -> Icon(Icons.Filled.Check, contentDescription = "Success", tint = MaterialTheme.colorScheme.primary)
-                            TaskStatus.FAILURE -> Icon(Icons.Filled.Error, contentDescription = "Failure", tint = MaterialTheme.colorScheme.error)
-                            TaskStatus.CANCELLED -> Icon(Icons.Filled.Cancel, contentDescription = "Cancelled", tint = MaterialTheme.colorScheme.error)
+                            TaskStatus.SUCCESS -> Icon(Icons.Filled.Check, contentDescription = translation["success_icon_description"], tint = MaterialTheme.colorScheme.primary)
+                            TaskStatus.FAILURE -> Icon(Icons.Filled.Error, contentDescription = translation["failure_icon_description"], tint = MaterialTheme.colorScheme.error)
+                            TaskStatus.CANCELLED -> Icon(Icons.Filled.Cancel, contentDescription = translation["cancelled_icon_description"], tint = MaterialTheme.colorScheme.error)
                             else -> {}
                         }
                     }

@@ -48,6 +48,8 @@ import me.rhunk.snapenhance.ui.manager.Routes
 import org.json.JSONArray
 
 class FriendTrackerConfigImportScreen : Routes.Route() {
+    override val translation by lazy { context.translation.getCategory("manager.friend_tracker_import") }
+
     @OptIn(ExperimentalMaterial3Api::class)
     override val content: @Composable (androidx.navigation.NavBackStackEntry) -> Unit = {
         val configJson = routes.friendTrackerConfigJsonForImport ?: ""
@@ -60,10 +62,10 @@ class FriendTrackerConfigImportScreen : Routes.Route() {
         Scaffold(
             topBar = {
                 TopAppBar(
-                    title = { Text("Import Rules") },
+                    title = { Text(translation["title"]) },
                     navigationIcon = {
                         IconButton(onClick = { routes.navController.popBackStack() }) {
-                            Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back")
+                            Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = translation["back_button_description"])
                         }
                     },
                     actions = {
@@ -72,14 +74,14 @@ class FriendTrackerConfigImportScreen : Routes.Route() {
                                 val trackerData = context.gson.fromJson(configJson, ExportedTrackerData::class.java)
                                 context.trackerDataManager.importTrackerData(trackerData)
                             }.onSuccess {
-                                context.shortToast("Friend Tracker Rules Imported!")
+                                context.shortToast(translation["imported_toast"])
                                 routes.onRuleImported?.invoke()
                                 routes.navController.popBackStack()
                             }.onFailure {
-                                context.longToast("Failed to import rules: ${it.message}")
+                                context.longToast(translation.format("import_failed_toast", "message" to (it.message ?: "Unknown")))
                             }
                         }) {
-                            Text("Confirm")
+                            Text(translation["confirm_button"])
                         }
                     }
                 )
@@ -112,7 +114,7 @@ class FriendTrackerConfigImportScreen : Routes.Route() {
                                 IconButton(onClick = { isExpanded = !isExpanded }) {
                                     Icon(
                                         imageVector = Icons.Default.KeyboardArrowDown,
-                                        contentDescription = "Expand",
+                                        contentDescription = translation["expand_button_description"],
                                         modifier = Modifier.graphicsLayer(rotationZ = rotationState)
                                     )
                                 }

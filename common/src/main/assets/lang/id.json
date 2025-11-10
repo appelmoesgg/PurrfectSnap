@@ -1,269 +1,2022 @@
 {
     "setup": {
         "dialogs": {
-            "select_language": "Pilih bahasa",
-            "save_folder": "SnapEnhance memerlukan izin Penyimpanan untuk mengunduh dan Menyimpan Media dari Snapchat.\nSilakan pilih lokasi di mana media harus diunduh.",
-            "select_save_folder_button": "Pilih folder"
+            "select_language": "Pilih Bahasa",
+            "save_folder": "PurrfectSnap memerlukan izin Penyimpanan untuk mengunduh dan Menyimpan Media dari Snapchat.\nSilakan pilih lokasi tempat media harus diunduh.",
+            "select_save_folder_button": "Pilih Folder"
         },
         "mappings": {
-            "dialog": "Menghasilkan pemetaan, ini mungkin memakan waktu beberapa saat ...",
-            "generate_failure_no_snapchat": "SnapEnhance tidak dapat mendeteksi Snapchat, coba instal ulang Snapchat.",
+            "dialog": "Membuat Pemetaan, ini mungkin memakan waktu...",
+            "generate_failure_no_snapchat": "PurrfectSnap tidak dapat mendeteksi Snapchat, silakan coba instal ulang Snapchat.",
             "generate_failure": "Terjadi kesalahan saat mencoba membuat pemetaan, silakan coba lagi."
         },
         "permissions": {
             "dialog": "Untuk melanjutkan, Anda harus memenuhi persyaratan berikut:",
             "notification_access": "Akses Notifikasi",
             "battery_optimization": "Optimasi Baterai",
-            "display_over_other_apps": "Tampilkan Di Atas Aplikasi Lain",
-            "request_button": "Meminta"
-        }
-    },
-    "manager": {
-        "routes": {
-            "features": "Fitur",
-            "home": "Rumah",
-            "home_settings": "Pengaturan",
-            "home_logs": "Log",
-            "social": "Sosial",
-            "scripts": "Skrip",
-            "tasks": "Tugas",
-            "manage_rule_feature": "Kelola fitur aturan",
-            "manage_scope": "Kelola ruang lingkup",
-            "file_imports": "Impor file",
-            "messaging_preview": "Pratinjau",
-            "better_location": "Lokasi yang lebih baik",
-            "friend_tracker": "Pelacak teman",
-            "edit_rule": "Edit aturan",
-            "logger_history": "Riwayat logger",
-            "logged_stories": "Cerita yang dicatat",
-            "theming": "Tema",
-            "edit_theme": "Edit Tema",
-            "manage_repos": "Kelola repositori"
-        },
-        "sections": {
-            "features": {
-                "disabled": "Lepas",
-                "export_option": "Ekspor",
-                "import_option": "Impor",
-                "reset_option": "Ulang awal"
-            },
-            "better_location": {
-                "search_bar": "Cari",
-                "latitude_dialog_hint": "Lintang",
-                "save_dialog_button": "Simpan"
-            },
-            "home_settings": {
-                "actions_title": "Aksi",
-                "debug_title": "Debugg",
-                "success_toast": "Selesai!",
-                "export_button": "Ekspor",
-                "clear_button": "Bersihkan"
-            },
-            "manage_scope": {
-                "streaks_expiration_text_expired": "Kadaluarsa",
-                "rules_title": "Aturan"
-            },
-            "home": {
-                "update_button": "Unduhan"
-            },
-            "social": {
-                "empty_hint": "(kosong)",
-                "friends_tab": "Teman²",
-                "groups_tab": "Grup²"
-            }
-        },
-        "dialogs": {
-            "add_friend": {
-                "category_groups": "Grup",
-                "category_friends": "Teman-teman",
-                "search_hint": "Pencarian"
-            },
-            "scripting_warning": {
-                "title": "Bahaya"
-            }
-        }
-    },
-    "features": {
-        "properties": {
-            "downloader": {
-                "properties": {
-                    "ffmpeg_options": {
-                        "properties": {
-                            "threads": {
-                                "name": "Utas"
-                            }
-                        }
-                    }
-                },
-                "name": "Download"
-            },
-            "camera": {
-                "name": "Kamera"
-            },
-            "rules": {
-                "name": "Garis"
-            },
-            "scripting": {
-                "name": "Skrip"
-            },
-            "experimental": {
-                "properties": {
-                    "spoof": {
-                        "name": "Tipuan"
-                    }
-                }
-            },
-            "global": {
-                "properties": {
-                    "better_location": {
-                        "properties": {
-                            "coordinates": {
-                                "name": "Kordinat"
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "options": {
-            "logging": {
-                "started": "Dimulai",
-                "success": "Berhasil",
-                "progress": "Proses",
-                "failure": "Kegagalan"
-            },
-            "auto_download_sources": {
-                "spotlight": "Menyoroti"
-            },
-            "notifications": {
-                "chat": "Obrolan",
-                "snap": "snap",
-                "stories": "Cerita",
-                "typing": "Mengetik",
-                "chat_screenshot": "Tangkapan Layar",
-                "speaking": "Berbicara"
-            },
-            "home_tab": {
-                "map": "Map",
-                "chat": "Obrolan",
-                "spotlight": "Menyoroti",
-                "camera": "Kamera",
-                "discover": "Tampilan"
-            },
-            "gallery_media_send_override": {
-                "SNAP": "snap"
-            },
-            "disable_story_sections": {
-                "following": "Mengikuti",
-                "friends": "Teman²",
-                "discover": "Tampilan"
-            },
-            "disable_permission_requests": {
-                "location": "Lokasi",
-                "camera": "Kamera",
-                "microphone": "Mikropon",
-                "notifications": "Notifikasi"
-            },
-            "auto_purge": {
-                "never": "Tidak Pernah"
-            }
+            "display_over_other_apps": "Tampilkan di Atas Aplikasi Lain",
+            "request_button": "Minta"
         }
     },
     "scopes": {
         "friend": "Teman",
         "group": "Grup"
     },
-    "content_type": {
-        "SNAP": "Jepret",
-        "STATUS": "Cerita",
-        "LOCATION": "Lokasi",
-        "STATUS_COUNTDOWN": "Hitung mundur",
-        "CHAT": "Obrolan",
-        "STICKER": "Stiker",
-        "SHARE": "Bagikan",
-        "STATUS_CONVERSATION_CAPTURE_SCREENSHOT": "Tangkapan layar"
+    "manager": {
+        "routes": {
+            "tasks": "Tugas",
+            "features": "Fitur",
+            "manage_rule_feature": "Kelola Fitur Aturan",
+            "home": "Beranda",
+            "home_settings": "Pengaturan",
+            "home_logs": "Log",
+            "logger_history": "Riwayat Logger",
+            "logged_stories": "Cerita yang Dicatat",
+            "friend_tracker": "Pelacak Teman",
+            "edit_rule": "Edit Aturan",
+            "file_imports": "Impor File",
+            "manage_repos": "Kelola Repositori",
+            "social": "Sosial",
+            "manage_scope": "Kelola Cakupan",
+            "messaging_preview": "Pratinjau",
+            "scripts": "Skrip",
+            "better_location": "Lokasi Lebih Baik"
+        },
+        "sections": {
+            "home": {
+                "version_title": "v{versionName} · di-fork oleh Eternal",
+                "update_title": "Pembaruan PurrfectSnap",
+                "update_content": "Versi {version} tersedia!",
+                "update_button": "Unduh",
+                "debug_build_summary_title": "Anda menjalankan build debug dari PurrfectSnap",
+                "debug_build_summary_content": "Versi {versionName} ({versionCode})",
+                "debug_build_summary_date": "Tanggal build: {date} ({days} hari yang lalu)",
+                "quick_actions_title": "Tindakan Cepat",
+                "download_icon_description": "Unduh",
+                "completed_icon_description": "Selesai",
+                "failed_icon_description": "Gagal",
+                "manage_quick_actions_description": "Kelola Tindakan Cepat",
+                "quick_actions_icon_description": "Tindakan Cepat",
+                "add_quick_action_description": "Tambah Tindakan Cepat"
+            },
+            "home_logs": {
+                "no_logs_hint": "Tidak ada log yang tersedia",
+                "clear_logs_button": "Hapus Log",
+                "export_logs_button": "Ekspor Log",
+                "saving_logs_toast": "Menyimpan log, ini mungkin memakan waktu...",
+                "saved_logs_success_toast": "Log berhasil disimpan",
+                "saved_logs_failure_toast": "Gagal menyimpan log"
+            },
+            "home_settings": {
+                "actions_title": "Tindakan",
+                "message_logger_title": "Pencatat Pesan",
+                "debug_title": "Men-debug",
+                "success_toast": "Selesai!",
+                "message_logger_summary": "{messageCount} pesan\n{storyCount} cerita",
+                "export_button": "Ekspor",
+                "clear_button": "Hapus",
+                "view_logger_history_button": "Lihat Riwayat Logger",
+                "updates_title": "Pembaruan",
+                "auto_update_check": "Periksa pembaruan secara otomatis",
+                "update_check_frequency": "Frekuensi pemeriksaan pembaruan",
+                "update_check_frequency_daily": "Harian",
+                "update_check_frequency_weekly": "Mingguan",
+                "update_check_frequency_monthly": "Bulanan",
+                "theme_icon_description": "Tema",
+                "app_theme_title": "Tema Aplikasi",
+                "theme_mode_system": "Sistem",
+                "theme_mode_light": "Terang",
+                "theme_mode_dark": "Gelap",
+                "ui_settings_title": "Pengaturan UI",
+                "haptic_feedback_label": "Umpan Balik Haptik",
+                "test_mode_label": "Mode Uji (HANYA UNTUK DEBUGGING)",
+                "disable_feature_loading_label": "Nonaktifkan Pemuatan Fitur",
+                "disable_auto_mapper_label": "Nonaktifkan Pemeta Otomatis",
+                "disable_bypass_indicator_label": "Nonaktifkan Indikator Status Bypass",
+                "update_notification_channel_name": "Pembaruan PurrfectSnap",
+                "update_notification_channel_description": "Notifikasi untuk pembaruan PurrfectSnap",
+                "update_notification_title": "Pembaruan PurrfectSnap Tersedia",
+                "update_notification_text": "Versi %s sekarang tersedia.",
+                "export_database_failed_toast": "Gagal mengekspor database! {message}",
+                "clear_messages_failed_toast": "Gagal menghapus pesan! {message}",
+                "clear_file_failed_toast": "Gagal menghapus file! {message}",
+                "debug_file_config": "Konfigurasi",
+                "debug_file_mappings": "Pemetaan",
+                "debug_file_message_logger": "Pencatat Pesan",
+                "debug_file_pinned_best_friend": "Sahabat Terbaik yang Disematkan",
+                "debug_file_native_sig_cache": "Cache Tanda Tangan Asli"
+            },
+            "tasks": {
+                "no_tasks": "Tidak ada tugas",
+                "merge_button": "Gabungkan",
+                "failed_to_open_file": "Gagal membuka file",
+                "merge_files_toast": "Menggabungkan {count} file",
+                "remove_selected_tasks_title": "Apakah Anda yakin ingin menghapus tugas yang dipilih?",
+                "remove_all_tasks_title": "Apakah Anda yakin ingin menghapus semua tugas?",
+                "delete_files_option": "Hapus juga file",
+                "remove_selected_tasks_confirm": "Hapus {count} tugas?",
+                "remove_all_tasks_confirm": "Hapus semua tugas?",
+                "clear_tasks_description": "Hapus tugas",
+                "file_not_found_icon_description": "File tidak ditemukan",
+                "image_icon_description": "Gambar",
+                "video_icon_description": "Video",
+                "audio_icon_description": "Audio",
+                "file_icon_description": "Mengajukan",
+                "download_icon_description": "Unduh",
+                "chat_action_icon_description": "Tindakan Obrolan",
+                "cancel_icon_description": "Batal",
+                "success_icon_description": "Berhasil",
+                "failure_icon_description": "Gagal",
+                "cancelled_icon_description": "Dibatalkan",
+                "task_status_failure": "Gagal",
+                "task_status_cancelled": "Dibatalkan"
+            },
+            "features": {
+                "disabled": "Dinonaktifkan",
+                "export_option": "Ekspor",
+                "import_option": "Impor",
+                "reset_option": "Setel Ulang",
+                "config_export_success_toast": "Konfigurasi berhasil diekspor",
+                "config_import_success_toast": "Konfigurasi berhasil diimpor",
+                "config_import_failure_toast": "Gagal mengimpor konfigurasi {error}",
+                "config_export_failure_toast": "Gagal mengekspor konfigurasi {error}",
+                "saved_config_snackbar": "Konfigurasi disimpan",
+                "older_required": "Fitur ini memerlukan Snapchat v{version} atau lebih lama untuk berfungsi dengan benar",
+                "newer_required": "Fitur ini memerlukan Snapchat v{version} atau lebih baru untuk berfungsi dengan benar",
+                "search_button": "Cari"
+            },
+            "manage_rule_feature": {
+                "disable_state_option": "Dinonaktifkan",
+                "disable_state_subtext": "Tidak ada teman/grup yang akan terpengaruh",
+                "whitelist_state_option": "Tidak ada kecuali...",
+                "whitelist_state_subtext": "Hanya {count} teman/grup yang akan terpengaruh oleh aturan ini",
+                "whitelist_state_button": "Pilih teman/grup yang diizinkan",
+                "blacklist_state_option": "Semua orang kecuali...",
+                "blacklist_state_subtext": "Semua orang kecuali {count} teman/grup akan terpengaruh oleh aturan ini",
+                "blacklist_state_button": "Pilih teman/grup yang dikecualikan",
+                "clear_list_button": "Hapus daftar teman/grup",
+                "dialog_clear_confirmation_text": "Apakah Anda yakin ingin menghapus daftar ini?"
+            },
+            "social": {
+                "friends_tab": "Teman",
+                "groups_tab": "Grup",
+                "empty_hint": "(kosong)",
+                "streaks_expiration_short": "{hours}j"
+            },
+            "manage_scope": {
+                "logged_stories_button": "Tampilkan Cerita yang Dicatat",
+                "e2ee_title": "Enkripsi End-to-End",
+                "rules_title": "Aturan",
+                "participants_text": "{count} peserta",
+                "not_found": "Tidak ditemukan",
+                "streaks_title": "Streak",
+                "streaks_length_text": "Panjang: {length}",
+                "streaks_expiration_text": "Kedaluwarsa dalam {eta}",
+                "streaks_expiration_text_expired": "Kedaluwarsa",
+                "reminder_button": "Setel Pengingat",
+                "delete_scope_confirm_dialog_title": "Apakah Anda yakin ingin menghapus {scope}?",
+                "notes_placeholder": "Klik untuk menambahkan catatan",
+                "invalid_key_size_32_bytes": "Ukuran kunci tidak valid (harus 32 byte)",
+                "successfully_imported_key": "Kunci berhasil diimpor",
+                "failed_to_import_key": "Gagal mengimpor kunci: {message}",
+                "export_base64_button": "Ekspor Base64",
+                "import_base64_button": "Impor Base64"
+            },
+            "logged_stories": {
+                "story_failed_to_load": "Gagal memuat",
+                "no_stories": "Tidak ada cerita yang ditemukan",
+                "save_from_cache_button": "Simpan dari Cache",
+                "downloaded_to_path": "Diunduh ke {path}",
+                "download_failed": "Gagal mengunduh: {message}",
+                "posted_at": "Diposting pada {date}",
+                "created_at": "Dibuat pada {date}",
+                "failed_to_open_file": "Gagal membuka file. Periksa log untuk info lebih lanjut",
+                "failed_to_get_file": "Gagal mendapatkan file"
+            },
+            "messaging_preview": {
+                "processed_messages_toast": "Memproses {count} pesan",
+                "processed_messages_text": "Memproses {count} pesan",
+                "close_button_description": "Tutup",
+                "bridge_connection_failed": "Gagal terhubung ke jembatan. Pastikan Snapchat berjalan di latar belakang",
+                "bridge_init_failed": "Gagal menginisialisasi jembatan pesan. Pastikan Snapchat berjalan di latar belakang",
+                "message_fetch_failed": "Gagal mengambil pesan",
+                "no_message_hint": "Tidak ada pesan",
+                "save_selection_option": "Simpan Pilihan",
+                "save_all_option": "Simpan Semua",
+                "unsave_selection_option": "Batalkan Penyimpanan Pilihan",
+                "unsave_all_option": "Batalkan Penyimpanan Semua",
+                "mark_selection_as_seen_option": "Tandai Snap yang dipilih sebagai telah dilihat",
+                "mark_all_as_seen_option": "Tandai semua Snap sebagai telah dilihat",
+                "delete_selection_option": "Hapus Pilihan",
+                "delete_all_option": "Hapus Semua"
+            },
+            "logger_history": {
+                "download_started_toast": "Pengunduhan dimulai!",
+                "download_success_toast": "Diunduh ke {path}",
+                "download_failed_toast": "Gagal mengunduh {message}",
+                "edited_at_text": "{message} (diedit pada {date})",
+                "download_button": "Unduh",
+                "select_conversation_placeholder": "Pilih percakapan",
+                "close_button_description": "Tutup",
+                "search_button_description": "Cari",
+                "list_friend_format": "Teman {name}",
+                "list_group_format": "Grup {name}",
+                "no_more_messages": "Tidak ada pesan lagi",
+                "reverse_order_checkbox": "Urutan Terbalik",
+                "chat_attachment": "Lampiran {index}",
+                "empty_message": "Pesan Obrolan Kosong",
+                "message_parse_failed": "Gagal mengurai pesan",
+                "unknown_sender": "Pengirim Tidak Dikenal",
+                "download_attachment_failed_toast": "Gagal mengunduh lampiran",
+                "log_header_format": "{username} ({type}) - {date}"
+            },
+            "file_imports": {
+                "import_file_button": "Impor File",
+                "file_not_found": "File tidak ditemukan",
+                "file_import_failed": "Gagal mengimpor file: {error}",
+                "file_imported": "File berhasil diimpor",
+                "file_delete_failed": "Gagal menghapus file",
+                "no_files_hint": "Di sini Anda dapat mengimpor file untuk digunakan di Snapchat. Tekan tombol di bawah untuk mengimpor file."
+            },
+            "better_location": {
+                "spoofed_coordinates_title": "Lintang {latitude}, Panjang {longitude}",
+                "save_coordinates_dialog_title": "Simpan Koordinat",
+                "saved_name_dialog_hint": "Nama yang Disimpan",
+                "latitude_dialog_hint": "Lintang",
+                "longitude_dialog_hint": "Bujur",
+                "save_dialog_button": "Simpan",
+                "choose_location_button": "Pilih Lokasi",
+                "teleport_to_friend_button": "Teleportasi ke Teman",
+                "spoof_location_toggle": "Lokasi Palsu",
+                "suspend_location_updates": "Tangguhkan Pembaruan Lokasi",
+                "saved_coordinates_title": "Koordinat yang Disimpan",
+                "no_saved_coordinates_hint": "Tidak ada koordinat yang disimpan",
+                "delete_dialog_title": "Hapus Koordinat yang Disimpan",
+                "delete_dialog_message": "Apakah Anda yakin ingin menghapus koordinat yang disimpan ini?",
+                "teleport_to_friend_title": "Teleportasi ke Teman",
+                "search_bar": "Cari",
+                "no_friends_map": "Tidak ada teman di peta",
+                "no_friends_found": "Tidak ada teman yang ditemukan",
+                "edit_location_button_description": "Edit Lokasi",
+                "add_icon_description": "Tambah",
+                "edit_icon_description": "Sunting",
+                "delete_icon_description": "Hapus"
+            }
+        },
+        "dialogs": {
+            "add_friend": {
+                "title": "Tambah Teman atau Grup",
+                "search_hint": "Cari",
+                "fetch_error": "Gagal mengambil data",
+                "category_groups": "Grup",
+                "category_friends": "Teman",
+                "participants_text": "{count} peserta",
+                "search_icon_description": "Cari"
+            },
+            "scripting_warning": {
+                "title": "Peringatan",
+                "content": "PurrfectSnap menyertakan alat skrip, yang memungkinkan eksekusi kode yang ditentukan pengguna di perangkat Anda. Gunakan sangat hati-hati dan hanya instal modul dari sumber yang dikenal dan andal. Modul yang tidak sah atau tidak terverifikasi dapat menimbulkan risiko keamanan bagi sistem Anda."
+            },
+            "reset_config": {
+                "title": "Setel Ulang Konfigurasi",
+                "content": "Apakah Anda yakin ingin menyetel ulang konfigurasi?",
+                "success_toast": "Konfigurasi berhasil disetel ulang"
+            },
+            "export_config": {
+                "title": "Ekspor Data Sensitif?",
+                "content": "Apakah Anda ingin mengekspor konfigurasi dengan data sensitif? (Seperti koordinat lokasi, dll.)"
+            },
+            "messaging_action": {
+                "title": "Pilih jenis konten untuk diproses",
+                "select_all_button": "Pilih Semua"
+            },
+            "file_imports": {
+                "no_files_settings_hint": "Tidak ada file yang ditemukan. Pastikan Anda telah mengimpor file yang diperlukan di bagian Impor File",
+                "settings_select_file_hint": "Pilih file yang diimpor"
+            },
+            "quick_actions_dialog": {
+                "title": "Edit Tindakan Cepat",
+                "subtitle": "Pilih dan ukur tindakan cepat Anda."
+            }
+        },
+        "friend_tracker": {
+            "rules_tab": "Aturan",
+            "logs_tab": "Log",
+            "export_dialog_title": "Ekspor",
+            "bulk_export_button": "Ekspor Massal",
+            "individual_export_button": "Ekspor Individu",
+            "invalid_import_type_dialog_title": "Jenis Impor Tidak Valid",
+            "invalid_import_type_dialog_text": "File yang dipilih tidak kompatibel dengan jenis impor ini. Silakan pilih jenis impor yang benar.",
+            "import_dialog_title": "Impor",
+            "bulk_import_button": "Impor Massal",
+            "individual_import_button": "Impor Individu",
+            "import_button_description": "Impor",
+            "export_button_description": "Ekspor",
+            "export_button": "Ekspor",
+            "delete_button_description": "Hapus",
+            "delete_button": "Hapus",
+            "catalog_button_description": "Katalog",
+            "catalog_button": "Katalog",
+            "add_rule_button_description": "Tambah Aturan",
+            "add_rule_button": "Tambah Aturan",
+            "no_rules_found": "Tidak ada aturan yang ditemukan",
+            "empty_rule_name": "(kosong)",
+            "events_suffix": "peristiwa",
+            "scopes_suffix": "cakupan",
+            "select_rule_to_export_title": "Pilih Aturan untuk Diekspor",
+            "deleted_logs_toast": "Menghapus {count} log",
+            "delete_logs_dialog_title": "Hapus log?",
+            "deleting_logs_dialog_text": "Menghapus {count} log...",
+            "delete_logs_dialog_confirm_text": "Ini akan menghapus log berdasarkan filter saat ini dan kueri pencarian. Tindakan ini tidak dapat dibatalkan.",
+            "exported_logs_toast": "Log diekspor!",
+            "export_logs_failed_toast": "Gagal mengekspor log. Periksa logcat untuk detail lebih lanjut.",
+            "export_logs_dialog_title": "Ekspor log?",
+            "exporting_logs_dialog_text": "Mengekspor log...",
+            "export_logs_dialog_confirm_text": "Ini akan mengekspor log berdasarkan filter saat ini dan kueri pencarian.",
+            "export_as_button": "Ekspor sebagai {type}",
+            "filters_title": "Filter",
+            "search_by_label": "Cari berdasarkan",
+            "newest_first_label": "Terbaru dulu",
+            "since_label": "Sejak",
+            "until_label": "Hingga",
+            "pick_a_date_button": "Pilih tanggal",
+            "search_placeholder": "Cari",
+            "filter_button_description": "Menyaring",
+            "clear_button_description": "Hapus",
+            "no_logs_found": "Tidak ada log yang ditemukan",
+            "log_event_format": "{event} di {conversation}",
+            "condition_only_inside_conversation": "Hanya saat saya di dalam percakapan",
+            "condition_only_outside_conversation": "Hanya saat saya di luar percakapan",
+            "condition_only_when_app_active": "Hanya saat Snapchat aktif",
+            "condition_only_when_app_inactive": "Hanya saat Snapchat tidak aktif",
+            "condition_no_push_notification_when_app_active": "Tidak ada notifikasi push saat Snapchat aktif",
+            "add_event_dialog_title": "Tambah Peristiwa",
+            "event_type_label": "Jenis peristiwa",
+            "triggers_title": "Pemicu",
+            "conditions_title": "Kondisi",
+            "add_button": "Tambah",
+            "default_rule_name": "Aturan Kustom",
+            "discard_changes_dialog_title": "Buang Perubahan?",
+            "discard_changes_dialog_text": "Anda memiliki perubahan yang belum disimpan. Apakah Anda yakin ingin membuangnya?",
+            "discard_button": "Buang",
+            "cannot_save_rule_dialog_title": "Tidak Dapat Menyimpan Aturan",
+            "cannot_save_rule_dialog_text": "Sebuah aturan harus memiliki setidaknya satu peristiwa untuk disimpan.",
+            "duplicate_rule_name_dialog_title": "Nama Aturan Duplikat",
+            "duplicate_rule_name_dialog_text": "Aturan dengan nama ini sudah ada. Silakan pilih nama lain.",
+            "delete_rule_dialog_title": "Hapus Aturan",
+            "delete_rule_dialog_text": "Apakah Anda yakin ingin menghapus aturan ini?",
+            "new_rule_title": "Aturan Baru",
+            "edit_rule_title": "Edit Aturan",
+            "back_button_description": "Kembali",
+            "save_button_description": "Simpan",
+            "general_section_title": "Umum",
+            "rule_name_label": "Nama Aturan",
+            "author_name_label": "Nama Penulis",
+            "scope_section_title": "Cakupan",
+            "scope_all": "Semua",
+            "scope_whitelist": "Daftar Putih",
+            "scope_blacklist": "Daftar Hitam",
+            "select_friends_groups_button": "Pilih Teman/Grup ({count})",
+            "events_section_title": "Peristiwa",
+            "add_event_button": "Tambah Peristiwa",
+            "no_events_text": "Tidak ada peristiwa"
+        },
+        "friend_tracker_catalog": {
+            "download_failed": "Gagal mengunduh: {code}",
+            "error": "Kesalahan: {message}",
+            "no_repos_added": "Tidak ada repositori yang ditambahkan.",
+            "no_rules_available": "Tidak ada aturan yang tersedia dari repositori mana pun.",
+            "by_author": "oleh {author}",
+            "imported_button": "Diimpor",
+            "import_button": "Impor",
+            "title": "Katalog Pelacak Teman",
+            "manage_repos_description": "Kelola Repositori"
+        },
+        "friend_tracker_export": {
+            "title": "Ekspor Aturan",
+            "back_button_description": "Kembali",
+            "exported_toast": "Aturan Pelacak Teman Diekspor!",
+            "export_failed_toast": "Gagal mengekspor aturan: {message}",
+            "save_button": "Simpan",
+            "expand_button_description": "Perluas"
+        },
+        "friend_tracker_import": {
+            "title": "Impor Aturan",
+            "back_button_description": "Kembali",
+            "imported_toast": "Aturan Pelacak Teman Diimpor!",
+            "import_failed_toast": "Gagal mengimpor aturan: {message}",
+            "confirm_button": "Konfirmasi",
+            "expand_button_description": "Perluas"
+        },
+        "friend_tracker_repos": {
+            "invalid_repo_title": "Repositori Tidak Valid",
+            "add_repo_button": "Tambah Repositori",
+            "add_repo_dialog_title": "Tambah URL Repositori",
+            "repo_url_label": "URL Repositori",
+            "repo_added_toast": "Repositori berhasil ditambahkan!",
+            "invalid_repo_error": "Ini tampaknya bukan repositori Pelacak Teman yang valid.",
+            "add_repo_failed_toast": "Gagal menambahkan repositori: {message}",
+            "add_button": "Tambah",
+            "no_repos_added": "Tidak ada repositori yang ditambahkan",
+            "remove_button": "Hapus",
+            "remove_repo_dialog_title": "Hapus Repositori",
+            "remove_repo_dialog_text": "Apakah Anda yakin ingin menghapus repositori ini?"
+        },
+        "navigation": {
+            "tracker_tab_label": "Pelacak",
+            "customize_bottom_bar_title": "Sesuaikan Bilah Bawah",
+            "customize_bottom_bar_subtitle": "Urutkan ulang, tambah, atau hapus tab. Maksimal lima.",
+            "shown_tabs_title": "Tab yang Ditampilkan",
+            "no_tabs_selected_text": "Tidak ada tab yang dipilih",
+            "available_tabs_title": "Tab yang Tersedia",
+            "reset_button": "Setel Ulang",
+            "done_button": "Selesai"
+        },
+        "scripting": {
+            "script_already_installed": "Skrip sudah diinstal!",
+            "downloading_script": "Mengunduh skrip...",
+            "script_downloaded": "Skrip {name} diunduh!",
+            "download_script_failed": "Gagal mengunduh skrip. Periksa log untuk detail lebih lanjut",
+            "import_script_from_url_title": "Impor Skrip dari URL",
+            "import_script_warning": "Peringatan: Skrip yang diimpor dapat berbahaya bagi perangkat Anda. Hanya impor skrip dari sumber tepercaya.",
+            "enter_url_label": "Masukkan URL di sini:",
+            "script_imported": "Skrip {name} diimpor!",
+            "import_failed": "Gagal mengimpor skrip. {message}. Periksa log untuk detail lebih lanjut",
+            "import_button": "Impor",
+            "update_module_button": "Perbarui Modul",
+            "updating_script": "Memperbarui skrip {name}...",
+            "module_not_found": "Modul tidak ditemukan",
+            "updated_script": "Memperbarui {name} ke versi {version}",
+            "update_module_failed": "Gagal memperbarui modul. Periksa log untuk detail lebih lanjut",
+            "edit_module_button": "Edit Modul",
+            "open_module_failed": "Gagal membuka file modul. Periksa log untuk detail lebih lanjut",
+            "clear_module_data_button": "Hapus Data Modul",
+            "module_data_cleared": "Data modul dihapus!",
+            "clear_module_data_failed": "Gagal menghapus data modul. Periksa log untuk detail lebih lanjut",
+            "delete_module_button": "Hapus Modul",
+            "deleted_script": "Menghapus skrip {name}!",
+            "delete_module_failed": "Gagal menghapus modul. Periksa log untuk detail lebih lanjut",
+            "actions_title": "Tindakan",
+            "no_description": "Tidak ada deskripsi",
+            "update_available": "Pembaruan tersedia: {version}",
+            "actions_button": "Tindakan",
+            "loaded_script": "Skrip {name} dimuat",
+            "unloaded_script": "Skrip {name} dibongkar",
+            "enable_script_failed": "Gagal mengaktifkan skrip. Periksa log untuk detail lebih lanjut",
+            "disable_script_failed": "Gagal menonaktifkan skrip. Periksa log untuk detail lebih lanjut",
+            "select_scripts_folder_toast": "Silakan pilih folder skrip Anda!",
+            "manage_repos_button": "Kelola Repositori",
+            "import_from_url_button": "Impor dari URL",
+            "open_scripts_folder_button": "Buka Folder Skrip",
+            "no_settings_for_module": "Modul ini tidak memiliki pengaturan apa pun",
+            "installed_scripts_tab": "Skrip yang Diinstal",
+            "catalog_tab": "Katalog",
+            "no_scripts_folder_selected_title": "Tidak ada folder skrip yang dipilih",
+            "select_folder_button": "Pilih folder",
+            "no_scripts_found_title": "Tidak ada skrip yang ditemukan.",
+            "use_catalog_to_add_scripts": "Gunakan tab katalog untuk menambahkan skrip!",
+            "ok_button_timeout": "Oke ({timeout})",
+            "documentation_button": "Dokumentasi",
+            "catalog": {
+                "script_already_installed": "Skrip sudah diinstal!",
+                "download_failed": "Gagal mengunduh: {code}",
+                "script_downloaded": "Skrip diunduh!",
+                "could_not_create_file": "Tidak dapat membuat file.",
+                "no_scripts_folder_selected": "Tidak ada folder skrip yang dipilih.",
+                "error": "Kesalahan: {message}",
+                "no_repos_added": "Tidak ada repositori yang ditambahkan.",
+                "repo_list_info": "Di sini Anda dapat menemukan daftar repositori: ",
+                "link_text": "Tautan",
+                "no_scripts_available": "Tidak ada skrip yang tersedia dari repositori mana pun.",
+                "by_author": "oleh {author}",
+                "version": "Versi: {version}",
+                "installed_button": "Diinstal",
+                "download_button": "Unduh"
+            },
+            "repos": {
+                "invalid_repo_title": "Repositori Tidak Valid",
+                "add_repo_button": "Tambah Repositori",
+                "add_repo_dialog_title": "Tambah URL Repositori",
+                "repo_url_label": "URL Repositori",
+                "repo_added_toast": "Repositori berhasil ditambahkan!",
+                "invalid_repo_error": "Ini tampaknya bukan repositori Skrip yang valid.",
+                "add_repo_failed_toast": "Gagal menambahkan repositori: {message}",
+                "add_button": "Tambah",
+                "no_repos_added": "Tidak ada repositori yang ditambahkan",
+                "remove_button": "Hapus",
+                "remove_repo_dialog_title": "Hapus Repositori",
+                "remove_repo_dialog_text": "Apakah Anda yakin ingin menghapus repositori ini?"
+            }
+        },
+        "features": {
+            "config_import": {
+                "title": "Konfirmasi Impor",
+                "back_button_description": "Kembali",
+                "config_imported_toast": "Konfigurasi Diimpor!",
+                "confirm_button": "Konfirmasi",
+                "expand_button_description": "Perluas",
+                "enable_feature": "Aktifkan Fitur",
+                "enabled": "Diaktifkan",
+                "disabled": "Dinonaktifkan"
+            },
+            "config_export": {
+                "title": "Ringkasan Ekspor",
+                "back_button_description": "Kembali",
+                "save_button": "Simpan",
+                "expand_button_description": "Perluas",
+                "enable_feature": "Aktifkan Fitur",
+                "enabled": "Diaktifkan",
+                "disabled": "Dinonaktifkan"
+            }
+        },
+        "manage_repos": {
+            "title": "Kelola Repositori {type}",
+            "add_repo_button": "Tambah Repositori",
+            "add_repo_dialog_title": "Tambah URL Repositori",
+            "repo_url_label": "URL Repositori",
+            "repo_added_successfully": "Repositori berhasil ditambahkan!",
+            "add_repo_failed": "Gagal menambahkan repositori: {message}",
+            "add_button": "Tambah",
+            "no_repos_added": "Tidak ada repositori yang ditambahkan",
+            "remove_button": "Hapus"
+        }
     },
-    "material3_strings": {
-        "date_range_picker_day_in_range": "Terpilih",
-        "date_range_picker_end_headline": "Untuk",
-        "date_picker_switch_to_calendar_mode": "Kalender",
-        "date_picker_switch_to_input_mode": "Masukan",
-        "date_picker_today_description": "Hari ini",
-        "date_range_picker_start_headline": "Dari"
+    "rules": {
+        "toasts": {
+            "enabled": "{ruleName} diaktifkan",
+            "disabled": "{ruleName} dinonaktifkan"
+        },
+        "modes": {
+            "blacklist": "Mode daftar hitam",
+            "whitelist": "Mode daftar putih"
+        },
+        "properties": {
+            "auto_download": {
+                "name": "Unduh otomatis",
+                "description": "Unduh Snap secara otomatis saat melihatnya",
+                "options": {
+                    "blacklist": "Kecualikan dari Unduh Otomatis",
+                    "whitelist": "Unduh Otomatis"
+                }
+            },
+            "stealth": {
+                "name": "Mode Siluman",
+                "description": "Mencegah siapa pun mengetahui bahwa Anda telah membuka Snap/Obrolan dan percakapan mereka",
+                "options": {
+                    "blacklist": "Kecualikan dari Mode Siluman",
+                    "whitelist": "Mode siluman"
+                }
+            },
+            "auto_save": {
+                "name": "Simpan Otomatis",
+                "description": "Menyimpan Pesan Obrolan saat melihatnya",
+                "options": {
+                    "blacklist": "Kecualikan dari Simpan Otomatis",
+                    "whitelist": "Simpan otomatis"
+                }
+            },
+            "unsaveable_messages": {
+                "name": "Pesan yang Tidak Dapat Disimpan",
+                "description": "Mencegah pesan disimpan dalam obrolan oleh orang lain",
+                "options": {
+                    "blacklist": "Kecualikan dari Pesan yang Tidak Dapat Disimpan",
+                    "whitelist": "Pesan yang Tidak Dapat Disimpan"
+                }
+            },
+            "auto_open_snaps": {
+                "name": "Buka Snap Otomatis",
+                "description": "Membuka Snap secara otomatis saat menerimanya",
+                "options": {
+                    "blacklist": "Kecualikan dari Buka Snap Otomatis",
+                    "whitelist": "Buka Snap Otomatis"
+                }
+            },
+            "hide_friend_feed": {
+                "name": "Sembunyikan dari Umpan Teman"
+            },
+            "e2e_encryption": {
+                "name": "Gunakan Enkripsi E2E"
+            },
+            "pin_conversation": {
+                "name": "Sematkan Percakapan"
+            },
+            "exclude_message_logger": {
+                "name": "Kecualikan dari Pencatat Pesan"
+            }
+        }
     },
-    "button": {
-        "positive": "Iya",
-        "open": "Buka",
-        "cancel": "Batal",
-        "download": "Unduhan",
-        "ok": "Oke",
-        "negative": "Tidak"
+    "actions": {
+        "clean_snapchat_cache": {
+            "name": "Bersihkan Cache Snapchat",
+            "description": "Membersihkan Cache Snapchat"
+        },
+        "manage_friend_list": {
+            "name": "Kelola Daftar Teman",
+            "description": "Impor/ekspor daftar teman Anda saat mencadangkan"
+        },
+        "export_chat_messages": {
+            "name": "Ekspor Pesan Obrolan",
+            "description": "Mengekspor pesan percakapan ke file JSON/HTML/TXT"
+        },
+        "export_memories": {
+            "name": "Ekspor Kenangan",
+            "description": "Mengekspor kenangan ke file ZIP"
+        },
+        "bulk_messaging_action": {
+            "name": "Tindakan Pesan Massal",
+            "description": "Melakukan operasi seperti menghapus teman atau penghapusan massal percakapan"
+        },
+        "regen_mappings": {
+            "name": "Buat Ulang Pemetaan",
+            "description": "Buat ulang pemetaan secara manual"
+        },
+        "change_language": {
+            "name": "Ubah Bahasa",
+            "description": "Ubah bahasa PurrfectSnap"
+        },
+        "file_imports": {
+            "name": "Impor File",
+            "description": "Impor file untuk digunakan di Snapchat"
+        },
+        "friend_tracker": {
+            "name": "Pelacak Teman",
+            "description": "Lacak teman Anda di Snapchat"
+        },
+        "logger_history": {
+            "name": "Riwayat Logger",
+            "description": "Lihat riwayat pesan yang dicatat"
+        }
     },
-    "biometric_auth": {
-        "unlock_button": "Buka Kunci"
-    },
-    "conversation_preview": {
-        "title": "Pratinjau"
-    },
-    "download_processor": {
-        "attachment_type": {
-            "gif": "Gifs",
-            "sticker": "Stiker",
-            "note": "Catatan",
-            "snap": "Jepret"
+    "features": {
+        "notices": {
+            "unstable": "⚠️ Tidak Stabil",
+            "ban_risk": "⚠️ Fitur ini dapat menyebabkan larangan",
+            "internal_behavior": "⚠️ Ini dapat merusak perilaku internal Snapchat"
+        },
+        "properties": {
+            "downloader": {
+                "name": "Pengunduh",
+                "description": "Unduh Media Snapchat",
+                "properties": {
+                    "save_folder": {
+                        "name": "Simpan Folder",
+                        "description": "Pilih direktori tempat semua media harus diunduh"
+                    },
+                    "auto_download_sources": {
+                        "name": "Sumber Unduh Otomatis",
+                        "description": "Pilih sumber untuk diunduh secara otomatis"
+                    },
+                    "prevent_self_auto_download": {
+                        "name": "Cegah Unduh Otomatis Sendiri",
+                        "description": "Mencegah Snap Anda sendiri diunduh secara otomatis"
+                    },
+                    "path_format": {
+                        "name": "Format Jalur",
+                        "description": "Tentukan Format Jalur File"
+                    },
+                    "allow_duplicate": {
+                        "name": "Izinkan Duplikat",
+                        "description": "Memungkinkan media yang sama diunduh beberapa kali"
+                    },
+                    "merge_overlays": {
+                        "name": "Gabungkan Hamparan",
+                        "description": "Menggabungkan Teks dan media Snap menjadi satu file"
+                    },
+                    "force_image_format": {
+                        "name": "Paksa Format Gambar",
+                        "description": "Memaksa gambar disimpan dalam Format yang ditentukan"
+                    },
+                    "force_voice_note_format": {
+                        "name": "Paksa Format Catatan Suara",
+                        "description": "Memaksa Catatan Suara disimpan dalam Format yang ditentukan"
+                    },
+                    "auto_download_voice_notes": {
+                        "name": "Unduh Catatan Suara Otomatis",
+                        "description": "Mengunduh catatan suara secara otomatis saat memutarnya"
+                    },
+                    "download_profile_pictures": {
+                        "name": "Unduh Gambar Profil",
+                        "description": "Memungkinkan Anda mengunduh Gambar Profil dari halaman profil"
+                    },
+                    "opera_download_button": {
+                        "name": "Tombol Unduh Opera",
+                        "description": "Menambahkan tombol unduh di sudut kanan atas saat melihat Snap.\nTekan lama pada tombol akan memaksa pengunduhan"
+                    },
+                    "download_context_menu": {
+                        "name": "Menu Konteks Unduh",
+                        "description": "Memungkinkan Anda mengunduh/melihat pratinjau pesan dari percakapan atau cerita menggunakan menu konteks.\nTekan lama pada tombol akan memaksa pengunduhan"
+                    },
+                    "ffmpeg_options": {
+                        "name": "Opsi FFmpeg",
+                        "description": "Tentukan opsi FFmpeg tambahan",
+                        "properties": {
+                            "threads": {
+                                "name": "Utas",
+                                "description": "Jumlah utas yang akan digunakan"
+                            },
+                            "preset": {
+                                "name": "Prasetel",
+                                "description": "Atur kecepatan konversi"
+                            },
+                            "constant_rate_factor": {
+                                "name": "Faktor Laju Konstan",
+                                "description": "Atur faktor laju konstan untuk enkoder video\nDari 0 hingga 51 untuk libx264"
+                            },
+                            "video_bitrate": {
+                                "name": "Bitrate Video",
+                                "description": "Atur bitrate video (kbps)"
+                            },
+                            "audio_bitrate": {
+                                "name": "Bitrate Audio",
+                                "description": "Atur bitrate audio (kbps)"
+                            },
+                            "custom_video_codec": {
+                                "name": "Codec Video Kustom",
+                                "description": "Atur Codec Video kustom (misalnya libx264)"
+                            },
+                            "custom_audio_codec": {
+                                "name": "Codec Audio Kustom",
+                                "description": "Atur Codec Audio kustom (misalnya AAC)"
+                            }
+                        }
+                    },
+                    "logging": {
+                        "name": "Pencatatan",
+                        "description": "Menampilkan toast saat media sedang diunduh"
+                    },
+                    "custom_path_format": {
+                        "name": "Format Jalur Kustom",
+                        "description": "Tentukan format jalur kustom untuk media yang diunduh\n\nVariabel yang tersedia:\n - %username%\n - %source%\n - %hash%\n - %date_time%"
+                    }
+                }
+            },
+            "user_interface": {
+                "name": "Antarmuka Pengguna",
+                "description": "Ubah tampilan dan nuansa Snapchat",
+                "properties": {
+                    "enable_app_appearance": {
+                        "name": "Aktifkan Pengaturan Tampilan Aplikasi",
+                        "description": "Mengaktifkan Pengaturan Tampilan Aplikasi yang tersembunyi\nMungkin tidak diperlukan pada versi Snapchat yang lebih baru"
+                    },
+                    "friend_feed_message_preview": {
+                        "name": "Pratinjau Pesan Umpan Teman",
+                        "description": "Menampilkan pratinjau pesan terakhir di Umpan Teman",
+                        "properties": {
+                            "amount": {
+                                "name": "Jumlah",
+                                "description": "Jumlah pesan yang akan dipratinjau"
+                            }
+                        }
+                    },
+                    "snap_preview": {
+                        "name": "Pratinjau Snap",
+                        "description": "Menampilkan pratinjau kecil di sebelah Snap yang belum dilihat di obrolan"
+                    },
+                    "bootstrap_override": {
+                        "name": "Penggantian Bootstrap",
+                        "description": "Mengganti pengaturan bootstrap antarmuka pengguna",
+                        "properties": {
+                            "app_appearance": {
+                                "name": "Tampilan Aplikasi",
+                                "description": "Mengatur Tampilan Aplikasi yang persisten"
+                            },
+                            "home_tab": {
+                                "name": "Tab Beranda",
+                                "description": "Mengganti tab startup saat membuka Snapchat"
+                            }
+                        }
+                    },
+                    "force_amoled_theme": {
+                        "name": "Mode Gelap Amoled",
+                        "description": "Menggunakan latar belakang hitam pekat untuk tema gelap"
+                    },
+                    "map_friend_nametags": {
+                        "name": "Tag Nama Teman Peta yang Ditingkatkan",
+                        "description": "Meningkatkan Tag Nama teman di Snapmap"
+                    },
+                    "prevent_message_list_auto_scroll": {
+                        "name": "Cegah Gulir Otomatis Daftar Pesan",
+                        "description": "Mencegah daftar pesan bergulir ke bawah saat mengirim/menerima pesan"
+                    },
+                    "streak_expiration_info": {
+                        "name": "Tampilkan Info Kedaluwarsa Streak",
+                        "description": "Menampilkan penghitung waktu Kedaluwarsa Streak di sebelah penghitung Streak"
+                    },
+                    "hide_friend_feed_entry": {
+                        "name": "Sembunyikan Entri Umpan Teman",
+                        "description": "Menyembunyikan teman tertentu dari Umpan Teman\nGunakan tab sosial untuk mengelola fitur ini"
+                    },
+                    "hide_streak_restore": {
+                        "name": "Sembunyikan Pemulihan Streak",
+                        "description": "Menyembunyikan tombol Pulihkan di umpan teman"
+                    },
+                    "hide_quick_add_suggestions": {
+                        "name": "Sembunyikan Saran Tambah Cepat",
+                        "description": "Menghapus saran teman tambah cepat"
+                    },
+                    "hide_story_suggestions": {
+                        "name": "Sembunyikan Saran Cerita",
+                        "description": "Menghapus saran dari halaman Cerita"
+                    },
+                    "hide_ui_components": {
+                        "name": "Sembunyikan Komponen UI",
+                        "description": "Pilih komponen UI mana yang akan disembunyikan"
+                    },
+                    "opera_media_quick_info": {
+                        "name": "Info Cepat Media Opera",
+                        "description": "Menampilkan informasi berguna tentang media seperti tanggal pembuatan di menu konteks penampil opera"
+                    },
+                    "old_bitmoji_selfie": {
+                        "name": "Selfie Bitmoji Lama",
+                        "description": "Mengembalikan selfie Bitmoji dari versi Snapchat yang lebih lama"
+                    },
+                    "disable_spotlight": {
+                        "name": "Nonaktifkan Spotlight",
+                        "description": "Menonaktifkan halaman Spotlight"
+                    },
+                    "friend_feed_menu_buttons": {
+                        "name": "Tombol Menu Umpan Teman",
+                        "description": "Pilih tombol mana yang akan ditampilkan di Menu Umpan Teman"
+                    },
+                    "auto_close_friend_feed_menu": {
+                        "name": "Tutup Otomatis Menu Umpan Teman",
+                        "description": "Menutup Menu Umpan Teman secara otomatis setelah menekan tombol pengaturan"
+                    },
+                    "vertical_story_viewer": {
+                        "name": "Penampil Cerita Vertikal",
+                        "description": "Mengaktifkan penampil cerita vertikal untuk semua cerita"
+                    },
+                    "enable_friend_feed_menu_bar": {
+                        "name": "Bilah Menu Umpan Teman",
+                        "description": "Mengaktifkan Bilah Menu Umpan Teman yang baru"
+                    },
+                    "message_indicators": {
+                        "name": "Indikator Pesan",
+                        "description": "Menambahkan ikon indikator spesifik ke pesan\nCatatan: Indikator mungkin tidak 100% akurat"
+                    },
+                    "stealth_mode_indicator": {
+                        "name": "Indikator Mode Siluman",
+                        "description": "Menambahkan emoji 👻 di sebelah percakapan dalam mode siluman"
+                    },
+                    "edit_text_override": {
+                        "name": "Penggantian Edit Teks",
+                        "description": "Mengganti perilaku bidang teks"
+                    },
+                    "prevent_forced_keyboard": {
+                        "name": "Cegah Keyboard Paksa",
+                        "description": "Mencegah Snapchat memunculkan keyboard secara otomatis saat Anda membuka percakapan"
+                    },
+                    "settings_menu": {
+                        "name": "Menu Pengaturan",
+                        "description": "Mengubah cara Anda membuka menu PurrfectSnap",
+                        "options": {
+                            "default": "Bawaan",
+                            "legacy": "Lama"
+                        }
+                    }
+                }
+            },
+            "messaging": {
+                "name": "Pesan",
+                "description": "Ubah cara Anda berinteraksi dengan teman",
+                "properties": {
+                    "bypass_screenshot_detection": {
+                        "name": "Lewati Deteksi Tangkapan Layar",
+                        "description": "Mencegah Snapchat mendeteksi saat Anda mengambil tangkapan layar"
+                    },
+                    "anonymous_story_viewing": {
+                        "name": "Melihat Cerita Secara Anonim",
+                        "description": "Mencegah siapa pun mengetahui bahwa Anda telah melihat cerita mereka"
+                    },
+                    "prevent_story_rewatch_indicator": {
+                        "name": "Cegah Indikator Tonton Ulang Cerita",
+                        "description": "Mencegah siapa pun mengetahui bahwa Anda telah menonton ulang cerita mereka"
+                    },
+                    "hide_peek_a_peek": {
+                        "name": "Sembunyikan Mengintip",
+                        "description": "Mencegah pemberitahuan dikirim saat Anda setengah menggeser ke dalam obrolan"
+                    },
+                    "hide_bitmoji_presence": {
+                        "name": "Sembunyikan Kehadiran Bitmoji",
+                        "description": "Mencegah Bitmoji Anda muncul saat berada di Obrolan"
+                    },
+                    "hide_typing_notifications": {
+                        "name": "Sembunyikan Notifikasi Mengetik",
+                        "description": "Mencegah siapa pun mengetahui bahwa Anda sedang mengetik pesan"
+                    },
+                    "unlimited_snap_view_time": {
+                        "name": "Waktu Lihat Snap Tidak Terbatas",
+                        "description": "Menghapus Batas Waktu untuk melihat Snap"
+                    },
+                    "auto_mark_as_read": {
+                        "name": "Tandai Otomatis sebagai Telah Dibaca",
+                        "description": "Secara otomatis menandai pesan/snap sebagai telah dibaca bahkan saat Mode Siluman diaktifkan"
+                    },
+                    "mark_snap_as_seen_button": {
+                        "name": "Tombol Tandai Snap sebagai Telah Dilihat",
+                        "description": "Menambahkan tombol untuk menandai Snap sebagai telah dilihat saat melihatnya.\nIni akan berfungsi bahkan saat Mode Siluman diaktifkan"
+                    },
+                    "skip_when_marking_as_seen": {
+                        "name": "Lewati Saat Menandai sebagai Telah Dilihat",
+                        "description": "Secara otomatis melompat ke Snap berikutnya saat menandai Snap sebagai telah dilihat.\nGunakan dalam kombinasi dengan Tombol Tandai Snap sebagai Telah Dilihat"
+                    },
+                    "loop_media_playback": {
+                        "name": "Putar Ulang Media",
+                        "description": "Memutar ulang media saat melihat Snap/Cerita"
+                    },
+                    "disable_replay_in_ff": {
+                        "name": "Nonaktifkan Putar Ulang di FF",
+                        "description": "Menonaktifkan kemampuan untuk memutar ulang dengan menekan lama dari Umpan Teman"
+                    },
+                    "half_swipe_notifier": {
+                        "name": "Pemberitahu Setengah Geser",
+                        "description": "Memberi tahu Anda saat seseorang setengah menggeser ke dalam percakapan",
+                        "properties": {
+                            "min_duration": {
+                                "name": "Durasi Minimum",
+                                "description": "Durasi minimum setengah geser (dalam detik)"
+                            },
+                            "max_duration": {
+                                "name": "Durasi Maksimum",
+                                "description": "Durasi maksimum setengah geser (dalam detik)"
+                            }
+                        }
+                    },
+                    "call_start_confirmation": {
+                        "name": "Konfirmasi Mulai Panggilan",
+                        "description": "Menampilkan dialog konfirmasi saat memulai panggilan"
+                    },
+                    "unlimited_conversation_pinning": {
+                        "name": "Menyematkan Percakapan Tanpa Batas",
+                        "description": "Memungkinkan Anda menyematkan jumlah percakapan tanpa batas secara lokal"
+                    },
+                    "disable_snap_mode_restrictions": {
+                        "name": "Nonaktifkan Pembatasan Mode Snap",
+                        "description": "Memungkinkan Anda melihat Snap yang dapat merusak diri sendiri tanpa batasan"
+                    },
+                    "prevent_message_sending": {
+                        "name": "Cegah Pengiriman Pesan",
+                        "description": "Mencegah pengiriman jenis pesan tertentu"
+                    },
+                    "friend_mutation_notifier": {
+                        "name": "Pemberitahu Mutasi Teman",
+                        "description": "Memberi tahu Anda saat ada sesuatu yang berubah di profil teman"
+                    },
+                    "better_notifications": {
+                        "name": "Notifikasi Lebih Baik",
+                        "description": "Menambahkan lebih banyak informasi dalam notifikasi yang diterima",
+                        "properties": {
+                            "group_notifications": {
+                                "name": "Notifikasi Grup",
+                                "description": "Kelompokkan notifikasi menjadi satu"
+                            },
+                            "chat_preview": {
+                                "name": "Pratinjau Obrolan",
+                                "description": "Menampilkan pratinjau pesan yang diterima dalam notifikasi"
+                            },
+                            "media_preview": {
+                                "name": "Pratinjau Media",
+                                "description": "Menampilkan pratinjau jenis media yang dipilih dalam notifikasi"
+                            },
+                            "media_caption": {
+                                "name": "Keterangan Media",
+                                "description": "Menampilkan keterangan media yang terlampir dalam notifikasi"
+                            },
+                            "stacked_media_messages": {
+                                "name": "Pesan Media Bertumpuk",
+                                "description": "Menggabungkan beberapa pesan media menjadi satu notifikasi teks saat tidak dapat dipratinjau. Gunakan dalam kombinasi dengan Pratinjau Obrolan"
+                            },
+                            "friend_add_source": {
+                                "name": "Sumber Tambah Teman",
+                                "description": "Menampilkan sumber permintaan pertemanan dalam notifikasi"
+                            },
+                            "reply_button": {
+                                "name": "Tombol Balas",
+                                "description": "Menambahkan tombol balas ke notifikasi"
+                            },
+                            "smart_replies": {
+                                "name": "Balasan Cerdas",
+                                "description": "Menambahkan balasan yang disarankan ke notifikasi (Android 10+). Gunakan dalam kombinasi dengan Tombol Balas"
+                            },
+                            "download_button": {
+                                "name": "Tombol Unduh",
+                                "description": "Memungkinkan Anda mengunduh media dari notifikasi"
+                            },
+                            "mark_as_read_button": {
+                                "name": "Tombol Tandai sebagai Telah Dibaca",
+                                "description": "Memungkinkan Anda menandai pesan sebagai telah dibaca dari notifikasi"
+                            },
+                            "mark_as_read_and_save_in_chat": {
+                                "name": "Tandai sebagai Telah Dibaca dan Simpan di Obrolan",
+                                "description": "Menambahkan tombol tandai sebagai telah dibaca dan simpan di obrolan ke notifikasi"
+                            }
+                        }
+                    },
+                    "notification_blacklist": {
+                        "name": "Daftar Hitam Notifikasi",
+                        "description": "Pilih notifikasi mana yang harus diblokir"
+                    },
+                    "message_logger": {
+                        "name": "Pencatat Pesan",
+                        "description": "Mencegah pesan dihapus",
+                        "properties": {
+                            "keep_my_own_messages": {
+                                "name": "Simpan Pesan Saya Sendiri",
+                                "description": "Mencegah pesan Anda sendiri dihapus"
+                            },
+                            "auto_purge": {
+                                "name": "Hapus Otomatis",
+                                "description": "Secara otomatis menghapus pesan yang di-cache yang lebih lama dari jumlah waktu yang ditentukan"
+                            },
+                            "message_filter": {
+                                "name": "Filter Pesan",
+                                "description": "Pilih pesan mana yang harus dicatat (kosong untuk semua pesan)"
+                            },
+                            "deleted_message_color": {
+                                "name": "Warna Pesan yang Dihapus",
+                                "description": "Mengatur warna pesan yang dihapus"
+                            }
+                        }
+                    },
+                    "auto_save_messages_in_conversations": {
+                        "name": "Simpan Pesan Otomatis",
+                        "description": "Secara otomatis menyimpan setiap pesan dalam percakapan"
+                    },
+                    "gallery_media_send_override": {
+                        "name": "Penggantian Pengiriman Media Galeri",
+                        "description": "Memalsukan sumber media saat mengirim dari Galeri"
+                    },
+                    "strip_media_metadata": {
+                        "name": "Hapus Metadata Media",
+                        "description": "Menghapus metadata media sebelum mengirim sebagai pesan"
+                    },
+                    "bypass_message_retention_policy": {
+                        "name": "Lewati Kebijakan Penyimpanan Pesan",
+                        "description": "Mencegah pesan dihapus setelah melihatnya"
+                    },
+                    "bypass_message_action_restrictions": {
+                        "name": "Lewati Pembatasan Tindakan Pesan",
+                        "description": "Memungkinkan Anda bereaksi terhadap snap tanpa membukanya atau menyimpan pesan yang tidak dapat disimpan"
+                    },
+                    "remove_groups_locked_status": {
+                        "name": "Hapus Status Terkunci Grup",
+                        "description": "Memungkinkan Anda melihat informasi grup setelah dikeluarkan"
+                    },
+                    "double_tap_chat_action": {
+                        "name": "Tindakan Obrolan Ketuk Dua Kali",
+                        "description": "Melakukan tindakan kustom saat mengetuk dua kali pesan dalam obrolan"
+                    },
+                    "double_tap_chat_action_custom_emoji": {
+                        "name": "Reaksi Emoji Kustom Tindakan Obrolan Ketuk Dua Kali",
+                        "description": "Mengatur reaksi emoji kustom untuk tindakan obrolan ketuk dua kali"
+                    }
+                }
+            },
+            "global": {
+                "name": "Global",
+                "description": "Ubah Pengaturan Snapchat Global",
+                "properties": {
+                    "better_location": {
+                        "name": "Lokasi Lebih Baik",
+                        "description": "Meningkatkan Lokasi Snapchat",
+                        "properties": {
+                            "spoof_location": {
+                                "name": "Lokasi Palsu",
+                                "description": "Memalsukan lokasi Anda ke lokasi yang ditentukan"
+                            },
+                            "coordinates": {
+                                "name": "Koordinat",
+                                "description": "Atur koordinat lokasi palsu"
+                            },
+                            "walk_radius": {
+                                "name": "Radius Jalan",
+                                "description": "Berjalan secara acak di dalam radius ini (kaki)"
+                            },
+                            "always_update_location": {
+                                "name": "Selalu Perbarui Lokasi",
+                                "description": "Paksa Snapchat untuk memperbarui lokasi bahkan jika tidak ada data GPS yang diterima"
+                            },
+                            "suspend_location_updates": {
+                                "name": "Tangguhkan Pembaruan Lokasi",
+                                "description": "Mencegah lokasi Anda diperbarui"
+                            },
+                            "spoof_battery_level": {
+                                "name": "Tingkat Baterai Palsu",
+                                "description": "Memalsukan tingkat baterai perangkat Anda di peta\nNilai harus antara 0 dan 100"
+                            },
+                            "spoof_headphones": {
+                                "name": "Headphone Palsu",
+                                "description": "Memalsukan status mendengarkan musik di peta"
+                            },
+                            "show_battery_level": {
+                                "name": "Tampilkan Tingkat Baterai",
+                                "description": "Menampilkan tingkat baterai teman Anda di peta"
+                            }
+                        }
+                    },
+                    "snapchat_plus": {
+                        "name": "Snapchat Ditambah",
+                        "description": "Mengaktifkan fitur Snapchat Plus\nBeberapa fitur Sisi Server mungkin tidak berfungsi"
+                    },
+                    "media_upload_quality": {
+                        "name": "Kualitas Unggahan Media",
+                        "description": "Mengganti kualitas unggahan media",
+                        "properties": {
+                            "force_video_upload_source_quality": {
+                                "name": "Paksa Kualitas Sumber Unggahan Video",
+                                "description": "Memaksa Snapchat untuk menggunakan kualitas sumber saat mengunggah video\nHarap dicatat bahwa ini mungkin tidak menghapus metadata dari media"
+                            },
+                            "disable_image_compression": {
+                                "name": "Nonaktifkan Kompresi Gambar",
+                                "description": "Menonaktifkan kompresi gambar saat mengunggah media"
+                            },
+                            "custom_image_upload_format": {
+                                "name": "Format Unggahan Gambar Kustom",
+                                "description": "Mengatur format unggahan gambar kustom\nPilih format tanpa kehilangan (seperti PNG) untuk kualitas terbaik"
+                            }
+                        }
+                    },
+                    "disable_confirmation_dialogs": {
+                        "name": "Nonaktifkan Dialog Konfirmasi",
+                        "description": "Secara otomatis mengonfirmasi tindakan yang dipilih"
+                    },
+                    "auto_updater": {
+                        "name": "Pembaruan Otomatis",
+                        "description": "Secara otomatis memeriksa pembaruan baru"
+                    },
+                    "disable_metrics": {
+                        "name": "Nonaktifkan Metrik",
+                        "description": "Memblokir pengiriman data analitik spesifik ke Snapchat"
+                    },
+                    "disable_story_sections": {
+                        "name": "Nonaktifkan Bagian Cerita",
+                        "description": "Menghapus bagian dari halaman Cerita\nMungkin memerlukan penyegaran agar berfungsi dengan baik"
+                    },
+                    "block_ads": {
+                        "name": "Blokir Iklan",
+                        "description": "Mencegah Iklan ditampilkan"
+                    },
+                    "disable_custom_tabs": {
+                        "name": "Nonaktifkan Tab Kustom",
+                        "description": "Membuka tautan di aplikasi yang didukung alih-alih di Browser Web"
+                    },
+                    "disable_permission_requests": {
+                        "name": "Nonaktifkan Permintaan Izin",
+                        "description": "Mencegah Snapchat meminta izin spesifik"
+                    },
+                    "disable_memories_snap_feed": {
+                        "name": "Nonaktifkan Umpan Snap Kenangan",
+                        "description": "Mencegah Snapchat menampilkan kenangan terbaru saat Anda menggeser ke atas di kamera"
+                    },
+                    "spotlight_comments_username": {
+                        "name": "Nama Pengguna Komentar Spotlight",
+                        "description": "Menampilkan nama pengguna penulis di komentar Spotlight"
+                    },
+                    "bypass_video_length_restriction": {
+                        "name": "Lewati Pembatasan Panjang Video",
+                        "description": "Tunggal: mengirim satu video\nBagi: membagi video setelah mengedit"
+                    },
+                    "default_video_playback_rate": {
+                        "name": "Laju Putar Video Bawaan",
+                        "description": "Mengatur kecepatan bawaan untuk pemutaran video\nNilai harus antara 0,1 dan 4,0"
+                    },
+                    "video_playback_rate_slider": {
+                        "name": "Penggeser Laju Putar Video",
+                        "description": "Menambahkan penggeser di menu konteks opera untuk mengubah laju putar video\nCatatan: Perubahan hanya berlaku untuk video berikutnya"
+                    },
+                    "disable_google_play_dialogs": {
+                        "name": "Nonaktifkan Dialog Layanan Google Play",
+                        "description": "Mencegah dialog ketersediaan Layanan Google Play ditampilkan"
+                    },
+                    "default_volume_controls": {
+                        "name": "Kontrol Volume Bawaan",
+                        "description": "Memaksa Snapchat untuk menggunakan kontrol volume sistem"
+                    },
+                    "disable_telecom_framework": {
+                        "name": "Nonaktifkan Kerangka Kerja Telekomunikasi",
+                        "description": "Mencegah Snapchat menggunakan kerangka kerja Telekomunikasi Android\nIni memungkinkan Anda mendengarkan musik saat melakukan panggilan"
+                    },
+                    "hide_active_music": {
+                        "name": "Sembunyikan Musik Aktif",
+                        "description": "Mencegah Snapchat mengetahui bahwa Anda sedang mendengarkan musik\nIni akan memungkinkan Anda mengambil snap menggunakan tombol kontrol volume saat mendengarkan musik"
+                    },
+                    "disable_snap_splitting": {
+                        "name": "Nonaktifkan Pemisahan Snap",
+                        "description": "Mencegah Snap dibagi menjadi beberapa bagian\nGambar yang Anda kirim akan berubah menjadi video"
+                    }
+                }
+            },
+            "rules": {
+                "name": "Aturan",
+                "description": "Kelola Fitur Otomatis untuk orang per orang"
+            },
+            "camera": {
+                "name": "Kamera",
+                "description": "Sesuaikan pengaturan yang tepat untuk snap yang sempurna",
+                "properties": {
+                    "disable_cameras": {
+                        "name": "Nonaktifkan Kamera",
+                        "description": "Mencegah Snapchat menggunakan kamera yang dipilih"
+                    },
+                    "black_photos": {
+                        "name": "Foto Hitam",
+                        "description": "Mengganti foto yang diambil dengan latar belakang hitam\nVideo tidak terpengaruh"
+                    },
+                    "immersive_camera_preview": {
+                        "name": "Pratinjau Imersif",
+                        "description": "Mencegah Snapchat Memotong pratinjau Kamera\nIni mungkin menyebabkan kamera berkedip pada beberapa perangkat"
+                    },
+                    "override_front_resolution": {
+                        "name": "Ganti Resolusi Depan",
+                        "description": "Mengganti resolusi kamera untuk kamera depan"
+                    },
+                    "override_back_resolution": {
+                        "name": "Ganti Resolusi Belakang",
+                        "description": "Mengganti resolusi kamera untuk kamera belakang"
+                    },
+                    "custom_resolution": {
+                        "name": "Resolusi Kustom",
+                        "description": "Mengatur resolusi kamera kustom, lebar x tinggi (misalnya 1920x1080).\nResolusi kustom harus didukung oleh perangkat Anda"
+                    },
+                    "front_custom_frame_rate": {
+                        "name": "Laju Bingkai Kustom Depan",
+                        "description": "Mengganti laju bingkai kamera depan"
+                    },
+                    "back_custom_frame_rate": {
+                        "name": "Laju Bingkai Kustom Belakang",
+                        "description": "Mengganti laju bingkai kamera belakang"
+                    },
+                    "force_camera_source_encoding": {
+                        "name": "Paksa Pengodean Sumber Kamera",
+                        "description": "Memaksa pengodean sumber kamera"
+                    },
+                    "startup_default_camera": {
+                        "name": "Kamera Bawaan Startup",
+                        "description": "Mengatur kamera bawaan saat membuka Snapchat"
+                    },
+                    "hevc_recording": {
+                        "name": "Perekaman HEVC",
+                        "description": "Menggunakan codec HEVC (H.265) untuk perekaman video"
+                    }
+                }
+            },
+            "streaks_reminder": {
+                "name": "Pengingat Streak",
+                "description": "Memberi tahu Anda secara berkala tentang Streak Anda",
+                "properties": {
+                    "interval": {
+                        "name": "Selang",
+                        "description": "Interval antara setiap pengingat (jam)"
+                    },
+                    "remaining_hours": {
+                        "name": "Waktu Tersisa",
+                        "description": "Jumlah waktu yang tersisa sebelum notifikasi ditampilkan (jam)"
+                    },
+                    "group_notifications": {
+                        "name": "Notifikasi Grup",
+                        "description": "Kelompokkan notifikasi menjadi satu"
+                    }
+                }
+            },
+            "experimental": {
+                "name": "Eksperimental",
+                "description": "Fitur eksperimental",
+                "properties": {
+                    "native_hooks": {
+                        "name": "Hook Asli",
+                        "description": "Fitur Tidak Aman yang terhubung ke kode asli Snapchat",
+                        "properties": {
+                            "composer_hooks": {
+                                "name": "Hook Komposer",
+                                "description": "Menyuntikkan kode ke dalam kerangka kerja UI lintas platform Komposer",
+                                "properties": {
+                                    "show_first_created_username": {
+                                        "name": "Tampilkan Nama Pengguna yang Dibuat Pertama",
+                                        "description": "Menampilkan nama pengguna yang dibuat pertama di sebelah nama pengguna saat ini di halaman profil"
+                                    },
+                                    "bypass_camera_roll_limit": {
+                                        "name": "Lewati Batas Rol Kamera",
+                                        "description": "Meningkatkan jumlah maksimum media yang dapat Anda kirim dari rol kamera"
+                                    },
+                                    "custom_self_destruct_snap_delay": {
+                                        "name": "Tunda Snap Hancur Sendiri Kustom",
+                                        "description": "Memberikan lebih banyak opsi untuk penghitung waktu hancur sendiri saat mengirim Snap"
+                                    },
+                                    "composer_console": {
+                                        "name": "Konsol Komposer",
+                                        "description": "Memungkinkan Anda menjalankan kode JavaScript di Komposer (hanya arm64)"
+                                    },
+                                    "composer_logs": {
+                                        "name": "Log Komposer",
+                                        "description": "Mengarahkan log konsol Komposer ke PurrfectSnap"
+                                    }
+                                }
+                            },
+                            "disable_bitmoji": {
+                                "name": "Nonaktifkan Bitmoji",
+                                "description": "Menonaktifkan Bitmoji Profil Teman"
+                            },
+                            "custom_emoji_font": {
+                                "name": "Font Emoji Kustom",
+                                "description": "Memungkinkan Anda menggunakan font emoji kustom. Hanya berfungsi dengan font .ttf"
+                            },
+                            "custom_shared_library": {
+                                "name": "Pustaka Bersama Kustom",
+                                "description": "Memuat pustaka bersama kustom ke dalam Snapchat. Fitur ini hanya untuk tujuan pengujian"
+                            }
+                        }
+                    },
+                    "spoof": {
+                        "name": "Palsu",
+                        "description": "Palsukan berbagai informasi tentang Anda",
+                        "properties": {
+                            "play_store_installer_package_name": {
+                                "name": "Nama Paket Penginstal Play Store",
+                                "description": "Mengganti nama paket penginstal menjadi com.android.vending"
+                            },
+                            "remove_vpn_transport_flag": {
+                                "name": "Hapus Bendera Transportasi VPN",
+                                "description": "Mencegah Snapchat mendeteksi VPN"
+                            },
+                            "remove_mock_location_flag": {
+                                "name": "Hapus Bendera Lokasi Palsu",
+                                "description": "Mencegah Snapchat mendeteksi Lokasi Palsu"
+                            }
+                        }
+                    },
+                    "convert_message_locally": {
+                        "name": "Konversi Pesan Secara Lokal",
+                        "description": "Mengonversi snap menjadi media eksternal obrolan secara lokal. Ini muncul di menu konteks unduhan obrolan"
+                    },
+                    "media_file_picker": {
+                        "name": "Pemilih File Media",
+                        "description": "Memungkinkan Anda memilih file video/audio apa pun dari galeri"
+                    },
+                    "story_logger": {
+                        "name": "Pencatat Cerita",
+                        "description": "Menyediakan riwayat cerita teman"
+                    },
+                    "call_recorder": {
+                        "name": "Perekam Panggilan",
+                        "description": "Merekam panggilan audio secara otomatis"
+                    },
+                    "account_switcher": {
+                        "name": "Pengalih Akun",
+                        "description": "Memungkinkan Anda beralih antar akun tanpa keluar\nTekan lama pada ikon pencarian di sebelah profil Bitmoji Anda untuk membuka menu\nCatatan: Fitur ini bersifat eksperimental dan kemungkinan akan berubah di masa mendatang",
+                        "properties": {
+                            "auto_backup_current_account": {
+                                "name": "Cadangkan Akun Saat Ini Secara Otomatis",
+                                "description": "Secara otomatis mencadangkan akun saat ini saat keluar atau beralih akun"
+                            }
+                        }
+                    },
+                    "better_transcript": {
+                        "name": "Transkrip Lebih Baik",
+                        "description": "Meningkatkan transkrip catatan suara",
+                        "properties": {
+                            "force_transcription": {
+                                "name": "Paksa Transkripsi Catatan Suara",
+                                "description": "Memungkinkan semua catatan suara ditranskripsi"
+                            },
+                            "preferred_transcription_lang": {
+                                "name": "Bahasa Transkripsi Pilihan",
+                                "description": "Bahasa pilihan untuk transkrip catatan suara (misalnya EN, ES, FR)"
+                            },
+                            "notification_transcript": {
+                                "name": "Transkrip Notifikasi",
+                                "description": "Mentranskripsi catatan suara dalam notifikasi\nFitur ini memerlukan fitur Pratinjau Obrolan untuk diaktifkan di Notifikasi Lebih Baik"
+                            }
+                        }
+                    },
+                    "voice_note_auto_play": {
+                        "name": "Putar Otomatis Catatan Suara",
+                        "description": "Secara otomatis memutar catatan suara berikutnya setelah yang sekarang selesai"
+                    },
+                    "friend_notes": {
+                        "name": "Catatan Teman",
+                        "description": "Memungkinkan Anda menambahkan catatan ke profil teman"
+                    },
+                    "cof_experiments": {
+                        "name": "Eksperimen COF",
+                        "description": "Mengaktifkan fitur Snapchat yang belum dirilis/beta"
+                    },
+                    "context_menu_fix": {
+                        "name": "Perbaikan Menu Konteks",
+                        "description": "Mencoba memperbaiki Menu Umpan Teman karena saat perangkat offline tidak dapat ditampilkan dengan benar"
+                    },
+                    "app_lock": {
+                        "name": "Kunci Aplikasi",
+                        "description": "Mencegah akses ke Snapchat tanpa kode sandi",
+                        "properties": {
+                            "lock_on_resume": {
+                                "name": "Kunci Saat Dilanjutkan",
+                                "description": "Mengunci aplikasi saat dibuka kembali"
+                            }
+                        }
+                    },
+                    "infinite_story_boost": {
+                        "name": "Peningkatan Cerita Tak Terbatas",
+                        "description": "Lewati penundaan Batas Peningkatan Cerita"
+                    },
+                    "meo_passcode_bypass": {
+                        "name": "Lewati Kode Sandi Hanya Mata Saya",
+                        "description": "Lewati kode sandi Hanya Mata Saya\nIni hanya akan berfungsi jika kode sandi telah dimasukkan dengan benar sebelumnya"
+                    },
+                    "no_friend_score_delay": {
+                        "name": "Tidak Ada Penundaan Skor Teman",
+                        "description": "Menghapus penundaan saat melihat Skor Teman"
+                    },
+                    "best_friend_pinning": {
+                        "name": "Menyematkan Sahabat Terbaik",
+                        "description": "Memungkinkan Anda menyematkan teman sebagai sahabat terbaik nomor satu Anda. Catatan: Hanya Anda yang dapat melihat sahabat terbaik yang Anda sematkan"
+                    },
+                    "e2ee": {
+                        "name": "Enkripsi End-To-End",
+                        "description": "Mengenkripsi pesan Anda dengan AES menggunakan kunci rahasia bersama\nPastikan untuk menyimpan kunci Anda di tempat yang aman!",
+                        "properties": {
+                            "encrypted_message_indicator": {
+                                "name": "Indikator Pesan Terenkripsi",
+                                "description": "Menambahkan emoji 🔒 di sebelah pesan terenkripsi"
+                            },
+                            "force_message_encryption": {
+                                "name": "Paksa Enkripsi Pesan",
+                                "description": "Mencegah pengiriman pesan terenkripsi kepada orang yang tidak mengaktifkan Enkripsi E2E hanya saat beberapa percakapan dipilih"
+                            }
+                        }
+                    },
+                    "add_friend_source_spoof": {
+                        "name": "Palsu Sumber Tambah Teman",
+                        "description": "Memalsukan sumber Permintaan Pertemanan"
+                    },
+                    "hidden_snapchat_plus_features": {
+                        "name": "Fitur Snapchat Plus Tersembunyi",
+                        "description": "Mengaktifkan fitur Snapchat Plus yang belum dirilis/beta\nMungkin tidak berfungsi pada versi Snapchat yang lebih lama"
+                    },
+                    "custom_streaks_expiration_format": {
+                        "name": "Format Kedaluwarsa Streak Kustom",
+                        "description": "Menyesuaikan format Kedaluwarsa Streak\n\nVariabel yang tersedia:\n - %c: Jumlah Streak\n - %e: Emoji Jam Pasir\n - %d: Hari\n - %h: Jam\n - %m: Menit\n - %s: Detik\n - %w: Waktu Tersisa"
+                    },
+                    "prevent_forced_logout": {
+                        "name": "Cegah Keluar Paksa",
+                        "description": "Mencegah Snapchat mengeluarkan Anda saat Anda masuk di perangkat lain"
+                    },
+                    "snapscore_changes": {
+                        "name": "Perubahan Snapscore",
+                        "description": "Melacak perubahan skor teman Snapscore\nGunakan fitur ini hanya di versi Snapchat yang lebih baru"
+                    }
+                }
+            },
+            "scripting": {
+                "name": "Skrip",
+                "description": "Jalankan skrip kustom untuk memperluas PurrfectSnap",
+                "properties": {
+                    "developer_mode": {
+                        "name": "Mode Pengembang",
+                        "description": "Menampilkan info debug di UI Snapchat"
+                    },
+                    "module_folder": {
+                        "name": "Folder Modul",
+                        "description": "Folder tempat skrip berada"
+                    },
+                    "auto_reload": {
+                        "name": "Muat Ulang Otomatis",
+                        "description": "Secara otomatis memuat ulang skrip saat berubah"
+                    },
+                    "integrated_ui": {
+                        "name": "UI Terintegrasi",
+                        "description": "Memungkinkan skrip untuk menambahkan komponen UI kustom ke Snapchat"
+                    },
+                    "disable_log_anonymization": {
+                        "name": "Nonaktifkan Anonimisasi Log",
+                        "description": "Menonaktifkan anonimisasi log"
+                    },
+                    "disable_optimization": {
+                        "name": "Nonaktifkan Optimasi",
+                        "description": "Menonaktifkan optimasi skrip. Ini dapat menyebabkan masalah kinerja."
+                    }
+                }
+            },
+            "friend_tracker": {
+                "name": "Pelacak Teman",
+                "description": "Mencatat aktivitas teman di Snapchat",
+                "properties": {
+                    "record_messaging_events": {
+                        "name": "Catat Peristiwa Pesan",
+                        "description": "Mencatat peristiwa pesan seperti membuka snap, membaca pesan, dll."
+                    },
+                    "allow_running_in_background": {
+                        "name": "Izinkan Berjalan di Latar Belakang",
+                        "description": "Memungkinkan pelacak berjalan di latar belakang. Catatan: Ini akan menguras baterai Anda secara signifikan"
+                    },
+                    "auto_purge": {
+                        "name": "Hapus Otomatis",
+                        "description": "Secara otomatis menghapus peristiwa yang di-cache yang lebih lama dari jumlah waktu yang ditentukan"
+                    }
+                }
+            }
+        },
+        "options": {
+            "app_appearance": {
+                "always_light": "Selalu Terang",
+                "always_dark": "Selalu Gelap"
+            },
+            "friend_feed_menu_buttons": {
+                "auto_download": "⬇️ Unduh Otomatis",
+                "auto_save": "💬 Simpan Pesan Otomatis",
+                "unsaveable_messages": "⬇️ Pesan yang Tidak Dapat Disimpan",
+                "auto_open_snaps": "📸 Buka Snap Otomatis",
+                "stealth": "👻 Mode Siluman",
+                "mark_snaps_as_seen": "👀 Tandai Snap sebagai telah dilihat",
+                "mark_stories_as_seen_locally": "👀 Tandai Cerita sebagai telah dilihat secara lokal",
+                "conversation_info": "🧑‍🤝‍🧑 Info Percakapan",
+                "e2e_encryption": "🔒 Gunakan Enkripsi E2E"
+            },
+            "path_format": {
+                "create_author_folder": "Buat folder untuk setiap penulis",
+                "create_source_folder": "Buat folder untuk setiap jenis sumber media",
+                "append_hash": "Tambahkan hash unik ke nama file",
+                "append_source": "Tambahkan sumber media ke nama file",
+                "append_username": "Tambahkan nama pengguna ke nama file",
+                "append_date_time": "Tambahkan tanggal dan waktu ke nama file"
+            },
+            "auto_download_sources": {
+                "friend_snaps": "Snap Teman",
+                "friend_stories": "Cerita Teman",
+                "public_stories": "Cerita Publik",
+                "spotlight": "Menyoroti"
+            },
+            "logging": {
+                "started": "Dimulai",
+                "success": "Berhasil",
+                "progress": "Kemajuan",
+                "failure": "Gagal"
+            },
+            "notifications": {
+                "chat_screenshot": "Tangkapan Layar",
+                "chat_screen_record": "Rekaman Layar",
+                "snap_replay": "Putar Ulang Snap",
+                "camera_roll_save": "Simpan ke Rol Kamera",
+                "chat": "Obrolan",
+                "chat_reply": "Balasan Obrolan",
+                "snap": "Patah",
+                "typing": "Mengetik",
+                "stories": "Cerita",
+                "speaking": "Berbicara",
+                "chat_reaction": "Reaksi DM",
+                "group_chat_reaction": "Reaksi Grup",
+                "initiate_audio": "Panggilan Audio Masuk",
+                "abandon_audio": "Panggilan Audio Tak Terjawab",
+                "initiate_video": "Panggilan Video Masuk",
+                "abandon_video": "Panggilan Video Tak Terjawab",
+                "map_live_location": "Lokasi Langsung Peta"
+            },
+            "gallery_media_send_override": {
+                "always_ask": "Selalu Tanya",
+                "ORIGINAL": "Media Asli",
+                "NOTE": "Catatan Audio",
+                "SNAP": "Patah",
+                "SAVEABLE_SNAP": "Snap yang Dapat Disimpan"
+            },
+            "strip_media_metadata": {
+                "hide_caption_text": "Sembunyikan Teks Keterangan",
+                "hide_snap_filters": "Sembunyikan Filter Snap",
+                "hide_extras": "Sembunyikan Ekstra (misalnya sebutan)",
+                "remove_audio_note_duration": "Hapus Durasi Catatan Audio",
+                "remove_audio_note_transcript_capability": "Hapus Kemampuan Transkrip Catatan Audio"
+            },
+            "hide_ui_components": {
+                "hide_profile_call_buttons": "Hapus Tombol Panggilan Profil",
+                "hide_chat_call_buttons": "Hapus Tombol Panggilan Obrolan",
+                "hide_live_location_share_button": "Hapus Tombol Bagikan Lokasi Langsung",
+                "hide_stickers_button": "Hapus Tombol Stiker",
+                "hide_voice_record_button": "Hapus Tombol Rekam Suara",
+                "hide_unread_chat_hint": "Hapus Petunjuk Obrolan yang Belum Dibaca",
+                "hide_post_to_story_buttons": "Hapus tombol Posting ke Cerita sebelum mengirim Snap",
+                "hide_billboard_prompt": "Hapus Prompt Papan Iklan di Umpan Teman",
+                "hide_snapchat_plus_gift_reminders": "Hapus pengingat hadiah Snapchat Plus dalam percakapan",
+                "hide_map_reactions": "Hapus Reaksi Peta"
+            },
+            "hide_story_suggestions": {
+                "hide_suggested_friend_stories": "Sembunyikan cerita teman yang disarankan",
+                "hide_my_stories": "Sembunyikan Cerita Saya"
+            },
+            "home_tab": {
+                "map": "Peta",
+                "chat": "Obrolan",
+                "camera": "Kamera",
+                "discover": "Temukan",
+                "spotlight": "Menyoroti"
+            },
+            "add_friend_source_spoof": {
+                "added_by_username": "Berdasarkan Nama Pengguna",
+                "added_by_mention": "Berdasarkan Sebutan",
+                "added_by_group_chat": "Berdasarkan Obrolan Grup",
+                "added_by_qr_code": "Berdasarkan Kode QR",
+                "added_by_community": "Berdasarkan Komunitas",
+                "added_by_quick_add": "Berdasarkan Tambah Cepat (risiko tinggi diblokir)"
+            },
+            "bypass_video_length_restriction": {
+                "single": "Media tunggal",
+                "split": "Media terpisah"
+            },
+            "old_bitmoji_selfie": {
+                "2d": "Bitmoji 2D",
+                "3d": "Bitmoji 3D"
+            },
+            "disable_confirmation_dialogs": {
+                "erase_message": "Hapus Pesan",
+                "remove_friend": "Hapus Teman",
+                "block_friend": "Blokir Teman",
+                "ignore_friend": "Abaikan Teman",
+                "hide_friend": "Sembunyikan Teman",
+                "hide_conversation": "Sembunyikan Percakapan",
+                "clear_conversation": "Hapus Percakapan dari Umpan Teman"
+            },
+            "auto_reload": {
+                "snapchat_only": "Hanya Snapchat",
+                "all": "Semua (Snapchat + PurrfectSnap)"
+            },
+            "edit_text_override": {
+                "multi_line_chat_input": "Input Obrolan Multi Baris",
+                "bypass_text_input_limit": "Lewati Batas Input Teks"
+            },
+            "auto_purge": {
+                "never": "Tidak Pernah",
+                "1_hour": "1 Jam",
+                "3_hours": "3 Jam",
+                "6_hours": "6 Jam",
+                "12_hours": "12 Jam",
+                "1_day": "1 Hari",
+                "3_days": "3 Hari",
+                "1_week": "1 Minggu",
+                "2_weeks": "2 Minggu",
+                "1_month": "1 Bulan",
+                "3_months": "3 Bulan",
+                "6_months": "6 Bulan"
+            },
+            "disable_story_sections": {
+                "friends": "Teman",
+                "suggested_stories": "Cerita yang Disarankan",
+                "following": "Mengikuti",
+                "discover": "Temukan"
+            },
+            "disable_cameras": {
+                "front": "Kamera Depan",
+                "back": "Kamera Belakang"
+            },
+            "disable_permission_requests": {
+                "notifications": "Notifikasi",
+                "read_media_images": "Baca Gambar Media",
+                "read_media_video": "Baca Video Media",
+                "camera": "Kamera",
+                "microphone": "Mikrofon",
+                "location": "Lokasi",
+                "read_contacts": "Baca Kontak",
+                "nearby_devices": "Perangkat Terdekat",
+                "phone_calls": "Panggilan Telepon"
+            },
+            "message_indicators": {
+                "encryption_indicator": "Menambahkan ikon 🔒 di sebelah pesan yang hanya dikirimkan kepada Anda",
+                "platform_indicator": "Menambahkan ikon platform tempat media dikirim (misalnya Android, iOS, Web)",
+                "location_indicator": "Menambahkan ikon 📍 ke snap saat dikirim dengan lokasi diaktifkan",
+                "ovf_editor_indicator": "Menunjukkan apakah snap telah dikirim menggunakan Editor OVF",
+                "director_mode_indicator": "Menambahkan ikon 🎬 ke snap saat dikirim menggunakan Mode Sutradara, yang dapat digunakan untuk mengirim gambar galeri sebagai snap"
+            },
+            "auto_mark_as_read": {
+                "conversation_read": "Tandai percakapan sebagai telah dibaca saat mengirim pesan",
+                "snap_reply": "Tandai snap sebagai telah dibaca saat membalasnya",
+                "save_snap_in_chat": "Tandai snap sebagai telah dibaca saat menyimpannya dalam obrolan saat dalam Mode Siluman"
+            },
+            "friend_mutation_notifier": {
+                "remove_friend": "Beri tahu saat seseorang menghapus Anda sebagai teman",
+                "birthday_changes": "Beri tahu saat seseorang mengubah hari ulang tahunnya",
+                "bitmoji_selfie_changes": "Beri tahu saat seseorang mengubah selfie Bitmoji-nya",
+                "bitmoji_avatar_changes": "Beri tahu saat seseorang mengubah avatar Bitmoji-nya",
+                "bitmoji_background_changes": "Beri tahu saat seseorang mengubah latar belakang Bitmoji-nya",
+                "bitmoji_scene_changes": "Beri tahu saat seseorang mengubah adegan Bitmoji-nya"
+            },
+            "snapchat_plus": {
+                "not_subscribed": "Tidak Berlangganan",
+                "basic": "Dasar",
+                "ad_free": "Bebas Iklan"
+            },
+            "double_tap_chat_action": {
+                "like_message": "Sukai Pesan",
+                "copy_text": "Salin Teks ke Papan Klip",
+                "delete_message": "Hapus Pesan",
+                "mark_as_read": "Tandai sebagai Telah Dibaca",
+                "custom_emoji_reaction": "Reaksi Emoji Kustom"
+            },
+            "startup_default_camera": {
+                "front": "Kamera Depan",
+                "back": "Kamera Belakang"
+            }
         }
     },
     "friend_menu_option": {
-        "preview": "Pratinjau"
+        "mark_snaps_as_seen": "Tandai Snap sebagai telah dilihat",
+        "mark_stories_as_seen_locally": "Tandai Cerita sebagai telah dilihat secara lokal",
+        "preview": "Pratinjau",
+        "stealth_mode": "Mode Siluman",
+        "auto_download_blacklist": "Daftar Hitam Unduh Otomatis",
+        "anti_auto_save": "Anti Simpan Otomatis"
     },
-    "modal_option": {
-        "close": "Tutup"
+    "content_type": {
+        "CHAT": "Obrolan",
+        "SNAP": "Patah",
+        "EXTERNAL_MEDIA": "Media Eksternal",
+        "NOTE": "Catatan Audio",
+        "STICKER": "Stiker",
+        "SHARE": "Bagikan",
+        "STATUS": "Status",
+        "LOCATION": "Lokasi",
+        "STATUS_SAVE_TO_CAMERA_ROLL": "Disimpan ke Rol Kamera",
+        "STATUS_CONVERSATION_CAPTURE_SCREENSHOT": "Tangkapan Layar",
+        "STATUS_CONVERSATION_CAPTURE_RECORD": "Rekaman Layar",
+        "STATUS_CALL_MISSED_VIDEO": "Panggilan Video Tak Terjawab",
+        "STATUS_CALL_MISSED_AUDIO": "Panggilan Audio Tak Terjawab",
+        "LIVE_LOCATION_SHARE": "Bagikan Lokasi Langsung",
+        "CREATIVE_TOOL_ITEM": "Item Alat Kreatif",
+        "FAMILY_CENTER_INVITE": "Undangan Pusat Keluarga",
+        "FAMILY_CENTER_ACCEPT": "Terima Pusat Keluarga",
+        "FAMILY_CENTER_LEAVE": "Tinggalkan Pusat Keluarga",
+        "STATUS_PLUS_GIFT": "Hadiah Status Plus",
+        "TINY_SNAP": "Snap Kecil",
+        "STATUS_COUNTDOWN": "Hitung Mundur",
+        "MAP_REACTION": "Reaksi Peta"
+    },
+    "media_download_source": {
+        "none": "Tidak Ada",
+        "pending": "Tertunda",
+        "chat_media": "Media Obrolan",
+        "story": "Cerita",
+        "public_story": "Cerita Publik",
+        "spotlight": "Menyoroti",
+        "profile_picture": "Gambar Profil",
+        "story_logger": "Pencatat Cerita",
+        "message_logger": "Pencatat Pesan",
+        "merged": "Digabungkan",
+        "voice_call": "Panggilan Suara"
     },
     "chat_action_menu": {
         "preview_button": "Pratinjau",
-        "download_button": "Unduhan"
+        "download_button": "Unduh",
+        "delete_logged_message_button": "Hapus Pesan yang Dicatat",
+        "show_chat_edit_history": "Tampilkan Riwayat Edit Obrolan",
+        "convert_message": "Konversi Pesan"
     },
-    "media_download_source": {
-        "none": "Tidak ada",
-        "merged": "Digabung",
-        "pending": "Ditunda",
-        "story": "Cerita",
-        "spotlight": "Sorotan"
+    "opera_context_menu": {
+        "download": "Unduh Media",
+        "sent_at": "Dikirim pada {date}",
+        "created_at": "Dibuat pada {date}",
+        "expires_at": "Kedaluwarsa pada {date}",
+        "media_size": "Ukuran media: {size}",
+        "media_duration": "Durasi media: {duration} ms",
+        "show_debug_info": "Tampilkan Info Debug"
+    },
+    "modal_option": {
+        "profile_info": "Info Profil",
+        "close": "Tutup"
+    },
+    "gallery_media_send_override": {
+        "multiple_media_toast": "Anda hanya dapat mengirim satu media sekaligus"
+    },
+    "mark_as_seen": {
+        "no_unseen_snaps_toast": "Tidak ada Snap yang belum dilihat!",
+        "seen_toast": "Ditandai sebagai telah dilihat!",
+        "unseen_toast": "Ditandai sebagai belum dilihat!",
+        "already_seen_toast": "Sudah ditandai sebagai telah dilihat!",
+        "already_unseen_toast": "Sudah ditandai sebagai belum dilihat!"
+    },
+    "conversation_preview": {
+        "streak_expiration": "kedaluwarsa dalam {day} hari {hour} jam {minute} menit",
+        "total_messages": "Total pesan terkirim/diterima: {count}",
+        "title": "Pratinjau",
+        "unknown_user": "Pengguna Tidak Dikenal",
+        "no_messages": "Tidak ada pesan yang ditemukan!"
+    },
+    "profile_info": {
+        "title": "Info Profil",
+        "first_created_username": "Nama Pengguna yang Dibuat Pertama",
+        "mutable_username": "Nama Pengguna yang Dapat Diubah",
+        "display_name": "Nama Tampilan",
+        "added_date": "Tanggal Ditambahkan",
+        "birthday": "Ulang Tahun: {month} {day}",
+        "hidden_birthday": "Ulang Tahun: Tersembunyi",
+        "friendship": "Pertemanan",
+        "add_source": "Tambah Sumber",
+        "snapchat_plus": "Snapchat Ditambah",
+        "snapchat_plus_state": {
+            "subscribed": "Berlangganan",
+            "not_subscribed": "Tidak Berlangganan"
+        }
     },
     "friendship_link_type": {
-        "blocked": "Diblokir",
-        "suggested": "Disarankan",
         "mutual": "Saling",
+        "outgoing": "Keluar",
+        "blocked": "Diblokir",
         "deleted": "Dihapus",
-        "incoming": "Akan datang",
-        "following": "Mengikuti"
+        "following": "Mengikuti",
+        "suggested": "Disarankan",
+        "incoming": "Masuk",
+        "incoming_follower": "Pengikut Masuk"
     },
-    "better_notifications": {
-        "button": {
-            "download": "Unduhan",
-            "reply": "Balas"
+    "bulk_messaging_action": {
+        "choose_action_title": "Pilih tindakan",
+        "progress_status": "Memproses {index} dari {total}",
+        "selection_dialog_continue_button": "Lanjutkan",
+        "confirmation_dialog": {
+            "title": "Apakah Anda yakin?",
+            "message": "Ini akan memengaruhi semua teman yang dipilih. Tindakan ini tidak dapat dibatalkan."
+        },
+        "actions": {
+            "remove_friends": "Hapus Teman",
+            "clear_conversations": "Hapus Percakapan"
         }
     },
     "chat_export": {
         "exporter_dialog": {
-            "text_field_selection_all": "Semua"
+            "select_conversations_title": "Pilih Percakapan",
+            "text_field_selection": "{amount} dipilih",
+            "text_field_selection_all": "Semua",
+            "export_file_format_title": "Ekspor Format File",
+            "message_type_filter_title": "Filter Pesan berdasarkan Jenis",
+            "amount_of_messages_title": "Jumlah Pesan (kosongkan untuk semua)",
+            "download_medias_title": "Unduh Media"
         },
+        "dialog_negative_button": "Batal",
         "dialog_positive_button": "Ekspor",
-        "dialog_negative_button": "Batal"
+        "exported_to": "Diekspor ke {path}",
+        "exporting_chats": "Mengekspor Obrolan...",
+        "processing_chats": "Memproses {amount} percakapan...",
+        "export_fail": "Gagal mengekspor percakapan {conversation}",
+        "writing_output": "Menulis output...",
+        "finished": "Selesai! Anda sekarang dapat menutup dialog ini.",
+        "no_messages_found": "Tidak ada pesan yang ditemukan!",
+        "exporting_message": "Mengekspor {conversation}..."
     },
-    "profile_info": {
-        "snapchat_plus_state": {
-            "subscribed": "Berlangganan"
-        },
-        "friendship": "Persahabatan"
+    "button": {
+        "ok": "Oke",
+        "positive": "Ya",
+        "negative": "Tidak",
+        "cancel": "Batal",
+        "open": "Buka",
+        "download": "Unduh",
+        "send": "Kirim",
+        "restore_original": "Pulihkan Asli",
+        "convert_external_media": "Konversi Media Eksternal",
+        "save": "Simpan"
     },
-    "bulk_messaging_action": {
-        "selection_dialog_continue_button": "Lanjutkan"
+    "tracker_events": {
+        "conversation_enter": "Masuk Percakapan",
+        "conversation_exit": "Keluar Percakapan",
+        "started_typing": "Mulai Mengetik",
+        "stopped_typing": "Berhenti Mengetik",
+        "started_speaking": "Mulai Berbicara",
+        "stopped_speaking": "Berhenti Berbicara",
+        "started_peeking": "Mulai Mengintip",
+        "stopped_peeking": "Berhenti Mengintip",
+        "message_read": "Pesan Dibaca",
+        "message_deleted": "Pesan Dihapus",
+        "message_saved": "Pesan Disimpan",
+        "message_unsaved": "Pesan Tidak Disimpan",
+        "message_edited": "Pesan Diedit",
+        "message_reaction_add": "Tambah Reaksi Pesan",
+        "message_reaction_remove": "Hapus Reaksi Pesan",
+        "snap_opened": "Snap Dibuka",
+        "snap_replayed": "Snap Diputar Ulang",
+        "snap_replayed_twice": "Snap Diputar Ulang Dua Kali",
+        "snap_screenshot": "Tangkapan Layar Snap",
+        "snap_screen_record": "Rekaman Layar Snap"
     },
-    "streaks_reminder": {
-        "notification_title": "Garis -garis"
+    "tracker_actions": {
+        "log": "Catatan",
+        "in_app_notification": "Notifikasi Dalam Aplikasi",
+        "push_notification": "Notifikasi Push",
+        "custom": "Kustom"
+    },
+    "better_notifications": {
+        "button": {
+            "reply": "Balas",
+            "download": "Unduh",
+            "mark_as_read": "Tandai sebagai Telah Dibaca"
+        }
     },
     "profile_picture_downloader": {
-        "background_option": "Latar belakang"
-    }
+        "button": "Unduh Gambar Profil",
+        "title": "Pengunduh Gambar Profil",
+        "avatar_option": "Avatar",
+        "background_option": "Latar Belakang"
+    },
+    "call_start_confirmation": {
+        "dialog_title": "Mulai Panggilan",
+        "dialog_message": "Apakah Anda yakin ingin memulai panggilan?"
+    },
+    "half_swipe_notifier": {
+        "notification_channel_name": "Setengah Geser",
+        "notification_content_dm": "{friend} baru saja setengah menggeser ke dalam obrolan Anda selama {duration} detik",
+        "notification_content_group": "{friend} baru saja setengah menggeser ke dalam {group} selama {duration} detik"
+    },
+    "download_processor": {
+        "attachment_type": {
+            "snap": "Patah",
+            "sticker": "Stiker",
+            "gif": "GIF",
+            "external_media": "Media Eksternal",
+            "note": "Catatan",
+            "original_story": "Cerita Asli"
+        },
+        "select_attachments_title": "Pilih lampiran",
+        "download_started_toast": "Pengunduhan dimulai",
+        "unsupported_content_type_toast": "Jenis konten tidak didukung!",
+        "failed_no_longer_available_toast": "Media tidak lagi tersedia",
+        "no_attachments_toast": "Tidak ada lampiran yang ditemukan!",
+        "already_queued_toast": "Media sudah dalam antrean!",
+        "already_downloaded_toast": "Media sudah diunduh!",
+        "content_saved_toast": "Disimpan!",
+        "download_toast": "Mengunduh {path}...",
+        "processing_toast": "Memproses {path}...",
+        "failed_generic_toast": "Gagal mengunduh",
+        "failed_to_create_preview_toast": "Gagal membuat pratinjau",
+        "failed_processing_toast": "Gagal memproses {error}",
+        "failed_gallery_toast": "Gagal menyimpan ke galeri {error}",
+        "dash_no_chapter": "Tidak ada bab yang ditemukan",
+        "dash_dialog": {
+            "title": "Unduh media dash",
+            "download_all": "Unduh Semua",
+            "segment_text": "Segmen {from} - {to}"
+        }
+    },
+    "streaks_reminder": {
+        "notification_title": "Streak",
+        "notification_text": "Anda akan kehilangan Streak Anda dengan {friend} dalam {hoursLeft} jam"
+    },
+    "biometric_auth": {
+        "unlock_button": "Buka Kunci",
+        "title": "Buka Kunci Snapchat",
+        "subtitle": "Harap otentikasi untuk membuka kunci Snapchat"
+    },
+    "end_to_end_encryption": {
+        "toolbox": {
+            "no_shared_key": "Anda belum memiliki rahasia bersama dengan teman ini. Klik di bawah untuk memulai yang baru.",
+            "shared_key_fingerprint": "Sidik jari Anda adalah:\n\n{fingerprint}\n\nPastikan itu cocok dengan sidik jari teman Anda!",
+            "initiate_exchange_button": "Mulai Pertukaran Kunci"
+        },
+        "confirmation_dialogs": {
+            "title": "Enkripsi end-to-end",
+            "confirmation_1": "PERINGATAN: Ini akan menimpa kunci Anda yang ada. Anda akan kehilangan akses ke semua pesan terenkripsi dari teman ini. Apakah Anda yakin ingin melanjutkan?",
+            "confirmation_2": "Apakah Anda BENAR-BENAR yakin ingin melanjutkan? Ini adalah kesempatan terakhir Anda untuk mundur."
+        },
+        "unencrypted_conversation_send_failure_toast": "Anda tidak dapat mengirim konten terenkripsi ke percakapan terenkripsi dan tidak terenkripsi!",
+        "native_hooks_send_failure_toast": "Gagal mengirim! Harap aktifkan Hook Asli di pengaturan.",
+        "no_participants_to_encrypt_toast": "Anda tidak memiliki teman dalam percakapan ini untuk mengenkripsi pesan!",
+        "encryption_failed_toast": "Gagal mengenkripsi pesan! Periksa logcat untuk detail lebih lanjut.",
+        "accept_public_key_success_toast": "Kunci publik berhasil diterima!",
+        "accept_secret_key_success_toast": "Selesai! Anda sekarang dapat mengirim dan menerima pesan terenkripsi dengan teman ini.",
+        "accept_public_key_failure_toast": "Gagal menerima kunci publik",
+        "accept_secret_key_failure_toast": "Gagal menerima kunci rahasia",
+        "accept_secret_button": "Terima Rahasia",
+        "accept_public_key_button": "Terima Kunci Publik",
+        "outgoing_pk_message": "Permintaan pertukaran kunci",
+        "outgoing_secret_message": "Respons pertukaran kunci",
+        "incoming_pk_message": "Anda baru saja menerima permintaan kunci publik. Klik di bawah untuk menerimanya.",
+        "incoming_secret_message": "Teman Anda baru saja menerima kunci publik Anda. Klik di bawah untuk menerima rahasia."
+    },
+    "auto_open_snaps": {
+        "title": "Buka Snap Otomatis",
+        "notification_content": "{count} Snap dibuka"
+    },
+    "friend_mutation_observer": {
+        "notification_channel_name": "Pengamat Mutasi Teman",
+        "friend_removed": "{username} telah menghapus Anda sebagai teman",
+        "birthday_removed": "{username} telah menghapus hari ulang tahunnya ({birthday})",
+        "birthday_added": "{username} telah menambahkan hari ulang tahunnya ({birthday})",
+        "birthday_changed": "{username} telah mengubah hari ulang tahunnya dari {oldBirthday} menjadi {newBirthday}",
+        "bitmoji_selfie_changed": "{username} telah mengubah selfie Bitmoji-nya",
+        "bitmoji_avatar_changed": "{username} telah mengubah avatar Bitmoji-nya",
+        "bitmoji_background_changed": "{username} telah mengubah latar belakang Bitmoji-nya",
+        "bitmoji_scene_changed": "{username} telah mengubah adegan Bitmoji-nya"
+    },
+    "material3_strings": {
+        "date_range_picker_start_headline": "Dari",
+        "date_range_picker_end_headline": "Hingga",
+        "date_range_picker_title": "Pilih rentang tanggal",
+        "date_picker_switch_to_calendar_mode": "Kalender",
+        "date_picker_switch_to_input_mode": "Masukan",
+        "date_range_picker_scroll_to_previous_month": "Bulan sebelumnya",
+        "date_range_picker_scroll_to_next_month": "Bulan berikutnya",
+        "date_picker_today_description": "Hari ini",
+        "date_range_picker_day_in_range": "Dipilih",
+        "date_input_invalid_for_pattern": "Tanggal tidak valid",
+        "date_input_invalid_year_range": "Tahun tidak valid",
+        "date_input_invalid_not_allowed": "Tanggal tidak valid",
+        "date_range_input_invalid_range_input": "Rentang tanggal tidak valid"
+    },
+    "send_override_dialog": {
+        "title": "Kirim media sebagai {type}",
+        "duration": "Durasi: {duration}",
+        "saveable_snap_hint": "Buat Snap dapat disimpan di obrolan",
+        "unlimited_duration": "Tidak terbatas"
+    },
+    "invalid_input_toast": "Input tidak valid! Pastikan Anda memasukkan nilai yang valid."
 }

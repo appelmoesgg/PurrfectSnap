@@ -45,6 +45,7 @@ import me.rhunk.snapenhance.ui.util.pullrefresh.rememberPullRefreshState
 import java.io.File
 
 class ScriptingRootSection : Routes.Route() {
+    override val translation by lazy { context.translation.getCategory("manager.scripting") }
     private lateinit var activityLauncherHelper: ActivityLauncherHelper
     val reloadDispatcher = AsyncUpdateDispatcher(updateOnFirstComposition = false)
     private var selectedTab by mutableStateOf(0)
@@ -67,19 +68,19 @@ class ScriptingRootSection : Routes.Route() {
     fun downloadScript(scriptUrl: String, onComplete: () -> Unit) {
         context.coroutineScope.launch {
             if (isScriptInstalledByUrl(scriptUrl)) {
-                context.shortToast("Script already installed!")
+                context.shortToast(translation["script_already_installed"])
                 return@launch
             }
-            
+
             runCatching {
-                context.shortToast("Downloading script...")
+                context.shortToast(translation["downloading_script"])
                 val moduleInfo = context.scriptManager.importFromUrl(scriptUrl)
-                context.shortToast("Script ${moduleInfo.name} downloaded!")
+                context.shortToast(translation.format("script_downloaded", "name" to moduleInfo.name))
                 reloadDispatcher.dispatch()
                 onComplete()
             }.onFailure {
                 context.log.error("Failed to download script", it)
-                context.shortToast("Failed to download script. Check logs for more details")
+                context.shortToast(translation["download_script_failed"])
             }
         }
     }
@@ -102,13 +103,13 @@ class ScriptingRootSection : Routes.Route() {
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
                     Text(
-                        text = "Import Script from URL",
+                        text = translation["import_script_from_url_title"],
                         fontSize = 22.sp,
                         fontWeight = FontWeight.Bold,
                         modifier = Modifier.padding(8.dp),
                     )
                     Text(
-                        text = "Warning: Imported scripts can be harmful to your device. Only import scripts from trusted sources.",
+                        text = translation["import_script_warning"],
                         fontSize = 14.sp,
                         fontWeight = FontWeight.Light,
                         fontStyle = FontStyle.Italic,
@@ -118,7 +119,7 @@ class ScriptingRootSection : Routes.Route() {
                     TextField(
                         value = url,
                         onValueChange = { url = it },
-                        label = { Text(text = "Enter URL here:") },
+                        label = { Text(text = translation["enter_url_label"]) },
                         modifier = Modifier
                             .fillMaxWidth()
                             .focusRequester(focusRequester)
@@ -135,15 +136,15 @@ class ScriptingRootSection : Routes.Route() {
                             context.coroutineScope.launch {
                                 runCatching {
                                     if (isScriptInstalledByUrl(url)) {
-                                        context.shortToast("Script already installed!")
+                                        context.shortToast(translation["script_already_installed"])
                                         withContext(Dispatchers.Main) {
                                             dismiss()
                                         }
                                         return@launch
                                     }
-                                    
+
                                     val moduleInfo = context.scriptManager.importFromUrl(url)
-                                    context.shortToast("Script ${moduleInfo.name} imported!")
+                                    context.shortToast(translation.format("script_imported", "name" to moduleInfo.name))
                                     reloadDispatcher.dispatch()
                                     withContext(Dispatchers.Main) {
                                         dismiss()
@@ -151,7 +152,7 @@ class ScriptingRootSection : Routes.Route() {
                                     return@launch
                                 }.onFailure {
                                     context.log.error("Failed to import script", it)
-                                    context.shortToast("Failed to import script. ${it.message}. Check logs for more details")
+                                    context.shortToast(translation.format("import_failed", "message" to (it.message ?: "Unknown")))
                                 }
                                 isLoading = false
                             }
@@ -164,7 +165,7 @@ class ScriptingRootSection : Routes.Route() {
                                 color = MaterialTheme.colorScheme.onPrimary
                             )
                         } else {
-                            Text(text = "Import")
+                            Text(text = translation["import_button"])
                         }
                     }
                 }
@@ -183,25 +184,25 @@ class ScriptingRootSection : Routes.Route() {
                 val actions = remember {
                     mutableMapOf<Pair<String, ImageVector>, suspend () -> Unit>().apply {
                         if (canUpdate) {
-                            put("Update Module" to Icons.Default.Download) {
+                            put(translation["update_module_button"] to Icons.Default.Download) {
                                 dismiss()
-                                context.shortToast("Updating script ${script.name}...")
+                                context.shortToast(translation.format("updating_script", "name" to script.name))
                                 runCatching {
-                                    val modulePath = context.scriptManager.getModulePath(script.name) ?: throw Exception("Module not found")
+                                    val modulePath = context.scriptManager.getModulePath(script.name) ?: throw Exception(translation["module_not_found"])
                                     context.scriptManager.unloadScript(modulePath)
                                     val moduleInfo = context.scriptManager.importFromUrl(script.updateUrl!!, filepath = modulePath)
-                                    context.shortToast("Updated ${script.name} to version ${moduleInfo.version}")
+                                    context.shortToast(translation.format("updated_script", "name" to script.name, "version" to moduleInfo.version))
                                     context.database.setScriptEnabled(script.name, false)
                                     withContext(context.database.executor.asCoroutineDispatcher()) {
                                         reloadDispatcher.dispatch()
                                     }
                                 }.onFailure {
                                     context.log.error("Failed to update module", it)
-                                    context.shortToast("Failed to update module. Check logs for more details")
+                                    context.shortToast(translation["update_module_failed"])
                                 }
                             }
                         }
-                        put("Edit Module" to Icons.Default.Edit) {
+                        put(translation["edit_module_button"] to Icons.Default.Edit) {
                             runCatching {
                                 val modulePath = context.scriptManager.getModulePath(script.name)!!
                                 context.androidContext.startActivity(
@@ -213,31 +214,31 @@ class ScriptingRootSection : Routes.Route() {
                                 dismiss()
                             }.onFailure {
                                 context.log.error("Failed to open module file", it)
-                                context.shortToast("Failed to open module file. Check logs for more details")
+                                context.shortToast(translation["open_module_failed"])
                             }
                         }
-                        put("Clear Module Data" to Icons.Default.Save) {
+                        put(translation["clear_module_data_button"] to Icons.Default.Save) {
                             runCatching {
                                 context.scriptManager.getModuleDataFolder(script.name).deleteRecursively()
-                                context.shortToast("Module data cleared!")
+                                context.shortToast(translation["module_data_cleared"])
                                 dismiss()
                             }.onFailure {
                                 context.log.error("Failed to clear module data", it)
-                                context.shortToast("Failed to clear module data. Check logs for more details")
+                                context.shortToast(translation["clear_module_data_failed"])
                             }
                         }
-                        put("Delete Module" to Icons.Default.DeleteOutline) {
+                        put(translation["delete_module_button"] to Icons.Default.DeleteOutline) {
                             context.scriptManager.apply {
                                 runCatching {
                                     val modulePath = getModulePath(script.name)!!
                                     unloadScript(modulePath)
                                     getScriptsFolder()?.findFile(modulePath)?.delete()
                                     reloadDispatcher.dispatch()
-                                    context.shortToast("Deleted script ${script.name}!")
+                                    context.shortToast(translation.format("deleted_script", "name" to script.name))
                                     dismiss()
                                 }.onFailure {
                                     context.log.error("Failed to delete module", it)
-                                    context.shortToast("Failed to delete module. Check logs for more details")
+                                    context.shortToast(translation["delete_module_failed"])
                                 }
                             }
                         }
@@ -246,7 +247,7 @@ class ScriptingRootSection : Routes.Route() {
                 LazyColumn(modifier = Modifier.fillMaxWidth()) {
                     item {
                         Text(
-                            text = "Actions",
+                            text = translation["actions_title"],
                             fontSize = 22.sp,
                             fontWeight = FontWeight.Bold,
                             modifier = Modifier.padding(16.dp).fillMaxWidth(),
@@ -313,10 +314,10 @@ class ScriptingRootSection : Routes.Route() {
                     modifier = Modifier.weight(1f).padding(end = 8.dp)
                 ) {
                     Text(text = script.displayName ?: script.name, fontSize = 20.sp)
-                    Text(text = script.description ?: "No description", fontSize = 14.sp)
+                    Text(text = script.description ?: translation["no_description"], fontSize = 14.sp)
                     latestUpdate?.let {
                         Text(
-                            text = "Update available: ${it.version}",
+                            text = translation.format("update_available", "version" to it.version),
                             fontSize = 14.sp,
                             fontStyle = FontStyle.Italic,
                             color = MaterialTheme.colorScheme.onSurfaceVariant
@@ -324,7 +325,7 @@ class ScriptingRootSection : Routes.Route() {
                     }
                 }
                 IconButton(onClick = { openActions = !openActions }) {
-                    Icon(Icons.Default.Build, "Actions")
+                    Icon(Icons.Default.Build, translation["actions_button"])
                 }
                 Switch(
                     checked = enabled,
@@ -338,16 +339,16 @@ class ScriptingRootSection : Routes.Route() {
                                     context.scriptManager.loadScript(modulePath)
                                     context.scriptManager.runtime.getModuleByName(script.name)
                                         ?.callFunction("module.onSnapEnhanceLoad")
-                                    context.shortToast("Loaded script ${script.name}")
+                                    context.shortToast(translation.format("loaded_script", "name" to script.name))
                                 } else {
-                                    context.shortToast("Unloaded script ${script.name}")
+                                    context.shortToast(translation.format("unloaded_script", "name" to script.name))
                                 }
                                 context.database.setScriptEnabled(script.name, isChecked)
                                 withContext(Dispatchers.Main) { enabled = isChecked }
                             }.onFailure { throwable ->
                                 withContext(Dispatchers.Main) { enabled = !isChecked }
                                 context.log.error("Failed to ${if (isChecked) "enable" else "disable"} script", throwable)
-                                context.shortToast("Failed to ${if (isChecked) "enable" else "disable"} script. Check logs for more details")
+                                context.shortToast(translation.format(if (isChecked) "enable_script_failed" else "disable_script_failed"))
                             }
                         }
                     }
@@ -373,7 +374,7 @@ class ScriptingRootSection : Routes.Route() {
         }
         if (showToast) {
             LaunchedEffect(Unit) {
-                context.shortToast("Please select your scripts folder!")
+                context.shortToast(translation["select_scripts_folder_toast"])
                 showToast = false
             }
         }
@@ -383,7 +384,7 @@ class ScriptingRootSection : Routes.Route() {
                 ExtendedFloatingActionButton(
                     onClick = { routes.manageScriptRepos.navigate() },
                     icon = { Icon(Icons.Default.Public, contentDescription = null) },
-                    text = { Text("Manage Repos") }
+                    text = { Text(translation["manage_repos_button"]) }
                 )
             }
         } else {
@@ -396,8 +397,8 @@ class ScriptingRootSection : Routes.Route() {
                             showImportDialog = true
                         }
                     },
-                    icon = { Icon(imageVector = Icons.Default.Link, contentDescription = "Link") },
-                    text = { Text(text = "Import from URL") }
+                    icon = { Icon(imageVector = Icons.Default.Link, contentDescription = translation["import_from_url_button"]) },
+                    text = { Text(text = translation["import_from_url_button"]) }
                 )
                 ExtendedFloatingActionButton(
                     onClick = {
@@ -409,8 +410,8 @@ class ScriptingRootSection : Routes.Route() {
                             }
                         }
                     },
-                    icon = { Icon(imageVector = Icons.Default.FolderOpen, contentDescription = "Folder") },
-                    text = { Text(text = "Open Scripts Folder") }
+                    icon = { Icon(imageVector = Icons.Default.FolderOpen, contentDescription = translation["open_scripts_folder_button"]) },
+                    text = { Text(text = translation["open_scripts_folder_button"]) }
                 )
             }
         }
@@ -425,7 +426,7 @@ class ScriptingRootSection : Routes.Route() {
         }
         if (settingsInterface == null) {
             Text(
-                text = "This module does not have any settings",
+                text = translation["no_settings_for_module"],
                 style = MaterialTheme.typography.bodySmall,
                 modifier = Modifier.padding(8.dp)
             )
@@ -440,7 +441,7 @@ class ScriptingRootSection : Routes.Route() {
             updateDispatcher = reloadDispatcher
         ) { context.scriptManager.getScriptsFolder() }
         val tab = selectedTab
-        val tabTitles = listOf("Installed Scripts", "Catalog")
+        val tabTitles = listOf(translation["installed_scripts_tab"], translation["catalog_tab"])
 
         Column(Modifier.fillMaxSize()) {
             SingleChoiceSegmentedButtonRow(
@@ -458,7 +459,7 @@ class ScriptingRootSection : Routes.Route() {
                         selected = tab == i,
                         onClick = {
                             if (i == 1 && scriptingFolder == null) {
-                                context.shortToast("Please select your scripts folder first!")
+                                context.shortToast(translation["select_scripts_folder_toast"])
                             } else {
                                 selectedTab = i
                             }
@@ -508,7 +509,7 @@ class ScriptingRootSection : Routes.Route() {
                                     ) {
                                         Column(horizontalAlignment = Alignment.CenterHorizontally) {
                                             Text(
-                                                text = "No scripts folder selected",
+                                                text = translation["no_scripts_folder_selected_title"],
                                                 style = MaterialTheme.typography.headlineSmall,
                                                 fontWeight = FontWeight.Bold,
                                                 textAlign = TextAlign.Center,
@@ -525,7 +526,7 @@ class ScriptingRootSection : Routes.Route() {
                                                 contentPadding = PaddingValues(horizontal = 28.dp, vertical = 10.dp)
                                             ) {
                                                 Text(
-                                                    text = "Select folder",
+                                                    text = translation["select_folder_button"],
                                                     fontSize = 18.sp
                                                 )
                                             }
@@ -538,14 +539,14 @@ class ScriptingRootSection : Routes.Route() {
                                     ) {
                                         Column(horizontalAlignment = Alignment.CenterHorizontally) {
                                             Text(
-                                                text = "No scripts found.",
+                                                text = translation["no_scripts_found_title"],
                                                 style = MaterialTheme.typography.headlineSmall,
                                                 fontWeight = FontWeight.Bold,
                                                 textAlign = TextAlign.Center,
                                                 color = MaterialTheme.colorScheme.onSurface
                                             )
                                             Text(
-                                                text = "Use the catalog tab to add scripts!",
+                                                text = translation["use_catalog_to_add_scripts"],
                                                 style = MaterialTheme.typography.bodyLarge,
                                                 textAlign = TextAlign.Center,
                                                 color = MaterialTheme.colorScheme.onSurfaceVariant,
@@ -591,7 +592,7 @@ class ScriptingRootSection : Routes.Route() {
                                 onClick = { scriptingWarning = false },
                                 enabled = timeout == 0
                             ) {
-                                Text(text = "OK " + if (timeout > 0) "($timeout)" else "")
+                                Text(text = translation.format("ok_button_timeout", "timeout" to timeout.toString()))
                             }
                         })
                     }
@@ -609,7 +610,7 @@ class ScriptingRootSection : Routes.Route() {
                 context.androidContext.openLink("https://github.com/SnapEnhance/scripting-docs")
             },
             icon = Icons.Default.CollectionsBookmark,
-            text = "Documentation",
+            text = translation["documentation_button"],
         )
     }
 }

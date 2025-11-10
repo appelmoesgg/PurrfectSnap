@@ -36,9 +36,13 @@ class UpdateCheckWorker(
 
     private fun showUpdateNotification(versionName: String) {
         val channelId = "snapenhance_updates"
+        val name = inputData.getString("channel_name") ?: "SnapEnhance Updates"
+        val descriptionText = inputData.getString("channel_description") ?: "Notifications for SnapEnhance updates"
+        val title = inputData.getString("notification_title") ?: "PurrfectSnap Update Available"
+        val text = inputData.getString("notification_text") ?: "Version %s is now available."
+
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            val name = "SnapEnhance Updates"
-            val descriptionText = "Notifications for SnapEnhance updates"
             val importance = NotificationManager.IMPORTANCE_DEFAULT
             val channel = NotificationChannel(channelId, name, importance).apply {
                 description = descriptionText
@@ -55,8 +59,8 @@ class UpdateCheckWorker(
 
         val builder = NotificationCompat.Builder(appContext, channelId)
             .setSmallIcon(R.drawable.launcher_icon_monochrome)
-            .setContentTitle("PurrfectSnap Update Available")
-            .setContentText("Version $versionName is now available.")
+            .setContentTitle(title)
+            .setContentText(text.format(versionName))
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
             .setContentIntent(pendingIntent)
             .setAutoCancel(true)

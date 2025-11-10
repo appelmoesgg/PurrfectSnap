@@ -43,6 +43,7 @@ import me.rhunk.snapenhance.ui.manager.components.AestheticDialog
 import me.rhunk.snapenhance.ui.manager.pages.social.AddFriendDialog
 
 class EditRule : Routes.Route() {
+    override val translation by lazy { context.translation.getCategory("manager.friend_tracker") }
     @Composable
     fun ActionCheckbox(
         text: String,
@@ -70,27 +71,27 @@ class EditRule : Routes.Route() {
         params: TrackerRuleActionParams
     ) {
         ActionCheckbox(
-            text = "Only when I'm inside conversation",
+            text = translation["condition_only_inside_conversation"],
             checked = remember { mutableStateOf(params.onlyInsideConversation) },
             onChanged = { params.onlyInsideConversation = it }
         )
         ActionCheckbox(
-            text = "Only when I'm outside conversation",
+            text = translation["condition_only_outside_conversation"],
             checked = remember { mutableStateOf(params.onlyOutsideConversation) },
             onChanged = { params.onlyOutsideConversation = it }
         )
         ActionCheckbox(
-            text = "Only when Snapchat is active",
+            text = translation["condition_only_when_app_active"],
             checked = remember { mutableStateOf(params.onlyWhenAppActive) },
             onChanged = { params.onlyWhenAppActive = it }
         )
         ActionCheckbox(
-            text = "Only when Snapchat is inactive",
+            text = translation["condition_only_when_app_inactive"],
             checked = remember { mutableStateOf(params.onlyWhenAppInactive) },
             onChanged = { params.onlyWhenAppInactive = it }
         )
         ActionCheckbox(
-            text = "No notification when Snapchat is active",
+            text = translation["condition_no_push_notification_when_app_active"],
             checked = remember { mutableStateOf(params.noPushNotificationWhenAppActive) },
             onChanged = { params.noPushNotificationWhenAppActive = it }
         )
@@ -113,20 +114,26 @@ class EditRule : Routes.Route() {
                     Modifier
                         .padding(16.dp)) {
                     Row(verticalAlignment = Alignment.CenterVertically) {
-                        Text("Add Event", style = MaterialTheme.typography.titleLarge, modifier = Modifier.weight(1f))
+                        Text(translation["add_event_dialog_title"], style = MaterialTheme.typography.titleLarge, modifier = Modifier.weight(1f))
                         IconButton(onClick = onDismissRequest) {
-                            Icon(Icons.Default.DeleteOutline, contentDescription = "Close")
+                            Icon(Icons.Default.DeleteOutline, contentDescription = translation["button.close"])
                         }
                     }
                     Spacer(Modifier.height(16.dp))
-                    Column {
-                        OutlinedButton(
-                            onClick = { expanded.value = true },
-                            modifier = Modifier.fillMaxWidth()
-                        ) {
-                            Text(context.translation["tracker_events.${currentEventType.value}"])
-                        }
-                        DropdownMenu(
+                    ExposedDropdownMenuBox(
+                        expanded = expanded.value,
+                        onExpandedChange = { expanded.value = !expanded.value },
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        OutlinedTextField(
+                            modifier = Modifier.fillMaxWidth(),
+                            value = context.translation["tracker_events.${currentEventType.value}"],
+                            onValueChange = {},
+                            readOnly = true,
+                            label = { Text(translation["event_type_label"]) },
+                            trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = expanded.value) },
+                        )
+                        ExposedDropdownMenu(
                             expanded = expanded.value,
                             onDismissRequest = { expanded.value = false }
                         ) {
@@ -142,7 +149,7 @@ class EditRule : Routes.Route() {
                         }
                     }
                     Spacer(Modifier.height(12.dp))
-                    Text("Triggers", style = MaterialTheme.typography.titleMedium)
+                    Text(translation["triggers_title"], style = MaterialTheme.typography.titleMedium)
                     FlowRow(
                         modifier = Modifier.fillMaxWidth(),
                         horizontalArrangement = Arrangement.spacedBy(8.dp)
@@ -157,7 +164,7 @@ class EditRule : Routes.Route() {
                         }
                     }
                     Spacer(Modifier.height(12.dp))
-                    Text("Conditions", style = MaterialTheme.typography.titleMedium)
+                    Text(translation["conditions_title"], style = MaterialTheme.typography.titleMedium)
                     ConditionCheckboxes(addEventActionParams)
                     Spacer(Modifier.height(16.dp))
                     Button(
@@ -173,7 +180,7 @@ class EditRule : Routes.Route() {
                             )
                         },
                         modifier = Modifier.align(Alignment.End)
-                    ) { Text("Add") }
+                    ) { Text(translation["add_button"]) }
                 }
             }
         }
@@ -196,7 +203,7 @@ class EditRule : Routes.Route() {
             } ?: emptyList()
         }
         val ruleName = rememberAsyncMutableState<String>(defaultValue = "", keys = arrayOf(currentRuleId)) {
-            currentRuleId?.let { ruleId -> context.database.getTrackerRule(ruleId)?.name ?: "Custom Rule" } ?: "Custom Rule"
+            currentRuleId?.let { ruleId -> context.database.getTrackerRule(ruleId)?.name ?: translation["default_rule_name"] } ?: translation["default_rule_name"]
         }
         val authorName = rememberAsyncMutableState<String>(defaultValue = "", keys = arrayOf(currentRuleId)) {
             currentRuleId?.let { ruleId -> context.database.getTrackerRule(ruleId)?.author ?: "" } ?: ""
@@ -230,15 +237,15 @@ class EditRule : Routes.Route() {
         if (showDiscardDialog) {
             AestheticDialog(
                 onDismissRequest = { showDiscardDialog = false },
-                title = "Discard Changes?",
-                text = "You have unsaved changes. Are you sure you want to discard them?",
+                title = translation["discard_changes_dialog_title"],
+                text = translation["discard_changes_dialog_text"],
                 icon = Icons.Default.Warning,
-                confirmButtonText = "Discard",
+                confirmButtonText = translation["discard_button"],
                 onConfirm = {
                     showDiscardDialog = false
                     routes.navController.popBackStack()
                 },
-                dismissButtonText = "Cancel",
+                dismissButtonText = translation["button.cancel"],
                 onDismiss = { showDiscardDialog = false }
             )
         }
@@ -262,12 +269,12 @@ class EditRule : Routes.Route() {
                             tint = MaterialTheme.colorScheme.primary
                         )
                         Text(
-                            text = "Cannot Save Rule",
+                            text = translation["cannot_save_rule_dialog_title"],
                             style = MaterialTheme.typography.headlineSmall,
                             fontWeight = FontWeight.Bold
                         )
                         Text(
-                            text = "A rule must have at least one event to save.",
+                            text = translation["cannot_save_rule_dialog_text"],
                             style = MaterialTheme.typography.bodyMedium,
                             textAlign = TextAlign.Center
                         )
@@ -275,7 +282,7 @@ class EditRule : Routes.Route() {
                             onClick = { showEventsEmptyDialog = false },
                             modifier = Modifier.fillMaxWidth()
                         ) {
-                            Text("OK")
+                            Text(translation["button.ok"])
                         }
                     }
                 }
@@ -284,11 +291,11 @@ class EditRule : Routes.Route() {
         if (showDuplicateNameDialog) {
             AlertDialog(
                 onDismissRequest = { showDuplicateNameDialog = false },
-                title = { Text("Duplicate Rule Name") },
-                text = { Text("A rule with this name already exists. Please choose a different name.") },
+                title = { Text(translation["duplicate_rule_name_dialog_title"]) },
+                text = { Text(translation["duplicate_rule_name_dialog_text"]) },
                 confirmButton = {
                     Button(onClick = { showDuplicateNameDialog = false }) {
-                        Text("OK")
+                        Text(translation["button.ok"])
                     }
                 }
             )
@@ -296,18 +303,18 @@ class EditRule : Routes.Route() {
         if (deleteConfirmation) {
             AlertDialog(
                 onDismissRequest = { deleteConfirmation = false },
-                title = { Text("Delete Rule") },
-                text = { Text("Are you sure you want to delete this rule?") },
+                title = { Text(translation["delete_rule_dialog_title"]) },
+                text = { Text(translation["delete_rule_dialog_text"]) },
                 confirmButton = {
                     Button(
                         onClick = {
                             if (currentRuleId != null) context.database.deleteTrackerRule(currentRuleId)
                             routes.navController.popBackStack()
                         }
-                    ) { Text("Delete") }
+                    ) { Text(translation["delete_button"]) }
                 },
                 dismissButton = {
-                    Button(onClick = { deleteConfirmation = false }) { Text("Cancel") }
+                    Button(onClick = { deleteConfirmation = false }) { Text(translation["button.cancel"]) }
                 }
             )
         }
@@ -318,7 +325,7 @@ class EditRule : Routes.Route() {
                 .navigationBarsPadding(),
             topBar = {
                 TopAppBar(
-                    title = { Text(if (currentRuleId == null) "New Rule" else "Edit Rule") },
+                    title = { Text(translation[if (currentRuleId == null) "new_rule_title" else "edit_rule_title"]) },
                     navigationIcon = {
                         IconButton(onClick = {
                             if (isDirty) {
@@ -327,7 +334,7 @@ class EditRule : Routes.Route() {
                                 routes.navController.popBackStack()
                             }
                         }) {
-                            Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back")
+                            Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = translation["back_button_description"])
                         }
                     },
                     actions = {
@@ -341,9 +348,7 @@ class EditRule : Routes.Route() {
                                 return@IconButton
                             }
                             val ruleId = currentRuleId ?: context.database.newTrackerRule()
-                            eventsToDelete.forEach { event ->
-                                if (event.id > -1) context.database.deleteTrackerRuleEvent(event.id)
-                            }
+                            eventsToDelete.forEach { event -> context.database.deleteTrackerRuleEvent(event.id.takeIf { it > -1 } ?: return@forEach) }
                             events.forEach { event ->
                                 context.database.addOrUpdateTrackerRuleEvent(
                                     event.id.takeIf { it > -1 },
@@ -357,10 +362,10 @@ class EditRule : Routes.Route() {
                             context.database.setTrackerRuleAuthor(ruleId, authorName.value.trim())
                             context.database.setRuleTrackerScopes(ruleId, currentScopeType, scopes)
                             routes.navController.popBackStack()
-                        }) { Icon(Icons.Filled.Save, contentDescription = "Save") }
+                        }) { Icon(Icons.Filled.Save, contentDescription = translation["save_button_description"]) }
                         if (currentRuleId != null) {
                             IconButton(onClick = { deleteConfirmation = true }) {
-                                Icon(Icons.Default.DeleteOutline, contentDescription = "Delete")
+                                Icon(Icons.Default.DeleteOutline, contentDescription = translation["delete_button_description"])
                             }
                         }
                     }
@@ -376,11 +381,11 @@ class EditRule : Routes.Route() {
             ) {
                 Card(Modifier.fillMaxWidth().padding(12.dp)) {
                     Column(Modifier.padding(16.dp)) {
-                        Text("General", style = MaterialTheme.typography.titleMedium)
+                        Text(translation["general_section_title"], style = MaterialTheme.typography.titleMedium)
                         OutlinedTextField(
                             value = ruleName.value,
                             onValueChange = { ruleName.value = it },
-                            label = { Text("Rule Name") },
+                            label = { Text(translation["rule_name_label"]) },
                             modifier = Modifier.fillMaxWidth(),
                             singleLine = true
                         )
@@ -388,7 +393,7 @@ class EditRule : Routes.Route() {
                         OutlinedTextField(
                             value = authorName.value,
                             onValueChange = { authorName.value = it },
-                            label = { Text("Author Name") },
+                            label = { Text(translation["author_name_label"]) },
                             modifier = Modifier.fillMaxWidth(),
                             singleLine = true
                         )
@@ -396,7 +401,7 @@ class EditRule : Routes.Route() {
                 }
                 Card(Modifier.fillMaxWidth().padding(horizontal = 12.dp)) {
                     Column(Modifier.padding(16.dp)) {
-                        Text("Scope", style = MaterialTheme.typography.titleMedium)
+                        Text(translation["scope_section_title"], style = MaterialTheme.typography.titleMedium)
                         val friendDialogActions = remember {
                             AddFriendDialog.Actions(
                                 onFriendState = { friend, state ->
@@ -409,7 +414,7 @@ class EditRule : Routes.Route() {
                                 getGroupState = { group -> group.conversationId in scopes }
                             )
                         }
-                        val scopeOptions = listOf("All", "Whitelist", "Blacklist")
+                        val scopeOptions = listOf(translation["scope_all"], translation["scope_whitelist"], translation["scope_blacklist"])
                         val selectedScopeIndex = when {
                             scopes.isEmpty() -> 0
                             currentScopeType == TrackerScopeType.WHITELIST -> 1
@@ -448,7 +453,7 @@ class EditRule : Routes.Route() {
                                     addFriendDialog = AddFriendDialog(context, friendDialogActions, pinnedIds = scopes)
                                 },
                                 modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp)
-                            ) { Text("Select Friends/Groups (${scopes.size})") }
+                            ) { Text(translation.format("select_friends_groups_button", "count" to scopes.size.toString())) }
                         }
                         addFriendDialog?.Content { addFriendDialog = null }
                     }
@@ -463,9 +468,9 @@ class EditRule : Routes.Route() {
                             horizontalArrangement = Arrangement.SpaceBetween,
                             verticalAlignment = Alignment.CenterVertically
                         ) {
-                            Text("Events", fontSize = 16.sp, fontWeight = FontWeight.Bold)
+                            Text(translation["events_section_title"], fontSize = 16.sp, fontWeight = FontWeight.Bold)
                             IconButton(onClick = { addEventDialogVisible = true }) {
-                                Icon(Icons.Default.Add, contentDescription = "Add Event", modifier = Modifier.size(28.dp))
+                                Icon(Icons.Default.Add, contentDescription = translation["add_event_button"], modifier = Modifier.size(28.dp))
                             }
                         }
                         if (addEventDialogVisible) {
@@ -479,7 +484,7 @@ class EditRule : Routes.Route() {
                         }
                         if (events.isEmpty()) {
                             Text(
-                                "No events",
+                                translation["no_events_text"],
                                 fontSize = 12.sp,
                                 fontWeight = FontWeight.Light,
                                 modifier = Modifier
@@ -537,7 +542,7 @@ class EditRule : Routes.Route() {
                                                 events.remove(event)
                                             }
                                         ) {
-                                            Icon(Icons.Default.DeleteOutline, contentDescription = "Delete")
+                                            Icon(Icons.Default.DeleteOutline, contentDescription = translation["delete_button_description"])
                                         }
                                     }
                                     if (expanded) {

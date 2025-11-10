@@ -230,7 +230,7 @@ class AlertDialogs(
                 }
                 Button(onClick = {
                     if (fieldValue.text.isNotEmpty() && property.key.params.inputCheck?.invoke(fieldValue.text) == false) {
-                        Toast.makeText(context, "Invalid input! Make sure you entered a valid value.", Toast.LENGTH_SHORT).show() //TODO: i18n
+                        Toast.makeText(context, translation["invalid_input_toast"], Toast.LENGTH_SHORT).show()
                         return@Button
                     }
                     when (property.key.dataType.type) {

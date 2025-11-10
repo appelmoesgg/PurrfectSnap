@@ -75,6 +75,10 @@ interface BridgeInterface {
 
     oneway void setScopeNotes(String id, String content);
 
+    Map<String, String> getAllScopeNotes();
+
+    oneway void setAllScopeNotes(in Map<String, String> notes);
+
     IScripting getScriptingInterface();
 
     E2eeInterface getE2eeInterface();

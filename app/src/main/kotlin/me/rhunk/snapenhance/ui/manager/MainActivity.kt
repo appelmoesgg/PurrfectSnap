@@ -37,10 +37,23 @@ import me.rhunk.snapenhance.common.ui.AppMaterialTheme
 import me.rhunk.snapenhance.common.ui.ThemeMode
 import me.rhunk.snapenhance.common.ui.ThemePreferences
 import me.rhunk.snapenhance.ui.util.ActivityLauncherHelper
+import android.content.IntentFilter
 
 class MainActivity : ComponentActivity() {
     private lateinit var navController: NavHostController
     private lateinit var managerContext: RemoteSideContext
+
+    companion object {
+        const val RESTART_ACTION = "me.rhunk.snapenhance.RESTART"
+    }
+
+    private val restartReceiver = object : android.content.BroadcastReceiver() {
+        override fun onReceive(context: android.content.Context, intent: Intent) {
+            if (intent.action == RESTART_ACTION) {
+                recreate()
+            }
+        }
+    }
 
     override fun onNewIntent(intent: Intent) {
         super.onNewIntent(intent)
@@ -58,6 +71,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
         super.onCreate(savedInstanceState)
+        registerReceiver(restartReceiver, IntentFilter(RESTART_ACTION), RECEIVER_EXPORTED)
         managerContext = SharedContextHolder.remote(this).apply {
             activity = this@MainActivity
             checkForRequirements()
@@ -171,5 +185,10 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        unregisterReceiver(restartReceiver)
     }
 }

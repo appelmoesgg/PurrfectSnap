@@ -3,6 +3,7 @@ package me.rhunk.snapenhance.common.bridge.wrapper
 import android.content.ContentValues
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
+import android.net.Uri
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonObject
 import kotlinx.coroutines.*
@@ -70,9 +71,13 @@ data class TrackerLog(
 }
 
 class LoggerWrapper(
-    val databaseFile: File
+    val databaseFile: File,
+    private val readOnly: Boolean = false
 ): LoggerInterface.Stub() {
-    constructor(context: Context): this(File(context.getDatabasePath(InternalFileHandleType.MESSAGE_LOGGER.fileName).absolutePath))
+    constructor(context: Context, uri: Uri? = null): this(
+        uri?.path?.let { File(it) } ?: File(context.getDatabasePath(InternalFileHandleType.MESSAGE_LOGGER.fileName).absolutePath),
+        uri != null
+    )
 
     private var _database: SQLiteDatabase? = null
     @OptIn(ExperimentalCoroutinesApi::class)
@@ -82,49 +87,52 @@ class LoggerWrapper(
     private val database get() = synchronized(this) {
         _database?.takeIf { it.isOpen } ?: run {
             _database?.close()
-            val openedDatabase = SQLiteDatabase.openDatabase(databaseFile.absolutePath, null, SQLiteDatabase.CREATE_IF_NECESSARY or SQLiteDatabase.OPEN_READWRITE)
-            SQLiteDatabaseHelper.createTablesFromSchema(openedDatabase, mapOf(
-                "messages" to listOf(
-                    "id INTEGER PRIMARY KEY",
-                    "message_id BIGINT",
-                    "conversation_id VARCHAR",
-                    "user_id CHAR(36)",
-                    "username VARCHAR",
-                    "send_timestamp BIGINT",
-                    "added_timestamp BIGINT",
-                    "group_title VARCHAR",
-                    "message_data BLOB"
-                ),
-                "chat_edits" to listOf(
-                    "id INTEGER PRIMARY KEY",
-                    "edit_number INTEGER",
-                    "added_timestamp BIGINT",
-                    "conversation_id VARCHAR",
-                    "message_id BIGINT",
-                    "message_text BLOB"
-                ),
-                "stories" to listOf(
-                    "id INTEGER PRIMARY KEY",
-                    "added_timestamp BIGINT",
-                    "user_id VARCHAR",
-                    "posted_timestamp BIGINT",
-                    "created_timestamp BIGINT",
-                    "url VARCHAR",
-                    "encryption_key BLOB",
-                    "encryption_iv BLOB"
-                ),
-                "tracker_events" to listOf(
-                    "id INTEGER PRIMARY KEY",
-                    "timestamp BIGINT",
-                    "conversation_id CHAR(36)",
-                    "conversation_title VARCHAR",
-                    "is_group BOOLEAN",
-                    "username VARCHAR",
-                    "user_id VARCHAR",
-                    "event_type VARCHAR",
-                    "data VARCHAR"
-                )
-            ))
+            val dbFlags = if (readOnly) SQLiteDatabase.OPEN_READONLY else SQLiteDatabase.CREATE_IF_NECESSARY or SQLiteDatabase.OPEN_READWRITE
+            val openedDatabase = SQLiteDatabase.openDatabase(databaseFile.absolutePath, null, dbFlags)
+            if (!readOnly) {
+                SQLiteDatabaseHelper.createTablesFromSchema(openedDatabase, mapOf(
+                    "messages" to listOf(
+                        "id INTEGER PRIMARY KEY",
+                        "message_id BIGINT",
+                        "conversation_id VARCHAR",
+                        "user_id CHAR(36)",
+                        "username VARCHAR",
+                        "send_timestamp BIGINT",
+                        "added_timestamp BIGINT",
+                        "group_title VARCHAR",
+                        "message_data BLOB"
+                    ),
+                    "chat_edits" to listOf(
+                        "id INTEGER PRIMARY KEY",
+                        "edit_number INTEGER",
+                        "added_timestamp BIGINT",
+                        "conversation_id VARCHAR",
+                        "message_id BIGINT",
+                        "message_text BLOB"
+                    ),
+                    "stories" to listOf(
+                        "id INTEGER PRIMARY KEY",
+                        "added_timestamp BIGINT",
+                        "user_id VARCHAR",
+                        "posted_timestamp BIGINT",
+                        "created_timestamp BIGINT",
+                        "url VARCHAR",
+                        "encryption_key BLOB",
+                        "encryption_iv BLOB"
+                    ),
+                    "tracker_events" to listOf(
+                        "id INTEGER PRIMARY KEY",
+                        "timestamp BIGINT",
+                        "conversation_id CHAR(36)",
+                        "conversation_title VARCHAR",
+                        "is_group BOOLEAN",
+                        "username VARCHAR",
+                        "user_id VARCHAR",
+                        "event_type VARCHAR",
+                        "data VARCHAR"
+                    )
+                ))
+            }
             _database = openedDatabase
             openedDatabase
         }
